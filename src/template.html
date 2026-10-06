@@ -1,0 +1,702 @@
+<title>Novera</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700;8..60,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: jornal digital, coluna principal + lateral; cabeçalho com nav fixa; drawer no celular */
+:root {
+  --bg: #FFFFFF;
+  --surface: #F0F4F8;
+  --surface-2: #E1E8EF;
+  --fg: #14212E;
+  --fg-2: #3E4C59;
+  --muted: #52606D;
+  --line: #DDE3EA;
+  --brand: #102A43;
+  --brand-fill: #102A43;
+  --on-brand: #FFFFFF;
+  --link: #2B5C8A;
+  --accent: #F0B429;
+  --up: #0E7C4A;
+  --down: #B42318;
+  --footer-bg: #102A43;
+  --footer-fg: #C9D6E3;
+  --footer-line: #243B53;
+  --overlay: rgba(16, 42, 67, 0.55);
+  --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0B1724; --surface: #122233; --surface-2: #1B3046; --fg: #E6EDF3; --fg-2: #C3D0DC; --muted: #9FB3C8;
+    --line: #22374D; --brand: #D9E2EC; --brand-fill: #2A4A6B; --on-brand: #FFFFFF; --link: #8BB8E8; --accent: #F0B429;
+    --up: #4CC38A; --down: #F08A80; --footer-bg: #07111C; --footer-fg: #9FB3C8; --footer-line: #1B2B3C; --overlay: rgba(0,0,0,0.6);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0B1724; --surface: #122233; --surface-2: #1B3046; --fg: #E6EDF3; --fg-2: #C3D0DC; --muted: #9FB3C8;
+  --line: #22374D; --brand: #D9E2EC; --brand-fill: #2A4A6B; --on-brand: #FFFFFF; --link: #8BB8E8; --accent: #F0B429;
+  --up: #4CC38A; --down: #F08A80; --footer-bg: #07111C; --footer-fg: #9FB3C8; --footer-line: #1B2B3C; --overlay: rgba(0,0,0,0.6);
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--sans); font-size: 16px; line-height: 1.5; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--link); }
+:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+button { font: inherit; color: inherit; }
+h1, h2, h3 { text-wrap: balance; }
+img { display: block; max-width: 100%; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-inline: 16px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Topo */
+.topbar { background: var(--surface); border-bottom: 1px solid var(--line); font-size: 13px; color: var(--fg-2); }
+.topbar .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 4px 16px; padding-block: 7px; }
+.ticker { display: flex; flex-wrap: wrap; gap: 4px 14px; font-variant-numeric: tabular-nums; }
+.ticker b { color: var(--brand); font-weight: 600; }
+.up { color: var(--up); font-weight: 600; }
+.down { color: var(--down); font-weight: 600; }
+
+.masthead { background: var(--bg); border-bottom: 1px solid var(--line); }
+.masthead .wrap { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; padding-block: 22px 14px; }
+.logo { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; }
+.logo-name { font-family: var(--serif); font-weight: 800; font-size: clamp(34px, 6vw, 58px); line-height: 1; letter-spacing: -0.5px; color: var(--brand); }
+.logo-tag { font-size: 12px; letter-spacing: 1.8px; text-transform: uppercase; color: var(--muted); }
+.mh-left { display: flex; align-items: center; gap: 8px; justify-self: start; }
+.mh-right { display: flex; justify-content: flex-end; align-items: center; gap: 8px; }
+.icon-btn { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 12px; border: 1px solid var(--line); border-radius: 22px; background: var(--bg); cursor: pointer; font-size: 14px; font-weight: 500; }
+.icon-btn:hover { border-color: var(--link); color: var(--link); }
+.icon-btn svg { width: 20px; height: 20px; }
+.menu-btn { display: none; }
+.date-desk { font-size: 13px; color: var(--muted); }
+
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); border-top: 3px solid var(--brand-fill); border-bottom: 1px solid var(--line); }
+.nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+.nav a { display: block; padding: 12px 14px; font-size: 15px; font-weight: 500; color: var(--fg-2); border-bottom: 3px solid transparent; margin-bottom: -1px; }
+.nav a:hover { color: var(--brand); }
+.nav a[aria-current="page"] { color: var(--brand); font-weight: 600; border-bottom-color: var(--brand); }
+
+@media (max-width: 860px) {
+  .menu-btn { display: inline-flex; }
+  .nav { display: none; }
+  .masthead { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; border-bottom: 3px solid var(--brand-fill); }
+  .masthead .wrap { padding-block: 10px; }
+  .logo-name { font-size: 30px; }
+  .logo-tag, .date-desk, .btn-label { display: none; }
+  .icon-btn { padding: 0; }
+}
+
+/* Drawer */
+.overlay { position: fixed; inset: 0; background: var(--overlay); z-index: 40; }
+.drawer { position: fixed; top: 0; left: 0; bottom: 0; width: min(320px, 86vw); background: var(--bg); z-index: 50; display: flex; flex-direction: column; padding: calc(env(safe-area-inset-top, 0px) + 12px) 16px calc(env(safe-area-inset-bottom, 0px) + 16px); overflow-y: auto; box-shadow: 4px 0 24px rgba(0,0,0,0.2); transform: translateX(-104%); transition: transform 0.22s ease; }
+.drawer.open { transform: none; }
+.drawer-head { display: flex; justify-content: space-between; align-items: center; padding-bottom: 12px; border-bottom: 3px solid var(--brand-fill); }
+.drawer-head .logo-name { font-size: 30px; }
+.drawer h2 { margin: 20px 0 6px; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.drawer ul { list-style: none; margin: 0; padding: 0; }
+.drawer li a { display: flex; justify-content: space-between; align-items: center; padding: 12px 4px; border-bottom: 1px solid var(--line); font-size: 17px; font-weight: 500; }
+.drawer li a[aria-current="page"] { color: var(--brand); font-weight: 600; }
+.drawer .count { font-size: 13px; color: var(--muted); font-weight: 400; }
+@media (prefers-reduced-motion: reduce) { .drawer { transition: none; } }
+
+/* Comum */
+main { padding-block: 28px 56px; }
+.kicker { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--brand); }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; }
+.badge.own { background: var(--brand-fill); color: var(--on-brand); }
+.badge.agg { background: var(--surface-2); color: var(--fg-2); text-transform: none; letter-spacing: 0; }
+.meta { font-size: 13px; color: var(--muted); }
+.thumb { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 4px; background: var(--surface-2); }
+.sec-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 12px; border-bottom: 2px solid var(--brand-fill); padding-bottom: 8px; margin-bottom: 16px; }
+.sec-head h2 { margin: 0; font-family: var(--serif); font-size: 28px; line-height: 1.15; }
+.sec-head a.more { font-size: 14px; font-weight: 600; color: var(--link); }
+.sec-head a.more:hover { text-decoration: underline; }
+.sec-head .meta { font-size: 13px; }
+.stack { display: flex; flex-direction: column; gap: 48px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 4px; border: 1px solid var(--brand-fill); background: var(--brand-fill); color: var(--on-brand); font-weight: 600; cursor: pointer; }
+.btn:hover { color: var(--on-brand); filter: brightness(1.12); }
+.btn.ghost { background: transparent; color: var(--brand); }
+.btn.ghost:hover { color: var(--brand); background: var(--surface); filter: none; }
+
+/* Cartões */
+.card { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.card h3 { margin: 0; font-family: var(--serif); font-weight: 600; font-size: 20px; line-height: 1.25; }
+.card p { margin: 0; font-size: 15px; color: var(--fg-2); }
+.card.lead h3 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; line-height: 1.12; }
+.card.lead p { font-size: 18px; }
+.row { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 16px; padding-block: 16px; border-bottom: 1px solid var(--line); align-items: start; }
+.row:first-child { padding-top: 0; }
+.row .thumb { aspect-ratio: 4 / 3; }
+.row .txt { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.row h3 { margin: 0; font-family: var(--serif); font-weight: 600; font-size: 19px; line-height: 1.3; }
+.row p { margin: 0; font-size: 14.5px; color: var(--fg-2); }
+@media (max-width: 520px) { .row { grid-template-columns: 96px minmax(0, 1fr); gap: 12px; } .row p { display: none; } .row h3 { font-size: 17px; } }
+
+/* Home */
+.hero { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 32px; }
+.hero-side { display: flex; flex-direction: column; gap: 22px; }
+.hero-side .card { padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.hero-side .card:last-child { border-bottom: 0; padding-bottom: 0; }
+.also { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--line); }
+.also .mini { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; align-items: start; }
+.also .mini .thumb { aspect-ratio: 1; }
+.also h3 { margin: 0 0 4px; font-family: var(--serif); font-weight: 600; font-size: 17px; line-height: 1.3; }
+@media (max-width: 960px) { .hero { grid-template-columns: 1fr; } .also { grid-template-columns: 1fr; } }
+
+.split { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 40px; align-items: start; }
+@media (max-width: 960px) { .split { grid-template-columns: 1fr; } }
+.latest .rowlist { display: flex; flex-direction: column; }
+.latest .time { font-variant-numeric: tabular-nums; }
+.load-more { margin-top: 20px; }
+
+.aside { display: flex; flex-direction: column; gap: 28px; }
+.picks ol { list-style: none; margin: 0; padding: 0; counter-reset: p; }
+.picks li { counter-increment: p; display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 10px; padding-block: 12px; border-bottom: 1px solid var(--line); }
+.picks li::before { content: counter(p); font-family: var(--serif); font-weight: 800; font-size: 28px; line-height: 1; color: var(--brand); }
+.picks a { font-family: var(--serif); font-weight: 600; font-size: 17px; line-height: 1.3; }
+.picks .meta { margin-top: 4px; }
+.newsletter { background: var(--surface); border-radius: 6px; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.newsletter h2 { margin: 0; font-family: var(--serif); font-size: 21px; }
+.newsletter p, .newsletter label { margin: 0; font-size: 14px; color: var(--fg-2); }
+.newsletter input { font: inherit; padding: 11px 12px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--fg); min-height: 44px; width: 100%; }
+.form-status { font-size: 13px; color: var(--fg-2); min-height: 1em; }
+
+.cat-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+@media (max-width: 1024px) { .cat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .cat-grid { grid-template-columns: 1fr; } .cat-grid .card:not(:first-child) .thumb { display: none; } .cat-grid .card:not(:first-child) { padding-top: 14px; border-top: 1px solid var(--line); } }
+
+/* Editoria */
+.page-head { display: flex; flex-direction: column; gap: 6px; padding-bottom: 18px; margin-bottom: 26px; border-bottom: 2px solid var(--brand-fill); }
+.page-head h1 { margin: 0; font-family: var(--serif); font-size: clamp(34px, 5vw, 48px); line-height: 1.05; color: var(--brand); }
+.page-head p { margin: 0; color: var(--fg-2); max-width: 62ch; }
+.crumbs { font-size: 13px; color: var(--muted); }
+.crumbs a { color: var(--link); }
+.cat-lead { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 28px; padding-bottom: 28px; margin-bottom: 8px; border-bottom: 1px solid var(--line); align-items: center; }
+@media (max-width: 760px) { .cat-lead { grid-template-columns: 1fr; } }
+
+/* Matéria */
+.article { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+.article h1 { margin: 0; font-family: var(--serif); font-weight: 700; font-size: clamp(30px, 5vw, 46px); line-height: 1.1; }
+.article .dek { margin: 0; font-size: 20px; line-height: 1.45; color: var(--fg-2); }
+.byline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; padding-block: 14px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.byline .who { display: flex; flex-direction: column; }
+.byline .who b { font-size: 15px; font-weight: 600; }
+.textsize { display: flex; gap: 6px; align-items: center; }
+.textsize span { font-size: 13px; color: var(--muted); }
+figure { margin: 0; display: flex; flex-direction: column; gap: 8px; }
+figcaption { font-size: 13px; color: var(--muted); }
+.body { font-family: var(--serif); font-size: var(--body-size, 20px); line-height: 1.65; color: var(--fg); display: flex; flex-direction: column; gap: 18px; }
+.body p { margin: 0; }
+.body h2 { margin: 10px 0 0; font-size: 1.3em; line-height: 1.2; }
+.callout { background: var(--surface); border-radius: 6px; padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+.callout p { margin: 0; font-size: 15px; color: var(--fg-2); }
+.box { background: var(--surface); border-radius: 6px; padding: 22px; display: flex; flex-direction: column; gap: 14px; }
+.box h2 { margin: 0; font-family: var(--serif); font-size: 22px; color: var(--brand); }
+.box .note { font-size: 13px; color: var(--muted); }
+.bar-row { display: flex; flex-direction: column; gap: 4px; }
+.bar-label { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; }
+.bar-label span:last-child { font-weight: 600; font-variant-numeric: tabular-nums; }
+.bar-track { height: 10px; background: var(--surface-2); border-radius: 5px; overflow: hidden; }
+.bar-fill { height: 100%; background: var(--brand-fill); border-radius: 5px; }
+.bar-row:first-of-type .bar-fill { background: var(--brand); }
+.table-scroll { overflow-x: auto; }
+.box table { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 420px; font-variant-numeric: tabular-nums; }
+.box th { text-align: left; font-size: 12.5px; color: var(--muted); font-weight: 600; padding: 8px 8px; border-bottom: 1px solid var(--line); }
+.box td { padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.box tr:last-child td { border-bottom: 0; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+.facts div { display: flex; flex-direction: column; gap: 2px; }
+.facts span { font-size: 13px; color: var(--muted); }
+.facts b { font-weight: 600; }
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
+.steps div { display: flex; flex-direction: column; gap: 6px; }
+.steps i { width: 34px; height: 34px; border-radius: 50%; background: var(--brand-fill); color: var(--on-brand); font-style: normal; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; }
+.steps b { font-weight: 600; }
+.steps span { font-size: 15px; color: var(--fg-2); }
+.sources { font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+.sources a { color: var(--link); }
+.sources a:hover { text-decoration: underline; }
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.pager a { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 6px; }
+.pager a:hover { border-color: var(--link); }
+.pager .dir { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); font-weight: 600; }
+.pager .t { font-family: var(--serif); font-weight: 600; font-size: 16px; line-height: 1.3; }
+.pager .next { text-align: right; }
+@media (max-width: 560px) { .pager { grid-template-columns: 1fr; } .pager .next { text-align: left; } }
+.related { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+@media (max-width: 760px) { .related { grid-template-columns: 1fr; } }
+
+/* Busca */
+.search-form { display: flex; gap: 8px; flex-wrap: wrap; }
+.search-form input { flex: 1 1 260px; min-width: 0; font: inherit; font-size: 18px; padding: 12px 14px; min-height: 50px; border: 2px solid var(--brand-fill); border-radius: 6px; background: var(--bg); color: var(--fg); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { min-height: 36px; padding: 0 14px; border-radius: 18px; border: 1px solid var(--line); background: var(--bg); cursor: pointer; font-size: 14px; }
+.chip[aria-pressed="true"] { background: var(--brand-fill); color: var(--on-brand); border-color: var(--brand-fill); }
+mark { background: color-mix(in srgb, var(--accent) 45%, transparent); color: inherit; padding: 0 1px; border-radius: 2px; }
+.empty { padding: 28px; background: var(--surface); border-radius: 6px; color: var(--fg-2); }
+
+/* Institucional */
+.inst { max-width: 720px; display: flex; flex-direction: column; gap: 16px; font-size: 17px; }
+.inst h2 { margin: 12px 0 0; font-family: var(--serif); font-size: 24px; }
+.inst p, .inst ul { margin: 0; }
+.inst ul { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+.placeholder { background: var(--surface-2); padding: 1px 6px; border-radius: 3px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85em; }
+.contact-form { display: flex; flex-direction: column; gap: 12px; max-width: 520px; }
+.contact-form label { font-size: 14px; font-weight: 600; }
+.contact-form input, .contact-form textarea, .contact-form select { font: inherit; padding: 11px 12px; border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--fg); width: 100%; }
+
+/* Rodapé */
+footer.site { background: var(--footer-bg); color: var(--footer-fg); }
+footer.site a:hover { color: #FFFFFF; text-decoration: underline; }
+.foot-top { display: grid; grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(0, 1fr)) minmax(0, 1.4fr); gap: 32px; padding-block: 44px 32px; }
+@media (max-width: 960px) { .foot-top { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .foot-top { grid-template-columns: 1fr; } }
+.foot-brand .logo-name { color: #FFFFFF; font-size: 34px; }
+.foot-brand p { margin: 8px 0 0; font-size: 14px; max-width: 36ch; }
+footer.site h2 { margin: 0 0 12px; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: #FFFFFF; font-weight: 600; }
+footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; font-size: 15px; }
+.foot-news input { font: inherit; padding: 11px 12px; border: 1px solid var(--footer-line); border-radius: 4px; background: rgba(255,255,255,0.06); color: #FFFFFF; min-height: 44px; width: 100%; }
+.foot-news input::placeholder { color: var(--footer-fg); }
+.foot-news form { display: flex; flex-direction: column; gap: 8px; }
+.foot-news .btn { background: #FFFFFF; color: #102A43; border-color: #FFFFFF; }
+.foot-news .btn:hover { color: #102A43; }
+.foot-news p { margin: 0 0 10px; font-size: 14px; }
+.foot-bottom { border-top: 1px solid var(--footer-line); padding-block: 18px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: 13px; }
+.to-top { background: none; border: 0; color: var(--footer-fg); cursor: pointer; text-decoration: underline; padding: 0; font-size: 13px; }
+</style>
+
+<div class="topbar">
+  <div class="wrap">
+    <span id="today"><!--DATA_EXTENSO--></span>
+    <div class="ticker" aria-label="Mercado">
+<!--TICKER-->
+    </div>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="mh-left">
+      <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Abrir menu" aria-controls="drawer" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+      <span class="date-desk">Edição de <!--EDICAO--></span>
+    </div>
+    <a class="logo" href="#inicio" aria-label="Novera, página inicial">
+      <span class="logo-name">Novera</span>
+      <span class="logo-tag">Informação sem fronteiras</span>
+    </a>
+    <div class="mh-right">
+      <a class="icon-btn" href="#busca" id="search-btn" aria-label="Buscar notícias">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+        <span class="btn-label">Buscar</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Editorias">
+  <div class="wrap"><ul id="nav-list"></ul></div>
+</nav>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="Menu" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="logo-name">Novera</span>
+    <button class="icon-btn" id="close-btn" type="button" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    </button>
+  </div>
+  <h2>Editorias</h2>
+  <ul id="drawer-cats"></ul>
+  <h2>Ferramentas</h2>
+  <ul><li><a href="#busca">Buscar notícias</a></li></ul>
+  <h2>Institucional</h2>
+  <ul id="drawer-inst"></ul>
+</aside>
+
+<main id="main" tabindex="-1">
+  <div class="wrap" id="view"></div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="logo-name">Novera</span>
+        <p>Informação sem fronteiras. Jornalismo próprio e uma seleção das principais notícias do Brasil e do mundo, com link para a fonte original.</p>
+      </div>
+      <div>
+        <h2>Editorias</h2>
+        <ul id="foot-cats"></ul>
+      </div>
+      <div>
+        <h2>Institucional</h2>
+        <ul id="foot-inst"></ul>
+      </div>
+      <div class="foot-news">
+        <h2>Newsletter</h2>
+        <p>Receba o resumo do dia, toda manhã.</p>
+        <form id="foot-form" novalidate>
+          <label class="sr" for="foot-email">Seu e-mail</label>
+          <input id="foot-email" type="email" placeholder="seu@email.com" autocomplete="email">
+          <button class="btn" type="submit">Inscrever</button>
+          <span class="form-status" id="foot-status" role="status"></span>
+        </form>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Novera. Ilustrações: Novera. Conteúdo de parceiros resumido pela redação, com crédito e link para a fonte.</span>
+      <button class="to-top" type="button" id="to-top">Voltar ao topo</button>
+    </div>
+  </div>
+</footer>
+
+<script>
+/*NEWS*/
+const IMG = /*IMG*/{};
+
+const CATS = [
+  { id: 'nacional', name: 'Nacional', desc: 'Política, eleições, governo e o que acontece nos estados.' },
+  { id: 'internacional', name: 'Internacional', desc: 'Conflitos, diplomacia e as principais notícias do mundo.' },
+  { id: 'esportes', name: 'Esportes', desc: 'Futebol, Seleção, Fórmula 1 e outras modalidades.' },
+  { id: 'cultura', name: 'Cultura', desc: 'Cinema, artes visuais, música e agenda cultural.' },
+  { id: 'economia', name: 'Economia', desc: 'Mercado, juros, inflação, empresas e o seu bolso.' },
+  { id: 'tecnologia', name: 'Tecnologia', desc: 'Inteligência artificial, ciência, telecomunicações e meios de pagamento.' }
+];
+const CAT = Object.fromEntries(CATS.map(c => [c.id, c]));
+const INST = [
+  { id: 'sobre', name: 'Sobre a Novera' },
+  { id: 'expediente', name: 'Expediente' },
+  { id: 'politica-editorial', name: 'Política editorial' },
+  { id: 'privacidade', name: 'Política de privacidade' },
+  { id: 'termos', name: 'Termos de uso' },
+  { id: 'anuncie', name: 'Anuncie' },
+  { id: 'contato', name: 'Contato' }
+];
+const BY_ID = Object.fromEntries(NEWS.map(n => [n.id, n]));
+const SORTED = NEWS.slice().sort((a, b) => b.t.localeCompare(a.t));
+/* Destaques e escolhas vêm de news.js (FEATURED, PICKS). IDs que não existirem são ignorados. */
+const _ok = id => BY_ID[id];
+const _ownByDate = SORTED.filter(n => n.own);
+const _lead = _ok(FEATURED.lead) || _ownByDate[0] || SORTED[0];
+const _side = (FEATURED.side || []).map(_ok).filter(Boolean).filter(n => n !== _lead);
+while (_side.length < 2) { const x = _ownByDate.find(n => n !== _lead && !_side.includes(n)); if (!x) break; _side.push(x); }
+const _also = (FEATURED.also || []).map(_ok).filter(Boolean).filter(n => n !== _lead && !_side.includes(n));
+while (_also.length < 3) { const x = _ownByDate.find(n => n !== _lead && !_side.includes(n) && !_also.includes(n)); if (!x) break; _also.push(x); }
+const _picks = (PICKS || []).map(_ok).filter(Boolean);
+
+const state = { latestShown: 10, searchCat: 'todas', query: '', textSize: 20 };
+
+function esc(s) { return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
+function img(key) { return IMG[key] || IMG.mundo; }
+function pic(n) { return n.photo || img(n.img); }
+/* Foto da notícia: usa n.photo se definida; senão tenta fotos/<id>.webp e, se não existir, cai na ilustração */
+function srcAttr(n) {
+  if (n.photo) return 'src="' + esc(n.photo) + '"';
+  return 'src="fotos/' + n.id + '.webp" data-fb="' + n.img + '"';
+}
+document.addEventListener('error', e => {
+  const t = e.target;
+  if (!t || t.tagName !== 'IMG' || !t.dataset.fb || t.dataset.fell) return;
+  t.dataset.fell = '1';
+  t.src = img(t.dataset.fb);
+  const fig = t.closest('figure');
+  if (fig) { t.alt = t.dataset.alt2 || ''; const fc = fig.querySelector('figcaption'); if (fc) fc.textContent = 'Ilustração: Novera'; }
+}, true);
+function catName(id) { return CAT[id] ? CAT[id].name : id; }
+function badge(n) { return n.own ? '<span class="badge own">Da redação</span>' : '<span class="badge agg">via ' + esc(n.src) + '</span>'; }
+function metaLine(n, showCat) {
+  const parts = [];
+  if (showCat) parts.push(catName(n.cat));
+  if (n.d) parts.push(n.d);
+  if (n.own && n.read) parts.push(n.read + ' min de leitura');
+  return parts.join(' · ');
+}
+function link(n) { return '#m-' + n.id; }
+
+function cardLead(n, showCat) {
+  return '<article class="card lead"><a href="' + link(n) + '"><img class="thumb" ' + srcAttr(n) + ' alt=""></a>' +
+    '<div class="kicker">' + badge(n) + '<span>' + esc(catName(n.cat)) + '</span></div>' +
+    '<h3><a href="' + link(n) + '">' + esc(n.title) + '</a></h3><p>' + esc(n.sum) + '</p>' +
+    '<div class="meta">' + esc(metaLine(n, false)) + '</div></article>';
+}
+function cardStack(n, showCat, hideSum) {
+  return '<article class="card"><a href="' + link(n) + '" tabindex="-1" aria-hidden="true"><img class="thumb" ' + srcAttr(n) + ' alt=""></a>' +
+    '<div class="kicker">' + badge(n) + (showCat ? '<span>' + esc(catName(n.cat)) + '</span>' : '') + '</div>' +
+    '<h3><a href="' + link(n) + '">' + esc(n.title) + '</a></h3>' + (hideSum ? '' : '<p>' + esc(n.sum) + '</p>') +
+    '<div class="meta">' + esc(metaLine(n, false)) + '</div></article>';
+}
+function cardRow(n, showCat, hl) {
+  const t = hl ? hl(n.title) : esc(n.title);
+  const s = hl ? hl(n.sum) : esc(n.sum);
+  return '<article class="row"><a href="' + link(n) + '" tabindex="-1" aria-hidden="true"><img class="thumb" ' + srcAttr(n) + ' alt=""></a>' +
+    '<div class="txt"><div class="kicker">' + badge(n) + (showCat ? '<span>' + esc(catName(n.cat)) + '</span>' : '') + '</div>' +
+    '<h3><a href="' + link(n) + '">' + t + '</a></h3><p>' + s + '</p>' +
+    '<div class="meta">' + esc(metaLine(n, false)) + '</div></div></article>';
+}
+
+function picksHTML() {
+  return '<section class="picks" aria-labelledby="picks-h"><div class="sec-head"><h2 id="picks-h" style="font-size:24px">Escolhas da redação</h2></div><ol>' +
+    _picks.map(n => { return '<li><div><a href="' + link(n) + '">' + esc(n.title) + '</a><div class="meta">' + esc(catName(n.cat)) + '</div></div></li>'; }).join('') +
+    '</ol></section>';
+}
+function newsletterHTML(id) {
+  return '<section class="newsletter" aria-labelledby="' + id + '-h"><h2 id="' + id + '-h">Resumo do dia</h2><p>As principais notícias no seu e-mail, toda manhã.</p>' +
+    '<form data-newsletter novalidate><label for="' + id + '-email">Seu e-mail</label><input id="' + id + '-email" type="email" placeholder="seu@email.com" autocomplete="email">' +
+    '<button class="btn" type="submit" style="margin-top:8px;width:100%">Inscrever</button><span class="form-status" role="status"></span></form></section>';
+}
+
+/* ---------- Páginas ---------- */
+function viewHome() {
+  const lead = _lead;
+  const side = _side.slice(0, 2);
+  const also = _also.slice(0, 3);
+  const latest = SORTED.slice(0, state.latestShown);
+  let h = '<h1 class="sr">Novera: notícias do Brasil e do mundo</h1>';
+  h += '<div class="stack">';
+  h += '<section aria-label="Destaques"><div class="hero">' + cardLead(lead) +
+    '<div class="hero-side">' + side.map(n => cardStack(n, true, false)).join('') + '</div></div>' +
+    '<div class="also">' + also.map(n => '<article class="mini"><a href="' + link(n) + '" tabindex="-1" aria-hidden="true"><img class="thumb" ' + srcAttr(n) + ' alt=""></a><div><div class="kicker" style="margin-bottom:4px"><span>' + esc(catName(n.cat)) + '</span></div><h3><a href="' + link(n) + '">' + esc(n.title) + '</a></h3><div class="meta">' + esc(n.d) + '</div></div></article>').join('') + '</div></section>';
+  h += '<div class="split"><section class="latest" aria-labelledby="latest-h"><div class="sec-head"><h2 id="latest-h">Últimas notícias</h2><span class="meta">' + NEWS.length + ' notícias em 6 editorias</span></div><div class="rowlist">' +
+    latest.map(n => cardRow(n, true)).join('') + '</div>' +
+    (state.latestShown < SORTED.length ? '<div class="load-more"><button class="btn ghost" type="button" id="more-btn">Carregar mais notícias</button></div>' : '') +
+    '</section><div class="aside">' + picksHTML() + newsletterHTML('nl-home') + '</div></div>';
+  CATS.forEach(c => {
+    const items = NEWS.filter(n => n.cat === c.id);
+    const ordered = items.filter(n => n.own).concat(items.filter(n => !n.own));
+    h += '<section aria-labelledby="h-' + c.id + '"><div class="sec-head"><h2 id="h-' + c.id + '"><a href="#' + c.id + '">' + esc(c.name) + '</a></h2><a class="more" href="#' + c.id + '">Ver as ' + items.length + ' notícias →</a></div><div class="cat-grid">' +
+      ordered.slice(0, 4).map(n => cardStack(n, false, true)).join('') + '</div></section>';
+  });
+  h += '</div>';
+  return h;
+}
+
+function viewCat(id) {
+  const c = CAT[id];
+  const items = NEWS.filter(n => n.cat === id).sort((a, b) => b.t.localeCompare(a.t));
+  const lead = items.find(n => n.own) || items[0];
+  const rest = items.filter(n => n !== lead);
+  let h = '<div class="page-head"><div class="crumbs"><a href="#inicio">Início</a> › ' + esc(c.name) + '</div><h1>' + esc(c.name) + '</h1><p>' + esc(c.desc) + '</p><span class="meta">' + items.length + ' notícias · ' + items.filter(n => n.own).length + ' da redação</span></div>';
+  h += '<div class="cat-lead"><a href="' + link(lead) + '" tabindex="-1" aria-hidden="true"><img class="thumb" ' + srcAttr(lead) + ' alt=""></a><div class="card lead"><div class="kicker">' + badge(lead) + '</div><h3><a href="' + link(lead) + '">' + esc(lead.title) + '</a></h3><p>' + esc(lead.sum) + '</p><div class="meta">' + esc(metaLine(lead)) + '</div></div></div>';
+  h += '<div class="split"><section aria-label="Notícias de ' + esc(c.name) + '"><div class="rowlist">' + rest.map(n => cardRow(n, false)).join('') + '</div></section>';
+  const others = CATS.filter(x => x.id !== id).map(x => NEWS.find(n => n.cat === x.id && n.own));
+  h += '<div class="aside"><section class="picks" aria-labelledby="oth-h"><div class="sec-head"><h2 id="oth-h" style="font-size:24px">Em outras editorias</h2></div><ol>' +
+    others.map(n => '<li><div><a href="' + link(n) + '">' + esc(n.title) + '</a><div class="meta">' + esc(catName(n.cat)) + '</div></div></li>').join('') + '</ol></section>' + newsletterHTML('nl-cat') + '</div></div>';
+  return h;
+}
+
+function boxHTML(b) {
+  if (!b) return '';
+  let inner = '';
+  if (b.type === 'bars') {
+    inner = b.rows.map(r => {
+      const v = r[1];
+      const txt = b.fmt === 'int' ? String(v) : (b.fmt === 'pctplus' ? '+' : '') + v.toFixed(2).replace('.', ',') + (b.fmt === 'int' ? '' : '%');
+      return '<div class="bar-row"><div class="bar-label"><span>' + esc(r[0]) + '</span><span>' + txt + '</span></div><div class="bar-track"><div class="bar-fill" style="width:' + Math.min(100, v / b.max * 100).toFixed(1) + '%"></div></div></div>';
+    }).join('');
+    inner = '<div class="meta">' + esc(b.unit) + '</div>' + inner;
+  } else if (b.type === 'table') {
+    inner = '<div class="table-scroll"><table><thead><tr>' + b.head.map(x => '<th scope="col">' + esc(x) + '</th>').join('') + '</tr></thead><tbody>' +
+      b.rows.map(r => '<tr>' + r.map(x => '<td>' + esc(x) + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>';
+  } else if (b.type === 'facts') {
+    inner = '<div class="facts">' + b.rows.map(r => '<div><span>' + esc(r[0]) + '</span><b>' + esc(r[1]) + '</b></div>').join('') + '</div>';
+  } else if (b.type === 'steps') {
+    inner = '<div class="steps">' + b.steps.map((s, i) => '<div><i>' + (i + 1) + '</i><b>' + esc(s[0]) + '</b><span>' + esc(s[1]) + '</span></div>').join('') + '</div>';
+  }
+  return '<section class="box" aria-label="' + esc(b.title) + '"><h2>' + esc(b.title) + '</h2>' + inner + (b.note ? '<div class="note">' + esc(b.note) + '</div>' : '') + '</section>';
+}
+
+function viewArticle(id) {
+  const n = BY_ID[id];
+  if (!n) return viewNotFound();
+  const c = CAT[n.cat];
+  const sameCat = NEWS.filter(x => x.cat === n.cat).sort((a, b) => b.t.localeCompare(a.t));
+  const idx = sameCat.indexOf(n);
+  const prev = sameCat[idx - 1], next = sameCat[idx + 1];
+  const related = sameCat.filter(x => x !== n).slice(0, 3);
+  const bodyParts = n.body.map(p => p.startsWith('## ') ? '<h2>' + esc(p.slice(3)) + '</h2>' : '<p>' + esc(p) + '</p>');
+  if (n.box) { const at = Math.min(bodyParts.length, n.own ? 3 : bodyParts.length); bodyParts.splice(at, 0, '</div>' + boxHTML(n.box) + '<div class="body">'); }
+  let h = '<article class="article" style="--body-size:' + state.textSize + 'px">';
+  h += '<div class="crumbs"><a href="#inicio">Início</a> › <a href="#' + c.id + '">' + esc(c.name) + '</a></div>';
+  h += '<div class="kicker">' + badge(n) + '<span>' + esc(c.name) + '</span></div>';
+  h += '<h1>' + esc(n.title) + '</h1><p class="dek">' + esc(n.sum) + '</p>';
+  h += '<div class="byline"><div class="who"><b>' + (n.own ? 'Por Redação Novera' : 'Resumo da Redação Novera') + '</b><span class="meta">' + esc([n.d ? 'Publicado em ' + n.d : '', n.own && n.read ? n.read + ' min de leitura' : (n.own ? '' : 'com informações de ' + n.src)].filter(Boolean).join(' · ')) + '</span></div>' +
+    '<div class="textsize" role="group" aria-label="Tamanho do texto"><span>Texto</span><button class="icon-btn" type="button" data-size="-1" aria-label="Diminuir texto">A−</button><button class="icon-btn" type="button" data-size="1" aria-label="Aumentar texto">A+</button></div></div>';
+  h += '<figure><img class="thumb" ' + srcAttr(n) + ' alt="' + esc(n.photo ? n.photoAlt : 'Imagem ilustrativa: ' + n.title) + '" data-alt2="' + esc('Ilustração da editoria ' + c.name) + '"><figcaption>' + esc(n.photo ? n.credit : 'Imagem ilustrativa') + '</figcaption></figure>';
+  h += '<div class="body">' + bodyParts.join('') + '</div>';
+  if (!n.own) {
+    h += '<div class="callout"><p>Esta é uma síntese feita pela Novera a partir da reportagem de <b>' + esc(n.src) + '</b>. Leia o texto completo, com todos os detalhes, no site original.</p><a class="btn" href="' + esc(n.url) + '" target="_blank" rel="noopener">Ler em ' + esc(n.src) + ' ↗</a></div>';
+  }
+  const srcs = n.own ? n.sources : [[n.src, n.url]];
+  h += '<div class="sources">' + (srcs.length > 1 ? 'Fontes: ' : 'Fonte: ') + srcs.map(s => '<a href="' + esc(s[1]) + '" target="_blank" rel="noopener">' + esc(s[0]) + '</a>').join(', ') + '.</div>';
+  h += '<nav class="pager" aria-label="Mais matérias de ' + esc(c.name) + '">' +
+    (prev ? '<a href="' + link(prev) + '"><span class="dir">← Mais recente</span><span class="t">' + esc(prev.title) + '</span></a>' : '<span></span>') +
+    (next ? '<a class="next" href="' + link(next) + '"><span class="dir">Anterior →</span><span class="t">' + esc(next.title) + '</span></a>' : '<span></span>') + '</nav>';
+  h += '</article>';
+  h += '<section style="margin-top:48px" aria-labelledby="rel-h"><div class="sec-head"><h2 id="rel-h">Mais em ' + esc(c.name) + '</h2><a class="more" href="#' + c.id + '">Ver todas →</a></div><div class="related">' + related.map(x => cardStack(x, false, true)).join('') + '</div></section>';
+  return h;
+}
+
+function normalize(s) { return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+function searchResults() {
+  const q = normalize(state.query.trim());
+  let pool = NEWS;
+  if (state.searchCat !== 'todas') pool = pool.filter(n => n.cat === state.searchCat);
+  if (!q) return { list: pool.slice().sort((a, b) => b.t.localeCompare(a.t)), terms: [] };
+  const terms = q.split(/\s+/).filter(Boolean);
+  const scored = pool.map(n => {
+    const title = normalize(n.title), sum = normalize(n.sum), body = normalize(n.body.join(' ') + ' ' + (n.src || '') + ' ' + catName(n.cat));
+    let score = 0;
+    for (const t of terms) {
+      if (title.includes(t)) score += 5;
+      else if (sum.includes(t)) score += 3;
+      else if (body.includes(t)) score += 1;
+      else return null;
+    }
+    return { n, score };
+  }).filter(Boolean).sort((a, b) => b.score - a.score || b.n.t.localeCompare(a.n.t));
+  return { list: scored.map(x => x.n), terms };
+}
+function highlighter(terms) {
+  if (!terms.length) return null;
+  return text => {
+    const src = String(text), norm = normalize(src);
+    const marks = new Array(src.length).fill(false);
+    terms.forEach(t => { let i = norm.indexOf(t); while (i !== -1) { for (let k = i; k < i + t.length; k++) marks[k] = true; i = norm.indexOf(t, i + 1); } });
+    let out = '', open = false;
+    for (let i = 0; i < src.length; i++) {
+      if (marks[i] && !open) { out += '<mark>'; open = true; }
+      if (!marks[i] && open) { out += '</mark>'; open = false; }
+      out += esc(src[i]);
+    }
+    return out + (open ? '</mark>' : '');
+  };
+}
+function resultsHTML() {
+  const r = searchResults();
+  const hl = highlighter(r.terms);
+  const label = state.query.trim() ? (r.list.length + (r.list.length === 1 ? ' resultado' : ' resultados') + ' para “' + esc(state.query.trim()) + '”') : 'Todas as ' + r.list.length + ' notícias, das mais recentes para as mais antigas';
+  if (!r.list.length) return '<p class="meta" role="status">' + label + '</p><div class="empty">Nenhuma notícia encontrada. Tente outra palavra, como <b>Senado</b>, <b>Pix</b> ou <b>Libertadores</b>, ou escolha “Todas” nas editorias.</div>';
+  return '<p class="meta" role="status">' + label + '</p><div class="rowlist">' + r.list.map(n => cardRow(n, true, hl)).join('') + '</div>';
+}
+function viewSearch() {
+  let h = '<div class="page-head"><div class="crumbs"><a href="#inicio">Início</a> › Busca</div><h1>Buscar notícias</h1><p>Procure por palavra nos títulos, resumos e textos das ' + NEWS.length + ' notícias.</p></div>';
+  h += '<form class="search-form" id="search-form" role="search"><label class="sr" for="q">Termo de busca</label><input id="q" type="search" placeholder="Ex.: Senado, Pix, Libertadores" value="' + esc(state.query) + '" autocomplete="off"><button class="btn" type="submit">Buscar</button></form>';
+  h += '<div class="chips" role="group" aria-label="Filtrar por editoria" style="margin-top:14px">' +
+    [{ id: 'todas', name: 'Todas' }].concat(CATS).map(c => '<button class="chip" type="button" data-cat="' + c.id + '" aria-pressed="' + (state.searchCat === c.id) + '">' + esc(c.name) + '</button>').join('') + '</div>';
+  h += '<div id="results" style="margin-top:22px">' + resultsHTML() + '</div>';
+  return h;
+}
+
+const INST_PAGES = {
+  'sobre': ['Sobre a Novera', '<p>A Novera é um jornal digital de notícias do Brasil e do mundo. Nosso lema é <b>Informação sem fronteiras</b>: reunir, num só lugar, o que importa em política, economia, esportes, cultura, tecnologia e assuntos internacionais.</p><h2>Como trabalhamos</h2><p>Publicamos dois tipos de conteúdo, sempre identificados:</p><ul><li><b>Da redação</b>: matérias apuradas e escritas pela equipe da Novera.</li><li><b>Via parceiros</b>: resumos feitos pela nossa redação a partir de reportagens de outros veículos, com crédito e link para o texto original.</li></ul><p>As ilustrações do site são produzidas pela própria Novera.</p>'],
+  'expediente': ['Expediente', '<p>Preencha com os dados reais da equipe antes de publicar o site.</p><ul><li>Diretor de redação: <span class="placeholder">[NOME]</span></li><li>Editor-chefe: <span class="placeholder">[NOME]</span></li><li>Editores de seção: <span class="placeholder">[NOMES]</span></li><li>Arte e ilustração: <span class="placeholder">[NOME]</span></li><li>Razão social e CNPJ: <span class="placeholder">[DADOS DA EMPRESA]</span></li></ul>'],
+  'politica-editorial': ['Política editorial', '<p>A Novera se compromete com precisão, independência e transparência.</p><h2>Princípios</h2><ul><li>Todo fato publicado tem fonte identificada.</li><li>Conteúdo de terceiros é sempre resumido com palavras próprias, creditado e acompanhado de link para a reportagem original. Não republicamos textos de outros veículos.</li><li>Erros são corrigidos de forma visível, com indicação do que mudou.</li><li>Opinião, quando houver, é separada do noticiário e identificada.</li></ul>'],
+  'privacidade': ['Política de privacidade', '<p>Esta página descreve como a Novera trata dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (Lei 13.709/2018).</p><h2>Dados coletados</h2><p>Coletamos apenas o e-mail informado por quem se inscreve na newsletter e dados de navegação agregados para medir audiência.</p><h2>Seus direitos</h2><p>Você pode pedir acesso, correção ou exclusão dos seus dados a qualquer momento pelo e-mail <span class="placeholder">[E-MAIL DO ENCARREGADO DE DADOS]</span>.</p><p>Revise este texto com um profissional antes de publicar o site.</p>'],
+  'termos': ['Termos de uso', '<p>Ao usar a Novera, você concorda com estes termos.</p><ul><li>O conteúdo da Novera pode ser compartilhado por link. A reprodução integral de matérias depende de autorização.</li><li>Os resumos de conteúdo de parceiros remetem sempre à fonte original, responsável pela reportagem completa.</li><li>A Novera não se responsabiliza por conteúdo de sites externos acessados pelos links.</li></ul><p>Revise este texto com um profissional antes de publicar o site.</p>'],
+  'anuncie': ['Anuncie', '<p>A Novera oferece espaços para marcas que querem falar com leitores interessados em informação de qualidade.</p><ul><li>Banners na página inicial e nas editorias</li><li>Patrocínio da newsletter diária</li><li>Conteúdo de marca, sempre identificado como publicidade</li></ul><p>Contato comercial: <span class="placeholder">[E-MAIL COMERCIAL]</span></p>'],
+  'contato': ['Contato', '<p>Fale com a redação para enviar sugestões de pauta, correções ou dúvidas.</p><p>E-mail da redação: <span class="placeholder">[E-MAIL DA REDAÇÃO]</span></p><form class="contact-form" id="contact-form" novalidate><label for="c-nome">Nome</label><input id="c-nome" type="text" autocomplete="name"><label for="c-email">E-mail</label><input id="c-email" type="email" autocomplete="email"><label for="c-assunto">Assunto</label><select id="c-assunto"><option>Sugestão de pauta</option><option>Correção</option><option>Publicidade</option><option>Outro</option></select><label for="c-msg">Mensagem</label><textarea id="c-msg" rows="5"></textarea><button class="btn" type="submit">Enviar mensagem</button><span class="form-status" id="contact-status" role="status"></span></form>']
+};
+function viewInst(id) {
+  const p = INST_PAGES[id];
+  return '<div class="page-head"><div class="crumbs"><a href="#inicio">Início</a> › Institucional</div><h1>' + esc(p[0]) + '</h1></div><div class="inst">' + p[1] + '</div>';
+}
+function viewNotFound() {
+  return '<div class="page-head"><h1>Página não encontrada</h1><p>O endereço não corresponde a nenhuma matéria ou seção.</p></div><a class="btn" href="#inicio">Ir para a página inicial</a>';
+}
+
+/* ---------- Navegação ---------- */
+const view = document.getElementById('view');
+let current = 'inicio';
+function routeFor(token) {
+  if (!token || token === 'inicio') return { kind: 'home' };
+  if (CAT[token]) return { kind: 'cat', id: token };
+  if (token === 'busca') return { kind: 'search' };
+  if (token.startsWith('m-')) return { kind: 'article', id: token.slice(2) };
+  if (INST_PAGES[token]) return { kind: 'inst', id: token };
+  return { kind: 'missing' };
+}
+function titleFor(r) {
+  if (r.kind === 'cat') return catName(r.id) + ' · Novera';
+  if (r.kind === 'article' && BY_ID[r.id]) return BY_ID[r.id].title + ' · Novera';
+  if (r.kind === 'search') return 'Busca · Novera';
+  if (r.kind === 'inst') return INST_PAGES[r.id][0] + ' · Novera';
+  return 'Novera';
+}
+function render(token, opts) {
+  opts = opts || {};
+  current = token || 'inicio';
+  const r = routeFor(current);
+  let html;
+  if (r.kind === 'home') html = viewHome();
+  else if (r.kind === 'cat') html = viewCat(r.id);
+  else if (r.kind === 'search') html = viewSearch();
+  else if (r.kind === 'article') html = viewArticle(r.id);
+  else if (r.kind === 'inst') html = viewInst(r.id);
+  else html = viewNotFound();
+  view.innerHTML = html;
+  document.title = titleFor(r);
+  const activeCat = r.kind === 'cat' ? r.id : (r.kind === 'article' && BY_ID[r.id] ? BY_ID[r.id].cat : (r.kind === 'home' ? 'inicio' : ''));
+  document.querySelectorAll('[data-nav]').forEach(a => { if (a.dataset.nav === activeCat) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+  if (!opts.keepScroll) window.scrollTo(0, 0);
+  if (r.kind === 'search') { const q = document.getElementById('q'); if (q && !opts.noFocus) q.focus(); }
+}
+function navigate(token) {
+  closeDrawer();
+  if (token === current) { render(token); return; }
+  try { history.pushState(null, '', '#' + token); } catch (e) { try { location.hash = token; } catch (e2) {} }
+  render(token);
+}
+window.addEventListener('popstate', () => render(location.hash.slice(1) || 'inicio'));
+window.addEventListener('hashchange', () => { const t = location.hash.slice(1) || 'inicio'; if (t !== current) render(t); });
+
+document.addEventListener('click', e => {
+  const a = e.target.closest('a[href^="#"]');
+  if (a) { e.preventDefault(); navigate(a.getAttribute('href').slice(1) || 'inicio'); return; }
+  const more = e.target.closest('#more-btn');
+  if (more) { state.latestShown = Math.min(SORTED.length, state.latestShown + 10); const y = window.scrollY; render('inicio', { keepScroll: true }); window.scrollTo(0, y); return; }
+  const chip = e.target.closest('.chip');
+  if (chip) { state.searchCat = chip.dataset.cat; document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', String(c === chip))); document.getElementById('results').innerHTML = resultsHTML(); return; }
+  const size = e.target.closest('[data-size]');
+  if (size) { state.textSize = Math.max(16, Math.min(26, state.textSize + Number(size.dataset.size) * 2)); const art = document.querySelector('.article'); if (art) art.style.setProperty('--body-size', state.textSize + 'px'); return; }
+});
+let searchTimer;
+document.addEventListener('input', e => {
+  if (e.target.id === 'q') { state.query = e.target.value; clearTimeout(searchTimer); searchTimer = setTimeout(() => { const r = document.getElementById('results'); if (r) r.innerHTML = resultsHTML(); }, 120); }
+});
+document.addEventListener('submit', e => {
+  e.preventDefault();
+  const f = e.target;
+  if (f.id === 'search-form') { state.query = document.getElementById('q').value; document.getElementById('results').innerHTML = resultsHTML(); return; }
+  if (f.matches('[data-newsletter]') || f.id === 'foot-form') {
+    const input = f.querySelector('input[type="email"]'); const status = f.querySelector('.form-status');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim())) { status.textContent = 'Digite um e-mail válido, como nome@exemplo.com.'; input.focus(); return; }
+    status.textContent = 'Este é um protótipo: o envio ainda não está ligado a um serviço de e-mail.'; return;
+  }
+  if (f.id === 'contact-form') { document.getElementById('contact-status').textContent = 'Este é um protótipo: a mensagem não foi enviada. Ligue o formulário a um serviço de e-mail para ativar.'; }
+});
+
+/* Drawer */
+const drawer = document.getElementById('drawer'), overlay = document.getElementById('overlay'), menuBtn = document.getElementById('menu-btn');
+function openDrawer() { drawer.classList.add('open'); drawer.setAttribute('aria-hidden', 'false'); overlay.hidden = false; menuBtn.setAttribute('aria-expanded', 'true'); document.getElementById('close-btn').focus(); }
+function closeDrawer() { if (!drawer.classList.contains('open')) return; drawer.classList.remove('open'); drawer.setAttribute('aria-hidden', 'true'); overlay.hidden = true; menuBtn.setAttribute('aria-expanded', 'false'); }
+menuBtn.addEventListener('click', openDrawer);
+document.getElementById('close-btn').addEventListener('click', () => { closeDrawer(); menuBtn.focus(); });
+overlay.addEventListener('click', closeDrawer);
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && drawer.classList.contains('open')) { closeDrawer(); menuBtn.focus(); } });
+document.getElementById('to-top').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+/* Menus */
+const count = id => NEWS.filter(n => n.cat === id).length;
+document.getElementById('nav-list').innerHTML = '<li><a href="#inicio" data-nav="inicio">Início</a></li>' + CATS.map(c => '<li><a href="#' + c.id + '" data-nav="' + c.id + '">' + esc(c.name) + '</a></li>').join('');
+document.getElementById('drawer-cats').innerHTML = '<li><a href="#inicio" data-nav="inicio">Início</a></li>' + CATS.map(c => '<li><a href="#' + c.id + '" data-nav="' + c.id + '">' + esc(c.name) + '<span class="count">' + count(c.id) + '</span></a></li>').join('');
+const instLinks = INST.map(p => '<li><a href="#' + p.id + '">' + esc(p.name) + '</a></li>').join('');
+document.getElementById('drawer-inst').innerHTML = instLinks;
+document.getElementById('foot-inst').innerHTML = instLinks;
+document.getElementById('foot-cats').innerHTML = '<li><a href="#inicio">Início</a></li>' + CATS.map(c => '<li><a href="#' + c.id + '">' + esc(c.name) + '</a></li>').join('') + '<li><a href="#busca">Buscar notícias</a></li>';
+
+render(location.hash.slice(1) || 'inicio', { noFocus: true });
+</script>

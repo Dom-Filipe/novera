@@ -22,8 +22,11 @@ Para ativar o GitHub Pages: **Settings › Pages › Source: Deploy from a branc
 
 | Arquivo | Conteúdo |
 |---|---|
-| `index.html` | O site completo, com notícias e ilustrações embutidas |
-| `news.js` | Cópia das 60 notícias, para edição e futura migração |
+| `index.html` | O site pronto, gerado pelo `build.js`. Não editar à mão |
+| `news.js` | Todo o conteúdo: topo, destaques e as 60 notícias |
+| `src/template.html` | Layout, estilos e lógica do site |
+| `build.js` | Valida o `news.js` e gera o `index.html` (`node build.js`) |
+| `ATUALIZACAO.md` | Roteiro da atualização diária das notícias |
 | `assets/` | Ilustrações originais da Novera em SVG |
 | `fotos/` | Imagens das notícias em WebP, com o nome igual ao identificador da notícia |
 | `PROMPTS-IMAGENS.md` | Prompts para gerar as imagens que faltam |

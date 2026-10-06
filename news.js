@@ -1,3 +1,27 @@
+/* ============================================================
+   NOVERA: conteúdo do site. Edite este arquivo e rode `node build.js`.
+   Regras completas em ATUALIZACAO.md.
+   ============================================================ */
+
+/* Topo do site: data da edição e mercado */
+const META = {
+  dataExtenso: 'Terça-feira, 6 de outubro de 2026',
+  edicao: '6 out 2026',
+  ibovespa: { valor: '206.911', variacao: '7,70%', sobe: true },
+  dolar: { valor: 'R$ 5,00', variacao: '4,12%', sobe: false },
+  fechamento: '5/10'
+};
+
+/* Home: destaque principal, dois laterais e três da faixa de baixo (IDs de notícias "own: true") */
+const FEATURED = {
+  lead: 'segundo-turno-flavio-lula',
+  side: ['ibovespa-supera-200-mil-pontos', 'ira-estreito-de-ormuz-fechado'],
+  also: ['libertadores-semifinais-tres-brasileiros', 'mostra-sao-paulo-50-edicao', 'nobel-medicina-optogenetica']
+};
+
+/* Home: "Escolhas da redação" (5 IDs) */
+const PICKS = ['pl-maior-bancada-senado', 'brasil-goleia-india-calcuta', 'petrobras-recorde-valor-de-mercado', 'pix-aproximacao-sem-limite-500', 'bienal-sao-paulo-belo-horizonte'];
+
 const U = {
   sen: 'https://www12.senado.leg.br/noticias/materias/2026/10/04/flavio-bolsonaro-e-lula-disputam-o-segundo-turno-das-eleicoes-para-presidente',
   cnnSen: 'https://www.cnnbrasil.com.br/eleicoes/divisao-bancada-senado/',
