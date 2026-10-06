@@ -54,6 +54,7 @@ const NEWS = [
   sources: [['Agência Senado', U.sen]] },
 
 { id: 'comparecimento-primeiro-turno', cat: 'nacional', own: false, t: '2026-10-04T23', d: '4 out 2026', img: 'eleicao', src: 'Agência Senado', url: U.sen,
+  photo: 'fotos/comparecimento-primeiro-turno.webp', photoAlt: 'Comparecimento de 78,92% no 1º turno', credit: 'Imagem ilustrativa',
   title: 'Comparecimento no primeiro turno foi de 78,92%',
   sum: 'A abstenção ficou em 21,08%. Votos nulos somaram 2,93% e brancos, 1,84%.',
   body: [
@@ -62,6 +63,7 @@ const NEWS = [
   ] },
 
 { id: 'pl-maior-bancada-senado', cat: 'nacional', own: true, t: '2026-10-05T08', d: '5 out 2026', img: 'congresso', read: 3,
+  photo: 'fotos/pl-maior-bancada-senado.webp', photoAlt: 'PL elege maior bancada do Senado', credit: 'Imagem ilustrativa',
   title: 'PL elege 19 senadores e terá a maior bancada do Senado a partir de 2027',
   sum: 'Partido de Flávio Bolsonaro passa de 15 para 28 cadeiras. O PT terá 9 senadores e o MDB, 8.',
   body: [
