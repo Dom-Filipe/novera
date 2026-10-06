@@ -1019,6 +1019,19 @@ const state = { latestShown: 10, searchCat: 'todas', query: '', textSize: 20 };
 function esc(s) { return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
 function img(key) { return IMG[key] || IMG.mundo; }
 function pic(n) { return n.photo || img(n.img); }
+/* Foto da notícia: usa n.photo se definida; senão tenta fotos/<id>.webp e, se não existir, cai na ilustração */
+function srcAttr(n) {
+  if (n.photo) return 'src="' + esc(n.photo) + '"';
+  return 'src="fotos/' + n.id + '.webp" data-fb="' + n.img + '"';
+}
+document.addEventListener('error', e => {
+  const t = e.target;
+  if (!t || t.tagName !== 'IMG' || !t.dataset.fb || t.dataset.fell) return;
+  t.dataset.fell = '1';
+  t.src = img(t.dataset.fb);
+  const fig = t.closest('figure');
+  if (fig) { t.alt = t.dataset.alt2 || ''; const fc = fig.querySelector('figcaption'); if (fc) fc.textContent = 'Ilustração: Novera'; }
+}, true);
 function catName(id) { return CAT[id] ? CAT[id].name : id; }
 function badge(n) { return n.own ? '<span class="badge own">Da redação</span>' : '<span class="badge agg">via ' + esc(n.src) + '</span>'; }
 function metaLine(n, showCat) {
@@ -1031,13 +1044,13 @@ function metaLine(n, showCat) {
 function link(n) { return '#m-' + n.id; }
 
 function cardLead(n, showCat) {
-  return '<article class="card lead"><a href="' + link(n) + '"><img class="thumb" src="' + pic(n) + '" alt=""></a>' +
+  return '<article class="card lead"><a href="' + link(n) + '"><img class="thumb" ' + srcAttr(n) + ' alt=""></a>' +
     '<div class="kicker">' + badge(n) + '<span>' + esc(catName(n.cat)) + '</span></div>' +
     '<h3><a href="' + link(n) + '">' + esc(n.title) + '</a></h3><p>' + esc(n.sum) + '</p>' +
     '<div class="meta">' + esc(metaLine(n, false)) + '</div></article>';
 }
 function cardStack(n, showCat, hideSum) {
-  return '<article class="card"><a href="' + link(n) + '" tabindex="-1" aria-hidden="true"><img class="thumb" src="' + pic(n) + '" alt=""></a>' +
+  return '<article class="card"><a href="' + link(n) + '" tabindex="-1" aria-hidden="true"><img class="thumb" ' + srcAttr(n) + ' alt=""></a>' +
     '<div class="kicker">' + badge(n) + (showCat ? '<span>' + esc(catName(n.cat)) + '</span>' : '') + '</div>' +
     '<h3><a href="' + link(n) + '">' + esc(n.title) + '</a></h3>' + (hideSum ? '' : '<p>' + esc(n.sum) + '</p>') +
     '<div class="meta">' + esc(metaLine(n, false)) + '</div></article>';
@@ -1045,7 +1058,7 @@ function cardStack(n, showCat, hideSum) {
 function cardRow(n, showCat, hl) {
   const t = hl ? hl(n.title) : esc(n.title);
   const s = hl ? hl(n.sum) : esc(n.sum);
-  return '<article class="row"><a href="' + link(n) + '" tabindex="-1" aria-hidden="true"><img class="thumb" src="' + pic(n) + '" alt=""></a>' +
+  return '<article class="row"><a href="' + link(n) + '" tabindex="-1" aria-hidden="true"><img class="thumb" ' + srcAttr(n) + ' alt=""></a>' +
     '<div class="txt"><div class="kicker">' + badge(n) + (showCat ? '<span>' + esc(catName(n.cat)) + '</span>' : '') + '</div>' +
     '<h3><a href="' + link(n) + '">' + t + '</a></h3><p>' + s + '</p>' +
     '<div class="meta">' + esc(metaLine(n, false)) + '</div></div></article>';
@@ -1072,7 +1085,7 @@ function viewHome() {
   h += '<div class="stack">';
   h += '<section aria-label="Destaques"><div class="hero">' + cardLead(lead) +
     '<div class="hero-side">' + side.map(n => cardStack(n, true, false)).join('') + '</div></div>' +
-    '<div class="also">' + also.map(n => '<article class="mini"><a href="' + link(n) + '" tabindex="-1" aria-hidden="true"><img class="thumb" src="' + pic(n) + '" alt=""></a><div><div class="kicker" style="margin-bottom:4px"><span>' + esc(catName(n.cat)) + '</span></div><h3><a href="' + link(n) + '">' + esc(n.title) + '</a></h3><div class="meta">' + esc(n.d) + '</div></div></article>').join('') + '</div></section>';
+    '<div class="also">' + also.map(n => '<article class="mini"><a href="' + link(n) + '" tabindex="-1" aria-hidden="true"><img class="thumb" ' + srcAttr(n) + ' alt=""></a><div><div class="kicker" style="margin-bottom:4px"><span>' + esc(catName(n.cat)) + '</span></div><h3><a href="' + link(n) + '">' + esc(n.title) + '</a></h3><div class="meta">' + esc(n.d) + '</div></div></article>').join('') + '</div></section>';
   h += '<div class="split"><section class="latest" aria-labelledby="latest-h"><div class="sec-head"><h2 id="latest-h">Últimas notícias</h2><span class="meta">' + NEWS.length + ' notícias em 6 editorias</span></div><div class="rowlist">' +
     latest.map(n => cardRow(n, true)).join('') + '</div>' +
     (state.latestShown < SORTED.length ? '<div class="load-more"><button class="btn ghost" type="button" id="more-btn">Carregar mais notícias</button></div>' : '') +
@@ -1093,7 +1106,7 @@ function viewCat(id) {
   const lead = items.find(n => n.own) || items[0];
   const rest = items.filter(n => n !== lead);
   let h = '<div class="page-head"><div class="crumbs"><a href="#inicio">Início</a> › ' + esc(c.name) + '</div><h1>' + esc(c.name) + '</h1><p>' + esc(c.desc) + '</p><span class="meta">' + items.length + ' notícias · ' + items.filter(n => n.own).length + ' da redação</span></div>';
-  h += '<div class="cat-lead"><a href="' + link(lead) + '" tabindex="-1" aria-hidden="true"><img class="thumb" src="' + pic(lead) + '" alt=""></a><div class="card lead"><div class="kicker">' + badge(lead) + '</div><h3><a href="' + link(lead) + '">' + esc(lead.title) + '</a></h3><p>' + esc(lead.sum) + '</p><div class="meta">' + esc(metaLine(lead)) + '</div></div></div>';
+  h += '<div class="cat-lead"><a href="' + link(lead) + '" tabindex="-1" aria-hidden="true"><img class="thumb" ' + srcAttr(lead) + ' alt=""></a><div class="card lead"><div class="kicker">' + badge(lead) + '</div><h3><a href="' + link(lead) + '">' + esc(lead.title) + '</a></h3><p>' + esc(lead.sum) + '</p><div class="meta">' + esc(metaLine(lead)) + '</div></div></div>';
   h += '<div class="split"><section aria-label="Notícias de ' + esc(c.name) + '"><div class="rowlist">' + rest.map(n => cardRow(n, false)).join('') + '</div></section>';
   const others = CATS.filter(x => x.id !== id).map(x => NEWS.find(n => n.cat === x.id && n.own));
   h += '<div class="aside"><section class="picks" aria-labelledby="oth-h"><div class="sec-head"><h2 id="oth-h" style="font-size:24px">Em outras editorias</h2></div><ol>' +
@@ -1138,7 +1151,7 @@ function viewArticle(id) {
   h += '<h1>' + esc(n.title) + '</h1><p class="dek">' + esc(n.sum) + '</p>';
   h += '<div class="byline"><div class="who"><b>' + (n.own ? 'Por Redação Novera' : 'Resumo da Redação Novera') + '</b><span class="meta">' + esc([n.d ? 'Publicado em ' + n.d : '', n.own && n.read ? n.read + ' min de leitura' : (n.own ? '' : 'com informações de ' + n.src)].filter(Boolean).join(' · ')) + '</span></div>' +
     '<div class="textsize" role="group" aria-label="Tamanho do texto"><span>Texto</span><button class="icon-btn" type="button" data-size="-1" aria-label="Diminuir texto">A−</button><button class="icon-btn" type="button" data-size="1" aria-label="Aumentar texto">A+</button></div></div>';
-  h += '<figure><img class="thumb" src="' + pic(n) + '" alt="' + esc(n.photo ? n.photoAlt : 'Ilustração da editoria ' + c.name) + '"><figcaption>' + esc(n.photo ? n.credit : 'Ilustração: Novera') + '</figcaption></figure>';
+  h += '<figure><img class="thumb" ' + srcAttr(n) + ' alt="' + esc(n.photo ? n.photoAlt : 'Imagem ilustrativa: ' + n.title) + '" data-alt2="' + esc('Ilustração da editoria ' + c.name) + '"><figcaption>' + esc(n.photo ? n.credit : 'Imagem ilustrativa') + '</figcaption></figure>';
   h += '<div class="body">' + bodyParts.join('') + '</div>';
   if (!n.own) {
     h += '<div class="callout"><p>Esta é uma síntese feita pela Novera a partir da reportagem de <b>' + esc(n.src) + '</b>. Leia o texto completo, com todos os detalhes, no site original.</p><a class="btn" href="' + esc(n.url) + '" target="_blank" rel="noopener">Ler em ' + esc(n.src) + ' ↗</a></div>';

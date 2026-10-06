@@ -25,6 +25,12 @@ Para ativar o GitHub Pages: **Settings › Pages › Source: Deploy from a branc
 | `index.html` | O site completo, com notícias e ilustrações embutidas |
 | `news.js` | Cópia das 60 notícias, para edição e futura migração |
 | `assets/` | Ilustrações originais da Novera em SVG |
+| `fotos/` | Imagens das notícias em WebP, com o nome igual ao identificador da notícia |
+| `PROMPTS-IMAGENS.md` | Prompts para gerar as imagens que faltam |
+
+## Imagens das notícias
+
+Cada notícia procura sozinha o arquivo `fotos/<identificador>.webp`. Se ele existir, a imagem aparece com a legenda "Imagem ilustrativa". Se não existir, aparece a ilustração da editoria. A lista de nomes e os prompts estão em `PROMPTS-IMAGENS.md`.
 
 ## Antes de ir ao ar
 
