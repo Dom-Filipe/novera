@@ -428,6 +428,7 @@ const NEWS = [
 
 /* ===================== ECONOMIA ===================== */
 { id: 'ibovespa-supera-200-mil-pontos', cat: 'economia', own: true, t: '2026-10-05T18', d: '5 out 2026', img: 'mercado', read: 3,
+  photo: 'fotos/ibovespa-supera-200-mil-pontos.webp', photoAlt: 'Gráfico de alta em verde sobre a ponte Estaiada e prédios de São Paulo à noite', credit: 'Imagem ilustrativa',
   title: 'Ibovespa supera 200 mil pontos pela primeira vez após o 1º turno',
   sum: 'O índice subiu 7,70% na segunda-feira e fechou em 206.911 pontos. O dólar caiu 4,12% e terminou cotado a R$ 5,00.',
   body: [
