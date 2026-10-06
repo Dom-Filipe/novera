@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+<rect width="1600" height="900" fill="#F0F4F8"/>
+<g stroke="#D9E2EC" stroke-width="2">
+<line x1="120" y1="180" x2="1480" y2="180"/><line x1="120" y1="330" x2="1480" y2="330"/><line x1="120" y1="480" x2="1480" y2="480"/><line x1="120" y1="630" x2="1480" y2="630"/><line x1="120" y1="780" x2="1480" y2="780"/>
+</g>
+<g fill="#BCCCDC">
+<rect x="160" y="640" width="60" height="140"/><rect x="260" y="610" width="60" height="170"/><rect x="360" y="650" width="60" height="130"/><rect x="460" y="600" width="60" height="180"/><rect x="560" y="620" width="60" height="160"/><rect x="660" y="590" width="60" height="190"/><rect x="760" y="610" width="60" height="170"/><rect x="860" y="570" width="60" height="210"/><rect x="960" y="590" width="60" height="190"/><rect x="1060" y="560" width="60" height="220"/><rect x="1160" y="520" width="60" height="260"/><rect x="1260" y="430" width="60" height="350"/><rect x="1360" y="380" width="60" height="400"/>
+</g>
+<polyline points="190,560 290,520 390,570 490,500 590,530 690,480 790,505 890,450 990,470 1090,430 1190,400 1290,250 1390,170" fill="none" stroke="#102A43" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="1390" cy="170" r="30" fill="#F0B429"/>
+<circle cx="1390" cy="170" r="12" fill="#102A43"/>
+<path d="M1290 120 L1390 60 L1360 160 Z" fill="#102A43" opacity="0"/>
+</svg>

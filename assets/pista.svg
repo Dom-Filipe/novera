@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+<rect width="1600" height="900" fill="#1F2933"/>
+<path d="M-100 820 C 300 820, 500 420, 900 400 S 1500 260, 1750 120" fill="none" stroke="#3E4C59" stroke-width="300"/>
+<path d="M-100 820 C 300 820, 500 420, 900 400 S 1500 260, 1750 120" fill="none" stroke="#F0F4F8" stroke-width="6" stroke-dasharray="40 30"/>
+<path d="M-100 670 C 300 670, 500 270, 900 250 S 1500 110, 1750 -30" fill="none" stroke="#E12D39" stroke-width="16" stroke-dasharray="40 40"/>
+<path d="M-100 670 C 300 670, 500 270, 900 250 S 1500 110, 1750 -30" fill="none" stroke="#F0F4F8" stroke-width="16" stroke-dasharray="40 40" stroke-dashoffset="40"/>
+<g transform="translate(860 360) rotate(-12)">
+<rect x="-120" y="-30" width="240" height="60" rx="24" fill="#F0B429"/>
+<rect x="-160" y="-50" width="40" height="100" rx="6" fill="#102A43"/>
+<rect x="110" y="-44" width="30" height="88" rx="6" fill="#102A43"/>
+<rect x="-80" y="-62" width="56" height="26" rx="8" fill="#102A43"/><rect x="40" y="-62" width="56" height="26" rx="8" fill="#102A43"/>
+<rect x="-80" y="36" width="56" height="26" rx="8" fill="#102A43"/><rect x="40" y="36" width="56" height="26" rx="8" fill="#102A43"/>
+<ellipse cx="0" cy="0" rx="34" ry="18" fill="#102A43"/>
+</g>
+</svg>

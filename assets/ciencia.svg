@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+<rect width="1600" height="900" fill="#0B1F33"/>
+<polygon points="0,0 360,0 920,420 860,500" fill="#2186EB" opacity="0.22"/>
+<polygon points="0,0 220,0 900,440 880,470" fill="#47A3F3" opacity="0.35"/>
+<g stroke="#829AB1" stroke-width="12" stroke-linecap="round" fill="none">
+<path d="M900 450 C 1000 380, 1060 300, 1120 180"/>
+<path d="M1120 180 L1180 110"/><path d="M1120 180 L1060 100"/>
+<path d="M900 450 C 1050 460, 1200 420, 1340 360"/>
+<path d="M1340 360 L1430 330"/><path d="M1340 360 L1400 440"/>
+<path d="M900 450 C 980 560, 1000 650, 980 780"/>
+<path d="M980 780 L920 860"/><path d="M980 780 L1060 850"/>
+<path d="M900 450 C 820 560, 720 640, 600 690"/>
+<path d="M900 450 C 1100 560, 1300 640, 1520 700" stroke-width="16"/>
+</g>
+<circle cx="900" cy="450" r="92" fill="#486581"/>
+<circle cx="900" cy="450" r="92" fill="none" stroke="#47A3F3" stroke-width="10"/>
+<circle cx="900" cy="450" r="34" fill="#F0B429"/>
+<g fill="#47A3F3">
+<circle cx="1120" cy="180" r="14"/><circle cx="1340" cy="360" r="14"/><circle cx="980" cy="780" r="14"/><circle cx="600" cy="690" r="14"/>
+</g>
+</svg>
