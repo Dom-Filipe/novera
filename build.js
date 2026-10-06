@@ -64,6 +64,20 @@ CATS.forEach(c => {
   if (!ids.has(id)) avisos.push(`destaque/escolha "${id}" não existe e será substituído automaticamente`);
 });
 ['dataExtenso', 'edicao', 'fechamento'].forEach(k => { if (!META[k]) erros.push(`META.${k} vazio`); });
+if (!/^https:\/\/[^/]+[^/]$/.test(META.siteUrl || '')) erros.push('META.siteUrl deve ser o endereço do site, com https:// e sem barra no final');
+if (/ENDERECO-DO-SITE/.test(META.siteUrl || '')) avisos.push('META.siteUrl ainda não foi configurado: os links das redes sociais não vão funcionar');
+
+/* Redes sociais: todo link /n/<id> do arquivo mais recente precisa apontar para uma notícia que está no site */
+const redesDir = path.join(ROOT, 'redes');
+const redesArqs = fs.existsSync(redesDir) ? fs.readdirSync(redesDir).filter(f => /^\d{4}-\d{2}-\d{2}\.md$/.test(f)).sort() : [];
+if (redesArqs.length) {
+  const ultimo = redesArqs[redesArqs.length - 1];
+  const txt = fs.readFileSync(path.join(redesDir, ultimo), 'utf8');
+  const usados = [...txt.matchAll(/\/n\/([a-z0-9-]+)/g)].map(m => m[1]);
+  if (!usados.length) erros.push(`redes/${ultimo}: nenhum link de notícia (/n/<id>) encontrado`);
+  [...new Set(usados)].forEach(id => { if (!ids.has(id)) erros.push(`redes/${ultimo}: link para "${id}", que não está no site`); });
+  if (META.siteUrl && txt.includes('/n/') && !txt.includes(META.siteUrl + '/n/')) erros.push(`redes/${ultimo}: os links precisam começar com ${META.siteUrl}/n/`);
+}
 
 if (erros.length) {
   console.error('ERROS (nada foi gravado):\n- ' + erros.join('\n- '));
@@ -97,6 +111,10 @@ const fim = page.indexOf('</style>') + '</style>'.length;
 const html = '<!doctype html>\n<html lang="pt-BR">\n<head>\n<meta charset="utf-8">\n' +
   '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n' +
   '<meta name="description" content="Novera: informação sem fronteiras. Notícias do Brasil e do mundo.">\n' +
+  `<meta property="og:type" content="website"><meta property="og:site_name" content="Novera">\n` +
+  `<meta property="og:title" content="Novera: informação sem fronteiras"><meta property="og:description" content="Notícias do Brasil e do mundo.">\n` +
+  `<meta property="og:url" content="${META.siteUrl}/"><meta property="og:image" content="${META.siteUrl}/og/padrao.jpg">\n` +
+  `<meta name="twitter:card" content="summary_large_image">\n` +
   '<style>[hidden]{display:none!important} body{margin:0}</style>\n' +
   page.slice(0, fim) + '\n</head>\n<body>\n' + page.slice(fim) + '\n</body>\n</html>\n';
 
@@ -108,5 +126,57 @@ try { new vm.Script(script, { filename: 'index.html' }); } catch (e) {
 }
 
 fs.writeFileSync(path.join(ROOT, 'index.html'), html);
+
+/* ---------- Páginas de compartilhamento: /n/<id> ----------
+ * Cada notícia ganha uma página leve com título, resumo e imagem para a prévia
+ * do WhatsApp, Instagram e X. Ela abre a matéria no site na mesma hora.
+ * Páginas de notícias que saíram do site continuam existindo e levam à página inicial,
+ * para que posts antigos nas redes não fiquem com link quebrado.
+ */
+const attr = s => esc(s).replace(/"/g, '&quot;');
+const nDir = path.join(ROOT, 'n');
+fs.mkdirSync(nDir, { recursive: true });
+const imagemOg = n => fs.existsSync(path.join(ROOT, 'og', n.id + '.jpg')) ? `og/${n.id}.jpg` : 'og/padrao.jpg';
+const pagina = (titulo, resumo, url, imagem, destino) => `<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(titulo)}</title>
+<meta name="description" content="${attr(resumo)}">
+<link rel="canonical" href="${attr(url)}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Novera">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="${attr(titulo)}">
+<meta property="og:description" content="${attr(resumo)}">
+<meta property="og:url" content="${attr(url)}">
+<meta property="og:image" content="${attr(META.siteUrl + '/' + imagem)}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${attr(titulo)}">
+<meta name="twitter:description" content="${attr(resumo)}">
+<meta name="twitter:image" content="${attr(META.siteUrl + '/' + imagem)}">
+<meta http-equiv="refresh" content="0; url=${attr(destino)}">
+<script>location.replace(${JSON.stringify(destino)});</script>
+<style>body{font-family:Georgia,serif;background:#102A43;color:#fff;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;padding:16px;text-align:center}a{color:#F0B429}</style>
+</head>
+<body><p>Abrindo a Novera… <a href="${attr(destino)}">Clique aqui se não abrir.</a></p></body>
+</html>
+`;
+NEWS.forEach(n => {
+  fs.writeFileSync(path.join(nDir, n.id + '.html'),
+    pagina(n.title + ' · Novera', n.sum, `${META.siteUrl}/n/${n.id}`, imagemOg(n), '/#m-' + n.id));
+});
+let arquivadas = 0;
+fs.readdirSync(nDir).filter(f => f.endsWith('.html')).forEach(f => {
+  const id = f.slice(0, -5);
+  if (ids.has(id)) return;
+  fs.writeFileSync(path.join(nDir, f),
+    pagina('Novera: informação sem fronteiras', 'Notícias do Brasil e do mundo.', `${META.siteUrl}/`, 'og/padrao.jpg', '/#inicio'));
+  arquivadas++;
+});
 const comFoto = NEWS.filter(n => n.photo || fs.existsSync(path.join(ROOT, 'fotos', n.id + '.webp'))).length;
+console.log(`páginas de compartilhamento: ${NEWS.length} ativas, ${arquivadas} antigas levando à página inicial.`);
 console.log(`index.html gerado: ${NEWS.length} notícias, ${comFoto} com foto, ${NEWS.filter(n => n.own).length} da redação.`);

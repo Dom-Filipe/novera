@@ -27,6 +27,9 @@ Para ativar o GitHub Pages: **Settings › Pages › Source: Deploy from a branc
 | `src/template.html` | Layout, estilos e lógica do site |
 | `build.js` | Valida o `news.js` e gera o `index.html` (`node build.js`) |
 | `ATUALIZACAO.md` | Roteiro da atualização diária das notícias |
+| `redes/` | Textos prontos do dia para WhatsApp, Instagram e X |
+| `n/` | Páginas de compartilhamento: o link `/n/<id>` de cada notícia, usado nas redes |
+| `og/` | Imagens de prévia dos links (geradas por `scripts/og.py`) |
 | `assets/` | Ilustrações originais da Novera em SVG |
 | `fotos/` | Imagens das notícias em WebP, com o nome igual ao identificador da notícia |
 | `PROMPTS-IMAGENS.md` | Prompts para gerar as imagens que faltam |

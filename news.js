@@ -5,6 +5,8 @@
 
 /* Topo do site: data da edição e mercado */
 const META = {
+  /* Endereço público do site, sem barra no final. Usado nos links das redes sociais. */
+  siteUrl: 'https://ENDERECO-DO-SITE.vercel.app',
   dataExtenso: 'Terça-feira, 6 de outubro de 2026',
   edicao: '6 out 2026',
   ibovespa: { valor: '206.911', variacao: '7,70%', sobe: true },
