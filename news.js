@@ -36,6 +36,7 @@ const U = {
 const NEWS = [
 /* ===================== NACIONAL ===================== */
 { id: 'segundo-turno-flavio-lula', cat: 'nacional', own: true, t: '2026-10-05T09', d: '5 out 2026', img: 'eleicao', read: 4,
+  photo: 'fotos/segundo-turno-flavio-lula.webp', photoAlt: 'Flávio Bolsonaro e Lula lado a lado, em retratos de campanha', credit: 'Fotos: reprodução',
   title: 'Flávio Bolsonaro e Lula vão ao segundo turno em 25 de outubro',
   sum: 'Candidato do PL terminou o primeiro turno com 47,05% dos votos válidos, contra 45,14% do presidente. A diferença foi de cerca de 2,3 milhões de votos.',
   body: [
