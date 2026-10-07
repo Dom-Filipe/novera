@@ -249,6 +249,7 @@ const NEWS = [
   sources: [['Democracy Now!', U.dn]] },
 
 { id: 'franca-suspende-aulas-protestos-estudantes', cat: 'internacional', own: true, t: '2026-10-06T13', d: '6 out 2026', img: 'protesto', read: 2,
+  photo: 'fotos/franca-suspende-aulas-protestos-estudantes.webp', photoAlt: 'Estudantes com cartazes protestam em frente à fachada de uma escola em Paris', credit: 'Foto: reprodução',
   title: 'França suspende aulas do ensino médio após protestos de estudantes',
   sum: 'As autoridades contaram cerca de 250 mil manifestantes. Quase 2 mil escolas foram bloqueadas ou fechadas.',
   body: [
