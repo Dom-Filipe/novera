@@ -310,6 +310,7 @@ const NEWS = [
   ] },
 
 { id: 'trump-fala-los-angeles-san-diego-ira', cat: 'internacional', own: false, t: '2026-10-07T01', d: '7 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajTrump,
+  photo: 'fotos/trump-fala-los-angeles-san-diego-ira.webp', photoAlt: 'Donald Trump diante de um microfone, atrás de um púlpito com o selo presidencial', credit: 'Foto: reprodução',
   title: 'Fala de Trump sobre Irã atingir Los Angeles e San Diego gera reação',
   sum: 'Em comício, o presidente disse que seria um preço pequeno a pagar. A Casa Branca minimizou a repercussão.',
   body: [
