@@ -168,6 +168,7 @@ const NEWS = [
   ] },
 
 { id: 'flavio-maioria-congresso-constituicao', cat: 'nacional', own: false, t: '2026-10-06T18', d: '6 out 2026', img: 'congresso', src: 'CNN Brasil', url: U.cnnConst,
+  photo: 'fotos/flavio-maioria-congresso-constituicao.webp', photoAlt: 'Flávio Bolsonaro sorri no palco de um ginásio lotado durante evento de campanha', credit: 'Foto: reprodução',
   title: 'Flávio diz que vai usar maioria no Congresso para mudar a Constituição',
   sum: 'A declaração foi feita em Goiânia, no primeiro evento público do candidato do PL no segundo turno.',
   body: [
@@ -185,6 +186,7 @@ const NEWS = [
   ] },
 
 { id: 'tse-remove-posts-bandeira-lula', cat: 'nacional', own: false, t: '2026-10-06T12', d: '6 out 2026', img: 'congresso', src: 'Band', url: U.bandPosts,
+  photo: 'fotos/tse-remove-posts-bandeira-lula.webp', photoAlt: 'Lula segura uma bandeira verde ao lado de Geraldo Alckmin, perto da cabine de votação', credit: 'Foto: reprodução',
   title: 'TSE manda remover posts que dizem que Lula jogou a bandeira no chão',
   sum: 'O ministro André Mendonça determinou a retirada de 16 links em até 24 horas. A decisão é provisória e vai ao plenário.',
   body: [
