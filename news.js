@@ -125,6 +125,7 @@ const NEWS = [
   sources: [['Gazeta do Povo', U.gazetaApoio], ['CNN Brasil', U.cnnCaiado], ['Agência Brasil', U.abCampanhas], ['Agência Brasil', U.abRenan], ['Poder360', U.p360Rep]] },
 
 { id: 'tse-julga-garotinho-eleicao-rio', cat: 'nacional', own: true, t: '2026-10-07T05', d: '7 out 2026', img: 'congresso', read: 3,
+  photo: 'fotos/tse-julga-garotinho-eleicao-rio.webp', photoAlt: 'Fachada do prédio do Tribunal Superior Eleitoral, em Brasília, com a placa do tribunal em primeiro plano', credit: 'Foto: reprodução',
   title: 'TSE julga na quinta caso que pode definir a eleição para governador do Rio',
   sum: 'Se os votos de Anthony Garotinho forem anulados, Douglas Ruas (PL) passa a ter 50,88% dos válidos e vence sem segundo turno.',
   body: [
@@ -158,6 +159,7 @@ const NEWS = [
   sources: [['Agência Senado', U.sen]] },
 
 { id: 'lula-cobra-flavio-escala-6x1', cat: 'nacional', own: false, t: '2026-10-06T20', d: '6 out 2026', img: 'congresso', src: 'Agência Brasil', url: U.abCampanhas,
+  photo: 'fotos/lula-cobra-flavio-escala-6x1.webp', photoAlt: 'Lula fala ao microfone ao lado de aliados, diante de painel da campanha', credit: 'Foto: reprodução',
   title: 'Lula defende fim da escala 6x1 e cobra posição de Flávio',
   sum: 'O presidente questionou se o adversário vai orientar o PL a votar contra a PEC, que está em discussão no Senado.',
   body: [
@@ -174,6 +176,7 @@ const NEWS = [
   ] },
 
 { id: 'oea-relatorio-eleicoes-brasil', cat: 'nacional', own: false, t: '2026-10-06T22', d: '6 out 2026', img: 'eleicao', src: 'Band', url: U.bandOea,
+  photo: 'fotos/oea-relatorio-eleicoes-brasil.webp', photoAlt: 'Integrantes da missão de observação reunidos em sofás de um gabinete', credit: 'Foto: reprodução',
   title: 'Missão da OEA aprova urnas e critica decisões individuais no STF e no TSE',
   sum: 'Os observadores também apontaram ativismo político de líderes estrangeiros. O TSE diz que não houve interferência estrangeira direta.',
   body: [
