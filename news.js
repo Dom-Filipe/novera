@@ -222,6 +222,7 @@ const NEWS = [
 
 /* ===================== INTERNACIONAL ===================== */
 { id: 'israel-tres-anos-7-de-outubro', cat: 'internacional', own: true, t: '2026-10-07T06', d: '7 out 2026', img: 'mundo', read: 3,
+  photo: 'fotos/israel-tres-anos-7-de-outubro.webp', photoAlt: 'Barracas de deslocados montadas entre os escombros de prédios destruídos em Gaza', credit: 'Foto: reprodução',
   title: 'Israel lembra três anos do ataque de 7 de outubro; mortos em Gaza passam de 73 mil',
   sum: 'Cerimônias começaram às 6h29, hora em que o ataque do Hamas teve início em 2023. Em Gaza, os bombardeios continuam mesmo com o cessar-fogo.',
   body: [
