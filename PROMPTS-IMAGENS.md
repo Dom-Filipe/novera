@@ -1,6 +1,6 @@
 # Prompts de imagens da Novera
 
-Um prompt para cada notícia que ainda não tem imagem (55 no total).
+Um prompt para cada notícia que ainda não tem imagem (56 no total).
 
 ## Como usar
 
@@ -25,66 +25,81 @@ O site encontra a imagem pelo nome do arquivo e a coloca na notícia sozinho, co
 
 ## Nacional
 
-**`tarcisio-reeleito-sao-paulo.webp`**
-Palácio dos Bandeirantes, sede do governo de São Paulo, visto de fora ao entardecer, gramado e bandeira do estado no mastro, céu em tons dourados.
+**`campanhas-segundo-turno-primeiros-apoios.webp`**
+Mesa de reunião vazia em um auditório de Brasília, com microfones, copos de água e cadeiras arrumadas, bandeiras do Brasil ao fundo, luz de fim de tarde.
+
+**`tse-julga-garotinho-eleicao-rio.webp`**
+Plenário de um tribunal vazio, com bancada em semicírculo, poltronas de couro e microfones, luz suave entrando por janelas altas.
+
+**`lula-cobra-flavio-escala-6x1.webp`**
+Relógio de ponto antigo na parede de uma fábrica, com cartões de papel enfileirados ao lado, luz da manhã entrando pela janela.
+
+**`flavio-maioria-congresso-constituicao.webp`**
+Exemplar da Constituição brasileira aberto sobre uma mesa de madeira escura, com óculos de leitura e caneta ao lado, luz de luminária.
+
+**`oea-relatorio-eleicoes-brasil.webp`**
+Urna eletrônica sobre mesa de seção eleitoral vazia, com cabine de votação de papelão ao fundo e pranchetas de observadores sobre a mesa.
+
+**`tse-remove-posts-bandeira-lula.webp`**
+Celular sobre uma mesa mostrando uma tela de rede social borrada, com uma pequena bandeira do Brasil dobrada ao lado, foco raso.
+
+**`horario-eleitoral-segundo-turno.webp`**
+Sala de estar com televisão ligada em tela azul sem texto, rádio antigo na estante e sofá vazio, luz do começo da noite.
 
 **`vinte-estados-governador-primeiro-turno.webp`**
 Mapa do Brasil em relevo sobre uma mesa de redação, com alfinetes coloridos espetados em vários estados, papéis com anotações ao redor, luz de luminária.
 
-**`pl-vence-governos-do-sul.webp`**
-Vista aérea de Curitiba ao amanhecer, com prédios, araucárias e neblina leve sobre a cidade.
-
-**`cleitinho-eleito-minas.webp`**
-Praça da Liberdade, em Belo Horizonte, com o palácio ao fundo, jardins e palmeiras imperiais, fim de tarde.
-
-**`rio-segundo-turno-ruas-paes.webp`**
-Palácio Guanabara, sede do governo do Rio de Janeiro, com jardins em frente e morros verdes ao fundo, dia nublado.
-
-**`espirito-santo-pazolini-ferraco.webp`**
-Vista da baía de Vitória, no Espírito Santo, com a Terceira Ponte e prédios na orla, luz de fim de tarde.
-
-**`tse-sem-alertas-interferencia.webp`**
-Sala de totalização de votos com vários monitores mostrando gráficos e mapas, técnicos de costas trabalhando, ambiente iluminado por telas.
-
 ## Internacional
 
-**`eua-retiram-bombardeiros-fairford.webp`**
-Pista de base aérea na Inglaterra em dia nublado, hangares ao fundo e um grande avião bombardeiro estratégico taxiando, grama molhada nas laterais.
+**`israel-tres-anos-7-de-outubro.webp`**
+Velas acesas e flores brancas em um memorial a céu aberto ao amanhecer, sem pessoas, com árvores ao fundo.
 
-**`iemen-ofensiva-contra-houthis.webp`**
-Estrada de terra no deserto montanhoso do Iêmen, comboio de veículos militares ao longe levantando poeira, montanhas secas ao fundo.
+**`franca-suspende-aulas-protestos-estudantes.webp`**
+Portão fechado de uma escola francesa de ensino médio, com cadeiras e latas de lixo empilhadas na entrada, rua vazia e prédios de pedra ao redor.
 
-**`ataque-aereo-cidade-de-gaza.webp`**
-Prédio residencial parcialmente destruído em uma cidade do Oriente Médio, entulho e poeira no ar, rua vazia, luz difusa, sem pessoas.
+**`ormuz-petroleiro-atacado-feridos.webp`**
+Petroleiro navegando em mar calmo ao entardecer, visto de longe, com uma faixa de fumaça leve no horizonte e montanhas áridas ao fundo.
 
-**`israel-controla-60-por-cento-de-gaza.webp`**
-Vista de satélite, do alto, de uma faixa costeira árida com áreas urbanas e terrenos abertos, tons de bege e azul do mar.
+**`russia-ataque-kiev-mortos.webp`**
+Rua de bairro residencial em uma cidade do Leste Europeu ao amanhecer, prédios de apartamentos com janelas quebradas e fumaça subindo ao longe, sem pessoas.
 
-**`espanha-protestos-moradia.webp`**
-Grande multidão em uma avenida de Madri, com prédios clássicos ao fundo e faixas sem texto legível erguidas no ar, vista do alto, dia ensolarado.
+**`bulgaria-navios-atingidos-drones.webp`**
+Navio de carga com fumaça escura no convés, em mar aberto e cinzento, visto de longe sob céu nublado.
 
-**`franca-estudantes-escolas-fechadas.webp`**
-Portão de uma escola francesa fechado com cadeado, mochilas e cartazes sem texto legível encostados na grade, rua de Paris pela manhã.
+**`quenia-primeiro-caso-ebola.webp`**
+Corredor de hospital com equipamentos de proteção pendurados em ganchos, luvas e máscaras sobre um carrinho, luz branca.
 
-**`india-movimento-das-baratas.webp`**
-Multidão de jovens em uma avenida larga de Nova Délhi, cartazes erguidos sem texto legível, prédios e árvores ao fundo, vista de longe.
+**`iemen-houthis-atacam-aeroporto-aden.webp`**
+Pista de aeroporto vazia em região desértica, com terminal baixo ao fundo e céu alaranjado ao fim da tarde.
 
-**`juiza-bloqueia-muro-big-bend.webp`**
-Paisagem do Parque Nacional Big Bend, no Texas, com o rio Grande correndo entre cânions de pedra avermelhada, céu azul, sem construções.
+**`espanha-eleicao-antecipada-29-novembro.webp`**
+Fachada de um parlamento neoclássico com leões de bronze na escadaria, em uma praça vazia ao entardecer.
 
-**`partido-verde-britanico-sionismo.webp`**
-Plenária de um congresso partidário no Reino Unido, auditório com delegados de costas levantando cartões verdes para votar, palco ao fundo.
+**`trump-fala-los-angeles-san-diego-ira.webp`**
+Vista aérea do litoral do sul da Califórnia ao pôr do sol, com prédios da cidade, palmeiras e o oceano Pacífico.
 
 ## Esportes
 
+**`messi-despedida-argentina-benin.webp`**
+Estádio de futebol lotado à noite, visto de cima, com arquibancadas cheias de bandeiras azul-claras e brancas e gramado iluminado, sem rostos reconhecíveis.
+
+**`neymar-treina-santos-flamengo.webp`**
+Gramado de um centro de treinamento ao entardecer, com cones, bolas e uma barreira de treino, sem jogadores.
+
+**`juventude-lider-serie-b.webp`**
+Bola de futebol parada no centro do gramado de um estádio vazio, com arquibancadas ao fundo e luz de refletores.
+
+**`antonelli-titulo-f1-austin.webp`**
+Reta de um circuito de Fórmula 1 vazia ao pôr do sol, com zebras vermelhas e brancas e arquibancadas ao fundo.
+
+**`raphinha-renova-barcelona-2030.webp`**
+Caneta sobre um contrato em uma mesa de escritório, com uma bola de futebol desfocada ao fundo, luz suave.
+
+**`djokovic-campeao-pequim.webp`**
+Quadra de tênis dura e azul vista de cima, com a rede no centro e uma bola amarela perto da linha de fundo.
+
 **`brasileirao-volta-flamengo-lider.webp`**
 Estádio de futebol brasileiro lotado à noite, refletores acesos, gramado verde iluminado e torcida nas arquibancadas, vista do alto da arquibancada.
-
-**`brasil-goleia-india-calcuta.webp`**
-Bola de futebol na rede do gol à noite, estádio grande ao fundo desfocado com luzes, jogadores com uniforme amarelo e azul de costas comemorando, sem rostos visíveis.
-
-**`ancelotti-renova-selecao.webp`**
-Prancheta tática de futebol sobre um banco de reservas, com esquema de jogadas desenhado à mão, gramado e chuteiras ao fundo desfocado.
 
 **`selecao-japao-singapura-novembro.webp`**
 Túnel de acesso ao gramado de um estádio moderno, luz forte no fim do túnel, gramado visível ao fundo.
@@ -92,46 +107,34 @@ Túnel de acesso ao gramado de um estádio moderno, luz forte no fim do túnel, 
 **`libertadores-semifinais-tres-brasileiros.webp`**
 Troféu de futebol prateado em um pedestal no centro de um gramado iluminado à noite, arquibancadas lotadas desfocadas ao fundo.
 
-**`fluminense-elimina-platense.webp`**
-Torcida comemorando em arquibancada de estádio com bandeiras grandes nas cores grená, verde e branco, sem escudos, vista de longe.
-
 **`copa-do-brasil-final-jogo-unico.webp`**
 Estádio Nacional de Brasília visto de fora ao entardecer, colunas brancas e céu alaranjado.
 
-**`verstappen-vence-gp-bahrein-sepang.webp`**
-Carro de Fórmula 1 em alta velocidade numa curva de circuito na Malásia, rastro de movimento, palmeiras e arquibancada ao fundo, sem patrocinadores legíveis.
-
-**`antonelli-lidera-formula-1.webp`**
-Pódio de Fórmula 1 vazio com troféus brilhando, confete no ar e luzes do circuito ao fundo, fim de tarde.
-
-**`palmeiras-nao-assume-lideranca-29-rodada.webp`**
-Placar eletrônico de estádio desligado ao fundo e gramado vazio com marcações de cal, luz suave da manhã.
-
 ## Cultura
 
-**`festival-do-rio-110-filmes-ineditos.webp`**
-Fachada de cinema de rua antigo no centro do Rio de Janeiro à noite, letreiro luminoso sem texto legível e público entrando.
+**`eva-marie-saint-morre-102-anos.webp`**
+Sala de cinema antiga vazia, com poltronas de veludo vermelho e luz de projetor atravessando a escuridão.
+
+**`juarez-machado-morre-85-anos.webp`**
+Ateliê de pintor com cavalete, telas coloridas encostadas na parede, pincéis em potes e luz natural de janela grande.
+
+**`paramount-warner-fusao-skydance.webp`**
+Portão de um grande estúdio de cinema ao entardecer, com galpões de filmagem ao fundo e palmeiras, sem placas nem marcas.
+
+**`festival-do-rio-feito-pipa-marilia.webp`**
+Pipa colorida no céu azul sobre telhados de um bairro do Rio de Janeiro, com morros ao fundo.
+
+**`the-batman-parte-2-filmagens-pausadas.webp`**
+Set de filmagem vazio à noite em uma rua com paralelepípedos molhados, câmera de cinema coberta com capa e refletores apagados.
+
+**`freddie-jackson-morre-70-anos.webp`**
+Microfone vintage em pedestal sobre um palco escuro, com um feixe de luz âmbar e fumaça leve.
+
+**`vik-muniz-dinheiro-vivo-goiania.webp`**
+Galeria de arte com paredes brancas e quadros grandes feitos de papéis coloridos recortados, piso de concreto polido, sem pessoas.
 
 **`mostra-sao-paulo-50-edicao.webp`**
 Sala de cinema lotada vista de trás da plateia, tela grande iluminada e silhuetas das pessoas, ambiente escuro e aconchegante.
-
-**`paulo-branco-premio-leon-cakoff.webp`**
-Troféu de cinema sobre um pedestal em um palco escuro, iluminado por um único holofote, cortina de veludo ao fundo.
-
-**`la-bola-negra-abre-festival-do-rio.webp`**
-Tapete vermelho na entrada de um cinema histórico à noite, flashes de fotógrafos desfocados ao fundo, sem pessoas em foco.
-
-**`premiere-brasil-destaques.webp`**
-Rolos de filme e uma claquete sobre uma mesa de madeira, luz quente lateral, poeira suspensa no ar.
-
-**`karim-ainouz-rosebush-pruning.webp`**
-Jardim de uma mansão com roseiras sendo podadas, tesoura de poda apoiada no muro, luz dramática de fim de tarde.
-
-**`riomarket-tv-3-microdramas.webp`**
-Galpão industrial reformado na zona portuária do Rio, com estandes de audiovisual, telões e profissionais conversando de costas.
-
-**`bienal-sao-paulo-belo-horizonte.webp`**
-Interior de uma galeria de arte moderna com obras coloridas nas paredes e instalações no chão, visitantes de costas, luz natural.
 
 **`bts-tres-shows-morumbis.webp`**
 Estádio lotado à noite durante um show, palco gigante com telões e luzes roxas e azuis, plateia com celulares erguidos, vista do fundo.
@@ -141,20 +144,23 @@ Palco de show em arena ao ar livre ao entardecer, luzes douradas, microfone em p
 
 ## Economia
 
-**`dolar-cai-fecha-cinco-reais.webp`**
-Notas de real e de dólar espalhadas sobre uma mesa, uma calculadora ao lado, luz natural de escritório.
+**`bets-saem-do-ar-devolucao-saldos.webp`**
+Celular sobre uma mesa mostrando uma tela de erro genérica, sem logotipos, ao lado de moedas e de um cartão sem marca.
 
-**`bancos-varejo-lideram-alta.webp`**
-Avenida Faria Lima, em São Paulo, com prédios espelhados de bancos ao entardecer, trânsito com rastros de luz.
+**`ibovespa-recua-dolar-abaixo-5-reais.webp`**
+Tela de cotações com gráfico em vermelho e verde, desfocada, em um escritório de mesa de operações à noite, sem logotipos.
 
-**`juros-futuros-recuam.webp`**
-Tela de terminal financeiro com curvas de juros e gráficos de linhas descendo, reflexo suave, ambiente de mesa de operações.
+**`banco-mundial-pib-brasil-2-1.webp`**
+Vista aérea de um porto brasileiro com contêineres coloridos e guindastes, ao entardecer.
 
-**`focus-inflacao-5-01.webp`**
-Carrinho de supermercado com alimentos e etiquetas de preço sem números legíveis, corredor de mercado iluminado.
+**`galipolo-depoe-pf-caso-master.webp`**
+Fachada moderna de um edifício público de vidro e concreto em Brasília, com céu azul e gramado em primeiro plano.
 
-**`petrobras-recorde-valor-de-mercado.webp`**
-Plataforma de petróleo em alto-mar ao pôr do sol, chama acesa no alto e mar calmo, sem logotipos.
+**`pec-6x1-senado-setor-produtivo.webp`**
+Linha de produção de fábrica vazia com esteiras paradas e capacetes pendurados, luz industrial.
+
+**`wall-street-recordes-petroleo-cai.webp`**
+Fachada clássica de colunas de uma bolsa de valores em Nova York, com rua vazia de manhã e bandeira americana.
 
 **`balanca-comercial-superavit-setembro.webp`**
 Porto de Santos com contêineres coloridos empilhados e um navio graneleiro atracado, guindastes, vista aérea.
@@ -165,37 +171,34 @@ Interior de uma fábrica com linha de produção parada, máquinas industriais e
 **`embraer-alta-entregas-terceiro-trimestre.webp`**
 Avião comercial de médio porte branco em um hangar de fábrica, pronto para entrega, piso brilhante, sem logotipos.
 
-**`claro-opa-desktop.webp`**
-Técnico de internet de costas instalando cabos de fibra óptica em um poste, rua de cidade do interior paulista, sem marcas visíveis.
-
 ## Tecnologia
+
+**`nobel-fisica-halzen-icecube.webp`**
+Laboratório de pesquisa isolado sobre o gelo da Antártida sob céu limpo, com uma longa planície branca ao redor e brilho do sol baixo.
+
+**`lupa-ia-conteudo-eleitoral.webp`**
+Tela de computador com uma grade de vídeos borrados e um rosto genérico desfocado, sem pessoas reconhecíveis, em quarto escuro.
+
+**`google-constellation-energia-nuclear-ia.webp`**
+Torres de resfriamento de uma usina nuclear soltando vapor ao amanhecer, com linhas de transmissão em primeiro plano.
+
+**`deepseek-rodada-12-bilhoes.webp`**
+Corredor de data center com racks de servidores e luzes azuis piscando, piso branco, perspectiva longa.
+
+**`wikimedia-agentes-ia-openai.webp`**
+Prateleiras de uma grande biblioteca com livros antigos e um notebook aberto sobre a mesa de leitura, luz quente.
+
+**`ofcom-investiga-instagram-instants.webp`**
+Mão segurando um celular com uma tela de feed de fotos borrada, sem logotipos, em um café com luz natural.
 
 **`nobel-medicina-optogenetica.webp`**
 Neurônio microscópico iluminado por luz azul em um laboratório, visual científico realista, fundo escuro, estilo de microscopia de fluorescência.
 
-**`alga-optogenetica-canalrodopsina.webp`**
-Algas verdes unicelulares vistas ao microscópio, iluminadas por luz azul, tons de verde e azul, estilo de fotografia científica.
-
-**`openai-devday-agentes-dots.webp`**
-Auditório de conferência de tecnologia com palco escuro e telão iluminado com formas abstratas, plateia de costas.
-
 **`schneider-compra-ptc.webp`**
 Fábrica moderna automatizada com braços robóticos e telas mostrando gêmeos digitais das máquinas, luz fria.
-
-**`trump-nomeia-czar-de-ia.webp`**
-Sala de reunião governamental vazia com mesa longa, cadeiras de couro e telas com redes neurais abstratas na parede.
 
 **`pix-aproximacao-sem-limite-500.webp`**
 Mão aproximando um celular de uma maquininha de cartão sobre o balcão de uma padaria, close, luz quente.
 
 **`pix-automatico-conta-salario.webp`**
 Pessoa de costas sentada à mesa da cozinha olhando o aplicativo do banco no celular, com contas de papel na mesa, manhã.
-
-**`qualcomm-compra-patentes-huawei.webp`**
-Chip de processador em close sobre uma placa de circuito, detalhes dourados, iluminação de estúdio.
-
-**`fust-conecta-unidades-de-saude.webp`**
-Fachada de um posto de saúde em cidade pequena do Brasil, com uma antena de internet instalada no telhado, céu azul.
-
-**`anatel-audiencias-leilao-6-ghz.webp`**
-Torre de telecomunicações com antenas contra um céu ao entardecer, cidade ao fundo desfocada.
