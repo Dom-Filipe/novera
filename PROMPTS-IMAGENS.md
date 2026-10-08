@@ -203,3 +203,23 @@ Tela de computador com uma grade de vídeos borrados e um rosto genérico desfoc
 **`nobel-medicina-optogenetica.webp`**
 Neurônio microscópico iluminado por luz azul em um laboratório, visual científico realista, fundo escuro, estilo de microscopia de fluorescência.
 
+
+## Edição extra de 8 out
+
+**`caso-master-stf-fachin-pf-13-outubro.webp`**
+Fachada do prédio do Supremo Tribunal Federal, em Brasília, ao entardecer, com a estátua da Justiça em primeiro plano.
+
+**`moraes-recebe-chefes-pf-fora-agenda.webp`**
+Corredor amplo e vazio de um tribunal, com piso de mármore e portas de madeira fechadas.
+
+**`barroso-caso-master-desgastou-stf.webp`**
+Livro de capa escura sobre uma mesa de madeira, com um exemplar da Constituição brasileira ao lado e luz lateral.
+
+**`russia-irkutsk-quarentena-laboratorio-peste.webp`**
+Corredor de laboratório de biossegurança com portas lacradas e sinal de risco biológico, luz fria, sem pessoas.
+
+**`nepal-encerra-buscas-enchentes.webp`**
+Vale montanhoso do Himalaia com um rio cheio e lamacento, encostas com deslizamentos de terra, céu nublado.
+
+**`nao-ha-eclipse-hoje-draconidas.webp`**
+Céu noturno estrelado sobre uma paisagem rural escura, com rastros de meteoros riscando o alto do céu.

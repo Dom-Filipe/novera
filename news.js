@@ -17,14 +17,23 @@ const META = {
 /* Home: destaque principal, dois laterais e três da faixa de baixo (IDs de notícias "own: true") */
 const FEATURED = {
   lead: 'republicanos-novo-apoio-flavio',
-  side: ['tse-julga-garotinho-eleicao-rio', 'russia-ataque-kiev-mortos'],
-  also: ['corinthians-demite-fernando-diniz', 'nobel-quimica-kagan-soai', 'leilao-pre-sal-sete-blocos']
+  side: ['tse-julga-garotinho-eleicao-rio', 'caso-master-stf-fachin-pf-13-outubro'],
+  also: ['russia-irkutsk-quarentena-laboratorio-peste', 'nao-ha-eclipse-hoje-draconidas', 'corinthians-demite-fernando-diniz']
 };
 
 /* Home: "Escolhas da redação" (5 IDs) */
-const PICKS = ['segundo-turno-flavio-lula', 'ibovespa-cai-dolar-volta-5-reais', 'bets-saem-do-ar-devolucao-saldos', 'estreias-cinema-se-eu-fosse-voce-3', 'israel-tres-anos-7-de-outubro'];
+const PICKS = ['segundo-turno-flavio-lula', 'ibovespa-cai-dolar-volta-5-reais', 'bets-saem-do-ar-devolucao-saldos', 'nepal-encerra-buscas-enchentes', 'israel-tres-anos-7-de-outubro'];
 
 const U = {
+  jgbMaster: 'https://jornalgrandebahia.com.br/2026/10/caso-banco-master-edson-fachin-marca-reuniao-com-pf-para-outubro-de-2026-e-cobra-apuracao-sem-excecao-de-mencoes-a-ministros-do-stf/',
+  p360Moraes: 'https://poder360.com.br/poder-justica/moraes-recebe-andrei-e-outros-chefes-da-pf-no-supremo',
+  conjurBarroso: 'https://conjur.com.br/2026-out-06/barroso-diz-que-caso-master-dividiu-e-desgastou-o-stf',
+  obsPeste: 'https://observador.pt/2026/10/07/russia-nega-risco-epidemico-apos-morte-em-laboratorio-de-peste-na-siberia-e-alivia-medidas-de-quarentena/',
+  euroPeste: 'https://www.euronews.com/2026/10/05/situation-under-control-russian-authorities-reassure-public-after-plague-reports-in-siberi',
+  tnNepal: 'https://tribunadonorte.com.br/internacional/nepal-encerra-buscas-por-desaparecidos-apos-enchentes-que-deixaram-1-455-mortos/',
+  otDraconidas: 'https://www.otempo.com.br/ciencia/2026/10/7/draconidas-2026-chuva-de-meteoros-tem-pico-nesta-semana-saiba-quando-e-como-observar',
+  terraEclipses: 'https://www.terra.com.br/vida-e-estilo/horoscopo/ultimo-eclipse-de-2026-sera-visivel-no-brasil-prepare-se,c09b659263aa2ae72b585c581ed1c2f31yjidurp.html',
+  tadPoa: 'https://www.timeanddate.com/eclipse/in/brazil/porto-alegre',
   /* Nacional */
   tse1t: 'https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/flavio-bolsonaro-e-lula-vao-disputar-o-2o-turno-para-a-presidencia-da-republica',
   sen: 'https://www12.senado.leg.br/noticias/materias/2026/10/04/flavio-bolsonaro-e-lula-disputam-o-segundo-turno-das-eleicoes-para-presidente',
@@ -123,6 +132,77 @@ const U = {
 };
 
 const NEWS = [
+/* ---------- Edição extra: 8 out 2026, manhã ---------- */
+{ id: 'caso-master-stf-fachin-pf-13-outubro', cat: 'nacional', own: true, t: '2026-10-08T06', d: '8 out 2026', img: 'congresso', read: 4,
+  title: 'Caso Master: Fachin recebe a PF no dia 13 para saber quais ministros do STF são citados',
+  sum: 'O presidente do Supremo cobrou apuração "sem exceção". Moraes, Mendonça, Nunes Marques, Toffoli e Fux aparecem no material do celular de Daniel Vorcaro, e os cinco contestam as suspeitas ou explicam os contatos.',
+  body: [
+    'O presidente do Supremo Tribunal Federal, Edson Fachin, vai receber o diretor-geral da Polícia Federal, Andrei Rodrigues, em 13 de outubro. Segundo o Jornal Grande Bahia, a PF deve apresentar a relação de ministros citados no material extraído do celular de Daniel Vorcaro, dono do Banco Master.',
+    'Em ofício enviado em 2 de outubro, Fachin afirmou que a apuração deve alcançar fatos e pessoas "sem exceção", respeitando o devido processo legal e a autonomia da investigação. Ser citado no material não significa ter cometido crime, e o pedido não abre investigação automática contra ninguém.',
+    '## Quem aparece e o que diz',
+    'A PF associou a Alexandre de Moraes um contato com Vorcaro e referências ao escritório de sua mulher, Viviane Barci de Moraes. O ministro nega que os diálogos atribuídos a ele existam. André Mendonça confirmou ter recebido Vorcaro uma vez, em março de 2025, para tratar de um processo sobre precatórios, e diz ter decidido contra o interesse do empresário.',
+    'Kassio Nunes Marques nega ter autorizado terceiros a agir em seu nome. Dias Toffoli, citado por transações ligadas a um fundo e a um empreendimento antes relacionado à sua família, nega amizade com Vorcaro. Luiz Fux, mencionado em mensagens de terceiros sobre uma viagem a Nova York em 2024, diz nunca ter trocado mensagens com o banqueiro.',
+    '## Um julgamento parado',
+    'Em 15 de setembro, o plenário do STF não chegou a julgar o mérito do pedido relacionado a Moraes. A votação sobre reunir dois processos terminou em 4 a 3 pela tramitação separada, e Flávio Dino pediu vista. Nunes Marques se declarou impedido e Toffoli, suspeito. Em 28 de setembro, Gilmar Mendes defendeu que o julgamento fique suspenso até que todos os magistrados citados sejam identificados.',
+    'Na terça-feira (6), Moraes recebeu Andrei Rodrigues e o diretor de Inteligência da PF no Supremo, em encontro que não constava da agenda oficial. O assunto não foi divulgado. Na segunda (5), o ministro aposentado Luís Roberto Barroso disse que o caso "trouxe divisão" e desgaste ao tribunal.'
+  ],
+  box: { type: 'facts', title: 'Linha do tempo no STF', rows: [['15 set', 'Plenário não julga o mérito; Dino pede vista'], ['28 set', 'Gilmar defende suspender o julgamento'], ['2 out', 'Fachin cobra apuração "sem exceção"'], ['6 out', 'Moraes recebe chefes da PF fora da agenda'], ['13 out', 'Fachin recebe o diretor-geral da PF']] },
+  sources: [['Jornal Grande Bahia', U.jgbMaster], ['Poder360', U.p360Moraes], ['ConJur', U.conjurBarroso]] },
+
+{ id: 'moraes-recebe-chefes-pf-fora-agenda', cat: 'nacional', own: false, t: '2026-10-06T20', d: '6 out 2026', img: 'congresso', src: 'Poder360', url: U.p360Moraes,
+  title: 'Moraes recebe diretor da PF no STF em encontro fora da agenda oficial',
+  sum: 'O ministro se reuniu na terça-feira (6) com Andrei Rodrigues e o diretor de Inteligência da PF. O assunto não foi divulgado.',
+  body: [
+    'Além de Andrei Rodrigues, participaram do encontro o diretor de Inteligência, Leandro Almada da Costa, e o delegado Dennis Cali. A reunião não aparecia na agenda oficial do ministro, segundo o Poder360.',
+    'O encontro ocorreu uma semana antes da reunião marcada entre a PF e o presidente do STF, Edson Fachin, sobre os ministros citados no caso Master.'
+  ] },
+
+{ id: 'barroso-caso-master-desgastou-stf', cat: 'nacional', own: false, t: '2026-10-06T12', d: '6 out 2026', img: 'congresso', src: 'ConJur', url: U.conjurBarroso,
+  title: 'Barroso diz que caso Master dividiu e desgastou o STF',
+  sum: 'O ministro aposentado falou no lançamento de seu livro, no Rio, e disse ver uma "depressão cívica" em áreas da vida brasileira.',
+  body: [
+    'Luís Roberto Barroso falou na segunda-feira (5) no Instituto dos Advogados Brasileiros, num evento pelos 38 anos da Constituição. Ele disse tratar do caso Master "com tristeza", porque ainda valoriza o tribunal e seus integrantes.',
+    'Barroso também criticou o controle excessivo do Congresso sobre o Orçamento e citou o escândalo dos descontos no INSS, mas defendeu a Constituição de 1988 como um projeto bem-sucedido.'
+  ] },
+
+{ id: 'russia-irkutsk-quarentena-laboratorio-peste', cat: 'internacional', own: true, t: '2026-10-08T06', d: '8 out 2026', img: 'ciencia', read: 3,
+  title: 'Rússia suspende quarentena na Sibéria após morte de técnica de laboratório de peste',
+  sum: 'Cerca de 200 pessoas foram isoladas em Irkutsk depois da morte de uma funcionária de 28 anos. As autoridades falam em pneumonia de causa desconhecida, e a OMS pediu mais informações.',
+  body: [
+    'As autoridades russas anunciaram na quarta-feira (7) o fim do isolamento e da quarentena em Irkutsk, na Sibéria. As medidas foram adotadas depois da morte de Daria Shipilova, de 28 anos, técnica do Instituto Antipeste de Irkutsk, em 2 de outubro.',
+    'Segundo o jornal português Observador, cerca de 200 pessoas foram isoladas. A agência sanitária russa, a Rospotrebnadzor, afirma que concluiu o acompanhamento de mais de 90% dos contatos e que nenhuma doença infecciosa foi detectada. Para o órgão, não há risco de epidemia na região.',
+    '## O que dizem as autoridades',
+    'O governador da região, Igor Kobzev, disse que uma comissão concluiu que a técnica morreu de pneumonia de origem desconhecida. As autoridades afirmam que ela era vacinada contra as doenças com que trabalhava e que os testes não encontraram micro-organismos ligados ao laboratório.',
+    'Veículos regionais, citando fontes não identificadas, chegaram a relatar suspeita de peste pneumônica depois da quebra de um tubo de ensaio. Essa versão não foi confirmada. O chefe da república vizinha da Buriátia primeiro falou em peste e depois acrescentou a palavra "possivelmente".',
+    '## Perguntas sem resposta',
+    'Mais de 60 funcionários chegaram a ficar isolados dentro do instituto, hospitais de Irkutsk tiveram restrições e o hospital de Shelekhov, cidade onde a técnica morava, foi fechado. Segundo a Euronews, a Rospotrebnadzor não explicou por que essas medidas foram tomadas se os testes deram negativo. A Organização Mundial da Saúde pediu à Rússia mais informações sobre o caso.'
+  ],
+  box: { type: 'facts', title: 'O caso em datas', rows: [['2 out', 'Morre a técnica Daria Shipilova, de 28 anos'], ['3 out', 'Cerca de 200 pessoas são isoladas'], ['7 out', 'Rússia suspende a quarentena; OMS pede transparência']] },
+  sources: [['Observador', U.obsPeste], ['Euronews', U.euroPeste]] },
+
+{ id: 'nepal-encerra-buscas-enchentes', cat: 'internacional', own: false, t: '2026-10-07T08', d: '7 out 2026', img: 'mundo', src: 'Tribuna do Norte', url: U.tnNepal,
+  title: 'Nepal encerra buscas por desaparecidos nas enchentes que deixaram 1.455 mortos',
+  sum: 'Ainda há 5.285 pessoas desaparecidas. O governo estuda como declarar a morte delas para que as famílias possam resolver seguros e contas bancárias.',
+  body: [
+    'As enchentes começaram em 26 de agosto, na região da fronteira com o Tibete, depois de dias de chuva forte. Além dos 1.455 mortos, as autoridades contabilizam 13.795 pessoas resgatadas.',
+    'O centro nacional de operações de emergência informou que o trabalho passa da fase de busca e resgate para a de reabilitação. Restos mortais e objetos encontrados durante as obras continuarão sendo recolhidos.'
+  ] },
+
+{ id: 'nao-ha-eclipse-hoje-draconidas', cat: 'tecnologia', own: true, t: '2026-10-08T06', d: '8 out 2026', img: 'ciencia', read: 2,
+  title: 'Não há eclipse hoje no Brasil; o destaque do céu é a chuva de meteoros Dracônidas',
+  sum: 'O pico das Dracônidas está previsto para as 22h desta quinta-feira (8). A chuva é fraca e mais fácil de ver no Norte do país.',
+  body: [
+    'Não há eclipse previsto para esta quinta-feira (8). Os quatro eclipses de 2026 já aconteceram: em 17 de fevereiro, 3 de março, 12 de agosto e 28 de agosto.',
+    '## O que dá para ver: as Dracônidas',
+    'O fenômeno da noite é a chuva de meteoros Dracônidas, ativa de 6 a 10 de outubro. Segundo o jornal O Tempo, o pico deve ocorrer por volta das 22h de quinta-feira, no horário de Brasília, com cerca de 5 meteoros por hora em condições ideais.',
+    'A chuva favorece o Hemisfério Norte. No Brasil, as chances são maiores no extremo norte, perto da linha do Equador, e diminuem quanto mais ao sul. A Lua minguante, quase sem brilho, ajuda a deixar o céu escuro.',
+    '## Como observar',
+    'Procure um lugar escuro, longe das luzes da cidade, e olhe para a parte alta do céu logo no início da noite. Não é preciso telescópio nem binóculo.',
+    'Segundo o site Time and Date, o próximo eclipse visível de Porto Alegre será um eclipse solar anular, em 6 de fevereiro de 2027.'
+  ],
+  box: { type: 'facts', title: 'Dracônidas 2026', rows: [['Pico', 'Quinta (8), por volta das 22h'], ['Taxa', 'Cerca de 5 meteoros por hora'], ['Onde é melhor', 'Extremo norte do Brasil'], ['Equipamento', 'Nenhum, a olho nu']] },
+  sources: [['O Tempo', U.otDraconidas], ['Terra', U.terraEclipses], ['Time and Date', U.tadPoa]] },
+
 /* ===================== NACIONAL ===================== */
 { id: 'republicanos-novo-apoio-flavio', cat: 'nacional', own: true, t: '2026-10-08T05', d: '8 out 2026', img: 'eleicao', read: 4,
   title: 'Republicanos e Novo oficializam apoio a Flávio; Lula admite falhas na campanha',
@@ -183,21 +263,6 @@ const NEWS = [
     'No mesmo dia, Lula defendeu a PEC que reduz a jornada máxima de 44 para 40 horas semanais e questionou se Flávio vai orientar o PL a votar contra a proposta no Senado.'
   ] },
 
-{ id: 'flavio-reune-eleitos-pl-dividas', cat: 'nacional', own: false, t: '2026-10-07T16', d: '7 out 2026', img: 'eleicao', src: 'Times Brasil', url: U.tbFlavio,
-  title: 'Flávio reúne eleitos do PL e propõe programa para renegociar dívidas pela Caixa',
-  sum: 'O candidato disse que Lula usa a PEC da escala 6x1 pensando no poder e defendeu que o Senado vote o tema depois do segundo turno.',
-  body: [
-    'O encontro, em Brasília, foi convocado pelo presidente do PL, Valdemar Costa Neto, e reuniu deputados, senadores e governadores eleitos pelo partido, entre eles Michelle Bolsonaro. Flávio disse que vai usar os eleitos na reta final da campanha.',
-    'Pela proposta, a Caixa compraria dívidas em atraso e as refinanciaria com prazos maiores e juros menores, com carência de seis meses para pessoas e de um ano para empresas. Flávio repetiu que, se eleito, não vai disputar a reeleição.'
-  ] },
-
-{ id: 'reale-junior-apoio-lula', cat: 'nacional', own: false, t: '2026-10-07T21', d: '7 out 2026', img: 'eleicao', src: 'Metrópoles', url: U.metReale,
-  title: 'Miguel Reale Júnior, coautor do pedido de impeachment de Dilma, declara apoio a Lula',
-  sum: 'Em carta nas redes, o ex-ministro da Justiça de Fernando Henrique disse que votar em Flávio é legitimar o golpe.',
-  body: [
-    'Na carta, chamada "Cuidado com o precipício", o jurista ligou o voto em Flávio à anistia aos atos de 8 de janeiro de 2023. Ele também criticou o apoio do candidato à classificação de organizações criminosas brasileiras como terroristas pelos Estados Unidos e o elogio ao modelo de segurança de El Salvador.'
-  ] },
-
 { id: 'pec-6x1-segunda-sessao-senado', cat: 'nacional', own: false, t: '2026-10-07T19', d: '7 out 2026', img: 'congresso', src: 'Agência Senado', url: U.sen6x1,
   title: 'PEC do fim da escala 6x1 tem segunda sessão de discussão no Senado',
   sum: 'A terceira das cinco sessões do primeiro turno está marcada para esta quinta, às 14h. Ainda não há data para a votação.',
@@ -211,14 +276,6 @@ const NEWS = [
   sum: 'O relator, Kassio Nunes Marques, informou que o caso não será analisado antes do fim do pleito para não interferir na votação.',
   body: [
     'A defesa do ex-presidente tenta derrubar a condenação a 27 anos e 3 meses de prisão por tentativa de golpe, decidida pela Primeira Turma. O caso aguarda manifestação da Procuradoria-Geral da República e será julgado no plenário, em data a ser marcada pelo presidente do STF, Edson Fachin.'
-  ] },
-
-{ id: 'horario-eleitoral-segundo-turno', cat: 'nacional', own: false, t: '2026-10-06T10', d: '6 out 2026', img: 'eleicao', src: 'Agência Brasil', url: U.abHorario,
-  title: 'Horário eleitoral do segundo turno começa na sexta',
-  sum: 'A propaganda vai de 9 a 23 de outubro. A primeira pesquisa Datafolha após o primeiro turno sai na quinta.',
-  body: [
-    'Cada candidato a presidente terá 5 minutos em cada um dos dois blocos diários, no rádio às 7h e ao meio-dia e na TV às 13h e às 20h30, além de inserções ao longo da programação.',
-    'Segundo o Brasil de Fato, o Datafolha divulga na quinta (8) a primeira pesquisa de segundo turno feita depois da votação de domingo, e a AtlasIntel, na sexta (9).'
   ] },
 
 { id: 'pl-maior-bancada-senado', cat: 'nacional', own: false, t: '2026-10-05T08', d: '5 out 2026', img: 'congresso', src: 'CNN Brasil', url: U.cnnSen,
@@ -307,13 +364,6 @@ const NEWS = [
     'É o primeiro furacão de uma temporada no Atlântico a se formar tão tarde desde o início das observações por satélite, em 1966.'
   ] },
 
-{ id: 'ue-maior-pacote-sancoes-russia', cat: 'internacional', own: false, t: '2026-10-07T14', d: '7 out 2026', img: 'mundo', src: 'Kyiv Independent', url: U.kiSancoes,
-  title: 'União Europeia aprova a maior lista de sanções contra a Rússia',
-  sum: 'Embaixadores aprovaram cerca de 1.600 novos alvos ligados à indústria militar russa. A adoção formal está marcada para 12 de outubro.',
-  body: [
-    'A decisão dos embaixadores dos países do bloco foi unânime. Com a nova lista, o total de pessoas e empresas sancionadas chega a cerca de 3.000.'
-  ] },
-
 { id: 'quenia-primeiro-caso-ebola', cat: 'internacional', own: false, t: '2026-10-06T15', d: '6 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajEbola,
   photo: 'fotos/quenia-primeiro-caso-ebola.webp', photoAlt: 'Profissionais de saúde com roupas de proteção amarelas atendem um paciente em centro de tratamento de ebola', credit: 'Imagem ilustrativa: reprodução',
   title: 'Quênia confirma primeiro caso de ebola; paciente morre em Nairóbi',
@@ -321,14 +371,6 @@ const NEWS = [
   body: [
     'O paciente viajou por terra até Uganda e de lá seguiu de avião para Nairóbi, onde morreu. Segundo o presidente William Ruto, ao menos 8 familiares e 21 profissionais de saúde estão em quarentena, e passageiros e tripulantes do voo estão sendo rastreados.',
     'O surto no Congo já soma mais de 8.300 casos confirmados em sete províncias.'
-  ] },
-
-{ id: 'sudao-burhan-rejeita-negociacoes', cat: 'internacional', own: false, t: '2026-10-07T10', d: '7 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajSudao,
-  title: 'Chefe do Exército do Sudão rejeita negociações e promete retomar território das RSF',
-  sum: 'O general Abdel Fattah al-Burhan disse que a opção militar continua. A guerra já deslocou cerca de 13 milhões de pessoas.',
-  body: [
-    'O discurso foi feito na terça-feira (6), em Merowe, no norte do país. Segundo um grupo local, um ataque das Forças de Apoio Rápido matou 10 civis em Kordofan Ocidental.',
-    'A Organização Internacional para as Migrações contou mais de 5.500 deslocados no Nilo Azul em três dias.'
   ] },
 
 /* ===================== ESPORTES ===================== */
@@ -710,11 +752,4 @@ const NEWS = [
     'Segundo a diretora-gerente do FMI, produtos ligados à IA já respondem por mais de 10% do comércio mundial de bens. O discurso foi feito em Singapura.'
   ] },
 
-{ id: 'lupa-ia-conteudo-eleitoral', cat: 'tecnologia', own: false, t: '2026-10-06T10', d: '6 out 2026', img: 'celular', src: 'Diário do Grande ABC', url: U.dgabcLupa,
-  title: 'Quase um conteúdo eleitoral feito com IA circulou por hora na campanha, diz Lupa',
-  sum: 'Dos 972 conteúdos suspeitos analisados, 920 usaram inteligência artificial, e 60% não tinham aviso de IA.',
-  body: [
-    'O levantamento do Observatório Lupa cobriu o período de 16 de agosto a 28 de setembro e identificou 554 deepfakes.',
-    'Quase metade das peças foi publicada por usuários comuns, e cerca de um quarto saiu de perfis oficiais de candidatos.'
-  ] }
 ];
