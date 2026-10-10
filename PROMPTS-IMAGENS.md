@@ -1,6 +1,6 @@
 # Prompts de imagens da Novera
 
-Um prompt para cada notícia que ainda não tem imagem (49 no total).
+Um prompt para cada notícia que ainda não tem imagem (53 no total).
 
 ## Como usar
 
@@ -28,23 +28,26 @@ O site encontra a imagem pelo nome do arquivo e a coloca na notícia sozinho, co
 **`datafolha-segundo-turno-flavio-49-lula-45.webp`**
 Prancheta com formulário de pesquisa em branco e caneta sobre uma mesa, ao lado de um tablet apagado, numa calçada movimentada de cidade brasileira, luz da manhã.
 
-**`pec-6x1-terceira-sessao-senado.webp`**
-Relógio de ponto numa parede de fábrica, com cartões de papel enfileirados ao lado e um corredor de trabalho ao fundo, luz suave.
-
-**`psdb-neutro-segundo-turno.webp`**
-Folha de papel com uma nota impressa sobre uma mesa de escritório, ao lado de óculos e um carimbo, luz natural de janela.
-
-**`podemos-apoio-flavio-segundo-turno.webp`**
-Sala de reuniões de comitê de campanha com mesa comprida, microfones de imprensa enfileirados e cadeiras vazias, bandeiras do Brasil ao fundo.
-
 **`caso-master-stf-fachin-pf-13-outubro.webp`**
 Fachada do prédio do Supremo Tribunal Federal, em Brasília, ao entardecer, com a estátua da Justiça em primeiro plano.
 
-**`campanhas-mudam-tom-lula-flavio.webp`**
-Dois púlpitos vazios num estúdio de televisão preparado para debate, com luzes acesas e câmeras ao fundo, sem pessoas.
+**`atlasintel-flavio-51-lula-45-segundo-turno.webp`**
+Tela de computador apagada sobre uma mesa com gráficos de barras impressos em papel, sem nomes, ao lado de uma xícara de café, luz fria de escritório.
 
-**`stf-revisao-bolsonaro-apos-eleicao.webp`**
-Martelo de juiz de madeira sobre pilha de processos encadernados em uma mesa escura, com estante de livros jurídicos ao fundo, foco raso.
+**`lula-ceilandia-6x1-caso-master.webp`**
+Feira popular de rua numa cidade brasileira, com barracas coloridas, bandeirinhas do Brasil penduradas e caixas de som ao fundo, vista de longe, sem rostos reconhecíveis.
+
+**`flavio-mantem-bolsa-familia-farmacia-popular.webp`**
+Salão de eventos com cadeiras enfileiradas, palco com microfone vazio e bandeiras do Brasil, perto do mar, numa tarde ensolarada.
+
+**`record-cancela-debate-lula-flavio.webp`**
+Estúdio de televisão vazio com dois púlpitos frente a frente, câmeras desligadas e luzes de palco apagadas.
+
+**`pec-6x1-votacao-primeiro-turno-14-outubro.webp`**
+Plenário do Senado visto do alto, com bancadas azuis vazias e painel eletrônico de votação apagado, luz suave.
+
+**`inmet-alerta-vermelho-tempestades-sul.webp`**
+Nuvens escuras de tempestade sobre uma plantação no interior do Sul do Brasil, com raio ao longe e estrada de terra.
 
 ## Internacional
 
@@ -60,11 +63,14 @@ Rua urbana vazia no leste europeu com uma parada de ônibus danificada e vidros 
 **`etiopia-eritreia-tropas-tigre.webp`**
 Estrada de terra em região montanhosa e seca do Chifre da África, com acácias e montanhas ao fundo, luz forte de meio-dia.
 
-**`russia-irkutsk-quarentena-laboratorio-peste.webp`**
-Corredor de laboratório de biossegurança com portas lacradas e sinal de risco biológico, luz fria, sem pessoas.
+**`nobel-paz-navi-pillay.webp`**
+Medalha dourada genérica sobre um tecido azul, ao lado de um martelo de juiz de madeira e livros de direito, luz suave de biblioteca.
 
-**`nepal-encerra-buscas-enchentes.webp`**
-Vale montanhoso do Himalaia com um rio cheio e lamacento, encostas com deslizamentos de terra, céu nublado.
+**`terremoto-panama-magnitude-7-7.webp`**
+Rua de cidade da América Central com fachada de prédio parcialmente desabada, escombros na calçada e fita de isolamento, sem vítimas.
+
+**`ucrania-eua-negociacao-miami.webp`**
+Mesa de reuniões comprida com cadeiras vazias, garrafas de água e pastas fechadas, janelas com vista para prédios e palmeiras de uma cidade costeira.
 
 ## Esportes
 
@@ -86,22 +92,16 @@ Quadra de tênis coberta com piso duro azul, raquete e bolas amarelas apoiadas p
 **`corinthians-demite-fernando-diniz.webp`**
 Banco de reservas vazio à beira de um gramado de estádio à noite, com refletores acesos e arquibancadas vazias, sem escudos.
 
-**`cruzeiro-vence-sao-paulo-g4.webp`**
-Rede de gol balançando com a bola dentro, em estádio iluminado à noite, arquibancada desfocada, sem escudos.
-
 **`vasco-vence-botafogo-classico.webp`**
 Bola parada na marca de falta, com barreira desenhada por sombras no gramado e gol ao fundo, estádio à noite, sem escudos.
 
-**`messi-despedida-argentina-benin.webp`**
-Estádio de futebol lotado à noite, visto de cima, com arquibancadas cheias de bandeiras azul-claras e brancas e gramado iluminado, sem rostos reconhecíveis.
+**`rodada-30-brasileirao-classicos-domingo.webp`**
+Estádio de futebol lotado ao entardecer, visto da arquibancada, com gramado iluminado e torcida desfocada, sem escudos.
+
+**`rebeca-andrade-mundial-roterda.webp`**
+Ginásio de ginástica artística vazio com mesa de salto e trave de equilíbrio sob holofotes, plateia desfocada ao fundo.
 
 ## Cultura
-
-**`suho-exo-show-sao-paulo.webp`**
-Palco de casa de shows com luzes coloridas e fumaça, pedestal de microfone no centro e plateia desfocada segurando bastões de luz.
-
-**`taylor-swift-gala-museu-academia.webp`**
-Salão de museu de cinema decorado para festa de gala, com mesas redondas iluminadas, um pequeno palco com microfone e projetores antigos em exposição.
 
 **`lollapalooza-2027-line-up.webp`**
 Palco de festival ao ar livre com estrutura de luzes e caixas de som, gramado vazio à frente, céu ao entardecer, sem marcas.
@@ -112,9 +112,6 @@ Pilha de livros antigos e um caderno aberto com anotações à mão sobre uma me
 **`estreias-cinema-se-eu-fosse-voce-3.webp`**
 Sala de cinema com poltronas vermelhas vazias e tela iluminada em branco, balde de pipoca em uma poltrona, luz baixa.
 
-**`bts-tres-shows-morumbis.webp`**
-Estádio lotado à noite durante um show, palco gigante com telões e luzes roxas e azuis, plateia com celulares erguidos, vista do fundo.
-
 **`pitty-novo-album-sete-anos.webp`**
 Disco de vinil preto girando em uma vitrola, com capa sem texto encostada ao lado, luz quente de estúdio.
 
@@ -124,25 +121,22 @@ Instrumentos musicais artesanais feitos com buzinas e canos expostos em uma gale
 **`marilia-mendonca-exposicao-mis.webp`**
 Sala de museu com vitrines iluminadas exibindo figurinos de palco e um violão, paredes escuras, sem pessoas.
 
-## Economia
+**`festival-teatro-infantil-ceara.webp`**
+Palco de teatro com cenário colorido de papelão, bonecos de pano e cortina vermelha aberta, plateia infantil vista de costas.
 
-**`ipca-setembro-sai-nesta-sexta.webp`**
-Carrinho de supermercado com frutas, verduras e produtos sem marca num corredor de mercado brasileiro, com etiquetas de preço desfocadas.
+**`exposicao-margem-de-dentro-sesc-ipiranga.webp`**
+Sala de exposição com esculturas de cerâmica e madeira sobre pedestais, tecidos pendurados e um grande mural colorido ao fundo.
+
+**`miro-mab-faap-prorrogada.webp`**
+Corredor de museu com paredes brancas e quadros abstratos coloridos desfocados, visitantes de costas, luz de galeria.
+
+## Economia
 
 **`durigan-imposto-seletivo-apos-eleicao.webp`**
 Prateleira de supermercado com garrafas de bebidas e latas de refrigerante sem rótulos visíveis, ao lado de uma calculadora e notas fiscais.
 
-**`ibovespa-sobe-petroleo-dolar-5-02.webp`**
-Tela de cotações com gráficos em alta numa sala de operações vazia, com monitores enfileirados e luz azulada.
-
-**`petroleo-brent-passa-104-dolares.webp`**
-Plataforma de petróleo em alto-mar ao entardecer, com o mar agitado e nuvens carregadas no horizonte.
-
 **`petrobras-21-blocos-bonus-bilionario.webp`**
 Navio-sonda de perfuração em alto-mar, com o céu limpo e o oceano azul ao redor, vista aérea.
-
-**`leilao-pre-sal-sete-blocos.webp`**
-Plataforma de petróleo em alto-mar ao amanhecer, com navio de apoio próximo e mar calmo, sem logotipos.
 
 **`campos-neto-adia-depoimento-pf.webp`**
 Corredor de prédio público com portas fechadas e cadeiras de espera vazias, piso brilhante, luz fria.
@@ -152,6 +146,21 @@ Linha de montagem de carros com carrocerias sem pintura e braços robóticos, lu
 
 **`bets-saem-do-ar-devolucao-saldos.webp`**
 Celular sobre uma mesa mostrando uma tela de erro genérica, sem logotipos, ao lado de moedas e de um cartão sem marca.
+
+**`gasolina-impostos-zerados-subsidio-diesel.webp`**
+Bomba de combustível num posto à noite, com o bico encaixado no carro e o painel de preços desfocado, sem marcas.
+
+**`ipca-setembro-0-82-acima-do-teto.webp`**
+Carrinho de supermercado com tomates, batatas e cebolas em primeiro plano, corredor de mercado desfocado ao fundo.
+
+**`ibovespa-recorde-209-mil-dolar-4-98.webp`**
+Tela de cotações com gráfico de linha subindo em verde, refletida numa janela com prédios de São Paulo ao fundo.
+
+**`reforma-tributaria-cbs-86-notas.webp`**
+Nota fiscal impressa sobre o balcão de uma loja, ao lado de uma maquininha de cartão e de uma calculadora.
+
+**`cni-juros-altos-credito-industria.webp`**
+Galpão de fábrica com máquinas paradas e empilhadeira, luz entrando por janelas altas.
 
 ## Tecnologia
 
@@ -163,9 +172,6 @@ Cápsula espacial com paraquedas abertos descendo sobre o oceano Pacífico, com 
 
 **`pix-1-bilhao-chaves.webp`**
 Mão segurando um celular com a tela de pagamento por QR code genérico em frente a uma banca de feira, cores vivas.
-
-**`gov-br-assinatura-instavel.webp`**
-Notebook aberto sobre uma mesa com um documento digital na tela e um ícone de carregamento, ao lado de uma caneta e papéis.
 
 **`samsung-lucro-recorde-chips-ia.webp`**
 Close de uma placa de circuito com chips de memória em fileiras, iluminada por luz azul, numa bancada de laboratório.
@@ -181,3 +187,9 @@ Lupa sobre a tela de um celular que mostra uma foto de paisagem, com padrão de 
 
 **`nobel-quimica-kagan-soai.webp`**
 Dois frascos de laboratório com líquidos coloridos e um modelo de moléculas espelhadas sobre a bancada, luz suave de laboratório.
+
+**`openai-demite-pesquisadores-seguranca.webp`**
+Escritório moderno vazio à noite, com telas de computador mostrando linhas de código desfocadas e uma cadeira afastada da mesa.
+
+**`iphone-18-pro-apple-corta-pedidos.webp`**
+Linha de montagem de eletrônicos com bandejas de peças de celular genéricas e braços robóticos, sem marcas.
