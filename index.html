@@ -283,7 +283,7 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
 
 <div class="topbar">
   <div class="wrap">
-    <span id="today">Sábado, 10 de outubro de 2026</span>
+    <span id="today">Domingo, 11 de outubro de 2026</span>
     <div class="ticker" aria-label="Mercado">
       <span><b>Ibovespa</b> 209.067 <span class="up">▲ 1,38%</span></span>
       <span><b>Dólar</b> R$ 4,98 <span class="down">▼ 0,78%</span></span>
@@ -298,7 +298,7 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
       <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Abrir menu" aria-controls="drawer" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
       </button>
-      <span class="date-desk">Edição de 10 out 2026</span>
+      <span class="date-desk">Edição de 11 out 2026</span>
     </div>
     <a class="logo" href="#inicio" aria-label="Novera, página inicial">
       <span class="logo-name">Novera</span>
@@ -380,8 +380,8 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
 const META = {
   /* Endereço público do site, sem barra no final. Usado nos links das redes sociais. */
   siteUrl: 'https://novera-sepia.vercel.app',
-  dataExtenso: 'Sábado, 10 de outubro de 2026',
-  edicao: '10 out 2026',
+  dataExtenso: 'Domingo, 11 de outubro de 2026',
+  edicao: '11 out 2026',
   ibovespa: { valor: '209.067', variacao: '1,38%', sobe: true },
   dolar: { valor: 'R$ 4,98', variacao: '0,78%', sobe: false },
   fechamento: '9/10'
@@ -389,13 +389,13 @@ const META = {
 
 /* Home: destaque principal, dois laterais e três da faixa de baixo (IDs de notícias "own: true") */
 const FEATURED = {
-  lead: 'gasolina-impostos-zerados-subsidio-diesel',
-  side: ['nobel-paz-navi-pillay', 'terremoto-panama-magnitude-7-7'],
-  also: ['ipca-setembro-0-82-acima-do-teto', 'tse-julga-garotinho-eleicao-rio', 'libertadores-semifinais-tres-brasileiros']
+  lead: 'ataque-aeroporto-riade-hutis',
+  side: ['tse-julga-garotinho-eleicao-rio', 'tse-meta-48-horas-perfis-lula'],
+  also: ['bets-saem-do-ar-devolucao-saldos', 'terremoto-panama-magnitude-7-7', 'corinthians-demite-fernando-diniz']
 };
 
 /* Home: "Escolhas da redação" (5 IDs) */
-const PICKS = ['datafolha-segundo-turno-flavio-49-lula-45', 'bets-saem-do-ar-devolucao-saldos', 'trump-nao-atacara-ira-antes-eleicoes', 'openai-demite-pesquisadores-seguranca', 'corinthians-demite-fernando-diniz'];
+const PICKS = ['datafolha-segundo-turno-flavio-49-lula-45', 'gasolina-impostos-zerados-subsidio-diesel', 'caso-master-stf-fachin-pf-13-outubro', 'libertadores-semifinais-tres-brasileiros', 'nobel-paz-navi-pillay'];
 
 const U = {
   jgbMaster: 'https://jornalgrandebahia.com.br/2026/10/caso-banco-master-edson-fachin-marca-reuniao-com-pf-para-outubro-de-2026-e-cobra-apuracao-sem-excecao-de-mencoes-a-ministros-do-stf/',
@@ -506,6 +506,46 @@ const U = {
   cbsOpenai: 'https://www.cbsnews.com/news/openai-defends-firing-safety-researchers/',
   apnorcIa: 'https://apnorc.org/projects/most-adults-think-ai-is-developing-too-fast',
   tbIphone: 'https://tecnoblog.net/noticias/apple-corta-pedidos-do-iphone-18-pro-devido-a-baixa-demanda',
+  /* Atualização de 11 out 2026 */
+  treRuas: 'https://www.tre-rj.jus.br/comunicacao/noticias/2026/Outubro/retotalizacao-de-votos-aponta-douglas-ruas-como-vencedor-no-primeiro-turno-para-o-governo-do-rj',
+  bandRuas: 'https://www.band.com.br/politica/eleicoes/apos-retotalizacao-dos-votos-douglas-ruas-pl-e-eleito-governador-do-rio',
+  p360Ruas: 'https://www.poder360.com.br/poder-eleicoes-2026/votos-de-garotinho-sao-anulados-e-douglas-ruas-e-eleito-no-1o-turno-no-rj/',
+  metLulaNatal: 'https://www.metropoles.com/brasil/lula-reune-governadores-no-rn-rumo-ao-2o-turno-nao-a-direita-no-nordeste',
+  p360FlavioSG: 'https://www.poder360.com.br/poder-eleicoes-2026/flavio-diz-que-vai-receber-faixa-presidencial-de-jair-bolsonaro/',
+  cnnIpespe: 'https://www.cnnbrasil.com.br/eleicoes/ipespe-flavio-tem-527-dos-votos-validos-no-2o-turno-lula-473/',
+  p360Vorcaro: 'https://www.poder360.com.br/poder-justica/voz-em-audio-de-veja-e-de-vorcaro-diz-advogado-de-fundador-do-master/',
+  ajRiade: 'https://www.aljazeera.com/news/2026/10/10/attack-on-airport-in-saudi-capital-riyadh-leaves-several-injured',
+  ajRiade2: 'https://www.aljazeera.com/news/2026/10/11/world-condemns-deadly-houthi-attack-on-saudi-arabias-riyadh-airport',
+  cbsRiade: 'https://www.cbsnews.com/live-updates/iran-war-trump-us-elections-saudi-arabia-yemen-houthis/',
+  apTrumpUcrania: 'https://abcnews.com/US/wireStory/trump-time-ukraine-new-president-blames-zelenskyy-diesel-137162216',
+  euroZapo: 'https://www.euronews.com/2026/10/10/russian-strikes-on-southeastern-ukraine-kill-eight-including-three-children-authorities-sa',
+  euroAbbas: 'https://www.euronews.com/2026/10/10/palestinian-president-abbas-postpones-legislative-elections-until-september-2027',
+  apPanama: 'https://www.wgauradio.com/news/world/unnerved-panamanians/ER4ULEJCQ44ZHBYONOUAHIQ44A/',
+  etPanamaEmerg: 'https://www.eltiempo.com/mundo/latinoamerica/panama-declara-estado-de-emergencia-tras-terremoto-de-magnitud-7-7-que-dejo-cientos-de-edificaciones-afectadas-no-hay-personas-muertas-3592811',
+  cbsIsaias: 'https://www.cbsnews.com/live-updates/isaias-southeastern-u-s-gulf-coast/',
+  lanceSprint: 'https://www.lance.com.br/formula-1/com-nove-abandonos-verstappen-vence-sprint-do-gp-de-singapura-da-f1.html',
+  bandSaoPaulo: 'https://www.band.com.br/esportes/futebol/brasileirao-serie-a/com-dois-gols-de-calleri-sao-paulo-vence-o-vitoria-e-sobe-na-tabela',
+  gzVascoRemo: 'https://gazetaesportiva.com/times/vasco/vasco-x-remo-empate-sem-gols-brasileirao-30-rodada',
+  gzMaringa: 'https://www.gazetaesportiva.com/campeonatos/brasileiro-serie-c/maringa-garante-acesso-na-serie-c-mas-rodada-e-suspensa-por-falta-de-seguranca/',
+  lanceMascherano: 'https://www.lance.com.br/corinthians/mascherano-e-procurado-mas-descarta-assumir-o-corinthians.html',
+  cnnBatista: 'https://www.cnnbrasil.com.br/esportes/futebol/corinthians/corinthians-define-ex-vasco-como-treinador-interino-para-derby-decisivo/',
+  gzDerbi: 'https://www.gazetaesportiva.com/campeonatos/brasileiro-serie-a/tudo-sobre-palmeiras-corinthians-brasileirao-11-10-2026/',
+  abFestivalRio: 'https://agenciabrasil.ebc.com.br/cultura/noticia/2026-10/festival-do-rio-chega-ao-ultimo-fim-de-semana',
+  cnnJerry: 'https://www.cnnbrasil.com.br/pop/celebridades/morre-o-produtor-cultural-jerry-burgos-e-famosos-lamentam/',
+  cnnSimaria: 'https://www.cnnbrasil.com.br/pop/celebridades/simaria-fala-sobre-saude-mental-e-retorno-a-musica-apos-4-anos/',
+  abBetsDevolvidos: 'https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/bets-mais-de-r-1-bilhao-foram-devolvidos-apostadores',
+  cnnBetsSites: 'https://www.cnnbrasil.com.br/economia/money/macroeconomia/governo-encaminha-166-mil-sites-ilegais-de-bets-para-bloqueio/',
+  cnnIsaiasPetroleo: 'https://www.cnnbrasil.com.br/economia/money/macroeconomia/furacao-isaias-paralisa-69-da-producao-de-petroleo-no-golfo-do-mexico/',
+  imFiscalFlavio: 'https://www.infomoney.com.br/mercados/euforia-do-mercado-com-flavio-esbarra-na-falta-de-compromissos-concretos-com-fiscal/',
+  b3Feriado: 'https://b3.com.br/pt_br/noticias/confira-o-funcionamento-da-b3-no-feriado-de-nossa-senhora-aparecida.htm',
+  cnnChina: 'https://www.cnnbrasil.com.br/economia/money/macroeconomia/china-cria-1052-milhoes-de-empregos-urbanos-entre-janeiro-e-setembro/',
+  p360Meta: 'https://www.poder360.com.br/poder-eleicoes-2026/tse-da-48-horas-para-meta-explicar-restricoes-ao-perfil-de-lula/',
+  imMeta: 'https://www.infomoney.com.br/politica/tse-questiona-meta-apos-campanha-de-lula-acusar-empresa-de-favorecer-flavio-bolsonaro/',
+  odMeta: 'https://olhardigital.com.br/2026/10/10/internet-e-redes-sociais/campanha-de-lula-acusa-meta-de-interferir-nas-eleicoes-no-brasil/',
+  odAnthropic: 'https://olhardigital.com.br/2026/10/10/inteligencia-artificial/ia-da-anthropic-denuncia-falso-caso-de-homicidio-a-policia-dos-eua/',
+  spaceSda: 'https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-rocket-launch-data-transport-satellites-military-proliferated-architecture',
+  odMarte: 'https://olhardigital.com.br/2026/10/10/ciencia-e-espaco/ha-algo-de-muito-estranho-e-grande-pairando-sobre-marte/',
+  mwApple: 'https://macworld.com/article/3256451/apple-sets-nyc-experience-next-week-to-showcase-new-smart-home-devices.html',
 };
 
 const NEWS = [
@@ -543,32 +583,21 @@ const NEWS = [
   box: { type: 'bars', title: 'Datafolha: 2º turno', unit: '% das intenções de voto', max: 55, rows: [['Flávio Bolsonaro (PL)', 49], ['Lula (PT)', 45], ['Branco ou nulo', 5], ['Indecisos', 1]], note: 'Votos válidos: Flávio 52%, Lula 48%. Margem de erro de 2 pontos. Registro BR-02949/2026.' },
   sources: [['CNN Brasil', U.cnnDatafolha], ['Metrópoles', U.metDatafolha], ['Brasil de Fato', U.bdfDatafolha]] },
 
-{ id: 'tse-julga-garotinho-eleicao-rio', cat: 'nacional', own: true, t: '2026-10-09T10', d: '9 out 2026', img: 'congresso', read: 3,
+{ id: 'tse-julga-garotinho-eleicao-rio', cat: 'nacional', own: true, t: '2026-10-10T15', d: '10 out 2026', img: 'congresso', read: 3,
   photo: 'fotos/tse-julga-garotinho-eleicao-rio.webp', photoAlt: 'Fachada do prédio do Tribunal Superior Eleitoral, em Brasília, com a placa do tribunal em primeiro plano', credit: 'Foto: reprodução',
-  title: 'Paes desiste após decisão do STF, e Douglas Ruas deve ser declarado governador do Rio',
-  sum: 'O ministro Cristiano Zanin negou o pedido de Eduardo Paes (PSD) contra a anulação dos votos de Garotinho. O TRE-RJ refaz a totalização às 15h deste sábado (10).',
+  title: 'TRE-RJ refaz a conta, e Douglas Ruas vence a eleição do Rio no primeiro turno',
+  sum: 'Sem os votos anulados de Garotinho, Ruas (PL) ficou com 50,88% dos válidos, e Eduardo Paes (PSD), com 44,16%. A proclamação oficial está marcada para quinta (15).',
   body: [
-    'O ex-prefeito Eduardo Paes (PSD) desistiu da candidatura ao governo do Rio de Janeiro na sexta-feira (9), depois que o ministro Cristiano Zanin, do Supremo Tribunal Federal, negou o pedido para suspender a decisão do TSE que anulou os votos de Anthony Garotinho (Republicanos). Com isso, Douglas Ruas (PL) deve vencer a eleição sem segundo turno.',
-    'Em nota, Paes disse que a Justiça decidiu que não haverá segundo turno e que decisões judiciais devem ser respeitadas, mas que a maioria dos eleitores queria a disputa. Ele agradeceu os mais de 3,7 milhões de votos e disse que seu grupo vai fiscalizar o governo.',
-    '## O que acontece agora',
-    'O Tribunal Regional Eleitoral do Rio marcou a nova totalização para as 15h deste sábado (10). Segundo o tribunal, não é uma nova contagem: os registros das urnas são os mesmos, mas os 274.411 votos de Garotinho saem do cálculo. Depois disso, o TRE-RJ precisa declarar o novo resultado oficial.',
-    '## Os números',
-    'Pelo resultado divulgado em 4 de outubro, Ruas teve 4.271.199 votos, ou 49,27% dos válidos, e Paes teve 3.706.984, ou 42,76%. Sem os votos de Garotinho, Ruas passa dos 50% por cerca de 74 mil votos, segundo a Agência Brasil.',
-    '## A decisão do TSE',
-    'Na quinta-feira (8), o TSE decidiu por 5 votos a 2 que Garotinho estava com os direitos políticos suspensos pela Lei da Ficha Limpa quando se filiou ao Republicanos, por causa de uma condenação de 2018 por improbidade administrativa. Votaram assim o relator, Floriano de Azevedo Marques, André Mendonça, Dias Toffoli, Estela Aranha e o presidente do TSE, Nunes Marques.',
-    'Ficaram vencidos Ricardo Villas Bôas Cueva e Sebastião Reis Júnior, que também negaram a candidatura, mas queriam manter os votos na conta, o que levaria a eleição ao segundo turno.'
+    'O Tribunal Regional Eleitoral do Rio de Janeiro concluiu no sábado (10) a nova totalização dos votos para governador. Douglas Ruas (PL) passou de 49,27% para 50,88% dos votos válidos e venceu no primeiro turno. Eduardo Paes (PSD) foi de 42,76% para 44,16%.',
+    'Segundo o tribunal, não houve voto novo: os registros das urnas são os mesmos, mas os 274.411 votos de Anthony Garotinho (Republicanos) saíram da conta. Os votos válidos passaram a somar 8.394.627. Ruas manteve os 4.271.199 votos e ficou cerca de 74 mil acima da maioria absoluta, segundo o Poder360.',
+    '## Próximos passos',
+    'Os partidos têm três dias para examinar os relatórios e mais dois para apresentar reclamações. O resultado definitivo será proclamado em sessão do plenário do TRE-RJ em 15 de outubro, às 15h. Até lá, ficam suspensos os preparativos e a propaganda do segundo turno para governador.',
+    '## Como se chegou aqui',
+    'Na quinta-feira (8), o TSE decidiu por 5 votos a 2 que Garotinho estava com os direitos políticos suspensos pela Lei da Ficha Limpa quando se filiou ao Republicanos, e anulou os votos dele. O ministro Cristiano Zanin, do STF, negou o pedido de Paes para suspender a decisão.',
+    'Na sexta (9), Paes desistiu da candidatura. Em nota, disse que decisões judiciais devem ser cumpridas, mas que a maioria dos eleitores queria o segundo turno, e agradeceu os mais de 3,7 milhões de votos.'
   ],
-  box: { type: 'facts', title: 'Governo do RJ: a decisão', rows: [['Placar no TSE', '5 votos a 2'], ['STF', 'Zanin nega pedido de Paes'], ['Douglas Ruas (PL)', '4.271.199 votos'], ['Eduardo Paes (PSD)', '3.706.984 votos'], ['Votos anulados de Garotinho', '274.411'], ['Nova totalização', 'Sábado (10), às 15h']] },
-  sources: [['Agência Brasil', U.abPaes], ['Exame', U.exTre], ['Agência Brasil', U.abTseRio], ['O POVO+', U.opovoTse]] },
-
-{ id: 'campanhas-segundo-turno-primeiros-apoios', cat: 'nacional', own: false, t: '2026-10-07T06', d: '7 out 2026', img: 'eleicao', src: 'Gazeta do Povo', url: U.gazetaApoio,
-  photo: 'fotos/campanhas-segundo-turno-primeiros-apoios.webp', photoAlt: 'Arte com o texto Eleições 2026, com o zero do ano em amarelo formando o mapa do Brasil', credit: 'Arte: reprodução',
-  title: 'União Brasil, PP e Caiado apoiam Flávio; Lula defende o fim da escala 6x1',
-  sum: 'A federação, neutra no primeiro turno, decidiu por unanimidade. Lula cobrou do rival uma posição sobre a PEC da jornada de trabalho.',
-  body: [
-    'A federação formada por União Brasil e PP anunciou apoio a Flávio Bolsonaro na terça-feira (6), em Brasília. Em Goiânia, o ex-governador Ronaldo Caiado (PSD), quinto colocado no primeiro turno, oficializou a adesão em evento com Tarcísio de Freitas.',
-    'No mesmo dia, Lula defendeu a PEC que reduz a jornada máxima de 44 para 40 horas semanais e questionou se Flávio vai orientar o PL a votar contra a proposta no Senado.'
-  ] },
+  box: { type: 'facts', title: 'Governo do RJ: a nova conta', rows: [['Douglas Ruas (PL)', '50,88% (4.271.199 votos)'], ['Eduardo Paes (PSD)', '44,16%'], ['Votos válidos', '8.394.627'], ['Votos anulados de Garotinho', '274.411'], ['Proclamação', '15 de outubro, às 15h']] },
+  sources: [['TRE-RJ', U.treRuas], ['Poder360', U.p360Ruas], ['Band', U.bandRuas], ['Agência Brasil', U.abPaes], ['Agência Brasil', U.abTseRio]] },
 
 { id: 'atlasintel-flavio-51-lula-45-segundo-turno', cat: 'nacional', own: false, t: '2026-10-09T15', d: '9 out 2026', img: 'eleicao', src: 'InfoMoney', url: U.imAtlas,
   title: 'AtlasIntel: Flávio tem 51,1% e Lula, 45,7%, no segundo turno',
@@ -576,22 +605,6 @@ const NEWS = [
   body: [
     'O levantamento ouviu 5.026 pessoas entre 3 e 8 de outubro e está registrado no TSE com o número BR-03663/2026. Brancos, nulos e indecisos somam 3,2%. Na pesquisa anterior, encerrada em 2 de outubro, Lula tinha 47,6% e Flávio, 47,4%.',
     'Segundo o InfoMoney, 53,4% desaprovam o desempenho de Lula, e 44,7% aprovam. No tema da pobreza e da desigualdade, os dois candidatos empatam em confiança, com 48% cada.'
-  ] },
-
-{ id: 'lula-ceilandia-6x1-caso-master', cat: 'nacional', own: false, t: '2026-10-09T13', d: '9 out 2026', img: 'eleicao', src: 'Agência Brasil', url: U.abLula,
-  title: 'Lula faz ato em Ceilândia, defende o fim da escala 6x1 e cita o caso Master',
-  sum: 'No Distrito Federal, o presidente disse que o país não será governado por "sócios do Banco Master". Neste sábado (10), ele faz ato em Natal.',
-  body: [
-    'O ato foi na Feira da Ceilândia, na sexta-feira (9), com a primeira-dama Janja e Leandro Grass (PT), candidato ao governo do DF. Lula voltou a defender a PEC que reduz a jornada de trabalho, em discussão no Senado.',
-    'Segundo a Agência Brasil, ele também falou em soberania e disse que as riquezas do país pertencem aos brasileiros. O horário eleitoral gratuito no rádio e na TV recomeçou no mesmo dia.'
-  ] },
-
-{ id: 'flavio-mantem-bolsa-familia-farmacia-popular', cat: 'nacional', own: false, t: '2026-10-09T16', d: '9 out 2026', img: 'eleicao', src: 'Agência Brasil', url: U.abFlavio,
-  title: 'Flávio diz que vai manter o Bolsa Família e melhorar o Farmácia Popular',
-  sum: 'Em evento no Rio com Douglas Ruas, o candidato chamou de falsa a informação de que acabaria com o programa e criticou os subsídios ao diesel.',
-  body: [
-    'O evento foi na Barra da Tijuca, na sexta-feira (9). Flávio disse que o Bolsa Família terá foco em quem mais precisa, com cursos de qualificação, e prometeu entrega de remédios em casa pelo Farmácia Popular. Ele também negou que pretenda privatizar a Petrobras.',
-    'Segundo a Agência Brasil, o candidato prometeu menos impostos e crédito barato e disse que, com Ruas, vai combater o crime organizado. Ele agradeceu o apoio de Augusto Cury (Avante) e afirmou que conversa com outros partidos.'
   ] },
 
 { id: 'record-cancela-debate-lula-flavio', cat: 'nacional', own: false, t: '2026-10-09T18', d: '9 out 2026', img: 'eleicao', src: 'Poder360', url: U.p360Debate,
@@ -610,46 +623,39 @@ const NEWS = [
     'Depois do primeiro turno, o regimento exige mais três sessões antes da votação final. A líder do governo, Teresa Leitão (PT-PE), recolhe assinaturas para um calendário especial, que permitiria concluir a votação na penúltima semana de outubro.'
   ] },
 
-{ id: 'inmet-alerta-vermelho-tempestades-sul', cat: 'nacional', own: false, t: '2026-10-09T08', d: '9 out 2026', img: 'mundo', src: 'Agência Brasil', url: U.abInmet,
-  title: 'Inmet emite alerta vermelho para tempestades em partes do Sul no fim de semana',
-  sum: 'O aviso de maior gravidade vale para o oeste do Paraná e de Santa Catarina e o norte do Rio Grande do Sul. Outras regiões têm alertas amarelos de chuva e de tempo seco.',
+{ id: 'lula-natal-governadores-nordeste', cat: 'nacional', own: false, t: '2026-10-10T12', d: '10 out 2026', img: 'eleicao', src: 'Metrópoles', url: U.metLulaNatal,
+  title: 'Lula faz caminhada em Natal com governadores do Nordeste',
+  sum: 'Foi o primeiro ato do presidente na região no segundo turno. Neste domingo (11), ele tem ato na Avenida Paulista, em São Paulo.',
   body: [
-    'Segundo a Agência Brasil, o alerta vermelho cobre o oeste e o sudoeste do Paraná, o centro e o oeste de Santa Catarina e o noroeste e o norte do Rio Grande do Sul. No restante do Sul, os avisos são laranja ou amarelo.',
-    'Há alerta amarelo para tempestades em São Paulo, no sul de Minas Gerais e no sul do Rio de Janeiro, e para baixa umidade em partes do Centro-Oeste e do Nordeste. Uma frente fria derruba as temperaturas no Rio Grande do Sul.'
+    'A caminhada foi na manhã de sábado (10), no bairro do Alecrim, ao lado de Cadu Xavier (PT), candidato ao governo do Rio Grande do Norte. Participaram os governadores Fátima Bezerra (RN), Jerônimo Rodrigues (BA), Elmano de Freitas (CE) e Lucas Ribeiro (PB), além do senador eleito Rui Costa (PT-BA).',
+    'Segundo o Metrópoles, Lula pediu votos contra a direita no Nordeste. A agenda deste domingo prevê ato ao meio-dia na Avenida Paulista, com Guilherme Boulos.'
+  ] },
+
+{ id: 'flavio-motociata-sao-goncalo-maracanazinho', cat: 'nacional', own: false, t: '2026-10-10T15', d: '10 out 2026', img: 'eleicao', src: 'Poder360', url: U.p360FlavioSG,
+  title: 'Flávio faz motociata em São Gonçalo e promete endurecer o combate ao crime',
+  sum: 'No Rio, o candidato esteve com o governador eleito Douglas Ruas e foi a um culto no Maracanãzinho. Neste domingo (11), ele se reúne com prefeitos em São Paulo.',
+  body: [
+    'A motociata foi na manhã de sábado (10), em São Gonçalo, com Douglas Ruas (PL) e o deputado Carlos Jordy. Segundo o Poder360, Flávio prometeu declarar guerra ao narcotráfico, reduzir a maioridade penal e endurecer a punição para o roubo de celulares. Ele também disse que receberá a faixa presidencial do pai, Jair Bolsonaro, que cumpre pena por tentativa de golpe.',
+    'À tarde, foi à celebração dos 100 anos da Assembleia de Deus Ministério de Madureira, no Maracanãzinho. Neste domingo, a agenda prevê encontros com prefeitos e vereadores da Grande São Paulo.'
+  ] },
+
+{ id: 'ipespe-flavio-52-7-lula-47-3', cat: 'nacional', own: false, t: '2026-10-10T10', d: '10 out 2026', img: 'eleicao', src: 'CNN Brasil', url: U.cnnIpespe,
+  title: 'Ipespe: Flávio tem 52,7% e Lula, 47,3%, dos votos válidos',
+  sum: 'A pesquisa ouviu 1.500 pessoas de 6 a 8 de outubro. A margem de erro é de 2,6 pontos.',
+  body: [
+    'O levantamento foi feito para a Abrapel por recrutamento digital aleatório e está registrado no TSE com o número BR-00933/2026. Segundo a CNN Brasil, custou R$ 105 mil, pagos com recursos próprios.',
+    'O resultado vai na mesma direção do Datafolha e da AtlasIntel divulgados nesta semana, que também mostram Flávio Bolsonaro (PL) à frente de Lula (PT).'
+  ] },
+
+{ id: 'caso-master-audio-vorcaro-advogado', cat: 'nacional', own: false, t: '2026-10-10T13', d: '10 out 2026', img: 'congresso', src: 'Poder360', url: U.p360Vorcaro,
+  title: 'Caso Master: advogado diz que voz em áudio divulgado pela Veja é de Vorcaro',
+  sum: 'A revista afirma que o banqueiro relatou pagamentos ligados a um documentário sobre Lula. A PF e a PGR negam ter recebido esse relato, e o Instituto Lula nega ter recebido dinheiro.',
+  body: [
+    'Segundo o Poder360, o advogado Daniel Bialski disse no sábado (10) que a voz é de Daniel Vorcaro em um dos áudios, mas que não sabe quando nem em que circunstâncias foi gravado. Outra parte da defesa tinha dito na sexta que não confirma o conteúdo do material.',
+    'A Polícia Federal afirma que Vorcaro não prestou depoimento com esse teor e que suas propostas de delação foram recusadas. Paulo Okamotto nega que o Instituto Lula tenha recebido recursos, e a campanha de Lula chama a reportagem de farsa.'
   ] },
 
 /* ===================== INTERNACIONAL ===================== */
-{ id: 'trump-nao-atacara-ira-antes-eleicoes', cat: 'internacional', own: true, t: '2026-10-08T18', d: '8 out 2026', img: 'mundo', read: 3,
-  title: 'Trump diz que não vai atacar o Irã antes das eleições de 3 de novembro',
-  sum: 'O presidente americano falou em "discussões produtivas" com Teerã, mas manteve o bloqueio aos portos iranianos. O Irã ampliou os ataques a navios fora do Estreito de Ormuz.',
-  body: [
-    'O presidente dos Estados Unidos, Donald Trump, afirmou na quinta-feira (8) que o país não vai atacar o Irã antes das eleições de meio de mandato, marcadas para 3 de novembro. Em publicação na rede Truth Social, ele disse que mantém "discussões produtivas" com o governo iraniano. Segundo a agência Reuters, o bloqueio americano aos portos do Irã continua.',
-    'A declaração veio depois de reportagens sobre a retomada dos combates. Segundo o site Axios, o Pentágono tinha mandado o Comando Central concluir os preparativos para grandes operações. A CBS News informou que o Brent, referência do petróleo, estava perto de US$ 105 antes da publicação de Trump e caiu para cerca de US$ 103 depois dela.',
-    '## Negociações travadas',
-    'Trump rejeitou a proposta mais recente de Teerã para encerrar a guerra e reabrir Ormuz, segundo a Reuters. O chanceler iraniano, Araghchi, disse que o país analisa a resposta americana e vai se manifestar em poucos dias. O presidente do Irã, Pezeshkian, chamou as conversas de inúteis.',
-    '## Ataques a navios',
-    'Ao mesmo tempo, o Irã ampliou os ataques a navios. Segundo a Euronews, o petroleiro Acers, de bandeira de Antígua e Barbuda, foi atingido na quarta-feira (7) por vários projéteis a 51 milhas náuticas ao norte do Catar. Na quinta, um navio pegou fogo a cerca de 40 km de Fujairah, nos Emirados Árabes Unidos. Na madrugada desta sexta (9), a agência iraniana Fars relatou fortes explosões no sul do estreito, sem informar a causa.',
-    'A guerra começou em 28 de fevereiro, com ataques dos EUA e de Israel ao Irã. Segundo a agência AP, citada pela CBS, 19 militares americanos morreram desde então. O Estreito de Ormuz está praticamente fechado desde o início do conflito.'
-  ],
-  box: { type: 'facts', title: 'A guerra em números', rows: [['Início', '28 de fevereiro'], ['Militares dos EUA mortos', '19, segundo a AP'], ['Custo para os EUA', 'Cerca de US$ 3 bilhões por mês'], ['Eleições nos EUA', '3 de novembro']] },
-  sources: [['InfoMoney / Reuters', U.imTrumpIra], ['CBS News', U.cbsIra], ['Axios', U.axiosIra], ['Euronews', U.euroNavios], ['Al Jazeera', U.ajOrmuz]] },
-
-{ id: 'kramatorsk-bomba-onibus-mortos', cat: 'internacional', own: false, t: '2026-10-08T14', d: '8 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajKramatorsk,
-  title: 'Bomba russa atinge dois ônibus em Kramatorsk e mata pelo menos 30 pessoas',
-  sum: 'O ataque foi na manhã de quinta-feira (8), no leste da Ucrânia. Também deixou 18 feridos, segundo autoridades regionais.',
-  body: [
-    'Segundo o presidente Volodymyr Zelensky, a bomba planadora caiu numa parada de ônibus. Ele disse que o ataque não ficará sem resposta. Moscou não comentou de imediato.',
-    'Em Pryluky, no norte do país, o número de mortos no ataque com mísseis da quarta-feira (7) chegou a 22, cinco deles crianças. Enviados dos EUA devem se reunir com negociadores ucranianos em Miami nesta sexta (9).'
-  ] },
-
-{ id: 'etiopia-eritreia-tropas-tigre', cat: 'internacional', own: false, t: '2026-10-08T10', d: '8 out 2026', img: 'mundo', src: 'AP', url: U.apEritreia,
-  title: 'Tropas da Eritreia entram no Tigré, e cresce o risco de guerra com a Etiópia',
-  sum: 'Soldados eritreus chegaram a duas cidades do norte da região etíope, segundo um comandante local. Um monitor de conflitos relata ataques de drones da Etiópia.',
-  body: [
-    'As tropas entraram em Adigrat na terça-feira (6) e em Idaga Hamus na quarta (7), segundo um comandante ouvido pela AP. A agência não conseguiu confirmar a informação de forma independente. O monitor de conflitos ACLED relatou ataques de drones atribuídos ao Exército etíope.',
-    'A escalada vem depois que forças aliadas ao governo etíope entraram em Mekelle, capital do Tigré. Os dois países romperam relações depois que a Etiópia expulsou 10 diplomatas eritreus. O ministro da Informação da Eritreia disse que o país não vai rebater o que chamou de alegações sem fundamento.'
-  ] },
-
 { id: 'russia-ataque-kiev-mortos', cat: 'internacional', own: false, t: '2026-10-07T20', d: '7 out 2026', img: 'mundo', src: 'Kyiv Independent', url: U.kiKiev,
   photo: 'fotos/russia-ataque-kiev-mortos.webp', photoAlt: 'Explosão ilumina o céu noturno de uma cidade, com uma grande nuvem de fogo e fumaça', credit: 'Foto: reprodução',
   title: 'Ataque russo no aniversário de Putin mata ao menos 28 pessoas na Ucrânia',
@@ -668,12 +674,12 @@ const NEWS = [
     'Pelo menos 215 adolescentes e 715 policiais ficaram feridos. Desde o início do movimento, 6.100 pessoas foram presas, a maioria menores de idade.'
   ] },
 
-{ id: 'furacao-isaias-golfo-eua', cat: 'internacional', own: false, t: '2026-10-10T02', d: '10 out 2026', img: 'mundo', src: 'AccuWeather', url: U.awIsaias,
-  title: 'Furacão Isaias chega à costa da Flórida e deixa mais de 500 mil clientes sem luz',
-  sum: 'A tempestade tocou terra como categoria 2, com ventos de 177 km/h, perto de Destin, na noite de sexta (9). Agora avança pelo interior do sudeste dos EUA.',
+{ id: 'furacao-isaias-golfo-eua', cat: 'internacional', own: false, t: '2026-10-10T23', d: '10 out 2026', img: 'mundo', src: 'CBS News', url: U.cbsIsaias,
+  title: 'Isaias deixa pelo menos 4 mortos e chegou a cortar a luz de 884 mil clientes nos EUA',
+  sum: 'Duas mortes foram na Flórida e duas no Alabama. A tempestade perdeu força e deve se dissipar neste domingo (11), mas ainda há risco de enchentes.',
   body: [
-    'O Isaias chegou à costa por volta das 20h30 de sexta, hora local (22h30 em Brasília), segundo a AccuWeather. Mais cedo, chegou a ser de categoria 3. Rajadas de 164 km/h foram registradas em Pensacola.',
-    'Cerca de 370 mil clientes ficaram sem energia na Flórida e 210 mil no Alabama. A previsão era de maré de tempestade de 1,8 a 3 metros em partes da costa. Nos próximos dias, a tempestade deve cruzar os Apalaches e sair pelo litoral do Atlântico.'
+    'Segundo a CBS News, duas pessoas morreram com a queda de árvores sobre casas, uma em Escambia, na Flórida, e outra em Birmingham, no Alabama. Um homem foi achado morto numa garagem fechada com um gerador ligado, e o governo do Alabama confirmou outra morte, sem detalhar a causa.',
+    'Na manhã de sábado (10), mais de 884 mil clientes estavam sem luz na Flórida, no Alabama e na Geórgia. O Isaias, que tocou terra perto de Destin como furacão de categoria 2, virou um ciclone pós-tropical. Há alertas de inundação em partes do sudeste.'
   ] },
 
 { id: 'quenia-primeiro-caso-ebola', cat: 'internacional', own: false, t: '2026-10-06T15', d: '6 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajEbola,
@@ -701,27 +707,59 @@ const NEWS = [
   box: { type: 'facts', title: 'Navi Pillay', rows: [['Nacionalidade', 'Sul-africana'], ['Idade', '85 anos'], ['Na ONU', 'Alta-comissária para os Direitos Humanos (2008 a 2014)'], ['Candidatos ao prêmio', '287'], ['Entrega', '10 de dezembro, em Oslo']] },
   sources: [['Al Jazeera', U.ajPillay], ['Agência Brasil', U.abPillay], ['Al Jazeera', U.ajPillayQuem]] },
 
-{ id: 'terremoto-panama-magnitude-7-7', cat: 'internacional', own: true, t: '2026-10-09T20', d: '9 out 2026', img: 'mundo', read: 3,
-  title: 'Terremoto de magnitude 7,7 atinge o Panamá; presidente fala em "desastre grande"',
-  sum: 'Foi o tremor mais forte no país em mais de sete décadas. Prédios e estradas desabaram e houve feridos; até a noite de sexta, não havia registro de mortes.',
+{ id: 'terremoto-panama-magnitude-7-7', cat: 'internacional', own: true, t: '2026-10-10T19', d: '10 out 2026', img: 'mundo', read: 3,
+  title: 'Panamá decreta estado de emergência após terremoto de magnitude 7,7',
+  sum: 'Não há registro de mortes. Cerca de 420 casas e 420 escolas foram danificadas, e 27 pessoas ficaram feridas, segundo o governo.',
   body: [
-    'Um terremoto de magnitude 7,7 atingiu o Panamá às 12h56 de sexta-feira (9), hora local (14h56 em Brasília), segundo o Serviço Geológico dos EUA (USGS). O epicentro ficou na província de Herrera, no sul do país, a cerca de 12 km de profundidade. O instituto de geociências do Panamá calculou magnitude 7,2.',
-    'Segundo o Business Standard, foi o tremor mais forte na região desde pelo menos 1951. Um abalo secundário de magnitude 6,6 ocorreu no fim da tarde, e dezenas de réplicas foram registradas ao longo do dia.',
+    'O governo do Panamá decretou estado de emergência no sábado (10), um dia depois do terremoto de magnitude 7,7, o mais forte no país em mais de sete décadas. O anúncio foi feito pelo ministro da Presidência, Juan Carlos Orillac. Segundo a agência AP, as autoridades não atribuíram mortes ao tremor nem registraram desaparecidos.',
+    'O tremor principal foi às 12h56 de sexta-feira (9), hora local (14h56 em Brasília), com epicentro na província de Herrera, no sul do país, segundo o Serviço Geológico dos EUA (USGS). Houve um segundo abalo, de magnitude 6,6, e mais de 100 réplicas.',
     '## Estragos',
-    'O presidente José Raúl Mulino disse que o desastre é grande e que algumas estradas desabaram totalmente. Em Penonomé, parte de um hotel caiu sobre a Rodovia Pan-Americana e uma das torres da catedral desabou, segundo o jornal colombiano El Espectador. Também houve prédios destruídos em Pedasí e casas derrubadas em Tonosí.',
-    'A defesa civil informou feridos, a maioria com ferimentos leves, e disse que, até a noite de sexta, não havia mortes registradas. O aeroporto de Tocumen ficou fechado por mais de duas horas, e o metrô da capital suspendeu duas linhas. Uma estimativa inicial do USGS aponta prejuízos acima de US$ 1 bilhão.',
-    '## Canal e alerta de tsunami',
-    'O Canal do Panamá, a mais de 190 km do epicentro, continuou funcionando, com equipes inspecionando as estruturas. Os EUA chegaram a emitir alerta de tsunami para a costa do Pacífico de outros países da região, suspenso cerca de três horas depois. O tremor foi sentido na Colômbia e na Costa Rica.'
+    'Segundo a AP, 27 pessoas tiveram ferimentos leves ou moderados. Foram danificadas cerca de 420 casas e quase o mesmo número de escolas públicas, além de 7 hotéis, pelo menos 13 igrejas e 9 pontes. A igreja de San Atanasio, em La Villa de Los Santos, declarada patrimônio histórico nacional em 1938, desabou.',
+    'Na Ilha Caña, cerca de 300 pessoas foram retiradas por causa do mar agitado. O presidente José Raúl Mulino disse que o desastre é grande. Os EUA prometeram US$ 5 milhões em ajuda humanitária.',
+    '## Canal funcionando',
+    'O Canal do Panamá, a mais de 190 km do epicentro, continua operando. Na sexta, os EUA chegaram a emitir alerta de tsunami para a costa do Pacífico de outros países da região, suspenso cerca de três horas depois. O tremor foi sentido na Colômbia e na Costa Rica.'
   ],
-  box: { type: 'facts', title: 'O terremoto', rows: [['Magnitude', '7,7, segundo o USGS'], ['Profundidade', 'Cerca de 12 km'], ['Maior réplica', '6,6'], ['Mortes', 'Nenhuma registrada até a noite de sexta'], ['Canal do Panamá', 'Funcionando']] },
-  sources: [['Business Standard', U.bsPanama], ['El Espectador', U.eePanama], ['El Tiempo', U.etPanama]] },
+  box: { type: 'facts', title: 'O terremoto', rows: [['Magnitude', '7,7, segundo o USGS'], ['Réplicas', 'Mais de 100'], ['Mortes', 'Nenhuma registrada'], ['Feridos', '27'], ['Casas danificadas', 'Cerca de 420'], ['Ajuda dos EUA', 'US$ 5 milhões']] },
+  sources: [['AP', U.apPanama], ['El Tiempo', U.etPanamaEmerg], ['Business Standard', U.bsPanama], ['El Espectador', U.eePanama]] },
 
-{ id: 'ucrania-eua-negociacao-miami', cat: 'internacional', own: false, t: '2026-10-09T14', d: '9 out 2026', img: 'mundo', src: 'Al Arabiya / Reuters', url: U.aaMiami,
-  title: 'Delegação da Ucrânia chega a Miami para negociar com enviados dos EUA',
-  sum: 'Representantes europeus também participam das conversas sobre o fim da guerra, segundo a agência Reuters.',
+{ id: 'ataque-aeroporto-riade-hutis', cat: 'internacional', own: true, t: '2026-10-10T20', d: '10 out 2026', img: 'mundo', read: 3,
+  title: 'Ataque ao aeroporto de Riade mata 12 pessoas; Arábia Saudita acusa os hutis',
+  sum: 'Cerca de 300 pessoas ficaram feridas. Trump disse que os EUA avaliam entrar na guerra contra o grupo do Iêmen.',
   body: [
-    'A delegação ucraniana chegou à cidade americana na sexta-feira (9), segundo uma fonte ouvida pela Reuters. O presidente Volodymyr Zelensky tinha dito que europeus também estariam nas conversas. Não houve anúncio de resultados.',
-    'O encontro acontece um dia depois do ataque russo com bomba planadora em Kramatorsk, no leste da Ucrânia.'
+    'Um ataque ao Aeroporto Internacional Rei Khalid, em Riade, capital da Arábia Saudita, matou pelo menos 12 pessoas no sábado (10), segundo a autoridade de aviação civil do país. Cerca de 300 pessoas ficaram feridas. A Al Jazeera classificou o ataque como o mais letal no reino em mais de uma década.',
+    'Entre os mortos estão quatro sauditas, dois cidadãos de Bangladesh e uma pessoa de cada um destes países: Estados Unidos, Jordânia, Palestina, Síria, Sudão e Egito. O secretário de Estado americano, Marco Rubio, confirmou a morte de um cidadão dos EUA.',
+    '## Quem é acusado',
+    'O governo saudita atribui o ataque aos hutis, grupo armado do Iêmen, e conduz uma campanha aérea contra eles. Segundo a CBS News, não houve reivindicação formal, mas um dirigente de mídia do grupo escreveu nas redes que os hutis tinham fechado o aeroporto. Foi o terceiro ataque ao aeroporto de Riade na semana.',
+    '## Reações',
+    'O presidente dos EUA, Donald Trump, chamou o ataque de terrível, disse que vai conversar com o príncipe herdeiro Mohammed bin Salman e afirmou que o país avalia entrar na guerra contra os hutis. O secretário-geral da ONU, António Guterres, disse estar profundamente chocado. Egito, Catar, Paquistão, Jordânia, Japão e Canadá também condenaram o ataque.',
+    '## No Golfo',
+    'O ataque ocorre durante a guerra entre EUA e Israel, de um lado, e Irã, do outro, iniciada em 28 de fevereiro. Na quinta (8), Trump disse que não atacaria o Irã antes das eleições americanas de 3 de novembro.'
+  ],
+  box: { type: 'facts', title: 'O ataque', rows: [['Local', 'Aeroporto Rei Khalid, Riade'], ['Mortos', 'Pelo menos 12'], ['Feridos', 'Cerca de 300'], ['Acusados', 'Hutis, do Iêmen'], ['Ataques ao aeroporto na semana', '3']] },
+  sources: [['Al Jazeera', U.ajRiade2], ['Al Jazeera / Reuters', U.ajRiade], ['CBS News', U.cbsRiade], ['InfoMoney / Reuters', U.imTrumpIra]] },
+
+{ id: 'trump-ucrania-novo-presidente-diesel-russo', cat: 'internacional', own: false, t: '2026-10-10T18', d: '10 out 2026', img: 'mundo', src: 'AP', url: U.apTrumpUcrania,
+  title: 'Trump diz que a Ucrânia precisa de novo presidente após Zelensky criticar acordo de diesel com a Rússia',
+  sum: 'Pelo acordo anunciado por Trump, a Rússia fornecerá diesel aos EUA. Zelensky disse que a Rússia respondeu à suspensão de sanções com bombardeios.',
+  body: [
+    'Segundo a AP, Trump culpou Zelensky pela alta do diesel e afirmou que é hora de a Ucrânia ter um novo presidente. Pelo acordo anunciado por ele na sexta (9), a Rússia fornece de imediato mais de 300 mil toneladas de diesel, mais 500 mil em novembro e depois 1 milhão de toneladas.',
+    'Zelensky escreveu que a Rússia agradeceu a suspensão das sanções com cinco bombas em Zaporíjia e que a escolha russa é a guerra. Um integrante do governo ucraniano disse que Kiev não sabia do acordo e que ele não tem ligação com as conversas da semana em Miami, das quais a delegação ucraniana já voltou.'
+  ] },
+
+{ id: 'zaporijia-bombas-mortos-criancas', cat: 'internacional', own: false, t: '2026-10-10T14', d: '10 out 2026', img: 'mundo', src: 'Euronews', url: U.euroZapo,
+  title: 'Bombas russas matam pelo menos 20 pessoas em Zaporíjia, entre elas três crianças',
+  sum: 'Cinco bombas guiadas atingiram áreas residenciais na madrugada de sábado (10). Duas caíram sobre prédios de apartamentos.',
+  body: [
+    'Segundo o serviço de emergência da Ucrânia, citado pela Euronews, 16 pessoas ficaram feridas, e as buscas continuavam. Uma das bombas destruiu a entrada de um prédio de três andares.',
+    'Na mesma noite, a Rússia lançou 160 drones contra o país, e 117 foram derrubados ou neutralizados, segundo a Força Aérea ucraniana.'
+  ] },
+
+{ id: 'abbas-adia-eleicoes-palestinas-2027', cat: 'internacional', own: false, t: '2026-10-10T16', d: '10 out 2026', img: 'mundo', src: 'Euronews', url: U.euroAbbas,
+  title: 'Abbas adia eleições palestinas para setembro de 2027',
+  sum: 'O pleito legislativo estava marcado para 28 de novembro. Por decreto, as eleições legislativas e presidenciais passam para 11 de setembro de 2027.',
+  body: [
+    'O presidente da Autoridade Palestina, Mahmoud Abbas, citou obstáculos de segurança e de logística. Segundo a Euronews, o comitê executivo da OLP aprovou o adiamento. As últimas eleições legislativas palestinas foram em 2006.',
+    'O chanceler de Israel, Gideon Sa’ar, acusou Abbas de enganar a comunidade internacional.'
   ] },
 
 /* ===================== ESPORTES ===================== */
@@ -749,14 +787,6 @@ const NEWS = [
     'No domingo (11), o Fluminense enfrenta o líder Flamengo no Maracanã.'
   ] },
 
-{ id: 'f1-gp-singapura-primeira-sprint', cat: 'esportes', own: false, t: '2026-10-09T12', d: '9 out 2026', img: 'pista', src: 'Grande Prêmio', url: U.gpSprint,
-  title: 'Verstappen larga na pole da primeira sprint de Singapura; líder Antonelli sai em 7º',
-  sum: 'George Russell, segundo no campeonato, larga em 2º. A sprint é neste sábado (10), às 6h de Brasília, e a corrida principal, no domingo (11), às 9h.',
-  body: [
-    'Max Verstappen fez o melhor tempo na classificação para a sprint, na sexta-feira (9), 0s120 à frente de Russell, da Mercedes. Ferrari e McLaren ficaram do 3º ao 6º lugar. Kimi Antonelli, também da Mercedes, ficou a 0s693 da pole. O brasileiro Gabriel Bortoleto larga em 14º.',
-    'Segundo o Grande Prêmio, Russell vai largar do fundo do grid no domingo, por punição pela troca de peças do motor. A classificação para o GP é neste sábado, às 10h. Antonelli lidera com 320 pontos, 84 a mais que Russell.'
-  ] },
-
 { id: 'novorizontino-vence-nautico-serie-b', cat: 'esportes', own: false, t: '2026-10-08T22', d: '8 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzNovori,
   title: 'Novorizontino vence o Náutico e encosta nos líderes da Série B',
   sum: 'Com o 2 a 0 nos Aflitos, o time chegou a 57 pontos, dois a menos que o líder Juventude.',
@@ -765,27 +795,20 @@ const NEWS = [
     'O Novorizontino é o 3º colocado. O Náutico, com 42 pontos, está em 13º.'
   ] },
 
-{ id: 'joao-fonseca-paris-basileia', cat: 'esportes', own: false, t: '2026-10-08T19', d: '8 out 2026', img: 'esportes', src: 'Lance!', url: U.lanceFonseca,
-  title: 'João Fonseca está confirmado no Masters de Paris e pode defender o título em Basileia',
-  sum: 'Fora das quadras desde agosto por causa de uma lesão abdominal, o brasileiro, 29º do ranking, não disputa o Masters de Xangai.',
+{ id: 'corinthians-demite-fernando-diniz', cat: 'esportes', own: true, t: '2026-10-10T17', d: '10 out 2026', img: 'esportes', read: 3,
+  title: 'Mascherano recusa o Corinthians, e interino comanda o time no clássico contra o Palmeiras',
+  sum: 'O argentino é mais um a dizer não ao contrato curto. William Batista, do sub-20, dirige a equipe neste domingo (11), às 17h30, no Nubank Parque.',
   body: [
-    'O Masters 1000 de Paris vai de 2 a 8 de novembro, e Fonseca é o único brasileiro com vaga direta. Antes, ele deve jogar o ATP 500 de Basileia, de 26 de outubro a 1º de novembro, se estiver em condições físicas.',
-    'O brasileiro não joga desde que desistiu do torneio de Cincinnati, em agosto. Ele também ficou fora de Tóquio e de Xangai.'
-  ] },
-
-{ id: 'corinthians-demite-fernando-diniz', cat: 'esportes', own: true, t: '2026-10-09T16', d: '9 out 2026', img: 'esportes', read: 3,
-  title: 'Sem técnico definitivo, Corinthians terá interino no clássico contra o Palmeiras',
-  sum: 'William Batista, do sub-20, comanda o time no domingo (11). Ramón Díaz segue como prioridade para substituir Fernando Diniz, mas ainda não há acordo.',
-  body: [
-    'O técnico do time sub-20 do Corinthians, William Batista, vai dirigir a equipe no clássico contra o Palmeiras, no domingo (11), às 17h30, no Nubank Parque, pela 30ª rodada do Brasileirão. Ele terá a ajuda de Léo Porto, auxiliar fixo do clube que fazia parte da comissão de Fernando Diniz. Batista já comandou o time principal do América-MG.',
+    'O Corinthians vai ao clássico contra o Palmeiras sem técnico efetivo. Segundo o Lance!, o argentino Javier Mascherano foi procurado, mas recusou a proposta porque o contrato iria só até o fim de 2026. Ramón Díaz, que era a primeira opção, Luis Zubeldía e Sylvinho também recusaram o vínculo curto.',
+    '## O interino',
+    'William Batista, de 33 anos, técnico do time sub-20, comanda a equipe com a ajuda de Léo Porto, auxiliar fixo do clube. Segundo a CNN Brasil, ele foi interino do Vasco em 2023, em cinco jogos, com duas vitórias, um empate e duas derrotas.',
     '## A demissão',
-    'Diniz foi demitido na noite de quarta-feira (7), depois da derrota por 2 a 1 para o Internacional, no Beira-Rio. Segundo o Lance!, o time chegou a sete jogos sem vencer no Brasileirão e oito no total, contando a eliminação para o Estudiantes na Libertadores.',
-    'Em 33 jogos, Diniz somou 13 vitórias, 8 empates e 12 derrotas, com aproveitamento de 47%. O Corinthians tem 32 pontos, está em 16º lugar e fica a um ponto da zona de rebaixamento.',
-    '## Quem pode chegar',
-    'Segundo a Placar, o argentino Ramón Díaz continua como primeira opção, mas não houve acordo. Fábio Carille, hoje no Al-Fayha, da Arábia Saudita, apareceu como alternativa; o contrato dele vai até meados de 2027, e o clube teria de negociar a saída. Juan Pablo Vojvoda, Luis Zubeldía e Sylvinho também foram avaliados.'
+    'Fernando Diniz foi demitido na quarta-feira (7), depois da derrota por 2 a 1 para o Internacional, no Beira-Rio. Em 33 jogos, somou 13 vitórias, 8 empates e 12 derrotas. O Corinthians tem 32 pontos, está em 16º e fica a um ponto da zona de rebaixamento.',
+    '## O clássico',
+    'O Palmeiras é o 2º colocado, com 60 pontos, um a menos que o líder Flamengo, e terá a volta do técnico Abel Ferreira depois de três jogos de suspensão. Segundo a Gazeta Esportiva, o Corinthians não terá Garro e Kaio César, suspensos. O árbitro é Anderson Daronco.'
   ],
-  box: { type: 'facts', title: 'Diniz no Corinthians', rows: [['Jogos', '33'], ['Vitórias', '13'], ['Empates', '8'], ['Derrotas', '12'], ['Aproveitamento', '47%']] },
-  sources: [['Placar', U.placarCorinthians], ['Lance!', U.lanceDiniz], ['Gazeta Esportiva', U.gazInter], ['Gazeta Esportiva', U.gazRamon]] },
+  box: { type: 'facts', title: 'Corinthians sem técnico', rows: [['Interino', 'William Batista (sub-20)'], ['Recusaram', 'Ramón Díaz, Zubeldía, Sylvinho e Mascherano'], ['Diniz no clube', '33 jogos, 47% de aproveitamento'], ['Posição', '16º, com 32 pontos'], ['Clássico', 'Domingo (11), 17h30, Nubank Parque']] },
+  sources: [['Lance!', U.lanceMascherano], ['CNN Brasil', U.cnnBatista], ['Gazeta Esportiva', U.gzDerbi], ['Placar', U.placarCorinthians], ['Lance!', U.lanceDiniz]] },
 
 { id: 'libertadores-semifinais-tres-brasileiros', cat: 'esportes', own: true, t: '2026-10-09T18', d: '9 out 2026', img: 'esportes', read: 2,
   photo: 'fotos/libertadores-semifinais-tres-brasileiros.webp', photoAlt: 'Montagem com jogadores de Fluminense, Palmeiras, Flamengo e Estudiantes comemorando', credit: 'Montagem: reprodução',
@@ -802,27 +825,44 @@ const NEWS = [
   box: { type: 'table', title: 'Semifinais', head: ['Confronto', 'Ida', 'Volta'], rows: [['Fluminense x Palmeiras', '14 out, Maracanã', '21 out, Nubank Parque'], ['Estudiantes x Flamengo', '15 out, a definir', '22 out, Maracanã']], note: 'Todos os jogos às 21h30 de Brasília. Fonte: Agência Brasil. Final em 28 de novembro, no Centenário.' },
   sources: [['Agência Brasil', U.abLiberta], ['La Nación', U.laNacion], ['Lance!', U.lance]] },
 
-{ id: 'vasco-vence-botafogo-classico', cat: 'esportes', own: false, t: '2026-10-07T23', d: '7 out 2026', img: 'esportes', src: 'CNN Brasil', url: U.cnnVasco,
-  title: 'Vasco vence o Botafogo no Nilton Santos e soma a terceira vitória seguida',
-  sum: 'Lescano e David marcaram para o Vasco; Alex Telles descontou de falta. Dois zagueiros do Botafogo foram levados ao hospital.',
-  body: [
-    'Com o 2 a 1, o Vasco chegou a 34 pontos. Os zagueiros Arthur Chaves e Vitinho, do Botafogo, foram atendidos no hospital e estão estáveis.'
-  ] },
-
-{ id: 'rodada-30-brasileirao-classicos-domingo', cat: 'esportes', own: false, t: '2026-10-10T06', d: '10 out 2026', img: 'esportes', src: 'Metrópoles', url: U.metRodada,
-  title: '30ª rodada do Brasileirão começa neste sábado e tem três clássicos no domingo',
-  sum: 'Vasco x Remo e São Paulo x Vitória abrem a rodada. No domingo, tem Flamengo x Fluminense, Palmeiras x Corinthians e Grêmio x Internacional.',
-  body: [
-    'Neste sábado (10), o Vasco recebe o Remo às 18h, em São Januário, e o São Paulo enfrenta o Vitória às 21h, no MorumBIS. O Remo, penúltimo colocado, com 24 pontos, não vence há nove jogos.',
-    'No domingo (11), às 17h30, jogam Flamengo x Fluminense, Palmeiras x Corinthians e Grêmio x Internacional. Antes, às 16h, o Atlético-MG recebe o Santos, e às 19h30 o Bahia enfrenta o Mirassol.'
-  ] },
-
 { id: 'rebeca-andrade-mundial-roterda', cat: 'esportes', own: false, t: '2026-10-07T12', d: '7 out 2026', img: 'esportes', src: 'Piranot', url: U.piraRebeca,
   title: 'Rebeca Andrade lidera a seleção brasileira no Mundial de ginástica de Roterdã',
   sum: 'A competição vai de 17 a 25 de outubro, na Holanda. Rebeca tem a maior nota do ano no salto, 14,800.',
   body: [
     'No feminino, estão Rebeca, Flávia Saraiva, Gabriela Bouças, Lorrane Oliveira, Sophia Weisberg e Thais Fidelis. No masculino, Arthur Nory, Bernardo Miranda, Diogo Soares, Johnny Oshiro, Patrick Corrêa e Vitaly Guimarães. Um atleta de cada equipe será reserva.',
     'Rebeca, dona de seis medalhas olímpicas, deve competir no salto e na trave. Ela foi campeã mundial do salto em 2021 e em 2023. O Mundial abre o ciclo rumo aos Jogos de Los Angeles 2028.'
+  ] },
+
+{ id: 'f1-verstappen-sprint-pole-singapura', cat: 'esportes', own: false, t: '2026-10-10T16', d: '10 out 2026', img: 'pista', src: 'Lance!', url: U.lanceSprint,
+  title: 'Verstappen vence sprint com nove abandonos e larga na pole em Singapura',
+  sum: 'Na chuva, Hamilton e Leclerc completaram o pódio da sprint. Russell e Bortoleto abandonaram. A corrida é neste domingo (11), às 9h de Brasília.',
+  body: [
+    'A sprint de sábado (10) foi reduzida a 20 voltas por causa da chuva. George Russell, da Mercedes, assumiu a ponta na largada, mas bateu no muro. O líder do campeonato, Kimi Antonelli, terminou em 4º. Gabriel Bortoleto, da Audi, abandonou depois de ser atingido por Alex Albon. Só 13 carros terminaram.',
+    'Na classificação para o GP, Verstappen fez a pole com 1min31s373, a 50ª da carreira. Leclerc larga em 2º, Hamilton em 3º e Antonelli em 4º. Bortoleto sai em 14º, e Russell, punido pela troca de peças do motor, larga do fundo. Segundo a CNN Brasil, Antonelli tem 325 pontos, 89 a mais que Russell.'
+  ] },
+
+{ id: 'sao-paulo-vence-vitoria-calleri', cat: 'esportes', own: false, t: '2026-10-10T23', d: '10 out 2026', img: 'esportes', src: 'Band', url: U.bandSaoPaulo,
+  title: 'Calleri marca duas vezes, e São Paulo vence o Vitória no MorumBIS',
+  sum: 'Com o 2 a 1, pela 30ª rodada, o time chegou a 39 pontos e subiu para o 9º lugar do Brasileirão.',
+  body: [
+    'Calleri abriu o placar de cabeça no primeiro tempo, e Emmanuel Martínez empatou ainda antes do intervalo. No segundo tempo, o argentino fez o gol da vitória no rebote de uma defesa de Lucas Arcanjo.',
+    'O Vitória, com 36 pontos, segue em 12º. No próximo sábado (17), o São Paulo recebe o Vasco.'
+  ] },
+
+{ id: 'vasco-empata-remo-sao-januario', cat: 'esportes', own: false, t: '2026-10-10T20', d: '10 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzVascoRemo,
+  title: 'Vasco fica no 0 a 0 com o Remo e encerra sequência de quatro vitórias',
+  sum: 'O goleiro Marcelo Rangel, do Remo, fez as principais defesas em São Januário. O Vasco tem 35 pontos e está em 14º.',
+  body: [
+    'O Remo, penúltimo colocado, chegou a 25 pontos. Pelo Vasco, David e Lucas Piton pararam em Rangel no primeiro tempo.',
+    'Na terça (13), o Vasco visita o Boca Juniors, na Bombonera, no jogo de ida da semifinal da Copa Sul-Americana.'
+  ] },
+
+{ id: 'maringa-acesso-serie-b', cat: 'esportes', own: false, t: '2026-10-10T20', d: '10 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzMaringa,
+  title: 'Maringá vence o Floresta e garante acesso inédito à Série B',
+  sum: 'Na Série C, outros dois jogos do quadrangular foram suspensos por falta de segurança e serão retomados neste domingo (11), às 15h, com portões fechados.',
+  body: [
+    'O Maringá venceu por 2 a 0, com gols de Ronald Camarão e Paulinho, no segundo tempo. O Santa Cruz perdeu para o Botafogo-PB, mas também garantiu o acesso.',
+    'Brusque x Paysandu foi interrompido no fim do primeiro tempo, com vitória parcial do Paysandu por 1 a 0, depois que torcedores danificaram a estrutura da transmissão. Ferroviária x Inter de Limeira, empatado sem gols, também parou. As duas vagas que faltam saem desses jogos.'
   ] },
 
 /* ===================== CULTURA ===================== */
@@ -840,21 +880,6 @@ const NEWS = [
   ],
   box: { type: 'facts', title: 'Anne Carson', rows: [['Nacionalidade', 'Canadense'], ['Idade', '76 anos'], ['Obra', 'Mais de 20 livros de poesia, ensaio e tradução'], ['No Brasil', '7 livros publicados'], ['Prêmio', '12 milhões de coroas suecas']] },
   sources: [['Al Jazeera', U.ajCarson], ['Observador', U.obsCarson], ['Diário do Nordeste', U.dnCarson]] },
-
-{ id: 'estreias-cinema-se-eu-fosse-voce-3', cat: 'cultura', own: true, t: '2026-10-08T05', d: '8 out 2026', img: 'cultura', read: 2,
-  title: '"Se Eu Fosse Você 3" e o sul-coreano "Hope" chegam aos cinemas nesta quinta',
-  sum: 'A comédia fecha a trilogia com Tony Ramos e Glória Pires. O filme de Na Hong-jin, que passou em Cannes, tem Alicia Vikander e Michael Fassbender no elenco.',
-  body: [
-    'Os cinemas brasileiros recebem nesta quinta-feira (8) cinco estreias. O destaque nacional é "Se Eu Fosse Você 3", que encerra a trilogia de comédias sobre troca de corpos.',
-    '## A volta de Tony Ramos e Glória Pires',
-    'O longa tem direção de Anita Barbosa e supervisão artística de Daniel Filho, diretor dos dois primeiros filmes. A história se passa 20 anos depois, e agora quem troca de corpo é Bia, a filha do casal, com o marido, Aquiles. O elenco tem ainda Cleo Pires e Rafael Infante. A distribuição é da Disney.',
-    '## Suspense coreano',
-    '"Hope: O Primeiro Impacto", de Na Hong-jin, reúne os sul-coreanos Hwang Jung-min, Jung Ho-yeon e Zo In-sung com Alicia Vikander e Michael Fassbender. O filme passou pelo Festival de Cannes e não é recomendado para menores de 16 anos.',
-    '## Outras estreias',
-    'Também chegam às salas as comédias nacionais "Um Tio Quase Perfeito 3", com Marcus Majella, e "Picaretas Não Vão Pro Céu", com Maurício Manfrini e Tirullipa, além da animação "As Aventuras de Tadeo e a Lâmpada Mágica", de Enrique Gato.'
-  ],
-  box: { type: 'table', title: 'Estreias de 8 de outubro', head: ['Filme', 'Direção'], rows: [['Se Eu Fosse Você 3', 'Anita Barbosa'], ['Hope: O Primeiro Impacto', 'Na Hong-jin'], ['Um Tio Quase Perfeito 3', 'Pedro Antonio'], ['Picaretas Não Vão Pro Céu', 'Roberto Santucci'], ['As Aventuras de Tadeo e a Lâmpada Mágica', 'Enrique Gato']], note: 'Fontes: O Tempo e Além da Tela.' },
-  sources: [['O Tempo', U.otEstreias], ['Além da Tela', U.adtEstreias]] },
 
 { id: 'mostra-sao-paulo-50-edicao', cat: 'cultura', own: true, t: '2026-10-06T04', d: '6 out 2026', img: 'cultura', read: 3,
   photo: 'fotos/mostra-sao-paulo-50-edicao.webp', photoAlt: 'Arte oficial da 50ª Mostra Internacional de Cinema em São Paulo, com selo dourado e desenho de um casal se beijando', credit: 'Divulgação: Mostra Internacional de Cinema em São Paulo',
@@ -902,13 +927,6 @@ const NEWS = [
     '"Tom Zé – 90 Anos do Inquieto Jardineiro de Sons" tem curadoria de Neuseli Martins e inclui uma réplica do buzinório, instrumento criado pelo músico. Nascido em Irará, na Bahia, Tom Zé completa 90 anos no domingo (11).'
   ] },
 
-{ id: 'festival-teatro-infantil-ceara', cat: 'cultura', own: false, t: '2026-10-09T07', d: '9 out 2026', img: 'palco', src: 'Agência Brasil', url: U.abTeatro,
-  title: 'Festival Internacional de Teatro Infantil do Ceará tem 40 apresentações gratuitas',
-  sum: 'A 15ª edição vai até 20 de outubro em Fortaleza, Quixeramobim, Maracanaú e São Gonçalo do Amarante, com grupos de três estados e da França.',
-  body: [
-    'O festival começou na sexta-feira (9) e reúne oito atrações, segundo a Agência Brasil. Até domingo (11), a Caixa Cultural Fortaleza recebe também um encontro de criadores das artes cênicas.'
-  ] },
-
 { id: 'exposicao-margem-de-dentro-sesc-ipiranga', cat: 'cultura', own: false, t: '2026-10-08T12', d: '8 out 2026', img: 'arte', src: 'Agência Brasil', url: U.abMargem,
   title: 'Exposição gratuita no Sesc Ipiranga reúne 26 artistas e propõe outro olhar sobre a história do Brasil',
   sum: '"Margem de Dentro" tem mais de 50 obras, entre pinturas, esculturas, gravuras, fotos e peças têxteis, com curadoria de Claudinei Roberto Silva.',
@@ -917,60 +935,48 @@ const NEWS = [
     'Um mural de Soberana Ziza trata da migração de famílias do interior para São Paulo e homenageia Madrinha Eunice, primeira presidente de uma escola de samba paulistana.'
   ] },
 
-{ id: 'miro-mab-faap-prorrogada', cat: 'cultura', own: false, t: '2026-10-09T07', d: '9 out 2026', img: 'arte', src: 'Agência Brasil', url: U.abMiro,
-  title: 'Exposição de Miró na Faap, em São Paulo, é prorrogada até 13 de dezembro',
-  sum: '"Miró: Mestre das Formas" reúne mais de 100 obras do artista espanhol no Museu de Arte Brasileira, em Higienópolis.',
+{ id: 'festival-do-rio-ultimo-fim-de-semana', cat: 'cultura', own: false, t: '2026-10-10T10', d: '10 out 2026', img: 'cultura', src: 'Agência Brasil', url: U.abFestivalRio,
+  title: 'Festival do Rio termina neste domingo com mais de 350 filmes',
+  sum: 'A 28ª edição ocupa 28 salas no Rio e em Niterói. A organização espera passar do público de 140 mil pessoas do ano passado.',
   body: [
-    'A mostra fica no MAB Faap. Segundo a Agência Brasil, a exposição ganhou mais tempo em cartaz e agora vai até 13 de dezembro.'
+    'O festival começou em 1º de outubro. Segundo a Agência Brasil, um dos destaques foi a primeira visita ao Brasil do diretor iraniano Asghar Farhadi, duas vezes vencedor do Oscar, que apresentou "Contos Paralelos".',
+    'Um estudo apresentado no RioMarket, braço de negócios do evento, estimou que o audiovisual movimentou R$ 81,1 bilhões no país em 2025, o equivalente a 0,64% do PIB.'
+  ] },
+
+{ id: 'morre-jerry-burgos-produtor-ana-carolina', cat: 'cultura', own: false, t: '2026-10-10T17', d: '10 out 2026', img: 'palco', src: 'CNN Brasil', url: U.cnnJerry,
+  title: 'Morre Jerry Burgos, produtor cultural que trabalhou com Ana Carolina',
+  sum: 'A morte foi confirmada pela empresa Global Music. Artistas como Ana Carolina e Maria Gadú lamentaram nas redes.',
+  body: [
+    'Jerry Burgos morreu na sexta-feira (9). Segundo a CNN Brasil, Ana Carolina o chamou de irmão e contou que ele a acompanhava nos shows da chegada até o palco. Ele foi casado com a atriz Cyria Coentro.',
+    'A causa da morte e a idade não foram divulgadas.'
+  ] },
+
+{ id: 'simaria-volta-musica-fantastico', cat: 'cultura', own: false, t: '2026-10-10T18', d: '10 out 2026', img: 'palco', src: 'CNN Brasil', url: U.cnnSimaria,
+  title: 'Simaria fala no Fantástico sobre a volta à música depois de quatro anos',
+  sum: 'A entrevista vai ao ar neste domingo (11). A cantora voltou aos palcos em setembro, na gravação do primeiro DVD da carreira solo.',
+  body: [
+    'Simaria, de 44 anos, se afastou dos palcos em junho de 2022 por motivo de saúde e, em agosto daquele ano, anunciou com a irmã, Simone Mendes, o fim da dupla. A gravação do DVD foi em 12 de setembro, em São Paulo, com ingressos esgotados.',
+    'Segundo a CNN Brasil, ela diz que hoje tem com a irmã uma relação melhor do que na época em que cantavam juntas.'
   ] },
 
 /* ===================== ECONOMIA ===================== */
-{ id: 'durigan-imposto-seletivo-apos-eleicao', cat: 'economia', own: false, t: '2026-10-08T20', d: '8 out 2026', img: 'mercado', src: 'Agência Brasil', url: U.abSeletivo,
-  title: 'Durigan diz que MP do Imposto Seletivo só vai ao Congresso depois do 2º turno',
-  sum: 'Segundo o ministro da Fazenda, a cobrança pode começar no fim de janeiro ou no início de fevereiro de 2027. Até lá, fica mantido o IPI atual sobre os setores atingidos.',
+{ id: 'bets-saem-do-ar-devolucao-saldos', cat: 'economia', own: true, t: '2026-10-10T12', d: '10 out 2026', img: 'celular', read: 3,
+  title: 'Bets: mais de R$ 1 bilhão já foi devolvido a apostadores; AGU vai à Justiça contra 8 empresas',
+  sum: 'Faltam R$ 159 milhões. Os bancos têm até 14 de outubro para pagar, direto na conta usada nos depósitos. Depois, a Caixa assume os casos pendentes.',
   body: [
-    'O Imposto Seletivo vai incidir sobre veículos, embarcações e aeronaves, cigarros, bebidas alcoólicas e açucaradas, bens minerais e apostas. Segundo a Agência Brasil, o acordo com os setores foi fechado nesta semana.',
-    'Dario Durigan também defendeu o split payment, sistema que separa o imposto no momento do pagamento, e disse que ele será opcional e gradual. O ministro respondeu a críticas da campanha de Flávio Bolsonaro (PL) ao modelo.'
-  ] },
-
-{ id: 'petrobras-21-blocos-bonus-bilionario', cat: 'economia', own: false, t: '2026-10-08T15', d: '8 out 2026', img: 'mercado', src: 'Forbes Brasil', url: U.forbesPetro,
-  title: 'Petrobras arremata 21 blocos e vai pagar R$ 3,2 bilhões em bônus',
-  sum: 'O número soma os dois leilões de petróleo da ANP desta semana. Na oferta de concessão, foram vendidos 49 de 308 blocos.',
-  body: [
-    'As áreas ficam nas bacias de Campos, Santos e Ceará. Na Bacia do Ceará, a Petrobras será a operadora, com 70%, em parceria com a QatarEnergy. O bônus deve ser pago até 30 de dezembro.',
-    'Na oferta de concessão, o bônus total foi de cerca de R$ 3 bilhões, o maior desde o início da Oferta Permanente. Também levaram áreas a Aguila, a Eneva e a Origem.'
-  ] },
-
-{ id: 'bets-saem-do-ar-devolucao-saldos', cat: 'economia', own: true, t: '2026-10-09T12', d: '9 out 2026', img: 'celular', read: 3,
-  title: 'Bancos começam a devolver R$ 1,3 bilhão a apostadores de bets',
-  sum: 'Os pagamentos vão até 14 de outubro, direto na conta usada nos depósitos. A partir daí, a Caixa assume os casos pendentes.',
-  body: [
-    'Os bancos começaram na sexta-feira (9) a devolver o dinheiro que ficou nas plataformas de apostas on-line, fora do ar desde terça (6) por causa da medida provisória 1.394/2026. São cerca de R$ 1,325 bilhão, de 26,5 milhões de apostadores.',
+    'Mais de R$ 1 bilhão que estava nas plataformas de apostas on-line já voltou para os apostadores, informou o governo no sábado (10), segundo a Agência Brasil. O saldo que falta pagar caiu de R$ 1,2 bilhão para R$ 159 milhões. As bets estão fora do ar desde terça (6) por causa da medida provisória 1.394/2026.',
+    'Pelos dados mais recentes, o dinheiro pertence a 22,5 milhões de apostadores, em 70,5 milhões de contas. Os números são menores que os divulgados na sexta (9), de R$ 1,325 bilhão e 26,5 milhões de pessoas. Em 90% das contas, há menos de R$ 1 a receber.',
+    '## Empresas que não colaboraram',
+    'Oito empresas de apostas, cujos nomes não foram divulgados, não enviaram aos bancos os dados dos clientes. A Advocacia-Geral da União vai à Justiça para obrigá-las a fazer isso.',
     '## Como funciona',
-    'O pagamento é feito pelos bancos com os dados enviados pelas empresas de apostas: o CPF do cliente e a conta usada nos depósitos. O apostador deve acompanhar o extrato e os avisos do banco. Segundo a IstoÉ, não há previsão de taxa para liberar o dinheiro.',
-    'Os bancos têm até 14 de outubro para pagar. Os casos que não forem resolvidos passam para a Caixa a partir dessa data, e o Ministério da Fazenda vai divulgar orientações nos canais oficiais.',
+    'Os bancos usam o CPF do cliente e a conta usada nos depósitos, informados pelas empresas. O apostador deve acompanhar o extrato e os avisos do banco. Os casos não resolvidos até 14 de outubro passam para a Caixa.',
     '## Cuidado com golpes',
     'A recomendação é usar só os canais oficiais do governo e do banco e nunca informar senhas ou códigos. Mensagens que pedem pagamento antecipado para liberar o dinheiro devem ser vistas com desconfiança.',
-    '## Saldos pequenos e grandes',
-    'Cerca de 86,2 milhões de contas tinham entre R$ 0,01 e R$ 0,99, somando R$ 15,5 milhões. Uma mesma pessoa pode ter contas em várias plataformas. Segundo o ministro da Fazenda, Dario Durigan, cerca de 40 CPFs com saldos muito altos estão em análise, inclusive por suspeita de lavagem de dinheiro, o que não significa que os donos tenham cometido crime.',
-    'Cerca de 200 mil pessoas, 1% dos apostadores, concentram 80% do saldo total, segundo a Agência Brasil.'
+    '## Sites ilegais',
+    'Segundo a CNN Brasil, o governo encaminhou para bloqueio 16.627 sites ilegais de apostas entre 25 de setembro e 9 de outubro.'
   ],
   box: { type: 'steps', title: 'Calendário da devolução', steps: [['Até 8 de outubro', 'As empresas informaram os saldos dos clientes aos bancos.'], ['9 a 14 de outubro', 'Os bancos devolvem o dinheiro na conta do apostador.'], ['A partir de 14 de outubro', 'A Caixa assume os casos pendentes.']] },
-  sources: [['IstoÉ', U.istoeBets], ['Agência Brasil', U.abBets], ['Agência Brasil', U.abBets2]] },
-
-{ id: 'anfavea-producao-veiculos-setembro', cat: 'economia', own: false, t: '2026-10-07T12', d: '7 out 2026', img: 'mercado', src: 'Agência Brasil', url: U.abAnfavea,
-  title: 'Produção de veículos tem o melhor setembro desde 2014',
-  sum: 'Foram 268,3 mil unidades, alta de 10,2% em um ano. A Anfavea passou a prever alta de 15,2% nos emplacamentos em 2026.',
-  body: [
-    'As exportações caíram 24,2% em setembro, para 39,8 mil veículos, por causa da Argentina e da concorrência de modelos chineses e mexicanos. Os emplacamentos somaram 281,4 mil unidades no mês.'
-  ] },
-
-{ id: 'campos-neto-adia-depoimento-pf', cat: 'economia', own: false, t: '2026-10-07T17', d: '7 out 2026', img: 'mercado', src: 'Times Brasil', url: U.tbCampos,
-  title: 'Depoimento de Campos Neto à PF no caso Master é adiado',
-  sum: 'O ex-presidente do Banco Central seria ouvido como testemunha na quarta. A defesa pediu o adiamento, e ainda não há nova data.',
-  body: [
-    'A Polícia Federal quer saber se ele sabia da relação de dois servidores do BC com Daniel Vorcaro, dono do Master. Na terça (6), o atual presidente do BC, Gabriel Galípolo, prestou depoimento como testemunha.'
-  ] },
+  sources: [['Agência Brasil', U.abBetsDevolvidos], ['CNN Brasil', U.cnnBetsSites], ['IstoÉ', U.istoeBets], ['Agência Brasil', U.abBets]] },
 
 { id: 'gasolina-impostos-zerados-subsidio-diesel', cat: 'economia', own: true, t: '2026-10-09T15', d: '9 out 2026', img: 'plataforma', read: 3,
   title: 'Governo zera impostos federais da gasolina por 30 dias e amplia subsídio ao diesel importado',
@@ -1027,6 +1033,35 @@ const NEWS = [
     'Segundo a Agência Brasil, a recusa no crédito de longo prazo atinge cerca de 48% das pequenas e médias empresas que pediram, contra 29,9% das grandes.'
   ] },
 
+{ id: 'isaias-paralisa-petroleo-golfo-mexico', cat: 'economia', own: false, t: '2026-10-10T15', d: '10 out 2026', img: 'plataforma', src: 'CNN Brasil / Reuters', url: U.cnnIsaiasPetroleo,
+  title: 'Tempestade Isaias paralisa 69% da produção de petróleo no Golfo do México',
+  sum: 'Também estão paradas 57% da produção de gás. Trabalhadores deixaram 113 das 371 plataformas com equipes na região.',
+  body: [
+    'Os dados são da agência americana que regula a exploração no mar, segundo a CNN Brasil. A paralisação atinge 68,76% da produção diária de petróleo e 57,44% da de gás.'
+  ] },
+
+{ id: 'mercado-flavio-compromissos-fiscais', cat: 'economia', own: false, t: '2026-10-10T09', d: '10 out 2026', img: 'mercado', src: 'InfoMoney / Estadão Conteúdo', url: U.imFiscalFlavio,
+  title: 'Otimismo do mercado com Flávio esbarra na falta de detalhes sobre o ajuste fiscal',
+  sum: 'Economistas ouvidos pelo Estadão dizem que a campanha ainda não explicou quais gastos vai cortar. Assessores afirmam que Bolsa Família e BPC não serão afetados.',
+  body: [
+    'Segundo a reportagem, uma economista da FGV estima que o ajuste em discussão seria de R$ 200 bilhões a R$ 250 bilhões, sem definição de despesas, método ou prazo. Assessores de Flávio Bolsonaro (PL) dizem que não há intenção de mexer no Bolsa Família, no BPC nem na regra do salário mínimo.',
+    'Analistas de mercado avaliam que a Bolsa pode devolver parte da alta se a sinalização continuar vaga.'
+  ] },
+
+{ id: 'b3-feriado-12-outubro', cat: 'economia', own: false, t: '2026-10-10T08', d: '10 out 2026', img: 'mercado', src: 'B3', url: U.b3Feriado,
+  title: 'B3 fecha na segunda (12) pelo feriado de Nossa Senhora Aparecida',
+  sum: 'Não haverá pregão nem operações do Tesouro Direto. Os negócios voltam na terça-feira (13).',
+  body: [
+    'Com o feriado, o último fechamento do Ibovespa segue sendo o de sexta (9), quando o índice bateu recorde aos 209.066,90 pontos. O dólar terminou a R$ 4,985.'
+  ] },
+
+{ id: 'china-10-milhoes-empregos-urbanos', cat: 'economia', own: false, t: '2026-10-10T13', d: '10 out 2026', img: 'mercado', src: 'CNN Brasil / Reuters', url: U.cnnChina,
+  title: 'China cria 10,52 milhões de empregos urbanos até setembro',
+  sum: 'O número equivale a 87,7% da meta do ano, segundo o Ministério do Trabalho chinês.',
+  body: [
+    'O desemprego urbano médio foi de 5,2% de janeiro a agosto. Segundo a CNN Brasil, o país tem 1,079 bilhão de pessoas inscritas na previdência básica.'
+  ] },
+
 /* ===================== TECNOLOGIA ===================== */
 { id: 'samsung-lucro-recorde-chips-ia', cat: 'tecnologia', own: true, t: '2026-10-08T08', d: '8 out 2026', img: 'tecnologia', read: 3,
   title: 'Samsung prevê lucro recorde de US$ 80 bilhões no trimestre, puxado por chips para IA',
@@ -1051,57 +1086,11 @@ const NEWS = [
     'Segundo a Convergência Digital, o Einstein diz tratar o caso como máxima prioridade.'
   ] },
 
-{ id: 'crew-12-volta-terra', cat: 'tecnologia', own: false, t: '2026-10-08T13', d: '8 out 2026', img: 'ciencia', src: 'Space.com', url: U.spaceCrew12,
-  title: 'Astronautas da missão Crew-12 voltam à Terra depois de cerca de oito meses no espaço',
-  sum: 'A cápsula Dragon pousou no Oceano Pacífico, perto de Los Angeles, na quinta-feira (8). A francesa Sophie Adenot, da agência espacial europeia, estava a bordo.',
-  body: [
-    'O pouso foi às 12h34 de Brasília. A tripulação tinha Jessica Meir e Jack Hathaway, da NASA, Sophie Adenot, da ESA, e o russo Andrey Fedyaev, da Roscosmos. Eles foram lançados em 13 de fevereiro.',
-    'A Crew-12 substituiu a Crew-11, que voltou antes do previsto em janeiro, na primeira evacuação médica da Estação Espacial Internacional.'
-  ] },
-
-{ id: 'starlink-15-mil-satelites-celular', cat: 'tecnologia', own: false, t: '2026-10-08T07', d: '8 out 2026', img: 'celular', src: 'Tecnoblog', url: U.tbStarlink,
-  title: 'EUA autorizam 15 mil satélites da Starlink para internet direto no celular',
-  sum: 'A licença da FCC permite que a SpaceX venda o serviço sem depender de uma operadora parceira. O primeiro lote deve ser lançado em 2027.',
-  body: [
-    'Com a autorização, a SpaceX poderá competir diretamente com operadoras de telefonia dos EUA. Pelo menos metade dos satélites precisa estar em órbita até 2032.',
-    'No Brasil, segundo o Tecnoblog, a Starlink ultrapassou a TIM em banda larga fixa e somou 65 mil acessos só em agosto, de acordo com a Anatel.'
-  ] },
-
 { id: 'pix-1-bilhao-chaves', cat: 'tecnologia', own: false, t: '2026-10-08T11', d: '8 out 2026', img: 'celular', src: 'Convergência Digital', url: U.cdPix,
   title: 'Pix passa de 1 bilhão de chaves cadastradas',
   sum: 'Eram 1,008 bilhão de chaves em 30 de setembro, segundo o Banco Central. As chaves aleatórias são mais da metade.',
   body: [
     'As chaves aleatórias somam 526,8 milhões, ou 52,3% do total. Depois vêm as de celular (166,3 milhões), as de CPF (153,9 milhões) e as de e-mail (144,6 milhões).'
-  ] },
-
-{ id: 'nobel-quimica-kagan-soai', cat: 'tecnologia', own: true, t: '2026-10-07T08', d: '7 out 2026', img: 'ciencia', read: 3,
-  title: 'Nobel de Química premia descobertas sobre moléculas "espelhadas"',
-  sum: 'O francês Henri Kagan, de 95 anos, e o japonês Kenso Soai, de 76, mostraram como reações químicas podem favorecer uma das duas formas de uma molécula, o que ajuda a fabricar remédios.',
-  body: [
-    'O Prêmio Nobel de Química de 2026 foi para o francês Henri B. Kagan e o japonês Kenso Soai. A Academia Real Sueca de Ciências anunciou o prêmio na quarta-feira (7), em Estocolmo, pela descoberta de efeitos não lineares e da autocatálise na síntese orgânica assimétrica.',
-    '## Mão direita, mão esquerda',
-    'Muitas moléculas importantes para a vida existem em duas versões que são o reflexo uma da outra, como as mãos direita e esquerda. Os seres vivos usam quase só uma delas, fenômeno chamado homoquiralidade. O presidente do comitê, Heiner Linke, disse que os premiados resolveram um mistério químico de mais de um século: como essa preferência pode surgir de forma espontânea.',
-    'Em 1986, Kagan mostrou como manipular uma reação para produzir mais de uma das formas. Em 1995, Soai descreveu uma reação em que o próprio produto acelera a formação de mais moléculas iguais, a chamada autocatálise. Em 2003, ele conseguiu uma reação que gerou só uma das duas formas.',
-    '## Para que serve',
-    'A diferença importa na fabricação de remédios, porque as duas versões de um medicamento podem ter efeitos diferentes. O exemplo mais conhecido é a talidomida, eficaz em uma forma e tóxica na outra.',
-    '## Os premiados',
-    'Kagan é professor emérito da Universidade Paris-Saclay, e Soai é ligado à Universidade de Ciências de Tóquio. Os dois dividem 12 milhões de coroas suecas, pouco mais de US$ 1 milhão.'
-  ],
-  box: { type: 'facts', title: 'O prêmio', rows: [['Premiados', 'Henri B. Kagan (França) e Kenso Soai (Japão)'], ['Idades', '95 e 76 anos'], ['Tema', 'Síntese orgânica assimétrica'], ['Valor', '12 milhões de coroas suecas']] },
-  sources: [['Al Jazeera', U.ajQuimica], ['Olhar Digital', U.odQuimica], ['O Povo', U.opovoQuimica], ['GEN', U.genQuimica]] },
-
-{ id: 'gpt-6-chatgpt-todos', cat: 'tecnologia', own: false, t: '2026-10-07T15', d: '7 out 2026', img: 'tecnologia', src: 'OpenAI', url: U.oaiGpt6,
-  title: 'OpenAI libera o GPT-6 no ChatGPT, com respostas interativas',
-  sum: 'Assinantes recebem o novo modelo desde quarta; usuários gratuitos, a partir desta quinta. As respostas podem trazer gráficos, botões e calculadoras.',
-  body: [
-    'Segundo a empresa, o próprio modelo escolhe quando usar os elementos visuais e responde só com texto quando isso basta. A OpenAI diz que mais de 1,2 bilhão de pessoas usam o ChatGPT por semana.'
-  ] },
-
-{ id: 'google-synthid-aberto-publico', cat: 'tecnologia', own: false, t: '2026-10-07T14', d: '7 out 2026', img: 'celular', src: 'TechCrunch', url: U.tcSynth,
-  title: 'Google abre ao público site que identifica imagens, vídeos e áudios feitos com sua IA',
-  sum: 'O SynthID detecta a marca d’água invisível usada em conteúdos gerados por ferramentas como Gemini e Veo, mas não reconhece material de qualquer IA.',
-  body: [
-    'Antes, a ferramenta era restrita a jornalistas e pesquisadores. Segundo o TechCrunch, são feitas cerca de 1 milhão de verificações por dia.'
   ] },
 
 { id: 'openai-demite-pesquisadores-seguranca', cat: 'tecnologia', own: true, t: '2026-10-09T14', d: '9 out 2026', img: 'tecnologia', read: 3,
@@ -1124,6 +1113,53 @@ const NEWS = [
   body: [
     'A redução atinge o iPhone 18 Pro e o 18 Pro Max, segundo fontes ouvidas pelo jornal japonês. Entre as possíveis causas estão a alta do preço das memórias, puxada pelos data centers de inteligência artificial, e a mudança no calendário: pela primeira vez, a Apple lançou só os modelos mais caros em setembro e deixou o iPhone 18 básico para o ano que vem.',
     'Segundo o Tecnoblog, o Pro Max custa R$ 12.999 no Brasil. Os preços são cerca de 4% maiores que os da geração anterior.'
+  ] },
+
+{ id: 'tse-meta-48-horas-perfis-lula', cat: 'tecnologia', own: true, t: '2026-10-10T18', d: '10 out 2026', img: 'celular', read: 3,
+  title: 'TSE dá 48 horas para a Meta explicar restrições a perfis de Lula',
+  sum: 'A campanha do presidente acusa a empresa de reduzir o alcance dos posts dele. A Meta diz que as alegações são falsas e que cumpre as regras eleitorais.',
+  body: [
+    'O ministro Marco Aurélio Bellizze, do Tribunal Superior Eleitoral, deu no sábado (10) prazo de 48 horas para a Meta, dona do Facebook e do Instagram, responder a seis perguntas sobre os perfis de Lula (PT). O pedido foi feito pela coligação do presidente, que disputa o segundo turno com Flávio Bolsonaro (PL) em 25 de outubro.',
+    '## O que o TSE quer saber',
+    'A Meta terá de informar que medidas aplicou aos perfis de Lula desde 16 de agosto, explicar falhas na contagem de visualizações de vídeos de 7 de outubro e a desativação da conta de anúncios do candidato em 23 de setembro. Também deve dizer se identificou uma rede de 255 perfis automatizados com inteligência artificial e se tratou os dois candidatos da mesma forma ao tirá-los das recomendações.',
+    'Segundo a campanha, o impulsionamento de posts de Lula no Instagram ficou bloqueado de sexta (9) até a manhã de sábado. O PT diz que o problema foi resolvido.',
+    '## O que diz o ministro',
+    'Bellizze escreveu que as provas são em grande parte indiretas, mas que os fatos ocorrem num ambiente que só a empresa controla. Ele decretou sigilo dos documentos e deu o mesmo prazo à Agência Lupa e ao Instituto Democracia em Xeque, citados no pedido.',
+    '## O que diz a Meta',
+    'Em nota, a Meta afirmou que as alegações são falsas e não têm respaldo nos fatos, e que cumpre as normas eleitorais com compromisso com a igualdade entre os candidatos.'
+  ],
+  box: { type: 'facts', title: 'O pedido', rows: [['Autor', 'Coligação de Lula'], ['Prazo', '48 horas'], ['Relator', 'Marco Aurélio Bellizze'], ['Perfis automatizados citados', '255'], ['Resposta da Meta', 'Alegações falsas']] },
+  sources: [['Poder360', U.p360Meta], ['InfoMoney / O Globo', U.imMeta], ['Olhar Digital', U.odMeta]] },
+
+{ id: 'anthropic-ia-pista-falsa-policia', cat: 'tecnologia', own: false, t: '2026-10-10T18', d: '10 out 2026', img: 'tecnologia', src: 'Olhar Digital', url: U.odAnthropic,
+  title: 'IA da Anthropic enviou pista falsa sobre homicídio à polícia da Filadélfia',
+  sum: 'A empresa diz que o envio partiu de um teste automatizado, já encerrado. A polícia afirma que a mensagem foi marcada como spam.',
+  body: [
+    'A mensagem foi mandada em julho por um site que recebe informações sobre homicídios não resolvidos. Segundo a Olhar Digital, a Anthropic detectou o caso em 28 de setembro e avisou a polícia em 7 de outubro.',
+    'A polícia da Filadélfia disse que não há sinal de invasão dos seus sistemas e considerou inaceitável a demora de dois meses para comunicar o caso.'
+  ] },
+
+{ id: 'spacex-21-satelites-militares-eua', cat: 'tecnologia', own: false, t: '2026-10-10T06', d: '10 out 2026', img: 'ciencia', src: 'Space.com', url: U.spaceSda,
+  title: 'SpaceX lança 21 satélites militares de comunicação dos EUA',
+  sum: 'O foguete Falcon 9 decolou da Califórnia no sábado (10), cinco dias depois de uma tentativa abortada no último minuto.',
+  body: [
+    'Os satélites, feitos pela Northrop Grumman, são de uma rede de transmissão de dados da Força Espacial americana. O primeiro estágio do foguete pousou cerca de sete minutos depois da decolagem, no sexto voo.',
+    'Segundo o Space.com, foi o 111º voo do Falcon 9 em 2026.'
+  ] },
+
+{ id: 'nuvem-marte-1800-km', cat: 'tecnologia', own: false, t: '2026-10-10T11', d: '10 out 2026', img: 'ciencia', src: 'Olhar Digital', url: U.odMarte,
+  title: 'Estudo explica nuvem de 1.800 km que aparece perto de vulcão em Marte',
+  sum: 'Segundo os cientistas, o vapor de água vira gelo sem precisar de poeira, processo nunca visto antes em atmosferas de planetas.',
+  body: [
+    'A nuvem se forma em algumas manhãs perto do vulcão Arsia Mons e dura poucas horas. Foi vista pela primeira vez em 2018 pela sonda Mars Express, da Agência Espacial Europeia.',
+    'O estudo, publicado na revista Nature Geoscience, é liderado por Jorge Hernández-Bernal, de instituições de pesquisa francesas. Os autores dizem que o modelo não reproduz todos os detalhes.'
+  ] },
+
+{ id: 'apple-evento-casa-inteligente-13-outubro', cat: 'tecnologia', own: false, t: '2026-10-09T12', d: '9 out 2026', img: 'celular', src: 'Macworld', url: U.mwApple,
+  title: 'Apple marca para terça (13) evento sobre casa inteligente',
+  sum: 'O lançamento será pela internet, às 10h de Brasília, com uma apresentação para a imprensa em Nova York.',
+  body: [
+    'A empresa divulgou o evento com o mote "Welcome Home". Segundo a Macworld, a Apple não informou quais produtos serão apresentados.'
   ] },
 
 ];

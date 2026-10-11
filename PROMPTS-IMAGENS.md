@@ -1,6 +1,6 @@
 # Prompts de imagens da Novera
 
-Um prompt para cada notícia que ainda não tem imagem (53 no total).
+Um prompt para cada notícia que ainda não tem imagem (54 no total).
 
 ## Como usar
 
@@ -34,34 +34,28 @@ Fachada do prédio do Supremo Tribunal Federal, em Brasília, ao entardecer, com
 **`atlasintel-flavio-51-lula-45-segundo-turno.webp`**
 Tela de computador apagada sobre uma mesa com gráficos de barras impressos em papel, sem nomes, ao lado de uma xícara de café, luz fria de escritório.
 
-**`lula-ceilandia-6x1-caso-master.webp`**
-Feira popular de rua numa cidade brasileira, com barracas coloridas, bandeirinhas do Brasil penduradas e caixas de som ao fundo, vista de longe, sem rostos reconhecíveis.
-
-**`flavio-mantem-bolsa-familia-farmacia-popular.webp`**
-Salão de eventos com cadeiras enfileiradas, palco com microfone vazio e bandeiras do Brasil, perto do mar, numa tarde ensolarada.
-
 **`record-cancela-debate-lula-flavio.webp`**
 Estúdio de televisão vazio com dois púlpitos frente a frente, câmeras desligadas e luzes de palco apagadas.
 
 **`pec-6x1-votacao-primeiro-turno-14-outubro.webp`**
 Plenário do Senado visto do alto, com bancadas azuis vazias e painel eletrônico de votação apagado, luz suave.
 
-**`inmet-alerta-vermelho-tempestades-sul.webp`**
-Nuvens escuras de tempestade sobre uma plantação no interior do Sul do Brasil, com raio ao longe e estrada de terra.
+**`lula-natal-governadores-nordeste.webp`**
+Rua de comércio popular de uma capital nordestina pela manhã, com bandeiras do Brasil em mastros e faixas sem texto legível, vista do alto, multidão distante sem rostos reconhecíveis.
+
+**`flavio-motociata-sao-goncalo-maracanazinho.webp`**
+Fila de motocicletas estacionadas numa avenida de cidade brasileira, com capacetes sobre os bancos e bandeiras do Brasil presas aos guidões, luz da manhã.
+
+**`ipespe-flavio-52-7-lula-47-3.webp`**
+Tela de notebook com um gráfico de barras genérico em duas cores, sem nomes, sobre uma mesa de escritório ao lado de um bloco de anotações.
+
+**`caso-master-audio-vorcaro-advogado.webp`**
+Gravador de voz antigo e fones de ouvido sobre uma mesa de madeira escura, ao lado de pastas de documentos fechadas, luz baixa.
 
 ## Internacional
 
 **`furacao-isaias-golfo-eua.webp`**
 Ondas fortes batendo em um píer de madeira sob céu carregado de nuvens escuras, palmeiras curvadas pelo vento, sem pessoas.
-
-**`trump-nao-atacara-ira-antes-eleicoes.webp`**
-Navio petroleiro navegando em mar calmo ao entardecer, com o horizonte do golfo e nuvens alaranjadas, vista à distância.
-
-**`kramatorsk-bomba-onibus-mortos.webp`**
-Rua urbana vazia no leste europeu com uma parada de ônibus danificada e vidros no chão, céu nublado, sem pessoas.
-
-**`etiopia-eritreia-tropas-tigre.webp`**
-Estrada de terra em região montanhosa e seca do Chifre da África, com acácias e montanhas ao fundo, luz forte de meio-dia.
 
 **`nobel-paz-navi-pillay.webp`**
 Medalha dourada genérica sobre um tecido azul, ao lado de um martelo de juiz de madeira e livros de direito, luz suave de biblioteca.
@@ -69,13 +63,19 @@ Medalha dourada genérica sobre um tecido azul, ao lado de um martelo de juiz de
 **`terremoto-panama-magnitude-7-7.webp`**
 Rua de cidade da América Central com fachada de prédio parcialmente desabada, escombros na calçada e fita de isolamento, sem vítimas.
 
-**`ucrania-eua-negociacao-miami.webp`**
-Mesa de reuniões comprida com cadeiras vazias, garrafas de água e pastas fechadas, janelas com vista para prédios e palmeiras de uma cidade costeira.
+**`ataque-aeroporto-riade-hutis.webp`**
+Saguão de aeroporto vazio com painéis de voos mostrando cancelamentos em letras genéricas, luz fria, cadeiras de espera desocupadas.
+
+**`trump-ucrania-novo-presidente-diesel-russo.webp`**
+Bomba de combustível de diesel num posto de estrada ao entardecer, com o bico pendurado e o visor apagado, sem marcas.
+
+**`zaporijia-bombas-mortos-criancas.webp`**
+Prédio residencial de três andares com a fachada danificada e janelas quebradas, entulho na calçada, céu nublado de outono, sem pessoas.
+
+**`abbas-adia-eleicoes-palestinas-2027.webp`**
+Urna eleitoral transparente vazia sobre uma mesa coberta com tecido, numa sala de escola com cadeiras empilhadas, luz da janela.
 
 ## Esportes
-
-**`f1-gp-singapura-primeira-sprint.webp`**
-Circuito de rua iluminado à noite numa cidade asiática, com arranha-céus ao fundo e reflexos de luz no asfalto, sem carros identificáveis.
 
 **`santos-empata-flamengo-palmeiras-encosta.webp`**
 Bola de futebol na marca do pênalti de um estádio iluminado à noite, com o gol e a rede ao fundo e arquibancadas desfocadas.
@@ -86,20 +86,23 @@ Rede de gol balançando num estádio grande à noite, com refletores acesos e ar
 **`novorizontino-vence-nautico-serie-b.webp`**
 Gramado de estádio de futebol visto da arquibancada ao fim da tarde, com a bola no círculo central e sombras longas.
 
-**`joao-fonseca-paris-basileia.webp`**
-Quadra de tênis coberta com piso duro azul, raquete e bolas amarelas apoiadas perto da rede, arquibancada vazia ao fundo.
-
 **`corinthians-demite-fernando-diniz.webp`**
 Banco de reservas vazio à beira de um gramado de estádio à noite, com refletores acesos e arquibancadas vazias, sem escudos.
 
-**`vasco-vence-botafogo-classico.webp`**
-Bola parada na marca de falta, com barreira desenhada por sombras no gramado e gol ao fundo, estádio à noite, sem escudos.
-
-**`rodada-30-brasileirao-classicos-domingo.webp`**
-Estádio de futebol lotado ao entardecer, visto da arquibancada, com gramado iluminado e torcida desfocada, sem escudos.
-
 **`rebeca-andrade-mundial-roterda.webp`**
 Ginásio de ginástica artística vazio com mesa de salto e trave de equilíbrio sob holofotes, plateia desfocada ao fundo.
+
+**`f1-verstappen-sprint-pole-singapura.webp`**
+Carro de Fórmula 1 genérico, sem patrocínios, em pista de rua molhada à noite, com reflexos das luzes da cidade no asfalto e spray de água.
+
+**`sao-paulo-vence-vitoria-calleri.webp`**
+Bola de futebol dentro da rede do gol num estádio iluminado à noite, arquibancada desfocada ao fundo, sem escudos.
+
+**`vasco-empata-remo-sao-januario.webp`**
+Luvas de goleiro apoiadas na trave de um gol, gramado molhado e arquibancada antiga desfocada ao fundo, fim de tarde.
+
+**`maringa-acesso-serie-b.webp`**
+Gramado de estádio de interior ao anoitecer, com refletores acesos e arquibancada pequena vazia, papel picado no chão.
 
 ## Cultura
 
@@ -108,9 +111,6 @@ Palco de festival ao ar livre com estrutura de luzes e caixas de som, gramado va
 
 **`nobel-literatura-anne-carson.webp`**
 Pilha de livros antigos e um caderno aberto com anotações à mão sobre uma mesa de madeira, ao lado de um busto de pedra de estilo grego, luz de janela.
-
-**`estreias-cinema-se-eu-fosse-voce-3.webp`**
-Sala de cinema com poltronas vermelhas vazias e tela iluminada em branco, balde de pipoca em uma poltrona, luz baixa.
 
 **`pitty-novo-album-sete-anos.webp`**
 Disco de vinil preto girando em uma vitrola, com capa sem texto encostada ao lado, luz quente de estúdio.
@@ -121,28 +121,19 @@ Instrumentos musicais artesanais feitos com buzinas e canos expostos em uma gale
 **`marilia-mendonca-exposicao-mis.webp`**
 Sala de museu com vitrines iluminadas exibindo figurinos de palco e um violão, paredes escuras, sem pessoas.
 
-**`festival-teatro-infantil-ceara.webp`**
-Palco de teatro com cenário colorido de papelão, bonecos de pano e cortina vermelha aberta, plateia infantil vista de costas.
-
 **`exposicao-margem-de-dentro-sesc-ipiranga.webp`**
 Sala de exposição com esculturas de cerâmica e madeira sobre pedestais, tecidos pendurados e um grande mural colorido ao fundo.
 
-**`miro-mab-faap-prorrogada.webp`**
-Corredor de museu com paredes brancas e quadros abstratos coloridos desfocados, visitantes de costas, luz de galeria.
+**`festival-do-rio-ultimo-fim-de-semana.webp`**
+Sala de cinema de rua com poltronas vermelhas vazias e a tela iluminada em branco, vista do fundo da plateia.
+
+**`morre-jerry-burgos-produtor-ana-carolina.webp`**
+Palco de show vazio com um microfone no pedestal sob um único foco de luz, cortina escura ao fundo.
+
+**`simaria-volta-musica-fantastico.webp`**
+Bastidor de show com um violão apoiado numa cadeira, cases de equipamento e luzes coloridas do palco desfocadas ao fundo.
 
 ## Economia
-
-**`durigan-imposto-seletivo-apos-eleicao.webp`**
-Prateleira de supermercado com garrafas de bebidas e latas de refrigerante sem rótulos visíveis, ao lado de uma calculadora e notas fiscais.
-
-**`petrobras-21-blocos-bonus-bilionario.webp`**
-Navio-sonda de perfuração em alto-mar, com o céu limpo e o oceano azul ao redor, vista aérea.
-
-**`campos-neto-adia-depoimento-pf.webp`**
-Corredor de prédio público com portas fechadas e cadeiras de espera vazias, piso brilhante, luz fria.
-
-**`anfavea-producao-veiculos-setembro.webp`**
-Linha de montagem de carros com carrocerias sem pintura e braços robóticos, luz industrial, sem marcas.
 
 **`bets-saem-do-ar-devolucao-saldos.webp`**
 Celular sobre uma mesa mostrando uma tela de erro genérica, sem logotipos, ao lado de moedas e de um cartão sem marca.
@@ -162,13 +153,22 @@ Nota fiscal impressa sobre o balcão de uma loja, ao lado de uma maquininha de c
 **`cni-juros-altos-credito-industria.webp`**
 Galpão de fábrica com máquinas paradas e empilhadeira, luz entrando por janelas altas.
 
+**`isaias-paralisa-petroleo-golfo-mexico.webp`**
+Plataforma de petróleo em alto-mar sob céu de tempestade, com ondas fortes e nuvens escuras, sem marcas.
+
+**`mercado-flavio-compromissos-fiscais.webp`**
+Calculadora, planilhas impressas com números genéricos e uma caneta sobre uma mesa, com a fachada de prédios de escritórios desfocada pela janela.
+
+**`b3-feriado-12-outubro.webp`**
+Sala de operações financeiras vazia com monitores apagados e cadeiras encostadas nas mesas, luz natural de feriado.
+
+**`china-10-milhoes-empregos-urbanos.webp`**
+Rua de um centro comercial asiático no início da manhã, com trabalhadores de costas caminhando e prédios altos ao fundo, sem letreiros legíveis.
+
 ## Tecnologia
 
 **`einstein-ataque-hacker-dados-pacientes.webp`**
 Corredor de hospital moderno com um monitor de computador mostrando uma tela de bloqueio com um cadeado, luz fria.
-
-**`crew-12-volta-terra.webp`**
-Cápsula espacial com paraquedas abertos descendo sobre o oceano Pacífico, com um navio de resgate ao longe, céu claro.
 
 **`pix-1-bilhao-chaves.webp`**
 Mão segurando um celular com a tela de pagamento por QR code genérico em frente a uma banca de feira, cores vivas.
@@ -176,20 +176,23 @@ Mão segurando um celular com a tela de pagamento por QR code genérico em frent
 **`samsung-lucro-recorde-chips-ia.webp`**
 Close de uma placa de circuito com chips de memória em fileiras, iluminada por luz azul, numa bancada de laboratório.
 
-**`starlink-15-mil-satelites-celular.webp`**
-Celular deitado sobre uma pedra numa paisagem rural ao anoitecer, com o céu estrelado e uma fila de pontos de luz de satélites.
-
-**`gpt-6-chatgpt-todos.webp`**
-Tela de notebook mostrando gráficos e botões coloridos genéricos sem texto legível, em uma mesa de madeira, luz natural.
-
-**`google-synthid-aberto-publico.webp`**
-Lupa sobre a tela de um celular que mostra uma foto de paisagem, com padrão de pixels visível, fundo escuro.
-
-**`nobel-quimica-kagan-soai.webp`**
-Dois frascos de laboratório com líquidos coloridos e um modelo de moléculas espelhadas sobre a bancada, luz suave de laboratório.
-
 **`openai-demite-pesquisadores-seguranca.webp`**
 Escritório moderno vazio à noite, com telas de computador mostrando linhas de código desfocadas e uma cadeira afastada da mesa.
 
 **`iphone-18-pro-apple-corta-pedidos.webp`**
 Linha de montagem de eletrônicos com bandejas de peças de celular genéricas e braços robóticos, sem marcas.
+
+**`tse-meta-48-horas-perfis-lula.webp`**
+Mão segurando um celular com uma tela de rede social genérica desfocada, sem logotipos, ao fundo um martelo de juiz sobre uma mesa.
+
+**`anthropic-ia-pista-falsa-policia.webp`**
+Tela de computador com um formulário on-line genérico de denúncia e cursor piscando, numa sala escura iluminada só pelo monitor.
+
+**`spacex-21-satelites-militares-eua.webp`**
+Foguete genérico decolando de uma base costeira na madrugada, com rastro de fogo e fumaça iluminando o céu, sem marcas.
+
+**`nuvem-marte-1800-km.webp`**
+Paisagem marciana avermelhada ao amanhecer, com um vulcão largo no horizonte e uma longa nuvem branca e fina se estendendo no céu.
+
+**`apple-evento-casa-inteligente-13-outubro.webp`**
+Sala de estar moderna com luzes suaves, uma pequena tela sem marca apoiada numa prateleira e uma caixa de som redonda sobre a mesa, sem logotipos.
