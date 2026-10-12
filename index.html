@@ -283,7 +283,7 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
 
 <div class="topbar">
   <div class="wrap">
-    <span id="today">Domingo, 11 de outubro de 2026</span>
+    <span id="today">Segunda-feira, 12 de outubro de 2026</span>
     <div class="ticker" aria-label="Mercado">
       <span><b>Ibovespa</b> 209.067 <span class="up">▲ 1,38%</span></span>
       <span><b>Dólar</b> R$ 4,98 <span class="down">▼ 0,78%</span></span>
@@ -298,7 +298,7 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
       <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Abrir menu" aria-controls="drawer" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
       </button>
-      <span class="date-desk">Edição de 11 out 2026</span>
+      <span class="date-desk">Edição de 12 out 2026</span>
     </div>
     <a class="logo" href="#inicio" aria-label="Novera, página inicial">
       <span class="logo-name">Novera</span>
@@ -380,8 +380,8 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
 const META = {
   /* Endereço público do site, sem barra no final. Usado nos links das redes sociais. */
   siteUrl: 'https://novera-sepia.vercel.app',
-  dataExtenso: 'Domingo, 11 de outubro de 2026',
-  edicao: '11 out 2026',
+  dataExtenso: 'Segunda-feira, 12 de outubro de 2026',
+  edicao: '12 out 2026',
   ibovespa: { valor: '209.067', variacao: '1,38%', sobe: true },
   dolar: { valor: 'R$ 4,98', variacao: '0,78%', sobe: false },
   fechamento: '9/10'
@@ -389,13 +389,13 @@ const META = {
 
 /* Home: destaque principal, dois laterais e três da faixa de baixo (IDs de notícias "own: true") */
 const FEATURED = {
-  lead: 'ataque-aeroporto-riade-hutis',
-  side: ['tse-julga-garotinho-eleicao-rio', 'tse-meta-48-horas-perfis-lula'],
-  also: ['bets-saem-do-ar-devolucao-saldos', 'terremoto-panama-magnitude-7-7', 'corinthians-demite-fernando-diniz']
+  lead: 'lula-paulista-flavio-prefeitos-sao-paulo',
+  side: ['tse-barra-anuncios-lula-libera-exercito-do-lula', 'ataque-aeroporto-riade-hutis'],
+  also: ['palmeiras-goleia-corinthians-derbi', 'caso-master-stf-fachin-pf-13-outubro', 'festival-do-rio-premiados-a-margem-do-rio']
 };
 
 /* Home: "Escolhas da redação" (5 IDs) */
-const PICKS = ['datafolha-segundo-turno-flavio-49-lula-45', 'gasolina-impostos-zerados-subsidio-diesel', 'caso-master-stf-fachin-pf-13-outubro', 'libertadores-semifinais-tres-brasileiros', 'nobel-paz-navi-pillay'];
+const PICKS = ['tse-meta-48-horas-perfis-lula', 'corinthians-demite-fernando-diniz', 'gasolina-impostos-zerados-subsidio-diesel', 'terremoto-panama-magnitude-7-7', 'tom-ze-90-anos-exposicao'];
 
 const U = {
   jgbMaster: 'https://jornalgrandebahia.com.br/2026/10/caso-banco-master-edson-fachin-marca-reuniao-com-pf-para-outubro-de-2026-e-cobra-apuracao-sem-excecao-de-mencoes-a-ministros-do-stf/',
@@ -546,10 +546,58 @@ const U = {
   spaceSda: 'https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-rocket-launch-data-transport-satellites-military-proliferated-architecture',
   odMarte: 'https://olhardigital.com.br/2026/10/10/ciencia-e-espaco/ha-algo-de-muito-estranho-e-grande-pairando-sobre-marte/',
   mwApple: 'https://macworld.com/article/3256451/apple-sets-nyc-experience-next-week-to-showcase-new-smart-home-devices.html',
+  /* Atualização de 12 out 2026 */
+  abAtoLula: 'https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/ato-pela-reeleicao-de-lula-leva-milhares-a-avenida-paulista',
+  tmcAtoLula: 'https://tmc.com.br/politica/lula-paulista-contagem-publico-usp-drones-recusa/',
+  otTumulto: 'https://www.otempo.com.br/eleicoes/2026/presidentes/2026/10/11/pm-relata-depredacao-tumulto-e-pichacoes-apos-ato-de-campanha-de-lula-na-avenida-paulista-em-sp',
+  emFlavioPrefeitos: 'https://www.em.com.br/politica/2026/10/7518925-flavio-bolsonaro-se-encontra-com-prefeitos-e-vereadores-em-sao-paulo.html',
+  abTse6x1: 'https://agenciabrasil.ebc.com.br/justica/noticia/2026-10/tse-barra-anuncios-de-lula-acusando-flavio-de-ser-contra-escala-6x1',
+  abExercito: 'https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/corregedor-derruba-decisao-que-suspendeu-canal-exercito-do-lula',
+  imExercito: 'https://www.infomoney.com.br/politica/corregedor-do-tse-suspende-decisao-de-nunes-marques-e-libera-canal-exercito-do-lula/',
+  bandInsercao: 'https://www.band.com.br/politica/eleicoes/tse-suspende-propaganda-de-lula-que-associa-flavio-e-gaspar-a-escandalos',
+  p360Pesquisas: 'https://poder360.com.br/poder-eleicoes-2026/saiba-como-estao-lula-e-flavio-nas-pesquisas-a-14-dias-do-2o-turno',
+  metMissa: 'https://www.metropoles.com/colunas/matheus-leitao/flavio-bolsonaro-leva-campanha-a-missa-da-padroeira-e-lula-fica-no-alvorada',
+  dpCirio: 'https://diariodopara.com.br/cirio-de-nazare/cirio-de-nazare-chega-ao-fim-apos-seis-horas-de-fe-promessas-e-emocao-em-belem/',
+  abCirio: 'https://agenciabrasil.ebc.com.br/cultura/noticia/2026-10/patrimonio-cultural-cirio-de-nazare-reune-fieis-e-turistas-em-belem',
+  terraApoios: 'https://www.terra.com.br/noticias/eleicoes/flavio-ou-lula-veja-quem-cada-candidato-a-presidente-derrotado-esta-apoiando-no-2-turno,723e71cf60c7b7ab4db8a79265b240afcmj9rw44.html',
+  ajRiade3: 'https://www.aljazeera.com/news/2026/10/11/yemen-fighting-expands-as-houthis-attack-saudi-airport-what-to-know',
+  itvRiade: 'https://www.itv.com/news/2026-10-11/at-least-12-killed-in-attack-on-saudi-arabias-riyadh-airport',
+  euroEnergia: 'https://www.euronews.com/2026/10/11/energy-ceasefire-agreed-between-russia-and-ukraine-trump-says',
+  ajDjibuti: 'https://www.aljazeera.com/news/2026/10/11/at-least-109-dead-over-100-missing-as-migrant-boat-capsizes-off-djibouti',
+  ajPaquistao: 'https://www.aljazeera.com/news/2026/10/11/pakistan-imposes-emergency-rule-in-khyber-pakhtunkhwa',
+  apPapa: 'https://www.pbs.org/newshour/world/pope-leo-to-undergo-surgery-to-remove-nodule-on-his-lung',
+  jijiCoreia: 'https://www.nippon.com/en/news/yjj2026101200185/n-korea-fires-multiple-ballistic-missiles-into-sea-of-japan.html',
+  gzDerbi2: 'https://www.gazetaesportiva.com/campeonatos/brasileiro-serie-a/palmeiras-x-corinthians-30-rodada-brasileirao-11-10-2026/',
+  cnnDerbi: 'https://www.cnnbrasil.com.br/esportes/brasileirao/palmeiras-da-show-humilha-corinthians-e-mergulha-rival-na-crise/',
+  gzSeedorf: 'https://www.gazetaesportiva.com/times/corinthians/corinthians-anuncia-clarence-seedorf-como-novo-tecnico-ate-2027/',
+  lanceFlaFlu: 'https://www.lance.com.br/futebol-nacional/flamengo-domina-vence-o-fluminense-e-segue-lider-do-brasileirao.html',
+  gzGaloSantos: 'https://www.gazetaesportiva.com/times/santos/atletico-mg-x-santos-brasileirao-2026/',
+  lanceGrenal: 'https://www.lance.com.br/futebol-nacional/gremio-e-internacional-empatam-e-dupla-gre-nal-segue-no-z-4.html',
+  gzBahia: 'https://www.gazetaesportiva.com/times/bahia/bahia-x-mirassol-campeonato-brasileiro-11-10-26/',
+  abF1: 'https://agenciabrasil.ebc.com.br/esportes/noticia/2026-10/f1-verstappen-vence-gp-de-singapura-e-antonelli-fica-perto-do-titulo',
+  gzFerroviaria: 'https://www.gazetaesportiva.com/campeonatos/brasileiro-serie-c/ferroviaria-vence-inter-de-limeira-e-garante-acesso-a-serie-b-em-partida-de-dois-dias/',
+  metFestivalRio: 'https://www.metropoles.com/entretenimento/a-margem-do-rio-e-mais-os-filmes-vencedores-do-28o-festival-do-rio',
+  rtFestivalRio: 'https://www.riotimesonline.com/brazil-festival-do-rio-winners-2026/',
+  bbTomZe: 'https://billboard.com.br/90-anos-tom-ze-biografia-sao-paulo/',
+  fpTomZe: 'https://www.noticiasaominuto.com.br/fama/2419852/tom-ze-chega-aos-90-diz-ser-dodecafonista-sertanejo-e-que-ja-superou-ostracismo',
+  osulSimaria: 'https://www.osul.com.br/simaria-fala-sobre-saude-mental-e-retorno-a-musica-apos-quatro-anos/',
+  mnlaBilheteria: 'https://mynewsla.com/hollywood/2026/10/11/other-mommy-opens-with-27-5-million-to-lead-box-office/',
+  ansaWilma: 'https://ansabrasil.com.br/brasil/noticias/cultura/2026/10/11/morre-a-atriz-cantora-e-apresentadora-italiana-wilma-de-angelis_f3ddae4d-30da-480e-9a04-078aca69827d.html',
+  cnnGasolinaPostos: 'https://www.cnnbrasil.com.br/economia/seu-bolso/meu-dinheiro/veja-quanto-a-gasolina-deve-ficar-mais-barata-apos-intervencao-do-governo/',
+  fazGasolina: 'https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/outubro/governo-federal-prorroga-desoneracao-da-gasolina-e-do-etanol',
+  efeFmi: 'https://www.abc.com.py/internacionales/2026/10/11/arrancan-en-bangkok-las-reuniones-mundiales-del-fmi-y-el-bm-con-el-foco-en-la-ia-e-iran/',
+  opovoPropostas: 'https://mais.opovo.com.br/jornal/reportagem/2026/10/11/o-que-flavio-e-lula-pensam-para-o-futuro-da-economia-brasileira.html',
+  tbMeta: 'https://timesbrasil.com.br/eleicoes-2026/meta-atribui-queda-no-alcance-de-lula-a-falhas-tecnicas/',
+  emMeta: 'https://www.em.com.br/politica/2026/10/7518795-meta-nega-interferencia-eleitoral-apos-acusacoes-da-campanha-de-lula.html',
+  odChatbots: 'https://olhardigital.com.br/2026/10/10/inteligencia-artificial/china-restringe-chatbots-que-simulam-namoros-e-amizades-virtuais/',
+  odMusk: 'https://olhardigital.com.br/2026/10/10/pro/elon-musk-diz-que-spacex-pode-valer-us-12-quatrilhoes-no-futuro/',
+  aiHomeView: 'https://appleinsider.com/articles/26/10/11/apple-smart-home-control-center-is-called-homeview',
+  tcHomeView: 'https://techcrunch.com/2026/10/11/will-the-homeview-be-apples-first-smart-home-success/',
 };
 
 const NEWS = [
 /* ===================== NACIONAL ===================== */
+
 { id: 'caso-master-stf-fachin-pf-13-outubro', cat: 'nacional', own: true, t: '2026-10-08T06', d: '8 out 2026', img: 'congresso', read: 4,
   title: 'Caso Master: Fachin recebe a PF no dia 13 para saber quais ministros do STF são citados',
   sum: 'O presidente do Supremo cobrou apuração "sem exceção". Moraes, Mendonça, Nunes Marques, Toffoli e Fux aparecem no material do celular de Daniel Vorcaro, e os cinco contestam as suspeitas ou explicam os contatos.',
@@ -566,53 +614,13 @@ const NEWS = [
   box: { type: 'facts', title: 'Linha do tempo no STF', rows: [['15 set', 'Plenário não julga o mérito; Dino pede vista'], ['28 set', 'Gilmar defende suspender o julgamento'], ['2 out', 'Fachin cobra apuração "sem exceção"'], ['6 out', 'Moraes recebe chefes da PF fora da agenda'], ['13 out', 'Fachin recebe o diretor-geral da PF']] },
   sources: [['Jornal Grande Bahia', U.jgbMaster], ['Poder360', U.p360Moraes], ['ConJur', U.conjurBarroso]] },
 
-{ id: 'datafolha-segundo-turno-flavio-49-lula-45', cat: 'nacional', own: true, t: '2026-10-08T20', d: '8 out 2026', img: 'eleicao', read: 3,
-  title: 'Datafolha: Flávio tem 49% e Lula, 45%, na primeira pesquisa do segundo turno',
-  sum: 'Nos votos válidos, o placar é de 52% a 48%. A margem de erro é de 2 pontos. Lula tem rejeição de 46%, e Flávio, de 43%.',
-  body: [
-    'A primeira pesquisa Datafolha do segundo turno, divulgada na quinta-feira (8), mostra Flávio Bolsonaro (PL) com 49% das intenções de voto e Lula (PT) com 45%. Brancos e nulos somam 5%, e 1% está indeciso. Como a margem de erro é de 2 pontos, para mais ou para menos, a diferença entre os dois fica no limite dela.',
-    'Considerando só os votos válidos, sem brancos, nulos e indecisos, Flávio tem 52% e Lula, 48%. A votação é em 25 de outubro.',
-    '## Rejeição e decisão do voto',
-    'Dizem que não votariam de jeito nenhum em Lula 46% dos eleitores, e 43% dizem o mesmo de Flávio. A maioria já decidiu: 94% afirmam que o voto é definitivo. Entre os eleitores de Flávio, 25% dizem votar nele principalmente para derrotar Lula. O governo é avaliado de forma negativa por 40% e de forma positiva por 35%.',
-    'Quem votou em Augusto Cury, Renan Santos, Ronaldo Caiado ou Romeu Zema no primeiro turno se divide assim: 46% vão de Flávio, 32% de Lula, e 15% pretendem votar em branco ou anular.',
-    '## Onde cada um lidera',
-    'Lula vence no Nordeste (61% a 35%), entre católicos (53% a 41%), entre quem estudou até o ensino fundamental (55% a 41%) e entre quem ganha até dois salários mínimos (52% a 41%). Flávio lidera entre evangélicos (69% a 25%) e no Sul (58% a 35%).',
-    '## Como foi feita',
-    'O Datafolha ouviu 2.520 eleitores de 16 anos ou mais em 6 e 7 de outubro. A pesquisa foi contratada pela Folha de S.Paulo e pela TV Globo e está registrada no TSE com o número BR-02949/2026. O nível de confiança é de 95%.'
-  ],
-  box: { type: 'bars', title: 'Datafolha: 2º turno', unit: '% das intenções de voto', max: 55, rows: [['Flávio Bolsonaro (PL)', 49], ['Lula (PT)', 45], ['Branco ou nulo', 5], ['Indecisos', 1]], note: 'Votos válidos: Flávio 52%, Lula 48%. Margem de erro de 2 pontos. Registro BR-02949/2026.' },
-  sources: [['CNN Brasil', U.cnnDatafolha], ['Metrópoles', U.metDatafolha], ['Brasil de Fato', U.bdfDatafolha]] },
-
-{ id: 'tse-julga-garotinho-eleicao-rio', cat: 'nacional', own: true, t: '2026-10-10T15', d: '10 out 2026', img: 'congresso', read: 3,
+{ id: 'tse-julga-garotinho-eleicao-rio', cat: 'nacional', own: false, t: '2026-10-10T15', d: '10 out 2026', img: 'congresso', src: 'TRE-RJ', url: U.treRuas,
   photo: 'fotos/tse-julga-garotinho-eleicao-rio.webp', photoAlt: 'Fachada do prédio do Tribunal Superior Eleitoral, em Brasília, com a placa do tribunal em primeiro plano', credit: 'Foto: reprodução',
   title: 'TRE-RJ refaz a conta, e Douglas Ruas vence a eleição do Rio no primeiro turno',
-  sum: 'Sem os votos anulados de Garotinho, Ruas (PL) ficou com 50,88% dos válidos, e Eduardo Paes (PSD), com 44,16%. A proclamação oficial está marcada para quinta (15).',
+  sum: 'Sem os votos anulados de Garotinho, Ruas (PL) ficou com 50,88% dos válidos, e Eduardo Paes (PSD), com 44,16%. A proclamação oficial está marcada para quinta (15), às 15h.',
   body: [
-    'O Tribunal Regional Eleitoral do Rio de Janeiro concluiu no sábado (10) a nova totalização dos votos para governador. Douglas Ruas (PL) passou de 49,27% para 50,88% dos votos válidos e venceu no primeiro turno. Eduardo Paes (PSD) foi de 42,76% para 44,16%.',
-    'Segundo o tribunal, não houve voto novo: os registros das urnas são os mesmos, mas os 274.411 votos de Anthony Garotinho (Republicanos) saíram da conta. Os votos válidos passaram a somar 8.394.627. Ruas manteve os 4.271.199 votos e ficou cerca de 74 mil acima da maioria absoluta, segundo o Poder360.',
-    '## Próximos passos',
-    'Os partidos têm três dias para examinar os relatórios e mais dois para apresentar reclamações. O resultado definitivo será proclamado em sessão do plenário do TRE-RJ em 15 de outubro, às 15h. Até lá, ficam suspensos os preparativos e a propaganda do segundo turno para governador.',
-    '## Como se chegou aqui',
-    'Na quinta-feira (8), o TSE decidiu por 5 votos a 2 que Garotinho estava com os direitos políticos suspensos pela Lei da Ficha Limpa quando se filiou ao Republicanos, e anulou os votos dele. O ministro Cristiano Zanin, do STF, negou o pedido de Paes para suspender a decisão.',
-    'Na sexta (9), Paes desistiu da candidatura. Em nota, disse que decisões judiciais devem ser cumpridas, mas que a maioria dos eleitores queria o segundo turno, e agradeceu os mais de 3,7 milhões de votos.'
-  ],
-  box: { type: 'facts', title: 'Governo do RJ: a nova conta', rows: [['Douglas Ruas (PL)', '50,88% (4.271.199 votos)'], ['Eduardo Paes (PSD)', '44,16%'], ['Votos válidos', '8.394.627'], ['Votos anulados de Garotinho', '274.411'], ['Proclamação', '15 de outubro, às 15h']] },
-  sources: [['TRE-RJ', U.treRuas], ['Poder360', U.p360Ruas], ['Band', U.bandRuas], ['Agência Brasil', U.abPaes], ['Agência Brasil', U.abTseRio]] },
-
-{ id: 'atlasintel-flavio-51-lula-45-segundo-turno', cat: 'nacional', own: false, t: '2026-10-09T15', d: '9 out 2026', img: 'eleicao', src: 'InfoMoney', url: U.imAtlas,
-  title: 'AtlasIntel: Flávio tem 51,1% e Lula, 45,7%, no segundo turno',
-  sum: 'Nos votos válidos, o placar é de 52,8% a 47,2%. A pesquisa, feita para a Bloomberg, tem margem de erro de 1 ponto.',
-  body: [
-    'O levantamento ouviu 5.026 pessoas entre 3 e 8 de outubro e está registrado no TSE com o número BR-03663/2026. Brancos, nulos e indecisos somam 3,2%. Na pesquisa anterior, encerrada em 2 de outubro, Lula tinha 47,6% e Flávio, 47,4%.',
-    'Segundo o InfoMoney, 53,4% desaprovam o desempenho de Lula, e 44,7% aprovam. No tema da pobreza e da desigualdade, os dois candidatos empatam em confiança, com 48% cada.'
-  ] },
-
-{ id: 'record-cancela-debate-lula-flavio', cat: 'nacional', own: false, t: '2026-10-09T18', d: '9 out 2026', img: 'eleicao', src: 'Poder360', url: U.p360Debate,
-  title: 'Record cancela debate de domingo entre Lula e Flávio; três encontros seguem marcados',
-  sum: 'A emissora citou incompatibilidade de agendas. Estão previstos debates no SBT (15), na Band, com o Estadão (18), e na Globo (23).',
-  body: [
-    'O debate estava marcado para domingo (11). Em nota, a Record atribuiu o cancelamento às agendas dos candidatos. Segundo o Poder360, os dois dizem que pretendem participar dos debates do segundo turno, e a campanha de Lula afirma que ele irá a todos.',
-    'No dia 15, data do debate do SBT, Lula também tem entrevista marcada na TV Globo. A entrevista de Flávio na emissora é no dia 16.'
+    'A nova totalização retirou da conta os 274.411 votos de Anthony Garotinho (Republicanos), anulados pelo TSE. Os votos válidos passaram a somar 8.394.627, e Ruas manteve os 4.271.199 votos que tinha.',
+    'Os partidos têm prazo para examinar os relatórios e apresentar reclamações antes da proclamação. Eduardo Paes desistiu da candidatura na sexta (9), depois que o STF negou o pedido para suspender a decisão do TSE.'
   ] },
 
 { id: 'pec-6x1-votacao-primeiro-turno-14-outubro', cat: 'nacional', own: false, t: '2026-10-09T17', d: '9 out 2026', img: 'congresso', src: 'Agência Senado', url: U.sen6x1v,
@@ -623,30 +631,6 @@ const NEWS = [
     'Depois do primeiro turno, o regimento exige mais três sessões antes da votação final. A líder do governo, Teresa Leitão (PT-PE), recolhe assinaturas para um calendário especial, que permitiria concluir a votação na penúltima semana de outubro.'
   ] },
 
-{ id: 'lula-natal-governadores-nordeste', cat: 'nacional', own: false, t: '2026-10-10T12', d: '10 out 2026', img: 'eleicao', src: 'Metrópoles', url: U.metLulaNatal,
-  title: 'Lula faz caminhada em Natal com governadores do Nordeste',
-  sum: 'Foi o primeiro ato do presidente na região no segundo turno. Neste domingo (11), ele tem ato na Avenida Paulista, em São Paulo.',
-  body: [
-    'A caminhada foi na manhã de sábado (10), no bairro do Alecrim, ao lado de Cadu Xavier (PT), candidato ao governo do Rio Grande do Norte. Participaram os governadores Fátima Bezerra (RN), Jerônimo Rodrigues (BA), Elmano de Freitas (CE) e Lucas Ribeiro (PB), além do senador eleito Rui Costa (PT-BA).',
-    'Segundo o Metrópoles, Lula pediu votos contra a direita no Nordeste. A agenda deste domingo prevê ato ao meio-dia na Avenida Paulista, com Guilherme Boulos.'
-  ] },
-
-{ id: 'flavio-motociata-sao-goncalo-maracanazinho', cat: 'nacional', own: false, t: '2026-10-10T15', d: '10 out 2026', img: 'eleicao', src: 'Poder360', url: U.p360FlavioSG,
-  title: 'Flávio faz motociata em São Gonçalo e promete endurecer o combate ao crime',
-  sum: 'No Rio, o candidato esteve com o governador eleito Douglas Ruas e foi a um culto no Maracanãzinho. Neste domingo (11), ele se reúne com prefeitos em São Paulo.',
-  body: [
-    'A motociata foi na manhã de sábado (10), em São Gonçalo, com Douglas Ruas (PL) e o deputado Carlos Jordy. Segundo o Poder360, Flávio prometeu declarar guerra ao narcotráfico, reduzir a maioridade penal e endurecer a punição para o roubo de celulares. Ele também disse que receberá a faixa presidencial do pai, Jair Bolsonaro, que cumpre pena por tentativa de golpe.',
-    'À tarde, foi à celebração dos 100 anos da Assembleia de Deus Ministério de Madureira, no Maracanãzinho. Neste domingo, a agenda prevê encontros com prefeitos e vereadores da Grande São Paulo.'
-  ] },
-
-{ id: 'ipespe-flavio-52-7-lula-47-3', cat: 'nacional', own: false, t: '2026-10-10T10', d: '10 out 2026', img: 'eleicao', src: 'CNN Brasil', url: U.cnnIpespe,
-  title: 'Ipespe: Flávio tem 52,7% e Lula, 47,3%, dos votos válidos',
-  sum: 'A pesquisa ouviu 1.500 pessoas de 6 a 8 de outubro. A margem de erro é de 2,6 pontos.',
-  body: [
-    'O levantamento foi feito para a Abrapel por recrutamento digital aleatório e está registrado no TSE com o número BR-00933/2026. Segundo a CNN Brasil, custou R$ 105 mil, pagos com recursos próprios.',
-    'O resultado vai na mesma direção do Datafolha e da AtlasIntel divulgados nesta semana, que também mostram Flávio Bolsonaro (PL) à frente de Lula (PT).'
-  ] },
-
 { id: 'caso-master-audio-vorcaro-advogado', cat: 'nacional', own: false, t: '2026-10-10T13', d: '10 out 2026', img: 'congresso', src: 'Poder360', url: U.p360Vorcaro,
   title: 'Caso Master: advogado diz que voz em áudio divulgado pela Veja é de Vorcaro',
   sum: 'A revista afirma que o banqueiro relatou pagamentos ligados a um documentário sobre Lula. A PF e a PGR negam ter recebido esse relato, e o Instituto Lula nega ter recebido dinheiro.',
@@ -655,41 +639,71 @@ const NEWS = [
     'A Polícia Federal afirma que Vorcaro não prestou depoimento com esse teor e que suas propostas de delação foram recusadas. Paulo Okamotto nega que o Instituto Lula tenha recebido recursos, e a campanha de Lula chama a reportagem de farsa.'
   ] },
 
+{ id: 'lula-paulista-flavio-prefeitos-sao-paulo', cat: 'nacional', own: true, t: '2026-10-11T19', d: '11 out 2026', img: 'eleicao', read: 3,
+  title: 'Domingo de campanha em São Paulo: Lula faz ato na Paulista, e Flávio reúne prefeitos com Tarcísio e Nunes',
+  sum: 'A duas semanas do segundo turno, os dois candidatos concentraram a agenda na capital paulista. Lula falou da votação da PEC do fim da 6x1; Flávio prometeu levar recursos federais aos municípios.',
+  body: [
+    'Lula (PT) e Flávio Bolsonaro (PL) passaram o domingo (11) em São Paulo, maior colégio eleitoral do país, a 14 dias do segundo turno, marcado para 25 de outubro.',
+    '## Lula na Avenida Paulista',
+    'O presidente discursou de um carro de som em frente ao Masp, no ato chamado de "Marcha pela Democracia". Segundo a Agência Brasil, a mobilização foi organizada por movimentos sociais e comunidades de fãs, com apoio de torcidas organizadas de Palmeiras e Corinthians, da Parada do Orgulho LGBT+ e de movimentos estudantis, e ocupou a maior parte da avenida.',
+    'Lula disse que a semana será decisiva por causa da votação da PEC do fim da escala 6x1 no Senado, marcada para quarta (14), e que ficará claro como o PL vai votar. Ele criticou o corte de gastos proposto pelo adversário, que chamou de "tesouraço", citou a abstenção de 21,08% no primeiro turno e pediu que eleitores com mais de 70 anos votem.',
+    'Não houve contagem independente de público. A campanha divulgou cerca de 1 milhão de pessoas; o Monitor do Debate Político, da USP, não fez a estimativa, segundo o portal TMC. Depois do ato, a Polícia Militar relatou tumulto, pichações e depredações durante a dispersão, segundo O Tempo.',
+    '## Flávio com prefeitos e vereadores',
+    'Flávio fez dois encontros no centro da capital, um com prefeitos e outro com vereadores da região. No primeiro, estiveram o governador Tarcísio de Freitas (Republicanos), o prefeito Ricardo Nunes (MDB) e os senadores eleitos André do Prado (PL) e Guilherme Derrite (PP), segundo o Estado de Minas.',
+    'O candidato disse ser "municipalista por convicção" e prometeu que, se eleito, os recursos federais vão chegar aos municípios. Ele criticou o governo Lula, citando endividamento das famílias, impostos e violência contra mulheres, e pediu aos aliados que mobilizem de novo os eleitores que votaram nele no primeiro turno.'
+  ],
+  box: { type: 'facts', title: 'O domingo dos candidatos', rows: [['Lula (PT)', 'Ato na Avenida Paulista, em frente ao Masp'], ['Flávio Bolsonaro (PL)', 'Encontros com prefeitos e vereadores no centro de SP'], ['Público do ato', 'Sem contagem independente'], ['Segundo turno', '25 de outubro']] },
+  sources: [['Agência Brasil', U.abAtoLula], ['Estado de Minas', U.emFlavioPrefeitos], ['TMC', U.tmcAtoLula], ['O Tempo', U.otTumulto]] },
+
+{ id: 'tse-barra-anuncios-lula-libera-exercito-do-lula', cat: 'nacional', own: true, t: '2026-10-11T18', d: '11 out 2026', img: 'congresso', read: 3,
+  title: 'TSE barra anúncios e inserção de Lula contra Flávio, mas corregedor libera canal "Exército do Lula"',
+  sum: 'O ministro André Mendonça viu propaganda negativa em anúncios sobre a escala 6x1. A suspensão do canal de WhatsApp, decidida por Nunes Marques, foi derrubada horas depois por Villas Bôas Cueva.',
+  body: [
+    'O Tribunal Superior Eleitoral tomou três decisões sobre a propaganda do segundo turno entre sábado (10) e domingo (11). Todas partiram de pedidos da campanha de Flávio Bolsonaro (PL) contra a de Lula (PT).',
+    '## Anúncios sobre a 6x1',
+    'No domingo, o ministro André Mendonça mandou suspender anúncios pagos no Facebook em que a campanha de Lula afirma que Flávio é contra o fim da escala 6x1. Segundo a Agência Brasil, ele entendeu que os anúncios foram usados para propaganda negativa, que a lei proíbe: a peça chamava a posição do candidato de "desumana".',
+    'A campanha de Lula não pode contratar novos anúncios com esse conteúdo, e a Meta deve desativá-los e informar quanto foi pago. Foram identificados pelo menos dois pagamentos, de R$ 10,4 mil e R$ 15,4 mil.',
+    '## Inserção na TV',
+    'No sábado, o presidente do TSE, Kassio Nunes Marques, suspendeu em caráter liminar uma inserção de TV de Lula que chamava Flávio e o candidato a vice, Alfredo Gaspar, de "dupla dos escândalos" e citava Daniel Vorcaro. Segundo a Band, o ministro apontou descontextualização, porque a peça omitia que o STF tinha arquivado a representação da PF contra Gaspar.',
+    '## Canal no WhatsApp',
+    'Também no domingo, Nunes Marques suspendeu o canal "Exército do Lula", com mais de 3,4 milhões de participantes, por replicar conteúdos que o tribunal já tinha considerado inverídicos. Horas depois, o corregedor-geral eleitoral, Ricardo Villas Bôas Cueva, relator do caso, suspendeu a decisão de forma provisória. O tema vai ao plenário. O deputado André Janones (Rede-MG), que coordena o canal, criticou a suspensão.'
+  ],
+  box: { type: 'facts', title: 'As decisões', rows: [['Anúncios sobre a 6x1', 'Suspensos por André Mendonça'], ['Inserção "dupla dos escândalos"', 'Suspensa por Nunes Marques'], ['Canal "Exército do Lula"', 'Suspenso e liberado no mesmo dia'], ['Próximo passo do canal', 'Plenário do TSE']] },
+  sources: [['Agência Brasil', U.abTse6x1], ['Agência Brasil', U.abExercito], ['InfoMoney', U.imExercito], ['Band', U.bandInsercao]] },
+
+{ id: 'pesquisas-segundo-turno-14-dias', cat: 'nacional', own: false, t: '2026-10-11T06', d: '11 out 2026', img: 'eleicao', src: 'Poder360', url: U.p360Pesquisas,
+  title: 'A 14 dias do segundo turno, Flávio lidera quatro de cinco pesquisas; Vox Brasil mostra Lula à frente',
+  sum: 'Nos votos válidos, Flávio vai de 52% a 53% em PoderData, AtlasIntel, Datafolha e Ipespe. Na Vox Brasil, Lula tem 50,86%, e Flávio, 49,14%.',
+  body: [
+    'O levantamento do Poder360 reúne as pesquisas divulgadas na semana. A PoderData, feita de 5 a 7 de outubro com 3.000 entrevistas, mostra Flávio Bolsonaro (PL) com 53% dos votos válidos, contra 47% de Lula (PT). AtlasIntel (52,8% a 47,2%), Datafolha (52% a 48%) e Ipespe (52,7% a 47,3%) vão na mesma direção.',
+    'A Vox Brasil, presencial, com 2.100 entrevistas de 5 a 7 de outubro, é a exceção: Lula tem 50,86% dos válidos, e Flávio, 49,14%. Não houve pesquisa nacional nova divulgada no fim de semana.'
+  ] },
+
+{ id: 'flavio-missa-padroeira-lula-alvorada', cat: 'nacional', own: false, t: '2026-10-11T21', d: '11 out 2026', img: 'eleicao', src: 'Metrópoles', url: U.metMissa,
+  title: 'Dia da Padroeira: Flávio vai à missa em Brasília, e Lula passa o feriado no Alvorada',
+  sum: 'A missa na Catedral de Brasília é às 11h desta segunda (12). O vice-presidente Geraldo Alckmin deve ir a Aparecida.',
+  body: [
+    'Segundo a coluna de Matheus Leitão, no Metrópoles, a celebração será presidida pelo cardeal Paulo Cezar Costa e terá também a governadora Celina Leão (PP) e a senadora eleita Bia Kicis (PL-DF). Lula deve ficar no Palácio da Alvorada.',
+    'O arcebispo de Aparecida, dom Mário Antônio da Silva, pediu que ninguém vá ao santuário para alimentar divisões.'
+  ] },
+
+{ id: 'cirio-de-nazare-belem-2026', cat: 'nacional', own: false, t: '2026-10-11T12', d: '11 out 2026', img: 'cultura', src: 'Diário do Pará', url: U.dpCirio,
+  title: 'Círio de Nazaré leva milhões de devotos às ruas de Belém',
+  sum: 'A procissão saiu às 6h da Catedral da Sé e chegou à Basílica de Nazaré depois de pouco mais de seis horas.',
+  body: [
+    'A berlinda com a imagem de Nossa Senhora de Nazaré chegou em frente à Basílica por volta das 12h14 de domingo (11). A corda foi cortada antes das 9h, segundo o Diário do Pará.',
+    'O tema deste ano é "Maria, Mãe Missionária que nos dá Jesus". A festa, reconhecida pela Unesco como patrimônio cultural da humanidade, tem 14 procissões entre 7 e 26 de outubro, segundo a Agência Brasil. A organização esperava 2,3 milhões de pessoas; não houve balanço oficial de público.'
+  ] },
+
+{ id: 'apoios-segundo-turno-derrotados', cat: 'nacional', own: false, t: '2026-10-11T05', d: '11 out 2026', img: 'eleicao', src: 'Terra', url: U.terraApoios,
+  title: 'Segundo turno: veja quem os candidatos derrotados apoiam',
+  sum: 'Caiado, Zema, Augusto Cury e Clariana Barão estão com Flávio. Samara Martins, Hertz Dias e Edmilson Costa declararam voto em Lula.',
+  body: [
+    'Segundo o Terra, Augusto Cury (Avante) disse que o apoio a Flávio Bolsonaro não é um cheque em branco. Hertz Dias e Edmilson Costa (PCB) apoiam Lula com ressalvas.',
+    'Renan Santos (Missão) liberou os eleitores em 4 de outubro. Wilson Grassi (Democrata) e Rui Costa Pimenta (PCO) não se posicionaram.'
+  ] },
+
 /* ===================== INTERNACIONAL ===================== */
-{ id: 'russia-ataque-kiev-mortos', cat: 'internacional', own: false, t: '2026-10-07T20', d: '7 out 2026', img: 'mundo', src: 'Kyiv Independent', url: U.kiKiev,
-  photo: 'fotos/russia-ataque-kiev-mortos.webp', photoAlt: 'Explosão ilumina o céu noturno de uma cidade, com uma grande nuvem de fogo e fumaça', credit: 'Foto: reprodução',
-  title: 'Ataque russo no aniversário de Putin mata ao menos 28 pessoas na Ucrânia',
-  sum: 'Um míssil atingiu um prédio residencial em Pryluky, onde morreram ao menos 20 pessoas, entre elas cinco crianças. A Rússia lançou 48 mísseis de cruzeiro e 130 drones.',
-  body: [
-    'O ataque foi na madrugada de quarta-feira (7), quando Vladimir Putin completou 74 anos. Segundo o Kyiv Independent, 118 pessoas ficaram feridas em várias regiões. Em Kiev, foram 4 mortos, e parte da cidade ficou sem luz e sem água.',
-    'Segundo a Força Aérea ucraniana, 39 dos 48 mísseis de cruzeiro e 117 dos 130 drones foram derrubados. Zelensky disse que ainda podia haver pessoas sob os escombros em Pryluky.'
-  ] },
-
-{ id: 'franca-suspende-aulas-protestos-estudantes', cat: 'internacional', own: false, t: '2026-10-06T13', d: '6 out 2026', img: 'protesto', src: 'Al Jazeera', url: U.ajFranca,
-  photo: 'fotos/franca-suspende-aulas-protestos-estudantes.webp', photoAlt: 'Estudantes com cartazes protestam em frente à fachada de uma escola em Paris', credit: 'Foto: reprodução',
-  title: 'França suspende aulas do ensino médio após protestos de estudantes',
-  sum: 'As autoridades contaram cerca de 250 mil manifestantes. Quase 2 mil escolas foram bloqueadas ou fechadas.',
-  body: [
-    'O primeiro-ministro Sébastien Lecornu suspendeu as aulas do ensino médio até o fim da semana, depois de mais um dia de protestos contra as condições das escolas públicas. Os organizadores falam em 500 mil pessoas nas ruas.',
-    'Pelo menos 215 adolescentes e 715 policiais ficaram feridos. Desde o início do movimento, 6.100 pessoas foram presas, a maioria menores de idade.'
-  ] },
-
-{ id: 'furacao-isaias-golfo-eua', cat: 'internacional', own: false, t: '2026-10-10T23', d: '10 out 2026', img: 'mundo', src: 'CBS News', url: U.cbsIsaias,
-  title: 'Isaias deixa pelo menos 4 mortos e chegou a cortar a luz de 884 mil clientes nos EUA',
-  sum: 'Duas mortes foram na Flórida e duas no Alabama. A tempestade perdeu força e deve se dissipar neste domingo (11), mas ainda há risco de enchentes.',
-  body: [
-    'Segundo a CBS News, duas pessoas morreram com a queda de árvores sobre casas, uma em Escambia, na Flórida, e outra em Birmingham, no Alabama. Um homem foi achado morto numa garagem fechada com um gerador ligado, e o governo do Alabama confirmou outra morte, sem detalhar a causa.',
-    'Na manhã de sábado (10), mais de 884 mil clientes estavam sem luz na Flórida, no Alabama e na Geórgia. O Isaias, que tocou terra perto de Destin como furacão de categoria 2, virou um ciclone pós-tropical. Há alertas de inundação em partes do sudeste.'
-  ] },
-
-{ id: 'quenia-primeiro-caso-ebola', cat: 'internacional', own: false, t: '2026-10-06T15', d: '6 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajEbola,
-  photo: 'fotos/quenia-primeiro-caso-ebola.webp', photoAlt: 'Profissionais de saúde com roupas de proteção amarelas atendem um paciente em centro de tratamento de ebola', credit: 'Imagem ilustrativa: reprodução',
-  title: 'Quênia confirma primeiro caso de ebola; paciente morre em Nairóbi',
-  sum: 'O homem vivia na República Democrática do Congo, onde um surto já matou mais de 4 mil pessoas.',
-  body: [
-    'O paciente viajou por terra até Uganda e de lá seguiu de avião para Nairóbi, onde morreu. Segundo o presidente William Ruto, ao menos 8 familiares e 21 profissionais de saúde estão em quarentena, e passageiros e tripulantes do voo estão sendo rastreados.',
-    'O surto no Congo já soma mais de 8.300 casos confirmados em sete províncias.'
-  ] },
 
 { id: 'nobel-paz-navi-pillay', cat: 'internacional', own: true, t: '2026-10-09T07', d: '9 out 2026', img: 'mundo', read: 3,
   title: 'Nobel da Paz vai para a jurista sul-africana Navi Pillay',
@@ -722,37 +736,21 @@ const NEWS = [
   box: { type: 'facts', title: 'O terremoto', rows: [['Magnitude', '7,7, segundo o USGS'], ['Réplicas', 'Mais de 100'], ['Mortes', 'Nenhuma registrada'], ['Feridos', '27'], ['Casas danificadas', 'Cerca de 420'], ['Ajuda dos EUA', 'US$ 5 milhões']] },
   sources: [['AP', U.apPanama], ['El Tiempo', U.etPanamaEmerg], ['Business Standard', U.bsPanama], ['El Espectador', U.eePanama]] },
 
-{ id: 'ataque-aeroporto-riade-hutis', cat: 'internacional', own: true, t: '2026-10-10T20', d: '10 out 2026', img: 'mundo', read: 3,
-  title: 'Ataque ao aeroporto de Riade mata 12 pessoas; Arábia Saudita acusa os hutis',
-  sum: 'Cerca de 300 pessoas ficaram feridas. Trump disse que os EUA avaliam entrar na guerra contra o grupo do Iêmen.',
+{ id: 'ataque-aeroporto-riade-hutis', cat: 'internacional', own: true, t: '2026-10-11T16', d: '11 out 2026', img: 'mundo', read: 3,
+  title: 'Hutis assumem ataque que matou 12 no aeroporto de Riade, e terminal é atingido de novo',
+  sum: 'O número de feridos chegou a 309. Trump disse que os EUA podem se juntar à Arábia Saudita contra o grupo do Iêmen e que vai "analisar" a possibilidade.',
   body: [
-    'Um ataque ao Aeroporto Internacional Rei Khalid, em Riade, capital da Arábia Saudita, matou pelo menos 12 pessoas no sábado (10), segundo a autoridade de aviação civil do país. Cerca de 300 pessoas ficaram feridas. A Al Jazeera classificou o ataque como o mais letal no reino em mais de uma década.',
+    'Os hutis, grupo armado do Iêmen, assumiram no domingo (11) o ataque ao Aeroporto Internacional Rei Khalid, em Riade, capital da Arábia Saudita, que matou 12 pessoas no sábado (10). Segundo a Al Jazeera, o número de feridos chegou a 309. O porta-voz militar do grupo, Yahya Saree, disse que a Arábia Saudita é responsável por qualquer falha em interceptar os ataques.',
     'Entre os mortos estão quatro sauditas, dois cidadãos de Bangladesh e uma pessoa de cada um destes países: Estados Unidos, Jordânia, Palestina, Síria, Sudão e Egito. O secretário de Estado americano, Marco Rubio, confirmou a morte de um cidadão dos EUA.',
-    '## Quem é acusado',
-    'O governo saudita atribui o ataque aos hutis, grupo armado do Iêmen, e conduz uma campanha aérea contra eles. Segundo a CBS News, não houve reivindicação formal, mas um dirigente de mídia do grupo escreveu nas redes que os hutis tinham fechado o aeroporto. Foi o terceiro ataque ao aeroporto de Riade na semana.',
+    '## Novo ataque',
+    'No domingo, um projétil atingiu de novo um terminal de passageiros do aeroporto de Riade, deixando feridos e provocando um incêndio em um dos saguões, segundo a ITV News. A coalizão liderada pelos sauditas também relatou um projétil perto do aeroporto de Dammam, no leste do país. As escolas de Riade passaram para o ensino remoto por uma semana.',
     '## Reações',
-    'O presidente dos EUA, Donald Trump, chamou o ataque de terrível, disse que vai conversar com o príncipe herdeiro Mohammed bin Salman e afirmou que o país avalia entrar na guerra contra os hutis. O secretário-geral da ONU, António Guterres, disse estar profundamente chocado. Egito, Catar, Paquistão, Jordânia, Japão e Canadá também condenaram o ataque.',
-    '## No Golfo',
-    'O ataque ocorre durante a guerra entre EUA e Israel, de um lado, e Irã, do outro, iniciada em 28 de fevereiro. Na quinta (8), Trump disse que não atacaria o Irã antes das eleições americanas de 3 de novembro.'
+    'A coalizão chamou o ataque de crime de guerra. O presidente dos EUA, Donald Trump, chamou o ataque de inaceitável e, perguntado se o país entraria na guerra contra os hutis, respondeu que talvez e que vai analisar. O secretário-geral da ONU, António Guterres, condenou o ataque, e Arábia Saudita, Egito, Paquistão e Turquia divulgaram uma condenação conjunta, segundo a CBS News. O Reino Unido, que fornece defesa aérea aos sauditas, falou em escalada perigosa.',
+    '## A guerra no Iêmen e no Golfo',
+    'Em terra, forças do governo iemenita apoiadas pela Arábia Saudita lançaram em 4 de outubro uma ofensiva contra os hutis. O ataque ocorre durante a guerra entre EUA e Israel, de um lado, e Irã, do outro, iniciada em 28 de fevereiro.'
   ],
-  box: { type: 'facts', title: 'O ataque', rows: [['Local', 'Aeroporto Rei Khalid, Riade'], ['Mortos', 'Pelo menos 12'], ['Feridos', 'Cerca de 300'], ['Acusados', 'Hutis, do Iêmen'], ['Ataques ao aeroporto na semana', '3']] },
-  sources: [['Al Jazeera', U.ajRiade2], ['Al Jazeera / Reuters', U.ajRiade], ['CBS News', U.cbsRiade], ['InfoMoney / Reuters', U.imTrumpIra]] },
-
-{ id: 'trump-ucrania-novo-presidente-diesel-russo', cat: 'internacional', own: false, t: '2026-10-10T18', d: '10 out 2026', img: 'mundo', src: 'AP', url: U.apTrumpUcrania,
-  title: 'Trump diz que a Ucrânia precisa de novo presidente após Zelensky criticar acordo de diesel com a Rússia',
-  sum: 'Pelo acordo anunciado por Trump, a Rússia fornecerá diesel aos EUA. Zelensky disse que a Rússia respondeu à suspensão de sanções com bombardeios.',
-  body: [
-    'Segundo a AP, Trump culpou Zelensky pela alta do diesel e afirmou que é hora de a Ucrânia ter um novo presidente. Pelo acordo anunciado por ele na sexta (9), a Rússia fornece de imediato mais de 300 mil toneladas de diesel, mais 500 mil em novembro e depois 1 milhão de toneladas.',
-    'Zelensky escreveu que a Rússia agradeceu a suspensão das sanções com cinco bombas em Zaporíjia e que a escolha russa é a guerra. Um integrante do governo ucraniano disse que Kiev não sabia do acordo e que ele não tem ligação com as conversas da semana em Miami, das quais a delegação ucraniana já voltou.'
-  ] },
-
-{ id: 'zaporijia-bombas-mortos-criancas', cat: 'internacional', own: false, t: '2026-10-10T14', d: '10 out 2026', img: 'mundo', src: 'Euronews', url: U.euroZapo,
-  title: 'Bombas russas matam pelo menos 20 pessoas em Zaporíjia, entre elas três crianças',
-  sum: 'Cinco bombas guiadas atingiram áreas residenciais na madrugada de sábado (10). Duas caíram sobre prédios de apartamentos.',
-  body: [
-    'Segundo o serviço de emergência da Ucrânia, citado pela Euronews, 16 pessoas ficaram feridas, e as buscas continuavam. Uma das bombas destruiu a entrada de um prédio de três andares.',
-    'Na mesma noite, a Rússia lançou 160 drones contra o país, e 117 foram derrubados ou neutralizados, segundo a Força Aérea ucraniana.'
-  ] },
+  box: { type: 'facts', title: 'O ataque', rows: [['Local', 'Aeroporto Rei Khalid, Riade'], ['Mortos', '12'], ['Feridos', '309'], ['Autoria', 'Assumida pelos hutis, do Iêmen'], ['Escolas de Riade', 'Ensino remoto por uma semana']] },
+  sources: [['Al Jazeera', U.ajRiade3], ['ITV News', U.itvRiade], ['Al Jazeera', U.ajRiade2], ['CBS News', U.cbsRiade]] },
 
 { id: 'abbas-adia-eleicoes-palestinas-2027', cat: 'internacional', own: false, t: '2026-10-10T16', d: '10 out 2026', img: 'mundo', src: 'Euronews', url: U.euroAbbas,
   title: 'Abbas adia eleições palestinas para setembro de 2027',
@@ -762,53 +760,69 @@ const NEWS = [
     'O chanceler de Israel, Gideon Sa’ar, acusou Abbas de enganar a comunidade internacional.'
   ] },
 
+{ id: 'cessar-fogo-energetico-trump-russia-ucrania', cat: 'internacional', own: false, t: '2026-10-11T18', d: '11 out 2026', img: 'mundo', src: 'Euronews', url: U.euroEnergia,
+  title: 'Trump anuncia "cessar-fogo energético" entre Rússia e Ucrânia; usina em Kiev é atingida horas depois',
+  sum: 'O Kremlin não confirmou o acordo. Zelensky disse que soube pela imprensa, mas que a Ucrânia aceita se a Rússia também aceitar.',
+  body: [
+    'Trump escreveu no domingo (11) que o cessar-fogo nos ataques à infraestrutura de energia valia de imediato, sem dar detalhes. Horas depois, segundo a Euronews, um drone atingiu uma usina em Kiev e provocou apagões, e a rede elétrica de Kharkiv também foi atacada.',
+    'Zelensky disse que pode organizar eleições se a Rússia aceitar um cessar-fogo total de 60 dias e que a escolha do líder do país cabe aos ucranianos. O presidente francês, Emmanuel Macron, apoiou um cessar-fogo energético real.'
+  ] },
+
+{ id: 'ira-resposta-eua-insuficiente-ormuz', cat: 'internacional', own: false, t: '2026-10-11T15', d: '11 out 2026', img: 'mundo', src: 'CBS News', url: U.cbsRiade,
+  title: 'Irã chama de insuficiente a resposta dos EUA para encerrar a guerra e ameaça cabos e data centers da região',
+  sum: 'Segundo Teerã, Washington aceitou parte das sete condições iranianas. Desde julho, o bloqueio americano obrigou 135 navios a voltar.',
+  body: [
+    'Mohsen Rezaei, apresentado pela CBS News como chefe do Conselho Supremo de Segurança Nacional do Irã, disse que o país deixou de responder aos EUA nas negociações para encerrar a guerra e reabrir o Estreito de Ormuz. Ele ameaçou atacar cabos, data centers e instalações de inteligência artificial na região se os combates intensos forem retomados.',
+    'No sábado (10), um caça americano inutilizou um navio de bandeira panamenha no Golfo de Omã. Segundo o Comando Central dos EUA, desde o início do bloqueio, em 14 de julho, 4 navios foram inutilizados e 10 petroleiros foram destruídos.'
+  ] },
+
+{ id: 'naufragio-djibuti-139-migrantes', cat: 'internacional', own: false, t: '2026-10-11T12', d: '11 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajDjibuti,
+  title: 'Naufrágio perto de Djibuti deixa ao menos 139 migrantes mortos e 84 desaparecidos',
+  sum: 'O barco levava mais de 300 pessoas de Djibuti para o Iêmen. Entre os mortos há 15 crianças, segundo a OIM.',
+  body: [
+    'O barco afundou entre a noite de quinta (8) e a madrugada de sexta (9), perto de Guhere, no Golfo de Áden. Mais de 80 sobreviventes, todos etíopes, foram resgatados, segundo a Organização Internacional para as Migrações, agência da ONU.',
+    'A OIM registrou mais de 20 mil chegadas de etíopes a Djibuti desde 10 de setembro.'
+  ] },
+
+{ id: 'paquistao-emergencia-khyber-pakhtunkhwa', cat: 'internacional', own: false, t: '2026-10-11T14', d: '11 out 2026', img: 'protesto', src: 'Al Jazeera', url: U.ajPaquistao,
+  title: 'Paquistão decreta estado de emergência em província governada pelo partido de Imran Khan',
+  sum: 'Segundo o partido PTI, o chefe do governo de Khyber Pakhtunkhwa, Sohail Afridi, foi preso. O governo federal alega falta de empenho no combate ao terrorismo.',
+  body: [
+    'O presidente Asif Ali Zardari aprovou a medida no domingo (11), por recomendação do gabinete do primeiro-ministro Shehbaz Sharif. Um governador nomeado assume a província com um conselho consultivo, inicialmente por seis meses, segundo o ministro da Justiça.',
+    'O PTI chamou a decisão de golpe disfarçado. O partido planejava uma marcha até Islamabad pela libertação de Khan, preso há mais de três anos, e o governo bloqueou os acessos à capital com contêineres.'
+  ] },
+
+{ id: 'papa-leao-cirurgia-pulmao', cat: 'internacional', own: false, t: '2026-10-11T09', d: '11 out 2026', img: 'mundo', src: 'AP / PBS', url: U.apPapa,
+  title: 'Papa Leão XIV vai passar por cirurgia para retirar nódulo no pulmão',
+  sum: 'O nódulo foi detectado no início e está bem localizado, segundo o papa. A recuperação deve levar cerca de uma semana.',
+  body: [
+    'O papa, de 71 anos, fez o anúncio na oração do Angelus de domingo (11). Segundo a AP, o Vaticano prevê a cirurgia para o início desta semana, provavelmente no Hospital Gemelli, em Roma.',
+    'A viagem a Uruguai, Argentina e Peru, de 6 a 17 de novembro, está mantida.'
+  ] },
+
+{ id: 'coreia-do-norte-misseis-mar-do-japao', cat: 'internacional', own: false, t: '2026-10-11T21', d: '11 out 2026', img: 'mundo', src: 'Jiji Press / Nippon.com', url: U.jijiCoreia,
+  title: 'Coreia do Norte dispara mísseis balísticos em direção ao Mar do Japão',
+  sum: 'Os mísseis voaram mais de 900 km e caíram fora da zona econômica exclusiva japonesa.',
+  body: [
+    'O lançamento foi por volta das 9h20 de segunda-feira (12) no horário local, 21h20 de domingo em Brasília, nas proximidades de Pyongyang, segundo os militares sul-coreanos.',
+    'O Estado-Maior da Coreia do Sul vê o disparo como resposta ao primeiro teste de míssil hipersônico sul-coreano. A Coreia do Norte fez um lançamento parecido em 3 de outubro.'
+  ] },
+
 /* ===================== ESPORTES ===================== */
-{ id: 'santos-empata-flamengo-palmeiras-encosta', cat: 'esportes', own: true, t: '2026-10-09T00', d: '9 out 2026', img: 'esportes', read: 3,
-  title: 'Neymar marca duas vezes, Santos empata com o Flamengo, e Palmeiras fica a um ponto do líder',
-  sum: 'Na Vila Belmiro, o Santos buscou o 2 a 2 com dois pênaltis no fim. O Palmeiras venceu o Bahia por 1 a 0 e chegou a 60 pontos, contra 61 do Flamengo.',
+
+{ id: 'corinthians-demite-fernando-diniz', cat: 'esportes', own: true, t: '2026-10-11T11', d: '11 out 2026', img: 'esportes', read: 2,
+  title: 'Corinthians anuncia Clarence Seedorf como técnico até dezembro de 2027',
+  sum: 'O holandês substitui Fernando Diniz. O contrato prevê rescisão automática em caso de rebaixamento, segundo a CNN Brasil. Horas depois do anúncio, o time perdeu o dérbi por 4 a 1.',
   body: [
-    'A briga pelo título do Brasileirão ficou mais apertada na quinta-feira (8), pela 29ª rodada. O líder Flamengo empatou por 2 a 2 com o Santos, na Vila Belmiro, e o Palmeiras venceu o Bahia por 1 a 0, em São Paulo. Agora, só um ponto separa os dois primeiros colocados.',
-    '## Neymar decide na volta',
-    'O Flamengo abriu 2 a 0 no fim do primeiro tempo, com gols de Danilo, aos 43 minutos, e Lucas Paquetá, nos acréscimos. Neymar, que não jogava desde 2 de setembro por causa de uma lesão na coxa, entrou no intervalo.',
-    'Aos 33 minutos do segundo tempo, Jorginho, do Flamengo, foi expulso depois de revisão do VAR por toque de mão na área. Neymar cobrou o pênalti e diminuiu. Aos 42, ele marcou de novo, em outro pênalti, marcado após um empurrão de Luiz Araújo em Gabigol. O árbitro Anderson Daronco deu 14 minutos de acréscimo.',
-    '## Palmeiras encosta',
-    'No Nubank Parque, o Palmeiras marcou cedo: Flaco López fez o gol aos 6 minutos do primeiro tempo, depois de um escanteio. Vitor Roque acertou o travessão e Sosa, a trave. Com a derrota, o Bahia caiu para o 6º lugar. Também na quinta, o Fluminense goleou o Coritiba por 4 a 0 e subiu para o 3º lugar.',
-    '## Próximos jogos',
-    'No domingo (11), o Flamengo recebe o Fluminense, às 17h30, e o Palmeiras enfrenta o Corinthians no Nubank Parque, no mesmo horário. O Santos visita o Atlético-MG, às 16h, na Arena MRV.'
+    'O Corinthians anunciou na manhã de domingo (11) a contratação do holandês Clarence Seedorf como técnico, com contrato até dezembro de 2027. A chegada e a apresentação devem acontecer nos próximos dias, segundo a Gazeta Esportiva.',
+    'Segundo a CNN Brasil, o contrato tem cláusula de rescisão automática se o time for rebaixado para a Série B, com multa equivalente a três salários.',
+    '## A busca',
+    'Antes de Seedorf, Ramón Díaz, Luis Zubeldía, Sylvinho e Javier Mascherano recusaram a proposta, que previa contrato só até o fim de 2026, segundo o Lance!. Fernando Diniz foi demitido na quarta (7), depois de 33 jogos, com 13 vitórias, 8 empates e 12 derrotas.',
+    '## Situação na tabela',
+    'No domingo, ainda com o interino William Batista, o Corinthians perdeu para o Palmeiras por 4 a 1, a oitava derrota seguida no Brasileirão. O time tem 32 pontos e está em 16º, um ponto acima da zona de rebaixamento. O próximo jogo é contra o Vitória, em 19 de outubro, na Neo Química Arena.'
   ],
-  box: { type: 'table', title: 'Brasileirão: o topo da tabela', head: ['Clube', 'Pontos'], rows: [['Flamengo', '61'], ['Palmeiras', '60'], ['Fluminense', '51'], ['Athletico-PR', '50'], ['Cruzeiro', '48'], ['Bahia', '46']], note: 'Depois dos jogos de quinta (8), pela 29ª rodada. Fontes: Gazeta Esportiva e Piranot.' },
-  sources: [['Gazeta Esportiva', U.gzSantosFla], ['CNN Brasil', U.cnnSantosFla], ['Gazeta Esportiva', U.gzPalBahia], ['CNN Brasil', U.cnnPalBahia], ['Piranot', U.piraTabela]] },
-
-{ id: 'fluminense-goleia-coritiba-savarino', cat: 'esportes', own: false, t: '2026-10-08T23', d: '8 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzFluCoxa,
-  title: 'Savarino marca três vezes, e Fluminense goleia o Coritiba por 4 a 0',
-  sum: 'Com a vitória no Maracanã, o time chegou a 51 pontos e assumiu o 3º lugar do Brasileirão.',
-  body: [
-    'Savarino marcou aos 29 minutos do primeiro tempo e aos 3 e aos 20 do segundo. Lucho Acosta fechou o placar nos acréscimos. O Coritiba, com 38 pontos, está em 9º.',
-    'No domingo (11), o Fluminense enfrenta o líder Flamengo no Maracanã.'
-  ] },
-
-{ id: 'novorizontino-vence-nautico-serie-b', cat: 'esportes', own: false, t: '2026-10-08T22', d: '8 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzNovori,
-  title: 'Novorizontino vence o Náutico e encosta nos líderes da Série B',
-  sum: 'Com o 2 a 0 nos Aflitos, o time chegou a 57 pontos, dois a menos que o líder Juventude.',
-  body: [
-    'Nicolas Careca abriu o placar aos 7 minutos, e Rômulo ampliou de pênalti aos 14, ainda no primeiro tempo. O jogo foi pela 32ª rodada.',
-    'O Novorizontino é o 3º colocado. O Náutico, com 42 pontos, está em 13º.'
-  ] },
-
-{ id: 'corinthians-demite-fernando-diniz', cat: 'esportes', own: true, t: '2026-10-10T17', d: '10 out 2026', img: 'esportes', read: 3,
-  title: 'Mascherano recusa o Corinthians, e interino comanda o time no clássico contra o Palmeiras',
-  sum: 'O argentino é mais um a dizer não ao contrato curto. William Batista, do sub-20, dirige a equipe neste domingo (11), às 17h30, no Nubank Parque.',
-  body: [
-    'O Corinthians vai ao clássico contra o Palmeiras sem técnico efetivo. Segundo o Lance!, o argentino Javier Mascherano foi procurado, mas recusou a proposta porque o contrato iria só até o fim de 2026. Ramón Díaz, que era a primeira opção, Luis Zubeldía e Sylvinho também recusaram o vínculo curto.',
-    '## O interino',
-    'William Batista, de 33 anos, técnico do time sub-20, comanda a equipe com a ajuda de Léo Porto, auxiliar fixo do clube. Segundo a CNN Brasil, ele foi interino do Vasco em 2023, em cinco jogos, com duas vitórias, um empate e duas derrotas.',
-    '## A demissão',
-    'Fernando Diniz foi demitido na quarta-feira (7), depois da derrota por 2 a 1 para o Internacional, no Beira-Rio. Em 33 jogos, somou 13 vitórias, 8 empates e 12 derrotas. O Corinthians tem 32 pontos, está em 16º e fica a um ponto da zona de rebaixamento.',
-    '## O clássico',
-    'O Palmeiras é o 2º colocado, com 60 pontos, um a menos que o líder Flamengo, e terá a volta do técnico Abel Ferreira depois de três jogos de suspensão. Segundo a Gazeta Esportiva, o Corinthians não terá Garro e Kaio César, suspensos. O árbitro é Anderson Daronco.'
-  ],
-  box: { type: 'facts', title: 'Corinthians sem técnico', rows: [['Interino', 'William Batista (sub-20)'], ['Recusaram', 'Ramón Díaz, Zubeldía, Sylvinho e Mascherano'], ['Diniz no clube', '33 jogos, 47% de aproveitamento'], ['Posição', '16º, com 32 pontos'], ['Clássico', 'Domingo (11), 17h30, Nubank Parque']] },
-  sources: [['Lance!', U.lanceMascherano], ['CNN Brasil', U.cnnBatista], ['Gazeta Esportiva', U.gzDerbi], ['Placar', U.placarCorinthians], ['Lance!', U.lanceDiniz]] },
+  box: { type: 'facts', title: 'Seedorf no Corinthians', rows: [['Contrato', 'Até dezembro de 2027'], ['Rescisão', 'Automática em caso de rebaixamento'], ['Antecessor', 'Fernando Diniz'], ['Posição do time', '16º, com 32 pontos'], ['Próximo jogo', 'Vitória, 19 de outubro']] },
+  sources: [['Gazeta Esportiva', U.gzSeedorf], ['CNN Brasil', U.cnnDerbi], ['Lance!', U.lanceMascherano], ['Gazeta Esportiva', U.gzDerbi2]] },
 
 { id: 'libertadores-semifinais-tres-brasileiros', cat: 'esportes', own: true, t: '2026-10-09T18', d: '9 out 2026', img: 'esportes', read: 2,
   photo: 'fotos/libertadores-semifinais-tres-brasileiros.webp', photoAlt: 'Montagem com jogadores de Fluminense, Palmeiras, Flamengo e Estudiantes comemorando', credit: 'Montagem: reprodução',
@@ -833,22 +847,6 @@ const NEWS = [
     'Rebeca, dona de seis medalhas olímpicas, deve competir no salto e na trave. Ela foi campeã mundial do salto em 2021 e em 2023. O Mundial abre o ciclo rumo aos Jogos de Los Angeles 2028.'
   ] },
 
-{ id: 'f1-verstappen-sprint-pole-singapura', cat: 'esportes', own: false, t: '2026-10-10T16', d: '10 out 2026', img: 'pista', src: 'Lance!', url: U.lanceSprint,
-  title: 'Verstappen vence sprint com nove abandonos e larga na pole em Singapura',
-  sum: 'Na chuva, Hamilton e Leclerc completaram o pódio da sprint. Russell e Bortoleto abandonaram. A corrida é neste domingo (11), às 9h de Brasília.',
-  body: [
-    'A sprint de sábado (10) foi reduzida a 20 voltas por causa da chuva. George Russell, da Mercedes, assumiu a ponta na largada, mas bateu no muro. O líder do campeonato, Kimi Antonelli, terminou em 4º. Gabriel Bortoleto, da Audi, abandonou depois de ser atingido por Alex Albon. Só 13 carros terminaram.',
-    'Na classificação para o GP, Verstappen fez a pole com 1min31s373, a 50ª da carreira. Leclerc larga em 2º, Hamilton em 3º e Antonelli em 4º. Bortoleto sai em 14º, e Russell, punido pela troca de peças do motor, larga do fundo. Segundo a CNN Brasil, Antonelli tem 325 pontos, 89 a mais que Russell.'
-  ] },
-
-{ id: 'sao-paulo-vence-vitoria-calleri', cat: 'esportes', own: false, t: '2026-10-10T23', d: '10 out 2026', img: 'esportes', src: 'Band', url: U.bandSaoPaulo,
-  title: 'Calleri marca duas vezes, e São Paulo vence o Vitória no MorumBIS',
-  sum: 'Com o 2 a 1, pela 30ª rodada, o time chegou a 39 pontos e subiu para o 9º lugar do Brasileirão.',
-  body: [
-    'Calleri abriu o placar de cabeça no primeiro tempo, e Emmanuel Martínez empatou ainda antes do intervalo. No segundo tempo, o argentino fez o gol da vitória no rebote de uma defesa de Lucas Arcanjo.',
-    'O Vitória, com 36 pontos, segue em 12º. No próximo sábado (17), o São Paulo recebe o Vasco.'
-  ] },
-
 { id: 'vasco-empata-remo-sao-januario', cat: 'esportes', own: false, t: '2026-10-10T20', d: '10 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzVascoRemo,
   title: 'Vasco fica no 0 a 0 com o Remo e encerra sequência de quatro vitórias',
   sum: 'O goleiro Marcelo Rangel, do Remo, fez as principais defesas em São Januário. O Vasco tem 35 pontos e está em 14º.',
@@ -857,29 +855,62 @@ const NEWS = [
     'Na terça (13), o Vasco visita o Boca Juniors, na Bombonera, no jogo de ida da semifinal da Copa Sul-Americana.'
   ] },
 
-{ id: 'maringa-acesso-serie-b', cat: 'esportes', own: false, t: '2026-10-10T20', d: '10 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzMaringa,
-  title: 'Maringá vence o Floresta e garante acesso inédito à Série B',
-  sum: 'Na Série C, outros dois jogos do quadrangular foram suspensos por falta de segurança e serão retomados neste domingo (11), às 15h, com portões fechados.',
+{ id: 'palmeiras-goleia-corinthians-derbi', cat: 'esportes', own: true, t: '2026-10-11T20', d: '11 out 2026', img: 'esportes', read: 3,
+  title: 'Palmeiras goleia o Corinthians por 4 a 1 e fica a um ponto do Flamengo',
+  sum: 'Giay marcou duas vezes no dérbi. O Flamengo venceu o Fluminense e tem 64 pontos, contra 63 do Palmeiras. O Corinthians perdeu a oitava seguida e está um ponto acima da zona de rebaixamento.',
   body: [
-    'O Maringá venceu por 2 a 0, com gols de Ronald Camarão e Paulinho, no segundo tempo. O Santa Cruz perdeu para o Botafogo-PB, mas também garantiu o acesso.',
-    'Brusque x Paysandu foi interrompido no fim do primeiro tempo, com vitória parcial do Paysandu por 1 a 0, depois que torcedores danificaram a estrutura da transmissão. Ferroviária x Inter de Limeira, empatado sem gols, também parou. As duas vagas que faltam saem desses jogos.'
+    'O Palmeiras venceu o Corinthians por 4 a 1 no domingo (11), no Nubank Parque, pela 30ª rodada do Brasileirão, e segue na briga direta pelo título. No mesmo horário, o líder Flamengo bateu o Fluminense por 1 a 0 no Maracanã.',
+    '## O jogo',
+    'Barboza abriu o placar de cabeça aos 15 minutos do primeiro tempo, e Giay ampliou aos 45. No começo do segundo tempo, Matheus Bidu fez gol contra, e Giay marcou de novo aos 5 minutos. Gustavo Henrique descontou de cabeça no último lance. O Corinthians foi dirigido pelo interino William Batista, técnico do sub-20. Foram 30.112 pagantes.',
+    '## Crise no Corinthians',
+    'Foi a oitava derrota seguida do Corinthians no campeonato, segundo a CNN Brasil. O time segue com 32 pontos, fora da zona de rebaixamento por causa do empate entre Grêmio e Internacional. Na manhã do clássico, o clube anunciou o holandês Clarence Seedorf como novo técnico.',
+    '## A briga pelo título',
+    'O Flamengo chegou a 64 pontos com gol de Carrascal, aos 20 minutos do segundo tempo. O Palmeiras tem 63. Os dois jogam pela semifinal da Libertadores nesta semana: o Palmeiras visita o Fluminense na quarta (14), e o Flamengo enfrenta o Estudiantes na quinta (15).'
+  ],
+  box: { type: 'table', title: 'Brasileirão depois de domingo (11)', head: ['Clube', 'Pontos'], rows: [['Flamengo', '64'], ['Palmeiras', '63'], ['Fluminense', '51'], ['Bahia', '49'], ['Atlético-MG', '47'], ['Corinthians (16º)', '32'], ['Internacional (17º)', '32'], ['Grêmio (18º)', '31']], note: 'Pontuação segundo Gazeta Esportiva, CNN Brasil e Lance!. Alguns clubes ainda têm jogos da 30ª rodada.' },
+  sources: [['Gazeta Esportiva', U.gzDerbi2], ['CNN Brasil', U.cnnDerbi], ['Lance!', U.lanceFlaFlu], ['Lance!', U.lanceGrenal], ['Gazeta Esportiva', U.gzBahia]] },
+
+{ id: 'flamengo-vence-fluminense-carrascal', cat: 'esportes', own: false, t: '2026-10-11T20', d: '11 out 2026', img: 'esportes', src: 'Lance!', url: U.lanceFlaFlu,
+  title: 'Carrascal decide, e Flamengo vence o Fluminense no Maracanã',
+  sum: 'O 1 a 0, com gol aos 20 minutos do segundo tempo, levou o líder a 64 pontos. O Fluminense segue em 3º, com 51.',
+  body: [
+    'Jorge Carrascal marcou o gol do clássico de domingo (11), pela 30ª rodada do Brasileirão. Segundo o Lance!, o Flamengo controlou a partida.',
+    'Os dois times jogam pela Libertadores nesta semana: o Fluminense recebe o Palmeiras na quarta (14), e o Flamengo visita o Estudiantes na quinta (15).'
+  ] },
+
+{ id: 'atletico-mg-vira-santos-acrescimos', cat: 'esportes', own: false, t: '2026-10-11T18', d: '11 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzGaloSantos,
+  title: 'Atlético-MG vira sobre o Santos nos acréscimos na Arena MRV',
+  sum: 'Gabigol abriu o placar aos 42 do segundo tempo, mas Vitor Hugo e Thiago Borbas viraram para 2 a 1.',
+  body: [
+    'Vitor Hugo empatou aos 46 minutos, e Thiago Borbas fez o gol da vitória aos 52. O Atlético-MG chegou a 47 pontos, e o Santos, que vinha de oito jogos sem perder, ficou com 42.',
+    'Na quarta (14), o Atlético recebe o Montevideo City Torque pela semifinal da Sul-Americana.'
+  ] },
+
+{ id: 'grenal-empate-dupla-no-z4', cat: 'esportes', own: false, t: '2026-10-11T20', d: '11 out 2026', img: 'esportes', src: 'Lance!', url: U.lanceGrenal,
+  title: 'Grêmio e Internacional empatam por 1 a 1, e a dupla segue na zona de rebaixamento',
+  sum: 'O Inter tem 32 pontos e está em 17º; o Grêmio, com 31, é o 18º. Na Fonte Nova, o Bahia venceu o Mirassol e voltou ao 5º lugar.',
+  body: [
+    'Vitinho abriu o placar para o Inter no primeiro tempo, e Wallace empatou aos 27 minutos do segundo, no rebote de uma falta cobrada por Marlon, na Arena do Grêmio.',
+    'O Bahia venceu o Mirassol por 1 a 0, com gol de pênalti de Luciano Juba, e chegou a 49 pontos, segundo a Gazeta Esportiva.'
+  ] },
+
+{ id: 'f1-verstappen-vence-gp-singapura', cat: 'esportes', own: false, t: '2026-10-11T11', d: '11 out 2026', img: 'pista', src: 'Agência Brasil', url: U.abF1,
+  title: 'Verstappen vence o GP de Singapura; Antonelli é 3º e fica perto do título',
+  sum: 'Leclerc foi o 2º. Antonelli abriu 102 pontos sobre Russell e pode ser campeão em Austin. Bortoleto abandonou com problema no câmbio.',
+  body: [
+    'Max Verstappen, da Red Bull, largou na pole e venceu a segunda corrida seguida. Kimi Antonelli, da Mercedes, conquistou o 14º pódio no ano. George Russell, que largou do fundo por punição, terminou em 9º.',
+    'Gabriel Bortoleto, da Audi, abandonou por causa de problemas no câmbio, segundo a Agência Brasil. A próxima etapa é nos Estados Unidos.'
+  ] },
+
+{ id: 'ferroviaria-inter-de-limeira-acesso-serie-b', cat: 'esportes', own: false, t: '2026-10-11T17', d: '11 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzFerroviaria,
+  title: 'Ferroviária e Inter de Limeira sobem para a Série B em rodada de dois dias',
+  sum: 'Os jogos foram interrompidos no sábado e retomados no domingo (11), com portões fechados. Maringá e Santa Cruz já tinham garantido o acesso.',
+  body: [
+    'A Ferroviária venceu a Inter de Limeira por 2 a 0, com gols de Lucas Rodrigues e Thiago Montelo no segundo tempo. Brusque e Paysandu empataram por 1 a 1 e continuam na Série C.',
+    'A final da Série C será entre Ferroviária e Maringá, em 18 e 25 de outubro.'
   ] },
 
 /* ===================== CULTURA ===================== */
-{ id: 'nobel-literatura-anne-carson', cat: 'cultura', own: true, t: '2026-10-08T09', d: '8 out 2026', img: 'arte', read: 3,
-  title: 'Nobel de Literatura vai para a poeta canadense Anne Carson',
-  sum: 'A Academia Sueca premiou uma obra que dialoga com a tradição clássica grega. Carson, de 76 anos, tem sete livros publicados no Brasil.',
-  body: [
-    'A Academia Sueca anunciou na quinta-feira (8), em Estocolmo, que a canadense Anne Carson, de 76 anos, é a vencedora do Nobel de Literatura de 2026. Poeta, ensaísta, tradutora e professora de letras clássicas, ela foi premiada por uma obra ousada que, segundo a Academia, cria novas formas para a literatura contemporânea num diálogo bem-humorado com a tradição clássica.',
-    'Carson soube do prêmio na Islândia, país de que também tem cidadania. A secretária permanente da Academia, Ingrid Carlberg, contou que a escritora foi pega de surpresa. À TV islandesa RUV, Carson reagiu dizendo achar que estavam todos loucos.',
-    '## Quem é',
-    'Nascida em Toronto, Carson tem mais de 20 livros. A obra mistura poesia, ensaio e tradução e muitas vezes parte da origem das palavras. Entre os títulos citados pela Al Jazeera estão "The Beauty of the Husband", poema narrativo sobre um casamento que fracassa, e "The Trojan Women", releitura em quadrinhos de uma tragédia de Eurípides.',
-    'Segundo o jornal português Observador, ela é a segunda pessoa do Canadá a ganhar o prêmio, depois de Alice Munro, em 2013. Carson sucede o húngaro László Krasznahorkai, premiado em 2025.',
-    '## No Brasil',
-    'Segundo o Diário do Nordeste, sete livros da autora saíram no país, entre eles "Autobiografia do Vermelho", que reconta uma epopeia do ponto de vista do monstro Gerião, e "Eros, o doce-amargo". O prêmio é de 12 milhões de coroas suecas, e a entrega será em 10 de dezembro.'
-  ],
-  box: { type: 'facts', title: 'Anne Carson', rows: [['Nacionalidade', 'Canadense'], ['Idade', '76 anos'], ['Obra', 'Mais de 20 livros de poesia, ensaio e tradução'], ['No Brasil', '7 livros publicados'], ['Prêmio', '12 milhões de coroas suecas']] },
-  sources: [['Al Jazeera', U.ajCarson], ['Observador', U.obsCarson], ['Diário do Nordeste', U.dnCarson]] },
 
 { id: 'mostra-sao-paulo-50-edicao', cat: 'cultura', own: true, t: '2026-10-06T04', d: '6 out 2026', img: 'cultura', read: 3,
   photo: 'fotos/mostra-sao-paulo-50-edicao.webp', photoAlt: 'Arte oficial da 50ª Mostra Internacional de Cinema em São Paulo, com selo dourado e desenho de um casal se beijando', credit: 'Divulgação: Mostra Internacional de Cinema em São Paulo',
@@ -920,12 +951,19 @@ const NEWS = [
     'Segundo a Agência Brasil, um documentário sobre Marília deve estrear em streaming na próxima semana.'
   ] },
 
-{ id: 'tom-ze-90-anos-exposicao', cat: 'cultura', own: false, t: '2026-10-07T12', d: '7 out 2026', img: 'arte', src: 'Agência Brasil', url: U.abTomZe,
-  title: 'Exposição em São Paulo celebra os 90 anos de Tom Zé',
-  sum: 'A mostra na Caixa Cultural, na Praça da Sé, tem entrada gratuita e fica aberta até 13 de dezembro.',
+{ id: 'tom-ze-90-anos-exposicao', cat: 'cultura', own: true, t: '2026-10-11T09', d: '11 out 2026', img: 'arte', read: 2,
+  title: 'Tom Zé chega aos 90 anos com biografia, exposição e disco de inéditas',
+  sum: 'A biografia escrita pelo americano Christopher Dunn é lançada na quarta (14), em São Paulo. A exposição na Caixa Cultural, com entrada gratuita, vai até 13 de dezembro.',
   body: [
-    '"Tom Zé – 90 Anos do Inquieto Jardineiro de Sons" tem curadoria de Neuseli Martins e inclui uma réplica do buzinório, instrumento criado pelo músico. Nascido em Irará, na Bahia, Tom Zé completa 90 anos no domingo (11).'
-  ] },
+    'O cantor e compositor Tom Zé completou 90 anos no domingo (11). Nascido em Irará, na Bahia, em 1936, ele é um dos nomes da Tropicália e se define como um "dodecafonista sertanejo", segundo entrevista à Folhapress.',
+    '## Livro',
+    'A biografia "Tom Zé: Um Vira-Lata na Via Láctea", do pesquisador americano Christopher Dunn, da Universidade Tulane, sai pela editora Alameda. O lançamento é na quarta-feira (14), às 18h30, na Livraria das Perdizes, em São Paulo, segundo a Billboard Brasil.',
+    '## Exposição e música',
+    'A mostra "Tom Zé – 90 Anos do Inquieto Jardineiro de Sons", com curadoria de Neuseli Martins, fica na Caixa Cultural, na Praça da Sé, até 13 de dezembro, com entrada gratuita. Ela inclui uma réplica do buzinório, instrumento criado pelo músico.',
+    'Segundo a Folhapress, estão previstos shows no Rio, em São Paulo e em Florianópolis, o registro de um show antigo na série "Relicário", do Sesc, e um álbum de inéditas, antecipado pela faixa "Futuro Fruto".'
+  ],
+  box: { type: 'facts', title: 'Tom Zé, 90 anos', rows: [['Nascimento', 'Irará (BA), 1936'], ['Biografia', 'Lançamento em 14 de outubro, em SP'], ['Exposição', 'Caixa Cultural SP, até 13 de dezembro'], ['Entrada', 'Gratuita']] },
+  sources: [['Billboard Brasil', U.bbTomZe], ['Folhapress / Notícias ao Minuto', U.fpTomZe], ['Agência Brasil', U.abTomZe]] },
 
 { id: 'exposicao-margem-de-dentro-sesc-ipiranga', cat: 'cultura', own: false, t: '2026-10-08T12', d: '8 out 2026', img: 'arte', src: 'Agência Brasil', url: U.abMargem,
   title: 'Exposição gratuita no Sesc Ipiranga reúne 26 artistas e propõe outro olhar sobre a história do Brasil',
@@ -935,31 +973,46 @@ const NEWS = [
     'Um mural de Soberana Ziza trata da migração de famílias do interior para São Paulo e homenageia Madrinha Eunice, primeira presidente de uma escola de samba paulistana.'
   ] },
 
-{ id: 'festival-do-rio-ultimo-fim-de-semana', cat: 'cultura', own: false, t: '2026-10-10T10', d: '10 out 2026', img: 'cultura', src: 'Agência Brasil', url: U.abFestivalRio,
-  title: 'Festival do Rio termina neste domingo com mais de 350 filmes',
-  sum: 'A 28ª edição ocupa 28 salas no Rio e em Niterói. A organização espera passar do público de 140 mil pessoas do ano passado.',
+{ id: 'simaria-volta-musica-fantastico', cat: 'cultura', own: false, t: '2026-10-11T22', d: '11 out 2026', img: 'palco', src: 'O Sul', url: U.osulSimaria,
+  title: 'Simaria fala no Fantástico sobre saúde mental e a volta à música depois de quatro anos',
+  sum: 'A cantora disse que precisava cuidar de si. Ela voltou aos palcos em setembro, na gravação do primeiro DVD da carreira solo.',
   body: [
-    'O festival começou em 1º de outubro. Segundo a Agência Brasil, um dos destaques foi a primeira visita ao Brasil do diretor iraniano Asghar Farhadi, duas vezes vencedor do Oscar, que apresentou "Contos Paralelos".',
-    'Um estudo apresentado no RioMarket, braço de negócios do evento, estimou que o audiovisual movimentou R$ 81,1 bilhões no país em 2025, o equivalente a 0,64% do PIB.'
+    'Simaria se afastou dos palcos em junho de 2022 e, em agosto daquele ano, anunciou com a irmã, Simone Mendes, o fim da dupla. A gravação do DVD foi em 12 de setembro, em São Paulo, com ingressos esgotados.',
+    'Na entrevista à TV Globo, prevista para domingo (11), ela disse que hoje tem com a irmã uma relação melhor do que na época em que cantavam juntas.'
   ] },
 
-{ id: 'morre-jerry-burgos-produtor-ana-carolina', cat: 'cultura', own: false, t: '2026-10-10T17', d: '10 out 2026', img: 'palco', src: 'CNN Brasil', url: U.cnnJerry,
-  title: 'Morre Jerry Burgos, produtor cultural que trabalhou com Ana Carolina',
-  sum: 'A morte foi confirmada pela empresa Global Music. Artistas como Ana Carolina e Maria Gadú lamentaram nas redes.',
+{ id: 'festival-do-rio-premiados-a-margem-do-rio', cat: 'cultura', own: true, t: '2026-10-11T23', d: '11 out 2026', img: 'cultura', read: 2,
+  title: '"A Margem do Rio" é o grande vencedor do Festival do Rio',
+  sum: 'O longa pernambucano de Enock Carvalho e Matheus Farias levou o Troféu Redentor de melhor ficção, além de fotografia, som e atriz coadjuvante. "Elza", de Eryk Rocha, foi o melhor documentário.',
   body: [
-    'Jerry Burgos morreu na sexta-feira (9). Segundo a CNN Brasil, Ana Carolina o chamou de irmão e contou que ele a acompanhava nos shows da chegada até o palco. Ele foi casado com a atriz Cyria Coentro.',
-    'A causa da morte e a idade não foram divulgadas.'
+    'O 28º Festival do Rio anunciou os vencedores da mostra competitiva Première Brasil no domingo (11), último dia do evento. O destaque foi "A Margem do Rio", dirigido por Enock Carvalho e Matheus Farias, de Recife, que ganhou o Troféu Redentor de melhor longa de ficção.',
+    'O filme também venceu em fotografia, com Luciana Baseggio, e som. O prêmio de atriz coadjuvante foi dividido entre Renna Costa, Artia e Ísis Broken, do elenco do longa.',
+    '## Os outros premiados',
+    'Gabriel Martins ganhou direção de ficção e roteiro por "Vicentina Pede Desculpas". "Elza", de Eryk Rocha, foi escolhido o melhor documentário, e Camila Valença levou a direção de documentário por "Cão Sem Plumas". O melhor curta foi "Santo", de Maria Luísa Alves.',
+    'Victor di Marco foi eleito melhor ator por "London". O prêmio de atriz foi dividido entre Isabel Teixeira, por "Diário do Fogo", e Grace Passô, por "A Professora de Francês".',
+    '## O festival',
+    'O evento ocupou salas do Rio e de Niterói entre 1º e 11 de outubro, com mais de 350 filmes, segundo a Agência Brasil. A organização ainda não divulgou o público final.'
+  ],
+  box: { type: 'facts', title: 'Troféu Redentor 2026', rows: [['Longa de ficção', '"A Margem do Rio"'], ['Documentário', '"Elza", de Eryk Rocha'], ['Curta', '"Santo", de Maria Luísa Alves'], ['Direção de ficção', 'Gabriel Martins'], ['Ator', 'Victor di Marco'], ['Atriz', 'Isabel Teixeira e Grace Passô']] },
+  sources: [['Metrópoles', U.metFestivalRio], ['Rio Times', U.rtFestivalRio], ['Agência Brasil', U.abFestivalRio]] },
+
+{ id: 'other-mommy-lidera-bilheteria-eua', cat: 'cultura', own: false, t: '2026-10-11T20', d: '11 out 2026', img: 'cultura', src: 'MyNewsLA', url: U.mnlaBilheteria,
+  title: 'Terror "Other Mommy", com Jessica Chastain, estreia em 1º nas bilheterias dos EUA',
+  sum: 'O filme de Rob Savage arrecadou US$ 27,5 milhões no fim de semana. "Verity" caiu para o 2º lugar.',
+  body: [
+    '"Verity" fez US$ 11,4 milhões no segundo fim de semana. Completam a lista "Resident Evil" (US$ 8,3 milhões), "Heart of the Beast" (US$ 7,1 milhões) e a estreia "The Social Reckoning" (US$ 5,5 milhões), segundo estimativas divulgadas no domingo (11).'
   ] },
 
-{ id: 'simaria-volta-musica-fantastico', cat: 'cultura', own: false, t: '2026-10-10T18', d: '10 out 2026', img: 'palco', src: 'CNN Brasil', url: U.cnnSimaria,
-  title: 'Simaria fala no Fantástico sobre a volta à música depois de quatro anos',
-  sum: 'A entrevista vai ao ar neste domingo (11). A cantora voltou aos palcos em setembro, na gravação do primeiro DVD da carreira solo.',
+{ id: 'morre-wilma-de-angelis', cat: 'cultura', own: false, t: '2026-10-11T18', d: '11 out 2026', img: 'palco', src: 'ANSA Brasil', url: U.ansaWilma,
+  title: 'Morre a cantora e apresentadora italiana Wilma De Angelis, aos 96 anos',
+  sum: 'Ela participou nove vezes do Festival de Sanremo e foi apresentadora de programas de culinária na TV.',
   body: [
-    'Simaria, de 44 anos, se afastou dos palcos em junho de 2022 por motivo de saúde e, em agosto daquele ano, anunciou com a irmã, Simone Mendes, o fim da dupla. A gravação do DVD foi em 12 de setembro, em São Paulo, com ingressos esgotados.',
-    'Segundo a CNN Brasil, ela diz que hoje tem com a irmã uma relação melhor do que na época em que cantavam juntas.'
+    'Wilma De Angelis morreu no domingo (11), em Milão. A morte foi confirmada pelo sobrinho; a causa não foi divulgada.',
+    'Em 1960, ficou em 3º lugar em Sanremo com "Quando vien la sera", em dueto com Joe Sentieri. Segundo a ANSA, foi eleita "rainha do jazz italiano" em 1956.'
   ] },
 
 /* ===================== ECONOMIA ===================== */
+
 { id: 'bets-saem-do-ar-devolucao-saldos', cat: 'economia', own: true, t: '2026-10-10T12', d: '10 out 2026', img: 'celular', read: 3,
   title: 'Bets: mais de R$ 1 bilhão já foi devolvido a apostadores; AGU vai à Justiça contra 8 empresas',
   sum: 'Faltam R$ 159 milhões. Os bancos têm até 14 de outubro para pagar, direto na conta usada nos depósitos. Depois, a Caixa assume os casos pendentes.',
@@ -1025,21 +1078,6 @@ const NEWS = [
     'O IBS, imposto que vai substituir o ICMS e o ISS, começa a ser testado em 2027, e a transição vai até 2033, segundo a Agência Brasil.'
   ] },
 
-{ id: 'cni-juros-altos-credito-industria', cat: 'economia', own: false, t: '2026-10-09T08', d: '9 out 2026', img: 'mercado', src: 'Agência Brasil', url: U.abCni,
-  title: 'Juros altos são a principal barreira ao crédito para a indústria, diz CNI',
-  sum: 'Para 76% das empresas, os juros são o maior obstáculo nos empréstimos de curto e médio prazo. Das que pediram crédito de longo prazo, 37,2% não conseguiram.',
-  body: [
-    'A pesquisa da Confederação Nacional da Indústria ouviu 1.701 indústrias entre 3 e 12 de agosto. Nos empréstimos de longo prazo, 69% apontam os juros como principal barreira. A exigência de imóveis como garantia vem em segundo lugar, citada por cerca de um terço.',
-    'Segundo a Agência Brasil, a recusa no crédito de longo prazo atinge cerca de 48% das pequenas e médias empresas que pediram, contra 29,9% das grandes.'
-  ] },
-
-{ id: 'isaias-paralisa-petroleo-golfo-mexico', cat: 'economia', own: false, t: '2026-10-10T15', d: '10 out 2026', img: 'plataforma', src: 'CNN Brasil / Reuters', url: U.cnnIsaiasPetroleo,
-  title: 'Tempestade Isaias paralisa 69% da produção de petróleo no Golfo do México',
-  sum: 'Também estão paradas 57% da produção de gás. Trabalhadores deixaram 113 das 371 plataformas com equipes na região.',
-  body: [
-    'Os dados são da agência americana que regula a exploração no mar, segundo a CNN Brasil. A paralisação atinge 68,76% da produção diária de petróleo e 57,44% da de gás.'
-  ] },
-
 { id: 'mercado-flavio-compromissos-fiscais', cat: 'economia', own: false, t: '2026-10-10T09', d: '10 out 2026', img: 'mercado', src: 'InfoMoney / Estadão Conteúdo', url: U.imFiscalFlavio,
   title: 'Otimismo do mercado com Flávio esbarra na falta de detalhes sobre o ajuste fiscal',
   sum: 'Economistas ouvidos pelo Estadão dizem que a campanha ainda não explicou quais gastos vai cortar. Assessores afirmam que Bolsa Família e BPC não serão afetados.',
@@ -1055,14 +1093,32 @@ const NEWS = [
     'Com o feriado, o último fechamento do Ibovespa segue sendo o de sexta (9), quando o índice bateu recorde aos 209.066,90 pontos. O dólar terminou a R$ 4,985.'
   ] },
 
-{ id: 'china-10-milhoes-empregos-urbanos', cat: 'economia', own: false, t: '2026-10-10T13', d: '10 out 2026', img: 'mercado', src: 'CNN Brasil / Reuters', url: U.cnnChina,
-  title: 'China cria 10,52 milhões de empregos urbanos até setembro',
-  sum: 'O número equivale a 87,7% da meta do ano, segundo o Ministério do Trabalho chinês.',
+{ id: 'gasolina-pode-cair-26-centavos-postos', cat: 'economia', own: false, t: '2026-10-09T19', d: '9 out 2026', img: 'plataforma', src: 'CNN Brasil', url: U.cnnGasolinaPostos,
+  title: 'Gasolina pode ficar até R$ 0,26 mais barata nos postos, estima o governo',
+  sum: 'O cálculo depende de as distribuidoras e os postos repassarem o corte de tributos. O preço médio estava em R$ 6,54 por litro, segundo a ANP.',
   body: [
-    'O desemprego urbano médio foi de 5,2% de janeiro a agosto. Segundo a CNN Brasil, o país tem 1,079 bilhão de pessoas inscritas na previdência básica.'
+    'A estimativa é do governo, que prorrogou e ampliou a isenção de tributos federais sobre a gasolina por 30 dias. O ministro do Planejamento, Bruno Moretti, disse que o objetivo é que haja repasse para a bomba.',
+    'Segundo o Ministério da Fazenda, o decreto anterior vencia em 9 de outubro. A redução passou de R$ 0,63 para R$ 0,89 por litro.'
+  ] },
+
+{ id: 'fmi-banco-mundial-reunioes-bangkok', cat: 'economia', own: false, t: '2026-10-12T00', d: '12 out 2026', img: 'mercado', src: 'EFE / ABC Color', url: U.efeFmi,
+  title: 'FMI e Banco Mundial abrem reuniões anuais em Bangkok, com foco em IA e na guerra no Irã',
+  sum: 'O encontro vai até 18 de outubro. O FMI divulga nesta semana as novas projeções de crescimento para cada país.',
+  body: [
+    'As reuniões reúnem delegações de 191 países. O primeiro evento aberto teve a diretora do FMI, Kristalina Georgieva, e o presidente do Banco Mundial, Ajay Banga, em debate sobre inteligência artificial e emprego.',
+    'Segundo a EFE, as projeções do FMI e os relatórios de estabilidade financeira e de monitoramento fiscal saem entre 13 e 14 de outubro.'
+  ] },
+
+{ id: 'propostas-economicas-lula-flavio', cat: 'economia', own: false, t: '2026-10-11T08', d: '11 out 2026', img: 'mercado', src: 'O Povo', url: U.opovoPropostas,
+  title: 'Salário mínimo, gastos e 6x1: o que Lula e Flávio propõem para a economia',
+  sum: 'Lula mantém o arcabouço fiscal e a regra de ganho real do mínimo. Flávio propõe corte de R$ 250 bilhões em despesas e correção do mínimo só pela inflação.',
+  body: [
+    'Segundo O Povo, Lula defende o fim da escala 6x1, com jornada de 40 horas, e o salário mínimo corrigido pelo INPC mais o crescimento do PIB, com ganho real limitado a 2,5%.',
+    'Flávio Bolsonaro propõe cortar R$ 250 bilhões em despesas discricionárias, reduzir dez ministérios e investir R$ 900 bilhões em transportes por meio de concessões e parcerias. Os dois mantêm o Bolsa Família em R$ 691.'
   ] },
 
 /* ===================== TECNOLOGIA ===================== */
+
 { id: 'samsung-lucro-recorde-chips-ia', cat: 'tecnologia', own: true, t: '2026-10-08T08', d: '8 out 2026', img: 'tecnologia', read: 3,
   title: 'Samsung prevê lucro recorde de US$ 80 bilhões no trimestre, puxado por chips para IA',
   sum: 'É a primeira empresa de tecnologia a passar de 100 trilhões de wons de lucro operacional em um trimestre. As divisões de celulares e de TVs devem ter dado prejuízo.',
@@ -1077,21 +1133,6 @@ const NEWS = [
   ],
   box: { type: 'facts', title: 'Samsung no 3º trimestre', rows: [['Lucro operacional', '107,4 trilhões de wons (cerca de US$ 80 bi)'], ['Alta em um ano', '782,5%'], ['Receita', '195 trilhões de wons'], ['Balanço completo', '29 de outubro']] },
   sources: [['Korea Herald', U.khSamsung], ['Exame', U.exSamsung]] },
-
-{ id: 'einstein-ataque-hacker-dados-pacientes', cat: 'tecnologia', own: false, t: '2026-10-08T15', d: '8 out 2026', img: 'tecnologia', src: 'Convergência Digital', url: U.cdEinstein,
-  title: 'Hospital Albert Einstein confirma ataque hacker com acesso a dados de pacientes',
-  sum: 'Podem ter sido expostos nomes, CPFs, datas de nascimento, receitas e resultados de exames. O caso foi comunicado à ANPD e à Polícia Federal.',
-  body: [
-    'O hospital, de São Paulo, afirma que o prontuário eletrônico e as demais plataformas funcionam normalmente e que não encontrou sinais de divulgação ou uso indevido dos dados.',
-    'Segundo a Convergência Digital, o Einstein diz tratar o caso como máxima prioridade.'
-  ] },
-
-{ id: 'pix-1-bilhao-chaves', cat: 'tecnologia', own: false, t: '2026-10-08T11', d: '8 out 2026', img: 'celular', src: 'Convergência Digital', url: U.cdPix,
-  title: 'Pix passa de 1 bilhão de chaves cadastradas',
-  sum: 'Eram 1,008 bilhão de chaves em 30 de setembro, segundo o Banco Central. As chaves aleatórias são mais da metade.',
-  body: [
-    'As chaves aleatórias somam 526,8 milhões, ou 52,3% do total. Depois vêm as de celular (166,3 milhões), as de CPF (153,9 milhões) e as de e-mail (144,6 milhões).'
-  ] },
 
 { id: 'openai-demite-pesquisadores-seguranca', cat: 'tecnologia', own: true, t: '2026-10-09T14', d: '9 out 2026', img: 'tecnologia', read: 3,
   title: 'OpenAI demite três pesquisadores de segurança, que dizem ter sido punidos por priorizar riscos da IA',
@@ -1115,21 +1156,20 @@ const NEWS = [
     'Segundo o Tecnoblog, o Pro Max custa R$ 12.999 no Brasil. Os preços são cerca de 4% maiores que os da geração anterior.'
   ] },
 
-{ id: 'tse-meta-48-horas-perfis-lula', cat: 'tecnologia', own: true, t: '2026-10-10T18', d: '10 out 2026', img: 'celular', read: 3,
-  title: 'TSE dá 48 horas para a Meta explicar restrições a perfis de Lula',
-  sum: 'A campanha do presidente acusa a empresa de reduzir o alcance dos posts dele. A Meta diz que as alegações são falsas e que cumpre as regras eleitorais.',
+{ id: 'tse-meta-48-horas-perfis-lula', cat: 'tecnologia', own: true, t: '2026-10-11T18', d: '11 out 2026', img: 'celular', read: 3,
+  title: 'Meta atribui a falhas técnicas a queda de alcance de Lula; prazo do TSE termina nesta segunda',
+  sum: 'A empresa nega favorecer Flávio Bolsonaro e diz que os problemas não atingiram só o Brasil. O TSE deu 48 horas, a partir de sábado (10), para a Meta responder a seis perguntas.',
   body: [
-    'O ministro Marco Aurélio Bellizze, do Tribunal Superior Eleitoral, deu no sábado (10) prazo de 48 horas para a Meta, dona do Facebook e do Instagram, responder a seis perguntas sobre os perfis de Lula (PT). O pedido foi feito pela coligação do presidente, que disputa o segundo turno com Flávio Bolsonaro (PL) em 25 de outubro.',
+    'A Meta, dona do Facebook e do Instagram, afirmou no domingo (11) que problemas técnicos explicam a queda no alcance de publicações de Lula (PT) apontada pela campanha do presidente. Segundo o Times Brasil e o Estado de Minas, a empresa disse que as falhas não afetaram só o Brasil nem contas específicas, e negou favorecer Flávio Bolsonaro (PL).',
+    'Em nota, a Meta classificou as alegações como falsas e sem respaldo nos fatos, e disse cumprir as normas eleitorais com igualdade entre os candidatos.',
     '## O que o TSE quer saber',
-    'A Meta terá de informar que medidas aplicou aos perfis de Lula desde 16 de agosto, explicar falhas na contagem de visualizações de vídeos de 7 de outubro e a desativação da conta de anúncios do candidato em 23 de setembro. Também deve dizer se identificou uma rede de 255 perfis automatizados com inteligência artificial e se tratou os dois candidatos da mesma forma ao tirá-los das recomendações.',
-    'Segundo a campanha, o impulsionamento de posts de Lula no Instagram ficou bloqueado de sexta (9) até a manhã de sábado. O PT diz que o problema foi resolvido.',
-    '## O que diz o ministro',
-    'Bellizze escreveu que as provas são em grande parte indiretas, mas que os fatos ocorrem num ambiente que só a empresa controla. Ele decretou sigilo dos documentos e deu o mesmo prazo à Agência Lupa e ao Instituto Democracia em Xeque, citados no pedido.',
-    '## O que diz a Meta',
-    'Em nota, a Meta afirmou que as alegações são falsas e não têm respaldo nos fatos, e que cumpre as normas eleitorais com compromisso com a igualdade entre os candidatos.'
+    'No sábado (10), o ministro Marco Aurélio Bellizze deu 48 horas para a Meta explicar as medidas aplicadas aos perfis de Lula desde 16 de agosto, falhas na contagem de visualizações de vídeos de 7 de outubro e a desativação da conta de anúncios do candidato em 23 de setembro. A empresa também deve dizer se identificou uma rede de 255 perfis automatizados com inteligência artificial, que teriam somado 58 milhões de visualizações em um mês.',
+    'Depois da resposta, a coligação de Lula e a Procuradoria-Geral Eleitoral têm 24 horas cada para se manifestar, segundo o Poder360. A Agência Lupa e o Instituto Democracia em Xeque, citados no pedido, também receberam prazo de 48 horas. Até a manhã desta segunda (12), não havia registro público de que a Meta tivesse entregado a resposta.',
+    '## Os números da campanha',
+    'Um levantamento da Secretaria de Comunicação do PT afirma que a página de Flávio teve, em média, 2,96 vezes mais engajamento que a de Lula, com 17,2% menos seguidores. A campanha também acionou a Autoridade Nacional de Proteção de Dados.'
   ],
-  box: { type: 'facts', title: 'O pedido', rows: [['Autor', 'Coligação de Lula'], ['Prazo', '48 horas'], ['Relator', 'Marco Aurélio Bellizze'], ['Perfis automatizados citados', '255'], ['Resposta da Meta', 'Alegações falsas']] },
-  sources: [['Poder360', U.p360Meta], ['InfoMoney / O Globo', U.imMeta], ['Olhar Digital', U.odMeta]] },
+  box: { type: 'facts', title: 'O caso', rows: [['Autor do pedido', 'Coligação de Lula'], ['Prazo da Meta', '48 horas, desde sábado (10)'], ['Relator', 'Marco Aurélio Bellizze'], ['Perfis automatizados citados', '255'], ['Versão da Meta', 'Falhas técnicas, sem favorecimento']] },
+  sources: [['Times Brasil', U.tbMeta], ['Estado de Minas', U.emMeta], ['Poder360', U.p360Meta], ['Olhar Digital', U.odMeta]] },
 
 { id: 'anthropic-ia-pista-falsa-policia', cat: 'tecnologia', own: false, t: '2026-10-10T18', d: '10 out 2026', img: 'tecnologia', src: 'Olhar Digital', url: U.odAnthropic,
   title: 'IA da Anthropic enviou pista falsa sobre homicídio à polícia da Filadélfia',
@@ -1155,11 +1195,27 @@ const NEWS = [
     'O estudo, publicado na revista Nature Geoscience, é liderado por Jorge Hernández-Bernal, de instituições de pesquisa francesas. Os autores dizem que o modelo não reproduz todos os detalhes.'
   ] },
 
-{ id: 'apple-evento-casa-inteligente-13-outubro', cat: 'tecnologia', own: false, t: '2026-10-09T12', d: '9 out 2026', img: 'celular', src: 'Macworld', url: U.mwApple,
-  title: 'Apple marca para terça (13) evento sobre casa inteligente',
-  sum: 'O lançamento será pela internet, às 10h de Brasília, com uma apresentação para a imprensa em Nova York.',
+{ id: 'apple-evento-casa-inteligente-13-outubro', cat: 'tecnologia', own: false, t: '2026-10-11T12', d: '11 out 2026', img: 'celular', src: 'AppleInsider', url: U.aiHomeView,
+  title: 'Apple deve apresentar central de casa inteligente no evento desta terça (13), diz Bloomberg',
+  sum: 'Segundo o jornalista Mark Gurman, o aparelho se chamará HomeView. A Apple não confirmou quais produtos vai mostrar.',
   body: [
-    'A empresa divulgou o evento com o mote "Welcome Home". Segundo a Macworld, a Apple não informou quais produtos serão apresentados.'
+    'O evento, com o mote "Welcome Home", será em Nova York, às 10h de Brasília. Segundo os relatos, o aparelho terá tela, será controlado principalmente por voz, com a Siri, e terá versões de mesa e de parede.',
+    'Segundo o TechCrunch, também podem ser apresentados uma nova Apple TV e um HomePod mini atualizado. As informações não foram confirmadas pela empresa.'
+  ] },
+
+{ id: 'china-restringe-chatbots-companhia', cat: 'tecnologia', own: false, t: '2026-10-10T17', d: '10 out 2026', img: 'tecnologia', src: 'Olhar Digital', url: U.odChatbots,
+  title: 'China restringe chatbots que simulam namoro e amizade',
+  sum: 'Menores de 18 anos não poderão usar parceiros românticos virtuais. A multa para as empresas chega a 200 mil yuans.',
+  body: [
+    'Menores de 14 anos precisarão de autorização dos pais para usar esse tipo de inteligência artificial. Os sistemas devem avisar a cada duas horas há quanto tempo a pessoa está conectada.',
+    'Segundo a Olhar Digital, Alibaba e ByteDance encerraram funções de companhia em seus assistentes.'
+  ] },
+
+{ id: 'musk-spacex-12-quatrilhoes', cat: 'tecnologia', own: false, t: '2026-10-10T13', d: '10 out 2026', img: 'ciencia', src: 'Olhar Digital', url: U.odMusk,
+  title: 'Musk diz que a SpaceX pode um dia valer US$ 12 quatrilhões',
+  sum: 'A empresa vale cerca de US$ 2,2 trilhões. Chegar à cifra exigiria uma valorização de cerca de 5.500 vezes.',
+  body: [
+    'Musk escreveu no X que a chance "não é zero". Segundo a Olhar Digital, a SpaceX teve receita de US$ 7,8 bilhões no segundo trimestre, alta de 92%, e prejuízo de US$ 541 milhões.'
   ] },
 
 ];
