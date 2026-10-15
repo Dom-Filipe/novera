@@ -7,22 +7,22 @@
 const META = {
   /* Endereço público do site, sem barra no final. Usado nos links das redes sociais. */
   siteUrl: 'https://novera-sepia.vercel.app',
-  dataExtenso: 'Quarta-feira, 14 de outubro de 2026',
-  edicao: '14 out 2026',
-  ibovespa: { valor: '206.888', variacao: '1,04%', sobe: false },
-  dolar: { valor: 'R$ 5,02', variacao: '0,74%', sobe: true },
-  fechamento: '13/10'
+  dataExtenso: 'Quinta-feira, 15 de outubro de 2026',
+  edicao: '15 out 2026',
+  ibovespa: { valor: '206.505', variacao: '0,18%', sobe: false },
+  dolar: { valor: 'R$ 5,03', variacao: '0,17%', sobe: true },
+  fechamento: '14/10'
 };
 
 /* Home: destaque principal, dois laterais e três da faixa de baixo (IDs de notícias "own: true") */
 const FEATURED = {
-  lead: 'papa-leao-cirurgia-pulmao',
-  side: ['pacote-prospera-mei-lula-pix-perdao-dividas', 'flavio-visita-bolsonaro-mdb-17-diretorios'],
-  also: ['caso-master-stf-fachin-pf-13-outubro', 'boca-juniors-vasco-semifinal-sul-americana', 'ibovespa-cai-dolar-volta-acima-r-5-focus']
+  lead: 'senado-aprova-fim-escala-6x1',
+  side: ['quaest-flavio-46-lula-44-segundo-turno', 'libertadores-semifinais-tres-brasileiros'],
+  also: ['papa-leao-cirurgia-pulmao', 'ibovespa-cai-dolar-sobe-inflacao-eua-14-outubro', 'decreto-sac-atendimento-humano-20-segundos']
 };
 
 /* Home: "Escolhas da redação" (5 IDs) */
-const PICKS = ['ataque-aeroporto-riade-hutis', 'ataque-balistico-kiev-usina-chp4', 'mp-bloqueio-ligacoes-abusivas-anatel', 'morre-netinho-cantor-milla', 'libertadores-semifinais-tres-brasileiros'];
+const PICKS = ['campanha-flavio-porto-alegre-lula-carta-evangelicos', 'ataque-aeroporto-riade-hutis', 'camara-aprova-teto-mei-perdao-dividas', 'premio-jabuti-finalistas-14-outubro', 'ataque-balistico-kiev-usina-chp4'];
 
 const U = {
   jgbMaster: 'https://jornalgrandebahia.com.br/2026/10/caso-banco-master-edson-fachin-marca-reuniao-com-pf-para-outubro-de-2026-e-cobra-apuracao-sem-excecao-de-mencoes-a-ministros-do-stf/',
@@ -353,64 +353,146 @@ const U = {
   swOpenai: 'https://www.swissinfo.ch/por/funcion%C3%A1rio-saudita-%C3%A9-acusado-de-colocar-escuta-na-sede-da-openai/92211983',
   gnCharacter: 'https://globalnews.ca/news/12100373/character-ai-bankrupt-disney/',
   terraAncine: 'https://terra.com.br/noticias/hackers-invadem-site-da-ancine-e-publicam-ataques-contra-nordestinos,8b798ef47b437526fc66e03cb10d15fehu3fretn.html',
+  /* Atualização de 15 out 2026 */
+  ab6x1: 'https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/senado-aprova-fim-da-escala-6x1-e-reducao-da-jornada-de-trabalho',
+  cnn6x1: 'https://www.cnnbrasil.com.br/politica/senado-aprova-fim-da-escala-6x1/',
+  cnnMourao: 'https://www.cnnbrasil.com.br/politica/hamilton-mourao-e-o-unico-senador-a-votar-contra-a-pec-do-fim-da-6x1/',
+  cnnFlavio6x1: 'https://www.cnnbrasil.com.br/politica/flavio-diz-que-votara-por-fim-da-6x1-e-que-governo-devera-pagar-a-conta/',
+  ot6x1: 'https://www.otempo.com.br/politica/congresso/2026/10/14/fim-da-escala-6x1-e-aprovado-em-segundo-turno-pelo-senado-e-pec-vai-a-promulgacao',
+  cf6x1: 'https://www.congressoemfoco.com.br/noticia/123241/por-75-votos-a-um-senado-aprova-pec-do-fim-da-escala-6x1',
+  p360Lula6x1: 'https://www.poder360.com.br/brasil/lula-comemora-fim-da-escala-6-x-1-sorte-do-povo-brasileiro/',
+  metQuaest: 'https://www.metropoles.com/brasil/quaest-flavio-bolsonaro-tem-46-e-lula-marca-44-no-2o-turno',
+  cnnQuaest: 'https://www.cnnbrasil.com.br/eleicoes/quaest-flavio-tem-46-no-2o-turno-lula-44/',
+  ccQuaest: 'https://www.cartacapital.com.br/politica/quaest-mostra-empate-tecnico-entre-flavio-bolsonaro-e-lula-a-11-dias-do-2o-turno/',
+  opovoDatafolha: 'https://opovo.com.br/noticias/politica/eleicoes/2026/10/14/datafolha-e-quaest-divulgam-novas-pesquisas-sobre-2-turno-entre-lula-e-flavio.html',
+  abAgenda14: 'https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/confira-agenda-dos-presidenciaveis-nesta-quarta-feira-14',
+  gpFlavioPoa: 'https://www.gazetadopovo.com.br/eleicoes/2026/flavio-bolsonaro-promete-guerra-ao-trafico-e-prosperidade-por-40-anos/',
+  cbCartaEvangelicos: 'https://www.correiobraziliense.com.br/politica/2026/10/7520186-em-carta-aos-evangelicos-lula-cita-familia-fim-das-bets-e-escala-6x1.html',
+  metAgenda15: 'https://www.metropoles.com/brasil/eleicoes-2026-confira-as-agendas-de-flavio-e-lula-nesta-quinta-15-10',
+  opovoDebates: 'https://www.opovo.com.br/noticias/politica/eleicoes/2026/10/14/hoje-tem-debate-entre-lula-e-flavio-veja-o-calendario.html',
+  abTseVideo: 'https://agenciabrasil.ebc.com.br/justica/noticia/2026-10/tse-ordena-que-flavio-e-nikolas-removam-video-de-criancas-contra-lula',
+  acMaster: 'https://acritica.net/justica/caso-banco-master-stf-busca-esclarecimentos-antes-de-2027-para-evitar-pressao/',
+  amPapa: 'https://www.americamagazine.org/vatican-dispatch/2026/10/14/pope-leo-lung-cancer-recovery-walking/',
+  apAramco: 'https://www.pbs.org/newshour/world/iran-backed-houthis-strike-saudi-oil-company-aramcos-headquarters-officials-say',
+  cbsHutis14: 'https://www.cbsnews.com/live-updates/iran-war-us-houthi-saudi-arabia-trump/',
+  ajOrmuz15: 'https://www.aljazeera.com/news/liveblog/2026/10/15/iran-war-live-tehran-vows-to-fight-until-us-yields-as-ships-sink-in-hormuz',
+  kiAtaque14: 'https://kyivindependent.com/russian-attacks-kill-at-least-10-injure-91-across-ukraine-over-past-day-as-ballistic-missiles-strike-kyiv-for-second-straight-night/',
+  kiKropyvnytskyi: 'https://kyivindependent.com/intense-russian-assault-on-kropyvnytskyi-kills-3-injures-6/',
+  kiTregua14: 'https://kyivindependent.com/moscow-says-scope-of-trumps-energy-truce-unclear-after-launching-new-attack-on-ukraine-2/',
+  kiTraido: 'https://kyivindependent.com/zelensky-says-he-feels-betrayed-over-trump-russia-deal/',
+  btaBulgaria: 'https://www.bta.bg/en/news/world/1224856-bulgaria-abandons-search-for-crew-of-hs-dignity',
+  i24Colombia: 'https://www.i24news.tv/en/news/israel/diplomacy/artc-colombia-opens-embassy-in-jerusalem-tenth-in-israel-s-capital-free-trade-agreement-reinstated',
+  ajKabila14: 'https://www.aljazeera.com/news/2026/10/14/ex-drc-president-joseph-kabila-joins-hands-with-m23-rebels-why-it-matters',
+  ajMilei: 'https://www.aljazeera.com/news/2026/10/15/argentinas-milei-backs-trump-for-us-midterms-calls-vote-crucial-for-west',
+  ajGaza14: 'https://www.aljazeera.com/news/2026/10/14/israeli-attacks-kill-one-in-gaza-wound-journalists-in-occupied-west-bank',
+  opovoPalFlu: 'https://www.opovo.com.br/esportes/futebol/2026/10/14/palmeiras-bate-fluminense-por-2-a-1-no-maracana-e-larga-em-vantagem-nas-semis-da-libertadores.html',
+  abcPalFlu: 'https://abcagora.com.br/2026/10/14/palmeiras-vence-fluminense-libertadores/',
+  npColetiva: 'https://nossopalestra.com.br/noticias/coletiva/auxiliar-do-palmeiras-valoriza-resultado-diante-do-fluminense-e-destaca-faltam-noventa-minutos',
+  lanceFla15: 'https://www.lance.com.br/flamengo/na-argentina-flamengo-encerra-preparacao-para-pegar-o-estudiantes-veja-provavel-escalacao.html',
+  imiranteFla: 'https://m.imirante.com/esporte/maranhao/2026/10/13/flamengo-cinco-desfalques-duelo-estudiantes',
+  galoCity: 'https://atletico.com.br/atletico-vence-city-torque-na-ida-da-semifinal-da-sula-americana/',
+  lanceGaloCity: 'https://www.lance.com.br/atletico-mineiro/atletico-vence-o-city-torque-com-autoridade-e-da-passo-importante-rumo-a-final-da-sul-americana.html',
+  cnnSeedorf: 'https://www.cnnbrasil.com.br/esportes/futebol/corinthians/seedorf-chega-ao-corinthians-e-exalta-ex-tecnico-brasileiro-dos-melhores/',
+  jpSeedorf: 'https://jovempan.com.br/esportes/futebol/corinthians/seedorf-e-apresentado-como-tecnico-do-corinthians-um-dos-maiores-clubes-do-mundo/',
+  metSeedorf: 'https://www.metropoles.com/esportes/seedorf-promete-reviravolta-no-corinthians-leao-ferido-e-sempre-perigoso',
+  gpxAntonelli: 'https://www.grandprix.com/news/how-antonelli-can-clinch-the-2026-title-in-austin.html',
+  otLibFem: 'https://www.otempo.com.br/sports/cruzeiro/2026/10/14/cruzeiro-corinthians-e-palmeiras-iniciam-caca-pelo-titulo-da-libertadores-feminina-2026-veja-jogos',
+  aloNetinho: 'https://aloalobahia.com/noticias/2026/10/14/velorio-de-netinho-e-realizado-em-cerimonia-reservada-a-familiares-e-amigos-em-salvador/',
+  ninjaMostra: 'https://midianinja.org/50a-mostra-sp-abre-nesta-quarta-14-com-filmes-de-james-gray-e-kleber-mendonca-filho/',
+  rsMostra: 'https://rollingstone.com.br/cinema/50a-mostra-internacional-de-cinema-de-sao-paulo-comeca-nesta-quinta-15/',
+  cnnJabuti: 'https://www.cnnbrasil.com.br/pop/premio-jabuti-2026-divulga-lista-de-finalistas-deste-ano-veja/',
+  qcuJabuti: 'https://quatrocincoum.com.br/noticias/premios-literarios/os-115-finalistas-do-premio-jabuti-2026/',
+  jbrLolla: 'https://jornaldebrasilia.com.br/entretenimento/katia-flavia/lollapalooza-2027-anuncia-line-up-e-abre-venda-de-ingressos-avulsos-veja-quem-toca-em-cada-dia/',
+  bandLolla: 'https://www.band.com.br/entretenimento/musica/lollapalooza-2027-divulga-shows-por-dia-veja-programacao-e-precos',
+  aloLolla: 'https://aloalobahia.com/noticias/2026/10/14/lollapalooza-2027-divulga-lineup-por-dia-ingressos-custam-ate-r-2-320/',
+  bpBilheteria: 'https://bpmoney.com.br/noticias/minha-melhor-amiga-passa-100-milhoes-bilheteria/',
+  exMercado14: 'https://exame.com/invest/mercados/ibovespa-fecha-estavel-com-inflacao-nos-eua-e-corrida-eleitoral-dolar-vai-a-r-502/',
+  bpMercado14: 'https://bpmoney.com.br/mercado/ibovespa-cai-018-inflacao-eua-pesquisas-eleitorais/',
+  p360Mercado14: 'https://www.poder360.com.br/poder-economia/dolar-sobe-a-r-503-e-ibovespa-cai-018-com-inflacao-dos-eua/',
+  imMercado14: 'https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-14102026/',
+  forbesMercado14: 'https://forbes.com.br/forbes-money/2026/10/ibovespa-fecha-em-queda-com-exterior-e-de-olho-em-pesquisas-eleitorais/',
+  abMeiCamara: 'https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/camara-aprova-aumento-no-limite-de-receita-bruta-do-mei',
+  abServicos: 'https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/setor-de-servicos-cai-01-de-julho-para-agosto-mostra-ibge',
+  imServicos: 'https://www.infomoney.com.br/economia/queda-de-servicos-em-agosto-reforca-leituras-de-pib-estagnado-no-3o-trimestre/',
+  opovoPetroleo14: 'https://www.opovo.com.br/noticias/economia/2026/10/14/petroleo-fecha-em-alta-com-ataque-a-saudi-aramco-e-riscos-de-navegacao-no-estreito-de-ormuz.html',
+  abIcei: 'https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/confianca-da-industria-sobe-em-outubro-mas-setor-segue-pessimista',
+  tribBets: 'https://tribunapr.com.br/noticias/economia/bancos-devolvem-hoje-ultimo-saldo-de-apostadores-em-plataformas-de-bets',
+  tbSac: 'https://tecnoblog.net/noticias/sac-tera-de-atender-80-das-chamadas-em-ate-20-segundos/',
+  gartnerIa: 'https://www.gartner.com/en/newsroom/press-releases/2026-10-14-gartner-says-over-us-dollars-three-and-a-half-trillion-of-artificial-intelligence-infrastructure-spending-could-be-exposed-to-impairment-by-the-end-of-2030',
+  tbFmiIa: 'https://tecnoblog.net/noticias/bolha-da-ia-pode-derrubar-a-economia-global-alerta-fmi/',
+  asmlQ3: 'https://www.sec.gov/Archives/edgar/data/0000937966/000162828026065813/pressreleasefinancialresul.htm',
+  tbPresidios: 'https://tecnoblog.net/noticias/governo-autoriza-bloqueio-de-celulares-em-presidios-sem-ordem-judicial/',
+  jcNetflix: 'https://www.jornaldocomercio.com/esportes/2026/10/1266678-netflix-entra-na-copa-de-2030-e-compra-direitos-dos-104-jogos-na-espanha-e-em-andorra.html',
+  ctIphone13: 'https://canaltech.com.br/smartphone/iphone-13-lidera-ranking-de-celulares-mais-consertados-no-brasil-em-2026/',
+  odOpenaiPreso: 'https://olhardigital.com.br/2026/10/13/pro/openai-encontra-gravador-escondido-em-escritorio-e-funcionario-e-preso/',
 };
 
 const NEWS = [
 /* ===================== NACIONAL ===================== */
-{ id: 'caso-master-stf-fachin-pf-13-outubro', cat: 'nacional', own: true, t: '2026-10-13T21', d: '13 out 2026', img: 'congresso', read: 4,
-  title: 'Caso Master: Fachin manda a PF enviar ao STF todas as menções a ministros, "sem exceção"',
-  sum: 'O presidente do Supremo se reuniu por cerca de uma hora e meia com o diretor-geral da PF. A PGR dará um parecer, e o plenário decide se abre investigação sobre os ministros citados.',
-  body: [
-    'O presidente do Supremo Tribunal Federal, Edson Fachin, recebeu na terça-feira (13) o diretor-geral da Polícia Federal, Andrei Rodrigues, para tratar das citações a ministros da Corte encontradas na investigação sobre o Banco Master. Segundo a Agência Brasil, o encontro durou cerca de uma hora e meia, e Fachin determinou que a PF envie ao tribunal todas as menções, sem exceção.',
-    '## Próximos passos',
-    'O material passa primeiro pela Procuradoria-Geral da República, que dá um parecer. Depois, o plenário do STF decide se abre investigações sobre os ministros mencionados. A reportagem não informa se a PF já entregou os dados durante a reunião.',
-    '## Quem foi citado',
-    'Segundo a Agência Brasil, Alexandre de Moraes aparece em mensagens enviadas por Daniel Vorcaro, dono do Master, a um número atribuído ao ministro. Kassio Nunes Marques, Dias Toffoli, Luiz Fux e André Mendonça foram citados por pessoas ligadas ao banqueiro. Gilmar Mendes pediu, em ofício, que todos os mencionados sejam identificados.',
-    'A coluna de Túlio Amâncio, no SBT News, fala em ao menos seis dos dez ministros citados. Ser citado não significa ser investigado, e os ministros negam irregularidades.',
-    '## Outras pendências',
-    'Também aguardam a PGR medidas urgentes pedidas pela PF no caso Master e no caso dos descontos do INSS, além de pedidos de soltura de Fabiano Zettel, cunhado de Vorcaro, e de Felipe e Henrique Vorcaro, primo e pai do banqueiro. Na reunião, Fachin também pediu rapidez à PF no inquérito das fake news, que ele pretende arquivar.'
-  ],
-  box: { type: 'facts', title: 'Linha do tempo no STF', rows: [['15 set', 'Plenário não julga o mérito; Dino pede vista'], ['28 set', 'Gilmar defende suspender o julgamento'], ['2 out', 'Fachin cobra apuração "sem exceção"'], ['13 out', 'Fachin recebe a PF e pede todas as menções'], ['Próximo passo', 'Parecer da PGR e decisão do plenário']] },
-  sources: [['Brasil de Fato / Agência Brasil', U.bdfMaster], ['Diário Carioca', U.dcMaster], ['SBT News', U.sbtMaster], ['CNN Brasil', U.cnnMaster]] },
 
-{ id: 'pacote-prospera-mei-lula-pix-perdao-dividas', cat: 'nacional', own: true, t: '2026-10-13T20', d: '13 out 2026', img: 'mercado', read: 4,
-  title: 'Lula anuncia Pix de até R$ 5 mil e perdão de dívidas para MEIs; Flávio critica medida a 12 dias da eleição',
-  sum: 'O pacote Prospera MEI prevê perdoar cerca de R$ 12,6 bilhões em dívidas de 3,6 milhões de microempreendedores. As principais medidas dependem do Congresso e só valeriam em 2027.',
+{ id: 'senado-aprova-fim-escala-6x1', cat: 'nacional', own: true, t: '2026-10-14T22', d: '14 out 2026', img: 'congresso', read: 4,
+  title: 'Senado aprova por 75 a 1 o fim da escala 6x1, e PEC vai à promulgação',
+  sum: 'A jornada máxima cai de 44 para 40 horas semanais, sem corte de salário, com dois dias de folga remunerada. Como o texto não mudou, ele não volta à Câmara.',
   body: [
-    'O presidente Lula (PT) anunciou na terça-feira (13), no Palácio do Planalto, o Prospera MEI, um pacote para microempreendedores individuais. O lançamento ocorreu a 12 dias do segundo turno, em que ele disputa a Presidência com Flávio Bolsonaro (PL).',
-    '## Pix MEI',
-    'A principal novidade é um repasse de até R$ 5 mil por MEI, sem obrigação de devolver. Lula disse que o dinheiro não é empréstimo. Segundo o InfoMoney, o governo não detalhou critérios, custo nem número de beneficiários. O pagamento só começaria em 2027, segundo o Estadão, e a meta é chegar a cerca de 1 milhão de MEIs em até quatro anos, segundo a Exame.',
-    '## Perdão de dívidas',
-    'Um projeto de lei complementar enviado ao Congresso perdoa dívidas de MEIs com a União, sobretudo mensalidades não pagas. O governo fala em R$ 12,6 bilhões e 3,6 milhões de microempreendedores. Pelos dados detalhados da Fazenda, o estoque na Dívida Ativa é de R$ 12,86 bilhões, e a perda de receita estimada é de R$ 3,04 bilhões entre 2027 e 2029, segundo a Agência Brasil. Para ter o perdão, o MEI terá de pagar as mensalidades em dia por seis meses.',
-    '## Outras medidas',
-    'O pacote inclui o Desenrola MEI, em que o governo compra dívidas bancárias dos microempreendedores com desconto de 90% ou mais, e um decreto que dispensa a nota fiscal nas vendas a pessoas físicas. O governo também voltou a defender o projeto que eleva o teto de faturamento do MEI de R$ 81 mil para R$ 110 mil em 2027 e R$ 140 mil em 2028, parado na Câmara desde junho.',
-    '## A reação de Flávio',
-    'Em evento com associações empresariais em São Paulo, Flávio Bolsonaro criticou o anúncio. Segundo a Exame, ele perguntou se Lula acha que "o povo é otário" ao lançar o Pix MEI a 12 dias da eleição e disse que o presidente passou quatro anos prejudicando os empreendedores. O candidato prometeu cortar impostos e burocracia com um decreto no primeiro dia de governo.'
+    'O Senado aprovou na noite de quarta-feira (14), em dois turnos, a proposta de emenda à Constituição que acaba com a escala 6x1. Foram 75 votos a favor e 1 contra em cada turno, segundo a Agência Brasil, a CNN Brasil e o Poder360. Eram necessários pelo menos 49 votos. Um calendário especial, aprovado por unanimidade, permitiu votar os dois turnos no mesmo dia.',
+    'O único voto contrário foi do senador Hamilton Mourão (Republicanos-RS). O candidato Flávio Bolsonaro (PL-RJ), que é senador, votou a favor, de forma remota, segundo O Tempo.',
+    '## O que muda',
+    'A jornada máxima passa de 44 para 40 horas por semana, sem redução de salário. O trabalhador terá dois dias de descanso remunerado por semana, de preferência aos domingos.',
+    'A mudança será gradual. Sessenta dias depois da promulgação, o limite cai para 42 horas e começam as duas folgas semanais. Doze meses depois disso, o limite passa a 40 horas. A oposição propunha uma transição de dez anos, o que não foi aceito. Medidas para os setores mais afetados ficam para um projeto de lei posterior, segundo O Tempo.',
+    '## Próximo passo',
+    'Como os senadores não alteraram o texto aprovado pela Câmara em maio, a PEC segue direto para promulgação em sessão do Congresso. A data ainda não foi marcada.',
+    '## Reações',
+    'O presidente Lula (PT), que acompanhou a votação no Palácio da Alvorada, chamou a aprovação de conquista histórica nas redes sociais, segundo o Poder360. Na terça (13), Flávio Bolsonaro tinha dito que votaria a favor porque a maioria dos trabalhadores quer o fim da 6x1, mas afirmou que a conta ficará com o governo e alertou para o risco de mais informalidade, segundo a CNN Brasil.',
+    'O presidente do Senado, Davi Alcolumbre (União-AP), falou em dia histórico e disse ter cumprido a promessa de votar o tema depois do primeiro turno das eleições. O presidente da Câmara, Hugo Motta (Republicanos-PB), disse que a aprovação coroa um esforço longo.'
   ],
-  box: { type: 'table', title: 'O pacote Prospera MEI', head: ['Medida', 'O que prevê', 'Situação'], rows: [['Pix MEI', 'Até R$ 5 mil, sem devolução', 'Proposta; pagamento em 2027'], ['Perdão de dívidas', 'Cerca de R$ 12,6 bilhões', 'Depende do Congresso'], ['Desenrola MEI', 'Compra de dívidas bancárias com 90% ou mais de desconto', 'Anunciado'], ['Teto de faturamento', 'R$ 110 mil em 2027 e R$ 140 mil em 2028', 'Parado na Câmara'], ['Nota fiscal', 'Dispensa nas vendas a pessoas físicas', 'Decreto assinado']], note: 'Fontes: Metrópoles, InfoMoney, Agência Brasil, Estadão e Exame.' },
-  sources: [['Metrópoles', U.metMei], ['InfoMoney', U.imMei], ['Agência Brasil', U.abMeiImpacto], ['Terra / Estadão Conteúdo', U.terraMei], ['Exame', U.exMei], ['Exame', U.exFlavioMei]] },
+  box: { type: 'facts', title: 'A PEC da 6x1', rows: [['Placar no Senado', '75 a 1, nos dois turnos'], ['Jornada', 'De 44 para 40 horas semanais'], ['Folgas', 'Dois dias por semana, sem corte de salário'], ['Transição', '42 horas em 60 dias; 40 horas 12 meses depois'], ['Próximo passo', 'Promulgação, ainda sem data']] },
+  sources: [['Agência Brasil', U.ab6x1], ['CNN Brasil', U.cnn6x1], ['CNN Brasil', U.cnnMourao], ['CNN Brasil', U.cnnFlavio6x1], ['O Tempo', U.ot6x1], ['Congresso em Foco', U.cf6x1], ['Poder360', U.p360Lula6x1]] },
 
-{ id: 'flavio-visita-bolsonaro-mdb-17-diretorios', cat: 'nacional', own: true, t: '2026-10-13T20', d: '13 out 2026', img: 'eleicao', read: 3,
-  title: 'Flávio visita o pai após 90 dias e recebe apoio de 17 diretórios do MDB; outros 10 ficam com Lula',
-  sum: 'O MDB se dividiu no segundo turno. A ala que apoia Flávio se concentra no Sul, Sudeste e Centro-Oeste; a que apoia Lula, no Norte e no Nordeste.',
+{ id: 'quaest-flavio-46-lula-44-segundo-turno', cat: 'nacional', own: true, t: '2026-10-14T18', d: '14 out 2026', img: 'eleicao', read: 3,
+  title: 'Quaest: Flávio tem 46% e Lula, 44%, no segundo turno; resultado é de empate técnico',
+  sum: 'A diferença está dentro da margem de erro, de 2 pontos. Brancos e nulos somam 9%. O Datafolha divulga nova pesquisa nesta quinta (15).',
   body: [
-    'O candidato Flávio Bolsonaro (PL) visitou na manhã de terça-feira (13) o pai, o ex-presidente Jair Bolsonaro, que cumpre prisão domiciliar em Brasília. Foi o primeiro encontro depois de 90 dias de proibição, revogada na véspera pelo ministro Alexandre de Moraes, do STF, com parecer favorável da PGR.',
-    'Na saída, Flávio disse que estava com a energia renovada. Segundo a IstoÉ, ele contou que o pai comemorou o resultado do primeiro turno e deu orientações para a campanha, sem revelar quais. A decisão de Moraes proíbe encontros com finalidade político-eleitoral e manifestações de Jair Bolsonaro sobre a eleição, segundo o Metrópoles.',
-    '## MDB dividido',
-    'À tarde, em São Paulo, o presidente nacional do MDB, Baleia Rossi, anunciou que 17 diretórios estaduais do partido apoiam Flávio. O encontro foi no escritório político do governador Tarcísio de Freitas, com o prefeito Ricardo Nunes e representantes de mais de 80 municípios paulistas, segundo O Tempo e o SBT News.',
-    'Outros 10 diretórios do MDB assinaram uma nota de apoio a Lula (PT) e ao vice Geraldo Alckmin: Amazonas, Alagoas, Bahia, Ceará, Maranhão, Pará, Pernambuco, Piauí, Paraíba e Rondônia. A nota cita programas como Bolsa Família, Pé-de-Meia e Farmácia Popular e afirma que interromper o ciclo atual deixaria obras pela metade, segundo O Tempo.',
-    '## Outros apoios',
-    'Republicanos e a federação entre União Brasil e PP já tinham declarado apoio a Flávio depois do primeiro turno, segundo o SBT News. À noite, o candidato tinha um jantar na sede da Fiesp, na Avenida Paulista.'
+    'A pesquisa Quaest divulgada na quarta-feira (14) mostra Flávio Bolsonaro (PL) com 46% das intenções de voto e Lula (PT) com 44% no segundo turno da eleição presidencial. Brancos e nulos somam 9%, e indecisos, 1%. Como a margem de erro é de 2 pontos para mais ou para menos, os dois estão em empate técnico.',
+    '## Comparação',
+    'Foi a primeira pesquisa Quaest depois do primeiro turno. No levantamento de 3 de outubro, Flávio tinha 44%, e Lula, 42%. No primeiro turno, em 4 de outubro, Flávio teve 47,03% dos votos válidos, e Lula, 45,16%.',
+    'Segundo a CartaCapital e o Metrópoles, a rejeição é de 54% para Flávio e de 53% para Lula.',
+    '## Como foi feita',
+    'A Quaest entrevistou 2.154 eleitores com 16 anos ou mais, em casa, de 10 a 13 de outubro. A pesquisa foi contratada pela Globo e está registrada no TSE com o número BR-08729/2026. O nível de confiança é de 95%.',
+    '## Datafolha',
+    'O Datafolha divulga nesta quinta (15) uma nova pesquisa, com 2.520 entrevistas feitas de 13 a 15 de outubro, margem de erro de 2 pontos e registro BR-00466/2026, segundo O Povo. O segundo turno é em 25 de outubro.'
   ],
-  box: { type: 'facts', title: 'O dia de Flávio', rows: [['Visita ao pai', 'Terça (13), após 90 dias'], ['MDB com Flávio', '17 diretórios estaduais'], ['MDB com Lula', '10 diretórios estaduais'], ['Segundo turno', '25 de outubro']] },
-  sources: [['IstoÉ', U.istoeVisita], ['Metrópoles', U.metVisita], ['O Tempo', U.otMdb17], ['SBT News', U.sbtMdb], ['O Tempo', U.otMdb10], ['PB Nordeste / Agência Brasil', U.pbnVisita]] },
+  box: { type: 'bars', title: 'Quaest: 2º turno', unit: '% das intenções de voto', max: 55, rows: [['Flávio Bolsonaro (PL)', 46], ['Lula (PT)', 44], ['Brancos e nulos', 9], ['Indecisos', 1]], note: 'Margem de erro de 2 pontos. Registro BR-08729/2026.' },
+  sources: [['Metrópoles', U.metQuaest], ['CNN Brasil', U.cnnQuaest], ['CartaCapital', U.ccQuaest], ['O Povo', U.opovoDatafolha]] },
 
-{ id: 'pec-6x1-votacao-primeiro-turno-14-outubro', cat: 'nacional', own: false, t: '2026-10-13T19', d: '13 out 2026', img: 'congresso', src: 'Agência Senado', url: U.senPec13,
-  title: 'PEC do fim da escala 6x1 pode ser votada nesta quarta (14) no Senado',
-  sum: 'A votação vem logo depois da quinta e última sessão de discussão. Com um calendário especial, os dois turnos podem ser concluídos no mesmo dia. São necessários 49 votos em cada um.',
+{ id: 'campanha-flavio-porto-alegre-lula-carta-evangelicos', cat: 'nacional', own: true, t: '2026-10-14T20', d: '14 out 2026', img: 'eleicao', read: 3,
+  title: 'Flávio faz ato em Porto Alegre e Lula divulga carta a evangélicos; nesta quinta, presidente vai ao Jornal Nacional',
+  sum: 'Flávio prometeu "guerra ao tráfico" e confirmou presença no debate da Band, no domingo (18). Na carta, Lula fala em família, combate às bets e fim da 6x1.',
   body: [
-    'A quarta sessão de discussão foi na terça (13). O relator, Omar Aziz (PSD-AM), rejeitou as 36 emendas apresentadas, e a líder do governo, Teresa Leitão (PT-PE), vai pedir a quebra do prazo entre os turnos.',
-    'A PEC reduz a jornada máxima de 44 para 40 horas semanais, com até 8 horas por dia e duas folgas remuneradas por semana, sem corte de salário. A transição prevê 42 horas dois meses depois da publicação e 40 horas um ano e dois meses depois disso.'
+    'A 11 dias do segundo turno, os dois candidatos à Presidência tiveram agendas diferentes na quarta-feira (14). Flávio Bolsonaro (PL) fez campanha de rua em Porto Alegre, e Lula (PT) ficou em Brasília, onde acompanhou a votação do fim da escala 6x1 no Senado.',
+    '## Flávio no Rio Grande do Sul',
+    'Flávio visitou moradores da Vila Brasília, no bairro Sarandi, e fez um ato no Largo Glênio Peres, ao lado do Mercado Público, segundo a Agência Brasil. No discurso, prometeu uma "guerra ao tráfico" a partir de janeiro de 2027 e defendeu reduzir a maioridade penal para 16 anos, e para 14 anos em crimes graves. Também prometeu retomar obras contra cheias e o crédito a produtores atingidos pela enchente de 2024 e disse que vai governar para todos, segundo a Gazeta do Povo.',
+    '## Carta de Lula',
+    'Lula divulgou uma carta às famílias evangélicas. No texto, diz que não é evangélico, mas respeita a fé, e afirma que o compromisso de cuidar das famílias é algo em comum. Ele defende o combate às bets e liga o fim da escala 6x1 a mais tempo para a família e para a igreja, segundo o Correio Braziliense. A carta circula por canais de apoiadores evangélicos do presidente.',
+    '## Agenda de quinta (15)',
+    'Lula dá entrevista ao vivo ao Jornal Nacional, às 21h15. Flávio tem gravações e reuniões em Brasília e, à noite, evento em Capelinha (MG), segundo o Metrópoles. A entrevista de Flávio ao Jornal Nacional está marcada para sexta (16). O debate da Band será no domingo (18), às 20h, e o da Globo, na sexta (23), segundo O Povo.'
+  ],
+  box: { type: 'facts', title: 'Próximos encontros', rows: [['15 out', 'Lula no Jornal Nacional'], ['16 out', 'Flávio no Jornal Nacional'], ['18 out', 'Debate da Band, 20h'], ['23 out', 'Debate da Globo'], ['25 out', 'Segundo turno']] },
+  sources: [['Agência Brasil', U.abAgenda14], ['Gazeta do Povo', U.gpFlavioPoa], ['Correio Braziliense', U.cbCartaEvangelicos], ['Metrópoles', U.metAgenda15], ['O Povo', U.opovoDebates]] },
+
+{ id: 'tse-flavio-nikolas-video-criancas', cat: 'nacional', own: false, t: '2026-10-14T12', d: '14 out 2026', img: 'celular', src: 'Agência Brasil', url: U.abTseVideo,
+  title: 'TSE manda Flávio e Nikolas Ferreira tirarem do ar vídeo em que crianças criticam Lula',
+  sum: 'O ministro Marco Aurélio Bellizze deu 24 horas para a remoção. A decisão ainda precisa ser confirmada pelo plenário do tribunal.',
+  body: [
+    'No vídeo, publicado no Dia das Crianças, crianças leem um texto que atribui a Lula a inflação e a insegurança. Ele saiu primeiro nas redes do deputado Nikolas Ferreira (PL-MG) e foi repassado em um canal de apoiadores de Flávio Bolsonaro (PL). O pedido foi da coligação de Lula.',
+    'Para o ministro, o conteúdo passou do razoável ao explorar a inocência das crianças, embora a presença delas em propaganda não seja proibida por si só. Até a publicação da reportagem, Flávio e Nikolas não tinham se manifestado.'
+  ] },
+
+{ id: 'caso-master-stf-fachin-pf-13-outubro', cat: 'nacional', own: false, t: '2026-10-14T15', d: '14 out 2026', img: 'congresso', src: 'A Crítica / Estadão', url: U.acMaster,
+  title: 'Caso Master: relatório da PF sobre menções a ministros do STF deve chegar depois do segundo turno',
+  sum: 'Na terça (13), Fachin pediu à PF todas as menções a ministros, "sem exceção". Segundo o Estadão, parte da Corte quer resolver o caso ainda em 2026.',
+  body: [
+    'A PF deve enviar o material a partir de 26 de outubro. O presidente do STF, Edson Fachin, pediu um relatório sem juízo de valor. Depois, a PGR dá um parecer, e o plenário decide se abre investigação. Ser citado não significa ter cometido crime, e os ministros negam irregularidades.',
+    'Segundo o Estadão, ministros querem concluir o assunto antes da posse do novo Senado, em 2027. O recesso do tribunal começa em 20 de dezembro.'
   ] },
 
 { id: 'tse-reuniao-campanhas-acordo-representacoes', cat: 'nacional', own: false, t: '2026-10-13T19', d: '13 out 2026', img: 'congresso', src: 'CNN Brasil', url: U.cnnTseReuniao,
@@ -437,15 +519,6 @@ const NEWS = [
     'O presidente não detalhou quem teria direito ao benefício nem o calendário de implantação, segundo O Tempo.'
   ] },
 
-{ id: 'quaest-datafolha-pesquisas-semana-debates', cat: 'nacional', own: false, t: '2026-10-13T10', d: '13 out 2026', img: 'eleicao', src: 'Poder360', url: U.p360Pesquisas12,
-  title: 'Pesquisas do 2º turno: Quaest sai nesta quarta (14), e Datafolha, na quinta (15)',
-  sum: 'No PoderData/Aya, Flávio tem 51% dos votos válidos, e Lula, 49%. Na Vox Brasil, Lula tem 50,86%, e Flávio, 49,14%.',
-  body: [
-    'A Quaest ouviu 2.154 pessoas de 10 a 13 de outubro, com margem de erro de 2 pontos. O Datafolha faz 2.520 entrevistas de 13 a 15 de outubro, também com margem de 2 pontos. As duas estão registradas no TSE.',
-    'O PoderData/Aya ouviu 3.000 pessoas de 10 a 12 de outubro, com margem de 1,8 ponto; na rodada anterior, Flávio tinha 53%, e Lula, 47%. Na BTG/Nexus, Flávio tem 52%, e Lula, 48%. Segundo o Poder360, Flávio aparece numericamente à frente em 7 de 8 pesquisas recentes, e Lula lidera na Vox Brasil.',
-    'O debate da Band está marcado para domingo (18), às 20h, e o da Globo, para sexta (23).'
-  ] },
-
 { id: 'tse-julga-garotinho-eleicao-rio', cat: 'nacional', own: false, t: '2026-10-10T15', d: '10 out 2026', img: 'congresso', src: 'TRE-RJ', url: U.treRuas,
   photo: 'fotos/tse-julga-garotinho-eleicao-rio.webp', photoAlt: 'Fachada do prédio do Tribunal Superior Eleitoral, em Brasília, com a placa do tribunal em primeiro plano', credit: 'Foto: reprodução',
   title: 'TRE-RJ refaz a conta, e Douglas Ruas vence a eleição do Rio no primeiro turno',
@@ -463,57 +536,91 @@ const NEWS = [
   ] },
 
 /* ===================== INTERNACIONAL ===================== */
-{ id: 'papa-leao-cirurgia-pulmao', cat: 'internacional', own: true, t: '2026-10-14T05', d: '14 out 2026', img: 'mundo', read: 3,
-  title: 'Papa Leão XIV tem câncer de pulmão e passa por cirurgia bem-sucedida em Roma',
-  sum: 'Os médicos retiraram o lobo inferior do pulmão direito. Segundo o Vaticano, o papa teve uma primeira noite tranquila, e a internação de cerca de uma semana está mantida.',
-  body: [
-    'O Vaticano informou que o papa Leão XIV, de 71 anos, tem um adenocarcinoma, um tipo de câncer de pulmão. A suspeita surgiu nos exames feitos antes da cirurgia e foi confirmada na análise feita durante a operação, na tarde de terça-feira (13), no Hospital Gemelli, em Roma.',
-    'Segundo o Vatican News, a equipe retirou o lobo inferior do pulmão direito por videocirurgia. O papa ficou cerca de três horas no centro cirúrgico, e a operação em si durou cerca de 90 minutos. A Santa Sé disse que a cirurgia foi bem-sucedida, sem complicações e dentro do planejado.',
-    '## Primeira noite',
-    'No boletim desta quarta (14), o Vaticano informou que o papa passou uma noite tranquila e pediu o jantar. A internação prevista de uma semana está mantida, e o tecido retirado passará por novos exames nos próximos dias. Uma nova atualização foi prometida para esta quarta.',
-    '## Diagnóstico precoce',
-    'O nódulo foi encontrado em exames de rotina. No domingo (11), o próprio papa disse que o problema tinha sido detectado em estágio muito inicial e bem localizado. Segundo a PBS, oncologistas consideravam o prognóstico excelente.',
-    'É o primeiro problema de saúde grave divulgado nos 17 meses de pontificado do primeiro papa americano. As audiências estão canceladas até 20 de outubro.'
-  ],
-  box: { type: 'facts', title: 'A cirurgia', rows: [['Diagnóstico', 'Adenocarcinoma de pulmão'], ['Quando', 'Terça (13), no Hospital Gemelli'], ['Procedimento', 'Retirada do lobo inferior do pulmão direito'], ['Internação', 'Cerca de uma semana'], ['Audiências', 'Canceladas até 20 de outubro']] },
-  sources: [['Vatican News', U.vnPapa], ['PBS / AP', U.pbsPapa], ['Axios', U.axPapa], ['Crux', U.cruxPapa]] },
 
-{ id: 'ataque-aeroporto-riade-hutis', cat: 'internacional', own: true, t: '2026-10-14T04', d: '14 out 2026', img: 'mundo', read: 3,
-  title: 'Coalizão saudita bombardeia alvos dos hutis no Iêmen, e grupo atinge prédio da Aramco',
-  sum: 'Os hutis mandaram evacuar a sede da Aramco e o aeroporto de Riade, que chamam de alvo legítimo. Trump diz que o grupo quer elevar o preço do petróleo antes das eleições nos EUA.',
+{ id: 'ormuz-navios-afundados-ataques-recorde', cat: 'internacional', own: false, t: '2026-10-15T03', d: '15 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajOrmuz15,
+  title: 'Dois navios afundam no Estreito de Ormuz, e ataques à navegação batem recorde',
+  sum: 'Um foi atingido por um projétil, e outro, por uma mina, segundo a Al Jazeera. Pelo menos dez embarcações foram atacadas desde domingo (11).',
   body: [
-    'A coalizão liderada pela Arábia Saudita atacou na terça-feira (13) instalações de petróleo controladas pelos hutis no Iêmen. Antes das explosões, mandou evacuar a estação central de al-Sabah, da estatal Yemeni Oil Company, em Sanaa. Segundo o porta-voz da coalizão, Turki al-Maliki, o local e depósitos subterrâneos guardavam mísseis e drones. Também foram atingidos tanques no porto de Ras Isa e uma estação em Hodeidah; a estatal iemenita diz que os tanques estavam vazios.',
-    '## Resposta dos hutis',
-    'Horas depois, os hutis atingiram um prédio administrativo da petroleira Saudi Aramco em Dhahran. Houve um pequeno incêndio, sem feridos, segundo o Ministério da Energia saudita. O porta-voz do grupo, Yahya Saree, mandou evacuar a sede da Aramco, o aeroporto Rei Khalid, em Riade, e uma refinaria na capital.',
-    'Destroços de dois mísseis interceptados sobre Riade feriram quatro pessoas e danificaram 15 casas, segundo a Defesa Civil saudita. Na quarta (14), um míssil de cruzeiro foi destruído sobre Al-Kharj, segundo a Al Jazeera.',
-    '## Aeroporto fechado',
-    'O aeroporto de Riade segue fechado até 17 de outubro. Segundo a Al Jazeera, o ataque de sábado (10) matou ao menos 13 pessoas e feriu mais de 300. Air France-KLM, Lufthansa, Delta, Qatar, Etihad, Gulf Air e Air India suspenderam voos.',
-    '## Reações',
-    'O presidente dos EUA, Donald Trump, escreveu que os hutis querem elevar o preço do petróleo antes das eleições de meio de mandato, provavelmente a mando do Irã, e disse que os EUA podem ampliar os ataques na região depois da votação. O gabinete saudita prometeu consequências. No Iêmen, a ONU contabiliza ao menos 46 civis mortos desde agosto e mais de 200 mil deslocados desde setembro.'
-  ],
-  box: { type: 'facts', title: 'A escalada', rows: [['Ataque à Aramco', 'Prédio em Dhahran, sem feridos'], ['Destroços em Riade', '4 feridos e 15 casas danificadas'], ['Mortos no aeroporto (10/10)', 'Ao menos 13'], ['Aeroporto de Riade', 'Fechado até 17 de outubro'], ['Civis mortos no Iêmen', 'Ao menos 46 desde agosto, segundo a ONU']] },
-  sources: [['Al Jazeera', U.ajAramco], ['Al Jazeera', U.ajTrumpHutis], ['Al Jazeera', U.ajLive14], ['Al Jazeera', U.ajRiade3]] },
+    'A Guarda Revolucionária do Irã disse que um cargueiro afundou ao bater em uma mina naval, o primeiro caso do tipo relatado na guerra. Segundo a Al Jazeera, são 23 ataques a navios desde o início de outubro, e dois marinheiros estão desaparecidos. Mesmo assim, o tráfego pelo estreito está em cerca de 80% do nível de antes da guerra.',
+    'O presidente do Parlamento iraniano, Mohammad Bagher Ghalibaf, disse que o país não quer guerra nem negociação sem fim e que vai lutar até os EUA aceitarem suas exigências.'
+  ] },
 
-{ id: 'ataque-balistico-kiev-usina-chp4', cat: 'internacional', own: true, t: '2026-10-14T06', d: '14 out 2026', img: 'mundo', read: 3,
-  title: 'Rússia ataca Kiev com mísseis balísticos e atinge usina; ao menos 3 pessoas morrem',
-  sum: 'Segundo Zelensky, o alvo principal era a termelétrica CHP-4. O ataque ocorre dias depois de Trump anunciar um "cessar-fogo energético" que a Rússia não confirmou.',
+{ id: 'tregua-energia-kremlin-zelensky-traido', cat: 'internacional', own: false, t: '2026-10-14T17', d: '14 out 2026', img: 'mundo', src: 'Kyiv Independent', url: U.kiTregua14,
+  title: 'Kremlin diz que trégua de energia anunciada por Trump não está clara; Zelensky diz se sentir traído',
+  sum: 'Em entrevista, Zelensky disse que é doloroso ver Trump escolher um lado que não é o da Ucrânia. Kiev também confirmou restrições ao seu acesso à rede Starlink.',
   body: [
-    'Mísseis balísticos russos atingiram Kiev a partir das 22h40 de terça-feira (13), no horário local, e os ataques seguiram pela madrugada desta quarta (14). Segundo o Serviço de Emergência da Ucrânia, ao menos 3 pessoas morreram e 21 ficaram feridas, entre elas uma criança de 8 anos.',
-    'O presidente Volodymyr Zelensky disse que o alvo principal era a usina termelétrica CHP-4, uma das mais importantes da capital, e que ela foi atingida. O prefeito Vitali Klitschko informou que várias instalações de energia foram danificadas.',
-    '## Prédio em chamas',
-    'No distrito de Desnianskyi, um prédio de nove andares pegou fogo do 1º ao 8º andar, e 16 moradores foram resgatados. Uma pessoa morreu no distrito de Holosiivskyi. Na noite anterior, a Rússia já tinha lançado cinco mísseis balísticos contra a cidade.',
-    '## Trégua não confirmada',
-    'O presidente dos EUA, Donald Trump, anunciou no domingo (11) um cessar-fogo nos ataques à infraestrutura de energia. Na segunda (12), disse que as partes concordaram "porque eu disse que concordaram", segundo o Kyiv Independent. O porta-voz do Kremlin, Dmitry Peskov, afirmou que a Rússia não tinha nada a declarar. Zelensky disse aceitar a trégua e pediu que Trump informe quando ela começa.'
-  ],
-  box: { type: 'facts', title: 'O ataque', rows: [['Mortos', 'Ao menos 3'], ['Feridos', '21, incluindo uma criança de 8 anos'], ['Alvo principal', 'Termelétrica CHP-4'], ['Trégua de energia', 'Anunciada por Trump; sem confirmação russa']] },
-  sources: [['Kyiv Post', U.kpKiev], ['UNN', U.unnKiev], ['Kyiv Independent', U.kiTrumpTregua]] },
+    'O porta-voz do Kremlin, Dmitry Peskov, perguntou se o alcance da trégua tinha sido especificado e disse apenas que o trabalho nessa direção continua. Segundo a Axios, citada pelo Kyiv Independent, um funcionário da Casa Branca afirmou que o acordo cobre só refinarias.',
+    'Em entrevista ao jornalista Piers Morgan, Zelensky respondeu que sim, se sente traído, mas que a situação é um pouco mais complicada. A Ucrânia confirmou que o acesso das suas forças à Starlink foi muito restringido, sem aviso, e Zelensky chamou isso de grande erro.'
+  ] },
 
-{ id: 'bulgaria-drone-afunda-navio-mar-negro', cat: 'internacional', own: false, t: '2026-10-13T15', d: '13 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajBulgaria,
-  title: 'Ataque com drones afunda cargueiro na costa da Bulgária; 11 tripulantes estão desaparecidos',
-  sum: 'Outro navio, de dono ucraniano, também foi atingido, e seus 15 tripulantes foram resgatados. O governo búlgaro convocou o embaixador da Rússia.',
+{ id: 'milei-washington-apoio-trump-eleicoes', cat: 'internacional', own: false, t: '2026-10-15T02', d: '15 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajMilei,
+  title: 'Em Washington, Milei pede vitória dos aliados de Trump nas eleições de 3 de novembro',
+  sum: 'O presidente argentino recebeu um prêmio em evento da comunidade hispânica e disse que a votação é crucial para o Ocidente.',
   body: [
-    'O cargueiro HS Dignity afundou perto de Krapets, junto à fronteira com a Romênia, na madrugada de terça (13). Cinco tripulantes foram resgatados, segundo a presidente Iliana Iotova. O primeiro-ministro Rumen Radev disse não haver prova de autoria, mas afirmou que o resultado beneficia a Rússia.',
-    'É o segundo ataque do tipo na região em uma semana. A presidente da Comissão Europeia, Ursula von der Leyen, disse que o Mar Negro virou mais uma frente de escalada.'
+    'Segundo a AFP, citada pela Al Jazeera, Milei afirmou que os conservadores não podem ceder espaço na região. Ele chegou na quarta (14) para encontros com investidores e deve falar na Câmara de Comércio dos EUA nesta quinta (15). Não há registro de reunião com Trump nesta visita.'
+  ] },
+
+{ id: 'gaza-ataque-cisjordania-jornalistas-feridos', cat: 'internacional', own: false, t: '2026-10-14T12', d: '14 out 2026', img: 'protesto', src: 'Al Jazeera', url: U.ajGaza14,
+  title: 'Ataque israelense mata uma pessoa em Gaza; dois jornalistas ficam feridos na Cisjordânia',
+  sum: 'Segundo a Al Jazeera, mais de 1.400 palestinos morreram em Gaza desde o cessar-fogo de outubro de 2025.',
+  body: [
+    'O ataque aéreo atingiu um veículo no bairro de Tuffah, na Cidade de Gaza, e deixou também feridos. Na Cisjordânia, em Ramallah e El-Bireh, uma criança foi baleada, e dois jornalistas, das emissoras Palestine TV e Sky News Arabia, ficaram feridos, segundo a agência palestina Wafa.',
+    'O primeiro-ministro israelense, Benjamin Netanyahu, disse que Israel vai ampliar seu controle sobre a Cisjordânia.'
+  ] },
+
+{ id: 'papa-leao-cirurgia-pulmao', cat: 'internacional', own: true, t: '2026-10-14T18', d: '14 out 2026', img: 'mundo', read: 3,
+  title: 'Papa Leão XIV já caminha e volta a se alimentar normalmente após cirurgia de câncer no pulmão',
+  sum: 'Os exames depois da operação estão dentro do esperado, segundo o Vaticano. A internação de cerca de uma semana está mantida, e a viagem à América do Sul em novembro continua de pé por enquanto.',
+  body: [
+    'O papa Leão XIV, de 71 anos, teve uma noite tranquila e começou a caminhar pelo quarto na quarta-feira (14), um dia depois da cirurgia para retirar um câncer de pulmão, informou a Sala de Imprensa da Santa Sé. Ele fez fisioterapia respiratória e voltou à alimentação normal, com café da manhã e almoço.',
+    'Segundo o diretor da Sala de Imprensa, Matteo Bruni, os exames de sangue e o raio-X do tórax feitos depois da operação estão dentro do esperado, e o papa está de bom ânimo.',
+    '## A cirurgia',
+    'A operação foi na terça-feira (13), no Hospital Gemelli, em Roma. A equipe retirou por videocirurgia o lobo inferior do pulmão direito, e a análise feita durante o procedimento confirmou um adenocarcinoma, um tipo de câncer de pulmão. O papa passou cerca de três horas no centro cirúrgico, e a operação em si durou cerca de 90 minutos, sem complicações. O cirurgião Stefano Margaritora comandou a equipe.',
+    '## Próximos passos',
+    'O resultado completo da análise do tecido deve sair em alguns dias, e dele dependerá o tratamento. A internação prevista de uma semana não mudou, e as audiências estão canceladas até 20 de outubro.',
+    'Segundo a America Magazine, Bruni disse que a viagem ao Uruguai, à Argentina e ao Peru, de 6 a 17 de novembro, continua de pé por enquanto. O nódulo foi encontrado em exames de rotina, em estágio inicial. É o primeiro problema de saúde grave divulgado nos 17 meses de pontificado do primeiro papa americano.'
+  ],
+  box: { type: 'facts', title: 'A recuperação', rows: [['Diagnóstico', 'Adenocarcinoma de pulmão'], ['Cirurgia', 'Terça (13), no Hospital Gemelli'], ['Quarta (14)', 'Caminhou pelo quarto e voltou à dieta normal'], ['Internação', 'Cerca de uma semana'], ['Viagem de novembro', 'Mantida por enquanto']] },
+  sources: [['Vatican News', U.vnPapa], ['America Magazine', U.amPapa], ['PBS / AP', U.pbsPapa], ['Axios', U.axPapa]] },
+
+{ id: 'ataque-aeroporto-riade-hutis', cat: 'internacional', own: true, t: '2026-10-14T20', d: '14 out 2026', img: 'mundo', read: 3,
+  title: 'Hutis atingem sede da Aramco e prometem novos ataques a aeroportos e ao petróleo da Arábia Saudita',
+  sum: 'O ataque danificou os andares da cúpula da petroleira em Dhahran, sem vítimas, segundo a AP. A coalizão saudita bombardeou alvos ligados ao petróleo no Iêmen.',
+  body: [
+    'Os hutis, grupo do Iêmen apoiado pelo Irã, atingiram na noite de terça-feira (13) a sede da petroleira estatal Saudi Aramco, em Dhahran, no leste da Arábia Saudita. Segundo dois funcionários da região ouvidos pela AP, o ataque danificou os três andares mais altos, onde ficam os escritórios do presidente da empresa e da alta direção. Não houve vítimas. O Ministério da Energia saudita falou em um incêndio limitado.',
+    '## Interceptações',
+    'Segundo a AP, a coalizão liderada pela Arábia Saudita interceptou dois drones, quatro mísseis de cruzeiro e um míssil balístico lançados contra Riade, além de mísseis contra Dhahran e Al-Kharj. Destroços feriram uma pessoa na capital. Funcionários da região dizem que o país está com estoques baixos de mísseis de defesa.',
+    '## Resposta saudita',
+    'A coalizão atacou alvos ligados ao petróleo perto do porto de Ras Isa e em Sanaa, no Iêmen. O Ministério da Saúde controlado pelos hutis fala em dois mortos em Ras Isa. O grupo prometeu continuar atacando aeroportos e instalações de petróleo sauditas e pediu que civis e empresas deixem essas áreas.',
+    '## Voos e ajuda',
+    'O aeroporto de Riade foi atingido várias vezes na semana, e os ataques deixaram mais de 300 feridos, segundo a AP. A empresa de dados de aviação Cirium contou mais de 3.000 voos cancelados nos aeroportos sauditas em uma semana. No Iêmen, o Programa Mundial de Alimentos diz que os combates cortam a ajuda a cerca de 800 mil pessoas.',
+    '## Estados Unidos',
+    'O presidente Donald Trump disse que avalia se os EUA devem se juntar aos ataques contra os hutis. Um dirigente do grupo afirmou que Omã, Rússia e China tentam retomar as negociações.'
+  ],
+  box: { type: 'facts', title: 'A escalada', rows: [['Sede da Aramco', 'Andares da cúpula danificados, sem vítimas'], ['Ataque saudita', 'Ras Isa e Sanaa; 2 mortos, segundo os hutis'], ['Voos cancelados', 'Mais de 3.000 em uma semana'], ['Ajuda cortada', 'Cerca de 800 mil pessoas no Iêmen']] },
+  sources: [['AP / PBS', U.apAramco], ['CBS News', U.cbsHutis14], ['Al Jazeera', U.ajAramco], ['Al Jazeera', U.ajLive14]] },
+
+{ id: 'ataque-balistico-kiev-usina-chp4', cat: 'internacional', own: true, t: '2026-10-14T15', d: '14 out 2026', img: 'mundo', read: 3,
+  title: 'Ataque russo com 39 mísseis e 128 drones mata ao menos 10 pessoas na Ucrânia; Kiev tem 4 mortos',
+  sum: 'Segundo Zelensky, 600 mil pessoas ficaram sem luz. Em Kiev, um dos alvos foi a termelétrica CHP-4. A Rússia não confirma a "trégua de energia" anunciada por Trump.',
+  body: [
+    'A Rússia lançou 39 mísseis e 128 drones contra a Ucrânia na noite de terça (13) para quarta-feira (14), segundo o Kyiv Independent. A Força Aérea ucraniana diz ter derrubado 4 mísseis balísticos e 115 drones. Em um dia, ao menos 10 pessoas morreram e 91 ficaram feridas no país.',
+    '## Kiev',
+    'Na capital, atingida por mísseis balísticos pela segunda noite seguida, foram ao menos 4 mortos e 25 feridos. No distrito de Desnianskyi, um prédio residencial de nove andares foi atingido, com três mulheres mortas e 24 feridos, entre eles uma menina de 7 anos. O presidente Volodymyr Zelensky disse que o alvo principal era a usina termelétrica CHP-4, uma das mais importantes da cidade, e que 600 mil pessoas ficaram sem energia no país.',
+    '## Outras regiões',
+    'Houve mortes também em Donetsk, Dnipropetrovsk e Zaporíjia. Na noite seguinte, um ataque a Kropyvnytskyi, no centro do país, matou ao menos 3 pessoas e feriu 6, segundo o governador da região.',
+    '## Trégua em dúvida',
+    'O presidente dos EUA, Donald Trump, anunciou no domingo (11) um cessar-fogo nos ataques à infraestrutura de energia. Na quarta, o porta-voz do Kremlin, Dmitry Peskov, disse que o alcance da trégua não foi especificado. Zelensky afirmou que a Ucrânia cumpre o acordo se a Rússia cumprir e chamou o novo ataque de desrespeito.'
+  ],
+  box: { type: 'facts', title: 'O ataque', rows: [['Armas', '39 mísseis e 128 drones'], ['Mortos no país', 'Ao menos 10 em um dia'], ['Feridos no país', '91'], ['Kiev', '4 mortos e 25 feridos'], ['Sem luz', '600 mil pessoas, segundo Zelensky']] },
+  sources: [['Kyiv Independent', U.kiAtaque14], ['Kyiv Independent', U.kiKropyvnytskyi], ['Kyiv Independent', U.kiTregua14], ['Kyiv Post', U.kpKiev]] },
+
+{ id: 'bulgaria-drone-afunda-navio-mar-negro', cat: 'internacional', own: false, t: '2026-10-14T19', d: '14 out 2026', img: 'mundo', src: 'BTA', url: U.btaBulgaria,
+  title: 'Bulgária encerra as buscas pelos tripulantes do cargueiro afundado por drones no Mar Negro',
+  sum: 'Segundo a agência búlgara BTA, 6 tripulantes do HS Dignity foram resgatados e 10 seguem desaparecidos. Relatos anteriores falavam em 5 resgatados e 11 desaparecidos.',
+  body: [
+    'As buscas foram retomadas na manhã de quarta (14) com um navio da Marinha, suspensas por causa do mau tempo e encerradas às 15h, segundo o Ministério dos Transportes. O navio afundou na terça (13) perto de Krapets, junto à fronteira com a Romênia. Outro cargueiro, o Chelsea 3, também foi atingido, e os 15 tripulantes foram salvos.',
+    'O primeiro-ministro Rumen Radev convocou a embaixadora russa, que disse não ter informações. Radev afirmou que o resultado beneficia a Rússia, chamou o ataque de inaceitável e pediu apoio da União Europeia e da Otan.'
   ] },
 
 { id: 'kabila-m23-coalizao-congo', cat: 'internacional', own: false, t: '2026-10-13T12', d: '13 out 2026', img: 'protesto', src: 'Al Jazeera', url: U.ajKabila,
@@ -524,45 +631,31 @@ const NEWS = [
     'Governo e rebeldes tinham uma nova rodada de negociação prevista para novembro, no Catar.'
   ] },
 
-{ id: 'ilhan-omar-casa-revistada', cat: 'internacional', own: false, t: '2026-10-12T20', d: '12 out 2026', img: 'congresso', src: 'Axios', url: U.axOmar,
-  title: 'Agentes federais fazem busca na casa da deputada americana Ilhan Omar',
-  sum: 'O mandado foi obtido pelo Departamento de Justiça em uma investigação criminal. Omar diz que não será silenciada; Trump a chamou de corrupta.',
+{ id: 'colombia-embaixada-jerusalem', cat: 'internacional', own: false, t: '2026-10-14T14', d: '14 out 2026', img: 'mundo', src: 'i24NEWS', url: U.i24Colombia,
+  title: 'Colômbia inaugura embaixada em Jerusalém e retoma acordo de livre comércio com Israel',
+  sum: 'É a décima embaixada estrangeira na cidade, segundo o chanceler israelense, Gideon Sa\'ar. A representação colombiana funcionava em Tel Aviv.',
   body: [
-    'A busca foi feita por agentes do Departamento de Segurança Interna na casa da deputada democrata em Washington, antes do amanhecer de segunda (12). A Fox News diz que a investigação envolve documentos de imigração, informação que a Axios não confirmou.',
-    'Omar acusou o governo de usar a polícia federal com fins políticos. A ação ocorre a menos de um mês das eleições de 3 de novembro nos EUA.'
-  ] },
-
-{ id: 'paquistao-emergencia-khyber-pakhtunkhwa', cat: 'internacional', own: false, t: '2026-10-13T12', d: '13 out 2026', img: 'protesto', src: 'Al Jazeera', url: U.ajPti,
-  title: 'Paquistão confirma detenção do chefe de governo de Khyber Pakhtunkhwa, e partido de Imran Khan vai à Justiça',
-  sum: 'Sohail Afridi e membros do gabinete provincial estão em "custódia preventiva", segundo o governo federal. O PTI contesta a intervenção decretada no domingo (11).',
-  body: [
-    'O ministro de Estado do Interior, Talal Chaudhry, confirmou as detenções na terça (13). O estado de emergência foi assinado pelo presidente Asif Ali Zardari, e um governador nomeado assumiu a província.',
-    'O PTI diz que a marcha pela libertação de Khan, preso há mais de três anos, continua. Um relatório do governo aponta 122 policiais mortos na província no primeiro semestre de 2026, contra 63 no mesmo período de 2025.'
-  ] },
-
-{ id: 'coreia-do-norte-misseis-mar-do-japao', cat: 'internacional', own: false, t: '2026-10-13T08', d: '13 out 2026', img: 'mundo', src: 'Reuters', url: U.rtCoreia,
-  title: 'Coreia do Norte confirma teste de míssil balístico "tático"',
-  sum: 'Segundo o Japão, foram ao menos dois mísseis, um deles com mais de 910 km de voo. Segundo a Coreia do Sul, foi o quarto lançamento norte-coreano em um mês.',
-  body: [
-    'A agência estatal KCNA disse na terça (13) que o teste de segunda foi um grande sucesso. O Estado-Maior sul-coreano informou que um míssil voou mais de 900 km a partir da região de Pyongyang.',
-    'Na segunda, o presidente dos EUA, Donald Trump, disse que pode se encontrar com Kim Jong Un em uma viagem à Ásia. Ele deve ir à cúpula da Apec, na China, em meados de novembro.'
-  ] },
-
-{ id: 'ira-terceiro-superpetroleiro-ormuz', cat: 'internacional', own: false, t: '2026-10-12T18', d: '12 out 2026', img: 'mundo', src: 'Tribune India / ANI', url: U.tribOrmuz,
-  title: 'Guarda Revolucionária do Irã diz ter atingido o terceiro superpetroleiro em 48 horas em Ormuz',
-  sum: 'Em um dos navios, os 11 tripulantes indianos foram salvos; em outro, dois indianos estão desaparecidos. Teerã diz ter "controle total" do estreito.',
-  body: [
-    'Os navios citados são o Valthera e o Petro Dolphin. O porta-voz da chancelaria iraniana, Esmail Baghaei, afirmou que o Irã controla o Estreito de Ormuz, rota de boa parte do petróleo exportado pelo Golfo.'
-  ] },
-
-{ id: 'colombia-embaixada-jerusalem', cat: 'internacional', own: false, t: '2026-10-13T20', d: '13 out 2026', img: 'mundo', src: 'Pulzo', url: U.pulzoColombia,
-  title: 'Colômbia inaugura nesta quarta (14) sua embaixada em Jerusalém',
-  sum: 'A representação funcionava em Tel Aviv. A mudança foi ordenada pelo presidente Abelardo de la Espriella.',
-  body: [
-    'O chanceler Omar Bula chegou a Jerusalém na terça (13) para a cerimônia. A embaixadora será Tania Gilinski, segundo o site colombiano Pulzo.'
+    'A cerimônia teve a presença de Sa\'ar e do chanceler colombiano, Omar Bula Escobar. O presidente Abelardo de la Espriella, que ordenou a mudança, não foi. Na terça (13), os dois países trocaram notas para restabelecer o tratado de livre comércio, cancelado no governo de Gustavo Petro.',
+    'Bula Escobar disse que as relações nunca deveriam ter sido rompidas e chamou Israel de parceiro estratégico.'
   ] },
 
 /* ===================== ESPORTES ===================== */
+
+{ id: 'f1-antonelli-pode-ser-campeao-austin', cat: 'esportes', own: false, t: '2026-10-14T10', d: '14 out 2026', img: 'pista', src: 'GrandPrix.com', url: U.gpxAntonelli,
+  title: 'Antonelli pode ser campeão da Fórmula 1 já no GP dos EUA, em 25 de outubro',
+  sum: 'O italiano tem 340 pontos, 102 a mais que George Russell. Para levar o título em Austin, precisa vencer e depender de Russell e Hamilton.',
+  body: [
+    'Antonelli será campeão se vencer a corrida e Russell terminar em 9º ou pior, e Hamilton, em 5º ou pior. Hamilton é o 3º, com 229 pontos, seguido por Verstappen, com 221.',
+    'Restam seis etapas: Austin, México, São Paulo (8 de novembro), Las Vegas, Catar e Abu Dhabi, em 6 de dezembro.'
+  ] },
+
+{ id: 'libertadores-feminina-comeca-equador', cat: 'esportes', own: false, t: '2026-10-14T14', d: '14 out 2026', img: 'esportes', src: 'O Tempo', url: U.otLibFem,
+  title: 'Libertadores Feminina começa nesta quinta no Equador, com Corinthians, Palmeiras e Cruzeiro',
+  sum: 'O Corinthians estreia contra o Colo-Colo, às 17h, e o Palmeiras pega o Universitario, às 21h. O Cruzeiro joga na sexta (16), contra a LDU.',
+  body: [
+    'O torneio vai de 15 a 31 de outubro, com quatro grupos. Os dois primeiros de cada grupo avançam, o mata-mata começa em 24 de outubro, e a final é no dia 31.'
+  ] },
+
 { id: 'boca-juniors-vasco-semifinal-sul-americana', cat: 'esportes', own: true, t: '2026-10-13T23', d: '13 out 2026', img: 'esportes', read: 3,
   title: 'Com um a menos, Vasco vence o Boca na Bombonera e joga pelo empate na volta da Sul-Americana',
   sum: 'Adson marcou de cabeça aos 24 minutos do primeiro tempo. A volta da semifinal é na terça (20), no Maracanã.',
@@ -578,37 +671,38 @@ const NEWS = [
   box: { type: 'facts', title: 'Boca 0 x 1 Vasco', rows: [['Gol', 'Adson, aos 24 do 1º tempo'], ['Expulso', 'Andrés Gómez (Vasco)'], ['Tabu', 'Primeira vitória sobre o Boca desde 1951'], ['Volta', '20 de outubro, 21h30, Maracanã'], ['Final', '21 de novembro, Barranquilla']] },
   sources: [['Agência Esporte', U.aeVasco], ['Lance!', U.lanceVasco], ['CartaCapital', U.ccVasco], ['Tribuna de Jundiaí', U.tjSul]] },
 
-{ id: 'libertadores-semifinais-tres-brasileiros', cat: 'esportes', own: true, t: '2026-10-14T05', d: '14 out 2026', img: 'esportes', read: 3,
+{ id: 'libertadores-semifinais-tres-brasileiros', cat: 'esportes', own: true, t: '2026-10-15T00', d: '14 out 2026', img: 'esportes', read: 3,
   photo: 'fotos/libertadores-semifinais-tres-brasileiros.webp', photoAlt: 'Montagem com jogadores de Fluminense, Palmeiras, Flamengo e Estudiantes comemorando', credit: 'Montagem: reprodução',
-  title: 'Fluminense e Palmeiras abrem as semifinais da Libertadores nesta quarta, no Maracanã',
-  sum: 'O jogo é às 21h30, com Abel Ferreira suspenso. Na quinta (15), o Flamengo visita o Estudiantes com cinco desfalques, entre eles De Arrascaeta.',
+  title: 'Palmeiras vence o Fluminense por 2 a 1 no Maracanã; Flamengo visita o Estudiantes nesta quinta',
+  sum: 'Flaco López e Marlon Freitas marcaram para o Palmeiras, e Wesley Natã descontou nos acréscimos. A volta é na quarta (21), em São Paulo.',
   body: [
-    'Três dos quatro semifinalistas da Copa Libertadores são brasileiros, o que garante um time do país na final. Fluminense e Palmeiras jogam nesta quarta-feira (14), às 21h30, no Maracanã. O argentino Facundo Tello apita, com Silvio Trucco no VAR, segundo a Gazeta Esportiva.',
-    '## Palmeiras sem Abel',
-    'O técnico Abel Ferreira cumpre suspensão por ter sido expulso contra a LDU, e o auxiliar João Martins comanda o time. Vitor Roque, com entorse no tornozelo direito, e Jefté estão fora. Ramón Sosa está à disposição.',
-    '## Fluminense forte em casa',
-    'O time do técnico Marcão não perde no Maracanã desde 5 de agosto, com cinco vitórias e um empate no período, incluindo 3 a 2 sobre o Palmeiras pelo Brasileirão. Germán Cano, John Kennedy e Alisson estão entre os desfalques. No histórico do confronto, são 106 jogos, com 56 vitórias do Palmeiras, 35 do Fluminense e 15 empates.',
+    'O Palmeiras venceu o Fluminense por 2 a 1 na noite de quarta-feira (14), no Maracanã, no jogo de ida da semifinal da Copa Libertadores. O placar foi confirmado pelo O Povo e pelo ABC Agora.',
+    '## Os gols',
+    'Flaco López abriu o placar aos 44 minutos do primeiro tempo, com um chute forte que o goleiro Fábio não conseguiu segurar. No segundo tempo, Marlon Freitas ampliou em um contra-ataque, aos 38 minutos, segundo a ficha do O Povo. Já nos acréscimos, Wesley Natã diminuiu para o Fluminense, depois de uma falha do goleiro Carlos Miguel. Não houve expulsões. O argentino Facundo Tello apitou.',
+    '## Sem Abel',
+    'O técnico Abel Ferreira cumpriu suspensão. Na entrevista coletiva, o auxiliar Vitor Castanheira disse que um 2 a 0 seria melhor, mas que o resultado foi bom e que ainda faltam 90 minutos. Ele atribuiu o gol sofrido ao desgaste físico.',
+    '## A volta',
+    'O jogo de volta será na quarta-feira (21), às 21h30, no Nubank Parque. O Palmeiras avança com um empate. O Fluminense, do técnico Marcão, precisa vencer por um gol para levar a decisão aos pênaltis, ou por dois gols para passar direto.',
     '## Flamengo na Argentina',
-    'Na quinta (15), às 21h30, o Flamengo enfrenta o Estudiantes no estádio Jorge Luis Hirschi, em La Plata. O clube relacionou 23 jogadores e terá cinco desfalques: De Arrascaeta, operado de fratura no punho, Danilo, operado de fraturas na mandíbula, Ayrton Lucas, Evertton Araújo e Jorginho, segundo a Placar.',
-    'As voltas serão em 21 de outubro, no Nubank Parque, e em 22 de outubro, no Maracanã. A final será em jogo único em 28 de novembro, no Estádio Centenário, em Montevidéu.'
+    'Nesta quinta (15), às 21h30, o Flamengo enfrenta o Estudiantes no estádio Jorge Luis Hirschi, em La Plata. O time de Leonardo Jardim não terá De Arrascaeta e Danilo, que se recuperam de cirurgias, Ayrton Lucas e Evertton Araújo, ainda sem liberação, e Jorginho, suspenso. Léo Ortiz volta ao time, segundo o Lance!. A volta será em 22 de outubro, no Maracanã. A final é em jogo único, em 28 de novembro, no Estádio Centenário, em Montevidéu.'
   ],
-  box: { type: 'table', title: 'Semifinais', head: ['Confronto', 'Ida', 'Volta'], rows: [['Fluminense x Palmeiras', '14 out, Maracanã', '21 out, Nubank Parque'], ['Estudiantes x Flamengo', '15 out, La Plata', '22 out, Maracanã']], note: 'Todos os jogos às 21h30 de Brasília. Final em 28 de novembro, no Centenário. Fontes: Gazeta Esportiva, O Tempo e Agência Brasil.' },
-  sources: [['Gazeta Esportiva', U.gzFluPal], ['CNN Brasil', U.cnnFlu], ['Placar', U.placarFla], ['O Tempo', U.otLiberta], ['Agência Brasil', U.abLiberta], ['Portal do Palestra', U.palestraAbel]] },
+  box: { type: 'table', title: 'Semifinais', head: ['Confronto', 'Ida', 'Volta'], rows: [['Fluminense x Palmeiras', '1 x 2, no Maracanã', '21 out, Nubank Parque'], ['Estudiantes x Flamengo', '15 out, La Plata', '22 out, Maracanã']], note: 'Todos os jogos às 21h30 de Brasília. Final em 28 de novembro, no Centenário. Fontes: O Povo, ABC Agora, Lance! e Agência Brasil.' },
+  sources: [['O Povo', U.opovoPalFlu], ['ABC Agora', U.abcPalFlu], ['Nosso Palestra', U.npColetiva], ['Lance!', U.lanceFla15], ['Imirante', U.imiranteFla], ['Agência Brasil', U.abLiberta]] },
 
-{ id: 'corinthians-demite-fernando-diniz', cat: 'esportes', own: true, t: '2026-10-12T18', d: '12 out 2026', img: 'esportes', read: 3,
-  title: 'Seedorf chega na quarta e estreia no dia 19, com o Corinthians a uma derrota do recorde negativo',
-  sum: 'O holandês será apresentado no CT às 13h de quarta (14). O time perdeu oito jogos seguidos no Brasileirão; o recorde do clube é de nove, em 2000.',
+{ id: 'corinthians-demite-fernando-diniz', cat: 'esportes', own: true, t: '2026-10-14T16', d: '14 out 2026', img: 'esportes', read: 3,
+  title: 'Seedorf é apresentado no Corinthians e diz que "leão ferido é sempre perigoso"',
+  sum: 'O holandês assume um time com oito derrotas seguidas no Brasileirão e a oito rodadas do fim. A estreia é na segunda (19), contra o Vitória.',
   body: [
-    'O Corinthians detalhou a chegada do novo técnico, Clarence Seedorf, anunciado no domingo (11) com contrato até dezembro de 2027. Ele desembarca no Brasil na manhã de quarta-feira (14), dá entrevista coletiva às 13h no CT Dr. Joaquim Grava e já comanda os treinos, segundo o Lance! e a Gazeta Esportiva.',
-    'O auxiliar direto será o espanhol Pablo López Vidal. Léo Porto segue como auxiliar fixo, e Reverson Pimentel assume a preparação física.',
-    '## O contrato',
-    'Segundo a CNN Brasil, o contrato tem rescisão automática se o time for rebaixado para a Série B, com multa de três salários. Antes de Seedorf, Ramón Díaz, Luis Zubeldía, Sylvinho e Javier Mascherano recusaram o convite, segundo o Lance!. Fernando Diniz foi demitido em 7 de outubro.',
-    '## Perto de um recorde',
-    'A derrota por 4 a 1 para o Palmeiras, no domingo, foi a oitava seguida no Brasileirão. Segundo a Band, o recorde negativo é do próprio Corinthians, com nove derrotas em 2000. O time tem 32 pontos e é o 16º, o primeiro fora da zona de rebaixamento.',
-    'A estreia de Seedorf deve ser na segunda-feira (19), às 20h, contra o Vitória, na Neo Química Arena. No clássico, o time foi dirigido pelo interino William Batista, porque não houve tempo de registrar o novo técnico.'
+    'Clarence Seedorf foi apresentado como técnico do Corinthians na quarta-feira (14), em entrevista coletiva no CT Joaquim Grava. O holandês, de 50 anos, tem contrato até o fim de 2027 e substitui Fernando Diniz, demitido em 7 de outubro.',
+    '## O que ele disse',
+    'Seedorf chamou o Corinthians de um dos maiores clubes do mundo e disse que muitos treinadores preferiram não aceitar o convite, mas que o momento pede coragem. Segundo o Metrópoles, ele afirmou que um leão ferido é sempre perigoso e que um momento ruim pode virar rapidamente. Disse acreditar no elenco e elogiou a estrutura do clube, mas não quis detalhar as mudanças que pretende fazer.',
+    'Ele também elogiou Oswaldo de Oliveira, seu técnico no Botafogo, como um dos melhores com quem trabalhou, segundo a CNN Brasil.',
+    '## A situação',
+    'O Corinthians perdeu os últimos oito jogos no Brasileirão. O recorde negativo do clube é de nove derrotas seguidas, em 2000, segundo a Band. O time é o 16º, com 32 pontos, a mesma pontuação do Internacional, o primeiro da zona de rebaixamento, segundo a Jovem Pan.',
+    'Seedorf não treinava um time desde 2019, quando dirigiu a seleção de Camarões. Antes, passou por Milan, Deportivo La Coruña e Shenzhen. A estreia será contra o Vitória, na segunda-feira (19), às 20h, na Neo Química Arena.'
   ],
-  box: { type: 'facts', title: 'Seedorf no Corinthians', rows: [['Apresentação', 'Quarta (14), às 13h'], ['Contrato', 'Até dezembro de 2027'], ['Estreia', 'Vitória, 19 de outubro, 20h'], ['Sequência', '8 derrotas seguidas'], ['Posição', '16º, com 32 pontos']] },
-  sources: [['Lance!', U.lanceSeedorf], ['Gazeta Esportiva', U.gzSeedorfChegada], ['Band', U.bandRecorde], ['CNN Brasil', U.cnnDerbi], ['Lance!', U.lanceMascherano]] },
+  box: { type: 'facts', title: 'Seedorf no Corinthians', rows: [['Apresentação', 'Quarta (14)'], ['Contrato', 'Até o fim de 2027'], ['Estreia', 'Vitória, 19 de outubro, 20h'], ['Sequência', '8 derrotas seguidas'], ['Posição', '16º, com 32 pontos']] },
+  sources: [['CNN Brasil', U.cnnSeedorf], ['Jovem Pan', U.jpSeedorf], ['Metrópoles', U.metSeedorf], ['Band', U.bandRecorde], ['Lance!', U.lanceSeedorf]] },
 
 { id: 'selecao-feminina-empata-argentina-pernambuco', cat: 'esportes', own: false, t: '2026-10-13T23', d: '13 out 2026', img: 'esportes', src: 'Lance!', url: U.lanceFeminina,
   title: 'Seleção feminina abre 2 a 0, mas cede o empate à Argentina em Pernambuco',
@@ -618,12 +712,12 @@ const NEWS = [
     'Foi o último jogo da seleção do técnico Arthur Elias no Brasil em 2026. Em novembro e dezembro, o time faz amistosos no Japão.'
   ] },
 
-{ id: 'atletico-mg-city-torque-sul-americana', cat: 'esportes', own: false, t: '2026-10-13T16', d: '13 out 2026', img: 'esportes', src: 'O Tempo', url: U.otGalo,
-  title: 'Atlético-MG recebe o City Torque nesta quarta pela semifinal da Sul-Americana',
-  sum: 'O jogo é às 19h, na Arena MRV. O goleiro Everson, com fratura no pé, está entre os desfalques.',
+{ id: 'atletico-mg-city-torque-sul-americana', cat: 'esportes', own: false, t: '2026-10-14T21', d: '14 out 2026', img: 'esportes', src: 'Lance!', url: U.lanceGaloCity,
+  title: 'Atlético-MG vence o City Torque por 3 a 0 e fica perto da final da Sul-Americana',
+  sum: 'Reinier, Bernard e Thiago Borbas marcaram na Arena MRV, e o Galo ainda teve dois gols anulados. Na volta, pode perder por até dois gols.',
   body: [
-    'Além de Everson, o técnico Eduardo Domínguez não terá Ruan Tressoldi, Gustavo Scarpa e Cassierra, todos com lesão na coxa. Tomás Pérez e Cuello voltam de suspensão.',
-    'A volta será em 21 de outubro, às 19h, no Estádio Centenário, em Montevidéu.'
+    'Reinier abriu o placar aos 36 minutos e Bernard ampliou aos 41 do primeiro tempo, segundo o site do Atlético. Borbas fechou aos 34 do segundo tempo. Dois gols do time mineiro foram anulados por impedimento no começo do jogo. O público foi de 38.020 torcedores.',
+    'A volta será na quarta (21), às 19h, no Estádio Centenário, em Montevidéu. No sábado (17), o Atlético recebe o Coritiba pelo Brasileirão.'
   ] },
 
 { id: 'rebeca-andrade-mundial-roterda', cat: 'esportes', own: false, t: '2026-10-13T12', d: '13 out 2026', img: 'esportes', src: 'Rede NN', url: U.redennGinastica,
@@ -642,14 +736,6 @@ const NEWS = [
     'No sábado (17), o Athletico recebe o Palmeiras na Arena da Baixada, às 19h30.'
   ] },
 
-{ id: 'bragantino-vence-cruzeiro-4-a-2', cat: 'esportes', own: false, t: '2026-10-12T23', d: '12 out 2026', img: 'esportes', src: 'Lance!', url: U.lanceBragantino,
-  title: 'Bragantino vence o Cruzeiro por 4 a 2 e encerra jejum de seis jogos',
-  sum: 'O time paulista fez 3 a 0 no primeiro tempo. O Cruzeiro, 6º com 48 pontos, perdeu a chance de entrar no G-4.',
-  body: [
-    'Lucas Barbosa, Kaio Jorge, contra, e Eric Ramires marcaram para o Bragantino antes do intervalo. Zé Lucas e Matheus Henrique diminuíram, e Herrera fechou o placar aos 45 do segundo tempo.',
-    'O Bragantino chegou a 40 pontos e está em 9º, segundo o Lance!.'
-  ] },
-
 { id: 'serie-b-vila-nova-lider-33-rodada', cat: 'esportes', own: false, t: '2026-10-12T22', d: '12 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzVilaNova,
   title: 'Vila Nova vence o Náutico e reassume a liderança da Série B',
   sum: 'O time goiano tem 61 pontos, um a mais que Novorizontino e Juventude. Vila Nova e Novorizontino se enfrentam no domingo (18), em Goiânia.',
@@ -658,21 +744,21 @@ const NEWS = [
     'Segundo a Gazeta Esportiva, a Ponte Preta, com 13 pontos, já está rebaixada.'
   ] },
 
-{ id: 'grenal-empate-dupla-no-z4', cat: 'esportes', own: false, t: '2026-10-11T20', d: '11 out 2026', img: 'esportes', src: 'Lance!', url: U.lanceGrenal,
-  title: 'Grêmio e Internacional empatam por 1 a 1, e a dupla segue na zona de rebaixamento',
-  sum: 'O Inter tem 32 pontos e está em 17º; o Grêmio, com 31, é o 18º. Na Fonte Nova, o Bahia venceu o Mirassol e voltou ao 5º lugar.',
+/* ===================== CULTURA ===================== */
+
+{ id: 'bilheteria-minha-melhor-amiga-100-milhoes', cat: 'cultura', own: false, t: '2026-10-13T16', d: '13 out 2026', img: 'cultura', src: 'BP Money', url: U.bpBilheteria,
+  title: '"Minha Melhor Amiga" passa de R$ 100 milhões nas bilheterias; "Verity" lidera no feriado',
+  sum: 'A comédia com Ingrid Guimarães e Mônica Martelli soma 5,62 milhões de espectadores em seis semanas, segundo dados da Rentrak.',
   body: [
-    'Vitinho abriu o placar para o Inter no primeiro tempo, e Wallace empatou aos 27 minutos do segundo, no rebote de uma falta cobrada por Marlon, na Arena do Grêmio.',
-    'O Bahia venceu o Mirassol por 1 a 0, com gol de pênalti de Luciano Juba, e chegou a 49 pontos, segundo a Gazeta Esportiva.'
+    'No feriado prolongado, de quinta a segunda, "Verity" liderou, com R$ 13,2 milhões e 519 mil espectadores. "Minha Melhor Amiga" ficou em 2º, com R$ 5,66 milhões. "Se Eu Fosse Você 3" estreou com 149 mil espectadores, a terceira maior estreia nacional do ano.'
   ] },
 
-/* ===================== CULTURA ===================== */
-{ id: 'morre-netinho-cantor-milla', cat: 'cultura', own: true, t: '2026-10-13T20', d: '13 out 2026', img: 'palco', read: 3,
-  title: 'Morre Netinho, cantor de "Milla" e um dos nomes do axé, aos 60 anos',
-  sum: 'Ele tratava um linfoma desde o início de 2025 e morreu em Salvador. Velório e cremação serão reservados à família e aos amigos próximos, a pedido do cantor.',
+{ id: 'morre-netinho-cantor-milla', cat: 'cultura', own: true, t: '2026-10-14T19', d: '14 out 2026', img: 'palco', read: 3,
+  title: 'Netinho, cantor de "Milla" e um dos nomes do axé, é velado em Salvador',
+  sum: 'O cantor morreu na terça (13), aos 60 anos, depois de tratar um linfoma. O velório, na quarta, foi reservado à família e aos amigos próximos, como ele havia pedido.',
   body: [
-    'O cantor Netinho morreu na terça-feira (13), em Salvador, aos 60 anos. Segundo a CNN Brasil, ele tinha um linfoma não Hodgkin do tipo B, que evoluiu para insuficiência renal e falha de vários órgãos. Estava internado no Hospital Aliança Star.',
-    'O diagnóstico de câncer no sistema linfático saiu em fevereiro de 2025. Em 2026, ele voltou a ser internado depois de uma recidiva e, no mês passado, anunciou que se afastaria das redes sociais. A nota da assessoria diz que ele partiu em paz, como desejava.',
+    'O cantor Netinho foi velado na quarta-feira (14) no Cemitério Jardim da Saudade, no bairro de Brotas, em Salvador, em cerimônia fechada a familiares e amigos próximos, segundo o Alô Alô Bahia. Ele morreu na terça-feira (13), aos 60 anos, no Hospital Aliança Star.',
+    'Segundo a equipe do cantor, um linfoma não Hodgkin do tipo B evoluiu para insuficiência renal e falha de vários órgãos. O câncer foi diagnosticado em 2025. Ele chegou a anunciar a remissão, mas a doença voltou em 2026. A filha, Bruna Trindade Andrade, publicou uma foto antiga no colo do pai com a frase "Te amo para sempre".',
     '## Da Banda Beijo a "Milla"',
     'Nascido Ernesto de Souza Andrade Júnior em 12 de julho de 1966, em Santo Antônio de Jesus (BA), Netinho se mudou para Salvador aos 10 anos. Estreou em 1988 como vocalista da Banda Beijo, no Carnaval da capital baiana, e ficou conhecido no país com "Beijo na Boca".',
     'Em carreira solo, lançou em 1996 "Milla", seu maior sucesso. Em 2013, sofreu três AVCs e passou por cirurgias no cérebro.',
@@ -680,32 +766,30 @@ const NEWS = [
     'Segundo o Ecad, há 495 gravações em nome do cantor. "Milla" foi a música dele mais tocada nos últimos cinco anos, seguida por "Menina" e "Bate Lata".'
   ],
   box: { type: 'facts', title: 'Netinho', rows: [['Nome', 'Ernesto de Souza Andrade Júnior'], ['Nascimento', '12/7/1966, Santo Antônio de Jesus (BA)'], ['Início', 'Banda Beijo, em 1988'], ['Maior sucesso', '"Milla", de 1996'], ['Gravações', '495, segundo o Ecad']] },
-  sources: [['CNN Brasil', U.cnnNetinho], ['CNN Brasil', U.cnnNetinhoEcad], ['O Tempo', U.otNetinho]] },
+  sources: [['Alô Alô Bahia', U.aloNetinho], ['CNN Brasil', U.cnnNetinho], ['CNN Brasil', U.cnnNetinhoEcad], ['O Tempo', U.otNetinho]] },
 
-{ id: 'mostra-sao-paulo-50-edicao', cat: 'cultura', own: true, t: '2026-10-14T05', d: '14 out 2026', img: 'cultura', read: 3,
+{ id: 'mostra-sao-paulo-50-edicao', cat: 'cultura', own: true, t: '2026-10-15T05', d: '15 out 2026', img: 'cultura', read: 3,
   photo: 'fotos/mostra-sao-paulo-50-edicao.webp', photoAlt: 'Arte oficial da 50ª Mostra Internacional de Cinema em São Paulo, com selo dourado e desenho de um casal se beijando', credit: 'Divulgação: Mostra Internacional de Cinema em São Paulo',
-  title: 'Mostra de São Paulo abre a 50ª edição nesta quarta com "Tigre de Papel", de James Gray',
-  sum: 'A sessão de abertura é para convidados. Para o público, são 380 títulos de 93 países, de 15 a 29 de outubro, com sessões gratuitas em 26 CEUs.',
+  title: 'Mostra de São Paulo abre as sessões ao público nesta quinta, com 380 títulos de 93 países',
+  sum: 'A 50ª edição foi aberta na quarta (14) com "Tigre de Papel", de James Gray. Até 29 de outubro, há sessões em 57 espaços, incluindo 26 CEUs com entrada gratuita.',
   body: [
-    'A 50ª Mostra Internacional de Cinema em São Paulo abre nesta quarta-feira (14), às 19h, na Sala São Paulo, em sessão para convidados. O filme de abertura é "Tigre de Papel", de James Gray, que esteve na competição de Cannes. Antes, será exibido o curta "Sul de Teerã", de Kleber Mendonça Filho, sobre o cineasta iraniano Jafar Panahi.',
-    'Gray apresenta o filme pessoalmente. Ele é o homenageado da edição, com retrospectiva e o Prêmio Leon Cakoff, e também assina a arte do cartaz.',
-    '## Para o público',
-    'As sessões abertas vão de 15 a 29 de outubro, com 380 títulos de 93 países em 57 espaços, entre cinemas, centros culturais e CEUs. "Tigre de Papel" volta em sessões públicas nos dias 15, 16 e 27.',
+    'A 50ª Mostra Internacional de Cinema em São Paulo começa nesta quinta-feira (15) as sessões abertas ao público, que vão até 29 de outubro. A noite de abertura, para convidados, foi na quarta (14), na Sala São Paulo, com "Tigre de Papel", de James Gray, que esteve na competição de Cannes. Antes, foi exibido o curta "Sul de Teerã", de Kleber Mendonça Filho, sobre o cineasta iraniano Jafar Panahi.',
+    '## James Gray',
+    'Gray é o homenageado da edição e assina o cartaz. Nesta quinta, ele conversa com o cineasta Walter Salles e recebe o Prêmio Leon Cakoff, segundo a Rolling Stone Brasil. O produtor português Paulo Branco recebeu o mesmo prêmio na abertura. "Tigre de Papel" volta em sessões públicas nos dias 15, 16 e 27.',
     '## Destaques',
-    'A programação tem "Fjord", de Cristian Mungiu, vencedor da Palma de Ouro, e "Mulher Desconhecida", de May el-Toukhy, Leão de Ouro em Veneza. A Mostra Brasil reúne mais de 70 produções e coproduções, como "Feito Pipa", de Allan Deberton, candidato brasileiro a uma vaga no Oscar, e "A Margem do Rio", premiado no Festival do Rio.',
-    'Também recebem o Prêmio Leon Cakoff o produtor português Paulo Branco e o diretor indiano S.S. Rajamouli.',
+    'A programação tem "Fjord", de Cristian Mungiu, vencedor da Palma de Ouro, e "Mulher Desconhecida", de May el-Toukhy, Leão de Ouro em Veneza. Entre os brasileiros estão "Feito Pipa", de Allan Deberton, candidato do país a uma vaga no Oscar, "Elza", de Eryk Rocha, e "A Margem do Rio", premiado no Festival do Rio. O diretor indiano S.S. Rajamouli apresenta "RRR".',
     '## Ingressos',
     'Os ingressos avulsos custam R$ 26 de segunda a quinta e R$ 32 de sexta a domingo, com meia-entrada, e são vendidos quatro dias antes de cada sessão. Há sessões gratuitas no Centro de Formação Cultural Cidade Tiradentes e em 26 CEUs, segundo a Prefeitura de São Paulo.'
   ],
-  box: { type: 'facts', title: 'Serviço', rows: [['Abertura', '14 de outubro, 19h, Sala São Paulo (convidados)'], ['Sessões ao público', '15 a 29 de outubro'], ['Programação', '380 títulos de 93 países'], ['Espaços', '57'], ['Ingressos', 'R$ 26 a R$ 32 (inteira)']] },
-  sources: [['Prefeitura de São Paulo', U.prefMostra], ['CNN Brasil', U.cnnMostra2], ['Omelete', U.omeleteMostra], ['CNN Brasil', U.cnnMostra]] },
+  box: { type: 'facts', title: 'Serviço', rows: [['Sessões ao público', '15 a 29 de outubro'], ['Programação', '380 títulos de 93 países'], ['Espaços', '57'], ['Ingressos', 'R$ 26 a R$ 32 (inteira)'], ['Gratuito', '26 CEUs e Cidade Tiradentes']] },
+  sources: [['Prefeitura de São Paulo', U.prefMostra], ['Rolling Stone Brasil', U.rsMostra], ['Mídia NINJA', U.ninjaMostra], ['CNN Brasil', U.cnnMostra2], ['Omelete', U.omeleteMostra]] },
 
-{ id: 'lollapalooza-2027-lineup-por-dia', cat: 'cultura', own: false, t: '2026-10-13T15', d: '13 out 2026', img: 'palco', src: 'Rolling Stone Brasil', url: U.rsLolla,
-  title: 'Lollapalooza Brasil 2027 divulga as atrações de cada dia nesta quarta, ao meio-dia',
-  sum: 'No mesmo horário começa a venda do ingresso para um dia. O festival será de 19 a 21 de março, no Autódromo de Interlagos.',
+{ id: 'lollapalooza-2027-lineup-por-dia', cat: 'cultura', own: false, t: '2026-10-14T13', d: '14 out 2026', img: 'palco', src: 'Jornal de Brasília', url: U.jbrLolla,
+  title: 'Lollapalooza 2027 divulga atrações por dia: Travis Scott na sexta, The Killers no sábado e Charli XCX no domingo',
+  sum: 'O festival será de 19 a 21 de março, em Interlagos. O ingresso de um dia na pista custa R$ 920 a inteira e R$ 460 a meia.',
   body: [
-    'O evento marca 15 anos do Lollapalooza no Brasil e terá mais de 70 atrações, entre elas Travis Scott, The Killers, Charli XCX e Queens of the Stone Age. As vendas são pela Ticketmaster, on-line e na bilheteria do Shopping Ibirapuera.',
-    'A organização alerta para sites falsos que vendem ingressos.'
+    'Na sexta (19 de março), tocam também David Guetta e Nação Zumbi. No sábado (20), Queens of the Stone Age e Rodrigo Amarante. No domingo (21), The Prodigy, Fontaines D.C. e Criolo, segundo o Jornal de Brasília e a Band.',
+    'A venda do ingresso de um dia começou na quarta (14), pela Ticketmaster e na bilheteria do Shopping Ibirapuera. Os preços da pista são do Alô Alô Bahia.'
   ] },
 
 { id: 'morre-regininha-teletema', cat: 'cultura', own: false, t: '2026-10-13T19', d: '13 out 2026', img: 'palco', src: 'O Tempo', url: U.otRegininha,
@@ -730,26 +814,21 @@ const NEWS = [
     'A operação foi anunciada pela Live Nation com a PM, a Prefeitura, a CET e a associação de moradores AME Morumbi. Só poderão passar moradores cadastrados e quem tiver ingresso para o dia. O objetivo é evitar a aglomeração de fãs sem ingresso do lado de fora do estádio.'
   ] },
 
-{ id: 'premio-jabuti-finalistas-14-outubro', cat: 'cultura', own: false, t: '2026-10-12T10', d: '12 out 2026', img: 'arte', src: 'CBL', url: U.cblJabuti,
-  title: 'Prêmio Jabuti anuncia os finalistas nesta quarta (14)',
-  sum: 'Serão cinco finalistas por categoria. Os vencedores saem em 27 de outubro, na Sala São Paulo.',
+{ id: 'premio-jabuti-finalistas-14-outubro', cat: 'cultura', own: true, t: '2026-10-14T12', d: '14 out 2026', img: 'arte', read: 3,
+  title: 'Jabuti 2026 tem Itamar Vieira Junior, Milton Hatoum e Adélia Prado entre os finalistas',
+  sum: 'São 115 finalistas em 23 categorias. Os vencedores saem em 27 de outubro, na Sala São Paulo, e o Livro do Ano leva R$ 70 mil.',
   body: [
-    'O anúncio da 68ª edição está marcado para as 12h, segundo a Câmara Brasileira do Livro, que organiza o prêmio. A cerimônia de entrega é só para convidados.'
-  ] },
-
-{ id: 'tom-ze-90-anos-exposicao', cat: 'cultura', own: true, t: '2026-10-11T09', d: '11 out 2026', img: 'arte', read: 2,
-  title: 'Tom Zé chega aos 90 anos com biografia, exposição e disco de inéditas',
-  sum: 'A biografia escrita pelo americano Christopher Dunn é lançada na quarta (14), em São Paulo. A exposição na Caixa Cultural, com entrada gratuita, vai até 13 de dezembro.',
-  body: [
-    'O cantor e compositor Tom Zé completou 90 anos no domingo (11). Nascido em Irará, na Bahia, em 1936, ele é um dos nomes da Tropicália e se define como um "dodecafonista sertanejo", segundo entrevista à Folhapress.',
-    '## Livro',
-    'A biografia "Tom Zé: Um Vira-Lata na Via Láctea", do pesquisador americano Christopher Dunn, da Universidade Tulane, sai pela editora Alameda. O lançamento é na quarta-feira (14), às 18h30, na Livraria das Perdizes, em São Paulo, segundo a Billboard Brasil.',
-    '## Exposição e música',
-    'A mostra "Tom Zé – 90 Anos do Inquieto Jardineiro de Sons", com curadoria de Neuseli Martins, fica na Caixa Cultural, na Praça da Sé, até 13 de dezembro, com entrada gratuita. Ela inclui uma réplica do buzinório, instrumento criado pelo músico.',
-    'Segundo a Folhapress, estão previstos shows no Rio, em São Paulo e em Florianópolis, o registro de um show antigo na série "Relicário", do Sesc, e um álbum de inéditas, antecipado pela faixa "Futuro Fruto".'
+    'A Câmara Brasileira do Livro divulgou na quarta-feira (14) os finalistas da 68ª edição do Prêmio Jabuti. São cinco finalistas em cada uma das 23 categorias, divididas em quatro eixos: Literatura, Não Ficção, Produção Editorial e Inovação.',
+    '## Romance e poesia',
+    'Em Romance Literário, concorrem "Coração sem medo", de Itamar Vieira Junior, "Dança de enganos", de Milton Hatoum, "Meridiana", de Eliana Alves Cruz, "Uma delicada coleção de ausências", de Aline Bei, e "Vez em quando, Billie Holiday", de Evandro Affonso Ferreira. Em Poesia, um dos finalistas é "O jardim das oliveiras", de Adélia Prado.',
+    '## Outras categorias',
+    'Em Biografia e Reportagem, estão "Trincheira tropical", de Ruy Castro, e "João Gilberto e a insurreição bossa nova", de Tárik de Souza, entre outros. Em Crônica, há um livro póstumo de Contardo Calligaris, segundo a Quatro Cinco Um.',
+    'A edição estreia a categoria Incentivo à Leitura – Cultura Digital, com vencedor escolhido por voto popular. As categorias de Escritor Estreante passaram para o eixo Literatura e agora podem concorrer a Livro do Ano.',
+    '## Prêmios',
+    'A cerimônia será em 27 de outubro, na Sala São Paulo, com transmissão pelo YouTube. Cada vencedor de categoria recebe a estatueta e até R$ 5 mil. O Livro do Ano ganha R$ 70 mil e uma viagem a uma grande feira internacional do livro, segundo a CNN Brasil.'
   ],
-  box: { type: 'facts', title: 'Tom Zé, 90 anos', rows: [['Nascimento', 'Irará (BA), 1936'], ['Biografia', 'Lançamento em 14 de outubro, em SP'], ['Exposição', 'Caixa Cultural SP, até 13 de dezembro'], ['Entrada', 'Gratuita']] },
-  sources: [['Billboard Brasil', U.bbTomZe], ['Folhapress / Notícias ao Minuto', U.fpTomZe], ['Agência Brasil', U.abTomZe]] },
+  box: { type: 'facts', title: 'Jabuti 2026', rows: [['Edição', '68ª'], ['Finalistas', '115, em 23 categorias'], ['Cerimônia', '27 de outubro, Sala São Paulo'], ['Livro do Ano', 'R$ 70 mil'], ['Categoria nova', 'Incentivo à Leitura – Cultura Digital']] },
+  sources: [['CNN Brasil', U.cnnJabuti], ['Quatro Cinco Um', U.qcuJabuti], ['CBL', U.cblJabuti]] },
 
 { id: 'pitty-novo-album-sete-anos', cat: 'cultura', own: false, t: '2026-10-07T15', d: '7 out 2026', img: 'palco', src: 'Rolling Stone Brasil', url: U.rsPitty,
   title: 'Pitty revela capa e faixas do primeiro álbum de inéditas em sete anos',
@@ -768,19 +847,61 @@ const NEWS = [
   ] },
 
 /* ===================== ECONOMIA ===================== */
-{ id: 'ibovespa-cai-dolar-volta-acima-r-5-focus', cat: 'economia', own: true, t: '2026-10-13T19', d: '13 out 2026', img: 'mercado', read: 3,
-  title: 'Ibovespa cai 1,04% depois do recorde, e dólar volta a fechar acima de R$ 5',
-  sum: 'A bolsa fechou a terça (13) aos 206.888 pontos, e o dólar, a R$ 5,02. No Boletim Focus, o mercado elevou para 5,22% a previsão de inflação deste ano.',
+
+{ id: 'ibovespa-cai-dolar-sobe-inflacao-eua-14-outubro', cat: 'economia', own: true, t: '2026-10-14T19', d: '14 out 2026', img: 'mercado', read: 3,
+  title: 'Ibovespa cai 0,18% e dólar sobe a R$ 5,03 com inflação americana acima do esperado',
+  sum: 'A bolsa fechou a quarta (14) aos 206.505 pontos. A inflação dos EUA chegou a 3,7% em 12 meses, e os investidores também esperavam as pesquisas do segundo turno.',
   body: [
-    'O Ibovespa, principal índice da bolsa brasileira, fechou a terça-feira (13) em queda de 1,04%, aos 206.888 pontos, depois do recorde de sexta-feira (9), quando passou dos 209 mil. Na segunda, feriado, não houve pregão. O dólar comercial subiu 0,74%, a R$ 5,02, e voltou a fechar acima de R$ 5, segundo a Agência Brasil. No ano, a moeda americana acumula queda de 8,50%.',
+    'O Ibovespa, principal índice da bolsa brasileira, fechou a quarta-feira (14) em queda de 0,18%, aos 206.505 pontos, segundo a Exame, o Poder360 e o InfoMoney. Durante o dia, o índice chegou a cair para 203.463 pontos. O dólar comercial subiu 0,17% e fechou a R$ 5,03, na segunda alta seguida. No ano, a moeda americana acumula queda de 8,37%, segundo a Reuters.',
     '## O que pesou',
-    'Segundo o Metrópoles e a Suno, os investidores realizaram lucros depois de a bolsa subir 8,82% na semana anterior. Também pesaram as pesquisas do segundo turno, a alta dos juros futuros e o cancelamento, por problema técnico, de um leilão de swap cambial do Banco Central.',
-    'Entre as maiores quedas estiveram Lojas Renner (-8,03%), Magalu (-7,04%) e Localiza (-5,72%). Do lado das altas, PRIO subiu 3,58%, Embraer, 2,02%, e Petrobras PN, 1,52%.',
-    '## Boletim Focus',
-    'No Focus desta semana, divulgado na terça por causa do feriado, a projeção do mercado para o IPCA de 2026 subiu pela quarta vez seguida, de 5,01% para 5,22%, acima do teto da meta, de 4,5%. A previsão para a Selic no fim do ano caiu de 13,50% para 13,25%. A estimativa de crescimento do PIB ficou em 1,85%, e a do dólar no fim do ano recuou para R$ 5,15, segundo o BP Money.'
+    'A inflação dos EUA de setembro subiu 0,6% no mês e chegou a 3,7% em 12 meses, acima dos 3,6% esperados. O dado aumentou as apostas de que o banco central americano, o Fed, pode subir os juros. A decisão do Fed sai em 28 de outubro. Em Nova York, o índice S&P 500 caiu 1,11%, e a Nasdaq, 1,88%, segundo a Exame.',
+    'No Brasil, os investidores realizaram lucros depois da forte alta da semana passada e aguardavam as pesquisas Quaest, divulgada depois do fechamento, e Datafolha, prevista para esta quinta (15). O volume de serviços de agosto, abaixo do esperado, também pesou.',
+    '## Altas e quedas',
+    'A alta do petróleo segurou o índice, com ganhos de PRIO e Petrobras. Entre as maiores quedas estiveram Magazine Luiza, Usiminas, Tenda e Cyrela, segundo o BP Money.',
+    '## No mês e no ano',
+    'Segundo o InfoMoney, o Ibovespa acumula queda de 1,22% na semana, mas sobe 10,82% em outubro e 28,16% em 2026.'
   ],
-  box: { type: 'table', title: 'Projeções do Focus', head: ['Indicador', 'Agora', 'Antes'], rows: [['IPCA 2026', '5,22%', '5,01%'], ['IPCA 2027', '4,30%', '4,30%'], ['Selic no fim de 2026', '13,25%', '13,50%'], ['PIB 2026', '1,85%', '1,85%'], ['Dólar no fim de 2026', 'R$ 5,15', 'R$ 5,20']], note: 'Boletim Focus de 13 de outubro. Fontes: BP Money e Canal Rural.' },
-  sources: [['Sou Brasília / Agência Brasil', U.sbMercado], ['Metrópoles', U.metMercado], ['Suno', U.sunoMercado], ['O Tempo', U.otDolar], ['BP Money', U.bpFocus], ['Canal Rural', U.crFocus]] },
+  box: { type: 'facts', title: 'Fechamento de 14/10', rows: [['Ibovespa', '206.505 pontos (-0,18%)'], ['Dólar', 'R$ 5,03 (+0,17%)'], ['Ibovespa em 2026', '+28,16%'], ['Dólar em 2026', '-8,37%'], ['Inflação dos EUA', '3,7% em 12 meses']] },
+  sources: [['Exame', U.exMercado14], ['Poder360', U.p360Mercado14], ['InfoMoney', U.imMercado14], ['BP Money', U.bpMercado14], ['Forbes / Reuters', U.forbesMercado14]] },
+
+{ id: 'camara-aprova-teto-mei-perdao-dividas', cat: 'economia', own: true, t: '2026-10-14T20', d: '14 out 2026', img: 'mercado', read: 3,
+  title: 'Câmara aprova por 461 a 4 teto maior para o MEI e perdão de dívidas; texto vai ao Senado',
+  sum: 'O limite de faturamento sobe de R$ 81 mil para R$ 110 mil em 2027 e R$ 140 mil em 2028. O MEI também poderá ter dois empregados.',
+  body: [
+    'A Câmara dos Deputados aprovou na quarta-feira (14), por 461 votos a 4, o projeto de lei complementar do governo que muda as regras do microempreendedor individual. O relator foi o deputado Rubens Pereira Júnior (PT-MA). O texto segue para o Senado, segundo a Agência Brasil.',
+    '## O que muda',
+    'O teto de faturamento anual do MEI passa de R$ 81 mil para R$ 110 mil em 2027 e para R$ 140 mil em 2028. É o primeiro reajuste desde 2018. O MEI poderá contratar até dois empregados, em vez de um, pagando o salário mínimo ou o piso da categoria. O limite das licitações exclusivas para micro e pequenas empresas sobe de R$ 80 mil para R$ 100 mil.',
+    '## Perdão de dívidas',
+    'O projeto perdoa as dívidas de MEIs inscritas na Dívida Ativa da União até 13 de outubro de 2026. Para manter o benefício, o microempreendedor terá de ficar em dia com os tributos por seis meses depois que a lei entrar em vigor e desistir de ações na Justiça. O relator estima mais de 3 milhões de beneficiados.',
+    'Segundo o governo, o custo será de R$ 1,57 bilhão em 2027, R$ 3,15 bilhões em 2028 e R$ 3,38 bilhões em 2029.',
+    '## O pacote',
+    'As medidas fazem parte do Prospera MEI, lançado por Lula na terça (13), que também prevê um Pix de até R$ 5 mil por microempreendedor, ainda sem detalhes. O candidato Flávio Bolsonaro (PL) criticou o anúncio a 12 dias do segundo turno, segundo a Exame. O presidente da Câmara, Hugo Motta, se comprometeu a discutir o reajuste do Simples Nacional até o fim do ano.'
+  ],
+  box: { type: 'facts', title: 'O projeto do MEI', rows: [['Votação na Câmara', '461 a 4'], ['Teto em 2027', 'R$ 110 mil'], ['Teto em 2028', 'R$ 140 mil'], ['Empregados', 'Até 2'], ['Perdão de dívidas', 'Inscritas até 13/10/2026']] },
+  sources: [['Agência Brasil', U.abMeiCamara], ['Metrópoles', U.metMei], ['InfoMoney', U.imMei], ['Exame', U.exFlavioMei]] },
+
+{ id: 'servicos-recuam-agosto-ibge', cat: 'economia', own: false, t: '2026-10-14T09', d: '14 out 2026', img: 'mercado', src: 'Agência Brasil', url: U.abServicos,
+  title: 'Volume de serviços cai 0,1% em agosto, abaixo do esperado pelo mercado',
+  sum: 'Na comparação com agosto de 2025, houve alta de 0,6%. O turismo cresceu 2,5% no mês, segundo o IBGE.',
+  body: [
+    'Os serviços prestados às famílias subiram 2,1%, enquanto outros serviços caíram 1% e transportes, 0,2%. O setor está 19,9% acima do nível de fevereiro de 2020.',
+    'Segundo o InfoMoney, analistas esperavam alta de cerca de 0,4%. Para economistas ouvidos pelo site, o dado reforça a leitura de que o PIB ficou perto da estagnação no terceiro trimestre.'
+  ] },
+
+{ id: 'petroleo-sobe-mina-ormuz-aramco', cat: 'economia', own: false, t: '2026-10-14T17', d: '14 out 2026', img: 'plataforma', src: 'O Povo', url: U.opovoPetroleo14,
+  title: 'Petróleo Brent sobe a US$ 106,06 com navio afundado em Ormuz e ataque à Aramco',
+  sum: 'O WTI, referência nos EUA, subiu 1,01%, a US$ 95,09. O Brent avançou 0,35%.',
+  body: [
+    'A Guarda Revolucionária do Irã disse que um cargueiro afundou depois de bater em uma mina no Estreito de Ormuz. A Arábia Saudita informou um incêndio em um prédio da Saudi Aramco, em Dhahran.',
+    'A Agência Internacional de Energia passou a prever queda média de 2,6 milhões de barris por dia na demanda mundial de petróleo em 2026, segundo o O Povo.'
+  ] },
+
+{ id: 'confianca-industria-outubro-cni', cat: 'economia', own: false, t: '2026-10-14T16', d: '14 out 2026', img: 'mercado', src: 'Agência Brasil', url: U.abIcei,
+  title: 'Confiança da indústria sobe em outubro, mas setor segue pessimista há 22 meses',
+  sum: 'O índice da CNI subiu 1,3 ponto, para 46,2. Abaixo de 50 pontos, ele indica falta de confiança.',
+  body: [
+    'O índice que mede a avaliação das condições atuais ficou em 40 pontos, o menor desde julho de 2020. Já as expectativas subiram para 49,3 pontos. A CNI atribui o resultado à demanda menor, aos custos e à incerteza externa. Foram ouvidas 1.103 empresas de 1º a 7 de outubro.'
+  ] },
 
 { id: 'gasolina-impostos-zerados-subsidio-diesel', cat: 'economia', own: true, t: '2026-10-13T21', d: '13 out 2026', img: 'plataforma', read: 3,
   title: 'Portaria garante mais R$ 1,40 por litro ao diesel importado; gasolina segue com tributos federais zerados',
@@ -798,34 +919,12 @@ const NEWS = [
   box: { type: 'facts', title: 'As medidas', rows: [['Diesel importado', 'Mais R$ 1,40 por litro (total de R$ 3,52)'], ['Gasolina', 'Desconto de R$ 0,89 por litro'], ['Etanol', 'R$ 0,19 por litro'], ['Custo total', 'R$ 5,2 bilhões'], ['Validade do diesel', '30 dias, prorrogáveis']] },
   sources: [['Atlas Público', U.atlasDiesel], ['Ministério da Fazenda', U.fazGasolina], ['Click Petróleo e Gás', U.clickComb], ['CNN Brasil', U.cnnGasolinaPostos], ['Agência Brasil', U.abCombustiveis], ['Agência Brasil', U.abFlavio]] },
 
-{ id: 'fmi-corta-pib-brasil-2026-eleva-mundo', cat: 'economia', own: true, t: '2026-10-13T05', d: '13 out 2026', img: 'mercado', read: 3,
-  title: 'FMI reduz previsão de crescimento do Brasil para 2,2% em 2026 e eleva a do mundo para 3,1%',
-  sum: 'Para 2027, o Fundo prevê alta de 1,9% no PIB brasileiro. O relatório supõe petróleo a US$ 96 o barril, em média, neste ano.',
+{ id: 'bets-saem-do-ar-devolucao-saldos', cat: 'economia', own: false, t: '2026-10-14T12', d: '14 out 2026', img: 'celular', src: 'Gazeta do Povo / Tribuna PR', url: U.tribBets,
+  title: 'Termina o prazo para os bancos devolverem o dinheiro das bets; quem não recebeu deve procurar a Caixa',
+  sum: 'Mais de R$ 1 bilhão já voltou aos apostadores, e faltavam cerca de R$ 159 milhões. Não receber no prazo não significa perder o direito ao dinheiro.',
   body: [
-    'O Fundo Monetário Internacional divulgou na segunda-feira (12), durante as reuniões anuais em Bangkok, na Tailândia, a nova edição do relatório Perspectivas da Economia Mundial. A previsão para o PIB do Brasil em 2026 caiu de 2,4%, estimativa de julho, para 2,2%, segundo o Poder360. Para 2027, o Fundo espera 1,9%. Em 2025, o país cresceu 2,3%.',
-    '## Inflação e emprego',
-    'O FMI projeta inflação média de 4,4% no Brasil em 2026 e de 4,1% em 2027. O desemprego deve passar de 6,2% neste ano para 6,8% no próximo. Para a América Latina e o Caribe, a previsão é de crescimento de 2,3% em 2026 e de 2,5% em 2027.',
-    '## O mundo',
-    'A economia mundial deve crescer 3,1% em 2026, um pouco acima dos 3% previstos em julho, e 3,4% em 2027. Segundo a AP, o Fundo prevê 2,3% para os EUA, 4,5% para a China e 1,1% para a zona do euro neste ano. A diretora de pesquisa do FMI, Silvana Tenreyro, disse que as perspectivas são muito desiguais.',
-    'O relatório supõe que o preço médio do petróleo fique em US$ 96 o barril e que o tráfego pelo Estreito de Ormuz se normalize até março. A inflação global prevista é de 4,7% em 2026.'
-  ],
-  box: { type: 'facts', title: 'As projeções do FMI', rows: [['Brasil em 2026', '2,2% (era 2,4%)'], ['Brasil em 2027', '1,9%'], ['Mundo em 2026', '3,1% (era 3%)'], ['Mundo em 2027', '3,4%'], ['Inflação no Brasil em 2026', '4,4%']] },
-  sources: [['Poder360', U.p360Fmi], ['AP / ABC News', U.apFmi]] },
-
-{ id: 'bets-saem-do-ar-devolucao-saldos', cat: 'economia', own: false, t: '2026-10-13T12', d: '13 out 2026', img: 'celular', src: 'O Tempo / Agência Brasil', url: U.otBets13,
-  title: 'Prazo para os bancos devolverem o dinheiro das bets termina nesta quarta (14)',
-  sum: 'Mais de R$ 1 bilhão já voltou aos apostadores, e faltam R$ 159 milhões. O que não for devolvido vai para uma conta na Caixa.',
-  body: [
-    'O dinheiro é depositado automaticamente na conta usada para fazer os depósitos nas plataformas. São 22,5 milhões de apostadores e 70,5 milhões de contas; em 90% delas, há menos de R$ 1 a receber. A Advocacia-Geral da União vai à Justiça contra oito empresas que não enviaram os dados dos clientes aos bancos.',
-    'Depois do prazo, a Fazenda vai publicar as instruções para quem ainda tiver valores a receber. A orientação é desconfiar de mensagens que peçam pagamento para liberar o dinheiro.'
-  ] },
-
-{ id: 'perdao-dividas-meis-impacto-3-bilhoes', cat: 'economia', own: false, t: '2026-10-13T22', d: '13 out 2026', img: 'mercado', src: 'Agência Brasil', url: U.abMeiImpacto,
-  title: 'Perdão de dívidas de MEIs terá impacto de R$ 3 bilhões até 2029, diz a Fazenda',
-  sum: 'O estoque de dívidas dos microempreendedores na Dívida Ativa é de R$ 12,86 bilhões, e R$ 11,05 bilhões são considerados de difícil recuperação.',
-  body: [
-    'A perda de receita estimada é de R$ 1,12 bilhão em 2027, R$ 1,01 bilhão em 2028 e R$ 909 milhões em 2029. Entram no perdão as dívidas inscritas até 13 de outubro de 2026, e o MEI terá de pagar as mensalidades em dia por seis meses e desistir de ações na Justiça.',
-    'Segundo a Fazenda, manter a cobrança gera custos administrativos altos. O país tem 17,56 milhões de MEIs ativos. A medida depende de aprovação do Congresso.'
+    'O prazo terminou na quarta (14). Os valores que os bancos não conseguirem devolver vão para uma conta da Caixa, que fará o repasse. Segundo o portal Brasil sem Bets, quem não recebeu deve procurar a Caixa.',
+    'A orientação é desconfiar de mensagens que peçam pagamento para liberar o dinheiro.'
   ] },
 
 { id: 'china-exportacoes-sobem-36-setembro', cat: 'economia', own: false, t: '2026-10-14T01', d: '14 out 2026', img: 'mercado', src: 'AP', url: U.apChina,
@@ -835,27 +934,12 @@ const NEWS = [
     'As importações chinesas subiram 31% em setembro na comparação com um ano antes, segundo a AP. No acumulado do ano, o superávit soma US$ 938 bilhões; as exportações de chips cresceram 108,1%, e as de carros, 54,3%.'
   ] },
 
-{ id: 'petroleo-brent-cai-105-diesel-russo', cat: 'economia', own: false, t: '2026-10-13T17', d: '13 out 2026', img: 'plataforma', src: 'CNN Brasil', url: U.cnnPetroleo13,
-  title: 'Petróleo Brent cai 0,9%, a US$ 105,69, com expectativa de mais diesel russo no mercado',
-  sum: 'A queda interrompeu três altas seguidas. O WTI, referência nos EUA, subiu 0,43%, a US$ 94,14.',
-  body: [
-    'Pesaram a expectativa de mais oferta de diesel da Rússia, depois de um acordo entre EUA e Rússia, e a realização de lucros. Do outro lado, os ataques sauditas a áreas dos hutis no Iêmen e as ameaças do grupo a instalações de energia sauditas limitaram a queda, segundo a CNN Brasil.'
-  ] },
-
 { id: 'propostas-economicas-lula-flavio', cat: 'economia', own: false, t: '2026-10-11T08', d: '11 out 2026', img: 'mercado', src: 'O Povo', url: U.opovoPropostas,
   title: 'Salário mínimo, gastos e 6x1: o que Lula e Flávio propõem para a economia',
   sum: 'Lula mantém o arcabouço fiscal e a regra de ganho real do mínimo. Flávio propõe corte de R$ 250 bilhões em despesas e correção do mínimo só pela inflação.',
   body: [
     'Segundo O Povo, Lula defende o fim da escala 6x1, com jornada de 40 horas, e o salário mínimo corrigido pelo INPC mais o crescimento do PIB, com ganho real limitado a 2,5%.',
     'Flávio Bolsonaro propõe cortar R$ 250 bilhões em despesas discricionárias, reduzir dez ministérios e investir R$ 900 bilhões em transportes por meio de concessões e parcerias. Os dois mantêm o Bolsa Família em R$ 691.'
-  ] },
-
-{ id: 'mercado-flavio-compromissos-fiscais', cat: 'economia', own: false, t: '2026-10-10T09', d: '10 out 2026', img: 'mercado', src: 'InfoMoney / Estadão Conteúdo', url: U.imFiscalFlavio,
-  title: 'Otimismo do mercado com Flávio esbarra na falta de detalhes sobre o ajuste fiscal',
-  sum: 'Economistas ouvidos pelo Estadão dizem que a campanha ainda não explicou quais gastos vai cortar. Assessores afirmam que Bolsa Família e BPC não serão afetados.',
-  body: [
-    'Segundo a reportagem, uma economista da FGV estima que o ajuste em discussão seria de R$ 200 bilhões a R$ 250 bilhões, sem definição de despesas, método ou prazo. Assessores de Flávio Bolsonaro (PL) dizem que não há intenção de mexer no Bolsa Família, no BPC nem na regra do salário mínimo.',
-    'Analistas de mercado avaliam que a Bolsa pode devolver parte da alta se a sinalização continuar vaga.'
   ] },
 
 { id: 'nobel-economia-hall-woodford', cat: 'economia', own: false, t: '2026-10-12T07', d: '12 out 2026', img: 'mercado', src: 'AP / ABC News', url: U.apNobelEco,
@@ -867,20 +951,74 @@ const NEWS = [
   ] },
 
 /* ===================== TECNOLOGIA ===================== */
-{ id: 'apple-evento-casa-inteligente-13-outubro', cat: 'tecnologia', own: true, t: '2026-10-13T20', d: '13 out 2026', img: 'tecnologia', read: 3,
+
+{ id: 'decreto-sac-atendimento-humano-20-segundos', cat: 'tecnologia', own: true, t: '2026-10-14T08', d: '14 out 2026', img: 'celular', read: 3,
+  title: 'Novo decreto do SAC obriga empresas a atender 80% das ligações em até 20 segundos',
+  sum: 'A opção de falar com uma pessoa terá de aparecer em todos os níveis do menu. Robôs e IA continuam permitidos na triagem. As regras valem a partir de novembro.',
+  body: [
+    'O governo publicou na terça-feira (13) o Decreto 13.135, com novas regras para o Serviço de Atendimento ao Consumidor (SAC). Ele substitui o decreto de 2022, começa a valer em novembro e será fiscalizado pela Secretaria Nacional do Consumidor (Senacon), segundo o Tecnoblog.',
+    '## Atendimento humano',
+    'Pelo menos 80% das ligações em que o cliente pedir para falar com uma pessoa terão de ser atendidas em até 20 segundos. Nas demais, a espera máxima é de 5 minutos. Se a ligação cair, a empresa terá de retornar em até 5 minutos. A opção de atendimento humano deve aparecer em todos os níveis do menu, inclusive no primeiro.',
+    'Chatbots e ferramentas de inteligência artificial continuam permitidos para a triagem, desde que o cliente possa pedir um atendente.',
+    '## Menu e cancelamento',
+    'O menu poderá ter no máximo cinco níveis, e a empresa terá de informar o tempo estimado de espera. Fica proibida a publicidade durante o atendimento. O cliente não poderá ser obrigado a repetir um problema já registrado. O pedido de cancelamento terá de ser atendido na hora, com comprovante, sem exigir o pagamento antecipado de pendências.',
+    '## Prazos',
+    'Reclamações terão de ser respondidas em até 7 dias corridos. Em caso de cobrança indevida, a cobrança deve ser suspensa na hora e o problema resolvido em até 48 horas. As gravações terão de ser guardadas por pelo menos 90 dias.'
+  ],
+  box: { type: 'facts', title: 'As novas regras', rows: [['Decreto', '13.135/2026'], ['Atendimento humano', '80% das ligações em até 20 segundos'], ['Espera máxima', '5 minutos'], ['Menu', 'Até 5 níveis'], ['Reclamações', 'Resposta em até 7 dias']] },
+  sources: [['Tecnoblog', U.tbSac]] },
+
+{ id: 'bolha-ia-gartner-fmi-alerta', cat: 'tecnologia', own: true, t: '2026-10-14T14', d: '14 out 2026', img: 'tecnologia', read: 3,
+  title: 'Gartner diz que US$ 3,5 trilhões investidos em IA podem perder valor até 2030; FMI também alerta para bolha',
+  sum: 'Segundo a consultoria, os donos de data centers de IA precisariam faturar US$ 8,5 trilhões até 2030 para ter o retorno esperado, mas a receita prevista é de no máximo US$ 3,6 trilhões.',
+  body: [
+    'A consultoria americana Gartner divulgou na quarta-feira (14) uma estimativa de que mais de US$ 3,5 trilhões investidos em infraestrutura de inteligência artificial podem sofrer baixa contábil, ou seja, perder valor nos balanços, até o fim de 2030, se o ritmo de gastos continuar.',
+    '## A conta',
+    'Segundo o Gartner, as empresas devem gastar quase US$ 1 trilhão em infraestrutura de IA em 2026 e mais US$ 6 trilhões de 2027 a 2030. Para cobrir esses gastos, o custo do financiamento e um retorno de 12% sobre o capital, precisariam de US$ 8,5 trilhões em receitas acumuladas até 2030. A previsão é de no máximo US$ 3,6 trilhões.',
+    'A consultoria também prevê que mais de 80% das empresas de nuvem especializadas em IA deixem de operar de forma independente até 2030.',
+    '## O alerta do FMI',
+    'Na terça (13), o Fundo Monetário Internacional disse, no Relatório de Estabilidade Financeira Global, que uma correção no setor de IA pode afetar a economia mundial. Segundo o Tecnoblog, o FMI critica o financiamento "circular", em que empresas de IA são ao mesmo tempo investidoras, credoras e clientes umas das outras, e cita fabricantes de chips como Nvidia, Samsung, Micron e SK Hynix entre as que podem perder valor se os investimentos desacelerarem.'
+  ],
+  box: { type: 'facts', title: 'Os números do Gartner', rows: [['Investimento em 2026', 'Quase US$ 1 trilhão'], ['De 2027 a 2030', 'Mais US$ 6 trilhões'], ['Receita necessária', 'US$ 8,5 trilhões até 2030'], ['Receita prevista', 'Até US$ 3,6 trilhões'], ['Valor em risco', 'Mais de US$ 3,5 trilhões']] },
+  sources: [['Gartner', U.gartnerIa], ['Tecnoblog', U.tbFmiIa]] },
+
+{ id: 'asml-receita-recorde-terceiro-trimestre', cat: 'tecnologia', own: false, t: '2026-10-14T05', d: '14 out 2026', img: 'tecnologia', src: 'ASML', url: U.asmlQ3,
+  title: 'ASML, fabricante de máquinas para chips, tem receita recorde de € 11,7 bilhões no trimestre',
+  sum: 'O lucro foi de € 4,96 bilhões. A empresa diz que sua produção prevista para 2027 e 2028 não vai dar conta da demanda.',
+  body: [
+    'A holandesa ASML vendeu 113 sistemas de litografia novos no terceiro trimestre. Para o quarto trimestre, prevê receita de € 14,2 bilhões a € 15,2 bilhões, e para 2026, de € 44 bilhões a € 45 bilhões.',
+    'O presidente da empresa, Christophe Fouquet, disse que a ASML estuda ampliar a capacidade de 2028 além dos 30% já anunciados.'
+  ] },
+
+{ id: 'decreto-bloqueio-celulares-presidios', cat: 'tecnologia', own: false, t: '2026-10-13T14', d: '13 out 2026', img: 'celular', src: 'Tecnoblog', url: U.tbPresidios,
+  title: 'Decreto autoriza bloquear celulares em presídios sem ordem judicial',
+  sum: 'Os aparelhos podem ser bloqueados pelo IMEI, e o sinal pode ser cortado nos perímetros das prisões, conforme regras da Anatel.',
+  body: [
+    'O Decreto 13.136, assinado por Lula em 9 de outubro, já está em vigor. A administração prisional faz um laudo técnico, e os pedidos passarão por uma plataforma do Ministério da Justiça, que deve ficar pronta em até 180 dias. Até lá, vão direto à Anatel.',
+    'Um cadastro nacional vai registrar os perímetros dos presídios, para evitar que o bloqueio atinja casas e serviços vizinhos.'
+  ] },
+
+{ id: 'netflix-copa-2030-espanha', cat: 'tecnologia', own: false, t: '2026-10-13T12', d: '13 out 2026', img: 'plataforma', src: 'Jornal do Comércio', url: U.jcNetflix,
+  title: 'Netflix compra direitos dos 104 jogos da Copa de 2030 na Espanha e em Andorra',
+  sum: 'O acordo não inclui o Brasil. Na Espanha, um jogo por dia será gratuito, e uma TV aberta exibirá os jogos da seleção espanhola, as semifinais e a final.',
+  body: [
+    'O valor não foi divulgado. A Netflix já tinha os direitos, nos EUA e no Canadá, das Copas femininas de 2027, que será no Brasil, e de 2031.'
+  ] },
+
+{ id: 'iphone-13-celular-mais-consertado-brasil', cat: 'tecnologia', own: false, t: '2026-10-14T09', d: '14 out 2026', img: 'celular', src: 'Canaltech', url: U.ctIphone13,
+  title: 'iPhone 13 é o celular mais levado para conserto no Brasil em 2026, aponta levantamento',
+  sum: 'O modelo responde por 5% dos atendimentos do Grupo PLL, empresa de reparos, de janeiro a agosto. O Galaxy S23 Ultra vem em seguida, com 4%.',
+  body: [
+    'O iPhone 15 ficou em 3º, com 3%. Os números mostram a participação de cada modelo nos atendimentos da empresa, e não a taxa de defeito, e podem refletir o perfil dos clientes.'
+  ] },
+
+{ id: 'apple-evento-casa-inteligente-13-outubro', cat: 'tecnologia', own: false, t: '2026-10-13T20', d: '13 out 2026', img: 'tecnologia', src: 'Tecnoblog', url: U.tbHomeView,
   title: 'Apple lança a tela HomeView, novo HomePod mini e Apple TV com Siri reforçada por IA',
   sum: 'A HomeView custa US$ 299 nos EUA e chega às lojas em 13 de novembro. A nova Apple TV terá preço de R$ 3.599 no Brasil, segundo o Tecnoblog.',
   body: [
-    'A Apple apresentou na terça-feira (13) uma linha de produtos para a casa conectada. O destaque é a HomeView, uma tela de 7 polegadas que fica sobre a mesa ou presa na parede. Ela reconhece até seis moradores pelo rosto, faz chamadas de vídeo, toca música e controla aparelhos da casa com a Siri, agora com inteligência artificial.',
-    'Nos EUA, a HomeView custa US$ 299, em quatro cores, com pré-venda aberta e entregas a partir de 13 de novembro. Os suportes de parede são vendidos à parte. Segundo o MacRumors, o aparelho não será vendido na União Europeia. A Apple não informou preço nem data para o Brasil.',
-    '## Apple TV e HomePod mini',
-    'A nova Apple TV 4K usa o chip A19 e, segundo a Apple, tem processador até 50% mais rápido que a geração anterior. A Siri passa a buscar filmes e séries por conversa. No Brasil, custará R$ 3.599, com lançamento em 13 de novembro, segundo o Tecnoblog.',
-    'O HomePod mini ganhou a primeira atualização em seis anos, com o chip S10 e novas cores. Custa US$ 149 nos EUA e chega às lojas em 30 de outubro. Os recursos da Siri com IA virão depois, em atualização de software.',
-    '## Acessórios',
-    'A empresa também mostrou câmeras, campainha, fechadura e termostato feitos com a LG e a Schneider Electric. Os primeiros chegam em dezembro, nos EUA.'
-  ],
-  box: { type: 'facts', title: 'Os lançamentos', rows: [['HomeView', 'US$ 299; vendas em 13 de novembro'], ['Apple TV 4K', 'R$ 3.599 no Brasil; 13 de novembro'], ['HomePod mini', 'US$ 149; vendas em 30 de outubro'], ['HomeView no Brasil', 'Sem preço nem data']] },
-  sources: [['Tecnoblog', U.tbHomeView], ['Tecnoblog', U.tbHomePod], ['MacRumors', U.mrHomeView], ["Tom's Guide", U.tgHomeView], ['MacMagazine', U.mmHomePod]] },
+    'A HomeView é uma tela de 7 polegadas que reconhece até seis moradores pelo rosto, faz chamadas de vídeo e controla aparelhos da casa com a Siri. A Apple não informou preço nem data para o Brasil.',
+    'A nova Apple TV 4K usa o chip A19 e chega em 13 de novembro. O HomePod mini ganhou a primeira atualização em seis anos, com o chip S10, e custa US$ 149 nos EUA, com vendas a partir de 30 de outubro.'
+  ] },
 
 { id: 'mp-bloqueio-ligacoes-abusivas-anatel', cat: 'tecnologia', own: true, t: '2026-10-13T16', d: '13 out 2026', img: 'celular', read: 3,
   title: 'Medida provisória permite bloquear por 15 dias linhas que fazem ligações em massa',
@@ -897,20 +1035,6 @@ const NEWS = [
   box: { type: 'facts', title: 'A nova regra', rows: [['Medida', 'MP 1.396/2026'], ['Limite', 'Mais de 1.000 chamadas por dia por linha'], ['Chamadas curtas', '85% ou mais'], ['Punição', '15 dias sem fazer ligações'], ['Vigência do limite', 'Em 30 dias']] },
   sources: [['Gazeta Mercantil', U.gmLigacoes], ['Olhar Digital', U.odLigacoes], ['RCN67', U.rcnLigacoes]] },
 
-{ id: 'tse-meta-48-horas-perfis-lula', cat: 'tecnologia', own: true, t: '2026-10-13T18', d: '13 out 2026', img: 'celular', read: 3,
-  title: 'Meta remove 7 perfis apontados pela campanha de Lula e atribui problemas a falhas técnicas',
-  sum: 'A coligação indicou uma rede de 255 contas, e a empresa analisou 35 perfis identificáveis. A Meta nega favorecer ou prejudicar candidatos.',
-  body: [
-    'A Meta, dona do Facebook e do Instagram, informou ao ministro Marco Aurélio Bellizze, do Tribunal Superior Eleitoral, que desativou 7 perfis apontados pela campanha de Lula (PT). Seis foram removidos por violações repetidas, e um por identidade enganosa, segundo o Correio Braziliense.',
-    'A coligação Brasil Pronto pra Mais tinha apontado uma rede de 255 contas. A empresa disse ter analisado os 35 perfis que conseguiu identificar.',
-    '## Falhas admitidas',
-    'A Meta atribuiu a falhas de sistema dois episódios citados pela campanha. Em 23 de setembro, a conta de anúncios de Lula ficou suspensa por pouco mais de uma hora. Em 7 de outubro, um erro global travou a contagem de visualizações de vídeos Reels em mais de 100 países, sem afetar a entrega dos conteúdos, segundo a empresa.',
-    '## Os dois lados',
-    'A Meta nega favorecer ou prejudicar qualquer candidato. Para Éden Valadares, do PT, a falta de transparência das plataformas é um desafio para a Justiça Eleitoral. A campanha de Lula afirma, com base em levantamento do partido, que a página de Flávio Bolsonaro (PL) teve em média 2,96 vezes mais engajamento.'
-  ],
-  box: { type: 'facts', title: 'O caso', rows: [['Rede apontada', '255 contas'], ['Perfis analisados', '35'], ['Perfis removidos', '7'], ['Falha nos Reels', '7 de outubro, mais de 100 países'], ['Relator', 'Marco Aurélio Bellizze']] },
-  sources: [['Correio Braziliense', U.cbMeta], ['Metrópoles', U.metMetaTse], ['CNN Brasil', U.cnnMetaTse]] },
-
 { id: 'google-lanca-gemini-4-argon', cat: 'tecnologia', own: false, t: '2026-10-13T17', d: '13 out 2026', img: 'tecnologia', src: 'Exame', url: U.exGemini,
   title: 'Google libera o Gemini 4 Argon para assinantes e desenvolvedores',
   sum: 'O modelo chega ao app Gemini e à Busca para assinantes Pro e Ultra. Na API, o preço dobra a partir de 1º de dezembro.',
@@ -925,44 +1049,6 @@ const NEWS = [
   body: [
     'O engenheiro, contratado em 2025, foi preso no dia 9 e demitido. Segundo a acusação, um dispositivo USB escondido foi ligado a uma TV em uma sala de reuniões em San Francisco. A OpenAI disse que seus próprios modelos de IA ajudaram a identificar o responsável.',
     'Ele deve voltar ao tribunal federal em 19 de outubro.'
-  ] },
-
-{ id: 'character-ai-falencia-disney', cat: 'tecnologia', own: false, t: '2026-10-13T14', d: '13 out 2026', img: 'tecnologia', src: 'Reuters / Global News', url: U.gnCharacter,
-  title: 'Character.AI pede falência nos EUA, e Disney faz a primeira oferta por parte dos ativos',
-  sum: 'A Disney ofereceu US$ 20 milhões. A venda deve ser concluída entre o fim de novembro e o início de dezembro, e outros interessados ainda podem cobrir a proposta.',
-  body: [
-    'A empresa de chatbots, fundada em 2021 por ex-funcionários do Google, declarou ativos e dívidas estimados entre US$ 50 milhões e US$ 100 milhões cada. O serviço continua no ar, mas será encerrado se não houver comprador, segundo a Reuters.'
-  ] },
-
-{ id: 'hackers-invadem-site-ancine', cat: 'tecnologia', own: false, t: '2026-10-13T15', d: '13 out 2026', img: 'tecnologia', src: 'Terra', url: U.terraAncine,
-  title: 'Site da Ancine é invadido e sai do ar após publicação de ofensas a nordestinos',
-  sum: 'Os invasores também publicaram ameaças a universidades públicas e mensagens políticas. O caso é investigado, e a autoria não foi identificada.',
-  body: [
-    'A invasão ocorreu na tarde de segunda (12), e o portal da Agência Nacional do Cinema continuava fora do ar na terça (13). Segundo o Terra, não há confirmação de vazamento de dados, e a agência não divulgou nota oficial.'
-  ] },
-
-{ id: 'meta-lanca-muse-wonder', cat: 'tecnologia', own: false, t: '2026-10-12T15', d: '12 out 2026', img: 'tecnologia', src: 'Olhar Digital', url: U.odMuse,
-  title: 'Meta lança o modelo de IA Muse Wonder para disputar com OpenAI e Anthropic',
-  sum: 'O modelo está em planos de US$ 20 ou US$ 100 por mês. Zuckerberg disse que não vai desacelerar os gastos com IA.',
-  body: [
-    'A versão mais potente, Muse Wonder Full, fica restrita a assinantes do Muse Code, de US$ 50 ou US$ 200 por mês. Segundo a Olhar Digital, o lançamento atrasou porque a Meta suspendeu parte do treinamento em julho.',
-    'Em entrevista ao Financial Times, citada pela Olhar Digital, Mark Zuckerberg rejeitou pedidos para frear o desenvolvimento da IA.'
-  ] },
-
-{ id: 'vendas-celulares-caem-20-terceiro-trimestre', cat: 'tecnologia', own: false, t: '2026-10-12T12', d: '12 out 2026', img: 'celular', src: 'Olhar Digital', url: U.odCelulares,
-  title: 'Vendas mundiais de celulares caem 20% no 3º trimestre, pior resultado desde 2012',
-  sum: 'Segundo a Counterpoint Research, a falta de chips de memória, agravada pela demanda de IA, encareceu os aparelhos.',
-  body: [
-    'A Samsung lidera, com 23% do mercado, seguida pela Apple, com 22%. A Xiaomi teve queda de mais de 30% e ficou com 10%, segundo a estimativa preliminar.',
-    'As vendas da Apple também caíram, em parte porque o iPhone 18 básico ficou para o ano que vem.'
-  ] },
-
-{ id: 'perseverance-recorde-distancia-marte', cat: 'tecnologia', own: false, t: '2026-10-12T14', d: '12 out 2026', img: 'ciencia', src: 'Olhar Digital', url: U.odPerseverance,
-  title: 'Perseverance bate o recorde de distância percorrida em Marte',
-  sum: 'O jipe-robô da Nasa passou de 45,2 km rodados desde o pouso, em 2021, e superou o Opportunity.',
-  body: [
-    'A marca foi atingida no domingo (11) e anunciada pelo laboratório JPL na segunda (12), segundo a Olhar Digital. O Opportunity rodou em Marte de 2004 a 2018.',
-    'O recorde veio cerca de dois meses depois do previsto, porque o robô desviou para estudar rochas que podem estar entre as mais antigas já analisadas no planeta.'
   ] },
 
 ];
