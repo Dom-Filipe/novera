@@ -7,8 +7,8 @@
 const META = {
   /* Endereço público do site, sem barra no final. Usado nos links das redes sociais. */
   siteUrl: 'https://novera-sepia.vercel.app',
-  dataExtenso: 'Domingo, 18 de outubro de 2026',
-  edicao: '18 out 2026',
+  dataExtenso: 'Segunda-feira, 19 de outubro de 2026',
+  edicao: '19 out 2026',
   ibovespa: { valor: '205.430', variacao: '0,54%', sobe: true },
   dolar: { valor: 'R$ 5,07', variacao: '0,28%', sobe: false },
   fechamento: '16/10'
@@ -16,13 +16,13 @@ const META = {
 
 /* Home: destaque principal, dois laterais e três da faixa de baixo (IDs de notícias "own: true") */
 const FEATURED = {
-  lead: 'pesquisas-vox-ipespe-verita-segundo-turno',
-  side: ['ira-minas-ormuz-estreito-fechado', 'palmeiras-vence-athletico-lider-brasileirao'],
-  also: ['flavio-atos-lula-prepara-debate-band', 'franca-protestos-550-mil-presos', 'meta-tse-igualdade-lula-flavio']
+  lead: 'debate-band-lula-flavio-primeiro-confronto',
+  side: ['trump-apoia-netanyahu-eleicao-israel', 'flamengo-vence-bahia-retoma-lideranca'],
+  also: ['atos-paulista-flavio-capitais-lula', 'pib-china-cresce-terceiro-trimestre', 'morre-benito-di-paula']
 };
 
 /* Home: "Escolhas da redação" (5 IDs) */
-const PICKS = ['ucrania-abandona-tregua-energia-ataques', 'durigan-credito-empresas-fim-6x1', 'arthur-nory-queda-mundial-ginastica', 'street-fighter-estreia-cinemas', 'acoes-ia-nasdaq-pior-semana'];
+const PICKS = ['egito-apoio-arabia-saudita-guerra-iemen', 'desmatamento-amazonia-cerrado-menor-serie', 'mundial-ginastica-brasil-fora-finais-masculinas', 'street-fighter-estreia-cinemas', 'anthropic-fundo-beneficio-publico-acoes'];
 
 const U = {
   jgbMaster: 'https://jornalgrandebahia.com.br/2026/10/caso-banco-master-edson-fachin-marca-reuniao-com-pf-para-outubro-de-2026-e-cobra-apuracao-sem-excecao-de-mencoes-a-ministros-do-stf/',
@@ -549,11 +549,134 @@ const U = {
   tbIphoneDuo: 'https://tecnoblog.net/noticias/iphone-duo-comeca-a-ser-vendido-no-brasil-veja-os-precos/',
   odBissexto: 'https://olhardigital.com.br/2026/10/16/ciencia-e-espaco/cientistas-aprovam-fim-do-segundo-bissexto-e-mudam-como-o-mundo-marca-o-tempo/',
   tcReplit: 'https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/',
-  tcMetaClausula: 'https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/'
+  tcMetaClausula: 'https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/',
+  /* Atualização de 19 out 2026 */
+  bandDebate18: 'https://www.band.com.br/politica/eleicoes/sus-master-lulinha-e-faccoes-veja-o-que-foi-assunto-no-debate-da-band',
+  cnnChegada18: 'https://www.cnnbrasil.com.br/eleicoes/flavio-e-lula-chegam-para-primeiro-debate-presidencial-neste-domingo-18/',
+  cnnAnaliseDebate: 'https://www.cnnbrasil.com.br/blogs/jussara-soares/eleicoes/analise-flavio-vai-ao-ataque-mas-tropeca-em-cobrancas-de-lula/',
+  p360Debate18: 'https://www.poder360.com.br/poder-eleicoes-2026/lula-diz-que-flavio-mente-e-e-carioca-malandro-em-debate-na-band/',
+  p360Malandro: 'https://www.poder360.com.br/poder-eleicoes-2026/apoiadores-de-flavio-fazem-campanha-carioca-nao-e-malandro/',
+  bbcDebate: 'https://www.opovo.com.br/agencia/bbc/2026/10/19/debate-da-band-quem-ganhou-e-quem-perdeu-no-primeiro-embate-entre-lula-e-flavio-bolsonaro.html',
+  cbAudiencia: 'https://tvprime.correiobraziliense.com.br/noticia/409740/televisao/esta-foi-a-audiencia-do-debate-entre-flavio-e-lula-na-band-globo-foi-ultrapassada-18102026',
+  platoDebate: 'https://platobr.com.br/no-ringue-da-band-guerra-de-lama-flavio-e-lula-fazem-um-debate-a-imagem-da-campanha',
+  metPaulista: 'https://www.metropoles.com/sao-paulo/flavio-bolsonaro-ato-avenida-paulista',
+  metBoulos: 'https://www.metropoles.com/brasil/boulos-sobre-ato-de-flavio-pedido-por-bomba-dos-eua-e-novo-caso-zambelli',
+  metCopacabana: 'https://www.metropoles.com/brasil/ato-musical-pela-democracia-reune-56-mil-pessoas-em-copacabana-diz-usp',
+  cefAtos: 'https://www.congressoemfoco.com.br/noticia/123348/capitais-recebem-atos-pro-lula-em-ultimo-domingo-antes-da-eleicao',
+  cnnAtos18: 'https://www.cnnbrasil.com.br/politica/aliados-fazem-atos-pelo-pais-e-flavio-e-lula-se-enfrentam-em-debate-na-tv/',
+  sbtAtos: 'https://sbtnews.sbt.com.br/noticia/eleicoes/tse-mantem-atos-pro-lula-com-artistas-neste-domingo-18',
+  metAgendas19: 'https://www.metropoles.com/brasil/eleicoes-2026-confira-as-agendas-de-flavio-e-lula-nesta-segunda-19-10',
+  abSecoes: 'https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/mais-de-4-mil-secoes-eleitorais-tiveram-locais-de-votacao-alterados',
+  correioIlheus: 'https://correio24horas.com.br/ec-bahia/temporal-provoca-alagamentos-na-bahia-e-ilheus-tem-maior-volume-de-chuva-dos-ultimos-anos-1026',
+  axNetanyahu: 'https://www.axios.com/2026/10/18/trump-endorses-netanyahu-israel-election-iran',
+  jtaNetanyahu: 'https://www.jta.org/2026/10/18/global/trump-endorses-netanyahu-ahead-of-israeli-elections-citing-iranian-threat',
+  pbsEgito: 'https://www.pbs.org/newshour/world/egypts-top-security-body-agrees-to-help-saudi-arabia-defend-itself-against-houthi-attacks',
+  xinhuaEgito: 'https://english.news.cn/20261019/cf4d7576026a47c19016e52efb72ef86/c.html',
+  ajIemen18: 'https://www.aljazeera.com/news/2026/10/18/fighting-intensifies-across-yemen-as-humanitarian-crisis-deepens',
+  aniOrmuz: 'https://aninews.in/news/world/middle-east/iran-offers-7-day-plan-to-us-says-strait-of-hormuz-could-reopen-on-sixth-day-if-conditions-met20261018205550/',
+  ajMacron: 'https://www.aljazeera.com/news/2026/10/18/macron-denounces-frances-nationwide-rioting-looting',
+  ajTrumpZelensky: 'https://www.aljazeera.com/news/2026/10/19/trump-defends-russian-sanctions-relief-lashes-out-at-zelenskyy',
+  ajAlberta: 'https://www.aljazeera.com/news/2026/10/18/alberta-independence-referendum-will-separatists-survive-a-loss',
+  efeWainwright: 'https://lapatilla.com/2026/10/18/canada-identifico-a-los-cuatro-militares-muertos-en-el-incendio-de-una-base-en-alberta/',
+  gzBahiaFla: 'https://www.gazetaesportiva.com/campeonatos/brasileiro-serie-a/bahia-x-flamengo-brasileirao-18-10-2026/',
+  lanceBahiaFla: 'https://www.lance.com.br/r7/bahia-flamengo-brasilerao-18102026.html',
+  lanceRodada31: 'https://www.lance.com.br/brasileirao/brasileirao-veja-os-resultados-deste-domingo-pela-31a-rodada.html',
+  tsGinastica: 'https://www.tribunadosertao.com.br/vida-esportiva/2026/10/18/999888-brasil-nao-avanca-para-nenhuma-final-masculina-do-mundial-de-ginastica-artistica-em-roterda',
+  bnGinastica: 'https://www.bahianoticias.com.br/esportes/noticia/80644-brasil-fica-fora-das-finais-por-equipes-e-aparelhos-masculinos-do-mundial-de-ginastica-artistica',
+  abcGinastica: 'https://www.abcdoabc.com.br/ginastica-artistica-brasil-pior-resultado-mundi/',
+  ohojeGinastica: 'https://ohoje.com/2026/10/14/rebeca-andrade-lidera-brasil-no-mundial-de-ginastica-artistica-confira-data-e-onde-assistir/',
+  atardeRebeca: 'https://atarde.com.br/esportes/rebeca-andrade-retorna-ao-mundial-em-busca-do-ouro-em-salto-e-trave-1405927',
+  mtCaracas: 'https://www.meutimao.com.br/jogo/9151/libertadores-feminina-2026/corinthians-7-x-0-caracas',
+  cnnBenito: 'https://www.cnnbrasil.com.br/pop/musica/quem-foi-benito-di-paula-cantor-da-mpb-que-morreu-aos-84-anos/',
+  bdfBenito: 'https://www.brasildefato.com.br/2026/10/18/morre-aos-84-anos-benito-di-paula-autor-de-retalhos-de-cetim-e-charlie-brown/',
+  bandBenito: 'https://www.band.com.br/entretenimento/celebridades/morre-benito-di-paula-icone-da-mpb-aos-84-anos',
+  itaBenito: 'https://www.itatiaia.com.br/entretenimento/filho-de-benito-di-paula-rodrigo-vellozo-se-despede-do-cantor-te-amo-papai/',
+  bopBilheteria: 'https://www.boxofficepro.com/weekend-box-office-street-fighter-wins-the-weekend-as-you-can-see-everything-shocks-with-15m-debut/',
+  apBilheteria18: 'https://www.wpxi.com/entertainment/box-office-elizabeth/BNWLHVNHG4ZSHHUXB4Z3PN6ZCE/?outputType=amp',
+  terraRajamouli: 'https://www.terra.com.br/diversao/entre-telas/filmes/ss-rajamouli-diretor-de-rrr-dara-masterclass-na-mostra-de-sao-paulo,a9185b89c9797b96674089dbffd951eechbvdr7m.html',
+  gulfDeva: 'https://gulfnews.com/entertainment/south-indian/legendary-tamil-music-composer-deva-the-man-behind-iconic-rajinikanth-themes-dies-at-75-1.500713953',
+  abPequenoCineasta: 'https://agenciabrasil.ebc.com.br/cultura/noticia/2026-10/festival-de-cinema-valoriza-producoes-de-criancas-e-adolescentes',
+  rtPibChina: 'https://www.investing.com/news/economy-news/chinas-q3-gdp-growth-accelerates-to-45-beating-forecast-4956208',
+  xinhuaPib: 'https://english.news.cn/20261019/89cd3cbf51d94ed7bc3156fa7c628667/c.html',
+  yfChinaSetembro: 'https://finance.yahoo.com/economy/articles/china-industrial-output-retail-sales-025938695.html',
+  obsChina: 'https://observador.pt/2026/10/19/crescimento-da-economia-da-china-acelera-para-45-no-terceiro-trimestre/',
+  abcAsia19: 'https://www.abc.net.au/news/2026-10-19/asx-markets-business-live-news/107280976',
+  imAgenda19: 'https://www.infomoney.com.br/mercados/calendario-economico-segundo-turno-das-eleicoes-e-ipca-15-tem-as-atencoes-da-semana/',
+  imDebateEco: 'https://www.infomoney.com.br/politica/debate-entre-lula-e-flavio-tem-ataques-acusacoes-e-propostas-economicas-veja-resumo/',
+  metDou6x1: 'https://www.metropoles.com/brasil/fim-da-6x1-diario-oficial-prazos-comecam-valer',
+  cnnDesmatamento: 'https://www.cnnbrasil.com.br/nacional/norte/am/desmatamento-na-amazonia-e-no-cerrado-tem-menor-nivel-na-serie-historica/',
+  odDesmatamento: 'https://olhardigital.com.br/2026/10/17/ciencia-e-espaco/amazonia-bate-recorde-historico-com-menor-taxa-de-desmatamento-ja-registrada/',
+  tcAnthropic: 'https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/',
+  ajAnthropic: 'https://www.aljazeera.com/economy/2026/10/19/anthropic-says-it-will-commit-5-of-shares-to-public-benefit-fund',
+  sbtSirio: 'https://sbtnews.sbt.com.br/noticia/brasil/sirio-libanes-sofre-ataque-hacker-e-apura-acesso-a-dados',
+  ajThwaites: 'https://www.aljazeera.com/news/2026/10/17/senegal-sized-antarctic-glacier-melting-faster-than-thought-why-it-matters',
+  gpLootbox: 'https://www.gazetadopovo.com.br/vida-e-cidadania/governo-fiscalizacao-seis-jogos-eletronicos-semelhanca-bets/',
+  cnnEstrelaVerde: 'https://www.cnnbrasil.com.br/ciencia/astronomos-afirmam-ter-descoberto-a-primeira-estrela-verde-as-cores-que-as-estrelas-normais-podem-ter-sao-praticamente-apenas-laranja-branco-ou-azul/'
 };
 
 const NEWS = [
 /* ===================== NACIONAL ===================== */
+
+{ id: 'debate-band-lula-flavio-primeiro-confronto', cat: 'nacional', own: true, t: '2026-10-18T23', d: '18 out 2026', img: 'eleicao', read: 4,
+  title: 'No primeiro debate do 2º turno, Lula e Flávio trocam acusações e divergem sobre segurança, saúde e economia',
+  sum: 'Flávio defendeu endurecer leis penais e um "SUS padrão Einstein". Lula defendeu o salário mínimo acima da inflação e desafiou o rival a abrir os sigilos das famílias. O próximo debate é na Globo, na sexta (23).',
+  body: [
+    'Lula (PT) e Flávio Bolsonaro (PL) se enfrentaram na noite de domingo (18) no primeiro debate do segundo turno, nos estúdios da Band, em São Paulo. O encontro foi transmitido em parceria com Estadão, TV Cultura, TV Gazeta e Jovem Pan, teve três blocos e foi mediado por Adriana Araújo e Eduardo Oinegue, segundo a CNN Brasil e o Poder360.',
+    '## Segurança',
+    'Flávio propôs tratar PCC, CV e milícias como organizações narcoterroristas e disse que vai mudar a Constituição para aprovar a castração química de estupradores, a maioridade penal de 14 anos para crimes hediondos e o fim da saidinha, segundo a Band. Lula defendeu manter a saída temporária só para presos do semiaberto com bom comportamento, sem incluir condenados por crimes hediondos, e criticou Flávio por não apoiar a PEC da Segurança do governo.',
+    '## Saúde',
+    'Flávio propôs um "SUS padrão Einstein", com prontuário eletrônico ligado ao CPF, e disse ter convidado o médico Cláudio Lottenberg para o Ministério da Saúde. Ele admitiu erros na saúde durante a pandemia, no governo do pai, e disse que Jair Bolsonaro "deu o seu melhor". Lula perguntou se a proposta significaria privatizar o SUS e lembrou as mais de 700 mil mortes na pandemia.',
+    '## Economia',
+    'Flávio propôs criar um Ministério da Prosperidade e renegociar as dívidas das famílias, e explicou por que votou a favor do fim da escala 6x1 depois de ter se declarado contra. Lula citou R$ 725 bilhões do programa Nova Indústria Brasil e defendeu reajustes do salário mínimo acima da inflação para trabalhadores e aposentados.',
+    '## Sigilos e Banco Master',
+    'Flávio cobrou explicações sobre a lobista Roberta Luchsinger e sobre gastos de Fábio Luís Lula da Silva, filho do presidente, no exterior. Lula disse que o filho abriu os sigilos de forma voluntária, acusou Flávio de espalhar desinformação sobre o caso Banco Master e propôs que os dois candidatos abrissem os sigilos bancário e telefônico das famílias ao STF e ao TSE antes da eleição. Segundo a CNN Brasil, Flávio não aceitou.',
+    'Houve também ataques pessoais. Lula disse que Flávio tem "a carinha do malandro carioca", segundo o Poder360. Depois do debate, apoiadores de Flávio lançaram nas redes a campanha "carioca não é malandro".',
+    '## Avaliações e audiência',
+    'Analistas ouvidos pela BBC News Brasil divergiram: para um, Lula foi repetitivo; para outro, Flávio pautou o debate; um terceiro viu Lula melhor no conjunto, mas sem vencedor claro. Segundo dados prévios do Kantar Ibope publicados pelo Correio Braziliense, a Band marcou 12,6 pontos no Painel Nacional entre 21h03 e 22h11, à frente da Globo nesse intervalo. O segundo turno é no domingo, 25 de outubro.'
+  ],
+  box: { type: 'facts', title: 'O debate em resumo', rows: [['Flávio: segurança', 'Facções como narcoterroristas e fim da saidinha'], ['Lula: segurança', 'Saidinha só no semiaberto, sem crimes hediondos'], ['Flávio: saúde', '"SUS padrão Einstein"'], ['Lula: economia', 'Salário mínimo acima da inflação'], ['Próximo debate', 'Globo, sexta (23)']] },
+  sources: [['Band', U.bandDebate18], ['CNN Brasil', U.cnnChegada18], ['CNN Brasil', U.cnnAnaliseDebate], ['Poder360', U.p360Debate18], ['Poder360', U.p360Malandro], ['BBC News Brasil / O Povo', U.bbcDebate], ['Correio Braziliense', U.cbAudiencia], ['PlatôBR', U.platoDebate]] },
+
+{ id: 'atos-paulista-flavio-capitais-lula', cat: 'nacional', own: true, t: '2026-10-18T19', d: '18 out 2026', img: 'protesto', read: 3,
+  title: 'No último domingo antes do 2º turno, Flávio faz ato na Paulista, e aliados de Lula vão às ruas em capitais',
+  sum: 'A contagem da USP registrou 71,9 mil pessoas no pico do ato de Flávio, número contestado pelos organizadores. No Rio, o ato musical convocado por Caetano Veloso reuniu 56,4 mil às 18h, pela mesma contagem.',
+  body: [
+    'Apoiadores dos dois candidatos à Presidência foram às ruas no domingo (18), a uma semana do segundo turno. Flávio Bolsonaro (PL) participou pela manhã de um ato na Avenida Paulista, em São Paulo. Lula (PT) ficou em Brasília se preparando para o debate da Band, enquanto aliados fizeram atos em várias capitais, segundo a CNN Brasil.',
+    '## Flávio na Paulista',
+    'O ato começou por volta das 11h20. Em discurso curto, Flávio disse que o Brasil "está sem presidente, mas é por pouco tempo" e pediu que os apoiadores assistissem ao debate, segundo o Metrópoles. Estavam com ele o governador Tarcísio de Freitas e o prefeito Ricardo Nunes, entre outros políticos.',
+    'O Monitor do Debate Político da USP, que trabalha com o Cebrap e a More in Common, contou 71,9 mil pessoas no momento de maior público. Os organizadores contestaram o número. Manifestantes exibiram um míssil inflável com uma frase que pedia a Trump uma bomba nuclear no Brasil, e o ministro Guilherme Boulos criticou o episódio. A reportagem não traz resposta da campanha de Flávio.',
+    '## Atos pró-Lula',
+    'No Rio, Chico Buarque discursou na Candelária, segundo o Congresso em Foco. À tarde, um ato musical convocado por Caetano Veloso e pelo movimento 342 Artes ocupou a Avenida Atlântica, em Copacabana, com Djavan, Marina Sena, Duda Beat e outros artistas. A contagem da USP estimou 56,4 mil pessoas às 18h, com margem de 12%, segundo o Metrópoles. Os artistas foram orientados a não usar vermelho nem pedir voto de forma explícita.',
+    'Em Salvador, houve ato em Ondina com Daniela Mercury e Gilberto Gil. Também houve atos em Brasília, Curitiba, Porto Alegre e na periferia de São Paulo, segundo o Congresso em Foco.',
+    '## Decisão do TSE',
+    'No mesmo dia, o corregedor-geral do TSE, Ricardo Villas Bôas Cueva, negou o pedido do Novo para barrar os atos com artistas. Segundo o SBT News, ele não viu prova concreta de showmício nem de ligação com a campanha oficial, mas ressaltou que a decisão não declara os eventos lícitos.'
+  ],
+  box: { type: 'facts', title: 'O domingo nas ruas', rows: [['Ato de Flávio (Paulista)', '71,9 mil no pico, segundo a USP'], ['Ato musical (Copacabana)', '56,4 mil às 18h, segundo a USP'], ['Outros atos pró-Lula', 'Salvador, Brasília, Curitiba, Porto Alegre e SP'], ['TSE', 'Negou pedido do Novo para barrar atos com artistas']] },
+  sources: [['Metrópoles', U.metPaulista], ['Metrópoles', U.metBoulos], ['Metrópoles', U.metCopacabana], ['Congresso em Foco', U.cefAtos], ['CNN Brasil', U.cnnAtos18], ['SBT News', U.sbtAtos]] },
+
+{ id: 'agenda-lula-porto-alegre-flavio-manaus', cat: 'nacional', own: false, t: '2026-10-19T05', d: '19 out 2026', img: 'eleicao', src: 'Metrópoles', url: U.metAgendas19,
+  title: 'Lula faz ato em Porto Alegre, e Flávio vai a Marabá e Manaus nesta segunda',
+  sum: 'Lula tem ato às 16h no Largo dos Açorianos. Flávio faz motocarreata em Marabá (PA) às 11h e evento à noite em Manaus.',
+  body: [
+    'O evento de Flávio Bolsonaro em Manaus está marcado para as 19h no horário local (20h de Brasília), no Complexo Turístico da Ponta Negra. O ato de Lula fica no Centro Histórico de Porto Alegre.',
+    'As agendas foram divulgadas pelas campanhas e podem mudar. O segundo turno é no domingo, 25 de outubro.'
+  ] },
+
+{ id: 'secoes-eleitorais-mudam-local-segundo-turno', cat: 'nacional', own: false, t: '2026-10-17T12', d: '17 out 2026', img: 'eleicao', src: 'Agência Brasil', url: U.abSecoes,
+  title: 'Mais de 4 mil seções eleitorais mudaram de local para o segundo turno',
+  sum: 'São 4.352 seções, 0,87% do total. São Paulo tem 982 mudanças, seguido por Minas Gerais (514), Rio (431) e Bahia (312).',
+  body: [
+    'Os motivos incluem reformas nos prédios, acessibilidade e danos causados por chuva e vento. O eleitor pode consultar o local de votação no aplicativo e-Título ou no site do TRE do seu estado.',
+    'A votação, no domingo (25), vai das 8h às 17h.'
+  ] },
+
+{ id: 'temporal-ilheus-bahia-125-mm', cat: 'nacional', own: false, t: '2026-10-18T12', d: '18 out 2026', img: 'protesto', src: 'Correio', url: U.correioIlheus,
+  title: 'Temporal no sul da Bahia: Ilhéus registra 125 mm de chuva e tem desabamento em encosta',
+  sum: 'A prefeitura diz que foi o maior volume em anos. O Inmet mantém alerta amarelo para boa parte do estado até terça (20).',
+  body: [
+    'Parte de uma encosta desabou no Alto do Nerival, e o trecho foi interditado. Houve ruas alagadas em Itacaré, queda de árvores em Trancoso e muros derrubados em Itamaraju. Em Medeiros Neto, vento e granizo destelharam casas.',
+    'A reportagem não informa mortos nem feridos. O alerta prevê de 20 a 30 mm de chuva por hora e ventos de 40 a 60 km/h.'
+  ] },
 
 { id: 'pesquisas-vox-ipespe-verita-segundo-turno', cat: 'nacional', own: true, t: '2026-10-18T07', d: '18 out 2026', img: 'eleicao', read: 3,
   title: 'A uma semana do segundo turno, novas pesquisas mantêm Lula e Flávio em empate técnico',
@@ -573,36 +696,6 @@ const NEWS = [
   box: { type: 'table', title: 'Votos válidos no 2º turno', head: ['Pesquisa', 'Lula', 'Flávio'], rows: [['Vox Brasil (15 a 17 out)', '51%', '49%'], ['Ipespe (13 a 15 out)', '48,8%', '51,2%'], ['Veritá (12 a 16 out)', '48,9%', '51,1%'], ['Datafolha (divulgada em 15 out)', '49%', '51%']], note: 'Margens de erro: Vox 2,15 pontos; Ipespe 2,6; Veritá 1; Datafolha 2. Fontes: Poder360, Metrópoles e CNN Brasil.' },
   sources: [['Poder360', U.p360Vox], ['Metrópoles', U.metVox], ['Metrópoles', U.metIpespe17], ['CNN Brasil', U.cnnIpespe17], ['CNN Brasil', U.cnnVerita], ['Times Brasil', U.tbProximas]] },
 
-{ id: 'flavio-atos-lula-prepara-debate-band', cat: 'nacional', own: true, t: '2026-10-18T08', d: '18 out 2026', img: 'eleicao', read: 3,
-  title: 'Flávio faz atos em Vitória e Salvador; Lula fica em Brasília e se prepara para o debate da Band',
-  sum: 'O primeiro debate do segundo turno entre os dois é neste domingo (18), às 20h. No sábado, Flávio esteve com Tarcísio e Nikolas Ferreira. O PT diz que Lula quer o confronto direto.',
-  body: [
-    'Os dois candidatos à Presidência passaram o sábado (17) de formas diferentes, na véspera do debate da Band, marcado para este domingo (18), às 20h, nos estúdios da emissora em São Paulo. Segundo a Band, o debate será transmitido em parceria com TV Cultura, TV Gazeta, Jovem Pan e Estadão.',
-    '## Flávio no Espírito Santo e na Bahia',
-    'Flávio Bolsonaro (PL) fez pela manhã um ato com trio elétrico na orla de Camburi, em Vitória, num trajeto de pouco mais de 2 km até Jardim da Penha, segundo o jornal A Gazeta. Em um discurso de cerca de cinco minutos, disse que "a era do PT vai acabar" e prometeu governar também para quem votou no adversário. Estavam com ele o governador reeleito de São Paulo, Tarcísio de Freitas, e o deputado Nikolas Ferreira (PL-MG).',
-    'À tarde, em Salvador, os apoiadores caminharam do Morro do Cristo até o Farol da Barra. Segundo A Tarde, participaram ACM Neto e o prefeito Bruno Reis, ambos do União Brasil. No primeiro turno, Lula teve 66,17% dos votos válidos na Bahia, e Flávio, 28,53%, segundo O Tempo.',
-    '## Lula em Brasília',
-    'Lula (PT) não teve agenda pública no fim de semana. Segundo a coluna de Igor Gadelha, no Metrópoles, ele ficou em Brasília com ministros e coordenadores da campanha para se preparar para o debate. A estratégia, segundo a coluna, é questionar a proposta de Flávio de cortar cerca de R$ 250 bilhões em gastos.',
-    'O presidente do PT, Edinho Silva, disse ao Poder360 que Lula está tranquilo, estudando as regras do debate, e que o partido quer o confronto direto com Flávio. Segundo a Band, Flávio voltou a São Paulo para fazer os ajustes finais com a equipe. O segundo turno é no domingo, 25 de outubro.'
-  ],
-  box: { type: 'facts', title: 'O fim de semana', rows: [['Flávio (sábado)', 'Atos em Vitória e Salvador'], ['Lula (sábado)', 'Preparação em Brasília, sem agenda pública'], ['Debate da Band', 'Domingo (18), às 20h'], ['Segundo turno', '25 de outubro']] },
-  sources: [['A Gazeta', U.agazetaFlavio], ['A Tarde', U.atardeFlavio], ['O Tempo', U.otAgendas17], ['Metrópoles', U.metLulaDebate], ['Poder360', U.p360Edinho], ['Band', U.bandDebate]] },
-
-{ id: 'congresso-promulga-fim-escala-6x1', cat: 'nacional', own: true, t: '2026-10-16T12', d: '16 out 2026', img: 'congresso', read: 3,
-  title: 'Congresso promulga o fim da escala 6x1; duas folgas por semana começam a valer em 60 dias',
-  sum: 'A Emenda Constitucional 141 troca a escala 6x1 pela 5x2, sem corte de salário. A jornada máxima cai para 42 horas em 60 dias e para 40 horas em 14 meses.',
-  body: [
-    'O Congresso Nacional promulgou na sexta-feira (16), em sessão solene, a emenda à Constituição que acaba com a escala 6x1. O texto virou a Emenda Constitucional 141 de 2026. O presidente do Congresso, Davi Alcolumbre (União-AP), conduziu a sessão, que teve a presença do presidente Lula e do presidente da Câmara, Hugo Motta (Republicanos-PB), segundo a Agência Senado.',
-    '## O que muda',
-    'A escala 6x1 dá lugar à 5x2, com duas folgas por semana e sem redução de salário. Sessenta dias depois da publicação, a jornada máxima cai de 44 para 42 horas semanais, e começam as duas folgas, uma delas de preferência no domingo. Catorze meses depois da publicação, o limite chega a 40 horas.',
-    'Segundo a Agência Senado, a regra não vale para os servidores públicos nem para empregados com diploma de curso superior que ganham pelo menos 2,5 vezes o teto dos benefícios do INSS.',
-    '## A votação',
-    'O Senado aprovou a proposta na noite de quarta (14), por 75 votos a 1, nos dois turnos. O único voto contrário foi do senador Hamilton Mourão (Republicanos-RS). Segundo a Agência Brasil, o governo apoiou o texto. A oposição tentou adiar a votação, depois liberou a bancada, e a maioria votou a favor.',
-    'Na mesma sessão, o Congresso promulgou a Emenda Constitucional 140, que garante aposentadoria especial aos agentes comunitários de saúde.'
-  ],
-  box: { type: 'facts', title: 'A Emenda 141', rows: [['Escala', '5x2, com duas folgas por semana'], ['Em 60 dias', 'Até 42 horas semanais e duas folgas'], ['Em 14 meses', 'Até 40 horas semanais'], ['Salário', 'Sem redução'], ['Votação no Senado', '75 a 1']] },
-  sources: [['Agência Senado', U.senPromulga], ['Agência Brasil', U.abPromulga], ['Agência Brasil', U.ab6x1]] },
-
 { id: 'tse-proibe-propaganda-flavio-saidinhas', cat: 'nacional', own: false, t: '2026-10-16T20', d: '16 out 2026', img: 'congresso', src: 'Metrópoles', url: U.metSaidinha,
   title: 'Ministra do TSE proíbe propaganda de Flávio que liga Lula a crimes cometidos em saidinhas',
   sum: 'Estela Aranha atendeu a um pedido da campanha de Lula. A peça não pode ser exibida de novo até o julgamento do mérito.',
@@ -611,36 +704,12 @@ const NEWS = [
     'A campanha de Lula disse que a fala tratava dos laços familiares como forma de ressocialização. A reportagem não traz a posição da campanha de Flávio.'
   ] },
 
-{ id: 'carta-departamento-estado-eleicao-brasil', cat: 'nacional', own: false, t: '2026-10-17T08', d: '17 out 2026', img: 'mundo', src: 'InfoMoney / Estadão Conteúdo', url: U.imCartaEua,
-  title: 'Governo Trump diz em carta apoiar eleição "livre e justa" no Brasil e defende sanções a Moraes',
-  sum: 'O Departamento de Estado respondeu a 30 deputados democratas e ao senador Bernie Sanders, que perguntaram sobre uma possível interferência dos EUA na eleição.',
-  body: [
-    'A carta, datada de 15 de outubro, diz que os EUA vão continuar trabalhando com o governo eleito. Segundo a Gazeta do Povo, o texto não garante de forma explícita o reconhecimento do resultado.',
-    'O documento também defende as sanções ao ministro Alexandre de Moraes, do STF, e a classificação do PCC e do CV como grupos terroristas.'
-  ] },
-
-{ id: 'chuvas-estragos-cidades-sao-paulo', cat: 'nacional', own: false, t: '2026-10-17T09', d: '17 out 2026', img: 'protesto', src: 'CNN Brasil', url: U.cnnChuvasSp,
-  title: 'Temporais causam estragos em ao menos nove cidades de São Paulo',
-  sum: 'Houve desabamento de muros em Arujá, deslizamentos e alagamentos. O Inmet manteve alerta de temporais para o Sul, o Sudeste e o Centro-Oeste.',
-  body: [
-    'Segundo a Defesa Civil, uma família ficou desalojada em Arujá, e um raio matou oito cabeças de gado em São Luiz do Paraitinga. Em Santo André, uma sacada desabou, e três pessoas saíram ilesas.',
-    'O estado registra 21 mortes por chuva em 2026. O alerta prevê rajadas de vento que podem passar de 90 km/h e granizo.'
-  ] },
-
 { id: 'mendonca-suspende-propaganda-lula-milicias', cat: 'nacional', own: false, t: '2026-10-15T20', d: '15 out 2026', img: 'congresso', src: 'Diário de Pernambuco / Estadão Conteúdo', url: U.dpMendonca,
   title: 'Ministro do TSE suspende propaganda de Lula que associa Flávio às milícias',
   sum: 'André Mendonça atendeu a um pedido da campanha de Flávio e fixou multa de R$ 10 mil por nova exibição. O caso vai ao plenário do TSE.',
   body: [
     'A peça foi ao ar no horário eleitoral de 13 de outubro. Segundo a decisão, ela usou figuras criadas por inteligência artificial para simular relatos de vítimas e sugeria, sem provas, uma ligação de Flávio com o crime.',
     'O ministro citou uma decisão anterior do TSE que suspendeu propaganda que ligava Lula ao crime organizado. A assessoria de Lula não respondeu.'
-  ] },
-
-{ id: 'vorcaro-depoe-pf-nega-fraude-brb', cat: 'nacional', own: false, t: '2026-10-15T20', d: '15 out 2026', img: 'congresso', src: 'Metrópoles', url: U.metVorcaro,
-  title: 'Vorcaro presta novo depoimento à PF e nega fraude de R$ 12 bilhões no BRB',
-  sum: 'O dono do Banco Master falou por quase quatro horas e chamou a acusação de fantasiosa.',
-  body: [
-    'Foi o terceiro depoimento de Daniel Vorcaro à Polícia Federal. Ele está em prisão preventiva desde 4 de março, na Papudinha, em Brasília. O ex-presidente do BRB Paulo Henrique Costa está preso desde 16 de abril.',
-    'A defesa de Vorcaro pretendia apresentar sua contestação na área cível na sexta-feira (16).'
   ] },
 
 { id: 'governadores-apoios-segundo-turno', cat: 'nacional', own: false, t: '2026-10-16T12', d: '16 out 2026', img: 'eleicao', src: 'O Povo', url: U.opovoGovernadores,
@@ -662,6 +731,77 @@ const NEWS = [
 
 /* ===================== INTERNACIONAL ===================== */
 
+{ id: 'trump-apoia-netanyahu-eleicao-israel', cat: 'internacional', own: true, t: '2026-10-18T16', d: '18 out 2026', img: 'mundo', read: 3,
+  title: 'Trump declara apoio a Netanyahu a nove dias da eleição em Israel e diz que vai "terminar o trabalho" no Irã',
+  sum: 'Segundo o site Axios, é a primeira vez que um presidente dos EUA apoia em público um candidato numa eleição israelense. A votação é em 27 de outubro.',
+  body: [
+    'O presidente dos EUA, Donald Trump, publicou no domingo (18), na rede Truth Social, um apoio "completo e total" ao primeiro-ministro de Israel, Binyamin Netanyahu, a quem chamou de grande parceiro na guerra contra o Irã. A eleição israelense é na terça, 27 de outubro.',
+    '## O recado sobre o Irã',
+    'Trump escreveu que, se Israel escolher outro líder, os EUA teriam de cuidar sozinhos do Irã, e que não está inclinado a fazer isso. Ele também disse que "em breve" os dois países vão "terminar o trabalho". Para o Axios, a frase indica que Trump pode deixar Netanyahu atacar o Irã depois das eleições de meio de mandato nos EUA, em 3 de novembro.',
+    'Segundo o Axios, os dois discutiram há cerca de duas semanas uma possível nova grande operação contra o Irã antes das eleições nos dois países, mas Trump preferiu esperar. Em entrevista por telefone ao site, ele disse que sempre pretendeu declarar o apoio, mas não queria fazer isso cedo demais.',
+    '## Disputa apertada',
+    'Para governar, uma coalizão precisa de 61 cadeiras no Parlamento, e a maioria das pesquisas mostra o grupo de Netanyahu abaixo disso. Segundo a agência JTA, ele aparece atrás do ex-chefe do Estado-Maior Gadi Eisenkot em levantamentos recentes. Eisenkot disse que só os cidadãos de Israel decidem a eleição e pediu que não haja interferência. O ministro Bezalel Smotrich apoiou a declaração de Trump.',
+    '## Resposta do Irã',
+    'O chanceler iraniano, Abbas Araghchi, respondeu no X que, da última vez que Trump quis "terminar o trabalho", o Irã saiu mais forte, segundo a JTA.'
+  ],
+  box: { type: 'facts', title: 'O calendário', rows: [['Eleição em Israel', '27 de outubro'], ['Maioria no Parlamento', '61 cadeiras'], ['Eleições nos EUA', '3 de novembro'], ['À frente em pesquisas recentes', 'Gadi Eisenkot']] },
+  sources: [['Axios', U.axNetanyahu], ['JTA', U.jtaNetanyahu]] },
+
+{ id: 'egito-apoio-arabia-saudita-guerra-iemen', cat: 'internacional', own: true, t: '2026-10-18T18', d: '18 out 2026', img: 'mundo', read: 3,
+  title: 'Egito promete apoio à Arábia Saudita contra os hutis, e guerra no Iêmen já deslocou mais de 233 mil pessoas',
+  sum: 'O Conselho de Defesa egípcio aprovou "todas as formas possíveis de apoio". Os ataques dos hutis já mataram ao menos 19 pessoas na Arábia Saudita.',
+  body: [
+    'O Conselho de Defesa Nacional do Egito, presidido por Abdel Fattah al-Sisi, aprovou no domingo (18) todas as formas possíveis de apoio à Arábia Saudita, sem dar detalhes, segundo a agência AP. No sábado, Sisi tinha pedido ao Parlamento autorização para enviar tropas ao exterior. A Câmara encerrou a sessão de domingo sem votar, e a discussão continua nesta segunda (19), segundo a agência Xinhua.',
+    '## Ataques dos dois lados',
+    'Os ataques dos hutis já mataram ao menos 19 pessoas na Arábia Saudita e afetaram milhares de voos, segundo a AP. No domingo, um ataque aéreo em Saada, no norte do Iêmen, matou ao menos nove pessoas, entre elas cinco crianças, segundo o Ministério da Saúde dos hutis, que culpam os sauditas. A Arábia Saudita não comentou.',
+    'Um helicóptero saudita caiu em Najran, e os dois tripulantes morreram. A coalizão liderada pelos sauditas fala em falha técnica, e os hutis dizem que o derrubaram. Um projétil huti feriu seis pessoas numa área residencial da mesma cidade.',
+    '## Golfo unido',
+    'Reunido em Manama, no Bahrein, o Conselho de Cooperação do Golfo declarou que a segurança dos países-membros é indivisível, segundo a Xinhua. Omã propôs uma trégua de cinco dias, informa a AP.',
+    '## Crise humanitária',
+    'A Organização Internacional para as Migrações conta mais de 233 mil deslocados no Iêmen, cerca de 121 mil deles em Taiz. Segundo a OMS, os 12 hospitais de Taiz têm combustível para quatro dias, em meio a um surto de cólera, informa a Al Jazeera.'
+  ],
+  box: { type: 'facts', title: 'A guerra no Iêmen', rows: [['Mortos na Arábia Saudita', 'Ao menos 19'], ['Mortos em Saada (domingo)', 'Ao menos 9'], ['Deslocados no Iêmen', 'Mais de 233 mil'], ['Parlamento do Egito', 'Votação continua nesta segunda']] },
+  sources: [['AP / PBS', U.pbsEgito], ['Xinhua', U.xinhuaEgito], ['Al Jazeera', U.ajIemen18]] },
+
+{ id: 'ira-plano-sete-dias-reabrir-ormuz', cat: 'internacional', own: false, t: '2026-10-18T20', d: '18 out 2026', img: 'mundo', src: 'ANI', url: U.aniOrmuz,
+  title: 'Irã diz que apresentou aos EUA um plano de sete dias para reabrir Ormuz',
+  sum: 'Pelo plano, o estreito reabriria no sexto dia, se Washington cumprir as condições de Teerã, e as negociações recomeçariam no sétimo.',
+  body: [
+    'Segundo o chanceler Abbas Araghchi, seria melhor fechar um acordo antes das eleições de meio de mandato nos EUA. Ele falou numa reunião de chanceleres da Organização para a Cooperação Islâmica.',
+    'O presidente Masoud Pezeshkian disse que o país não vai se curvar aos excessos de países agressores.'
+  ] },
+
+{ id: 'macron-raiva-vergonha-franca-detidos', cat: 'internacional', own: false, t: '2026-10-18T21', d: '18 out 2026', img: 'protesto', src: 'Al Jazeera', url: U.ajMacron,
+  title: 'Macron diz sentir "raiva e vergonha" com tumultos na França; detidos chegam a cerca de 2.400',
+  sum: 'Segundo o Ministério do Interior, cerca de 1.000 policiais e gendarmes ficaram feridos no sábado. Macron criou uma célula de crise, mas não decretou estado de emergência.',
+  body: [
+    'Em pronunciamento na TV no domingo (18), o presidente disse que os vândalos vão pagar por seus crimes. Não houve toque de recolher.',
+    'O líder da esquerda Jean-Luc Mélenchon disse que o governo é o único responsável. O líder da extrema direita, Jordan Bardella, chamou o discurso de lamentável.'
+  ] },
+
+{ id: 'trump-defende-alivio-sancoes-russia-zelensky', cat: 'internacional', own: false, t: '2026-10-19T02', d: '19 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajTrumpZelensky,
+  title: 'Trump defende alívio de sanções à Rússia e diz que Zelensky nunca quis acabar com a guerra',
+  sum: 'Zelensky disse à rede NBC que a suspensão das sanções prejudica a Ucrânia.',
+  body: [
+    'Trump escreveu que não quer afastar a Rússia da mesa de negociação. Zelensky disse que os EUA retomaram o compartilhamento de informações de inteligência com Kiev e que conversou com os enviados americanos Steve Witkoff e Jared Kushner.'
+  ] },
+
+{ id: 'alberta-referendo-separacao-canada', cat: 'internacional', own: false, t: '2026-10-19T06', d: '19 out 2026', img: 'eleicao', src: 'Al Jazeera', url: U.ajAlberta,
+  title: 'Alberta vota nesta segunda se inicia processo de separação do Canadá',
+  sum: 'É o primeiro referendo de independência da história da província. Nas pesquisas, cerca de quatro em cada cinco eleitores querem continuar no Canadá.',
+  body: [
+    'A cédula pergunta se Alberta deve continuar no Canadá ou se o governo deve iniciar o processo legal para um futuro referendo vinculante de separação. A premiê da província, Danielle Smith, votou contra a separação.',
+    'O primeiro-ministro Mark Carney chamou a proposta de blefe perigoso. Duas semanas antes, o separatista Parti Québécois venceu a eleição em Quebec.'
+  ] },
+
+{ id: 'incendio-base-militar-canada-quatro-mortos', cat: 'internacional', own: false, t: '2026-10-18T10', d: '18 out 2026', img: 'mundo', src: 'EFE / La Patilla', url: U.efeWainwright,
+  title: 'Incêndio em base militar no Canadá mata quatro soldados durante exercício',
+  sum: 'Outras 39 pessoas estão hospitalizadas, 19 em estado crítico. O fogo atingiu a base de Wainwright, em Alberta.',
+  body: [
+    'Uma mudança brusca de vento levou as chamas por cerca de 1 km em menos de um minuto durante exercícios com munição real. As autoridades dizem não haver sinais de sabotagem, e a causa é investigada.',
+    'O primeiro-ministro Mark Carney chamou o caso de uma das piores tragédias das Forças Armadas em tempo de paz e mandou baixar as bandeiras a meio mastro.'
+  ] },
+
 { id: 'ira-minas-ormuz-estreito-fechado', cat: 'internacional', own: true, t: '2026-10-17T10', d: '17 out 2026', img: 'mundo', read: 3,
   title: 'Irã diz que dois superpetroleiros pegaram fogo ao bater em minas e declara Ormuz fechado',
   sum: 'Cada navio levava cerca de 2 milhões de barris de petróleo. Os EUA dizem que o estreito continua aberto. Outubro tem o maior número de ataques a navios desde março.',
@@ -679,52 +819,12 @@ const NEWS = [
   box: { type: 'facts', title: 'Ormuz em outubro', rows: [['Petroleiros atingidos', '2, com cerca de 2 milhões de barris cada'], ['Ataques na semana', '10, segundo a UKMTO'], ['Fluxo em 8 de outubro', '20,8 milhões de barris'], ['Fluxo em 11 de outubro', '2,9 milhões de barris'], ['Posição dos EUA', 'Estreito segue aberto']] },
   sources: [['Al Jazeera', U.ajMinas], ['Euronews', U.euroMinas], ['Middle East Eye', U.meeOrmuz], ['AP', U.apResumo17], ['CBS News', U.cbsOrmuz17]] },
 
-{ id: 'franca-protestos-550-mil-presos', cat: 'internacional', own: true, t: '2026-10-17T20', d: '17 out 2026', img: 'protesto', read: 3,
-  title: 'Protestos levam 550 mil às ruas na França; governo fala em 1.200 presos e 150 policiais feridos',
-  sum: 'O movimento começou em escolas e cresceu com sindicatos. Houve incêndios em prefeituras e saques em Paris. O premiê Lecornu diz que o governo não será intimidado.',
-  body: [
-    'Cerca de 550 mil pessoas foram às ruas na França no sábado (17), segundo o ministro do Interior, Laurent Nuñez. A central sindical CGT calcula 800 mil. Segundo a agência Reuters, foi um público maior que o pico dos protestos dos "coletes amarelos", mas bem menor que o dos atos contra a reforma da Previdência de 2023.',
-    '## Prisões e violência',
-    'O primeiro-ministro, Sébastien Lecornu, disse que cerca de 1.200 pessoas foram presas e que mais de 150 policiais ficaram feridos. Em Limoges, a prefeitura foi incendiada. Em Marselha, manifestantes invadiram e picharam a prefeitura. Em Lyon, o posto de turismo foi queimado, e em Paris houve saques a bancos e lojas.',
-    'Nuñez confirmou que uma pessoa perdeu uma das mãos nos confrontos. O órgão que fiscaliza a polícia investiga denúncias de violência policial, segundo a Reuters.',
-    '## Como começou',
-    'O movimento nasceu em meados de setembro em escolas de ensino médio, com queixas sobre falta de professores, salas lotadas e prédios em mau estado, segundo a Al Jazeera. Depois, aderiram professores, enfermeiros, bombeiros e sindicatos, que pedem salários e aposentadorias maiores.',
-    '## O governo',
-    'Lecornu disse que o governo não vai se deixar intimidar e culpou grupos de extrema esquerda e criminosos. O presidente Emmanuel Macron prometeu punir os responsáveis e escreveu que o país ficará unido contra quem semeia o caos.',
-    'No mesmo dia, dezenas de milhares de pessoas marcharam em Lisboa contra o preço da moradia, e houve protestos com confrontos em Bruxelas e na Itália.'
-  ],
-  box: { type: 'facts', title: 'O sábado na França', rows: [['Manifestantes', '550 mil (governo) ou 800 mil (CGT)'], ['Presos', 'Cerca de 1.200'], ['Policiais feridos', 'Mais de 150'], ['Prefeituras atacadas', 'Limoges e Marselha']] },
-  sources: [['Reuters / Korea Times', U.rtFranca], ['Al Jazeera', U.ajFranca17]] },
-
-{ id: 'ucrania-abandona-tregua-energia-ataques', cat: 'internacional', own: true, t: '2026-10-18T06', d: '18 out 2026', img: 'mundo', read: 3,
-  title: 'Drones ucranianos atingem terminal de petróleo em São Petersburgo; Rubio diz que alívio nas sanções é pausa de 60 dias',
-  sum: 'Autoridades russas dizem ter derrubado 127 drones na região. A Ucrânia abandonou a trégua de energia na quinta, e ataques russos deixaram ao menos 8 mortos na sexta.',
-  body: [
-    'A Ucrânia fez na madrugada de domingo (18) um grande ataque com drones contra São Petersburgo, a segunda maior cidade da Rússia, segundo o Kyiv Independent. O governador da região de Leningrado, Aleksandr Drozdenko, disse que 127 drones foram derrubados. Destroços danificaram carros e provocaram incêndios.',
-    'Segundo a imprensa estatal russa, foram atingidos o Terminal de Petróleo de São Petersburgo e um centro de dados da rede social VK. O governador da cidade confirmou o impacto no terminal, que tem 32 tanques, segundo o site Militarnyi. O Kyiv Independent diz que não conseguiu verificar os alvos de forma independente.',
-    '## Sanções',
-    'O secretário de Estado americano, Marco Rubio, disse no domingo que a dispensa das novas sanções contra a Rússia, assinada por Donald Trump na sexta (16), é uma pausa de 60 dias para avaliar o efeito de sanções e tarifas na economia mundial. Na véspera, o presidente ucraniano, Volodymyr Zelensky, disse que Trump estava errado.',
-    '## Ataques russos',
-    'A Ucrânia deixou na quinta (15) a trégua que poupava a infraestrutura de energia, afirmando que a Rússia não a respeitou. Na sexta, ataques russos atingiram nove regiões ucranianas e deixaram ao menos 8 mortos e 60 feridos, segundo a Al Jazeera. A energia foi restabelecida para mais de 1 milhão de pessoas.',
-    'Segundo a ONU, citada pela Al Jazeera, 2.570 civis morreram na Ucrânia de janeiro a setembro de 2026, quase 60% a mais que no mesmo período de 2025. A União Europeia prepara o 22º pacote de sanções contra a Rússia.'
-  ],
-  box: { type: 'facts', title: 'O fim de semana na guerra', rows: [['São Petersburgo', '127 drones derrubados, segundo a Rússia'], ['Alvos citados', 'Terminal de petróleo e centro de dados'], ['Sanções dos EUA', 'Pausa de 60 dias, diz Rubio'], ['Sexta (16)', 'Ao menos 8 mortos em nove regiões'], ['Civis mortos em 2026', '2.570 até setembro, segundo a ONU']] },
-  sources: [['Kyiv Independent', U.kiSpb], ['Militarnyi', U.milSpb], ['Kyiv Independent', U.kiRubio], ['Al Jazeera', U.ajUcrania17], ['Kyiv Independent', U.kiUe]] },
-
 { id: 'papa-leao-cirurgia-pulmao', cat: 'internacional', own: false, t: '2026-10-17T11', d: '17 out 2026', img: 'mundo', src: 'Vatican News', url: U.vnAlta,
   title: 'Papa Leão XIV recebe alta quatro dias depois da cirurgia no pulmão e volta ao Vaticano',
   sum: 'Os médicos disseram que ele estava apto a deixar o Hospital Gemelli no sábado (17). Antes de sair, celebrou missa no hospital.',
   body: [
     'O papa foi operado na terça (13) para retirar o lobo inferior do pulmão direito, onde foi encontrado um adenocarcinoma, um tipo de câncer de pulmão. Os exames de sangue e a radiografia feitos no sábado confirmaram a boa recuperação.',
     'As audiências seguem canceladas até 20 de outubro. A viagem à América do Sul está marcada para 6 de novembro.'
-  ] },
-
-{ id: 'egito-parlamento-defesa-arabia-saudita', cat: 'internacional', own: false, t: '2026-10-17T14', d: '17 out 2026', img: 'mundo', src: 'The National', url: U.tnEgito,
-  title: 'Presidente do Egito pede ao Parlamento aval para defender a Arábia Saudita dos hutis',
-  sum: 'Abdel Fattah al-Sisi pediu uma sessão de emergência para autorizar uma ação militar caso os sauditas peçam ajuda. Ele disse que o objetivo é só defender.',
-  body: [
-    'Desde o início de outubro, os hutis, grupo do Iêmen apoiado pelo Irã, fizeram 20 ataques ao principal aeroporto de Riade, com 17 mortos e mais de 300 feridos, segundo o The National.',
-    'A sessão do Parlamento egípcio foi marcada para domingo (18).'
   ] },
 
 { id: 'colonos-atacam-diplomatas-europeus-cisjordania', cat: 'internacional', own: false, t: '2026-10-17T16', d: '17 out 2026', img: 'protesto', src: 'Al Jazeera', url: U.ajDiplomatas,
@@ -735,71 +835,55 @@ const NEWS = [
     'Na sexta (16), a fotojornalista Heidi Levine, do Washington Post, foi agredida por colonos em outra vila. O secretário de Estado americano, Marco Rubio, disse estar muito perturbado com o vídeo do ataque.'
   ] },
 
-{ id: 'trump-descarta-bomba-nuclear-ira', cat: 'internacional', own: false, t: '2026-10-16T10', d: '16 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajTrumpNuclear,
-  title: 'Trump descarta usar bomba nuclear contra o Irã, mas não exclui novos ataques a Natanz',
-  sum: 'Em entrevista à Newsmax, o presidente americano disse que não precisa de armas nucleares e que não vê o envio de tropas terrestres.',
-  body: [
-    'Foi a primeira vez que Trump descartou de forma definitiva o uso de armas nucleares, inclusive as táticas. Ele não excluiu a bomba GBU-43/B, conhecida como "mãe de todas as bombas", com cerca de 8.500 kg de explosivos, e disse que os EUA podem voltar a atacar instalações nucleares, em especial a de Pickaxe Mountain, em Natanz.',
-    'Segundo a Al Jazeera, uma nova fase da guerra é provável depois das eleições americanas de 3 de novembro.'
-  ] },
-
-{ id: 'ormuz-petroleiro-indiano-atingido', cat: 'internacional', own: false, t: '2026-10-16T15', d: '16 out 2026', img: 'mundo', src: 'The National', url: U.tnOrmuz,
-  title: 'Petroleiro com 15 indianos é atingido no Estreito de Ormuz; tripulação está a salvo',
-  sum: 'O navio MT ST 3 foi atingido por um projétil na sexta (16). Dias antes, um porta-contêineres de Singapura afundou na região.',
-  body: [
-    'O ministro de Portos da Índia, Sarbananda Sonowal, informou que os 15 tripulantes estão bem e sem ferimentos. No início de outubro, outro petroleiro, o MT On Peace, foi atacado, e 12 tripulantes ficaram feridos, 11 deles indianos.',
-    'O porta-contêineres GFS Pride, de Singapura, pegou fogo e afundou depois de ser atingido por um projétil. Os 21 tripulantes foram retirados sem ferimentos.'
-  ] },
-
-{ id: 'casa-branca-porta-voz-sai-cinco-dias', cat: 'internacional', own: false, t: '2026-10-16T16', d: '16 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajCasaBranca,
-  title: 'Porta-voz da Casa Branca deixa o cargo depois de cinco dias',
-  sum: 'Katie Zacharia, que substituiu Karoline Leavitt, admitiu à Fox News que não foi aprovada no exame da ordem dos advogados.',
-  body: [
-    'Trump tinha se referido a ela como advogada. O presidente disse que não tem pressa para escolher quem vai substituí-la.',
-    'Segundo a Al Jazeera, a passagem dela pelo cargo durou metade dos dez dias de Anthony Scaramucci na Casa Branca.'
-  ] },
-
-{ id: 'ue-22-pacote-sancoes-zelensky-bruxelas', cat: 'internacional', own: false, t: '2026-10-16T05', d: '16 out 2026', img: 'mundo', src: 'Kyiv Independent', url: U.kiUe,
-  title: 'Na cúpula da UE, Zelensky agradece apoio, e bloco confirma novo pacote de sanções contra a Rússia',
-  sum: 'A meta europeia é abrir até o fim do ano as duas últimas etapas da negociação para a entrada da Ucrânia no bloco.',
-  body: [
-    'Zelensky participou do segundo dia da reunião de líderes, em Bruxelas. Ursula von der Leyen disse que a Rússia não respeitou a trégua de energia e que, por isso, é preciso aumentar a pressão com o 22º pacote de sanções.',
-    'Os líderes também previram uma força-tarefa europeia para o Estado de Direito na Ucrânia.'
-  ] },
-
 /* ===================== ESPORTES ===================== */
 
-{ id: 'palmeiras-vence-athletico-lider-brasileirao', cat: 'esportes', own: true, t: '2026-10-17T21', d: '17 out 2026', img: 'esportes', read: 3,
-  title: 'Com um a menos, Palmeiras vence o Athletico-PR por 2 a 0 e assume a liderança do Brasileirão',
-  sum: 'Maurício e Piquerez marcaram no começo do jogo, em Curitiba. O Palmeiras tem 66 pontos, dois a mais que o Flamengo, que enfrenta o Bahia neste domingo (18).',
+{ id: 'flamengo-vence-bahia-retoma-lideranca', cat: 'esportes', own: true, t: '2026-10-18T21', d: '18 out 2026', img: 'esportes', read: 3,
+  title: 'Flamengo vence o Bahia por 3 a 0 em Salvador e retoma a liderança do Brasileirão',
+  sum: 'Jorginho, Plata e Paquetá marcaram no segundo tempo. O Flamengo chegou a 67 pontos, um a mais que o Palmeiras.',
   body: [
-    'O Palmeiras venceu o Athletico-PR por 2 a 0 na noite de sábado (17), na Arena da Baixada, em Curitiba, pela 31ª rodada do Brasileirão, e assumiu a liderança de forma provisória. Os dois gols saíram nos primeiros dez minutos, segundo a CNN Brasil.',
-    'Maurício abriu o placar aos 5 minutos, depois de passe de Flaco López. Pouco depois, Piquerez ampliou em cobrança de falta.',
-    '## Expulsão',
-    'Andreas Pereira recebeu o segundo cartão amarelo aos 42 minutos do primeiro tempo. Segundo a CNN Brasil, ele chutou uma segunda bola que a torcida do Athletico tinha jogado no gramado. Com um a mais, o time paranaense pressionou no segundo tempo e acertou a trave, mas não conseguiu marcar.',
+    'O Flamengo venceu o Bahia por 3 a 0 na noite de domingo (18), na Arena Fonte Nova, em Salvador, pela 31ª rodada do Brasileirão, e voltou à liderança, com 67 pontos. O Palmeiras, que tinha assumido a ponta no sábado, ficou em segundo, com 66. O público foi de 47.465 torcedores, segundo a Gazeta Esportiva.',
+    '## Os gols',
+    'Os três gols saíram no segundo tempo. Jorginho abriu o placar de pênalti, sofrido por Carrascal. Plata ampliou de cabeça aos 27 minutos, depois de cruzamento de Samuel Lino, e Lucas Paquetá fechou aos 32, numa jogada individual dentro da área.',
+    'Segundo o Lance!, foi o nono gol de Jorginho pelo Flamengo, todos de pênalti. No primeiro tempo, o goleiro Ronaldo, do Bahia, fez defesas importantes.',
     '## A tabela',
-    'O Palmeiras chegou a 66 pontos em 31 jogos. O Flamengo tem 64, em 30 jogos, e visita o Bahia neste domingo (18), às 18h30, segundo a Gazeta Esportiva. O Athletico segue em 3º, com 53 pontos.',
-    'Na parte de baixo, Corinthians e Internacional têm 32 pontos. O Inter é o primeiro time da zona de rebaixamento, seguido por Grêmio, Remo e Chapecoense.',
+    'O Bahia perdeu a segunda seguida, ficou com 49 pontos e caiu para o 7º lugar, sem conseguir entrar no G-4. O Flamengo está há oito jogos sem perder no campeonato, com sete vitórias e um empate, segundo a Gazeta Esportiva.',
     '## Próximos jogos',
-    'Na quarta (21), às 21h30, o Palmeiras recebe o Fluminense no Nubank Parque, na volta da semifinal da Libertadores, e avança com um empate. No sábado (24), enfrenta o Red Bull Bragantino pelo Brasileirão.'
+    'Na quinta (22), às 21h30, o Flamengo recebe o Estudiantes no Maracanã, na volta da semifinal da Libertadores. A ida terminou 0 a 0. O Bahia visita o Santos no sábado (24), às 21h, na Vila Belmiro.'
   ],
-  box: { type: 'table', title: 'Topo da tabela', head: ['Time', 'Pontos', 'Jogos'], rows: [['Palmeiras', '66', '31'], ['Flamengo', '64', '30'], ['Athletico-PR', '53', '31'], ['Fluminense', '51', '30'], ['Atlético-MG', '50', '31']], note: 'Depois dos jogos de sábado (17). Fonte: Gazeta Esportiva.' },
-  sources: [['CNN Brasil', U.cnnPalCap], ['Futebol Interior', U.fiPalCap], ['Lance!', U.lancePalCap], ['Gazeta Esportiva', U.gzClassif]] },
+  box: { type: 'table', title: 'Topo da tabela', head: ['Time', 'Pontos'], rows: [['Flamengo', '67'], ['Palmeiras', '66'], ['Athletico-PR', '53'], ['Cruzeiro', '51'], ['Fluminense', '51']], note: 'Depois dos jogos de domingo (18) da 31ª rodada. Fonte: Gazeta Esportiva.' },
+  sources: [['Gazeta Esportiva', U.gzBahiaFla], ['Lance!', U.lanceBahiaFla], ['Gazeta Esportiva', U.gzClassif]] },
 
-{ id: 'arthur-nory-queda-mundial-ginastica', cat: 'esportes', own: true, t: '2026-10-17T12', d: '17 out 2026', img: 'esportes', read: 3,
-  title: 'Arthur Nory cai da barra fixa e deixa a classificatória do Mundial; Brasil fecha o dia em 4º por equipes',
-  sum: 'O ginasta bateu o rosto no aparelho e cortou a testa, em Roterdã. A equipe somou 232.694 pontos. A classificatória feminina, com Rebeca Andrade, é nesta segunda (19).',
+{ id: 'mundial-ginastica-brasil-fora-finais-masculinas', cat: 'esportes', own: true, t: '2026-10-18T16', d: '18 out 2026', img: 'esportes', read: 3,
+  title: 'Brasil fica fora de todas as finais masculinas do Mundial de ginástica; feminino estreia nesta segunda',
+  sum: 'A equipe masculina terminou a classificatória em 19º lugar. É a primeira vez desde 2010 que o país não tem nenhum finalista no masculino.',
   body: [
-    'Arthur Nory caiu da barra fixa durante a classificatória masculina do Mundial de ginástica artística, no sábado (17), em Roterdã, na Holanda. Ele bateu o rosto no aparelho, cortou a testa e foi atendido na arena, sem poder voltar a competir, segundo o Lance!. Os exames iniciais não apontaram concussão.',
-    'Segundo o Futebol Interior, Nory disse que pediu para continuar, mas aceitou a decisão dos médicos, porque o corte poderia abrir e sangrar. Antes da queda, ele tinha feito 13.500 nas paralelas, a melhor nota do Brasil no aparelho.',
-    '## A equipe',
-    'O Brasil somou 232.694 pontos e terminou o sábado em 4º lugar provisório por equipes. A posição final dependia das subdivisões seguintes. A melhor nota do país foi no salto, com 40.065 pontos somados.',
-    'No individual geral, Diogo Soares fez 77.564 pontos, e Vitaliy Guimarães, 76.565. Os dois esperavam o fim da classificatória para saber se iriam à final.',
-    '## O que vale',
-    'As três melhores equipes masculinas e as três femininas garantem vaga por equipes nos Jogos de Los Angeles 2028, segundo O Tempo. A classificatória feminina é na segunda (19), às 11h, com a volta de Rebeca Andrade, que vai competir só no salto e na trave. A final masculina por equipes é na terça (20), e a feminina, na quarta (21).'
+    'A seleção masculina de ginástica artística terminou no domingo (18) a classificatória do Mundial de Roterdã, na Holanda, em 19º lugar por equipes, com 232,694 pontos. O Brasil não vai disputar a final por equipes nem as finais por aparelhos, segundo a Tribuna do Sertão e o Bahia Notícias.',
+    '## Individual geral',
+    'Diogo Soares foi o melhor brasileiro no individual geral, em 36º, com 77,564 pontos. Só os 24 primeiros vão à final. Vitaliy Guimarães ficou em 44º, e Patrick Sampaio, em 68º.',
+    'Arthur Nory caiu na barra fixa e deixou a competição por precaução, depois de avaliação médica. Caio Souza não foi ao Mundial porque passou por cirurgia no bíceps, segundo o Bahia Notícias.',
+    '## Pior resultado desde 2010',
+    'Ficar sem nenhum finalista no masculino repete o Mundial de 2010, também disputado em Roterdã, segundo a Tribuna do Sertão e o ABC do ABC.',
+    '## Feminino entra hoje',
+    'A equipe feminina, com Rebeca Andrade, Flávia Saraiva, Gabriela Bouças, Lorrane Oliveira, Sophia Weisberg e Thais Fidelis, faz a classificatória nesta segunda (19), segundo O Hoje. Rebeca disputa só o salto e a trave, informa A Tarde. A final feminina por equipes é na quarta (21), e o Mundial vai até domingo (25).'
   ],
-  box: { type: 'facts', title: 'Brasil no Mundial', rows: [['Total por equipes', '232.694 pontos'], ['Posição', '4º lugar provisório no sábado'], ['Diogo Soares', '77.564 no individual geral'], ['Feminino', 'Classificatória na segunda (19)'], ['Em jogo', 'Vagas para Los Angeles 2028']] },
-  sources: [['Lance!', U.lanceNory], ['Futebol Interior', U.fiNory], ['O Tempo', U.otGinastica]] },
+  box: { type: 'facts', title: 'O masculino em Roterdã', rows: [['Equipe', '19º lugar, 232,694 pontos'], ['Melhor no individual geral', 'Diogo Soares, 36º'], ['Finalistas', 'Nenhum'], ['Feminino', 'Classificatória nesta segunda (19)']] },
+  sources: [['Tribuna do Sertão', U.tsGinastica], ['Bahia Notícias', U.bnGinastica], ['ABC do ABC', U.abcGinastica], ['O Hoje', U.ohojeGinastica], ['A Tarde', U.atardeRebeca]] },
+
+{ id: 'cruzeiro-vence-gremio-santos-vira-fluminense', cat: 'esportes', own: false, t: '2026-10-18T19', d: '18 out 2026', img: 'esportes', src: 'Lance!', url: U.lanceRodada31,
+  title: 'Kaio Jorge faz três, Cruzeiro vence o Grêmio fora, e Santos vira sobre o Fluminense no Maracanã',
+  sum: 'O Cruzeiro ganhou por 4 a 2 em Porto Alegre e entrou no G-4. O Santos venceu por 2 a 1, com gols de Gabigol e Philippe Coutinho.',
+  body: [
+    'João Marcelo fez o outro gol do Cruzeiro, e Pavón e Carlos Vinícius marcaram para o Grêmio. No Maracanã, Castillo abriu o placar para o Fluminense aos 4 minutos, antes da virada santista.',
+    'No Mangueirão, Remo e Bragantino empataram por 1 a 1. A rodada termina nesta segunda (19), às 20h, com Corinthians x Vitória.'
+  ] },
+
+{ id: 'corinthians-goleia-caracas-libertadores-feminina', cat: 'esportes', own: false, t: '2026-10-18T23', d: '18 out 2026', img: 'esportes', src: 'Meu Timão', url: U.mtCaracas,
+  title: 'Corinthians goleia o Caracas por 7 a 0 e garante vaga nas quartas da Libertadores Feminina',
+  sum: 'Duda Sampaio marcou duas vezes em Quito. O time tem 6 pontos, empatado com o Santa Fe, e leva vantagem no saldo.',
+  body: [
+    'Também marcaram Andressa Alves, Jaqueline, Paola Garcia, Gabi Zanotti e Gisela Robledo. Os dois primeiros de cada grupo avançam.',
+    'Na quarta (21), às 17h, o Corinthians enfrenta o Santa Fe pela última rodada do Grupo A.'
+  ] },
 
 { id: 'libertadores-semifinais-tres-brasileiros', cat: 'esportes', own: true, t: '2026-10-16T00', d: '15 out 2026', img: 'esportes', read: 3,
   photo: 'fotos/libertadores-semifinais-tres-brasileiros.webp', photoAlt: 'Montagem com jogadores de Fluminense, Palmeiras, Flamengo e Estudiantes comemorando', credit: 'Montagem: reprodução',
@@ -812,10 +896,10 @@ const NEWS = [
     'Na quarta (14), o Palmeiras venceu o Fluminense por 2 a 1 no Maracanã. Flaco López abriu o placar aos 44 minutos do primeiro tempo, Marlon Freitas ampliou aos 38 do segundo, e Wesley Natã descontou nos acréscimos. O técnico Abel Ferreira cumpriu suspensão.',
     '## As voltas',
     'O Palmeiras recebe o Fluminense na quarta (21), às 21h30, no Nubank Parque, e avança com um empate. O Fluminense precisa vencer por um gol para levar a decisão aos pênaltis, ou por dois para passar direto. O Flamengo recebe o Estudiantes na quinta (22), às 21h30, no Maracanã. A final é em jogo único, em 28 de novembro, no Estádio Centenário, em Montevidéu.',
-    'Antes disso, o Flamengo visita o Bahia no domingo (18), às 18h30, na Arena Fonte Nova, pelo Brasileirão.'
+    'No domingo (18), o Flamengo venceu o Bahia por 3 a 0 em Salvador e voltou à liderança do Brasileirão.'
   ],
   box: { type: 'table', title: 'Semifinais', head: ['Confronto', 'Ida', 'Volta'], rows: [['Fluminense x Palmeiras', '1 x 2, no Maracanã', '21 out, Nubank Parque'], ['Estudiantes x Flamengo', '0 x 0, em La Plata', '22 out, Maracanã']], note: 'Jogos de volta às 21h30 de Brasília. Final em 28 de novembro, no Centenário. Fontes: Gazeta Esportiva, O Povo, Lance! e Agência Brasil.' },
-  sources: [['Gazeta Esportiva', U.gazEstFla], ['O Povo', U.opovoPalFlu], ['ABC Agora', U.abcPalFlu], ['Lance!', U.lanceFla15], ['Agência Brasil', U.abLiberta]] },
+  sources: [['Gazeta Esportiva', U.gazEstFla], ['O Povo', U.opovoPalFlu], ['ABC Agora', U.abcPalFlu], ['Lance!', U.lanceFla15], ['Agência Brasil', U.abLiberta], ['Gazeta Esportiva', U.gzBahiaFla]] },
 
 { id: 'boca-juniors-vasco-semifinal-sul-americana', cat: 'esportes', own: false, t: '2026-10-13T23', d: '13 out 2026', img: 'esportes', src: 'Agência Esporte', url: U.aeVasco,
   title: 'Vasco venceu o Boca na Bombonera e joga pelo empate na volta da Sul-Americana, nesta terça',
@@ -841,14 +925,6 @@ const NEWS = [
     'No sábado (24), o São Paulo visita o Mirassol.'
   ] },
 
-{ id: 'botafogo-vence-chapecoense-tite', cat: 'esportes', own: false, t: '2026-10-17T20', d: '17 out 2026', img: 'esportes', src: 'O Liberal', url: U.olBotaChape,
-  title: 'Tiquinho Soares marca de cabeça, e Tite tem a primeira vitória no Botafogo',
-  sum: 'O time carioca venceu a Chapecoense por 1 a 0 no Nilton Santos. A lanterna Chapecoense tem 18 pontos.',
-  body: [
-    'O gol saiu no começo do jogo, depois de cruzamento de Matheus Martins. O Botafogo tem 39 pontos.',
-    'No sábado (24), o Botafogo visita o Internacional no Beira-Rio.'
-  ] },
-
 { id: 'joao-fonseca-encerra-temporada-2026', cat: 'esportes', own: false, t: '2026-10-17T14', d: '17 out 2026', img: 'esportes', src: 'Exame', url: U.exFonseca,
   title: 'João Fonseca encerra a temporada e não vai defender o título na Basileia',
   sum: 'O tenista disse que ainda não está em condições de competir no nível que gostaria. Ele também desistiu do Masters 1000 de Paris e só volta em 2027.',
@@ -865,30 +941,58 @@ const NEWS = [
     'Restam seis etapas: Austin, México, São Paulo (8 de novembro), Las Vegas, Catar e Abu Dhabi, em 6 de dezembro.'
   ] },
 
-{ id: 'corinthians-palmeiras-vencem-libertadores-feminina', cat: 'esportes', own: false, t: '2026-10-15T23', d: '15 out 2026', img: 'esportes', src: 'Fut das Minas', url: U.fdmEstreias,
-  title: 'Corinthians e Palmeiras estreiam com vitória na Libertadores Feminina, em Quito',
-  sum: 'O Corinthians venceu o Colo-Colo por 2 a 0, e o Palmeiras bateu o Universitario por 1 a 0.',
-  body: [
-    'Pelo Grupo A, Vic Albuquerque marcou aos 4 minutos, e Jaqueline, de pênalti, fez o segundo gol do Corinthians no segundo tempo. Pelo Grupo B, Brena fez o gol do Palmeiras aos 12 minutos, no rebote.',
-    'No domingo (18), o Palmeiras enfrenta o Belgrano, às 17h, e o Corinthians pega o Caracas, às 21h.'
-  ] },
-
 /* ===================== CULTURA ===================== */
 
-{ id: 'street-fighter-estreia-cinemas', cat: 'cultura', own: true, t: '2026-10-17T15', d: '17 out 2026', img: 'cultura', read: 3,
-  title: '"Street Fighter" lidera a bilheteria nos EUA e deve fazer US$ 31 milhões no fim de semana',
-  sum: 'Seria a maior estreia da franquia no cinema. Em segundo lugar, o documentário sobre Elizabeth Holmes supera as expectativas.',
+{ id: 'morre-benito-di-paula', cat: 'cultura', own: true, t: '2026-10-18T22', d: '18 out 2026', img: 'palco', read: 3,
+  title: 'Morre Benito Di Paula, autor de "Retalhos de Cetim" e "Charlie Brown", aos 84 anos',
+  sum: 'O cantor e pianista tratava um câncer de próstata havia cerca de um ano. Ele popularizou o "samba-joia" nos anos 1970.',
   body: [
-    'O filme "Street Fighter" arrecadou US$ 12,5 milhões na sexta-feira (16), dia da estreia nos EUA e no Canadá, incluindo US$ 4 milhões das sessões de quinta à noite, segundo o site TheWrap. A projeção para o fim de semana é de US$ 31 milhões.',
-    'O longa da Paramount e da Legendary, baseado no videogame da Capcom, custou US$ 82 milhões, sem contar o marketing. O público deu nota B- na pesquisa CinemaScore. No Brasil, ele está em cartaz desde quinta (15).',
-    '## Comparação',
-    'Se a projeção se confirmar, será a maior estreia da franquia. O filme de 1994 estreou com US$ 6,9 milhões, e "A Lenda de Chun-Li", de 2009, com US$ 4,7 milhões. O resultado fica abaixo dos US$ 38,5 milhões de "Mortal Kombat II", que estreou em maio, segundo o TheWrap.',
-    '## Documentário em 2º',
-    'O documentário "You Can See Everything", sobre Elizabeth Holmes, fundadora da Theranos, fez US$ 5,5 milhões na sexta em 855 salas. A projeção é de US$ 12,5 milhões no fim de semana, acima dos US$ 7 milhões a US$ 8 milhões esperados.',
-    'Em seguida aparecem o terror "Other Mommy", com US$ 7,8 milhões, "Whalefall", com cerca de US$ 7 milhões, e "Sense & Sensibility", com US$ 6,7 milhões. Os números finais do fim de semana saem na segunda (19).'
+    'O cantor, compositor e pianista Benito Di Paula morreu no domingo (18), aos 84 anos, no Hospital 9 de Julho, em São Paulo. Ele tratava um câncer de próstata havia cerca de um ano, segundo a CNN Brasil. Deixa dois filhos e duas netas.',
+    '## Da noite paulistana para o país',
+    'Batizado Uday Vellozo, ele nasceu em 28 de novembro de 1941, em Nova Friburgo (RJ), e cresceu no Rio, segundo o Brasil de Fato. Ficou conhecido nos anos 1970, tocando na noite de São Paulo. Pela gravadora Copacabana, difundiu o "samba-joia", que junta o samba ao piano e a arranjos românticos, e apresentou o programa "Brasil Som 75", na TV Tupi.',
+    'Entre os sucessos estão "Retalhos de Cetim", de 1973, "Charlie Brown", de 1974, "Do Jeito que a Vida Quer", de 1976, e "Amigo do Sol, Amigo da Lua", tema da novela "A Gata Comeu", da Globo. Roberto Carlos, Maria Bethânia e Alcione gravaram músicas dele.',
+    '## Homenagens',
+    'Em 2025, a escola de samba Águia de Ouro levou a vida e a obra do artista para o Carnaval de São Paulo. O último disco, "Benito 80: Novo Samba Sempre Novo", saiu em 2021, gravado com o filho Rodrigo Vellozo.',
+    'Nas redes, Rodrigo se despediu do pai com a frase "Te amo, papai! Obrigado!", segundo a Itatiaia. Ele preparava o show "Benito 85", para os 85 anos que o pai faria em novembro. Até a última atualização das reportagens, não havia informação sobre velório e enterro.'
   ],
-  box: { type: 'bars', title: 'Projeção do fim de semana nos EUA', unit: 'US$ milhões', max: 35, rows: [['Street Fighter', 31], ['You Can See Everything', 12.5], ['Other Mommy', 7.8], ['Whalefall', 7], ['Sense & Sensibility', 6.7]], note: 'Estimativas de sábado (17). Fonte: TheWrap.' },
-  sources: [['TheWrap', U.twBilheteria], ['Martin Cid Magazine', U.mcBilheteria], ['Showbiz411', U.sbStreet]] },
+  box: { type: 'facts', title: 'Benito Di Paula', rows: [['Nascimento', '28/11/1941, em Nova Friburgo (RJ)'], ['Morte', '18/10/2026, em São Paulo'], ['Estilo', 'Samba-joia'], ['Sucessos', '"Retalhos de Cetim" e "Charlie Brown"']] },
+  sources: [['CNN Brasil', U.cnnBenito], ['Brasil de Fato', U.bdfBenito], ['Band', U.bandBenito], ['Itatiaia', U.itaBenito]] },
+
+{ id: 'rajamouli-rrr-mostra-sao-paulo', cat: 'cultura', own: false, t: '2026-10-19T06', d: '19 out 2026', img: 'cultura', src: 'Terra', url: U.terraRajamouli,
+  title: 'Diretor de "RRR" recebe o Prêmio Leon Cakoff nesta segunda, na Mostra de São Paulo',
+  sum: 'S.S. Rajamouli apresenta o filme às 17h30, na primeira exibição dele em tela grande no Brasil, seguida de debate.',
+  body: [
+    'A sessão é na Sala Petrobras, no Solar Fábio Prado, na Avenida Faria Lima. No Brasil, "RRR" foi lançado direto no streaming.',
+    'A 50ª Mostra Internacional de Cinema vai até 29 de outubro.'
+  ] },
+
+{ id: 'morre-compositor-indiano-deva', cat: 'cultura', own: false, t: '2026-10-17T15', d: '17 out 2026', img: 'palco', src: 'Gulf News', url: U.gulfDeva,
+  title: 'Morre Deva, compositor de trilhas de mais de 400 filmes indianos, aos 75 anos',
+  sum: 'Ele sentiu dores no peito e morreu em Chennai, no sábado (17).',
+  body: [
+    'Deva compôs, entre outras, a música-tema do filme "Baashha", associada ao ator Rajinikanth. O nome de batismo era Devanesan Chokkalingam.'
+  ] },
+
+{ id: 'festival-pequeno-cineasta-rio', cat: 'cultura', own: false, t: '2026-10-18T10', d: '18 out 2026', img: 'cultura', src: 'Agência Brasil', url: U.abPequenoCineasta,
+  title: 'Festival no Rio exibe 68 filmes feitos por crianças e adolescentes, com entrada gratuita',
+  sum: 'A 11ª edição do Festival Internacional Pequeno Cineasta vai até sábado (24).',
+  body: [
+    'Os filmes, de jovens de 8 a 17 anos, foram escolhidos entre 467 inscrições de 41 países. O encerramento homenageia o ator Gracindo Jr.'
+  ] },
+
+{ id: 'street-fighter-estreia-cinemas', cat: 'cultura', own: true, t: '2026-10-18T20', d: '18 out 2026', img: 'cultura', read: 3,
+  title: '"Street Fighter" estreia em 1º nos EUA com US$ 31 milhões, e documentário sobre Elizabeth Holmes surpreende',
+  sum: 'O filme somou US$ 51,1 milhões no mundo. "You Can See Everything", sobre a fundadora da Theranos, fez US$ 15 milhões em apenas 855 salas.',
+  body: [
+    'O filme "Street Fighter", da Paramount, liderou a bilheteria dos EUA e do Canadá no fim de semana, com US$ 31 milhões em 3.575 salas, segundo estimativas de domingo (18) publicadas pela Boxoffice Pro. O valor inclui US$ 4 milhões das sessões de quinta à noite. No exterior, foram US$ 20,1 milhões em 65 mercados, e o total mundial chegou a US$ 51,1 milhões.',
+    'O longa, baseado no videogame da Capcom, custou US$ 82 milhões, segundo a agência AP. É a maior estreia da franquia no cinema: o filme de 1994 estreou com US$ 6,9 milhões, segundo o TheWrap. No Brasil, ele está em cartaz desde quinta (15).',
+    '## A surpresa do fim de semana',
+    'O documentário "You Can See Everything", da A24, sobre Elizabeth Holmes, fundadora da Theranos, fez US$ 15 milhões em apenas 855 salas, com média de US$ 17.544 por sala. Na sexta, a projeção era de US$ 12,5 milhões. Segundo a Boxoffice Pro, é a segunda maior estreia de um documentário, atrás de "Fahrenheit 11 de Setembro", de 2004. O filme custou menos de US$ 7 milhões, e mais de 70% do público tinha menos de 35 anos, segundo a AP.',
+    '## Os outros',
+    'Completam o top 5 o terror "Other Mommy", com US$ 8,35 milhões, "Whalefall", com US$ 8 milhões na estreia, e "Sense and Sensibility", com US$ 7,25 milhões. O fim de semana somou US$ 103,9 milhões, alta de 41,9% sobre o mesmo fim de semana de 2025, segundo a Boxoffice Pro.'
+  ],
+  box: { type: 'bars', title: 'Bilheteria do fim de semana nos EUA', unit: 'US$ milhões', max: 35, rows: [['Street Fighter', 31], ['You Can See Everything', 15], ['Other Mommy', 8.35], ['Whalefall', 8], ['Sense and Sensibility', 7.25]], note: 'Estimativas de domingo (18). Fonte: Boxoffice Pro.' },
+  sources: [['Boxoffice Pro', U.bopBilheteria], ['AP / WPXI', U.apBilheteria18], ['TheWrap', U.twBilheteria]] },
 
 { id: 'mostra-sao-paulo-50-edicao', cat: 'cultura', own: true, t: '2026-10-15T05', d: '15 out 2026', img: 'cultura', read: 3,
   photo: 'fotos/mostra-sao-paulo-50-edicao.webp', photoAlt: 'Arte oficial da 50ª Mostra Internacional de Cinema em São Paulo, com selo dourado e desenho de um casal se beijando', credit: 'Divulgação: Mostra Internacional de Cinema em São Paulo',
@@ -906,22 +1010,6 @@ const NEWS = [
   box: { type: 'facts', title: 'Serviço', rows: [['Sessões ao público', '15 a 29 de outubro'], ['Programação', '380 títulos de 93 países'], ['Espaços', '57'], ['Ingressos', 'R$ 26 a R$ 32 (inteira)'], ['Gratuito', '26 CEUs e Cidade Tiradentes']] },
   sources: [['Prefeitura de São Paulo', U.prefMostra], ['Rolling Stone Brasil', U.rsMostra], ['Mídia NINJA', U.ninjaMostra], ['CNN Brasil', U.cnnMostra2], ['Omelete', U.omeleteMostra]] },
 
-{ id: 'premio-jabuti-finalistas-14-outubro', cat: 'cultura', own: true, t: '2026-10-14T12', d: '14 out 2026', img: 'arte', read: 3,
-  title: 'Jabuti 2026 tem Itamar Vieira Junior, Milton Hatoum e Adélia Prado entre os finalistas',
-  sum: 'São 115 finalistas em 23 categorias. Os vencedores saem em 27 de outubro, na Sala São Paulo, e o Livro do Ano leva R$ 70 mil.',
-  body: [
-    'A Câmara Brasileira do Livro divulgou na quarta-feira (14) os finalistas da 68ª edição do Prêmio Jabuti. São cinco finalistas em cada uma das 23 categorias, divididas em quatro eixos: Literatura, Não Ficção, Produção Editorial e Inovação.',
-    '## Romance e poesia',
-    'Em Romance Literário, concorrem "Coração sem medo", de Itamar Vieira Junior, "Dança de enganos", de Milton Hatoum, "Meridiana", de Eliana Alves Cruz, "Uma delicada coleção de ausências", de Aline Bei, e "Vez em quando, Billie Holiday", de Evandro Affonso Ferreira. Em Poesia, um dos finalistas é "O jardim das oliveiras", de Adélia Prado.',
-    '## Outras categorias',
-    'Em Biografia e Reportagem, estão "Trincheira tropical", de Ruy Castro, e "João Gilberto e a insurreição bossa nova", de Tárik de Souza, entre outros. Em Crônica, há um livro póstumo de Contardo Calligaris, segundo a Quatro Cinco Um.',
-    'A edição estreia a categoria Incentivo à Leitura – Cultura Digital, com vencedor escolhido por voto popular. As categorias de Escritor Estreante passaram para o eixo Literatura e agora podem concorrer a Livro do Ano.',
-    '## Prêmios',
-    'A cerimônia será em 27 de outubro, na Sala São Paulo, com transmissão pelo YouTube. Cada vencedor de categoria recebe a estatueta e até R$ 5 mil. O Livro do Ano ganha R$ 70 mil e uma viagem a uma grande feira internacional do livro, segundo a CNN Brasil.'
-  ],
-  box: { type: 'facts', title: 'Jabuti 2026', rows: [['Edição', '68ª'], ['Finalistas', '115, em 23 categorias'], ['Cerimônia', '27 de outubro, Sala São Paulo'], ['Livro do Ano', 'R$ 70 mil'], ['Categoria nova', 'Incentivo à Leitura – Cultura Digital']] },
-  sources: [['CNN Brasil', U.cnnJabuti], ['Quatro Cinco Um', U.qcuJabuti], ['CBL', U.cblJabuti]] },
-
 { id: 'feito-pipa-premios-atlanta', cat: 'cultura', own: false, t: '2026-10-16T15', d: '16 out 2026', img: 'cultura', src: 'CNN Brasil', url: U.cnnFeitoPipa,
   title: '"Feito Pipa", candidato do Brasil a uma vaga no Oscar, ganha três prêmios em festival nos EUA',
   sum: 'O filme de Allan Deberton levou melhor longa de ficção, melhor direção e melhor atriz, para Teca Pereira, no Out On Film, em Atlanta.',
@@ -936,20 +1024,6 @@ const NEWS = [
   body: [
     'A apresentação faz parte da turnê que comemora os 25 anos do álbum de estreia, "O". A pré-venda para o fã-clube é em 21 de outubro, às 10h.',
     'Cada CPF pode comprar até quatro ingressos, com no máximo duas meias-entradas. Os preços não foram divulgados.'
-  ] },
-
-{ id: 'harry-styles-musica-liam-payne', cat: 'cultura', own: false, t: '2026-10-17T12', d: '17 out 2026', img: 'palco', src: 'CNN Brasil', url: U.cnnHarry,
-  title: 'Harry Styles canta música inédita em homenagem a Liam Payne, dois anos depois da morte do amigo',
-  sum: 'Em show no Madison Square Garden, em Nova York, ele apresentou "What Is Enough?" e a dedicou ao ex-colega de One Direction.',
-  body: [
-    'Liam Payne morreu em 16 de outubro de 2024, aos 31 anos, depois de cair da sacada de um hotel em Buenos Aires. O caso ainda não tem conclusão definitiva na Justiça argentina.'
-  ] },
-
-{ id: 'morre-michael-forest-jornada-estrelas', cat: 'cultura', own: false, t: '2026-10-17T17', d: '17 out 2026', img: 'cultura', src: 'CNN Brasil', url: U.cnnForest,
-  title: 'Morre Michael Forest, o deus Apolo de "Jornada nas Estrelas", aos 97 anos',
-  sum: 'O ator morreu em 14 de outubro, em uma casa de repouso em Nevada, nos EUA. A causa não foi divulgada.',
-  body: [
-    'Forest viveu Apolo em um episódio de 1967 da série clássica. Também atuou em "Além da Imaginação", "Missão: Impossível" e "Náufrago" e trabalhou como dublador.'
   ] },
 
 { id: 'u2-shows-morumbis-2027', cat: 'cultura', own: false, t: '2026-10-15T12', d: '15 out 2026', img: 'palco', src: 'Rolling Stone Brasil', url: U.rsU2,
@@ -967,15 +1041,51 @@ const NEWS = [
     'A operação foi anunciada pela Live Nation com a PM, a Prefeitura, a CET e a associação de moradores AME Morumbi. Só poderão passar moradores cadastrados e quem tiver ingresso para o dia. O objetivo é evitar a aglomeração de fãs sem ingresso do lado de fora do estádio.'
   ] },
 
-{ id: 'pitty-novo-album-sete-anos', cat: 'cultura', own: false, t: '2026-10-16T10', d: '16 out 2026', img: 'palco', src: 'Billboard Brasil', url: U.bbNacionais16,
-  title: 'Pitty lança o primeiro álbum de inéditas em sete anos e estreia turnê neste sábado (17)',
-  sum: 'O disco "Pitty" tem 13 faixas autorais e saiu na sexta (16). O show de estreia, no Espaço Unimed, em São Paulo, está esgotado.',
+/* ===================== ECONOMIA ===================== */
+
+{ id: 'pib-china-cresce-terceiro-trimestre', cat: 'economia', own: true, t: '2026-10-18T23', d: '18 out 2026', img: 'mercado', read: 3,
+  title: 'PIB da China cresce 4,5% no terceiro trimestre e supera a previsão',
+  sum: 'O resultado veio acima dos 4,4% esperados e do ritmo de 4,3% do trimestre anterior. Indústria e varejo também superaram as projeções, mas o investimento segue em queda.',
   body: [
-    'É o sexto álbum de inéditas da cantora, que dividiu a produção com Rafael Ramos. O anterior foi "Matriz", de 2019. Entre as faixas estão "Sobremesa", "Desobediente", "Pileque de Poeta" e "Sobriedade Seletiva".',
-    'Na mesma semana, o rapper Sain lançou "Última Mesa da Lapa", seu quarto álbum solo, com 18 faixas.'
+    'A economia da China cresceu 4,5% no terceiro trimestre de 2026 em relação ao mesmo período do ano passado, segundo dados divulgados na noite de domingo (18), no horário de Brasília, já segunda-feira em Pequim. Economistas ouvidos pela agência Reuters esperavam 4,4%. No segundo trimestre, a alta tinha sido de 4,3%, a menor em mais de três anos.',
+    'Na comparação com o trimestre anterior, o PIB subiu 1,2%, acima da previsão de 1,1%. De janeiro a setembro, o crescimento acumulado é de 4,6%, segundo a agência Xinhua. A meta do governo para 2026 é crescer de 4,5% a 5%.',
+    '## Indústria e varejo',
+    'A produção industrial subiu 5,5% em setembro, e as vendas no varejo, 1,1%, as duas acima das projeções. O desemprego urbano ficou em 5,2%, segundo dados do escritório de estatísticas reunidos pelo Investing.com.',
+    '## Investimento em queda',
+    'O investimento em ativos fixos caiu 7,2% de janeiro a setembro, e o investimento imobiliário recuou 20,6%. Segundo a agência Lusa, a crise no setor imobiliário e o choque de energia ligado à guerra contra o Irã pressionam a economia. As exportações foram o principal motor do crescimento, segundo a ABC News, da Austrália.'
+  ],
+  box: { type: 'facts', title: 'A economia chinesa', rows: [['PIB no 3º trimestre', '+4,5% em um ano'], ['Previsão', '+4,4%'], ['Sobre o 2º trimestre', '+1,2%'], ['Meta de 2026', '4,5% a 5%'], ['Investimento imobiliário', '-20,6% no ano']] },
+  sources: [['Reuters / Investing.com', U.rtPibChina], ['Xinhua', U.xinhuaPib], ['Investing.com / Yahoo Finance', U.yfChinaSetembro], ['Observador / Lusa', U.obsChina], ['ABC News', U.abcAsia19]] },
+
+{ id: 'agenda-semana-ipca15-focus-eleicao', cat: 'economia', own: false, t: '2026-10-18T12', d: '18 out 2026', img: 'mercado', src: 'InfoMoney', url: U.imAgenda19,
+  title: 'Semana tem Focus nesta segunda e IPCA-15 na sexta, com o segundo turno no radar do mercado',
+  sum: 'O Itaú projeta alta de 0,51% no IPCA-15 de outubro, e o Bradesco, de 0,45%.',
+  body: [
+    'Nesta segunda (19), saem o IGP-10, às 8h, e o Boletim Focus, às 8h25. Na quarta (21), sai a segunda prévia do IGP-M. O IPCA-15 de outubro será divulgado na sexta (23), às 9h.',
+    'Segundo o Itaú, a inflação em 12 meses deve chegar a 4,8%.'
   ] },
 
-/* ===================== ECONOMIA ===================== */
+{ id: 'debate-economia-dividas-lula-flavio', cat: 'economia', own: false, t: '2026-10-18T23', d: '18 out 2026', img: 'mercado', src: 'InfoMoney', url: U.imDebateEco,
+  title: 'No debate, Flávio propõe que o governo compre dívidas das famílias, e Lula defende crescer para reduzir a dívida pública',
+  sum: 'Flávio deu o exemplo de parcelas de R$ 100 a R$ 200 que cairiam para R$ 20 a R$ 30. Lula disse que a economia precisa crescer de 4% a 5% ao ano.',
+  body: [
+    'Pela proposta de Flávio, o governo compraria dos bancos, com desconto, dívidas de famílias e empresas, com carência de seis meses para pessoas e de um ano para empresas. Ele também promete transformar a Caixa num banco de empreendedorismo nas periferias.',
+    'Lula defendeu a valorização do salário mínimo, mais crédito e a renegociação de dívidas.'
+  ] },
+
+{ id: 'petroleo-recua-asia-19-outubro', cat: 'economia', own: false, t: '2026-10-18T23', d: '18 out 2026', img: 'mercado', src: 'ABC News', url: U.abcAsia19,
+  title: 'Petróleo recua na Ásia depois de encostar em US$ 110 na sexta',
+  sum: 'O Brent caía 1,7%, para US$ 107,98, no início do pregão asiático desta segunda.',
+  body: [
+    'O WTI recuava 0,7%, para US$ 100,69. Na sexta, o Brent chegou perto de US$ 110, o maior nível desde maio, com os ataques no Oriente Médio.'
+  ] },
+
+{ id: 'fim-6x1-diario-oficial-prazos', cat: 'economia', own: false, t: '2026-10-17T10', d: '17 out 2026', img: 'congresso', src: 'Metrópoles', url: U.metDou6x1,
+  title: 'Fim da escala 6x1 sai no Diário Oficial, e empresas têm até 16 de dezembro para dar duas folgas',
+  sum: 'Até lá, a jornada máxima também cai de 44 para 42 horas semanais. O limite de 40 horas chega em dezembro de 2027.',
+  body: [
+    'A emenda constitucional foi publicada em edição extra do Diário Oficial da União na sexta (16), e os prazos começaram a contar.'
+  ] },
 
 { id: 'ibovespa-sobe-dolar-cai-16-outubro', cat: 'economia', own: true, t: '2026-10-16T18', d: '16 out 2026', img: 'mercado', read: 3,
   title: 'Ibovespa sobe 0,54% com Petrobras, mas acumula queda de 1,74% na semana',
@@ -1007,29 +1117,6 @@ const NEWS = [
   box: { type: 'facts', title: 'O projeto do MEI', rows: [['Câmara (14 out)', '461 a 4'], ['Enviado à sanção', 'Sexta (16)'], ['Prazo de Lula', '15 dias úteis'], ['Teto em 2027', 'R$ 110 mil'], ['Teto em 2028', 'R$ 140 mil']] },
   sources: [['Exame', U.exMei2], ['Diário do Poder', U.dpMotta], ['Rádio Senado', U.radioSenMei], ['Agência Brasil', U.abMeiCamara], ['Exame', U.exFlavioMei]] },
 
-{ id: 'durigan-credito-empresas-fim-6x1', cat: 'economia', own: true, t: '2026-10-16T18', d: '16 out 2026', img: 'mercado', read: 3,
-  title: 'Governo prevê crédito para empresas na transição para o fim da escala 6x1, diz Durigan',
-  sum: 'O ministro da Fazenda disse que pequenas e médias empresas devem ter linhas de crédito e programas de capacitação. Segundo ele, cerca de 70% dos empregos já estão fora da 6x1.',
-  body: [
-    'O ministro da Fazenda, Dario Durigan, disse na sexta-feira (16) que o governo planeja linhas de crédito específicas e programas de capacitação para ajudar as empresas, principalmente as pequenas e médias, na troca da escala 6x1 pela 5x2. A declaração foi dada no programa Brasil Urgente, da Band, segundo a Agência Brasil.',
-    'Ele citou o Sebrae como possível parceiro e disse que de 68% a 70% dos empregos já não seguem a escala 6x1. Não foi anunciada desoneração da folha de pagamento, segundo a CNN Brasil.',
-    '## As novas regras',
-    'A Emenda Constitucional 141, promulgada no mesmo dia, garante duas folgas por semana e limita a jornada a 42 horas em 60 dias e a 40 horas em 14 meses, sem redução de salário. Segundo O Tempo, o regime 12x36 e o banco de horas continuam permitidos, e acordos coletivos podem ajustar as horas por dia durante a transição.',
-    'Segundo dados do governo citados por O Tempo, cerca de 14,9 milhões de trabalhadores estão hoje na escala 6x1. Uma lei complementar poderá adaptar as regras para microempreendedores e pequenas empresas.',
-    '## Contas públicas',
-    'Durigan também defendeu um ajuste fiscal gradual, com superávits crescentes de 2028 a 2030, até chegar a cerca de 1,5% do PIB, segundo a CNN Brasil.'
-  ],
-  box: { type: 'facts', title: 'A transição', rows: [['Apoio previsto', 'Crédito e capacitação para empresas'], ['Fora da 6x1 hoje', '68% a 70% dos empregos, diz Durigan'], ['Na 6x1', 'Cerca de 14,9 milhões de trabalhadores'], ['Em 60 dias', '42 horas e duas folgas'], ['Em 14 meses', '40 horas']] },
-  sources: [['Agência Brasil', U.abDurigan], ['CNN Brasil', U.cnnDurigan], ['O Tempo', U.otPromulga], ['Agência Senado', U.senPromulga]] },
-
-{ id: 'fmi-banco-mundial-encerram-bangkok', cat: 'economia', own: false, t: '2026-10-17T10', d: '17 out 2026', img: 'mercado', src: 'O Povo / AFP', url: U.opovoFmi,
-  title: 'FMI e Banco Mundial encerram reuniões em Bangkok com alerta para inflação, dívida e guerra',
-  sum: 'A diretora do FMI, Kristalina Georgieva, falou em otimismo e preocupação. Os bancos centrais devem focar no combate à inflação.',
-  body: [
-    'Os encontros reuniram mais de 15 mil autoridades de 191 países. Segundo Georgieva, a resistência da economia mundial e a inteligência artificial trazem otimismo, mas a inflação, a dívida alta e as guerras preocupam.',
-    'Nos países de baixa renda, a parte das receitas públicas gasta com dívida subiu de 8% para 14%, segundo a Al Jazeera.'
-  ] },
-
 { id: 'fmi-brasil-oitava-economia-2027', cat: 'economia', own: false, t: '2026-10-16T12', d: '16 out 2026', img: 'mercado', src: 'Agência Brasil', url: U.abFmi8,
   title: 'Brasil deve voltar a ser a 8ª maior economia do mundo em 2027, prevê FMI',
   sum: 'O PIB brasileiro deve chegar a cerca de US$ 2,8 trilhões, à frente de Itália e Rússia.',
@@ -1046,14 +1133,6 @@ const NEWS = [
     'Segundo ele, o diesel subiu cerca de 20% no Brasil desde o início da crise, contra mais de 100% nos EUA.'
   ] },
 
-{ id: 'pib-china-focus-semana', cat: 'economia', own: false, t: '2026-10-18T09', d: '18 out 2026', img: 'mercado', src: 'Reuters / Investing.com', url: U.rtChina,
-  title: 'China divulga o PIB do 3º trimestre nesta noite; economistas esperam alta de 4,4%',
-  sum: 'Os dados saem às 23h de domingo (18), no horário de Brasília. No Brasil, o Boletim Focus sai na segunda (19), e o IPCA-15 de outubro, na sexta (23).',
-  body: [
-    'Na pesquisa da Reuters com 50 economistas, a previsão é de crescimento de 4,4% em 12 meses, acima dos 4,3% do 2º trimestre. Para 2026, a projeção é de 4,5%.',
-    'O último Focus, de 13 de outubro, previa inflação de 5,22% em 2026 e Selic de 13,25% no fim do ano.'
-  ] },
-
 { id: 'coordenadora-economica-flavio-revogaco', cat: 'economia', own: false, t: '2026-10-17T18', d: '17 out 2026', img: 'mercado', src: 'O Povo', url: U.opovoDaniella,
   title: 'Coordenadora econômica de Flávio promete "revogaço" de mais de 2 mil normas nos 100 primeiros dias',
   sum: 'Daniella Marques, ex-presidente da Caixa, falou a empresários em Fortaleza e também prometeu rever pontos da reforma tributária e do IOF.',
@@ -1061,23 +1140,69 @@ const NEWS = [
     'Ela citou ainda a venda de imóveis e de ativos de estatais e o corte de cargos comissionados.'
   ] },
 
-{ id: 'ibc-br-sobe-agosto', cat: 'economia', own: false, t: '2026-10-16T09', d: '16 out 2026', img: 'mercado', src: 'Correio Braziliense', url: U.cbIbcBr,
-  title: 'Prévia do PIB, IBC-Br sobe 0,3% em agosto, mas cai 0,6% no trimestre',
-  sum: 'A indústria cresceu 0,9% no mês, e os serviços, 0,2%. A agropecuária recuou 1,8%.',
-  body: [
-    'Na comparação com agosto de 2025, a alta foi de 1,2%. De janeiro a agosto, o índice acumula crescimento de 1,6%.',
-    'No trimestre encerrado em agosto, a queda de 0,6% em relação aos três meses anteriores foi puxada pela indústria, que recuou 1,2%.'
-  ] },
-
-{ id: 'petroleo-brent-109-semana', cat: 'economia', own: false, t: '2026-10-16T17', d: '16 out 2026', img: 'plataforma', src: 'eixos', url: U.eixosBrent,
-  title: 'Petróleo Brent sobe 3,7% e fecha a US$ 109,86, com riscos para a oferta no Oriente Médio e na Rússia',
-  sum: 'O barril acumulou alta de 4,9% na semana. O WTI subiu 2,61%, a US$ 99,02.',
-  body: [
-    'Os contratos para dezembro avançaram com os conflitos no Oriente Médio e na Ucrânia. Na quinta (15), um ataque de drone à refinaria russa de Riazan suspendeu uma unidade de refino.',
-    'Na semana, o WTI subiu 7,8%.'
-  ] },
-
 /* ===================== TECNOLOGIA ===================== */
+
+{ id: 'desmatamento-amazonia-cerrado-menor-serie', cat: 'tecnologia', own: true, t: '2026-10-16T19', d: '16 out 2026', img: 'ciencia', read: 3,
+  title: 'Desmatamento na Amazônia cai 41,8% e atinge o menor nível desde 1988',
+  sum: 'Foram 3.335 km² desmatados entre agosto de 2025 e julho de 2026, segundo o Inpe. No Cerrado, a queda foi de 23,8%, também a menor taxa da série.',
+  body: [
+    'A Amazônia teve 3.335 km² de área desmatada entre agosto de 2025 e julho de 2026, queda de 41,8% em relação ao período anterior, segundo o Prodes, sistema de monitoramento por satélite do Inpe. Os dados foram divulgados na sexta (16) pelo Ministério do Meio Ambiente. É a menor taxa desde o início da série, em 1988. O número é uma estimativa e será consolidado no primeiro semestre de 2027, segundo a CNN Brasil.',
+    '## Onde mais se desmatou',
+    'O Pará lidera, com 1.130 km², seguido por Mato Grosso, com 849 km², e Amazonas, com 525 km². Os três estados somam cerca de 75% da área desmatada.',
+    '## Cerrado',
+    'No Cerrado, foram 5.516,69 km² desmatados, queda de 23,8%. É a menor taxa da série, que começou em 2001, e os números são definitivos. A região conhecida como Matopiba, que reúne Maranhão, Tocantins, Piauí e Bahia, concentra mais de 74% da área. O Maranhão lidera, com 1.718,59 km².',
+    '## Fiscalização',
+    'Segundo o governo, o Ibama fez 76.095 ações de fiscalização de 2023 a 2026 e aplicou R$ 11,8 bilhões em multas por infrações contra a flora. O ministro João Paulo Capobianco disse que os números parecem "um sonho". A meta do governo é zerar o desmatamento até 2030.',
+    '## Na eleição',
+    'Segundo o Olhar Digital, Lula defende retomar as metas ambientais, e Flávio Bolsonaro promete concentrar a fiscalização no combate ao crime organizado.'
+  ],
+  box: { type: 'bars', title: 'Desmatamento na Amazônia por estado', unit: 'km²', max: 1200, rows: [['Pará', 1130], ['Mato Grosso', 849], ['Amazonas', 525], ['Roraima', 286], ['Acre', 252], ['Rondônia', 149]], note: 'Prodes 2026 (agosto de 2025 a julho de 2026), estimativa. Fonte: CNN Brasil.' },
+  sources: [['CNN Brasil', U.cnnDesmatamento], ['Olhar Digital', U.odDesmatamento]] },
+
+{ id: 'anthropic-fundo-beneficio-publico-acoes', cat: 'tecnologia', own: true, t: '2026-10-18T16', d: '18 out 2026', img: 'tecnologia', read: 2,
+  title: 'Anthropic reserva 5% das ações para um fundo de benefício público',
+  sum: 'A medida depende do aval dos acionistas. O fundo poderá fazer doações a ONGs e pagamentos diretos a grupos da população, mas não poderá ser usado para lobby.',
+  body: [
+    'A Anthropic, empresa americana de inteligência artificial, anunciou no domingo (18) que vai destinar 5% das suas ações a um fundo de benefício público, segundo o TechCrunch. A medida tem efeito imediato, mas depende da aprovação dos acionistas, informa a Al Jazeera.',
+    '## Como vai funcionar',
+    'O fundo será uma entidade controlada integralmente pela empresa. Ele poderá fazer grandes doações a organizações sem fins lucrativos ou distribuições diretas a grupos específicos da população. O conselho poderá acrescentar mais 2% das ações a cada vez que o valor da empresa subir 50%. A estrutura e a governança serão detalhadas nos próximos meses.',
+    'Segundo a Al Jazeera, o dinheiro não poderá ser usado para lobby nem para doações políticas, nos EUA ou em outros países.',
+    '## Contexto',
+    'A empresa já tinha reservado US$ 200 milhões para estudar o impacto da IA no emprego e diz que abordagens mais ousadas podem ser necessárias. O presidente-executivo, Dario Amodei, chamou a rejeição à IA de uma crise de confiança. Segundo a Al Jazeera, analistas projetam que a empresa pode valer mais de US$ 2 trilhões antes de abrir o capital, o que é esperado para este ano. As reportagens não informam quanto vale a fatia de 5%.'
+  ],
+  sources: [['TechCrunch', U.tcAnthropic], ['Al Jazeera', U.ajAnthropic]] },
+
+{ id: 'sirio-libanes-ataque-hacker-dados', cat: 'tecnologia', own: false, t: '2026-10-16T18', d: '16 out 2026', img: 'tecnologia', src: 'SBT News', url: U.sbtSirio,
+  title: 'Hospital Sírio-Libanês confirma ataque hacker a sistema de projetos sociais',
+  sum: 'Nome, CPF, endereço e informações de saúde podem ter sido acessados. O hospital diz que a base geral de pacientes não foi afetada.',
+  body: [
+    'Segundo o hospital, não há evidência de vazamento público nem de uso indevido dos dados. O caso foi comunicado à ANPD e à Polícia Federal, e as pessoas afetadas estão sendo avisadas uma a uma.',
+    'O hospital alerta para tentativas de golpe em seu nome. O atendimento segue normal.'
+  ] },
+
+{ id: 'geleira-thwaites-nivel-mar-dobro', cat: 'tecnologia', own: false, t: '2026-10-17T12', d: '17 out 2026', img: 'ciencia', src: 'Al Jazeera', url: U.ajThwaites,
+  title: 'Geleira do "Juízo Final", na Antártida, pode elevar o nível do mar o dobro do previsto',
+  sum: 'Estudo publicado na Nature Communications estima que a Thwaites pode elevar o mar em até 30 mm até 2100.',
+  body: [
+    'A geleira tem cerca de 192 mil km², tamanho parecido com o do Senegal, e perde cerca de 50 bilhões de toneladas de gelo por ano. Desde 2000, já perdeu mais de 1 trilhão de toneladas.',
+    'O estudo, liderado por um pesquisador da Universidade da Califórnia em Los Angeles com o laboratório JPL, da Nasa, vê 60% de chance de a geleira se soltar, até o fim do século, da crista que hoje a segura.'
+  ] },
+
+{ id: 'loot-boxes-jogos-anpd-eca-digital', cat: 'tecnologia', own: false, t: '2026-10-15T15', d: '15 out 2026', img: 'celular', src: 'Gazeta do Povo', url: U.gpLootbox,
+  title: 'Governo pede à ANPD que fiscalize seis jogos com caixas de recompensa pagas',
+  sum: 'O Ministério da Justiça vê semelhança com apostas. O ECA Digital proíbe crianças e adolescentes de acessar esse tipo de mecanismo.',
+  body: [
+    'Estão na lista NBA 2K26, WWE 2K26, Counter-Strike 2, Call of Duty, Genshin Impact e PUBG Mobile. Segundo a nota técnica, os jogos não teriam verificação de idade eficaz.',
+    'O levantamento é preliminar e não comprova infração. Cabe à ANPD decidir, e a lista pode crescer.'
+  ] },
+
+{ id: 'primeira-estrela-verde-ana-branca', cat: 'tecnologia', own: false, t: '2026-10-16T12', d: '16 out 2026', img: 'ciencia', src: 'CNN Brasil', url: U.cnnEstrelaVerde,
+  title: 'Astrônomos identificam a primeira estrela de cor verde já observada',
+  sum: 'A anã branca WD J1330+6435 tem tom verde-amarelado por causa do sódio vindo de restos de antigos corpos rochosos.',
+  body: [
+    'O estudo, liderado por Mark Hollands, da Universidade de Warwick, analisou as 151 anãs brancas conhecidas num raio de cerca de 65 anos-luz. Na atmosfera densa de hélio, o sódio absorve o amarelo, o laranja e parte do vermelho.',
+    'Segundo os pesquisadores, novos levantamentos podem elevar de uma ou duas para dez ou 20 o número de anãs brancas verdes conhecidas.'
+  ] },
 
 { id: 'meta-tse-igualdade-lula-flavio', cat: 'tecnologia', own: true, t: '2026-10-17T19', d: '17 out 2026', img: 'celular', read: 3,
   title: 'TSE manda Meta tratar Lula e Flávio de forma igual; empresa admite falhas e nega favorecimento',
@@ -1097,74 +1222,12 @@ const NEWS = [
   box: { type: 'facts', title: 'A decisão', rows: [['Votação', '7 a 0 no plenário do TSE'], ['Multa', 'R$ 500 mil por dia'], ['Bloqueios automáticos', 'Revisão em até 2 horas'], ['Impulsionamentos de Lula', 'Repor até 21 de outubro'], ['Vale até', 'O segundo turno, em 25 de outubro']] },
   sources: [['Exame', U.exMeta], ['Olhar Digital', U.odMeta16], ['O Tempo', U.otMetaTse], ['InfoMoney / Reuters', U.imMetaFolha], ['Olhar Digital', U.odWhats]] },
 
-{ id: 'acoes-ia-nasdaq-pior-semana', cat: 'tecnologia', own: true, t: '2026-10-16T19', d: '16 out 2026', img: 'tecnologia', read: 3,
-  title: 'Ações de IA caem, e Nasdaq tem a pior semana desde junho, com perda de 4,5%',
-  sum: 'A CoreWeave, que aluga capacidade de computação para IA, recuou cerca de um quarto na semana. O índice de chips caiu pelo oitavo pregão seguido.',
-  body: [
-    'A Nasdaq, bolsa americana das empresas de tecnologia, fechou a sexta-feira (16) em queda de 2,14%, aos 26.140 pontos, e perdeu 4,5% na semana, segundo o Yahoo Finance. Foi a pior semana da Nasdaq e do S&P 500 desde junho, segundo a CNN. Cerca de dez dias antes, os dois índices tinham batido recorde.',
-    '## CoreWeave',
-    'A queda foi puxada pela CoreWeave, empresa que aluga capacidade de computação para inteligência artificial e tem apoio da Nvidia. A ação caiu 12% na sexta, depois de perder mais de 15% na quarta, e recuou cerca de um quarto na semana. Está mais de 60% abaixo do pico depois da abertura de capital, em 2025.',
-    '## Chips',
-    'O índice de semicondutores caiu 3,9% na sexta, no oitavo pregão seguido de queda, e está mais de 20% abaixo do pico de junho. Mesmo assim, sobe quase 60% no ano. Ações de fabricantes de memória, como Micron e Western Digital, também caíram. Segundo a CNN, o índice Kospi, da Coreia do Sul, onde estão SK Hynix e Samsung, teve a pior semana desde 2008.',
-    '## Juros',
-    'A inflação nos EUA veio acima do esperado, e os juros dos títulos de dez anos do Tesouro americano ficaram perto de 5,09%. O presidente do Fed, Kevin Warsh, não sinalizou o rumo dos juros. Entre as grandes empresas de tecnologia, só a Apple subiu na sexta.',
-    'Na quarta (14), a consultoria Gartner tinha estimado que mais de US$ 3,5 trilhões investidos em infraestrutura de IA podem perder valor até 2030.'
-  ],
-  box: { type: 'facts', title: 'A semana em Nova York', rows: [['Nasdaq', '-4,5% na semana'], ['S&P 500', '-2% na semana'], ['Dow Jones', '+0,7% na semana'], ['CoreWeave', 'Cerca de -25% na semana'], ['Chips', '8 pregões seguidos de queda']] },
-  sources: [['Yahoo Finance', U.yfMercado], ['CNN / Yahoo Finance', U.yfNasdaq], ['Gartner', U.gartnerIa]] },
-
-{ id: 'decreto-sac-atendimento-humano-20-segundos', cat: 'tecnologia', own: true, t: '2026-10-14T08', d: '14 out 2026', img: 'celular', read: 3,
-  title: 'Novo decreto do SAC obriga empresas a atender 80% das ligações em até 20 segundos',
-  sum: 'A opção de falar com uma pessoa terá de aparecer em todos os níveis do menu. Robôs e IA continuam permitidos na triagem. As regras valem a partir de novembro.',
-  body: [
-    'O governo publicou na terça-feira (13) o Decreto 13.135, com novas regras para o Serviço de Atendimento ao Consumidor (SAC). Ele substitui o decreto de 2022, começa a valer em novembro e será fiscalizado pela Secretaria Nacional do Consumidor (Senacon), segundo o Tecnoblog.',
-    '## Atendimento humano',
-    'Pelo menos 80% das ligações em que o cliente pedir para falar com uma pessoa terão de ser atendidas em até 20 segundos. Nas demais, a espera máxima é de 5 minutos. Se a ligação cair, a empresa terá de retornar em até 5 minutos. A opção de atendimento humano deve aparecer em todos os níveis do menu, inclusive no primeiro.',
-    'Chatbots e ferramentas de inteligência artificial continuam permitidos para a triagem, desde que o cliente possa pedir um atendente.',
-    '## Menu e cancelamento',
-    'O menu poderá ter no máximo cinco níveis, e a empresa terá de informar o tempo estimado de espera. Fica proibida a publicidade durante o atendimento. O cliente não poderá ser obrigado a repetir um problema já registrado. O pedido de cancelamento terá de ser atendido na hora, com comprovante, sem exigir o pagamento antecipado de pendências.',
-    '## Prazos',
-    'Reclamações terão de ser respondidas em até 7 dias corridos. Em caso de cobrança indevida, a cobrança deve ser suspensa na hora e o problema resolvido em até 48 horas. As gravações terão de ser guardadas por pelo menos 90 dias.'
-  ],
-  box: { type: 'facts', title: 'As novas regras', rows: [['Decreto', '13.135/2026'], ['Atendimento humano', '80% das ligações em até 20 segundos'], ['Espera máxima', '5 minutos'], ['Menu', 'Até 5 níveis'], ['Reclamações', 'Resposta em até 7 dias']] },
-  sources: [['Tecnoblog', U.tbSac]] },
-
 { id: 'iphone-duo-pre-venda-brasil', cat: 'tecnologia', own: false, t: '2026-10-16T12', d: '16 out 2026', img: 'celular', src: 'Tecnoblog', url: U.tbIphoneDuo,
   title: 'iPhone dobrável entra em pré-venda no Brasil a partir de R$ 21.999',
   sum: 'O iPhone Duo custa até R$ 30.999 na versão de 2 TB. Poucas horas depois da abertura, o prazo de entrega passou para 2027.',
   body: [
     'A Apple prometia as primeiras entregas para 23 de outubro. O aparelho tem tela interna dobrável de 7,6 polegadas e externa de 5,4 polegadas.',
     'A troca da tela flexível pode custar até R$ 10.990, segundo o Tecnoblog.'
-  ] },
-
-{ id: 'fim-segundo-bissexto-2027', cat: 'tecnologia', own: false, t: '2026-10-16T18', d: '16 out 2026', img: 'ciencia', src: 'Olhar Digital', url: U.odBissexto,
-  title: 'Cientistas aprovam o fim do segundo bissexto a partir de maio de 2027',
-  sum: 'A decisão da Conferência Geral de Pesos e Medidas muda a forma como o mundo marca o tempo. Desde 1972, foram acrescentados 27 segundos extras.',
-  body: [
-    'A partir de 20 de maio de 2027, o tempo universal coordenado deixa de receber ajustes, e a diferença em relação à rotação da Terra poderá chegar a uma hora.',
-    'Quem mais sente a mudança são as telecomunicações, os bancos e a navegação por satélite. Relógios e celulares não terão mudança perceptível.'
-  ] },
-
-{ id: 'replit-openai-modelo-padrao', cat: 'tecnologia', own: false, t: '2026-10-17T12', d: '17 out 2026', img: 'tecnologia', src: 'TechCrunch', url: U.tcReplit,
-  title: 'Replit passa a usar a OpenAI como modelo padrão no lugar da Anthropic',
-  sum: 'O presidente-executivo, Amjad Masad, citou custo, parceria e desempenho. Depois, disse que os clientes ainda podem usar os modelos da Anthropic.',
-  body: [
-    'A plataforma de programação com IA estava até pouco tempo entre os cinco maiores clientes da Anthropic. Segundo uma fonte ouvida pelo TechCrunch, a parceria com a Anthropic continua em vigor.'
-  ] },
-
-{ id: 'meta-retira-clausula-treino-ia', cat: 'tecnologia', own: false, t: '2026-10-17T18', d: '17 out 2026', img: 'tecnologia', src: 'TechCrunch', url: U.tcMetaClausula,
-  title: 'Meta retira dos termos cláusula que permitia usar sites de anunciantes para treinar IA',
-  sum: 'Especialistas apontaram que a regra permitiria coletar o conteúdo de qualquer site com conta comercial na Meta.',
-  body: [
-    'Depois da reação, o trecho foi removido. A Meta diz que os termos valiam só para seus produtos de anúncios e que a mudança não altera o uso de robôs de coleta na internet.'
-  ] },
-
-{ id: 'tsmc-lucro-recorde-terceiro-trimestre', cat: 'tecnologia', own: false, t: '2026-10-15T07', d: '15 out 2026', img: 'tecnologia', src: 'Exame', url: U.exTsmc,
-  title: 'TSMC tem lucro recorde pelo sexto trimestre seguido, puxado pela demanda de IA',
-  sum: 'A fabricante taiwanesa de chips lucrou cerca de US$ 23,6 bilhões no terceiro trimestre, alta de 68,7% em um ano.',
-  body: [
-    'A receita foi de US$ 46,72 bilhões, alta de 41,2%, com margem bruta de 66,4%. A empresa elevou a previsão de crescimento em 2026 para cerca de 44% e espera faturar de US$ 52,3 bilhões a US$ 54,3 bilhões no quarto trimestre.',
-    'O presidente-executivo, C.C. Wei, disse ser prudente ao planejar 2027, por causa da alta no custo de componentes e da incerteza na economia.'
   ] },
 
 { id: 'china-restringe-exportacao-ia', cat: 'tecnologia', own: false, t: '2026-10-16T20', d: '16 out 2026', img: 'tecnologia', src: 'Olhar Digital', url: U.odChina,
