@@ -7,22 +7,22 @@
 const META = {
   /* Endereço público do site, sem barra no final. Usado nos links das redes sociais. */
   siteUrl: 'https://novera-sepia.vercel.app',
-  dataExtenso: 'Sexta-feira, 23 de outubro de 2026',
-  edicao: '23 out 2026',
-  ibovespa: { valor: '204.120', variacao: '1,15%', sobe: false },
-  dolar: { valor: 'R$ 5,04', variacao: '0,22%', sobe: true },
-  fechamento: '22/10'
+  dataExtenso: 'Sábado, 24 de outubro de 2026',
+  edicao: '24 out 2026',
+  ibovespa: { valor: '205.082', variacao: '0,47%', sobe: true },
+  dolar: { valor: 'R$ 4,99', variacao: '0,90%', sobe: false },
+  fechamento: '23/10'
 };
 
 /* Home: destaque principal, dois laterais e três da faixa de baixo (IDs de notícias "own: true") */
 const FEATURED = {
-  lead: 'datafolha-flavio-50-lula-50-validos',
-  side: ['sigilos-acordo-tse-mendonca-libera', 'libertadores-semifinais-tres-brasileiros'],
-  also: ['ira-brent-113-aramco-esvazia-sede', 'ibovespa-cai-1-15-dolar-sobe-22-outubro', 'meta-gastos-ia-acoes-caem-7']
+  lead: 'debate-globo-como-foi-lula-flavio',
+  side: ['datafolha-flavio-50-lula-50-validos', 'brent-116-trump-petroleo-ira-derramamento'],
+  also: ['ibovespa-sobe-0-47-dolar-abaixo-5-23-outubro', 'mundial-ginastica-individual-geral-flavia-rebeca-salto', 'php-falhas-criticas-sites-fora-do-ar']
 };
 
 /* Home: "Escolhas da redação" (5 IDs) */
-const PICKS = ['debate-globo-ultimo-antes-segundo-turno', 'terremoto-tibete-magnitude-7-mortos', 'php-falhas-criticas-sites-fora-do-ar', 'f1-gp-eua-austin-antonelli-lider', 'mostra-sao-paulo-50-edicao'];
+const PICKS = ['sigilos-acordo-tse-mendonca-libera', 'ipca-15-outubro-0-32-alimentos', 'terremoto-tibete-magnitude-7-mortos', 'f1-gp-eua-austin-antonelli-lider', 'mostra-sao-paulo-50-edicao'];
 
 const U = {
   jgbMaster: 'https://jornalgrandebahia.com.br/2026/10/caso-banco-master-edson-fachin-marca-reuniao-com-pf-para-outubro-de-2026-e-cobra-apuracao-sem-excecao-de-mencoes-a-ministros-do-stf/',
@@ -859,11 +859,95 @@ const U = {
   tbPhp23: 'https://tecnoblog.net/noticias/hackers-tentaram-explorar-falhas-no-php-antes-do-alerta',
   abc7Php23: 'https://abc7ny.com/story/php-vulnerability-2026-websites-shut-down-globally-operators-address-ai-detected-flaw-web-programming-language/19968288/',
   tnwOpenai23: 'https://thenextweb.com/news/openai-models-codex-google-cloud',
-  saDuet23: 'https://siliconangle.com/2026/10/22/anthropic-introduces-claude-duet-a-proactive-ai-agent-for-professionals/'
+  saDuet23: 'https://siliconangle.com/2026/10/22/anthropic-introduces-claude-duet-a-proactive-ai-agent-for-professionals/',
+  /* Atualização de 24 out 2026 */
+  gpDebate24: 'https://www.gazetadopovo.com.br/eleicoes/2026/debate-globo-flavio-bolsonaro-lula-segundo-turno-como-foi/',
+  terraDebate24: 'https://www.terra.com.br/noticias/eleicoes/de-ilha-de-richarlison-a-bolsa-familia-9-pontos-do-debate-entre-lula-e-flavio-na-globo,97b94ce19bdbf30a2f85ca22d7bca30dy1uq5cmy.html',
+  nscDebate24: 'https://www.nsctotal.com.br/politica/debate-da-globo-entre-lula-e-flavio-bolsonaro-tem-ofensa-sobre-nove-dedos-ana-clara-e-caso-richarlison-veja-como-foi',
+  cnnConvidados24: 'https://cnnbrasil.com.br/eleicoes/globo-separou-convidados-de-flavio-e-lula-para-evitar-embates',
+  lupaDebate24: 'https://agencialupa.org/checagem/2026/10/23/ao-vivo-checagem-do-ultimo-debate-entre-lula-e-flavio-bolsonaro-no-segundo-turno',
+  cnnComoVotar24: 'https://www.cnnbrasil.com.br/eleicoes/quando-acontece-o-2o-turno-veja-todos-os-detalhes-sobre-a-votacao/',
+  bnewsSigilos24: 'https://www.bnews.com.br/noticias/politica/lula-e-flavio-formalizam-quebra-de-sigilo-mas-dados-seguem-privados.html',
+  bdfPesquisas24: 'https://www.brasildefato.com.br/2026/10/23/datafolha-atlasintel-quaest-quando-saem-as-ultimas-pesquisas-do-segundo-turno-das-eleicoes/',
+  otTransporte24: 'https://www.otempo.com.br/eleicoes/2026/2026/10/23/carmen-lucia-nega-pedido-da-campanha-de-lula-para-transporte-interestadual-gratuito-no-2-turno',
+  tpBrent24: 'https://www.tokenpost.com/news/investing/39426',
+  wionBrent24: 'https://www.wionews.com/world/brent-crude-oil-prices-iran-war-gulf-oil-spill-1792770006567',
+  foxIra24: 'https://www.foxnews.com/live-news/us-iran-war-israel-netanyahu-oil-prices-10-23-26',
+  ajJordania24: 'https://www.aljazeera.com/news/2026/10/23/at-least-seven-killed-after-gunmen-open-fire-at-church-in-jordan',
+  ajCisjordania24: 'https://www.aljazeera.com/news/2026/10/23/israel-arrests-36-palestinians-in-the-west-bank-attacks-on-farmers-ramp-up',
+  lshtmCalor24: 'https://www.lshtm.ac.uk/newsevents/news/2026/more-50000-heat-related-deaths-estimated-european-urban-areas-during-summer',
+  metGinastica24: 'https://www.metropoles.com/esportes/flavia-e-lorrane-ficam-fora-do-podio-no-mundial-de-ginastica-artistica',
+  naGinastica24: 'https://noataque.com.br/ginastica/noticia/2026/10/23/mundial-de-ginastica-flavia-saraiva-fica-em-12o-e-lorrane-em-21o-no-individual-geral-rebeca-foca-no-salto/',
+  bandGinastica24: 'https://www.band.com.br/esportes/brasil-e-5o-no-mundial-de-ginastica-artistica-de-2026',
+  cnnCruzeiro24: 'https://www.cnnbrasil.com.br/esportes/brasileirao/cruzeiro-leva-sustos-mas-bate-o-remo-e-se-consolida-no-g4-do-brasileirao/',
+  f1mTl2_24: 'https://www.f1mania.net/f1/f1-confira-o-resultado-completo-do-tl2-do-gp-dos-estados-unidos/',
+  cnnMurakami24: 'https://www.cnnbrasil.com.br/pop/celebridades/ryu-murakami-escritor-e-cineasta-japones-morre-aos-74-anos/',
+  rsMaiden24: 'https://rollingstone.com.br/noticia/que-horas-comeca-o-show-do-iron-maiden-em-sao-paulo-no-domingo-25/',
+  imIbov24: 'https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-23102026/',
+  forbesIbov24: 'https://forbes.com.br/forbes-money/2026/10/ibovespa-fecha-em-alta-e-dolar-cai-a-espera-de-desfecho-da-eleicao/',
+  cbIpca24: 'https://www.correiobraziliense.com.br/economia/2026/10/7526266-previa-da-inflacao-ipca-15-desacelera-para-032-em-outubro.html',
+  cbArrecadacao24: 'https://www.correiobraziliense.com.br/economia/2026/10/7525844-governo-tem-arrecadacao-recorde-de-rs-2393-bi-em-setembro-diz-receita.html',
+  tbEmbraer24: 'https://timesbrasil.com.br/brasil/embraer-carteira-pedidos-recorde-terceiro-trimestre-2026/',
+  gizMicrosoft24: 'https://gizmodo.com/microsoft-says-its-new-ai-is-more-than-twice-as-good-at-diagnosing-diseases-as-doctors-2000829562',
+  forbesSpacex24: 'https://www.forbes.com/sites/siladityaray/2026/10/23/att-verizon-t-mobile-shares-slip-as-spacex-reportedly-holds-cell-tower-talks-for-starlink-mobile/',
+  tcOpenai24: 'https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/'
 };
 
 const NEWS = [
 /* ===================== NACIONAL ===================== */
+{ id: 'debate-globo-como-foi-lula-flavio', cat: 'nacional', own: true, t: '2026-10-24T01', d: '24 out 2026', img: 'eleicao', read: 4,
+  title: 'No último debate, na Globo, Lula e Flávio discutem economia, saúde e segurança e trocam acusações',
+  sum: 'O encontro durou cerca de duas horas e teve tom mais contido que o da Band. Flávio pediu desculpas no ar, e a mãe de Ana Clara estava na plateia.',
+  body: [
+    'Lula (PT) e Flávio Bolsonaro (PL) fizeram na noite de sexta-feira (23), na TV Globo, o último debate antes do segundo turno, que é neste domingo (25). O programa teve mediação de César Tralli e durou cerca de duas horas, segundo a Gazeta do Povo. Segundo o Terra, as regras de tempo e de blocos deixaram o encontro mais contido do que o da Band, em 18 de outubro.',
+    '## Economia',
+    'Flávio criticou o preço dos alimentos, os impostos e os gastos públicos e propôs reajustes do salário mínimo e das aposentadorias acima da inflação. Lula defendeu a política de valorização do mínimo, citou obras do PAC e disse que os programas Desenrola chegaram a cerca de 15 milhões e a quase 16 milhões de pessoas, segundo a Gazeta do Povo. Os dois também trocaram críticas sobre as bets e o crédito rural.',
+    '## Saúde e programas sociais',
+    'Flávio disse que o SUS é "orgulho nacional", mas que é mal gerido, com falta de remédios e longas esperas. Lula afirmou que o SUS evitou mais mortes na pandemia e disse que Flávio já chamou o Bolsa Família de "Bolsa Farelo", em publicações depois apagadas. Os dois prometeram manter o programa, segundo o Terra.',
+    '## Momentos de tensão',
+    'Ao falar de tarifa zero no transporte, Flávio disse que o governo "dá com uma mão e tira com nove dedos". Lula, que perdeu um dedo em 1964, quando trabalhava como torneiro mecânico, cobrou desculpas, e Flávio pediu desculpas no ar, segundo o NSC Total.',
+    'Lula levou à plateia Cristiane Gomes, mãe de Ana Clara, menina de 5 anos morta por um tiro em Niterói (RJ) em 2021, e perguntou por que Flávio atuou na defesa do policial acusado. Flávio disse confiar que o policial não fez o disparo e ofereceu ajuda para identificar o responsável, segundo o NSC Total. Segundo a CNN Brasil, a Globo separou os convidados das duas campanhas na plateia para evitar confrontos.',
+    'Lula também perguntou sobre uma ilha em Angra dos Reis (RJ) que o jogador Richarlison diz ter perdido e citou o advogado Willer Tomaz, amigo de Flávio. Flávio negou envolvimento e disse que a ilha nunca foi do jogador. Flávio, por sua vez, acusou Lula de ter recebido um uísque de R$ 500 mil, e Lula ligou Flávio ao banqueiro Daniel Vorcaro, do caso Banco Master, segundo a Gazeta do Povo.',
+    '## Considerações finais',
+    'Lula pediu desculpas pelo tom do debate e disse que o domingo é decisivo. Flávio disse nunca ter sido investigado por ligação com milícias e citou como prioridades recuperar o poder de compra e defender a liberdade, segundo a Gazeta do Povo.',
+    '## Checagem',
+    'A agência Lupa checou 42 falas, 15 de Lula e 27 de Flávio. Entre elas, classificou como falsa a afirmação de Lula de que a economia não cresce acima de 3% desde 2010 e a de Flávio de que Lula seria o "pai do tigrinho". As apostas de quota fixa foram autorizadas em 2018, no governo Temer, e regulamentadas em 2023, segundo a Lupa e o Terra.'
+  ],
+  box: { type: 'facts', title: 'O último debate', rows: [['Quando', 'Sexta (23), na TV Globo'], ['Mediação', 'César Tralli'], ['Duração', 'Cerca de duas horas'], ['Falas checadas pela Lupa', '15 de Lula e 27 de Flávio'], ['Votação', 'Domingo (25), das 8h às 17h']] },
+  sources: [['Gazeta do Povo', U.gpDebate24], ['Terra', U.terraDebate24], ['NSC Total', U.nscDebate24], ['CNN Brasil', U.cnnConvidados24], ['Lupa', U.lupaDebate24]] },
+
+{ id: 'segundo-turno-domingo-como-votar', cat: 'nacional', own: false, t: '2026-10-24T05', d: '24 out 2026', img: 'eleicao', src: 'CNN Brasil', url: U.cnnComoVotar24,
+  title: 'Segundo turno é neste domingo, das 8h às 17h; veja o que levar para votar',
+  sum: 'Vale qualquer documento oficial com foto, inclusive em versão digital. Além de presidente, cinco estados escolhem governador.',
+  body: [
+    'A votação vai das 8h às 17h, no horário de Brasília, e quem estiver na fila às 17h ainda pode votar. A apuração do TSE começa às 17h, e os resultados podem ser acompanhados no site e no aplicativo do tribunal.',
+    'Valem RG, CNH, passaporte e certificado de reservista, também em versão digital, e o e-Título, se tiver foto. Certidões de nascimento e de casamento não são aceitas. O celular não pode entrar na cabine, mas o eleitor pode levar o número do candidato anotado em papel. Onde há disputa para governador, o voto para governador vem antes do voto para presidente.'
+  ] },
+
+{ id: 'sigilos-autorizacoes-entregues-sem-divulgacao', cat: 'nacional', own: false, t: '2026-10-23T10', d: '23 out 2026', img: 'congresso', src: 'BNews', url: U.bnewsSigilos24,
+  title: 'Lula e Flávio entregam autorizações ao TSE, mas os dados dos sigilos continuam sem divulgação',
+  sum: 'As campanhas protocolaram procurações para abrir os sigilos bancário, fiscal e telefônico. Não há prazo para que extratos e registros se tornem públicos.',
+  body: [
+    'A campanha de Lula entregou primeiro, na noite de quinta-feira (22), e pediu que o ministro André Mendonça atue como árbitro. A de Flávio entregou os documentos na madrugada seguinte e cobrou a divulgação dos gastos com cartões corporativos da Presidência.',
+    'Mendonça disse que a abertura dos dados cabe aos candidatos, e não à Justiça Eleitoral. Movimentações financeiras e conversas telefônicas dos candidatos e de pessoas e empresas ligadas a eles seguem fora do alcance do público.'
+  ] },
+
+{ id: 'pesquisas-finais-segundo-turno-sabado', cat: 'nacional', own: false, t: '2026-10-23T18', d: '23 out 2026', img: 'eleicao', src: 'Brasil de Fato', url: U.bdfPesquisas24,
+  title: 'Datafolha, Quaest e AtlasIntel divulgam neste sábado as últimas pesquisas antes do segundo turno',
+  sum: 'Pelo menos 11 levantamentos devem sair na véspera da votação. O Datafolha ouviu 4.050 eleitores, e a Quaest, 3.702.',
+  body: [
+    'A AtlasIntel deve divulgar os números por volta das 18h, com cerca de 5.000 entrevistas feitas de 18 a 23 de outubro. O Datafolha deve divulgar por volta das 18h45, com entrevistas feitas na sexta e no sábado. A Quaest também ouviu eleitores nesses dois dias, mas não informou o horário.',
+    'Na rodada anterior do Datafolha, Flávio Bolsonaro (PL) e Lula (PT) tinham 50% dos votos válidos cada. Na Quaest, Flávio tinha 45%, e Lula, 44%.'
+  ] },
+
+{ id: 'carmen-lucia-nega-transporte-interestadual', cat: 'nacional', own: false, t: '2026-10-23T20', d: '23 out 2026', img: 'congresso', src: 'O Tempo', url: U.otTransporte24,
+  title: 'Cármen Lúcia nega pedido da campanha de Lula para estender o transporte gratuito a linhas interestaduais',
+  sum: 'A ministra do STF disse que seria difícil aplicar a medida a dois dias do segundo turno. As regras do TSE já garantem gratuidade nas linhas municipais, intermunicipais e metropolitanas.',
+  body: [
+    'A coligação de Lula pediu que a decisão do STF sobre transporte gratuito em dia de eleição valesse também para linhas que cruzam a divisa entre estados, como as que ligam cidades vizinhas.',
+    'Segundo a ministra, a ampliação imediata exigiria dados mínimos, tempo de execução e coordenação com os 27 tribunais regionais eleitorais, os estados, o Distrito Federal e a ANTT, que regula as linhas interestaduais.'
+  ] },
+
 
 { id: 'datafolha-flavio-50-lula-50-validos', cat: 'nacional', own: true, t: '2026-10-22T19', d: '22 out 2026', img: 'eleicao', read: 3,
   title: 'Datafolha mostra Flávio e Lula com 50% dos votos válidos cada, a três dias do segundo turno',
@@ -900,22 +984,6 @@ const NEWS = [
   box: { type: 'facts', title: 'O acordo dos sigilos', rows: [['Petição conjunta', 'Quinta (22), por volta das 12h20'], ['Período pedido', 'Oito anos de dados'], ['Ponto de impasse', 'Alcazar Holdings, incluída por Flávio'], ['Relator', 'André Mendonça'], ['Dados publicados até a noite', 'Nenhum']] },
   sources: [['Poder360', U.p360Sigilos23], ['Brasil de Fato', U.bdfAcordo23], ['SBT News', U.sbtMendonca23], ['Jovem Pan', U.jpMendonca23], ['CNN Brasil', U.cnnSigilos23], ['Metrópoles', U.metSigilos23]] },
 
-{ id: 'debate-globo-ultimo-antes-segundo-turno', cat: 'nacional', own: true, t: '2026-10-23T05', d: '23 out 2026', img: 'eleicao', read: 3,
-  title: 'Lula e Flávio fazem nesta sexta, na Globo, o último debate antes do segundo turno',
-  sum: 'O debate começa às 21h20, com mediação de César Tralli, e terá três blocos. Os dois candidatos passaram a quinta em Brasília, sem agenda de rua.',
-  body: [
-    'A TV Globo exibe nesta sexta-feira (23), às 21h20, depois do Jornal Nacional, o último debate entre Lula (PT) e Flávio Bolsonaro (PL) antes da votação de domingo (25). A mediação é do jornalista César Tralli, e o encontro também será transmitido pela GloboNews e pelo g1, segundo a Exame.',
-    '## As regras',
-    'No primeiro bloco, as perguntas são sobre as cinco regiões do país, escolhidas por sorteio. No segundo, cada candidato escolhe 6 de 10 temas, como saúde e ensino integral. O terceiro bloco tem tema livre, e o programa termina com as considerações finais. A emissora vai fazer checagem das falas ao vivo, segundo a Gazeta do Povo. As duas campanhas assinaram as regras.',
-    '## Antes do debate',
-    'Na terça (20), Lula tinha condicionado sua presença à abertura dos sigilos de Flávio, segundo a CNN Brasil. Na quinta (22), depois do acordo no TSE, a comunicação do PT confirmou que o presidente vai participar, segundo o ND Mais. Flávio disse que suas contas estão declaradas à Receita.',
-    'Os dois passaram a quinta em Brasília. Lula não teve compromissos públicos e se dedicou à preparação, e Flávio fez uma transmissão ao vivo na internet à noite, segundo o Metrópoles e o Hoje em Dia.',
-    '## Único confronto até agora',
-    'No primeiro turno, o debate da Globo foi cancelado. O único encontro direto entre os dois na campanha foi o da Band, em 18 de outubro, segundo a Gazeta do Povo.'
-  ],
-  box: { type: 'steps', title: 'Como vai ser o debate', steps: [['1º bloco', 'Perguntas sobre as cinco regiões, por sorteio'], ['2º bloco', 'Cada candidato escolhe 6 de 10 temas'], ['3º bloco', 'Tema livre'], ['Final', 'Considerações finais']] },
-  sources: [['Exame', U.exDebate23], ['Gazeta do Povo', U.gpDebate23], ['ND Mais', U.ndDebate23], ['CNN Brasil', U.cnnDebateSigilo23], ['Metrópoles', U.metAgendas23], ['Hoje em Dia', U.hedAgendas23]] },
-
 { id: 'tse-manda-borrar-imagem-propaganda-lula', cat: 'nacional', own: false, t: '2026-10-22T20', d: '22 out 2026', img: 'congresso', src: 'TSE', url: U.tseBorrar23,
   title: 'TSE manda borrar a imagem de uma mulher em propaganda de Lula que critica Flávio',
   sum: 'A peça mostrava a foto de Valdenice de Oliveira Meliga ao lado de uma frase que associa Flávio a criminosos. A decisão foi por maioria.',
@@ -939,52 +1007,47 @@ const NEWS = [
     'Do total, 20.223 são policiais militares. A operação começa às 8h de sábado e vai até as 20h de domingo, com 135 delegacias de plantão. O Ceará tem mais de 7 milhões de eleitores.'
   ] },
 
-{ id: 'tse-suspende-propaganda-lula-assedio', cat: 'nacional', own: false, t: '2026-10-21T09', d: '21 out 2026', img: 'congresso', src: 'CNN Brasil', url: U.cnnPropLula22,
-  title: 'TSE manda a campanha de Lula suspender propaganda que associa Flávio a assédio',
-  sum: 'O ministro Marco Aurélio Bellizze entendeu que a peça sugere situações que não teriam acontecido. A propaganda usava atores e um vídeo real de Flávio imitando o irmão.',
-  body: [
-    'A peça simulava imagens de câmera de segurança com atores e, em seguida, mostrava um vídeo de Flávio Bolsonaro imitando o irmão Jair Renan. A defesa de Flávio argumentou que o vídeo foi gravado em ambiente privado, entre amigos.',
-    'No mesmo dia, Bellizze também suspendeu uma propaganda de rádio de Flávio sobre a "saidinha" de presos, a pedido da coligação de Lula.'
-  ] },
-
-{ id: 'tse-suspende-propaganda-flavio-saidinha', cat: 'nacional', own: false, t: '2026-10-21T19', d: '21 out 2026', img: 'congresso', src: 'Gazeta do Povo', url: U.gpSaidinha22,
-  title: 'TSE suspende propaganda de rádio de Flávio que associa Lula à "saidinha" de presos',
-  sum: 'Em decisão liminar, o ministro Marco Aurélio Bellizze disse que a peça sugere que Lula apoiou ou teve responsabilidade por um crime. O plenário ainda vai analisar o caso.',
-  body: [
-    'A propaganda reproduzia uma fala de Lula sobre a saída temporária de presos e, depois, uma reportagem sobre um preso que matou uma mulher durante o benefício. Segundo a decisão, a peça foi ao ar 30 vezes em 16 de outubro.',
-    'O ministro manteve o direito da campanha de Flávio de criticar a posição de Lula sobre o tema. A ação foi movida pela coligação Brasil Pronto pra Mais, de Lula.'
-  ] },
-
-{ id: 'defesa-civil-300-milhoes-credito', cat: 'nacional', own: false, t: '2026-10-21T09', d: '21 out 2026', img: 'congresso', src: 'Agência Brasil', url: U.abDefesaCivil22,
-  title: 'Governo libera R$ 300 milhões em crédito extraordinário para a Defesa Civil',
-  sum: 'A medida provisória publicada na quarta (21) destina o dinheiro ao Ministério da Integração e do Desenvolvimento Regional para ações de gestão de riscos e desastres.',
-  body: [
-    'Segundo o governo, o reforço responde à seca e às queimadas na Região Norte e às tempestades no Sul e no Sudeste. Por ser medida provisória, o crédito vale de imediato e depois passa pelo Congresso.'
-  ] },
-
-{ id: 'eleitores-nao-podem-ser-presos-eleicao', cat: 'nacional', own: false, t: '2026-10-20T09', d: '20 out 2026', img: 'eleicao', src: 'Agência Brasil', url: U.abPresos20,
-  title: 'Eleitores não podem ser presos desde terça, salvo em flagrante ou por crime inafiançável',
-  sum: 'A regra está no Código Eleitoral e vale para o segundo turno, no domingo (25). Candidatos têm a mesma proteção desde 10 de outubro.',
-  body: [
-    'As exceções são o flagrante, a sentença por crime inafiançável e o desrespeito a salvo-conduto. Mesários e fiscais de partido também não podem ser presos durante o trabalho, salvo em flagrante.'
-  ] },
-
 /* ===================== INTERNACIONAL ===================== */
-
-{ id: 'ira-brent-113-aramco-esvazia-sede', cat: 'internacional', own: true, t: '2026-10-23T03', d: '23 out 2026', img: 'mundo', read: 3,
-  title: 'Brent sobe 4% e fecha a US$ 113 com tensão no Golfo; Aramco manda funcionários deixarem a sede em Dhahran',
-  sum: 'Trump diz que o Irã inventa relatos de ataques a navios para encarecer o petróleo antes das eleições americanas. A Arábia Saudita diz ter interceptado drones sobre Riad e Medina.',
+{ id: 'brent-116-trump-petroleo-ira-derramamento', cat: 'internacional', own: true, t: '2026-10-24T02', d: '24 out 2026', img: 'mundo', read: 3,
+  title: 'Brent fecha a US$ 116, maior valor desde abril, e Trump diz que os EUA poderiam tomar o petróleo do Irã',
+  sum: 'O barril subiu 3,1% na sexta e 6,2% na semana. Os Emirados Árabes Unidos registraram uma mancha de óleo de cerca de 160 km² perto da costa.',
   body: [
-    'O petróleo Brent para dezembro subiu 4% na quinta-feira (22) e fechou a US$ 113,17 o barril, o maior valor desde 4 de maio, segundo a agência citada pelo Nation Thailand. O WTI subiu 2,4%, para US$ 99,47. Os investidores reagiram aos ataques contra a Arábia Saudita e às notícias de que Estados Unidos e Israel podem voltar a atacar o Irã depois das eleições americanas de 3 de novembro.',
-    '## Navios no Golfo',
-    'A Marinha da Guarda Revolucionária do Irã afirma ter atingido quatro navios que transferiam petróleo entre embarcações no Golfo e diz que outros três bateram em minas perto do Estreito de Ormuz, segundo a ABC News. A informação não foi confirmada de forma independente. O presidente Donald Trump disse que o Irã inventa relatos de ataques para fazer o preço do petróleo subir antes das eleições de meio de mandato.',
-    '## Arábia Saudita',
-    'A petroleira saudita Aramco mandou funcionários deixarem a sede em Dhahran e trabalharem de casa, segundo o Nation Thailand. O governo saudita diz ter interceptado pelo menos cinco drones sobre as regiões de Riad e Medina, e o número de mortos no ataque ao aeroporto de Dammam subiu para dois, com oito feridos, segundo a ABC News. Os EUA já tinham mandado funcionários não essenciais e familiares deixarem o país.',
-    '## Próximos passos',
-    'Fontes israelenses ouvidas pela ABC News dizem que EUA e Israel planejam retomar ataques conjuntos contra o Irã, provavelmente depois das eleições americanas. A Casa Branca diz que não vai atacar o Irã antes da votação. A reserva estratégica de petróleo dos EUA caiu para 283 milhões de barris, o menor nível desde outubro de 1982, segundo a Al Jazeera.'
+    'O petróleo Brent fechou a sexta-feira (23) a US$ 116,72 o barril, com alta de 3,1% no dia e de 6,2% na semana, segundo o TokenPost. Foi a terceira semana seguida de alta e o maior fechamento desde 29 de abril. O WTI, referência nos Estados Unidos, subiu 3,8%, para US$ 103,27.',
+    '## Ataques e ameaças',
+    'Os investidores reagiram aos ataques dos houthis, grupo armado do Iêmen, contra a Arábia Saudita e ao temor de novos bombardeios dos EUA contra o Irã, segundo o WION. Um ataque ao aeroporto Rei Fahd, no leste saudita, matou duas pessoas na quarta (21), e os houthis assumiram a autoria, segundo a Fox News.',
+    'Antes de viajar para um comício na Flórida, o presidente Donald Trump disse que os EUA poderiam tomar todo o petróleo do Irã, e até o país inteiro, se quisessem, e que o Estreito de Ormuz está sob controle americano, segundo o WION. Ele também falou na possibilidade de novos ataques. O primeiro-ministro de Israel, Benjamin Netanyahu, disse que o governo iraniano precisa ser derrubado, segundo a Fox News.',
+    '## Mancha de óleo',
+    'Os Emirados Árabes Unidos registraram um vazamento de óleo de um navio-tanque perto da costa de Umm Al Quwain, de causa ainda não informada. As praias da região foram fechadas, e equipes começaram a contenção e a limpeza. Um pesquisador do Observatório de Conflito e Meio Ambiente estimou a mancha em cerca de 160 km², segundo o WION. Na véspera, o Irã tinha afirmado ter atingido quatro navios comerciais no Golfo.',
+    '## Irã',
+    'O chefe do Exército iraniano disse que as forças do país estão prontas para uma "guerra assimétrica", segundo o TokenPost. As eleições de meio de mandato nos EUA são em 3 de novembro.'
   ],
-  box: { type: 'facts', title: 'Petróleo e Golfo', rows: [['Brent (quinta)', 'US$ 113,17 (+4%)'], ['WTI (quinta)', 'US$ 99,47 (+2,4%)'], ['Navios atingidos, segundo o Irã', '7'], ['Mortos em Dammam', '2'], ['Reserva estratégica dos EUA', '283 milhões de barris']] },
-  sources: [['Nation Thailand', U.ntBrent23], ['ABC News', U.abcIra23], ['Al Jazeera', U.ajReservas23], ['Jerusalem Post', U.jpostIra23], ['SBT News', U.sbtIbov23]] },
+  box: { type: 'facts', title: 'Petróleo e Golfo', rows: [['Brent (sexta)', 'US$ 116,72 (+3,1%)'], ['Brent na semana', '+6,2%'], ['WTI (sexta)', 'US$ 103,27 (+3,8%)'], ['Mancha nos Emirados', 'Cerca de 160 km²'], ['Eleições nos EUA', '3 de novembro']] },
+  sources: [['TokenPost', U.tpBrent24], ['WION', U.wionBrent24], ['Fox News', U.foxIra24], ['Forbes Brasil', U.forbesIbov24]] },
+
+{ id: 'jordania-ataque-igreja-karak-sete-mortos', cat: 'internacional', own: false, t: '2026-10-23T16', d: '23 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajJordania24,
+  title: 'Ataque a tiros em igreja durante funeral mata sete pessoas na Jordânia',
+  sum: 'Dois homens mascarados abriram fogo em uma igreja ortodoxa grega na província de Karak. Pelo menos 34 pessoas ficaram feridas, e nenhum grupo assumiu a autoria.',
+  body: [
+    'Sobreviventes contaram ter ouvido uma explosão quando o cortejo começava. Em seguida, os atiradores entraram na igreja, no vilarejo de Hamoud, e dispararam por vários minutos. As forças de segurança procuram dois suspeitos.',
+    'O ministro do Interior, Mazen al-Faraya, chamou o ataque de terrorista e disse que ele não tem precedentes. O rei Abdullah II prometeu as penas mais duras aos responsáveis. A Jordânia tem cerca de 300 mil cristãos, em uma população de cerca de 11,5 milhões.'
+  ] },
+
+{ id: 'cisjordania-bloqueio-netanyahu-hebron', cat: 'internacional', own: false, t: '2026-10-23T12', d: '23 out 2026', img: 'protesto', src: 'Al Jazeera', url: U.ajCisjordania24,
+  title: 'Netanyahu manda preparar bloqueio total da Cisjordânia depois de ataque que matou dois soldados perto de Hebron',
+  sum: 'Dois atiradores palestinos atacaram um posto de controle e foram mortos pelo Exército. Israel vota na terça (27).',
+  body: [
+    'O ataque atingiu um batalhão da reserva perto do assentamento de Telem. Além dos dois mortos, pelo menos cinco soldados ficaram feridos. Netanyahu ordenou o fechamento de Hebron e cancelou eventos ligados à eleição.',
+    'Na quinta (22), forças israelenses prenderam 36 palestinos em operações na Cisjordânia. Uma comissão palestina registrou 17 ataques de forças israelenses e colonos contra agricultores durante a colheita de azeitonas.'
+  ] },
+
+{ id: 'calor-europa-50-mil-mortes-verao', cat: 'internacional', own: false, t: '2026-10-22T16', d: '22 out 2026', img: 'ciencia', src: 'LSHTM', url: U.lshtmCalor24,
+  title: 'Calor do verão de 2026 matou mais de 50 mil pessoas em cidades da Europa, estima estudo',
+  sum: 'É o maior número desde 2000, quase o dobro do registrado em 2022. Cerca de dois terços das mortes são atribuídos às mudanças climáticas causadas pelo ser humano.',
+  body: [
+    'Os pesquisadores analisaram 854 áreas urbanas em 30 países, de 1º de junho a 31 de agosto. Quase um terço das mortes ocorreu entre 17 de junho e 1º de julho, quando as temperaturas ficaram mais de 5 °C acima da média. O sul e o oeste da Europa foram as regiões mais atingidas.',
+    'Os estudos foram publicados na revista Nature Health por pesquisadores do Imperial College London e da London School of Hygiene & Tropical Medicine. As áreas analisadas reúnem cerca de 40% da população desses países.'
+  ] },
+
 
 { id: 'terremoto-tibete-magnitude-7-mortos', cat: 'internacional', own: true, t: '2026-10-22T12', d: '22 out 2026', img: 'mundo', read: 2,
   title: 'Terremoto de magnitude 7 mata pelo menos 16 pessoas no Tibete',
@@ -1047,29 +1110,38 @@ const NEWS = [
   box: { type: 'facts', title: 'A reunião de Strelna', rows: [['Duração', 'Cerca de 3 horas'], ['Novas conversas', 'A partir de 10 de novembro'], ['Local possível', 'Abu Dhabi'], ['Gesto de Moscou', 'Libertação de Stephen Hubbard'], ['Mortos na madrugada', '7, segundo a Ucrânia']] },
   sources: [['ABC News (Austrália)', U.abcPutin22], ['Jerusalem Post/Reuters', U.jpostPutin22], ['AP', U.apKiev22], ['Euronews', U.euroAtaques22]] },
 
-{ id: 'cuba-acusa-eua-pressao-votacao-embargo-onu', cat: 'internacional', own: false, t: '2026-10-21T16', d: '21 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajCuba22,
-  title: 'Cuba acusa os EUA de pressionar países antes da votação na ONU sobre o embargo',
-  sum: 'O chanceler Bruno Rodríguez diz que Washington ameaça outros governos com tarifas e restrições de vistos. A votação na Assembleia Geral deve ser em 27 ou 28 de outubro.',
-  body: [
-    'A Assembleia Geral da ONU condena o embargo americano a Cuba quase todos os anos desde 1992.'
-  ] },
-
-{ id: 'papa-leao-cirurgia-pulmao', cat: 'internacional', own: false, t: '2026-10-21T12', d: '21 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajPapa22,
-  title: 'Papa Leão XIV não precisará de outro tratamento depois da cirurgia contra câncer no pulmão, dizem médicos',
-  sum: 'Segundo a equipe médica, o câncer não se espalhou. A viagem ao Uruguai, à Argentina e ao Peru, de 6 a 17 de novembro, está mantida.',
-  body: [
-    'O papa, de 71 anos, foi operado em 13 de outubro para retirar o lobo inferior do pulmão direito, onde foi encontrado um adenocarcinoma, um tipo de câncer de pulmão. Ele recebeu alta em 17 de outubro e voltou ao Vaticano.'
-  ] },
-
-{ id: 'ebola-nigeria-primeiro-caso-quenia', cat: 'internacional', own: false, t: '2026-10-20T17', d: '20 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajEbola20,
-  title: 'Nigéria confirma caso de ebola, e Quênia chega a nove casos',
-  sum: 'A paciente nigeriana viajou de Uganda para Abuja, e 44 contatos estão sendo acompanhados. A cepa do surto, a Bundibugyo, não tem vacina licenciada.',
-  body: [
-    'No Quênia, o nono caso é um parente do primeiro paciente, que morreu em Nairóbi em 5 de outubro. As autoridades dizem que não há transmissão fora desse grupo.',
-    'Na República Democrática do Congo, são mais de 9 mil casos e mais de 4 mil mortes desde maio.'
-  ] },
-
 /* ===================== ESPORTES ===================== */
+{ id: 'mundial-ginastica-individual-geral-flavia-rebeca-salto', cat: 'esportes', own: true, t: '2026-10-24T03', d: '24 out 2026', img: 'esportes', read: 2,
+  title: 'Flávia Saraiva termina em 12º no individual geral do Mundial, e Rebeca Andrade disputa a final do salto neste sábado',
+  sum: 'A americana Skye Blakely ficou com o ouro em Roterdã. Lorrane Oliveira terminou em 21º. Flávia ainda disputa a final da trave no domingo.',
+  body: [
+    'Flávia Saraiva terminou em 12º lugar a final do individual geral do Mundial de ginástica artística, em Roterdã, na Holanda, na sexta-feira (23), com 52,799 pontos, segundo o Metrópoles. Lorrane Oliveira ficou em 21º, com 50,932.',
+    '## O pódio',
+    'O ouro ficou com a americana Skye Blakely. A russa Liudmila Roshchina ficou com a prata, e a chinesa Qinqin Ke, com o bronze, segundo o Metrópoles e o No Ataque.',
+    '## As notas de Flávia',
+    'Flávia somou 13,200 no solo, 13,300 nas barras assimétricas, 13,233 na trave e 13,066 no salto, segundo o No Ataque.',
+    '## As próximas finais',
+    'Rebeca Andrade, que liderou a classificatória do salto, disputa a final do aparelho neste sábado (24). Flávia volta no domingo (25), na final da trave. Nenhum ginasta brasileiro chegou às finais masculinas, segundo o No Ataque. Na final por equipes, o Brasil ficou em 5º lugar, segundo a Band.'
+  ],
+  box: { type: 'facts', title: 'Individual geral', rows: [['Ouro', 'Skye Blakely (EUA)'], ['Prata', 'Liudmila Roshchina (Rússia)'], ['Bronze', 'Qinqin Ke (China)'], ['Flávia Saraiva', '12ª, 52,799 pontos'], ['Lorrane Oliveira', '21ª, 50,932 pontos'], ['Final do salto', 'Sábado (24), com Rebeca']] },
+  sources: [['Metrópoles', U.metGinastica24], ['No Ataque', U.naGinastica24], ['Band', U.bandGinastica24]] },
+
+{ id: 'cruzeiro-vence-remo-terceiro-lugar', cat: 'esportes', own: false, t: '2026-10-23T23', d: '23 out 2026', img: 'esportes', src: 'CNN Brasil', url: U.cnnCruzeiro24,
+  title: 'Cruzeiro vence o Remo por 1 a 0 e assume o terceiro lugar do Brasileirão',
+  sum: 'Fabrício Bruno marcou de cabeça nos acréscimos do primeiro tempo. O Cruzeiro chega a 54 pontos, e o Remo segue em 19º, com 26.',
+  body: [
+    'O gol saiu de um escanteio cobrado por Matheus Pereira, no jogo que abriu a 32ª rodada, no Mineirão.',
+    'O Cruzeiro faz o clássico com o Atlético-MG na quinta (29), na Arena MRV. O Remo recebe o Botafogo na quarta (28), no Mangueirão.'
+  ] },
+
+{ id: 'f1-austin-leclerc-lidera-treino-livre-2', cat: 'esportes', own: false, t: '2026-10-23T20', d: '23 out 2026', img: 'pista', src: 'F1Mania', url: U.f1mTl2_24,
+  title: 'Leclerc lidera o segundo treino livre em Austin, com Antonelli 42 milésimos atrás',
+  sum: 'Verstappen foi o terceiro, e Hamilton, o quarto. Gabriel Bortoleto, da Audi, ficou em 11º. A classificação é neste sábado.',
+  body: [
+    'O piloto da Ferrari fez a volta mais rápida em 1min35s291. Kimi Antonelli, da Mercedes, líder do campeonato, marcou 1min35s333, e Max Verstappen, da Red Bull, 1min35s480. George Russell, Liam Lawson, Lando Norris e Oscar Piastri vieram em seguida.',
+    'Bortoleto ficou a 1s541 de Leclerc. O GP dos Estados Unidos é no domingo (25).'
+  ] },
+
 
 { id: 'f1-gp-eua-austin-antonelli-lider', cat: 'esportes', own: true, t: '2026-10-23T06', d: '23 out 2026', img: 'pista', read: 3,
   title: 'Antonelli chega a Austin com 102 pontos de vantagem e pode encaminhar o título da Fórmula 1',
@@ -1106,21 +1178,6 @@ const NEWS = [
   box: { type: 'table', title: 'Semifinais', head: ['Confronto', 'Ida', 'Volta'], rows: [['Palmeiras x Fluminense', '2 x 1 para o Palmeiras', '0 x 1; Palmeiras vence nos pênaltis'], ['Flamengo x Estudiantes', '0 x 0', '0 x 0; Estudiantes vence nos pênaltis (3 x 2)']], note: 'Final: 28 de novembro, no Estádio Centenário, em Montevidéu. Fontes: Metrópoles, Gazeta Esportiva, Lance! e Agência Esporte.' },
   sources: [['Metrópoles', U.metFlaEst23], ['Gazeta Esportiva', U.gzFlaEst23], ['Lance!', U.lanceFlaEst23], ['Agência Esporte', U.aePalFlu22]] },
 
-{ id: 'rebeca-andrade-mundial-cinco-finais', cat: 'esportes', own: true, t: '2026-10-21T20', d: '21 out 2026', img: 'esportes', read: 3,
-  title: 'Brasil termina em 5º na final por equipes do Mundial de ginástica, e China fica com o ouro',
-  sum: 'A seleção feminina somou 159,730 pontos e subiu três posições em relação à classificatória. Rebeca Andrade e Flávia Saraiva ainda disputam finais até domingo (25).',
-  body: [
-    'A seleção feminina de ginástica artística terminou em 5º lugar na final por equipes do Mundial de Roterdã, na Holanda, na quarta-feira (21), com 159,730 pontos, segundo o site A Onça. O Brasil tinha entrado na final com a 8ª e última vaga, com 159,131, e foi a única equipe que melhorou a nota em relação à classificatória.',
-    '## O pódio',
-    'A China ficou com o ouro, com 165,764, à frente dos Estados Unidos, com 165,531, e do Japão, com 164,063. Segundo o PAIPEE, é o primeiro título por equipes da China em 20 anos. As três primeiras garantiram vaga na Olimpíada de Los Angeles, em 2028.',
-    '## O desempenho brasileiro',
-    'O salto foi o melhor aparelho do Brasil, com 41,433, e Rebeca Andrade tirou 14,400. Na trave, a equipe somou 40,532; nas paralelas, 39,132; e no solo, 38,633. Não houve quedas, segundo o A Onça.',
-    '## As próximas finais',
-    'Na sexta-feira (23), Flávia Saraiva e Lorrane Oliveira disputam o individual geral. No sábado (24), Rebeca Andrade compete na final do salto, e no domingo (25), Flávia Saraiva, na da trave.'
-  ],
-  box: { type: 'table', title: 'As próximas finais do Brasil (horário de Brasília)', head: ['Final', 'Data', 'Brasileiras'], rows: [['Individual geral', 'Sexta (23), 14h30', 'Flávia Saraiva e Lorrane Oliveira'], ['Salto', 'Sábado (24), a partir das 9h', 'Rebeca Andrade'], ['Trave', 'Domingo (25), a partir das 10h', 'Flávia Saraiva']], note: 'Fontes: A Onça e Agência Brasil.' },
-  sources: [['A Onça', U.aoncaGin22], ['PAIPEE', U.paipeeGin22], ['Agência Brasil', U.abRebeca19]] },
-
 { id: 'atletico-mg-final-sul-americana-boca', cat: 'esportes', own: false, t: '2026-10-21T21', d: '21 out 2026', img: 'esportes', src: 'CNN Brasil', url: U.cnnGalo22,
   title: 'Atlético-MG perde para o City Torque por 2 a 0, mas vai à final da Sul-Americana contra o Boca',
   sum: 'Com a vitória por 3 a 0 na ida, o Galo avançou por 3 a 2 no agregado, mesmo com um jogador expulso. A final é em 21 de novembro, em Barranquilla, na Colômbia.',
@@ -1151,22 +1208,23 @@ const NEWS = [
     'O 76ers volta à quadra na quinta (22), contra o Cavaliers.'
   ] },
 
-{ id: 'psg-vence-barcelona-champions', cat: 'esportes', own: false, t: '2026-10-20T18', d: '20 out 2026', img: 'esportes', src: 'CNN Brasil', url: U.cnnPsg20,
-  title: 'PSG vence o Barcelona por 4 a 2 na Champions, e Marquinhos deixa o jogo lesionado',
-  sum: 'Doué, Lucas Hernández, Vitinha e Fabián Ruiz marcaram para o time francês. Lamine Yamal e Xavi Espart fizeram os gols do Barcelona.',
-  body: [
-    'Além do zagueiro brasileiro, Dembélé e Kvaratskhelia saíram com problemas físicos no PSG, e Dani Olmo, no Barcelona. O jogo foi pela terceira rodada da fase de liga.'
-  ] },
-
-{ id: 'corinthians-empata-vitoria-seedorf', cat: 'esportes', own: false, t: '2026-10-19T22', d: '19 out 2026', img: 'esportes', src: 'CNN Brasil', url: U.cnnCorVit19,
-  title: 'Corinthians empata com o Vitória e encerra sequência de oito derrotas no Brasileirão',
-  sum: 'Renê abriu o placar no fim do primeiro tempo, e Yuri Alberto empatou de pênalti no segundo. O Corinthians é o 16º, com 33 pontos, um acima da zona de rebaixamento.',
-  body: [
-    'O jogo, pela 31ª rodada, foi na Neo Química Arena. O técnico Clarence Seedorf, anunciado em 11 de outubro, assistiu da arquibancada, e o time foi comandado por um auxiliar.',
-    'O Vitória é o 13º, com 37 pontos. No sábado (24), o Corinthians visita o Vasco em São Januário.'
-  ] },
-
 /* ===================== CULTURA ===================== */
+{ id: 'morre-ryu-murakami-escritor-japones', cat: 'cultura', own: false, t: '2026-10-23T12', d: '23 out 2026', img: 'arte', src: 'CNN Brasil', url: U.cnnMurakami24,
+  title: 'Morre Ryu Murakami, escritor e cineasta japonês de "Azul Quase Transparente", aos 74 anos',
+  sum: 'A morte, em 17 de outubro, foi anunciada pela editora Gentosha. O livro de estreia, de 1976, vendeu mais de 3,5 milhões de exemplares.',
+  body: [
+    'Nascido em 1952 na província de Nagasaki, Murakami ganhou o Prêmio Akutagawa com "Azul Quase Transparente". Ele também dirigiu filmes baseados nos próprios livros, como "Tóquio em Decadência" e "Kyoko".',
+    'Por anos, apresentou na TV Tokyo um programa de entrevistas sobre economia e negócios. O funeral foi restrito à família.'
+  ] },
+
+{ id: 'iron-maiden-sao-paulo-domingo-horarios', cat: 'cultura', own: false, t: '2026-10-23T15', d: '23 out 2026', img: 'palco', src: 'Rolling Stone Brasil', url: U.rsMaiden24,
+  title: 'Iron Maiden faz show em São Paulo no domingo, na turnê dos 50 anos da banda',
+  sum: 'Os portões do Nubank Parque abrem às 16h, e a banda deve subir ao palco por volta das 20h50. Há outro show na cidade na terça (27) e um em Curitiba na quarta (28).',
+  body: [
+    'A turnê "Run for Your Lives" celebra os 50 anos do grupo britânico. O Alter Bridge abre a noite, a partir das 19h10.',
+    'Menores de 16 anos só entram acompanhados dos pais ou de responsável legal.'
+  ] },
+
 
 { id: 'morre-tom-skerritt-top-gun-alien', cat: 'cultura', own: false, t: '2026-10-22T16', d: '22 out 2026', img: 'cultura', src: 'CNN Brasil', url: U.cnnSkerritt23,
   title: 'Morre Tom Skerritt, ator de "Top Gun" e "Alien", aos 93 anos',
@@ -1245,13 +1303,6 @@ const NEWS = [
     'Os preços vão de R$ 345, na arquibancada com meia-entrada, a R$ 3.000, na Red Zone, com inteira. O limite é de quatro ingressos por CPF, com no máximo dois de meia-entrada. Os portões abrem às 16h, e o show começa às 21h.'
   ] },
 
-{ id: 'anitta-grammy-latino-apresentacao', cat: 'cultura', own: false, t: '2026-10-20T19', d: '20 out 2026', img: 'palco', src: 'Billboard Brasil', url: U.bbGrammy22,
-  title: 'Anitta está entre as atrações confirmadas do Grammy Latino, em 12 de novembro',
-  sum: 'A cerimônia é em Las Vegas, com transmissão a partir das 22h de Brasília. Rosalía, Daddy Yankee e Juanes também se apresentam.',
-  body: [
-    'Anitta concorre em duas categorias com o álbum "Equilibrivm": álbum do ano e melhor álbum de pop contemporâneo em língua portuguesa. A 27ª edição do prêmio será na MGM Grand Garden Arena.'
-  ] },
-
 { id: 'morre-john-anderson-country', cat: 'cultura', own: false, t: '2026-10-21T20', d: '21 out 2026', img: 'palco', src: 'Variety', url: U.varAnderson22,
   title: 'Morre John Anderson, cantor country de "Seminole Wind", aos 71 anos',
   sum: 'A família anunciou a morte na quarta (21), sem informar a causa. Ele teve cinco músicas em 1º lugar nas paradas de country dos EUA.',
@@ -1259,31 +1310,53 @@ const NEWS = [
     'Nascido em Orlando, na Flórida, Anderson gravou 22 álbuns de estúdio e entrou para o Hall da Fama da Música Country em 2024.'
   ] },
 
-{ id: 'spotify-remove-75-milhoes-faixas-spam', cat: 'cultura', own: false, t: '2026-10-20T18', d: '20 out 2026', img: 'plataforma', src: 'Rolling Stone Brasil', url: U.rsSpotify20,
-  title: 'Spotify remove 75 milhões de faixas classificadas como spam, inclusive músicas feitas com IA',
-  sum: 'Outras 50 milhões saíram das recomendações. Artistas verificados ganham selo de pessoa real, e perfis de IA terão identificação própria.',
+/* ===================== ECONOMIA ===================== */
+{ id: 'ibovespa-sobe-0-47-dolar-abaixo-5-23-outubro', cat: 'economia', own: true, t: '2026-10-23T18', d: '23 out 2026', img: 'mercado', read: 3,
+  title: 'Ibovespa sobe 0,47% no último pregão antes do segundo turno, e dólar fecha abaixo de R$ 5',
+  sum: 'O índice fechou aos 205.082 pontos, mas caiu 0,17% na semana. O dólar recuou 0,90%, para R$ 4,993, e acumulou queda de 1,64% na semana.',
   body: [
-    'Segundo a Rolling Stone Brasil, 300 mil artistas verificados recebem o selo, e as "personas de IA" ficam fora das recomendações por padrão. Os créditos das músicas também passam a mostrar contribuições de inteligência artificial.'
+    'O Ibovespa, principal índice da bolsa brasileira, subiu 0,47% na sexta-feira (23) e fechou aos 205.082 pontos, segundo o InfoMoney. Foi o último pregão antes do segundo turno. Na semana, o índice acumulou queda de 0,17%.',
+    '## O que pesou',
+    'Segundo a Forbes Brasil, parte dos investidores apostava na vitória de Flávio Bolsonaro (PL), embora o Datafolha de quinta mostrasse empate com Lula (PT), com 50% dos votos válidos cada. Operadores esperam forte oscilação na segunda-feira, qualquer que seja o resultado. A prévia da inflação de outubro, de 0,32%, ficou abaixo dos 0,43% projetados pela XP, segundo o InfoMoney.',
+    '## As ações',
+    'A maior alta foi da CSN, com 12,41%, seguida por Usiminas (+4,74%) e Natura (+4,50%). O Banco do Brasil subiu 3,34%, e a Petrobras, 1,47%, com a alta do petróleo. Entre as quedas, ficaram Vibra (-3,19%), WEG (-2,89%) e Vivo (-2,26%), segundo o InfoMoney. A Embraer subiu 0,91% depois de informar carteira recorde de pedidos, segundo a Forbes Brasil.',
+    '## Dólar e exterior',
+    'O dólar comercial caiu 0,90% e fechou a R$ 4,993, segundo o InfoMoney. Em 2026, a moeda americana acumula queda de 9,10%, segundo a Forbes Brasil. Em Nova York, o S&P 500 caiu 0,52%, e o petróleo Brent subiu 3,14%, para US$ 116,72.'
+  ],
+  box: { type: 'facts', title: 'Fechamento de sexta (23)', rows: [['Ibovespa', '205.082 pontos (+0,47%)'], ['Ibovespa na semana', '-0,17%'], ['Dólar', 'R$ 4,993 (-0,90%)'], ['Dólar na semana', '-1,64%'], ['Maior alta', 'CSN (+12,41%)'], ['Maior queda', 'Vibra (-3,19%)']] },
+  sources: [['InfoMoney', U.imIbov24], ['Forbes Brasil', U.forbesIbov24]] },
+
+{ id: 'ipca-15-outubro-0-32-alimentos', cat: 'economia', own: true, t: '2026-10-23T10', d: '23 out 2026', img: 'mercado', read: 3,
+  title: 'Prévia da inflação desacelera para 0,32% em outubro, com queda de energia e passagens aéreas',
+  sum: 'O IPCA-15 tinha sido de 0,70% em setembro. Em 12 meses, a alta é de 4,62%. Os alimentos foram o maior peso, e o tomate subiu 24,54%.',
+  body: [
+    'O IPCA-15, considerado a prévia da inflação oficial, subiu 0,32% em outubro, depois de 0,70% em setembro, segundo o IBGE, citado pelo Correio Braziliense. Em outubro de 2025, a taxa tinha sido de 0,18%. No ano, o índice acumula 4,15%. Em 12 meses, a alta é de 4,62%, acima dos 4,47% do período anterior.',
+    '## O que subiu',
+    'Oito dos nove grupos pesquisados subiram. Alimentação e bebidas teve o maior impacto, com alta de 0,88%. A comida consumida em casa ficou 1,01% mais cara, com destaque para tomate (24,54%), cebola (13,63%), batata (10,96%) e arroz (5,80%). Cenoura (-10,67%) e café moído (-1,16%) ficaram mais baratos.',
+    '## O que aliviou',
+    'As passagens aéreas caíram 9,24% e foram a maior influência para baixo. A energia elétrica residencial recuou 0,89%, com a troca da bandeira tarifária de amarela para verde. Habitação foi o único grupo em queda, de 0,10%.',
+    '## Combustíveis',
+    'Os combustíveis aceleraram de 0,22% em setembro para 1,20% em outubro. O diesel subiu 3,70%, o etanol, 2,73%, e a gasolina, 0,92%. O índice geral ficou abaixo dos 0,43% projetados pela XP, segundo o InfoMoney.'
+  ],
+  box: { type: 'facts', title: 'IPCA-15 de outubro', rows: [['Outubro', '0,32%'], ['Setembro', '0,70%'], ['Acumulado em 2026', '4,15%'], ['Em 12 meses', '4,62%'], ['Tomate', '+24,54%'], ['Passagens aéreas', '-9,24%']] },
+  sources: [['Correio Braziliense', U.cbIpca24], ['InfoMoney', U.imIbov24]] },
+
+{ id: 'arrecadacao-federal-setembro-recorde-239-bilhoes', cat: 'economia', own: false, t: '2026-10-22T17', d: '22 out 2026', img: 'mercado', src: 'Correio Braziliense', url: U.cbArrecadacao24,
+  title: 'Arrecadação federal chega a R$ 239,3 bilhões em setembro, recorde para o mês',
+  sum: 'É o melhor setembro da série histórica, iniciada em 2000. De janeiro a setembro, a arrecadação soma R$ 2,35 trilhões, alta real de 6,97%.',
+  body: [
+    'Segundo a Receita Federal, a alta em relação a setembro de 2025 foi de 5,62%. As contribuições para a Previdência cresceram com o aumento real da massa salarial e a redução da desoneração da folha.',
+    'Também subiram o Imposto de Renda e a CSLL das empresas e o PIS/Cofins, puxado pelos serviços e pela extração de petróleo.'
   ] },
 
-/* ===================== ECONOMIA ===================== */
-
-{ id: 'ibovespa-cai-1-15-dolar-sobe-22-outubro', cat: 'economia', own: true, t: '2026-10-22T18', d: '22 out 2026', img: 'mercado', read: 3,
-  title: 'Ibovespa cai 1,15%, aos 204.120 pontos, com cautela antes do segundo turno; dólar sobe para R$ 5,04',
-  sum: 'Siderúrgicas e Vale puxaram a queda. Em Nova York, o Nasdaq recuou 2,6% com a pressão sobre ações de inteligência artificial, e o petróleo disparou.',
+{ id: 'embraer-carteira-recorde-35-7-bilhoes', cat: 'economia', own: false, t: '2026-10-23T09', d: '23 out 2026', img: 'mercado', src: 'Times Brasil', url: U.tbEmbraer24,
+  title: 'Embraer tem carteira recorde de US$ 35,7 bilhões em pedidos no terceiro trimestre',
+  sum: 'O valor é 14% maior que o de um ano antes. A empresa entregou 66 aviões no trimestre e 175 desde janeiro.',
   body: [
-    'O Ibovespa, principal índice da bolsa brasileira, fechou a quinta-feira (22) em queda de 1,15%, aos 204.120 pontos, segundo o SBT News. Ao longo do dia, oscilou entre 203.051 e 206.493 pontos. Das 76 ações do índice, 48 caíram.',
-    '## Por que caiu',
-    'Analistas citaram a incerteza com o segundo turno, com os candidatos próximos nas pesquisas, a falta de propostas fiscais concretas e a aversão ao risco no exterior, segundo o SBT News. A Gazeta Brasil cita também o custo da proposta de tarifa zero no transporte enviada pelo governo ao Congresso. A pesquisa Datafolha só saiu depois do fechamento.',
-    '## As ações',
-    'As maiores quedas foram de CSN (-5,43%), Usiminas (-4,81%), Embraer (-4,66%), Vale (-3,97%) e Gerdau (-3,92%). Segundo o InfoMoney, a Vale acumula perda de quase 12% em outubro. Entre as altas, ficaram BB Seguridade (+2,05%), Prio (+1,85%) e Telefônica Brasil (+1,65%). A ação preferencial da Petrobras subiu 0,14%. O Bradesco caiu 2,08% e divulgou seu balanço depois do pregão.',
-    '## Dólar e juros',
-    'O dólar comercial subiu 0,22% e fechou a R$ 5,038, a segunda alta seguida, segundo o InfoMoney. Os juros futuros subiram em todos os prazos.',
-    '## Lá fora',
-    'Em Nova York, o Nasdaq caiu 2,60%, e o S&P 500, 1,21%, enquanto o Dow Jones ficou estável (+0,02%). As ações da Meta recuaram 6,98% depois de a empresa elevar a previsão de gastos com inteligência artificial. O Brent subiu 4% e fechou a US$ 113,17, segundo o SBT News.'
-  ],
-  box: { type: 'facts', title: 'Fechamento de quinta (22)', rows: [['Ibovespa', '204.120 pontos (-1,15%)'], ['Mínima do dia', '203.051 pontos'], ['Dólar', 'R$ 5,038 (+0,22%)'], ['Maior queda', 'CSN (-5,43%)'], ['Maior alta', 'BB Seguridade (+2,05%)'], ['Nasdaq', '-2,60%']] },
-  sources: [['SBT News', U.sbtIbov23], ['InfoMoney', U.imIbov23], ['Gazeta Brasil', U.gbIbov23], ['Brasil 61', U.b61Ibov23]] },
+    'A aviação comercial responde por US$ 15,8 bilhões da carteira, e a executiva, por US$ 8,2 bilhões. Em defesa e segurança, a carteira chegou a US$ 6,1 bilhões, alta de 56% em um ano.',
+    'Das 66 entregas do trimestre, 22 foram de jatos comerciais e 41, de executivos. Nos nove primeiros meses do ano, as entregas cresceram 14%.'
+  ] },
+
 
 { id: 'bradesco-lucro-7-bilhoes-terceiro-trimestre', cat: 'economia', own: false, t: '2026-10-22T18', d: '22 out 2026', img: 'mercado', src: 'Money Times', url: U.mtBradesco23,
   title: 'Bradesco lucra R$ 7,1 bilhões no terceiro trimestre, alta de 14,6% em um ano',
@@ -1291,13 +1364,6 @@ const NEWS = [
   body: [
     'O lucro líquido recorrente foi de R$ 7,109 bilhões. A rentabilidade sobre o patrimônio ficou em 16,1%, e a carteira de crédito ampliada chegou a R$ 1,15 trilhão, alta de 11,1% em 12 meses.',
     'A provisão para perdas com calotes somou R$ 10,6 bilhões, 24,3% a mais que um ano antes.'
-  ] },
-
-{ id: 'brent-sobe-4-fecha-113-dolares', cat: 'economia', own: false, t: '2026-10-22T17', d: '22 out 2026', img: 'mercado', src: 'SBT News', url: U.sbtIbov23,
-  title: 'Brent sobe 4% e fecha a US$ 113,17 com temor de novos ataques ao Irã',
-  sum: 'O WTI subiu 2,39%, para US$ 99,47. Na bolsa brasileira, as ações da petroleira Prio subiram 1,85%.',
-  body: [
-    'O mercado reagiu à possibilidade de os Estados Unidos voltarem a atacar o Irã. Os dois contratos são para dezembro.'
   ] },
 
 { id: 'pec-tarifa-zero-emendas-12-bilhoes', cat: 'economia', own: false, t: '2026-10-21T12', d: '21 out 2026', img: 'congresso', src: 'CNN Brasil', url: U.cnnTarifa23,
@@ -1337,13 +1403,6 @@ const NEWS = [
     'A medida provisória foi publicada no Diário Oficial da União na quarta-feira (21).'
   ] },
 
-{ id: 'ipca-15-outubro-sexta-projecao', cat: 'economia', own: false, t: '2026-10-21T08', d: '21 out 2026', img: 'mercado', src: 'InfoMoney', url: U.imAgenda22,
-  title: 'IBGE divulga a prévia da inflação de outubro na sexta, e mercado projeta alta de 0,45%',
-  sum: 'O IPCA-15 sai às 9h de sexta-feira (23). O Itaú projeta 0,51% no mês, com a taxa em 12 meses subindo para 4,8%.',
-  body: [
-    'O Bradesco também prevê 0,45%, com pressão dos alimentos. O IPCA-15 é considerado a prévia da inflação oficial do mês.'
-  ] },
-
 { id: 'durigan-critica-proposta-flavio-dividas', cat: 'economia', own: false, t: '2026-10-20T20', d: '20 out 2026', img: 'mercado', src: 'CNN Brasil', url: U.cnnDurigan20,
   title: 'Durigan diz que proposta de Flávio de comprar dívidas das famílias provocaria "calote geral"',
   sum: 'O ministro da Fazenda respondeu em vídeo à promessa feita no debate da Band. Flávio propôs que o governo compre dívidas dos bancos com desconto e dê carência aos devedores.',
@@ -1352,14 +1411,31 @@ const NEWS = [
     'Flávio não detalhou como a medida funcionaria.'
   ] },
 
-{ id: 'netflix-lucro-terceiro-trimestre-acoes', cat: 'economia', own: false, t: '2026-10-20T17', d: '20 out 2026', img: 'plataforma', src: 'InfoMoney', url: U.imNetflix20,
-  title: 'Netflix lucra mais que o esperado no 3º trimestre, mas prevê crescimento menor, e ações caem',
-  sum: 'A receita foi de US$ 12,9 bilhões, e o lucro por ação, de US$ 0,87, acima da estimativa de US$ 0,82. Para o 4º trimestre, a empresa prevê receita de US$ 13,4 bilhões.',
+/* ===================== TECNOLOGIA ===================== */
+{ id: 'microsoft-ia-diagnostico-medicos-science', cat: 'tecnologia', own: false, t: '2026-10-22T20', d: '22 out 2026', img: 'ciencia', src: 'Gizmodo', url: U.gizMicrosoft24,
+  title: 'IA da Microsoft acerta mais que o dobro de médicos generalistas em diagnósticos de casos complexos, diz estudo',
+  sum: 'O sistema MAI-DxO acertou 83,2% de casos complexos publicados pela revista médica NEJM, contra 36,1% dos médicos. O estudo saiu na revista Science.',
   body: [
-    'As ações chegaram a cair 7% depois do balanço. A receita com publicidade ficou abaixo do esperado, e a projeção para o fim do ano indica desaceleração do crescimento.'
+    'O sistema chega ao diagnóstico em etapas, pedindo exames e informações, como faz um médico. Em internações de emergência, acertou 80,3%, contra 46,8% dos médicos. Os melhores resultados usaram modelos da OpenAI.',
+    'Os pesquisadores dizem que a diferença deve ser menor na comparação com especialistas. Testes com pacientes reais estão previstos para um hospital de Boston nos próximos meses, e especialistas lembram que a ferramenta deve apoiar os médicos, não substituí-los.'
   ] },
 
-/* ===================== TECNOLOGIA ===================== */
+{ id: 'spacex-torres-celular-operadora-eua', cat: 'tecnologia', own: false, t: '2026-10-23T13', d: '23 out 2026', img: 'celular', src: 'Forbes', url: U.forbesSpacex24,
+  title: 'SpaceX negocia acesso a 80 mil torres de celular nos EUA, e ações de operadoras caem',
+  sum: 'Segundo a Bloomberg, a empresa quer combinar a internet via satélite Starlink com redes em terra. AT&T, Verizon e T-Mobile caíam mais de 3% antes da abertura do mercado.',
+  body: [
+    'As conversas incluem a Crown Castle, dona de torres, cujo presidente disse negociar com todas as partes. As ações da empresa subiam 7,31% antes da abertura.',
+    'A SpaceX também aguarda aprovação do órgão regulador americano para comprar frequências de 800 MHz da Grain Management.'
+  ] },
+
+{ id: 'openai-captacao-30-bilhoes-1-25-trilhao', cat: 'tecnologia', own: false, t: '2026-10-22T18', d: '22 out 2026', img: 'tecnologia', src: 'TechCrunch', url: U.tcOpenai24,
+  title: 'OpenAI negocia captar US$ 30 bilhões com avaliação de US$ 1,25 trilhão',
+  sum: 'A rodada seria liderada pela Coatue, com investidores dos Emirados Árabes Unidos. Em março, a empresa tinha sido avaliada em US$ 852 bilhões.',
+  body: [
+    'Segundo fontes ouvidas pela CNBC, os termos ainda estão em negociação. Um mês antes, a Bloomberg tinha noticiado conversas para captar o mesmo valor com avaliação de US$ 1,4 trilhão.',
+    'Em junho, a OpenAI entregou de forma confidencial os documentos para abrir capital na bolsa. A empresa não comentou.'
+  ] },
+
 
 { id: 'meta-gastos-ia-acoes-caem-7', cat: 'tecnologia', own: true, t: '2026-10-22T17', d: '22 out 2026', img: 'plataforma', read: 3,
   title: 'Ações da Meta caem quase 7% depois de gastos com IA deixarem o fluxo de caixa negativo',
@@ -1433,28 +1509,5 @@ const NEWS = [
   body: [
     'O plano de Lula prevê ainda o uso de IA na triagem de pacientes do SUS e data centers com energia limpa. O de Flávio inclui um assistente virtual chamado ClarIA e um sistema nacional de reconhecimento facial ligado a mais de 1 milhão de câmeras.'
   ] },
-
-{ id: 'tempestades-de-calor-multiplicaram', cat: 'tecnologia', own: false, t: '2026-10-21T14', d: '21 out 2026', img: 'ciencia', src: 'Olhar Digital', url: U.odCalor22,
-  title: '"Tempestades de calor" passaram de 5 para cerca de 102 por ano e já atingem quase todo o planeta',
-  sum: 'O levantamento da agência Reuters, com dados de hora em hora desde 1960, mostra que esses eventos respondem hoje por cerca de 43% dos dias de calor extremo.',
-  body: [
-    'Na década de 1960, esses eventos respondiam por cerca de 3% dos dias de calor extremo. Uma delas durou 367 dias, de julho de 2023 a julho de 2024, e cobriu 85% do planeta.'
-  ] },
-
-{ id: 'nasa-cronograma-pousos-lua', cat: 'tecnologia', own: false, t: '2026-10-21T13', d: '21 out 2026', img: 'ciencia', src: 'Space.com', url: U.spaceLua22,
-  title: 'Nasa prevê pouso tripulado na Lua só na missão Artemis IV, em 2028',
-  sum: 'A Artemis III, prevista para o 3º trimestre de 2027, vai testar em órbita da Terra o encontro com versões de teste dos módulos de pouso da SpaceX e da Blue Origin.',
-  body: [
-    'A SpaceX quer fazer um pouso não tripulado na Lua até o fim de 2027, e a Blue Origin, no primeiro trimestre de 2028. A Nasa marcou para sexta (23) uma entrevista sobre a aceleração do programa Artemis.'
-  ] },
-
-{ id: 'anthropic-prospecto-prejuizo-ipo', cat: 'tecnologia', own: false, t: '2026-10-20T18', d: '20 out 2026', img: 'tecnologia', src: 'Olhar Digital', url: U.odAnthropic20,
-  title: 'Prospecto do IPO mostra prejuízo de US$ 80,7 bilhões da Anthropic no semestre, a maior parte contábil',
-  sum: 'Cerca de US$ 72 bilhões vêm da reavaliação de notas conversíveis e outros instrumentos financeiros. A receita do semestre foi de US$ 16,3 bilhões, contra US$ 1,1 bilhão um ano antes.',
-  body: [
-    'Os dados são do prospecto preliminar analisado pelo Wall Street Journal, segundo o Olhar Digital. O documento lista compromissos de cerca de US$ 450 bilhões com serviços de nuvem nos próximos sete a dez anos, com Google, Amazon e Microsoft, entre outros.',
-    'A abertura de capital pode avaliar a empresa em US$ 2 trilhões. A Anthropic não comentou.'
-  ] },
-
 
 ];

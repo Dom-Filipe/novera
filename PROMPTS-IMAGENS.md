@@ -25,6 +25,21 @@ O site encontra a imagem pelo nome do arquivo e a coloca na notícia sozinho, co
 
 ## Nacional
 
+**`debate-globo-como-foi-lula-flavio.webp`**
+Estúdio de televisão visto da plateia durante um debate, com dois púlpitos iluminados ao fundo, câmeras em primeiro plano e público desfocado, sem rostos reconhecíveis, sem logotipos nem texto legível.
+
+**`segundo-turno-domingo-como-votar.webp`**
+Urna eletrônica sobre uma mesa de seção eleitoral em sala de aula, com cabine de votação de papelão ao lado e luz da manhã entrando pela janela, sem pessoas.
+
+**`sigilos-autorizacoes-entregues-sem-divulgacao.webp`**
+Pasta de documentos lacrada sobre uma mesa de madeira em sala de tribunal vazia, com carimbos e uma caneta ao lado, sem texto legível nem brasões.
+
+**`pesquisas-finais-segundo-turno-sabado.webp`**
+Prancheta com questionário em branco e um tablet ao lado, sobre o banco de uma praça ao entardecer, sem pessoas e sem texto legível.
+
+**`carmen-lucia-nega-transporte-interestadual.webp`**
+Ônibus rodoviário parado em uma rodoviária vazia ao amanhecer, com plataformas numeradas desfocadas, sem pessoas, sem logotipos nem letreiros legíveis.
+
 **`ceara-24-mil-agentes-segundo-turno.webp`**
 Viaturas policiais genéricas estacionadas em frente a uma escola usada como local de votação ao amanhecer, sem rostos reconhecíveis, sem brasões nem inscrições legíveis.
 
@@ -34,28 +49,25 @@ Nuvens escuras de tempestade sobre um campo aberto no interior do Brasil, com um
 **`tse-manda-borrar-imagem-propaganda-lula.webp`**
 Monitor de ilha de edição mostrando uma silhueta desfocada e pixelada, com mesa de som ao lado e luz baixa, sem texto legível nem marcas.
 
-**`debate-globo-ultimo-antes-segundo-turno.webp`**
-Estúdio de televisão vazio com dois púlpitos frente a frente, refletores acesos e plateia desfocada na penumbra, sem logotipos nem texto.
-
 **`sigilos-acordo-tse-mendonca-libera.webp`**
 Envelope pardo aberto sobre uma mesa de tribunal, com documentos em branco e uma caneta tinteiro, luz fria de escritório, sem texto legível nem brasões.
 
 **`datafolha-flavio-50-lula-50-validos.webp`**
 Duas pilhas de cédulas de papel em branco exatamente da mesma altura sobre uma mesa de madeira, com uma urna genérica desfocada ao fundo, luz suave, sem texto legível nem símbolos.
 
-**`tse-suspende-propaganda-lula-assedio.webp`**
-Ilha de edição de vídeo com monitores desligados e uma claquete sobre a mesa, luz baixa, sem texto legível nem marcas.
-
-**`tse-suspende-propaganda-flavio-saidinha.webp`**
-Estúdio de rádio com microfone profissional, fones de ouvido sobre a mesa de som e luz vermelha de "no ar" apagada, sem marcas.
-
-**`defesa-civil-300-milhoes-credito.webp`**
-Caminhão de resgate e equipamentos de defesa civil estacionados em rua alagada, com coletes laranja pendurados, céu nublado, sem rostos e sem logotipos.
-
-**`eleitores-nao-podem-ser-presos-eleicao.webp`**
-Urna eletrônica genérica sobre mesa de seção eleitoral em sala de aula vazia, cadeiras escolares ao fundo, luz da manhã, sem textos legíveis.
-
 ## Internacional
+
+**`brent-116-trump-petroleo-ira-derramamento.webp`**
+Navio-tanque no mar ao entardecer, cercado por barreiras flutuantes de contenção de óleo, com mancha escura na água, sem pessoas e sem nomes ou bandeiras legíveis.
+
+**`jordania-ataque-igreja-karak-sete-mortos.webp`**
+Fachada de uma pequena igreja de pedra em vilarejo árido no fim da tarde, com velas acesas no degrau da entrada, sem pessoas e sem símbolos religiosos em destaque.
+
+**`cisjordania-bloqueio-netanyahu-hebron.webp`**
+Estrada vazia em região de colinas secas com blocos de concreto bloqueando a passagem e oliveiras ao fundo, sem pessoas, sem bandeiras nem inscrições.
+
+**`calor-europa-50-mil-mortes-verao.webp`**
+Rua de cidade europeia sob sol forte do meio-dia, com calçada vazia, persianas fechadas e termômetro de rua desfocado, sem pessoas e sem texto legível.
 
 **`venezuela-oposicao-marcha-eleicao-2027.webp`**
 Avenida larga de uma capital latino-americana com multidão desfocada caminhando ao longe sob céu nublado, sem bandeiras nem cartazes legíveis.
@@ -72,31 +84,25 @@ Urna transparente com cédulas em branco sobre uma mesa coberta por pano azul, n
 **`terremoto-tibete-magnitude-7-mortos.webp`**
 Casas de pedra parcialmente desabadas numa planície de alta montanha, com cordilheira nevada ao fundo e equipes de resgate de costas ao longe, sem rostos.
 
-**`ira-brent-113-aramco-esvazia-sede.webp`**
-Navio petroleiro navegando em mar calmo ao entardecer, com plataformas de petróleo ao longe e céu alaranjado, sem bandeiras nem inscrições.
-
 **`putin-aceita-negociacao-trilateral-ucrania.webp`**
 Salão de palácio clássico com mesa longa de madeira, cadeiras vazias e lustres de cristal, cortinas pesadas e luz de fim de tarde, sem bandeiras nem pessoas.
 
-**`cuba-acusa-eua-pressao-votacao-embargo-onu.webp`**
-Plenário vazio de uma grande assembleia internacional, com fileiras de mesas e microfones, painel de votação apagado, sem símbolos.
-
-**`papa-leao-cirurgia-pulmao.webp`**
-Praça de pedras diante de uma basílica ao amanhecer, com pombos e colunas em perspectiva, sem pessoas.
-
-**`ebola-nigeria-primeiro-caso-quenia.webp`**
-Corredor de hospital com equipamentos de proteção pendurados, luvas e máscaras sobre um carrinho, luz branca, sem rostos visíveis.
-
 ## Esportes
+
+**`mundial-ginastica-individual-geral-flavia-rebeca-salto.webp`**
+Ginásio de ginástica artística com mesa de salto iluminada e pista de corrida azul, arquibancada desfocada, sem atletas, sem logotipos nem placares legíveis.
+
+**`cruzeiro-vence-remo-terceiro-lugar.webp`**
+Bola de futebol na marca do escanteio em gramado de estádio iluminado à noite, com arquibancada desfocada ao fundo, sem jogadores, escudos ou patrocínios.
+
+**`f1-austin-leclerc-lidera-treino-livre-2.webp`**
+Reta de autódromo ao pôr do sol com zebras vermelhas e brancas e marcas de pneu no asfalto, sem carros, sem pessoas e sem logotipos.
 
 **`europa-league-bournemouth-vence-milan.webp`**
 Gramado de estádio de futebol iluminado à noite, visto da arquibancada, com bola no centro do campo e torcida desfocada, sem escudos nem placas.
 
 **`f1-gp-eua-austin-antonelli-lider.webp`**
 Carro de corrida de fórmula genérico, sem patrocínios, numa reta de autódromo ao pôr do sol, com arquibancadas desfocadas ao fundo.
-
-**`rebeca-andrade-mundial-cinco-finais.webp`**
-Mesa de salto de ginástica artística em ginásio iluminado, com pó de magnésio no ar e arquibancada desfocada, sem pessoas reconhecíveis e sem marcas.
 
 **`atletico-mg-final-sul-americana-boca.webp`**
 Estádio de futebol à noite visto da arquibancada vazia, gramado molhado brilhando sob os refletores, sem escudos nem logotipos.
@@ -110,13 +116,13 @@ Gramado de estádio visto de cima ao entardecer, com linhas brancas recém-pinta
 **`lebron-76ers-vencem-knicks-estreia.webp`**
 Quadra de basquete coberta com piso de madeira brilhante, bola laranja parada perto da linha de lance livre e arquibancada desfocada, sem logotipos.
 
-**`psg-vence-barcelona-champions.webp`**
-Bola de futebol branca sobre o gramado molhado perto da marca do pênalti, estádio iluminado à noite ao fundo, sem logotipos.
-
-**`corinthians-empata-vitoria-seedorf.webp`**
-Banco de reservas vazio de um estádio à noite, com garrafas de água e coletes dobrados, gramado iluminado ao fundo, sem escudos.
-
 ## Cultura
+
+**`morre-ryu-murakami-escritor-japones.webp`**
+Escrivaninha de madeira com pilha de livros antigos, máquina de escrever e uma xícara de chá, luz suave de luminária, sem pessoas e sem títulos legíveis.
+
+**`iron-maiden-sao-paulo-domingo-horarios.webp`**
+Palco de show de rock em estádio à noite, com luzes vermelhas, fumaça e amplificadores, plateia desfocada de costas, sem rostos, logotipos nem textos.
 
 **`bts-mpsp-mapa-shows-morumbis.webp`**
 Estádio vazio visto do alto com palco em montagem e grades de setores no gramado, luz do dia, sem logotipos nem texto legível.
@@ -136,28 +142,28 @@ Dunas de areia douradas sob céu alaranjado, com marcas de vento na areia e um h
 **`u2-venda-geral-ingressos-morumbis.webp`**
 Palco de estádio montado à tarde, com treliças metálicas, telões apagados e gramado vazio, sem marcas nem pessoas.
 
-**`anitta-grammy-latino-apresentacao.webp`**
-Palco de premiação com escadaria iluminada, cortina dourada e microfone em pedestal no centro, plateia vazia, sem logotipos.
-
 **`morre-john-anderson-country.webp`**
 Violão acústico encostado em uma cadeira de madeira num palco vazio, iluminado por um único refletor, sem pessoas.
 
-**`spotify-remove-75-milhoes-faixas-spam.webp`**
-Fones de ouvido sobre uma mesa ao lado de um celular com tela desfocada de lista de músicas genérica, luz azulada, sem logotipos.
-
 ## Economia
+
+**`ibovespa-sobe-0-47-dolar-abaixo-5-23-outubro.webp`**
+Monitores de mesa de operações financeiras com gráficos de linhas verdes subindo, sala desfocada ao fundo, sem pessoas, sem logotipos nem números legíveis.
+
+**`ipca-15-outubro-0-32-alimentos.webp`**
+Banca de feira livre com tomates, cebolas e batatas em caixotes de madeira, luz natural da manhã, sem pessoas e sem placas de preço legíveis.
+
+**`arrecadacao-federal-setembro-recorde-239-bilhoes.webp`**
+Calculadora, recibos e uma pilha de formulários sobre uma mesa de escritório com luz natural, sem texto legível nem brasões.
+
+**`embraer-carteira-recorde-35-7-bilhoes.webp`**
+Jato comercial genérico estacionado em hangar iluminado, com escada e equipamentos de manutenção ao redor, sem pessoas, sem pintura de companhia nem logotipos.
 
 **`pec-tarifa-zero-emendas-12-bilhoes.webp`**
 Ônibus urbano genérico parado num ponto de uma avenida ensolarada de cidade brasileira num fim de semana, sem letreiros legíveis nem marcas.
 
-**`brent-sobe-4-fecha-113-dolares.webp`**
-Barris metálicos de petróleo enfileirados num pátio industrial ao entardecer, sem inscrições nem marcas.
-
 **`bradesco-lucro-7-bilhoes-terceiro-trimestre.webp`**
 Fachada de vidro genérica de um edifício comercial visto de baixo, refletindo o céu, sem letreiros nem logotipos.
-
-**`ibovespa-cai-1-15-dolar-sobe-22-outubro.webp`**
-Tela de computador com gráfico de linha genérico em queda em vermelho, numa mesa de operações com teclado e café, sem números legíveis nem marcas.
 
 **`camara-aprova-teto-mei-perdao-dividas.webp`**
 Balcão de uma pequena loja de bairro com caderno de contas, calculadora e máquina de cartão, luz da manhã, sem marcas nem texto legível.
@@ -168,16 +174,19 @@ Tanques de armazenamento de petróleo em refinaria vistos ao amanhecer, com tubu
 **`governo-credito-exportadores-tarifas-eua.webp`**
 Pátio de porto com contêineres coloridos empilhados e guindaste ao fundo, céu claro, sem marcas nem nomes de empresas.
 
-**`ipca-15-outubro-sexta-projecao.webp`**
-Carrinho de supermercado com frutas e verduras ao lado de etiquetas de preço em branco, corredor desfocado, sem marcas.
-
 **`durigan-critica-proposta-flavio-dividas.webp`**
 Pilha de boletos e contas em branco sobre uma mesa de cozinha, com calculadora e óculos ao lado, luz natural, sem textos legíveis.
 
-**`netflix-lucro-terceiro-trimestre-acoes.webp`**
-Controle remoto sobre o braço de um sofá diante de uma televisão com tela desfocada em tons de vermelho, sala escura, sem logotipos.
-
 ## Tecnologia
+
+**`microsoft-ia-diagnostico-medicos-science.webp`**
+Consultório médico com estetoscópio sobre a mesa e tela de computador mostrando gráficos desfocados, sem pessoas, sem logotipos nem texto legível.
+
+**`spacex-torres-celular-operadora-eua.webp`**
+Torre de telefonia celular em campo aberto sob céu estrelado, com o rastro de um satélite cruzando o céu, sem pessoas e sem logotipos.
+
+**`openai-captacao-30-bilhoes-1-25-trilhao.webp`**
+Sala de reuniões vazia em prédio comercial alto, com mesa longa, cadeiras e vista da cidade ao entardecer, sem pessoas e sem logotipos.
 
 **`anthropic-claude-duet-agente.webp`**
 Celular genérico sobre uma mesa de trabalho ao lado de agenda de papel e xícara de café, tela com interface desfocada, luz da manhã, sem marcas.
@@ -200,11 +209,3 @@ Martelo de juiz sobre mesa de madeira ao lado de um celular com a tela apagada, 
 **`propostas-lula-flavio-ia-data-centers.webp`**
 Corredor de data center com fileiras de servidores e cabos organizados, luz azul e verde, sem logotipos.
 
-**`tempestades-de-calor-multiplicaram.webp`**
-Rua de cidade sob calor intenso com o ar ondulando sobre o asfalto e termômetro de rua ao fundo marcando temperatura alta, sem pessoas reconhecíveis.
-
-**`nasa-cronograma-pousos-lua.webp`**
-Superfície da Lua cinzenta com crateras em primeiro plano e a Terra no céu escuro, sem naves nem marcas.
-
-**`anthropic-prospecto-prejuizo-ipo.webp`**
-Documento encadernado grosso sobre mesa de reunião, ao lado de um notebook com gráfico genérico na tela, luz suave de escritório, sem logotipos.
