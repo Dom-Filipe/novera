@@ -7,8 +7,8 @@
 const META = {
   /* Endereço público do site, sem barra no final. Usado nos links das redes sociais. */
   siteUrl: 'https://novera-sepia.vercel.app',
-  dataExtenso: 'Domingo, 25 de outubro de 2026',
-  edicao: '25 out 2026',
+  dataExtenso: 'Segunda-feira, 26 de outubro de 2026',
+  edicao: '26 out 2026',
   ibovespa: { valor: '205.082', variacao: '0,47%', sobe: true },
   dolar: { valor: 'R$ 4,99', variacao: '0,90%', sobe: false },
   fechamento: '23/10'
@@ -16,13 +16,13 @@ const META = {
 
 /* Home: destaque principal, dois laterais e três da faixa de baixo (IDs de notícias "own: true") */
 const FEATURED = {
-  lead: 'brasil-vota-segundo-turno-158-milhoes',
-  side: ['pesquisas-finais-flavio-51-lula-49-validos', 'ira-superpetroleiros-minas-ormuz-ataque-eua'],
-  also: ['rebeca-andrade-tricampea-mundial-salto', 'ibovespa-sobe-6-9-entre-turnos-cenarios', 'franca-protestos-410-mil-mil-detidos']
+  lead: 'lula-reeleito-51-79-quarto-mandato',
+  side: ['flavio-nao-reconhece-pede-anulacao', 'mercado-exterior-reage-reeleicao-lula'],
+  also: ['governadores-eleitos-segundo-turno-2026', 'servia-vucic-admite-derrota-lista-estudantes', 'flavia-saraiva-bronze-trave-mundial']
 };
 
 /* Home: "Escolhas da redação" (5 IDs) */
-const PICKS = ['debate-globo-como-foi-lula-flavio', 'f1-austin-antonelli-pole-verstappen', 'tse-sala-riscos-digitais-plataformas', 'ipca-15-outubro-0-32-alimentos', 'mostra-sao-paulo-50-edicao'];
+const PICKS = ['lula-quarto-mandato-desafio-fiscal', 'lula-promete-regular-plataformas-digitais', 'franca-protestos-410-mil-mil-detidos', 'iron-maiden-show-sao-paulo-50-mil', 'rebeca-andrade-tricampea-mundial-salto'];
 
 const U = {
   jgbMaster: 'https://jornalgrandebahia.com.br/2026/10/caso-banco-master-edson-fachin-marca-reuniao-com-pf-para-outubro-de-2026-e-cobra-apuracao-sem-excecao-de-mencoes-a-ministros-do-stf/',
@@ -926,47 +926,125 @@ const U = {
   imAzul25: 'https://www.infomoney.com.br/mercados/azul-anuncia-financiamento-de-ate-r2-bi-para-combustivel-de-aviacao/',
   imSoja25: 'https://www.infomoney.com.br/business/adido-do-usda-preve-safra-de-soja-brasileira-de-184-mi-t-para-2026-27/',
   leouveTse25: 'https://leouve.com.br/politica/tse-plataformas-digitais-segundo-turno-2026/',
-  tbMeta25: 'https://tecnoblog.net/noticias/meta-adia-mudanca-nos-termos-apos-reacao-negativa/'
+  tbMeta25: 'https://tecnoblog.net/noticias/meta-adia-mudanca-nos-termos-apos-reacao-negativa/',
+  /* Atualização de 26 out 2026 */
+  tseResultado26: 'https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026',
+  metAliados26: 'https://www.metropoles.com/brasil/flavio-culpa-prorrogacao-mas-aliados-atribuem-derrota-a-erros-proprios',
+  imAoVivo26: 'https://www.infomoney.com.br/politica/ao-vivo-eleicoes-segundo-turno-2026/',
+  abDiscurso26: 'https://agenciabrasil.ebc.com.br/politica/noticia/2026-10/lula-agradece-votos-e-diz-que-teve-de-vencer-intromissao-vinda-de-fora',
+  gpFlavio26: 'https://www.gazetadopovo.com.br/eleicoes/2026/flavio-bolsonaro-pronunciamento-anulacao-eleicao/',
+  metro1Flavio26: 'https://www.metro1.com.br/noticias/eleicoes-2026/190435,flavio-bolsonaro-rejeita-resultado-pede-anulacao-da-eleicao-e-contesta-decisao-do-stf',
+  forbesGov26: 'https://forbes.com.br/geral/2026/10/eleicoes-2026-governadores-eleitos-no-2o-turno-nos-5-estados-e-no-df/',
+  abGol26: 'https://agenciabrasil.ebc.com.br/geral/noticia/2026-10/gol-nega-cancelamento-de-voos-em-massa-para-o-nordeste',
+  ajServia26: 'https://www.aljazeera.com/news/2026/10/25/serbia-voter-turnout-highest-in-decades-as-students-oppose-longtime-leader',
+  cnnLideres26: 'https://www.cnnbrasil.com.br/internacional/lula-reeleito-lideres-mundiais-reagem-a-4a-vitoria-eleitoral-do-presidente/',
+  dgabcIra26: 'https://www.dgabc.com.br/Noticia/4364837/ira-reforca-que-segue-trocando-mensagens-com-os-eua-trump-diz-que-nao-havera-ataques-hoje',
+  p360Machado26: 'https://www.poder360.com.br/poder-internacional/maria-corina-machado-volta-a-venezuela-depois-de-quase-1-ano-fora/',
+  infobaeBulgaria26: 'https://www.infobae.com/america/agencias/2026/10/25/yotova-y-gyurov-se-disputaran-la-presidencia-de-bulgaria-en-una-ajustada-segunda-vuelta/',
+  dnLePen26: 'https://www.dn.pt/internacional/marine-le-pen-lana-campanha-com-promessa-de-restaurar-a-ordem-e-a-confiana',
+  abFranca26: 'https://agenciabrasil.ebc.com.br/internacional/noticia/2026-10/grupos-de-protesto-e-sindicatos-na-franca-convocam-novas-manifestacoes',
+  gzFlavia26: 'https://www.gazetaesportiva.com/mais-esportes/ginastica/flavia-saraiva-conquista-bronze-na-trave-no-mundial-de-ginastica-artistica/',
+  gzF126: 'https://www.gazetaesportiva.com/motor/formula-1/antonelli-vence-gp-estados-unidos-formula-1-2026/',
+  gzInter26: 'https://gazetaesportiva.com/campeonatos/brasileiro-serie-a/internacional-vence-botafogo-e-ganha-folego-contra-o-z4-do-brasileirao',
+  espnClassico26: 'https://www.espn.com/soccer/report/_/gameId/401882832',
+  gzFlaGalo26: 'https://www.gazetaesportiva.com/times/flamengo/flamengo-x-atletico-mg-pelo-brasileirao-onde-assistir-estatisticas-historico-e-provaveis-escalacoes/',
+  rsMaiden26: 'https://rollingstone.com.br/musica/iron-maiden-resenha-show-sao-paulo-2026/',
+  filmebPublico26: 'https://www.filmeb.com.br/noticias/publico-de-2026-ja-supera-todo-o-ano-de-2025',
+  imAbertura26: 'https://www.infomoney.com.br/mercados/como-os-mercados-vao-abrir-nesta-segunda-apos-a-reeleicao-de-lula/',
+  blDolar26: 'https://www.bloomberglinea.com.br/mercados/dolar-futuro-dispara-com-reeleicao-de-lula-e-etf-brasileiro-no-japao-despenca-13/',
+  invFiscal26: 'https://br.investing.com/news/economy-news/lula-vai-ao-quarto-mandato-com-desafio-de-retomar-credibilidade-fiscal-apos-elevar-gastos-na-campanha-2101973',
+  imAgenda26: 'https://www.infomoney.com.br/mercados/calendario-economico-resultado-das-eleicoes-e-decisao-do-fed-sao-destaques-da-semana/',
+  abMega26: 'https://agenciabrasil.ebc.com.br/geral/noticia/2026-10/mega-sena-acumula-e-proximo-premio-sera-de-r-300-milhoes',
+  piraBigTechs26: 'https://piranot.com.br/2026/10/26/noticias/politica/eleicoes/lula-promete-regular-big-techs',
+  tbSwitch26: 'https://tecnoblog.net/noticias/nintendo-switch-2-e-desbloqueado-via-software-pela-primeira-vez/',
+  tiGoogle26: 'https://tiinside.com.br/22/10/2026/google-cloud-passa-a-oferecer-modelos-da-openai-em-seu-catalogo-de-ia/'
 };
 
 const NEWS = [
 /* ===================== NACIONAL ===================== */
-{ id: 'brasil-vota-segundo-turno-158-milhoes', cat: 'nacional', own: true, t: '2026-10-25T05', d: '25 out 2026', img: 'eleicao', read: 4,
-  title: 'Brasil vota neste domingo no segundo turno; mais de 158 milhões de eleitores escolhem entre Lula e Flávio',
-  sum: 'A votação vai das 8h às 17h, no horário de Brasília. Além de presidente, seis unidades da federação escolhem governador. A divulgação dos resultados começa logo depois do fechamento das urnas.',
+{ id: 'lula-reeleito-51-79-quarto-mandato', cat: 'nacional', own: true, t: '2026-10-26T00', d: '26 out 2026', img: 'eleicao', read: 4,
+  title: 'Lula é reeleito com 51,79% dos votos válidos e vai para o quarto mandato',
+  sum: 'O petista teve 64,3 milhões de votos, e Flávio Bolsonaro, 59,8 milhões, segundo o TSE. É a primeira vez desde a redemocratização que o líder do primeiro turno perde a eleição presidencial.',
   body: [
-    'Os eleitores voltam às urnas neste domingo (25) para escolher o próximo presidente da República entre Lula (PT) e Flávio Bolsonaro (PL). Segundo o Metrópoles, mais de 158,7 milhões de pessoas estão aptas a votar, cerca de 2,3 milhões a mais que em 2022. As mulheres são cerca de 83,9 milhões, ou 52,84% do eleitorado.',
-    '## Os candidatos',
-    'Lula, de 80 anos, tenta um quarto mandato. Flávio, de 45 anos, disputa a Presidência pela primeira vez. No primeiro turno, em 4 de outubro, Flávio teve 47,03% dos votos válidos, e Lula, 45,16%, uma diferença de cerca de 2,2 milhões de votos, segundo o Metrópoles. Como nenhum dos dois passou de 50%, a disputa foi para o segundo turno.',
-    'No sábado (24), os dois fizeram os últimos atos de campanha. Flávio esteve de manhã na Savassi, em Belo Horizonte, e à tarde na Barra da Tijuca, no Rio. Lula fez um ato pela manhã em Copacabana, no Rio, e encerrou a campanha com uma caminhada na Avenida Paulista, em São Paulo, segundo a Agência Brasil. Lula deve acompanhar a apuração em São Paulo, e Flávio, em Brasília, segundo o Metrópoles.',
-    '## Governadores',
-    'Acre, Amazonas, Distrito Federal, Espírito Santo, Rio Grande do Norte e Tocantins também têm segundo turno para governador. Nesses lugares, o eleitor vota primeiro para governador e depois para presidente, segundo a Agência Brasil. Algumas cidades também têm eleição suplementar para prefeito, como Itaguaí (RJ) e Goiatins (TO).',
-    '## Como votar',
-    'É preciso levar um documento oficial com foto, e o e-Título vale se tiver foto. Celulares, câmeras e relógios inteligentes não podem entrar na cabine, mesmo desligados, mas o eleitor pode levar os números dos candidatos anotados em papel. Quem estiver na fila às 17h ainda pode votar. Segundo o Metrópoles, 361 seções mudaram de local entre os turnos, e o endereço pode ser conferido no e-Título.',
-    'Quem faltou no primeiro turno pode votar normalmente, desde que o título esteja regular. No primeiro turno, cerca de 125 milhões de pessoas votaram, e a abstenção foi de cerca de 21%.',
-    '## Estrutura',
-    'O TSE preparou 563.910 urnas, sendo 499.248 para a votação e as demais de reserva. Cerca de 25 mil militares atuam no transporte de urnas e na segurança em 11 estados. No exterior, cerca de 919 mil eleitores podem votar em 186 cidades, só para presidente, segundo o Metrópoles.',
-    'Até 24 horas depois do fim da votação, é proibido publicar conteúdo novo ou alterado por inteligência artificial com a imagem ou a voz de candidatos, segundo a Agência Brasil.'
+    'Luiz Inácio Lula da Silva (PT) foi reeleito presidente da República no segundo turno, neste domingo (25). Segundo o TSE, ele recebeu 64.256.232 votos, ou 51,79% dos votos válidos. Flávio Bolsonaro (PL) teve 59.826.041 votos, ou 48,21%. A diferença foi de cerca de 4,4 milhões de votos.',
+    'A vitória foi anunciada pelo presidente do TSE, ministro Kassio Nunes Marques, que cumprimentou os dois candidatos e os seis governadores eleitos no domingo. Lula, que governou de 2003 a 2010 e voltou ao cargo em 2023, completa 81 anos nesta terça-feira (27), segundo a Agência Brasil.',
+    '## A virada',
+    'No primeiro turno, em 4 de outubro, Flávio terminou na frente, com 47,03% dos votos válidos, contra 45,16% de Lula. Segundo o Metrópoles, é a primeira vez desde a redemocratização que o candidato mais votado no primeiro turno perde a disputa. Entre um turno e outro, Lula ganhou cerca de 10,4 milhões de votos, e Flávio, cerca de 3,7 milhões.',
+    'Segundo o levantamento do Metrópoles, Lula somou cerca de 2,6 milhões de votos a mais em São Paulo entre os turnos, contra 1,2 milhão de Flávio. No Rio de Janeiro, o petista ganhou 872 mil votos, e Flávio, 202 mil. Em Minas Gerais, a vantagem de Flávio no primeiro turno se inverteu.',
+    '## Comparecimento',
+    'Votaram 128,2 milhões de eleitores. A abstenção ficou em cerca de 19,2%, abaixo dos 21,08% do primeiro turno, segundo o TSE. O InfoMoney informa que foi a menor abstenção desde 2006.',
+    '## O que vem agora',
+    'Flávio não reconheceu o resultado e disse que vai pedir a anulação da eleição, por causa da prorrogação do horário de votação decidida pelo ministro Cristiano Zanin, do STF. Nunes Marques afirmou que a prorrogação não comprometeu a apuração nem mudou o resultado.'
   ],
-  box: { type: 'facts', title: 'O segundo turno em números', rows: [['Eleitores aptos', 'Mais de 158,7 milhões'], ['Horário', 'Das 8h às 17h (Brasília)'], ['Urnas', '563.910'], ['Eleitores no exterior', 'Cerca de 919 mil'], ['Disputas para governador', 'AC, AM, DF, ES, RN e TO']] },
-  sources: [['Metrópoles', U.metUrnas25], ['Agência Brasil', U.abPropaganda25], ['Agência Brasil', U.abAgenda25], ['Agência Brasil', U.abGovernadores25]] },
+  box: { type: 'table', title: 'Resultado do segundo turno', head: ['Candidato', 'Votos', 'Válidos'], rows: [['Lula (PT)', '64.256.232', '51,79%'], ['Flávio Bolsonaro (PL)', '59.826.041', '48,21%']], note: 'Abstenção de cerca de 19,2%. Fonte: TSE.' },
+  sources: [['TSE', U.tseResultado26], ['Metrópoles', U.metAliados26], ['InfoMoney', U.imAoVivo26], ['Agência Brasil', U.abDiscurso26]] },
 
-{ id: 'pesquisas-finais-flavio-51-lula-49-validos', cat: 'nacional', own: true, t: '2026-10-24T21', d: '24 out 2026', img: 'eleicao', read: 3,
-  title: 'Últimas pesquisas mostram Flávio com 51% e Lula com 49% dos votos válidos, em empate técnico',
-  sum: 'Datafolha e Quaest chegaram ao mesmo resultado na véspera da votação. Na AtlasIntel, Flávio tem 50,8%, e Lula, 49,2%. A diferença está dentro da margem de erro nas três.',
+{ id: 'flavio-nao-reconhece-pede-anulacao', cat: 'nacional', own: true, t: '2026-10-25T23', d: '25 out 2026', img: 'congresso', read: 3,
+  title: 'Flávio não reconhece a derrota e diz que vai pedir a anulação da eleição',
+  sum: 'O candidato do PL contesta a decisão do ministro Cristiano Zanin, do STF, que prorrogou a votação até as 19h. O presidente do TSE diz que a prorrogação não mudou o resultado.',
   body: [
-    'As três pesquisas divulgadas no sábado (24), véspera do segundo turno, mostram Flávio Bolsonaro (PL) numericamente à frente de Lula (PT), mas com diferença dentro da margem de erro. Datafolha e Quaest registraram 51% dos votos válidos para Flávio e 49% para Lula. Na AtlasIntel/Bloomberg, Flávio tem 50,8%, e Lula, 49,2%, segundo a RED.',
-    '## Datafolha',
-    'No Datafolha, Flávio oscilou de 50% para 51% dos votos válidos, e Lula, de 50% para 49%, em relação à pesquisa divulgada na quinta (22). Nos votos totais, Flávio tem 48%, e Lula, 47%. Brancos e nulos somam 3%, e 2% estão indecisos, segundo a Exame.',
-    'Entre os 76% de entrevistados com alta propensão a votar, Flávio tem 52%, e Lula, 48%. Entre os que têm média ou baixa propensão, Lula tem 52%, e Flávio, 48%. O instituto ouviu 4.050 eleitores na sexta (23) e no sábado (24). A margem de erro é de 2 pontos, e o registro no TSE é BR-09540/2026.',
-    '## Quaest',
-    'Na Quaest, contratada pela Globo, Flávio tem 51% dos votos válidos, e Lula, 49%. Na pergunta espontânea, em que os nomes não são apresentados, Flávio tem 44%, e Lula, 42%, segundo a Gazeta do Povo. Foram ouvidos 3.702 eleitores nos dias 23 e 24, com margem de erro de 2 pontos. O registro é BR-09158/2026.',
-    '## AtlasIntel',
-    'A AtlasIntel ouviu 4.990 eleitores pela internet e por telefone, de 18 a 23 de outubro, com margem de erro de 1 ponto. Na rodada anterior, divulgada em 19 de outubro, Flávio tinha 51,1%, e Lula, 48,9%. A diferença caiu de 2,2 para 1,6 ponto, variação que, sozinha, não indica mudança significativa, segundo a RED.',
-    'As pesquisas mostram a intenção de voto no momento em que foram feitas e não são previsão do resultado. No primeiro turno, Flávio teve 47,03% dos votos válidos, e Lula, 45,16%.'
+    'Flávio Bolsonaro (PL) disse na noite de domingo (25) que não reconhece o resultado do segundo turno e que sua equipe jurídica vai pedir a anulação da eleição. Ele falou por volta das 22h40, em sua casa no Lago Sul, em Brasília, ao lado do candidato a vice, Alfredo Gaspar, e do coordenador da campanha, Rogério Marinho, segundo a Gazeta do Povo.',
+    '## A prorrogação',
+    'Às 17h01, o ministro Cristiano Zanin, do STF, concedeu uma liminar que estendeu a votação por duas horas. O pedido foi da coligação de Lula, que citou problemas no transporte público em pelo menos nove estados, segundo a Gazeta do Povo. Segundo o TSE, milhares de urnas já tinham sido encerradas e não puderam ser reabertas, e a decisão valeu para as seções que ainda estavam abertas.',
+    'A campanha de Flávio também tinha pedido ao TSE, antes da decisão de Zanin, a extensão do horário até as 19h em cidades de São Paulo, do Paraná e de Santa Catarina, por causa de chuvas, alagamentos, bloqueios de estradas e falta de energia, segundo a Gazeta do Povo e o Metro1.',
+    '## Os argumentos',
+    'Flávio chamou a decisão de "inaceitável" e disse que ela quebrou a igualdade entre eleitores, porque seções de algumas cidades não voltaram a funcionar. Ele lembrou que Zanin foi advogado de Lula e afirmou que fiscais do PL foram retirados da sala-cofre do TSE depois da prorrogação.',
+    'O presidente do TSE, ministro Kassio Nunes Marques, afirmou que as dificuldades técnicas foram superadas, que a prorrogação não comprometeu a apuração e não alterou o resultado, segundo o Metrópoles. O presidente do Senado, Davi Alcolumbre, disse ainda durante a votação que o país espera de todos o reconhecimento do resultado das urnas, segundo o TSE.',
+    'Flávio deixa o Senado em 31 de janeiro de 2027 e não terá outro mandato, segundo o Metrópoles.'
   ],
-  box: { type: 'table', title: 'Votos válidos nas últimas pesquisas', head: ['Pesquisa', 'Flávio', 'Lula'], rows: [['Datafolha (23 e 24 out)', '51%', '49%'], ['Quaest (23 e 24 out)', '51%', '49%'], ['AtlasIntel (18 a 23 out)', '50,8%', '49,2%']], note: 'Margens de erro: Datafolha e Quaest, 2 pontos; AtlasIntel, 1 ponto. Fontes: Exame, Gazeta do Povo e RED.' },
-  sources: [['Exame', U.exDatafolha25], ['Gazeta do Povo', U.gpQuaest25], ['RED', U.redPesquisas25]] },
+  sources: [['Gazeta do Povo', U.gpFlavio26], ['Metro1', U.metro1Flavio26], ['Metrópoles', U.metAliados26], ['TSE', U.tseResultado26]] },
+
+{ id: 'governadores-eleitos-segundo-turno-2026', cat: 'nacional', own: true, t: '2026-10-25T22', d: '25 out 2026', img: 'eleicao', read: 2,
+  title: 'Seis governadores são eleitos no segundo turno; PP vence no Acre e no DF',
+  sum: 'Mailza Assis (AC) e Celina Leão (DF), do PP, Omar Aziz (AM), Lorenzo Pazolini (ES), Cadu de Lula (RN) e Vicentinho Júnior (TO) venceram as disputas deste domingo.',
+  body: [
+    'Cinco estados e o Distrito Federal escolheram governador no segundo turno, neste domingo (25). Os resultados foram divulgados pela Forbes e pelo InfoMoney com base nos dados do TSE.',
+    '## Os eleitos',
+    'No Acre, Mailza Assis (PP) venceu Alan Rick, com 66,16% dos votos válidos. No Amazonas, Omar Aziz (PSD) teve 59,96% e derrotou a Professora Maria do Carmo (PL). No Distrito Federal, Celina Leão (PP) venceu Leandro Grass, com 57,21%.',
+    'No Espírito Santo, Lorenzo Pazolini (Republicanos) teve 52,01% e venceu Ferraço. No Rio Grande do Norte, Cadu de Lula (PT) foi eleito com 50,78%, contra Allyson Bezerra, na disputa mais apertada do dia. No Tocantins, Vicentinho Júnior (PSDB) virou a disputa e venceu a senadora Dorinha, com 63,95%.'
+  ],
+  box: { type: 'table', title: 'Governadores eleitos no 2º turno', head: ['Estado', 'Eleito', 'Votos válidos'], rows: [['AC', 'Mailza Assis (PP)', '66,16%'], ['AM', 'Omar Aziz (PSD)', '59,96%'], ['DF', 'Celina Leão (PP)', '57,21%'], ['ES', 'Lorenzo Pazolini (Republicanos)', '52,01%'], ['RN', 'Cadu de Lula (PT)', '50,78%'], ['TO', 'Vicentinho Júnior (PSDB)', '63,95%']], note: 'Fontes: Forbes e InfoMoney, com dados do TSE.' },
+  sources: [['Forbes Brasil', U.forbesGov26], ['InfoMoney', U.imAoVivo26]] },
+
+{ id: 'lula-discurso-vitoria-plataformas-participacao', cat: 'nacional', own: false, t: '2026-10-25T23', d: '25 out 2026', img: 'eleicao', src: 'Agência Brasil', url: U.abDiscurso26,
+  title: 'Lula agradece os votos e promete mais participação popular no governo',
+  sum: 'No primeiro discurso depois da reeleição, em São Paulo, o presidente disse que teve de vencer uma interferência vinda de fora pelas plataformas digitais e defendeu regras para as redes.',
+  body: [
+    'Lula falou por volta das 22h20 em um hotel em São Paulo e depois foi à Avenida Paulista, onde apoiadores comemoravam o resultado. Ele agradeceu aos eleitores, aos jovens e aos mais velhos e ao deputado André Janones, que coordenou a campanha nas redes sociais.',
+    'O presidente prometeu envolver mais a população nas decisões do governo e disse que a comunicação digital terá grande espaço no novo mandato. Segundo a Agência Brasil, os presidentes da Câmara, Hugo Motta, e do Senado, Davi Alcolumbre, cumprimentaram Lula pela vitória.'
+  ] },
+
+{ id: 'zanin-prorroga-votacao-ate-19h', cat: 'nacional', own: false, t: '2026-10-25T19', d: '25 out 2026', img: 'congresso', src: 'Gazeta do Povo', url: U.gpFlavio26,
+  title: 'Zanin prorroga a votação até as 19h, e milhares de seções já encerradas não reabrem',
+  sum: 'A liminar saiu às 17h01, a pedido da coligação de Lula, que citou falhas no transporte público. A campanha de Flávio também havia pedido mais tempo em cidades do Sul e de São Paulo, por causa das chuvas.',
+  body: [
+    'O ministro Cristiano Zanin, do STF, estendeu em duas horas o fim da votação nas seções que ainda estavam abertas. Segundo o TSE, o pedido chegou por volta das 15h30, mas milhares de urnas já tinham sido encerradas e não puderam voltar a funcionar. O recebimento dos boletins de urna chegou a ser suspenso por um tempo, o que atrasou parte da apuração.',
+    'A coligação de Lula citou problemas no transporte em nove estados, entre eles São Paulo, Pernambuco, Pará e Rio de Janeiro. A campanha de Flávio havia pedido ao TSE a extensão em municípios de São Paulo, do Paraná e de Santa Catarina, por causa de chuvas e bloqueios de estradas.'
+  ] },
+
+{ id: 'tse-balanco-segundo-turno-urnas-processos', cat: 'nacional', own: false, t: '2026-10-26T00', d: '26 out 2026', img: 'eleicao', src: 'TSE', url: U.tseResultado26,
+  title: 'TSE substituiu 1.551 urnas no segundo turno e recebeu 2.265 processos na campanha',
+  sum: 'Foram usadas 499.248 urnas em mais de 95 mil locais de votação. A troca atingiu 0,31% dos equipamentos.',
+  body: [
+    'Segundo o balanço do TSE, entre os processos da campanha estão 827 representações e 446 pedidos de direito de resposta. Missões de observação nacionais e internacionais acompanharam a votação e a fiscalização.',
+    'Os tribunais regionais fiscalizaram a oferta de transporte gratuito no dia da eleição. O presidente do TSE, Kassio Nunes Marques, disse que eventuais falhas na oferta serão apuradas pela Justiça Eleitoral.'
+  ] },
+
+{ id: 'aliados-flavio-avaliam-derrota-campanha', cat: 'nacional', own: false, t: '2026-10-26T01', d: '26 out 2026', img: 'congresso', src: 'Metrópoles', url: U.metAliados26,
+  title: 'Flávio atribui derrota à prorrogação, mas aliados apontam erros da campanha',
+  sum: 'Segundo o Metrópoles, parte dos aliados diz que a derrota já era esperada antes da decisão de Zanin e critica o excesso de confiança depois do primeiro turno.',
+  body: [
+    'Líderes do centrão ouvidos pelo Metrópoles criticam o fato de Flávio ter discutido a estrutura do futuro governo antes da votação. Outros aliados dizem que as investigações envolvendo o candidato pesaram na reta final. Flávio nega irregularidades.',
+    'Aliados também avaliam que o aumento do comparecimento favoreceu Lula. A abstenção caiu de 21,08% no primeiro turno para 19,21% no segundo.'
+  ] },
+
+{ id: 'gol-nega-cancelamento-voos-nordeste', cat: 'nacional', own: false, t: '2026-10-25T12', d: '25 out 2026', img: 'plataforma', src: 'Agência Brasil', url: U.abGol26,
+  title: 'Gol nega cancelamento de voos em massa para o Nordeste no dia da eleição',
+  sum: 'Publicações nas redes diziam que centenas de eleitores ficariam sem viajar. A empresa diz que só um voo, de Porto Alegre a Salvador, foi cancelado, por problema na aeronave.',
+  body: [
+    'Segundo a Gol, os passageiros do voo G3 1979 foram remanejados para outros voos, e a empresa incluiu um voo extra de Porto Alegre para Salvador na madrugada de domingo.',
+    'A Anac confirmou o cancelamento e disse que não havia anormalidades no tráfego aéreo do país.'
+  ] },
 
 { id: 'moraes-bloqueio-6-bilhoes-willer-tomaz', cat: 'nacional', own: false, t: '2026-10-23T22', d: '23 out 2026', img: 'congresso', src: 'Agência Brasil', url: U.abTomaz25,
   title: 'Moraes manda bloquear até R$ 6 bilhões em bens do advogado Willer Tomaz',
@@ -984,69 +1062,61 @@ const NEWS = [
     'A defesa diz que as relações dele com políticos são pessoais e nega benefício indevido. A Secom afirmou que Lula não conhece a empresária.'
   ] },
 
-{ id: 'inmet-domingo-eleicao-chuva-alertas', cat: 'nacional', own: false, t: '2026-10-24T11', d: '24 out 2026', img: 'ciencia', src: 'Agência Brasil', url: U.abInmet25,
-  title: 'Domingo de eleição terá chuva em boa parte do país, com alerta vermelho para tempestades no Sul',
-  sum: 'O Inmet prevê tempo instável no Sul e no Sudeste e calor forte no Centro-Oeste e no Nordeste. Teresina pode chegar a 40°C.',
-  body: [
-    'O alerta vermelho, de grande perigo para tempestades, vale para partes do oeste e do norte do Rio Grande do Sul, de Santa Catarina e do Paraná. Há alerta amarelo para todo o estado de São Paulo, o Rio de Janeiro, o Espírito Santo e grande parte de Minas Gerais.',
-    'Em São Paulo, a temperatura deve ficar entre 16°C e 21°C. Cuiabá pode chegar a 39°C, e Teresina, a 40°C, a capital mais quente do domingo.'
-  ] },
-
-{ id: 'mpt-apura-carta-supermercado-eleicao', cat: 'nacional', own: false, t: '2026-10-23T21', d: '23 out 2026', img: 'congresso', src: 'Agência Brasil', url: U.abMpt25,
-  title: 'Ministério Público do Trabalho apura carta com teor eleitoral enviada por rede de supermercados a funcionários no Rio',
-  sum: 'A carta da rede Zona Sul não cita candidatos, mas fala em "necessidade de mudança". O sindicato dos comerciários entrou com ação contra a empresa.',
-  body: [
-    'O MPT no Rio abriu um procedimento para analisar a carta, assinada pelo presidente da empresa dias antes da eleição. O deputado federal eleito Rick Azevedo (PSOL) denunciou o caso como assédio eleitoral.',
-    'O Sindicato dos Comerciários do Rio de Janeiro argumenta que o empregador não pode pressionar a opinião política dos trabalhadores. A Agência Brasil não conseguiu contato com a direção da rede.'
-  ] },
-
-{ id: 'debate-globo-como-foi-lula-flavio', cat: 'nacional', own: true, t: '2026-10-24T01', d: '24 out 2026', img: 'eleicao', read: 4,
-  title: 'No último debate, na Globo, Lula e Flávio discutem economia, saúde e segurança e trocam acusações',
-  sum: 'O encontro durou cerca de duas horas e teve tom mais contido que o da Band. Flávio pediu desculpas no ar, e a mãe de Ana Clara estava na plateia.',
-  body: [
-    'Lula (PT) e Flávio Bolsonaro (PL) fizeram na noite de sexta-feira (23), na TV Globo, o último debate antes do segundo turno, que é neste domingo (25). O programa teve mediação de César Tralli e durou cerca de duas horas, segundo a Gazeta do Povo. Segundo o Terra, as regras de tempo e de blocos deixaram o encontro mais contido do que o da Band, em 18 de outubro.',
-    '## Economia',
-    'Flávio criticou o preço dos alimentos, os impostos e os gastos públicos e propôs reajustes do salário mínimo e das aposentadorias acima da inflação. Lula defendeu a política de valorização do mínimo, citou obras do PAC e disse que os programas Desenrola chegaram a cerca de 15 milhões e a quase 16 milhões de pessoas, segundo a Gazeta do Povo. Os dois também trocaram críticas sobre as bets e o crédito rural.',
-    '## Saúde e programas sociais',
-    'Flávio disse que o SUS é "orgulho nacional", mas que é mal gerido, com falta de remédios e longas esperas. Lula afirmou que o SUS evitou mais mortes na pandemia e disse que Flávio já chamou o Bolsa Família de "Bolsa Farelo", em publicações depois apagadas. Os dois prometeram manter o programa, segundo o Terra.',
-    '## Momentos de tensão',
-    'Ao falar de tarifa zero no transporte, Flávio disse que o governo "dá com uma mão e tira com nove dedos". Lula, que perdeu um dedo em 1964, quando trabalhava como torneiro mecânico, cobrou desculpas, e Flávio pediu desculpas no ar, segundo o NSC Total.',
-    'Lula levou à plateia Cristiane Gomes, mãe de Ana Clara, menina de 5 anos morta por um tiro em Niterói (RJ) em 2021, e perguntou por que Flávio atuou na defesa do policial acusado. Flávio disse confiar que o policial não fez o disparo e ofereceu ajuda para identificar o responsável, segundo o NSC Total. Segundo a CNN Brasil, a Globo separou os convidados das duas campanhas na plateia para evitar confrontos.',
-    'Lula também perguntou sobre uma ilha em Angra dos Reis (RJ) que o jogador Richarlison diz ter perdido e citou o advogado Willer Tomaz, amigo de Flávio. Flávio negou envolvimento e disse que a ilha nunca foi do jogador. Flávio, por sua vez, acusou Lula de ter recebido um uísque de R$ 500 mil, e Lula ligou Flávio ao banqueiro Daniel Vorcaro, do caso Banco Master, segundo a Gazeta do Povo.',
-    '## Considerações finais',
-    'Lula pediu desculpas pelo tom do debate e disse que o domingo é decisivo. Flávio disse nunca ter sido investigado por ligação com milícias e citou como prioridades recuperar o poder de compra e defender a liberdade, segundo a Gazeta do Povo.',
-    '## Checagem',
-    'A agência Lupa checou 42 falas, 15 de Lula e 27 de Flávio. Entre elas, classificou como falsa a afirmação de Lula de que a economia não cresce acima de 3% desde 2010 e a de Flávio de que Lula seria o "pai do tigrinho". As apostas de quota fixa foram autorizadas em 2018, no governo Temer, e regulamentadas em 2023, segundo a Lupa e o Terra.'
-  ],
-  box: { type: 'facts', title: 'O último debate', rows: [['Quando', 'Sexta (23), na TV Globo'], ['Mediação', 'César Tralli'], ['Duração', 'Cerca de duas horas'], ['Falas checadas pela Lupa', '15 de Lula e 27 de Flávio'], ['Votação', 'Domingo (25), das 8h às 17h']] },
-  sources: [['Gazeta do Povo', U.gpDebate24], ['Terra', U.terraDebate24], ['NSC Total', U.nscDebate24], ['CNN Brasil', U.cnnConvidados24], ['Lupa', U.lupaDebate24]] },
-
-{ id: 'segundo-turno-domingo-como-votar', cat: 'nacional', own: false, t: '2026-10-24T05', d: '24 out 2026', img: 'eleicao', src: 'CNN Brasil', url: U.cnnComoVotar24,
-  title: 'Segundo turno é neste domingo, das 8h às 17h; veja o que levar para votar',
-  sum: 'Vale qualquer documento oficial com foto, inclusive em versão digital. Além de presidente, cinco estados escolhem governador.',
-  body: [
-    'A votação vai das 8h às 17h, no horário de Brasília, e quem estiver na fila às 17h ainda pode votar. A apuração do TSE começa às 17h, e os resultados podem ser acompanhados no site e no aplicativo do tribunal.',
-    'Valem RG, CNH, passaporte e certificado de reservista, também em versão digital, e o e-Título, se tiver foto. Certidões de nascimento e de casamento não são aceitas. O celular não pode entrar na cabine, mas o eleitor pode levar o número do candidato anotado em papel. Onde há disputa para governador, o voto para governador vem antes do voto para presidente.'
-  ] },
-
-{ id: 'sigilos-autorizacoes-entregues-sem-divulgacao', cat: 'nacional', own: false, t: '2026-10-23T10', d: '23 out 2026', img: 'congresso', src: 'BNews', url: U.bnewsSigilos24,
-  title: 'Lula e Flávio entregam autorizações ao TSE, mas os dados dos sigilos continuam sem divulgação',
-  sum: 'As campanhas protocolaram procurações para abrir os sigilos bancário, fiscal e telefônico. Não há prazo para que extratos e registros se tornem públicos.',
-  body: [
-    'A campanha de Lula entregou primeiro, na noite de quinta-feira (22), e pediu que o ministro André Mendonça atue como árbitro. A de Flávio entregou os documentos na madrugada seguinte e cobrou a divulgação dos gastos com cartões corporativos da Presidência.',
-    'Mendonça disse que a abertura dos dados cabe aos candidatos, e não à Justiça Eleitoral. Movimentações financeiras e conversas telefônicas dos candidatos e de pessoas e empresas ligadas a eles seguem fora do alcance do público.'
-  ] },
-
-{ id: 'carmen-lucia-nega-transporte-interestadual', cat: 'nacional', own: false, t: '2026-10-23T20', d: '23 out 2026', img: 'congresso', src: 'O Tempo', url: U.otTransporte24,
-  title: 'Cármen Lúcia nega pedido da campanha de Lula para estender o transporte gratuito a linhas interestaduais',
-  sum: 'A ministra do STF disse que seria difícil aplicar a medida a dois dias do segundo turno. As regras do TSE já garantem gratuidade nas linhas municipais, intermunicipais e metropolitanas.',
-  body: [
-    'A coligação de Lula pediu que a decisão do STF sobre transporte gratuito em dia de eleição valesse também para linhas que cruzam a divisa entre estados, como as que ligam cidades vizinhas.',
-    'Segundo a ministra, a ampliação imediata exigiria dados mínimos, tempo de execução e coordenação com os 27 tribunais regionais eleitorais, os estados, o Distrito Federal e a ANTT, que regula as linhas interestaduais.'
-  ] },
-
-
 /* ===================== INTERNACIONAL ===================== */
+{ id: 'servia-vucic-admite-derrota-lista-estudantes', cat: 'internacional', own: true, t: '2026-10-25T21', d: '25 out 2026', img: 'eleicao', read: 3,
+  title: 'Vučić admite derrota na Sérvia, e lista dos estudantes deve ter maioria no Parlamento',
+  sum: 'Segundo o próprio Vučić, a Lista dos Estudantes deve ficar com 135 a 140 das 250 cadeiras. O comparecimento foi o maior desde o fim da Iugoslávia.',
+  body: [
+    'O líder sérvio Aleksandar Vučić reconheceu no domingo (25) a derrota na eleição parlamentar antecipada. Com base em uma amostra dos votos, ele disse que a oposição, reunida na "Lista dos Estudantes – Os Estudantes Vencem", deve conquistar de 135 a 140 cadeiras, e a lista dele, cerca de 105, segundo a Al Jazeera. São necessárias 126 das 250 cadeiras para formar governo.',
+    'O resultado oficial ainda não tinha sido divulgado. Segundo a Comissão Eleitoral, o comparecimento chegou a 64,9% às 18h, horário local, o maior desde 1992.',
+    '## O movimento',
+    'Os protestos estudantis começaram depois que a marquise de uma estação de trem desabou em Novi Sad, em novembro de 2024, e matou 16 pessoas. Muitos candidatos da lista vêm de áreas como medicina e educação e nunca tinham disputado eleições. Vučić renunciou à Presidência em setembro para concorrer a primeiro-ministro. O Partido Progressista Sérvio, dele, governa desde 2012 e nega as acusações de corrupção e repressão.',
+    '## Denúncias e reação',
+    'A organização de observadores CRTA relatou pressão sobre eleitores ou mesários em quase um terço das 500 seções que acompanhou. A presidente da Comissão Europeia, Ursula von der Leyen, disse que a União Europeia está pronta para apoiar reformas e o caminho da Sérvia rumo ao bloco.'
+  ],
+  box: { type: 'facts', title: 'A eleição na Sérvia', rows: [['Cadeiras no Parlamento', '250'], ['Maioria', '126'], ['Lista dos Estudantes (estimativa de Vučić)', '135 a 140'], ['Lista de Vučić (estimativa)', 'Cerca de 105'], ['Comparecimento às 18h', '64,9%']] },
+  sources: [['Al Jazeera', U.ajServia26]] },
+
+{ id: 'lideres-internacionais-parabenizam-lula', cat: 'internacional', own: false, t: '2026-10-26T01', d: '26 out 2026', img: 'mundo', src: 'CNN Brasil', url: U.cnnLideres26,
+  title: 'Líderes da América Latina e do Canadá parabenizam Lula; Trump não se manifestou',
+  sum: 'Kast (Chile), Sheinbaum (México), Orsi (Uruguai), Peña (Paraguai), Noboa (Equador) e Carney (Canadá) estão entre os que cumprimentaram o presidente reeleito.',
+  body: [
+    'Também enviaram mensagens os presidentes da Bolívia, do Peru, de Cuba, do Panamá, da Guiana, da República Dominicana e da Guatemala, segundo a CNN Brasil. O senador americano Bernie Sanders e o prefeito de Nova York, Zohran Mamdani, também parabenizaram Lula.',
+    'Até a noite de domingo, o presidente dos EUA, Donald Trump, não tinha comentado o resultado, segundo o ICL Notícias.'
+  ] },
+
+{ id: 'ira-mensagens-eua-trump-sem-ataque-hoje', cat: 'internacional', own: false, t: '2026-10-25T15', d: '25 out 2026', img: 'mundo', src: 'Estadão Conteúdo (DGABC)', url: U.dgabcIra26,
+  title: 'Irã diz que segue trocando mensagens com os EUA, e Trump afirma que não haverá ataque "hoje"',
+  sum: 'O porta-voz da chancelaria iraniana rejeitou a exigência de "rendição completa". Os EUA dizem que mais de 3.000 navios cruzaram Ormuz em seis meses com apoio militar americano.',
+  body: [
+    'O porta-voz Esmail Baghaei disse que o diálogo com Washington continua por meio de intermediários, embora as negociações estejam paradas há semanas. Perguntado se mandaria atacar o Irã, Trump primeiro disse que não revelaria seus planos e depois afirmou que não haveria ataque naquele dia.',
+    'O primeiro-ministro de Israel, Benjamin Netanyahu, disse que o Irã ou grupos aliados podem tentar ataques para interferir na eleição israelense desta terça-feira (27).'
+  ] },
+
+{ id: 'maria-corina-machado-volta-venezuela', cat: 'internacional', own: false, t: '2026-10-25T16', d: '25 out 2026', img: 'protesto', src: 'Poder360', url: U.p360Machado26,
+  title: 'María Corina Machado volta à Venezuela depois de cerca de dez meses fora do país',
+  sum: 'A líder da oposição e Nobel da Paz de 2025 apareceu em uma igreja no estado de Lara e seguiu por terra para Caracas.',
+  body: [
+    'Machado publicou no X a frase "Estou aqui. Com vocês". O secretário de Estado dos EUA, Marco Rubio, disse que a volta segura foi resultado de negociações de reconciliação apoiadas por Washington.',
+    'A Venezuela é governada por Delcy Rodríguez desde a captura de Nicolás Maduro por forças americanas, em janeiro. Em setembro, ela disse na ONU que o país fará eleição presidencial, mas não marcou data.'
+  ] },
+
+{ id: 'bulgaria-yotova-gyurov-segundo-turno', cat: 'internacional', own: false, t: '2026-10-25T20', d: '25 out 2026', img: 'eleicao', src: 'EFE (Infobae)', url: U.infobaeBulgaria26,
+  title: 'Bulgária terá segundo turno para presidente entre Yotova e Gyurov em 1º de novembro',
+  sum: 'Pesquisas de boca de urna deram cerca de 35% para a presidente interina, Iliana Yotova, e 32,5% para o economista Andrey Gyurov. O comparecimento estimado foi de 22%.',
+  body: [
+    'Yotova, de 62 anos, assumiu a Presidência em janeiro e defende retomar os laços com a Rússia e acabar com a ajuda militar à Ucrânia. Gyurov, de 50 anos, ex-vice-presidente do banco central e primeiro-ministro interino entre fevereiro e maio, tem apoio de forças pró-europeias.',
+    'O nacionalista Kostadin Kostadinov ficou em terceiro, com cerca de 14%. O comparecimento estimado é o menor desde o fim do comunismo, em 1989.'
+  ] },
+
+{ id: 'le-pen-lanca-campanha-presidencial-orleans', cat: 'internacional', own: false, t: '2026-10-25T18', d: '25 out 2026', img: 'protesto', src: 'Diário de Notícias', url: U.dnLePen26,
+  title: 'Marine Le Pen lança campanha à Presidência da França e promete restaurar a ordem',
+  sum: 'Em comício em Orléans, a líder da Reunião Nacional prometeu controle de fronteiras, corte de gastos e de impostos de empresas e nenhum novo aumento da idade de aposentadoria.',
+  body: [
+    'O lançamento encerrou o congresso do partido, que reelegeu Jordan Bardella como presidente e o apresentou como o nome de Le Pen para primeiro-ministro. Ela defendeu reduzir a influência de Bruxelas, mas não propôs sair da União Europeia.',
+    'Segundo o Diário de Notícias, Le Pen lidera as pesquisas para a eleição presidencial do ano que vem.'
+  ] },
+
 { id: 'ira-superpetroleiros-minas-ormuz-ataque-eua', cat: 'internacional', own: true, t: '2026-10-24T20', d: '24 out 2026', img: 'mundo', read: 4,
   title: 'Irã diz que dois superpetroleiros bateram em minas perto de Ormuz, enquanto EUA falam em possível ataque',
   sum: 'Segundo a Guarda Revolucionária, os navios levavam mais de 4,5 milhões de barris e foram abandonados pelas tripulações. A informação não foi confirmada por fontes independentes.',
@@ -1064,11 +1134,11 @@ const NEWS = [
   box: { type: 'facts', title: 'O que se sabe', rows: [['Navios atingidos', '2 superpetroleiros, segundo o Irã'], ['Carga', 'Mais de 4,5 milhões de barris'], ['Confirmação independente', 'Ainda não houve'], ['Eleições nos EUA', '3 de novembro'], ['Alertas de viagem', 'Mais de 12 países da região']] },
   sources: [['The Tribune (ANI)', U.tribIra25], ['Gulf News', U.gulfIra25], ['InfoMoney (Reuters)', U.imMemo25]] },
 
-{ id: 'franca-protestos-410-mil-mil-detidos', cat: 'internacional', own: true, t: '2026-10-24T22', d: '24 out 2026', img: 'protesto', read: 3,
-  title: 'Protestos reúnem 410 mil pessoas na França, e quase mil são detidas',
-  sum: 'O governo pôs mais de 70 mil policiais nas ruas. Os sindicatos falam em quase o dobro de manifestantes. O movimento começou nas escolas e passou a cobrar também o custo de vida.',
+{ id: 'franca-protestos-410-mil-mil-detidos', cat: 'internacional', own: true, t: '2026-10-25T14', d: '25 out 2026', img: 'protesto', read: 3,
+  title: 'Protestos reúnem 410 mil pessoas na França, e 1.314 são detidas; sindicatos convocam greve para 5 de novembro',
+  sum: 'O governo pôs 70 mil policiais nas ruas. O número de detidos foi cerca de metade do da semana anterior. Coletes amarelos marcaram novo ato para 31 de outubro.',
   body: [
-    'Cerca de 410 mil pessoas protestaram na França no sábado (24), 110 mil delas em Paris, segundo o Ministério do Interior. A central sindical CGT estimou cerca de 800 mil manifestantes no país. Quase mil pessoas foram detidas, segundo o ministro do Interior, Laurent Nuñez, citado pela Al Jazeera e pela India TV, com informações da AFP e da AP.',
+    'Cerca de 410 mil pessoas protestaram na França no sábado (24), 110 mil delas em Paris, segundo o Ministério do Interior. A central sindical CGT estimou cerca de 800 mil manifestantes no país. No sábado à noite, o ministro do Interior, Laurent Nuñez, falava em quase mil detidos. No domingo (25), o balanço do ministério chegou a 1.314 detenções, cerca de metade da semana anterior, e cerca de 50 policiais feridos, segundo a Agência Brasil.',
     '## Confrontos',
     'A maior parte dos atos foi pacífica, mas houve confrontos no fim da marcha em Paris, onde a polícia usou gás lacrimogêneo e jatos de água. Pelo menos 24 estações de metrô foram fechadas. Em Lyon, a polícia usou gás contra 150 manifestantes depois da proibição de atos no centro. Houve saques em Marselha e Grenoble. Duas pessoas ficaram gravemente feridas, uma em Toulouse e outra em Clermont-Ferrand.',
     'Nuñez falou em um nível "extremamente elevado de violência" de grupos de ultraesquerda, mas disse que o dia foi mais calmo que o sábado anterior. Em 17 de outubro, mais de 2.000 pessoas foram detidas, segundo a Al Jazeera.',
@@ -1076,50 +1146,12 @@ const NEWS = [
     'O governo mobilizou mais de 70 mil policiais e gendarmes, cerca de 20% a mais que na semana anterior, com helicópteros, blindados e jatos de água. O Louvre e o Museu d\'Orsay fecharam no sábado, segundo a AP, publicada pela ABC News. Atos foram proibidos em cidades como Montpellier, Nice e Rouen, e os sindicatos dizem que as proibições ferem a liberdade de expressão.',
     '## Origem',
     'Os protestos começaram em meados de setembro em uma escola de ensino médio perto de Paris, contra a falta de professores e funcionários, prédios em mau estado e o sistema de acesso às universidades. Depois passaram a incluir o custo de vida e a desigualdade. Na sexta (23), Macron recebeu estudantes e prometeu mais professores e mudanças no Parcoursup, o sistema de admissão, mas os estudantes mantiveram a mobilização.',
-    'No mesmo dia, o partido Reunião Nacional reelegeu Jordan Bardella como presidente, com quase 99% dos votos, em congresso em Orléans. A eleição presidencial francesa é daqui a cerca de seis meses, e Macron não pode concorrer.'
+    '## Novos atos',
+    'Os coletes amarelos convocaram mobilizações para o sábado, 31 de outubro, diante de prefeituras e da Assembleia Nacional. Sindicatos chamaram uma greve nacional para 5 de novembro, e a central CGT ainda vai decidir se adere. O governo abriu conversas com sindicatos e estudantes, mas os líderes dos protestos dizem que as propostas são insuficientes, segundo a Agência Brasil.',
+    'No domingo, Marine Le Pen lançou em Orléans a campanha à Presidência pela Reunião Nacional, que reelegeu Jordan Bardella como presidente do partido. A eleição presidencial francesa é no ano que vem, e Macron não pode concorrer.'
   ],
-  box: { type: 'facts', title: 'O sábado de protestos', rows: [['Manifestantes (governo)', '410 mil, 110 mil em Paris'], ['Manifestantes (CGT)', 'Cerca de 800 mil'], ['Detidos', 'Quase mil'], ['Policiais nas ruas', 'Mais de 70 mil'], ['Novo ato dos coletes amarelos', '31 de outubro']] },
-  sources: [['Al Jazeera', U.ajFranca25], ['India TV (AFP e AP)', U.itvFranca25], ['ABC News (AP)', U.abcFranca25]] },
-
-{ id: 'servia-vota-vucic-estudantes', cat: 'internacional', own: false, t: '2026-10-24T18', d: '24 out 2026', img: 'eleicao', src: 'Reuters (WHBL)', url: U.whblServia25,
-  title: 'Sérvia vota neste domingo em eleição antecipada que opõe Vučić aos estudantes',
-  sum: 'O partido de Vučić tinha 47%, e a lista dos estudantes, 40%, em pesquisa Ipsos, mas outros levantamentos mostram os estudantes à frente.',
-  body: [
-    'As urnas abrem às 7h e fecham às 20h, no horário local, e os primeiros resultados devem sair cerca de duas horas depois. Vučić renunciou à Presidência para concorrer a primeiro-ministro. A lista dos estudantes tem 250 candidatos e é liderada pelo cardiologista Ilija Srdanović.',
-    'Os protestos começaram depois do desabamento da cobertura de uma estação de trem em Novi Sad, em 2024, que matou 16 pessoas. Vučić nega as acusações de corrupção e de repressão.'
-  ] },
-
-{ id: 'ucrania-ataques-4-mortos-78-feridos', cat: 'internacional', own: false, t: '2026-10-24T12', d: '24 out 2026', img: 'mundo', src: 'Kyiv Independent', url: U.kiUcrania25,
-  title: 'Ataques russos matam 4 e ferem 78 na Ucrânia em um dia; drone atinge prédio em Kiev',
-  sum: 'A Rússia lançou 126 drones na madrugada de sábado, e 101 foram derrubados, segundo o Kyiv Independent.',
-  body: [
-    'Um drone atingiu um prédio residencial no distrito de Obolon, em Kiev, e feriu duas pessoas. Houve mortes nas regiões de Chernihiv, Donetsk e Dnipropetrovsk.',
-    'Em Kramatorsk, seis pessoas ficaram feridas, três delas crianças.'
-  ] },
-
-{ id: 'brent-116-trump-petroleo-ira-derramamento', cat: 'internacional', own: true, t: '2026-10-24T02', d: '24 out 2026', img: 'mundo', read: 3,
-  title: 'Brent fecha a US$ 116, maior valor desde abril, e Trump diz que os EUA poderiam tomar o petróleo do Irã',
-  sum: 'O barril subiu 3,1% na sexta e 6,2% na semana. Os Emirados Árabes Unidos registraram uma mancha de óleo de cerca de 160 km² perto da costa.',
-  body: [
-    'O petróleo Brent fechou a sexta-feira (23) a US$ 116,72 o barril, com alta de 3,1% no dia e de 6,2% na semana, segundo o TokenPost. Foi a terceira semana seguida de alta e o maior fechamento desde 29 de abril. O WTI, referência nos Estados Unidos, subiu 3,8%, para US$ 103,27.',
-    '## Ataques e ameaças',
-    'Os investidores reagiram aos ataques dos houthis, grupo armado do Iêmen, contra a Arábia Saudita e ao temor de novos bombardeios dos EUA contra o Irã, segundo o WION. Um ataque ao aeroporto Rei Fahd, no leste saudita, matou duas pessoas na quarta (21), e os houthis assumiram a autoria, segundo a Fox News.',
-    'Antes de viajar para um comício na Flórida, o presidente Donald Trump disse que os EUA poderiam tomar todo o petróleo do Irã, e até o país inteiro, se quisessem, e que o Estreito de Ormuz está sob controle americano, segundo o WION. Ele também falou na possibilidade de novos ataques. O primeiro-ministro de Israel, Benjamin Netanyahu, disse que o governo iraniano precisa ser derrubado, segundo a Fox News.',
-    '## Mancha de óleo',
-    'Os Emirados Árabes Unidos registraram um vazamento de óleo de um navio-tanque perto da costa de Umm Al Quwain, de causa ainda não informada. As praias da região foram fechadas, e equipes começaram a contenção e a limpeza. Um pesquisador do Observatório de Conflito e Meio Ambiente estimou a mancha em cerca de 160 km², segundo o WION. Na véspera, o Irã tinha afirmado ter atingido quatro navios comerciais no Golfo.',
-    '## Irã',
-    'O chefe do Exército iraniano disse que as forças do país estão prontas para uma "guerra assimétrica", segundo o TokenPost. As eleições de meio de mandato nos EUA são em 3 de novembro.'
-  ],
-  box: { type: 'facts', title: 'Petróleo e Golfo', rows: [['Brent (sexta)', 'US$ 116,72 (+3,1%)'], ['Brent na semana', '+6,2%'], ['WTI (sexta)', 'US$ 103,27 (+3,8%)'], ['Mancha nos Emirados', 'Cerca de 160 km²'], ['Eleições nos EUA', '3 de novembro']] },
-  sources: [['TokenPost', U.tpBrent24], ['WION', U.wionBrent24], ['Fox News', U.foxIra24], ['Forbes Brasil', U.forbesIbov24]] },
-
-{ id: 'jordania-ataque-igreja-karak-sete-mortos', cat: 'internacional', own: false, t: '2026-10-23T16', d: '23 out 2026', img: 'mundo', src: 'Al Jazeera', url: U.ajJordania24,
-  title: 'Ataque a tiros em igreja durante funeral mata sete pessoas na Jordânia',
-  sum: 'Dois homens mascarados abriram fogo em uma igreja ortodoxa grega na província de Karak. Pelo menos 34 pessoas ficaram feridas, e nenhum grupo assumiu a autoria.',
-  body: [
-    'Sobreviventes contaram ter ouvido uma explosão quando o cortejo começava. Em seguida, os atiradores entraram na igreja, no vilarejo de Hamoud, e dispararam por vários minutos. As forças de segurança procuram dois suspeitos.',
-    'O ministro do Interior, Mazen al-Faraya, chamou o ataque de terrorista e disse que ele não tem precedentes. O rei Abdullah II prometeu as penas mais duras aos responsáveis. A Jordânia tem cerca de 300 mil cristãos, em uma população de cerca de 11,5 milhões.'
-  ] },
+  box: { type: 'facts', title: 'O sábado de protestos', rows: [['Manifestantes (governo)', '410 mil, 110 mil em Paris'], ['Manifestantes (CGT)', 'Cerca de 800 mil'], ['Detidos', '1.314'], ['Policiais nas ruas', 'Cerca de 70 mil'], ['Novo ato dos coletes amarelos', '31 de outubro'], ['Greve nacional', '5 de novembro']] },
+  sources: [['Agência Brasil', U.abFranca26], ['Al Jazeera', U.ajFranca25], ['India TV (AFP e AP)', U.itvFranca25], ['ABC News (AP)', U.abcFranca25]] },
 
 { id: 'cisjordania-bloqueio-netanyahu-hebron', cat: 'internacional', own: false, t: '2026-10-23T12', d: '23 out 2026', img: 'protesto', src: 'Al Jazeera', url: U.ajCisjordania24,
   title: 'Netanyahu manda preparar bloqueio total da Cisjordânia depois de ataque que matou dois soldados perto de Hebron',
@@ -1129,15 +1161,6 @@ const NEWS = [
     'Na quinta (22), forças israelenses prenderam 36 palestinos em operações na Cisjordânia. Uma comissão palestina registrou 17 ataques de forças israelenses e colonos contra agricultores durante a colheita de azeitonas.'
   ] },
 
-{ id: 'calor-europa-50-mil-mortes-verao', cat: 'internacional', own: false, t: '2026-10-22T16', d: '22 out 2026', img: 'ciencia', src: 'LSHTM', url: U.lshtmCalor24,
-  title: 'Calor do verão de 2026 matou mais de 50 mil pessoas em cidades da Europa, estima estudo',
-  sum: 'É o maior número desde 2000, quase o dobro do registrado em 2022. Cerca de dois terços das mortes são atribuídos às mudanças climáticas causadas pelo ser humano.',
-  body: [
-    'Os pesquisadores analisaram 854 áreas urbanas em 30 países, de 1º de junho a 31 de agosto. Quase um terço das mortes ocorreu entre 17 de junho e 1º de julho, quando as temperaturas ficaram mais de 5 °C acima da média. O sul e o oeste da Europa foram as regiões mais atingidas.',
-    'Os estudos foram publicados na revista Nature Health por pesquisadores do Imperial College London e da London School of Hygiene & Tropical Medicine. As áreas analisadas reúnem cerca de 40% da população desses países.'
-  ] },
-
-
 { id: 'israel-eleicoes-27-outubro-pesquisas', cat: 'internacional', own: false, t: '2026-10-22T15', d: '22 out 2026', img: 'eleicao', src: 'ABC (Austrália)', url: U.abcIsrael23,
   title: 'Israel vota na terça; pesquisas dão vantagem ao bloco de oposição a Netanyahu',
   sum: 'São 38 partidos disputando as 120 cadeiras do Parlamento. O bloco de Netanyahu aparece com 49 a 51 cadeiras, e a oposição, com 52 a 55. São necessárias 61 para formar maioria.',
@@ -1146,15 +1169,53 @@ const NEWS = [
     'As urnas ficam abertas das 7h às 22h, no horário local. O bloco de oposição reúne o Yashar, o Beyachad, de Naftali Bennett e Yair Lapid, os Democratas, de Yair Golan, e o Yisrael Beiteinu.'
   ] },
 
-{ id: 'venezuela-oposicao-marcha-eleicao-2027', cat: 'internacional', own: false, t: '2026-10-22T20', d: '22 out 2026', img: 'protesto', src: 'EFE/Infobae', url: U.efeVenezuela23,
-  title: 'Oposição venezuelana marcha por eleição presidencial em 2027 e pela volta de María Corina Machado',
-  sum: 'Os atos foram um dia depois de a terceira rodada de diálogo com o governo terminar sem acordo sobre eleições. Apoiadores do chavismo também foram às ruas.',
+/* ===================== ESPORTES ===================== */
+{ id: 'flavia-saraiva-bronze-trave-mundial', cat: 'esportes', own: true, t: '2026-10-25T12', d: '25 out 2026', img: 'esportes', read: 2,
+  title: 'Flávia Saraiva ganha bronze na trave, sua primeira medalha mundial no aparelho',
+  sum: 'A brasileira fez 14,300 na final em Roterdã. O Brasil encerra o Mundial com duas medalhas: o ouro de Rebeca Andrade no salto e o bronze de Flávia.',
   body: [
-    'Delcy Rodríguez está à frente do governo desde que os Estados Unidos capturaram Nicolás Maduro, em janeiro. Machado, Nobel da Paz de 2025, está fora do país desde dezembro.',
-    'A ONG Foro Penal contabiliza 322 presos políticos na Venezuela.'
+    'Flávia Saraiva conquistou no domingo (25) a medalha de bronze na final da trave do Mundial de Ginástica Artística, em Roterdã, na Holanda. Ela somou 14,300, com 6,100 de dificuldade e 8,200 de execução, segundo a Gazeta Esportiva.',
+    '## O pódio',
+    'A argelina Kaylia Nemour ficou com o ouro, com 14,566. A chinesa Zhang Qingying teve a mesma nota, mas ficou com a prata por ter execução menor no desempate.',
+    '## Dez anos de tentativas',
+    'É a primeira medalha mundial de Flávia na trave, depois de cerca de dez anos de tentativas. Ela já tinha disputado duas finais olímpicas no aparelho e foi quarta colocada no Mundial de 2025. É a terceira medalha dela em Mundiais: em Antuérpia, em 2023, ganhou prata por equipes e bronze no solo.',
+    'Com o bronze, o Brasil fecha o Mundial com duas medalhas. No sábado (24), Rebeca Andrade foi tricampeã no salto.'
+  ],
+  box: { type: 'table', title: 'Final da trave', head: ['Posição', 'Ginasta', 'Nota'], rows: [['Ouro', 'Kaylia Nemour (Argélia)', '14,566'], ['Prata', 'Zhang Qingying (China)', '14,566'], ['Bronze', 'Flávia Saraiva (Brasil)', '14,300']], note: 'Zhang perdeu o ouro no desempate pela nota de execução. Fonte: Gazeta Esportiva.' },
+  sources: [['Gazeta Esportiva', U.gzFlavia26]] },
+
+{ id: 'f1-antonelli-vence-austin-titulo-mexico', cat: 'esportes', own: false, t: '2026-10-25T19', d: '25 out 2026', img: 'pista', src: 'Gazeta Esportiva', url: U.gzF126,
+  title: 'Antonelli vence em Austin, mas o título da F1 fica para o México; Bortoleto é 13º',
+  sum: 'O italiano da Mercedes largou na pole e venceu à frente de Leclerc e Verstappen. Ele tem 365 pontos, contra 242 de Russell e 241 de Hamilton.',
+  body: [
+    'Foi a nona vitória de Antonelli na temporada. Para ser campeão já em Austin, ele precisava que Russell terminasse em nono ou pior e Hamilton em quinto ou pior. Russell foi oitavo, mesmo com punição de 5 segundos, e Hamilton, quarto.',
+    'Gabriel Bortoleto, da Audi, largou em 21º por troca de componentes da unidade de potência e terminou em 13º, uma volta atrás do vencedor. A próxima etapa é o GP do México, em 1º de novembro.'
   ] },
 
-/* ===================== ESPORTES ===================== */
+{ id: 'internacional-vence-botafogo-3-a-0', cat: 'esportes', own: false, t: '2026-10-24T18', d: '24 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzInter26,
+  title: 'Internacional vence o Botafogo por 3 a 0 e abre distância da zona de rebaixamento',
+  sum: 'No Beira-Rio, Matheus Bahia, Juninho e Bernabei marcaram. O Inter foi a 35 pontos, em 16º lugar.',
+  body: [
+    'Os dois primeiros gols saíram no primeiro tempo, e Bernabei fechou o placar aos 21 minutos da etapa final, pela 32ª rodada do Brasileirão.',
+    'O Botafogo ficou em 11º, com 39 pontos. O Corinthians, 17º, tem 33 pontos e está na zona de rebaixamento.'
+  ] },
+
+{ id: 'real-madrid-vence-barcelona-classico', cat: 'esportes', own: false, t: '2026-10-25T13', d: '25 out 2026', img: 'esportes', src: 'ESPN', url: U.espnClassico26,
+  title: 'Real Madrid vence o Barcelona por 2 a 1 no Camp Nou e impõe ao rival a primeira derrota na temporada',
+  sum: 'Mbappé abriu o placar, Raphinha empatou e o Real fez o gol da vitória aos 42 minutos do segundo tempo. Vini Jr. cumpriu suspensão.',
+  body: [
+    'Mesmo com a derrota, o Barcelona segue líder do Campeonato Espanhol, com 27 pontos. O Atlético de Madrid tem 25, e o Real Madrid, 24.',
+    'Vini Jr. não jogou por causa da expulsão contra o Villarreal, segundo o Lance!.'
+  ] },
+
+{ id: 'flamengo-atletico-mg-maracana-segunda', cat: 'esportes', own: false, t: '2026-10-26T05', d: '26 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzFlaGalo26,
+  title: 'Flamengo recebe o Atlético-MG nesta segunda e pode voltar à liderança do Brasileirão',
+  sum: 'O jogo é às 20h, no Maracanã. O Flamengo tem 67 pontos, dois a menos que o Palmeiras.',
+  body: [
+    'A partida é da 32ª rodada. O Atlético-MG é o sexto colocado, com 50 pontos.',
+    'O jogo terá transmissão do Sportv e do Premiere.'
+  ] },
+
 { id: 'rebeca-andrade-tricampea-mundial-salto', cat: 'esportes', own: true, t: '2026-10-24T13', d: '24 out 2026', img: 'esportes', read: 3,
   title: 'Rebeca Andrade é tricampeã mundial no salto e chega a 10 medalhas em Mundiais',
   sum: 'Com média de 14,466, a brasileira venceu a final em Roterdã à frente de duas americanas. Ela é a primeira brasileira tricampeã mundial em uma mesma prova.',
@@ -1171,21 +1232,6 @@ const NEWS = [
   box: { type: 'table', title: 'Final do salto', head: ['Ginasta', 'País', 'Média'], rows: [['Rebeca Andrade', 'Brasil', '14,466'], ['Claire Pease', 'EUA', '14,233'], ['Skye Blakely', 'EUA', '14,166']], note: 'Fontes: Exame e Terra.' },
   sources: [['Exame', U.exRebeca25], ['Terra', U.terraRebeca25]] },
 
-{ id: 'f1-austin-antonelli-pole-verstappen', cat: 'esportes', own: true, t: '2026-10-24T19', d: '24 out 2026', img: 'pista', read: 3,
-  title: 'Antonelli faz a pole em Austin, e Verstappen larga ao lado; Bortoleto sai em último',
-  sum: 'O líder do campeonato marcou 1min34s035, 179 milésimos à frente de Verstappen. A corrida é neste domingo, às 17h, no horário de Brasília.',
-  body: [
-    'Kimi Antonelli, da Mercedes, conquistou no sábado (24) a pole position do GP dos Estados Unidos, no Circuito das Américas, em Austin. Ele fez 1min34s035, 0s179 à frente de Max Verstappen, da Red Bull, segundo o Grande Prêmio e o F1Mania.',
-    '## O grid',
-    'Isack Hadjar, da Red Bull, larga em terceiro, com 1min34s250. Charles Leclerc e Lewis Hamilton, da Ferrari, fecharam o quarto e o quinto lugares, segundo o F1Mania.',
-    '## Bortoleto',
-    'O brasileiro Gabriel Bortoleto, da Audi, larga em último. A equipe trocou quase toda a unidade de potência depois de passar, pela segunda vez, do limite de componentes permitidos, e a punição chegou a 80 posições, segundo o Grande Prêmio. Na classificação, ele tinha ficado em 13º, segundo o F1Mania.',
-    '## O campeonato',
-    'Antonelli chega à corrida com 102 pontos de vantagem sobre George Russell, seu companheiro de equipe. Segundo o Grande Prêmio, ele pode garantir o título já em Austin se terminar o domingo com pelo menos 125 pontos de vantagem sobre os rivais que ainda podem alcançá-lo, o que depende de uma combinação de resultados.'
-  ],
-  box: { type: 'table', title: 'Os cinco primeiros do grid', head: ['Posição', 'Piloto', 'Equipe'], rows: [['1º', 'Kimi Antonelli', 'Mercedes'], ['2º', 'Max Verstappen', 'Red Bull'], ['3º', 'Isack Hadjar', 'Red Bull'], ['4º', 'Charles Leclerc', 'Ferrari'], ['5º', 'Lewis Hamilton', 'Ferrari']], note: 'Fontes: F1Mania e Grande Prêmio.' },
-  sources: [['Grande Prêmio', U.gpPole25], ['F1Mania', U.f1mPole25]] },
-
 { id: 'palmeiras-vence-bragantino-lider-69-pontos', cat: 'esportes', own: false, t: '2026-10-24T20', d: '24 out 2026', img: 'esportes', src: 'Gazeta Esportiva', url: U.gzPalmeiras25,
   title: 'Palmeiras vence o Bragantino por 2 a 0 e assume a liderança provisória do Brasileirão',
   sum: 'Com 69 pontos, o time passa o Flamengo, que tem 67 e joga na segunda-feira contra o Atlético-MG, no Maracanã.',
@@ -1200,29 +1246,6 @@ const NEWS = [
   body: [
     'Puma Rodríguez abriu o placar para o Vasco no primeiro tempo. O Corinthians virou no começo do segundo tempo, com Gustavo Henrique e Matheus Bidu, mas Hinestroza marcou aos 42 e aos 44 minutos do segundo tempo.',
     'O Internacional, que venceu o Botafogo por 3 a 0, chegou a 35 pontos. O próximo jogo do Corinthians, do técnico Seedorf, é contra o Mirassol, na sexta-feira (30), em Itaquera.'
-  ] },
-
-{ id: 'ronaldinho-volta-ravenna-46-anos', cat: 'esportes', own: false, t: '2026-10-24T10', d: '24 out 2026', img: 'esportes', src: 'Agência Brasil', url: U.abRonaldinho25,
-  title: 'Aos 46 anos, Ronaldinho Gaúcho vai voltar a jogar pelo Ravenna, da terceira divisão da Itália',
-  sum: 'A estreia está marcada para 15 de novembro, contra o Forlì. Ronaldinho não disputa um jogo oficial desde 2015.',
-  body: [
-    'O Ravenna anunciou a volta na sexta-feira (23). Ronaldinho, que se aposentou oficialmente em 2018, comprou uma participação no clube, que pertence ao amigo Ignazio Cipriani.',
-    'O Ravenna é o segundo colocado do Grupo B da Série C, com 20 pontos em 10 jogos, oito atrás do líder Spezia. O último clube de Ronaldinho foi o Fluminense.'
-  ] },
-
-{ id: 'cruzeiro-vence-remo-terceiro-lugar', cat: 'esportes', own: false, t: '2026-10-23T23', d: '23 out 2026', img: 'esportes', src: 'CNN Brasil', url: U.cnnCruzeiro24,
-  title: 'Cruzeiro vence o Remo por 1 a 0 e assume o terceiro lugar do Brasileirão',
-  sum: 'Fabrício Bruno marcou de cabeça nos acréscimos do primeiro tempo. O Cruzeiro chega a 54 pontos, e o Remo segue em 19º, com 26.',
-  body: [
-    'O gol saiu de um escanteio cobrado por Matheus Pereira, no jogo que abriu a 32ª rodada, no Mineirão.',
-    'O Cruzeiro faz o clássico com o Atlético-MG na quinta (29), na Arena MRV. O Remo recebe o Botafogo na quarta (28), no Mangueirão.'
-  ] },
-
-{ id: 'europa-league-bournemouth-vence-milan', cat: 'esportes', own: false, t: '2026-10-22T19', d: '22 out 2026', img: 'esportes', src: 'CNN Brasil', url: U.cnnEuropa23,
-  title: 'Bournemouth vence o Milan por 3 a 0 na Liga Europa; Benfica e Leverkusen seguem com 100%',
-  sum: 'Na terceira rodada da fase de liga, o Benfica goleou o Omonia por 4 a 1, e o Leverkusen venceu o OFI por 2 a 0. Os dois têm 9 pontos.',
-  body: [
-    'Kluivert, Tavernier e Adli marcaram para o Bournemouth, dois dos gols de pênalti. A Real Sociedad fez 6 a 0 no Lillestrøm, e a Juventus empatou por 2 a 2 com o Rennes.'
   ] },
 
 { id: 'libertadores-semifinais-tres-brasileiros', cat: 'esportes', own: true, t: '2026-10-23T00', d: '23 out 2026', img: 'esportes', read: 3,
@@ -1247,14 +1270,29 @@ const NEWS = [
     'Os gols do time uruguaio, em Montevidéu, saíram no fim do segundo tempo. O zagueiro Alan Franco foi expulso e desfalca o Atlético na final. É a segunda final seguida de Sul-Americana do clube mineiro.'
   ] },
 
-{ id: 'real-madrid-goleia-leipzig-vini-champions', cat: 'esportes', own: false, t: '2026-10-21T18', d: '21 out 2026', img: 'esportes', src: 'DGABC', url: U.dgabcReal22,
-  title: 'Com Vini Jr. titular, Real Madrid vence o Leipzig por 4 a 1 na Champions',
-  sum: 'Mbappé marcou um dos gols, e Endrick entrou só no fim. Na mesma rodada, o Como goleou o Manchester United por 4 a 1.',
+/* ===================== CULTURA ===================== */
+{ id: 'iron-maiden-show-sao-paulo-50-mil', cat: 'cultura', own: true, t: '2026-10-26T01', d: '26 out 2026', img: 'palco', read: 2,
+  title: 'Iron Maiden toca para cerca de 50 mil pessoas em São Paulo na turnê dos 50 anos',
+  sum: 'O show no Nubank Parque, no domingo da eleição, durou pouco mais de duas horas e teve "Infinite Dreams", que a banda não tocava havia 38 anos. A segunda apresentação na cidade é nesta terça.',
   body: [
-    'Vinícius Júnior finalizou duas vezes, e as duas foram defendidas pelo goleiro do Leipzig. Na rodada de quarta (21), o Bayern empatou com o Arsenal por 2 a 2, e a Inter de Milão venceu o Shakhtar por 1 a 0, com gol do brasileiro Carlos Augusto.'
+    'O Iron Maiden fez no domingo (25) o primeiro de dois shows em São Paulo da turnê "Run for Your Lives", que celebra os 50 anos da banda. Segundo a Rolling Stone Brasil, cerca de 50 mil pessoas foram ao Nubank Parque. Os ingressos se esgotaram bem antes de o público perceber que a data coincidiria com o segundo turno.',
+    '## O show',
+    'A banda Alter Bridge abriu a noite, das 19h10 até pouco depois das 20h. O Iron Maiden subiu ao palco às 20h50 e começou com quatro músicas da fase com o vocalista Paul Di\'Anno, como "Wrathchild". O baterista Simon Dawson ocupou o lugar de Nicko McBrain.',
+    '"Infinite Dreams" voltou ao repertório depois de 38 anos. Nesta turnê, a banda trocou os tradicionais painéis pintados por imagens em um telão. O bis teve "Aces High", "Fear of the Dark" e "Wasted Years".',
+    '## Próximas datas',
+    'A segunda apresentação em São Paulo é nesta terça-feira (27), também no Nubank Parque. Na quarta (28), a banda toca em Curitiba.'
+  ],
+  box: { type: 'facts', title: 'Iron Maiden no Brasil', rows: [['Público em SP (25/10)', 'Cerca de 50 mil'], ['Duração', 'Pouco mais de 2 horas'], ['Abertura', 'Alter Bridge'], ['Próximos shows', 'SP (27/10) e Curitiba (28/10)']] },
+  sources: [['Rolling Stone Brasil', U.rsMaiden26]] },
+
+{ id: 'publico-cinema-2026-supera-2025', cat: 'cultura', own: false, t: '2026-10-22T12', d: '22 out 2026', img: 'cultura', src: 'Filme B', url: U.filmebPublico26,
+  title: 'Público dos cinemas em 2026 já passa o de todo o ano de 2025',
+  sum: 'Foram 116,5 milhões de ingressos até 21 de outubro, contra 115,5 milhões em 2025 inteiro. A renda chegou a R$ 2,51 bilhões.',
+  body: [
+    'Na comparação com o mesmo período do ano passado, o público cresceu 20,6%, e a renda, 29,9%, segundo a Filme B. "Homem-Aranha: Um Novo Dia" lidera o ano, com 18,87 milhões de espectadores.',
+    'Na semana de 15 a 21 de outubro, "Street Fighter" teve o maior público, com 331,2 mil pessoas, e "Verity" liderou em renda, com R$ 7,59 milhões.'
   ] },
 
-/* ===================== CULTURA ===================== */
 { id: 'let-it-be-beatles-1-bilhao-spotify', cat: 'cultura', own: false, t: '2026-10-23T17', d: '23 out 2026', img: 'palco', src: 'Rolling Stone Brasil', url: U.rsLetItBe25,
   title: '"Let It Be", dos Beatles, passa de 1 bilhão de reproduções no Spotify',
   sum: 'É a terceira música da banda a chegar à marca, depois de "Here Comes the Sun" e "Come Together". "Yesterday" está perto de 900 milhões.',
@@ -1286,15 +1324,6 @@ const NEWS = [
     'Nascido em 1952 na província de Nagasaki, Murakami ganhou o Prêmio Akutagawa com "Azul Quase Transparente". Ele também dirigiu filmes baseados nos próprios livros, como "Tóquio em Decadência" e "Kyoko".',
     'Por anos, apresentou na TV Tokyo um programa de entrevistas sobre economia e negócios. O funeral foi restrito à família.'
   ] },
-
-{ id: 'iron-maiden-sao-paulo-domingo-horarios', cat: 'cultura', own: false, t: '2026-10-23T15', d: '23 out 2026', img: 'palco', src: 'Rolling Stone Brasil', url: U.rsMaiden24,
-  title: 'Iron Maiden faz show em São Paulo no domingo, na turnê dos 50 anos da banda',
-  sum: 'Os portões do Nubank Parque abrem às 16h, e a banda deve subir ao palco por volta das 20h50. Há outro show na cidade na terça (27) e um em Curitiba na quarta (28).',
-  body: [
-    'A turnê "Run for Your Lives" celebra os 50 anos do grupo britânico. O Alter Bridge abre a noite, a partir das 19h10.',
-    'Menores de 16 anos só entram acompanhados dos pais ou de responsável legal.'
-  ] },
-
 
 { id: 'morre-tom-skerritt-top-gun-alien', cat: 'cultura', own: false, t: '2026-10-22T16', d: '22 out 2026', img: 'cultura', src: 'CNN Brasil', url: U.cnnSkerritt23,
   title: 'Morre Tom Skerritt, ator de "Top Gun" e "Alien", aos 93 anos',
@@ -1347,32 +1376,53 @@ const NEWS = [
   box: { type: 'facts', title: 'Serviço', rows: [['Sessões ao público', 'Até 29 de outubro'], ['Programação', '380 títulos de 93 países'], ['Espaços', '57'], ['Ingressos', 'R$ 26 a R$ 32 (inteira)'], ['Gratuito', '26 CEUs e Cidade Tiradentes']] },
   sources: [['Prefeitura de São Paulo', U.prefMostra], ['Rolling Stone Brasil', U.rsMostra], ['Revista de Cinema', U.rcRajamouli], ['O Tempo', U.otRajamouli20], ['CNN Brasil', U.cnnMostra2], ['Omelete', U.omeleteMostra], ['ANSA Brasil', U.ansaBechis22]] },
 
-{ id: 'duna-parte-tres-ingressos-teaser', cat: 'cultura', own: true, t: '2026-10-20T14', d: '20 out 2026', img: 'cultura', read: 2,
-  title: '"Duna: Parte Três" ganha teaser e abre venda de ingressos; estreia no Brasil é em 17 de dezembro',
-  sum: 'O filme de Denis Villeneuve terá sessões em IMAX. Timothée Chalamet e Zendaya voltam ao elenco, que tem ainda Robert Pattinson e Anya Taylor-Joy.',
-  body: [
-    '"Duna: Parte Três" ganhou um novo teaser e um pôster na terça-feira (20), e a venda de ingressos foi aberta em vários países pelo site oficial do filme, segundo o Omelete. A estreia no Brasil está marcada para 17 de dezembro, inclusive em salas IMAX.',
-    '## A equipe',
-    'O filme continua a adaptação dos livros de Frank Herbert dirigida por Denis Villeneuve, que assina o roteiro com Brian K. Vaughan, segundo o ABC Agora.',
-    'Timothée Chalamet, Zendaya, Florence Pugh, Rebecca Ferguson e Jason Momoa estão no elenco, ao lado de Anya Taylor-Joy e Robert Pattinson, segundo o Omelete. O ABC Agora cita ainda Javier Bardem.'
-  ],
-  box: { type: 'facts', title: '"Duna: Parte Três"', rows: [['Estreia no Brasil', '17 de dezembro'], ['Direção', 'Denis Villeneuve'], ['Roteiro', 'Villeneuve e Brian K. Vaughan'], ['Formatos', 'Inclui IMAX']] },
-  sources: [['Omelete', U.omeleteDuna20], ['ABC Agora', U.abcagoraDuna20]] },
-
 /* ===================== ECONOMIA ===================== */
-{ id: 'ibovespa-sobe-6-9-entre-turnos-cenarios', cat: 'economia', own: true, t: '2026-10-24T09', d: '24 out 2026', img: 'mercado', read: 3,
-  title: 'Ibovespa sobe 6,9% entre os turnos, e mercado traça cenários para a segunda-feira',
-  sum: 'O índice foi de 192.144 para 205.082 pontos, e o dólar caiu 4,4%. Levantamento do Citi com investidores aponta reações opostas para a vitória de cada candidato.',
+{ id: 'mercado-exterior-reage-reeleicao-lula', cat: 'economia', own: true, t: '2026-10-26T02', d: '26 out 2026', img: 'mercado', read: 3,
+  title: 'Ativos brasileiros caem no exterior depois da reeleição de Lula, e analistas preveem abertura em queda',
+  sum: 'O ETF EWZ caiu quase 20% no after-market nos EUA, e um fundo de ações brasileiras recuou 13% em Tóquio. O dólar futuro em Chicago subiu cerca de 10%. A B3 abre nesta segunda.',
   body: [
-    'Entre o último pregão antes do primeiro turno, em 2 de outubro, e o último antes do segundo, em 23 de outubro, o Ibovespa subiu 6,9%, de 192.144 para 205.082 pontos, segundo a InfoMoney. Pelo levantamento da consultoria Elos Ayta, só as eleições de 2002 e 2006 tiveram alta maior nesse intervalo.',
-    'O dólar caiu 4,4% no período, de R$ 5,21 para R$ 4,98, e acumula queda de 9,1% no ano. Os estrangeiros colocaram R$ 20,15 bilhões na Bolsa em outubro até o dia 21, segundo dados da B3 citados pela InfoMoney.',
-    '## Cenários',
-    'Um levantamento do Citi com 73 investidores, citado pelo Times Brasil, mostra expectativas opostas para a segunda-feira (26), primeiro pregão depois da eleição. Em caso de vitória de Flávio Bolsonaro (PL), 49% esperam alta do Ibovespa acima de 5%, e 88% esperam valorização do real de pelo menos 2%. Em caso de vitória de Lula (PT), 79% esperam queda da Bolsa acima de 5%, e 63% esperam desvalorização do real acima de 5%.',
-    'A Suno Research projeta o dólar entre R$ 4,80 e R$ 4,90 com a vitória de Flávio e entre R$ 5,40 e R$ 5,60 com a de Lula. A casa também prevê uma correção em seis a nove meses se as reformas fiscais não avançarem, seja qual for o vencedor, segundo o Times Brasil.',
-    'O Daycoval vê como principal risco no cenário de vitória de Flávio o mercado antecipar uma melhora fiscal maior do que o governo consiga entregar. As projeções são opiniões de mercado e não recomendações de investimento.'
+    'Os primeiros negócios com ativos brasileiros fora do país, ainda na noite de domingo (25), mostraram forte queda depois da confirmação da vitória de Lula (PT). Segundo o InfoMoney, o EWZ, fundo negociado nos EUA que acompanha ações brasileiras, caiu quase 20% no after-market.',
+    'Na Bolsa de Tóquio, o fundo NEXT Funds Ibovespa Linked abriu a segunda-feira com queda de 13%, segundo a Bloomberg Línea. No primeiro turno, ele tinha subido quase 8%. Na CME, em Chicago, o dólar futuro contra o real subiu cerca de 10%, para perto de R$ 5,52.',
+    '## O que esperam os analistas',
+    'Analistas ouvidos pelo InfoMoney esperam vendas na Bolsa, alta do dólar e dos juros futuros nesta segunda (26). Gabriel Uarian, da Cultura Capital, vê possível queda do Ibovespa acima de 5%, com risco de acionamento do circuit breaker, mecanismo que interrompe os negócios em quedas fortes.',
+    'Em pesquisa do Citi com investidores, divulgada na sexta (23), 79,5% esperavam queda do Ibovespa de mais de 5% em caso de vitória de Lula, e 63% previam desvalorização do real acima de 5%.',
+    '## O ponto de partida',
+    'Na sexta, o Ibovespa fechou a 205.082 pontos, e o dólar, abaixo de R$ 5. Entre o primeiro e o segundo turno, a Bolsa subiu 6,9%, e o dólar caiu 4,4%. Segundo os analistas, os setores mais expostos são varejo, construção e bancos de crédito ao consumo, e os mais protegidos são exportadoras, mineração e agronegócio.',
+    'Projeções não são recomendação de investimento. O comportamento real do mercado só será conhecido com a abertura da B3.'
   ],
-  box: { type: 'table', title: 'O que esperam os investidores ouvidos pelo Citi', head: ['Cenário', 'Bolsa', 'Real'], rows: [['Vitória de Flávio', '49% veem alta acima de 5%', '88% veem alta de pelo menos 2%'], ['Vitória de Lula', '79% veem queda acima de 5%', '63% veem queda acima de 5%']], note: 'Levantamento com 73 investidores. Fonte: Times Brasil.' },
-  sources: [['InfoMoney', U.imEntreTurnos25], ['Times Brasil', U.tbCenarios25]] },
+  box: { type: 'facts', title: 'Os sinais do exterior', rows: [['EWZ (EUA, after-market)', 'Queda de quase 20%'], ['Fundo de Ibovespa em Tóquio', '-13% na abertura'], ['Dólar futuro (CME)', 'Cerca de +10%, perto de R$ 5,52'], ['Último fechamento do Ibovespa', '205.082 pontos (23/10)']] },
+  sources: [['InfoMoney', U.imAbertura26], ['Bloomberg Línea', U.blDolar26], ['InfoMoney', U.imEntreTurnos25]] },
+
+{ id: 'lula-quarto-mandato-desafio-fiscal', cat: 'economia', own: true, t: '2026-10-26T04', d: '26 out 2026', img: 'mercado', read: 3,
+  title: 'Quarto mandato de Lula começa com dívida perto de 83% do PIB e pressão por ajuste fiscal',
+  sum: 'A campanha prometeu um ajuste gradual de cerca de 2% do PIB no novo mandato. Analistas cobram um plano concreto e dizem que as promessas de campanha aumentam os gastos.',
+  body: [
+    'A dívida bruta do governo geral subiu mais de 10 pontos percentuais no atual mandato e chegou a 82,9% do PIB, segundo a Reuters, publicada pelo Investing.com. O governo ainda tem déficit primário, de cerca de 0,5% do PIB. O Citi calcula que seria preciso um superávit de 3,3% do PIB para estabilizar a dívida.',
+    '## As promessas',
+    'A campanha se comprometeu com um ajuste gradual de cerca de 2% do PIB, com revisão de incentivos fiscais e possível unificação de programas sociais. Ao mesmo tempo, prometeu medidas que elevam gastos ou reduzem receitas, como o aumento do Bolsa Família, o fim da "taxa das blusinhas" e transporte municipal gratuito nos fins de semana.',
+    'Marcus Pestana, da Instituição Fiscal Independente, ligada ao Senado, disse que o governo terá de "fazer o dever de casa". Felipe Salto, da Warren Investimentos, defende limite menor para o crescimento dos gastos e menos exceções às regras fiscais.',
+    '## Juros e inflação',
+    'A inflação chegou a 4,6% em 12 meses até setembro, acima da meta de 3%. A Selic está em 13,75%, depois de cortes de 1,25 ponto, e economistas esperam mais duas reduções de 0,25 ponto neste ano. Segundo a Serasa, quase 84 milhões de brasileiros estão inadimplentes, número recorde.',
+    'O novo Congresso, eleito em outubro, é mais à direita, o que pode dificultar a aprovação de medidas como a revisão de incentivos, segundo a reportagem.'
+  ],
+  box: { type: 'facts', title: 'O ponto de partida', rows: [['Dívida bruta', '82,9% do PIB'], ['Déficit primário', 'Cerca de 0,5% do PIB'], ['Ajuste prometido', 'Cerca de 2% do PIB no mandato'], ['Selic', '13,75%'], ['Inflação em 12 meses', '4,6% (setembro)']] },
+  sources: [['Reuters (Investing.com)', U.invFiscal26]] },
+
+{ id: 'agenda-semana-fed-caged-pnad-vale', cat: 'economia', own: false, t: '2026-10-25T20', d: '25 out 2026', img: 'mercado', src: 'InfoMoney', url: U.imAgenda26,
+  title: 'Semana tem decisão do Fed, Caged, PNAD e balanço da Vale',
+  sum: 'O Fed anuncia os juros americanos na quarta (28). No Brasil, o Caged de setembro sai na quinta (29), e a taxa de desemprego, na sexta (30).',
+  body: [
+    'O boletim Focus, com as projeções do mercado, sai nesta segunda às 8h25. Na quinta, além do Caged, saem o IGP-M de outubro e o resultado das contas do governo central. A temporada de balanços do terceiro trimestre ganha força a partir de quarta, e a Vale divulga o seu na quinta.',
+    'Nos EUA, a expectativa é de que o Fed mantenha os juros entre 3,75% e 4% ao ano. Na quinta, sai a primeira estimativa do PIB americano do terceiro trimestre.'
+  ] },
+
+{ id: 'mega-sena-acumula-300-milhoes', cat: 'economia', own: false, t: '2026-10-25T07', d: '25 out 2026', img: 'mercado', src: 'Agência Brasil', url: U.abMega26,
+  title: 'Mega-Sena acumula, e o prêmio desta segunda deve chegar a R$ 300 milhões',
+  sum: 'Ninguém acertou as seis dezenas do concurso 3.074. O sorteio desta segunda (26) é às 21h, e as apostas vão até as 20h.',
+  body: [
+    'Os números sorteados no sábado (24) foram 02, 03, 20, 25, 39 e 57. A quina teve 175 apostas ganhadoras, com R$ 30.318,56 cada. O sorteio foi antecipado de domingo para sábado por causa do segundo turno.',
+    'A aposta simples, com seis números, custa R$ 6 e pode ser feita nas lotéricas ou pelo site e pelo aplicativo da Caixa.'
+  ] },
 
 { id: 'azul-financiamento-2-bilhoes-combustivel', cat: 'economia', own: false, t: '2026-10-24T11', d: '24 out 2026', img: 'mercado', src: 'InfoMoney (Reuters)', url: U.imAzul25,
   title: 'Azul fecha financiamento de até R$ 2 bilhões para pagar combustível de aviação',
@@ -1405,21 +1455,6 @@ const NEWS = [
   box: { type: 'facts', title: 'Fechamento de sexta (23)', rows: [['Ibovespa', '205.082 pontos (+0,47%)'], ['Ibovespa na semana', '-0,17%'], ['Dólar', 'R$ 4,993 (-0,90%)'], ['Dólar na semana', '-1,64%'], ['Maior alta', 'CSN (+12,41%)'], ['Maior queda', 'Vibra (-3,19%)']] },
   sources: [['InfoMoney', U.imIbov24], ['Forbes Brasil', U.forbesIbov24]] },
 
-{ id: 'ipca-15-outubro-0-32-alimentos', cat: 'economia', own: true, t: '2026-10-23T10', d: '23 out 2026', img: 'mercado', read: 3,
-  title: 'Prévia da inflação desacelera para 0,32% em outubro, com queda de energia e passagens aéreas',
-  sum: 'O IPCA-15 tinha sido de 0,70% em setembro. Em 12 meses, a alta é de 4,62%. Os alimentos foram o maior peso, e o tomate subiu 24,54%.',
-  body: [
-    'O IPCA-15, considerado a prévia da inflação oficial, subiu 0,32% em outubro, depois de 0,70% em setembro, segundo o IBGE, citado pelo Correio Braziliense. Em outubro de 2025, a taxa tinha sido de 0,18%. No ano, o índice acumula 4,15%. Em 12 meses, a alta é de 4,62%, acima dos 4,47% do período anterior.',
-    '## O que subiu',
-    'Oito dos nove grupos pesquisados subiram. Alimentação e bebidas teve o maior impacto, com alta de 0,88%. A comida consumida em casa ficou 1,01% mais cara, com destaque para tomate (24,54%), cebola (13,63%), batata (10,96%) e arroz (5,80%). Cenoura (-10,67%) e café moído (-1,16%) ficaram mais baratos.',
-    '## O que aliviou',
-    'As passagens aéreas caíram 9,24% e foram a maior influência para baixo. A energia elétrica residencial recuou 0,89%, com a troca da bandeira tarifária de amarela para verde. Habitação foi o único grupo em queda, de 0,10%.',
-    '## Combustíveis',
-    'Os combustíveis aceleraram de 0,22% em setembro para 1,20% em outubro. O diesel subiu 3,70%, o etanol, 2,73%, e a gasolina, 0,92%. O índice geral ficou abaixo dos 0,43% projetados pela XP, segundo o InfoMoney.'
-  ],
-  box: { type: 'facts', title: 'IPCA-15 de outubro', rows: [['Outubro', '0,32%'], ['Setembro', '0,70%'], ['Acumulado em 2026', '4,15%'], ['Em 12 meses', '4,62%'], ['Tomate', '+24,54%'], ['Passagens aéreas', '-9,24%']] },
-  sources: [['Correio Braziliense', U.cbIpca24], ['InfoMoney', U.imIbov24]] },
-
 { id: 'arrecadacao-federal-setembro-recorde-239-bilhoes', cat: 'economia', own: false, t: '2026-10-22T17', d: '22 out 2026', img: 'mercado', src: 'Correio Braziliense', url: U.cbArrecadacao24,
   title: 'Arrecadação federal chega a R$ 239,3 bilhões em setembro, recorde para o mês',
   sum: 'É o melhor setembro da série histórica, iniciada em 2000. De janeiro a setembro, a arrecadação soma R$ 2,35 trilhões, alta real de 6,97%.',
@@ -1445,21 +1480,37 @@ const NEWS = [
     'A provisão para perdas com calotes somou R$ 10,6 bilhões, 24,3% a mais que um ano antes.'
   ] },
 
-{ id: 'petrobras-lidera-valorizacao-petroleiras-outubro', cat: 'economia', own: false, t: '2026-10-21T12', d: '21 out 2026', img: 'mercado', src: 'InfoMoney', url: U.imPetrobras22,
-  title: 'Petrobras é a petroleira que mais se valorizou entre as gigantes do setor em outubro',
-  sum: 'A estatal subiu 22,45% em dólar no mês, segundo levantamento da Elos Ayta com 19 empresas de petróleo que valem mais de US$ 50 bilhões.',
-  body: [
-    'Em 2026, a alta da Petrobras chega a 120,39%, a quarta maior do grupo. O valor de mercado da empresa é de US$ 159,49 bilhões, o quinto maior entre as petroleiras.'
-  ] },
-
-{ id: 'governo-credito-exportadores-tarifas-eua', cat: 'economia', own: false, t: '2026-10-21T09', d: '21 out 2026', img: 'mercado', src: 'Agência Brasil', url: U.abExport22,
-  title: 'Governo libera R$ 6,49 bilhões para exportadores afetados pelas tarifas dos EUA',
-  sum: 'O crédito extraordinário, por medida provisória, reforça o Plano Brasil Soberano e será operado pelo Fundo de Garantia à Exportação.',
-  body: [
-    'A medida provisória foi publicada no Diário Oficial da União na quarta-feira (21).'
-  ] },
-
 /* ===================== TECNOLOGIA ===================== */
+{ id: 'lula-promete-regular-plataformas-digitais', cat: 'tecnologia', own: true, t: '2026-10-26T03', d: '26 out 2026', img: 'celular', read: 3,
+  title: 'Reeleito, Lula diz que vai regular as plataformas digitais, mas não apresenta proposta',
+  sum: 'No primeiro discurso depois da vitória, o presidente disse que crime na internet deve ser tratado como crime na vida real e criticou big techs que lucram no Brasil sem pagar impostos.',
+  body: [
+    'Lula afirmou na noite de domingo (25), em São Paulo, que seu governo terá de regular as plataformas digitais. Segundo a Agência Brasil, ele disse que a eleição exigiu vencer uma interferência vinda de fora por meio dessas plataformas e que o crime no mundo digital tem de ser tratado da mesma forma que o crime fora dele.',
+    'O presidente também criticou grandes empresas de tecnologia que, segundo ele, ganham bilhões no país sem pagar impostos aqui, e disse que a comunicação digital terá grande espaço no novo mandato.',
+    '## O que falta saber',
+    'Lula não disse qual proposta pretende apoiar nem deu prazo, segundo o Piranot. Ele também falou em desenvolver uma inteligência artificial brasileira, sem detalhar plano ou cronograma.',
+    'Há projetos sobre o tema no Congresso. O PL 4.675/2025 trata da concorrência nos mercados digitais, com papel para o Cade, e não cria regras gerais para conteúdo nas redes. O PL 3.046/2026 trata da rolagem contínua e automática de conteúdo nas plataformas. Qualquer regra geral para as redes precisa ser aprovada pelo Congresso.',
+    '## Antecedentes',
+    'Em setembro de 2025, na ONU, Lula disse que regular significa garantir que o que é ilegal fora da internet também seja ilegal dentro dela. Neste ano, na Espanha, afirmou que, sem regras, as big techs trariam um "colonialismo digital", segundo o Piranot.'
+  ],
+  sources: [['Agência Brasil', U.abDiscurso26], ['Piranot', U.piraBigTechs26]] },
+
+{ id: 'nintendo-switch-2-desbloqueado-software', cat: 'tecnologia', own: false, t: '2026-10-23T10', d: '23 out 2026', img: 'tecnologia', src: 'Tecnoblog', url: U.tbSwitch26,
+  title: 'Nintendo Switch 2 é desbloqueado só por software pela primeira vez',
+  sum: 'O método, chamado ns2jb, usa falhas de um aplicativo de programação e funciona na versão mais recente do sistema. Ele não roda cópias piratas de jogos comerciais.',
+  body: [
+    'O pesquisador Sammy Hajhamid explorou falhas no SmileBASIC 4, aplicativo do primeiro Switch que roda no novo console por compatibilidade. O desbloqueio permite rodar programas caseiros e fazer cópia de segurança de jogos salvos, mas precisa ser refeito a cada reinício.',
+    'Segundo o Tecnoblog, o aplicativo foi retirado da loja da Nintendo em algumas regiões, principalmente na Europa. Os termos de uso da empresa proíbem modificar as proteções do console.'
+  ] },
+
+{ id: 'google-cloud-oferece-modelos-openai', cat: 'tecnologia', own: false, t: '2026-10-22T12', d: '22 out 2026', img: 'tecnologia', src: 'TI Inside', url: U.tiGoogle26,
+  title: 'Google Cloud passa a oferecer modelos da OpenAI no seu catálogo de IA',
+  sum: 'Os modelos entram no Model Garden, que já reúne mais de 200 opções. Por enquanto, o acesso é uma prévia para clientes empresariais selecionados.',
+  body: [
+    'Os clientes podem escolher e trocar de modelo conforme desempenho, custo e capacidade, e a compra é feita pelo marketplace do Google Cloud. Segundo as empresas, os dados dos clientes não são usados para treinar os modelos.',
+    'A integração com o Gemini Enterprise está prevista para uma fase posterior. A reportagem não informa preços nem quais modelos estão disponíveis.'
+  ] },
+
 { id: 'tse-sala-riscos-digitais-plataformas', cat: 'tecnologia', own: true, t: '2026-10-24T08', d: '24 out 2026', img: 'tecnologia', read: 3,
   title: 'TSE abre sala com Meta, Google, X, TikTok e Kwai para agir contra desinformação no segundo turno',
   sum: 'A Sala de Atenção a Riscos Digitais funciona até 4 de novembro, com representantes das plataformas no próprio tribunal. Conteúdo novo feito com IA com a imagem de candidatos está proibido até 24 horas depois da votação.',
@@ -1524,40 +1575,11 @@ const NEWS = [
   box: { type: 'facts', title: 'Meta no 3º trimestre', rows: [['Receita', 'US$ 64,60 bilhões (+26%)'], ['Lucro líquido', 'US$ 9,86 bilhões'], ['Investimento', 'US$ 34,91 bilhões'], ['Fluxo de caixa livre', '-US$ 2,12 bilhões'], ['Ação na quinta (22)', '-6,98%']] },
   sources: [['Meta (comunicado)', U.prMeta23], ['SBT News', U.sbtIbov23], ['24/7 Wall St.', U.wsMeta23]] },
 
-{ id: 'php-falhas-criticas-sites-fora-do-ar', cat: 'tecnologia', own: true, t: '2026-10-22T10', d: '22 out 2026', img: 'tecnologia', read: 3,
-  title: 'Falhas graves no PHP tiram sites do ar no mundo e afetam serviços públicos no Brasil',
-  sum: 'As duas brechas, com nota 9,2 de 10, permitem executar código a distância. Houve tentativas de exploração antes do alerta. No Brasil, serviços da Anatel e o sistema SEI ficaram fora do ar.',
-  body: [
-    'Duas falhas de segurança na linguagem PHP, usada por grande parte dos sites da internet, levaram empresas e governos a tirar serviços do ar enquanto instalavam as correções, divulgadas na quarta-feira (21). As vulnerabilidades, registradas como CVE-2026-109618 e CVE-2026-109619, receberam nota 9,2 de 10 e permitem que um invasor execute comandos no servidor, segundo o Tecnoblog.',
-    '## Ataques antes do alerta',
-    'A Amazon Web Services detectou a primeira tentativa de exploração em 17 de outubro, quatro dias antes da divulgação pública, segundo o Tecnoblog. A PHP Foundation diz não ter registro de ataque bem-sucedido.',
-    '## Quem foi afetado',
-    'No Brasil, serviços da Anatel ficaram indisponíveis, e o Sistema Eletrônico de Informações (SEI), usado por órgãos públicos, chegou a sair do ar durante a atualização, segundo o Tecnoblog. Sites de governo na França, na Dinamarca, na Finlândia e na Holanda também saíram do ar temporariamente, segundo a CNN, citada pela ABC7.',
-    '## Achadas com ajuda de IA',
-    'As falhas foram encontradas no fim de agosto por equipes que usaram ferramentas de inteligência artificial, entre elas a OpenAI e a empresa de segurança Wiz, segundo a CNN. A recomendação é atualizar para as versões 8.2.35, 8.3.36, 8.4.27 ou 8.5.12.'
-  ],
-  box: { type: 'facts', title: 'As falhas do PHP', rows: [['Gravidade', '9,2 de 10'], ['Divulgação', '21 de outubro'], ['Primeira tentativa de ataque', '17 de outubro'], ['Afetados no Brasil', 'Anatel e SEI'], ['Solução', 'Atualizar o PHP']] },
-  sources: [['Tecnoblog', U.tbPhp23], ['ABC7/CNN', U.abc7Php23]] },
-
 { id: 'anthropic-claude-duet-agente', cat: 'tecnologia', own: false, t: '2026-10-22T12', d: '22 out 2026', img: 'celular', src: 'SiliconANGLE', url: U.saDuet23,
   title: 'Anthropic lança em teste o Claude Duet, assistente que executa tarefas por conta própria',
   sum: 'O aplicativo, para web, iOS e Android, é voltado a assinantes dos planos pagos e pede confirmação antes de ações importantes.',
   body: [
     'O assistente envia um resumo pela manhã e pode agendar reuniões, montar painéis e criar protótipos de aplicativos. A empresa diz que ele pode interpretar mal a urgência das tarefas.'
-  ] },
-
-{ id: 'meta-multa-25-bilhoes-novo-mexico', cat: 'tecnologia', own: false, t: '2026-10-21T20', d: '21 out 2026', img: 'plataforma', src: 'Al Jazeera', url: U.ajMeta22,
-  title: 'Justiça do Novo México manda a Meta pagar US$ 25 bilhões por violações de privacidade no Facebook',
-  sum: 'É a maior multa já aplicada à dona do Facebook. Um júri tinha apontado mais de 43 milhões de violações da lei estadual de defesa do consumidor.',
-  body: [
-    'A decisão é do juiz Francis Mathew. Segundo o procurador-geral do estado, Raúl Torrez, o dinheiro irá para um fundo de educação. A Meta disse que vai recorrer.'
-  ] },
-
-{ id: 'propostas-lula-flavio-ia-data-centers', cat: 'tecnologia', own: false, t: '2026-10-21T12', d: '21 out 2026', img: 'tecnologia', src: 'Olhar Digital', url: U.odPropostas22,
-  title: 'O que Lula e Flávio propõem para inteligência artificial, data centers e soberania digital',
-  sum: 'Lula propõe um centro nacional de transparência de algoritmos e pagamento por conteúdo brasileiro usado por IA. Flávio quer transformar o Brasil num polo global de data centers e rejeita moderação de conteúdo pelo Estado.',
-  body: [
-    'O plano de Lula prevê ainda o uso de IA na triagem de pacientes do SUS e data centers com energia limpa. O de Flávio inclui um assistente virtual chamado ClarIA e um sistema nacional de reconhecimento facial ligado a mais de 1 milhão de câmeras.'
   ] },
 
 ];
