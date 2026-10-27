@@ -62,7 +62,7 @@ if not os.path.exists(padrao):
     d = ImageDraw.Draw(im)
     d.rectangle([0, H - 18, W, H], fill=(240, 180, 41))
     f1, f2 = fonte(150), fonte(36, False)
-    t1, t2 = 'Novera', 'INFORMAÇÃO SEM FRONTEIRAS'
+    t1, t2 = 'Novera', 'O MUNDO DOS APPS'
     w1 = d.textlength(t1, font=f1)
     w2 = d.textlength(t2, font=f2)
     d.text(((W - w1) / 2, 190), t1, font=f1, fill=(255, 255, 255))

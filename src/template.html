@@ -270,7 +270,7 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
 <div class="topbar">
   <div class="wrap">
     <span id="today"><!--DATA_EXTENSO--></span>
-    <div class="ticker" aria-label="Mercado">
+    <div class="ticker" aria-label="Destaques do dia">
 <!--TICKER-->
     </div>
   </div>
@@ -286,7 +286,7 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
     </div>
     <a class="logo" href="#inicio" aria-label="Novera, página inicial">
       <span class="logo-name">Novera</span>
-      <span class="logo-tag">Informação sem fronteiras</span>
+      <span class="logo-tag">O mundo dos apps</span>
     </a>
     <div class="mh-right">
       <a class="icon-btn" href="#busca" id="search-btn" aria-label="Buscar notícias">
@@ -326,7 +326,7 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
     <div class="foot-top">
       <div class="foot-brand">
         <span class="logo-name">Novera</span>
-        <p>Informação sem fronteiras. Jornalismo próprio e uma seleção das principais notícias do Brasil e do mundo, com link para a fonte original.</p>
+        <p>O mundo dos apps. Lançamentos, novidades e ideias de aplicativos do mundo para o Brasil, com jornalismo próprio e link para a fonte original.</p>
       </div>
       <div>
         <h2>Editorias</h2>
@@ -359,12 +359,12 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
 const IMG = /*IMG*/{};
 
 const CATS = [
-  { id: 'nacional', name: 'Nacional', desc: 'Política, eleições, governo e o que acontece nos estados.' },
-  { id: 'internacional', name: 'Internacional', desc: 'Conflitos, diplomacia e as principais notícias do mundo.' },
-  { id: 'esportes', name: 'Esportes', desc: 'Futebol, Seleção, Fórmula 1 e outras modalidades.' },
-  { id: 'cultura', name: 'Cultura', desc: 'Cinema, artes visuais, música e agenda cultural.' },
-  { id: 'economia', name: 'Economia', desc: 'Mercado, juros, inflação, empresas e o seu bolso.' },
-  { id: 'tecnologia', name: 'Tecnologia', desc: 'Inteligência artificial, ciência, telecomunicações e meios de pagamento.' }
+  { id: 'lancamentos', name: 'Lançamentos', desc: 'Aplicativos e jogos que acabaram de chegar ao celular, ao computador e à TV.' },
+  { id: 'atualizacoes', name: 'Atualizações', desc: 'Recursos novos, mudanças e preços nos apps que você já usa.' },
+  { id: 'ia', name: 'IA', desc: 'Assistentes, agentes e apps de inteligência artificial.' },
+  { id: 'startups', name: 'Startups', desc: 'Investimentos, compras, resultados e as regras das lojas de aplicativos.' },
+  { id: 'ideias', name: 'Ideias para o Brasil', desc: 'Apps que dão certo lá fora e modelos que podem inspirar quem empreende no Brasil.' },
+  { id: 'brasil', name: 'No Brasil', desc: 'Bancos digitais, Pix, delivery, mobilidade, golpes e o mercado brasileiro de apps.' }
 ];
 const CAT = Object.fromEntries(CATS.map(c => [c.id, c]));
 const INST = [
@@ -455,7 +455,7 @@ function viewHome() {
   const side = _side.slice(0, 2);
   const also = _also.slice(0, 3);
   const latest = SORTED.slice(0, state.latestShown);
-  let h = '<h1 class="sr">Novera: notícias do Brasil e do mundo</h1>';
+  let h = '<h1 class="sr">Novera: o mundo dos apps</h1>';
   h += '<div class="stack">';
   h += '<section aria-label="Destaques"><div class="hero">' + cardLead(lead) +
     '<div class="hero-side">' + side.map(n => cardStack(n, true, false)).join('') + '</div></div>' +
@@ -579,12 +579,12 @@ function resultsHTML() {
   const r = searchResults();
   const hl = highlighter(r.terms);
   const label = state.query.trim() ? (r.list.length + (r.list.length === 1 ? ' resultado' : ' resultados') + ' para “' + esc(state.query.trim()) + '”') : 'Todas as ' + r.list.length + ' notícias, das mais recentes para as mais antigas';
-  if (!r.list.length) return '<p class="meta" role="status">' + label + '</p><div class="empty">Nenhuma notícia encontrada. Tente outra palavra, como <b>Senado</b>, <b>Pix</b> ou <b>Libertadores</b>, ou escolha “Todas” nas editorias.</div>';
+  if (!r.list.length) return '<p class="meta" role="status">' + label + '</p><div class="empty">Nenhuma notícia encontrada. Tente outra palavra, como <b>WhatsApp</b>, <b>Pix</b> ou <b>IA</b>, ou escolha “Todas” nas editorias.</div>';
   return '<p class="meta" role="status">' + label + '</p><div class="rowlist">' + r.list.map(n => cardRow(n, true, hl)).join('') + '</div>';
 }
 function viewSearch() {
   let h = '<div class="page-head"><div class="crumbs"><a href="#inicio">Início</a> › Busca</div><h1>Buscar notícias</h1><p>Procure por palavra nos títulos, resumos e textos das ' + NEWS.length + ' notícias.</p></div>';
-  h += '<form class="search-form" id="search-form" role="search"><label class="sr" for="q">Termo de busca</label><input id="q" type="search" placeholder="Ex.: Senado, Pix, Libertadores" value="' + esc(state.query) + '" autocomplete="off"><button class="btn" type="submit">Buscar</button></form>';
+  h += '<form class="search-form" id="search-form" role="search"><label class="sr" for="q">Termo de busca</label><input id="q" type="search" placeholder="Ex.: WhatsApp, Pix, IA" value="' + esc(state.query) + '" autocomplete="off"><button class="btn" type="submit">Buscar</button></form>';
   h += '<div class="chips" role="group" aria-label="Filtrar por editoria" style="margin-top:14px">' +
     [{ id: 'todas', name: 'Todas' }].concat(CATS).map(c => '<button class="chip" type="button" data-cat="' + c.id + '" aria-pressed="' + (state.searchCat === c.id) + '">' + esc(c.name) + '</button>').join('') + '</div>';
   h += '<div id="results" style="margin-top:22px">' + resultsHTML() + '</div>';
@@ -592,7 +592,7 @@ function viewSearch() {
 }
 
 const INST_PAGES = {
-  'sobre': ['Sobre a Novera', '<p>A Novera é um jornal digital de notícias do Brasil e do mundo. Nosso lema é <b>Informação sem fronteiras</b>: reunir, num só lugar, o que importa em política, economia, esportes, cultura, tecnologia e assuntos internacionais.</p><h2>Como trabalhamos</h2><p>Publicamos dois tipos de conteúdo, sempre identificados:</p><ul><li><b>Da redação</b>: matérias apuradas e escritas pela equipe da Novera.</li><li><b>Via parceiros</b>: resumos feitos pela nossa redação a partir de reportagens de outros veículos, com crédito e link para o texto original.</li></ul><p>As ilustrações do site são produzidas pela própria Novera.</p>'],
+  'sobre': ['Sobre a Novera', '<p>A Novera é um jornal digital sobre aplicativos. Nosso lema é <b>O mundo dos apps</b>: reunir, num só lugar, os lançamentos, as novidades dos apps que você já usa, a inteligência artificial, o dinheiro das startups e as boas ideias que dão certo lá fora e podem ser adaptadas no Brasil.</p><h2>Como trabalhamos</h2><p>Publicamos dois tipos de conteúdo, sempre identificados:</p><ul><li><b>Da redação</b>: matérias apuradas e escritas pela equipe da Novera.</li><li><b>Via parceiros</b>: resumos feitos pela nossa redação a partir de reportagens de outros veículos, com crédito e link para o texto original.</li></ul><p>As ilustrações do site são produzidas pela própria Novera.</p>'],
   'expediente': ['Expediente', '<p>Preencha com os dados reais da equipe antes de publicar o site.</p><ul><li>Diretor de redação: <span class="placeholder">[NOME]</span></li><li>Editor-chefe: <span class="placeholder">[NOME]</span></li><li>Editores de seção: <span class="placeholder">[NOMES]</span></li><li>Arte e ilustração: <span class="placeholder">[NOME]</span></li><li>Razão social e CNPJ: <span class="placeholder">[DADOS DA EMPRESA]</span></li></ul>'],
   'politica-editorial': ['Política editorial', '<p>A Novera se compromete com precisão, independência e transparência.</p><h2>Princípios</h2><ul><li>Todo fato publicado tem fonte identificada.</li><li>Conteúdo de terceiros é sempre resumido com palavras próprias, creditado e acompanhado de link para a reportagem original. Não republicamos textos de outros veículos.</li><li>Erros são corrigidos de forma visível, com indicação do que mudou.</li><li>Opinião, quando houver, é separada do noticiário e identificada.</li></ul>'],
   'privacidade': ['Política de privacidade', '<p>Esta página descreve como a Novera trata dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (Lei 13.709/2018).</p><h2>Dados coletados</h2><p>Coletamos apenas o e-mail informado por quem se inscreve na newsletter e dados de navegação agregados para medir audiência.</p><h2>Seus direitos</h2><p>Você pode pedir acesso, correção ou exclusão dos seus dados a qualquer momento pelo e-mail <span class="placeholder">[E-MAIL DO ENCARREGADO DE DADOS]</span>.</p><p>Revise este texto com um profissional antes de publicar o site.</p>'],

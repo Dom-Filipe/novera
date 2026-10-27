@@ -1,12 +1,14 @@
 # Atualização diária da Novera
 
+A Novera é um jornal sobre aplicativos: **O mundo dos apps**. Fala dos apps novos que estão chegando ao mercado, das novidades nos apps que já existem, da inteligência artificial, do dinheiro das startups e das boas ideias de outros países que podem ser adaptadas no Brasil.
+
 Este é o roteiro da atualização automática que roda todo dia de manhã. Também serve para quem for atualizar o site à mão.
 
 ## Arquivos
 
 | Arquivo | Para que serve |
 |---|---|
-| `news.js` | **Único arquivo de conteúdo.** Topo do site (`META`), destaques (`FEATURED`), escolhas da redação (`PICKS`), links das fontes (`U`) e as 60 notícias (`NEWS`). |
+| `news.js` | **Único arquivo de conteúdo.** Topo do site (`META`, com a faixa de destaques), destaques da home (`FEATURED`), escolhas da redação (`PICKS`), links das fontes (`U`) e as 60 notícias (`NEWS`). |
 | `src/template.html` | Layout, estilos e lógica do site. Não mexer na atualização diária. |
 | `build.js` | Valida `news.js` e gera o `index.html`. Rodar com `node build.js`. |
 | `fotos/<id>.webp` | Foto de cada notícia. Cada notícia acha a sua foto pelo id. |
@@ -17,12 +19,20 @@ Este é o roteiro da atualização automática que roda todo dia de manhã. Tamb
 
 ## Passo a passo
 
-1. **Pesquisar** as notícias mais importantes das últimas 24 a 48 horas em cada editoria: Nacional, Internacional, Esportes, Cultura, Economia e Tecnologia. Use fontes confiáveis, como Agência Brasil, Agência Senado, CNN Brasil, Folha, Estadão, O Globo, Valor, BBC Brasil, DW, Reuters, AFP, ge e Lance!. Abra a reportagem e confira os números antes de usar.
-2. **Atualizar o topo (`META`)** com a data de hoje por extenso, a edição e o último fechamento do Ibovespa (pontos e variação) e do dólar (valor e variação).
+1. **Pesquisar** as notícias de aplicativos mais importantes das últimas 24 a 48 horas (até 7 dias em Lançamentos e até 3 semanas em Ideias para o Brasil, quando faltar assunto) em cada editoria:
+   - **Lançamentos** (`lancamentos`): apps e jogos que acabaram de chegar ao celular, ao computador e à TV.
+   - **Atualizações** (`atualizacoes`): recursos novos, mudanças de regras e de preço nos apps que já existem (WhatsApp, Instagram, TikTok, YouTube, Spotify, Uber, Google Maps etc.).
+   - **IA** (`ia`): assistentes, agentes e apps de inteligência artificial (ChatGPT, Gemini, Claude, Meta AI, Copilot, Grok etc.).
+   - **Startups** (`startups`): rodadas de investimento, compras, resultados de empresas de apps, rankings de downloads e regras das lojas de aplicativos.
+   - **Ideias para o Brasil** (`ideias`): apps e modelos de negócio que dão certo em outros países e ainda são pouco explorados no Brasil.
+   - **No Brasil** (`brasil`): o mercado brasileiro de apps, como bancos digitais, Pix, delivery, mobilidade, apps do governo, golpes e regras de órgãos como Banco Central, Anatel e ANPD.
+
+   Use fontes confiáveis, como TechCrunch, The Verge, Engadget, Reuters, Bloomberg, CNBC, 9to5Mac, 9to5Google, WABetaInfo, Rest of World, Tecnoblog, Olhar Digital, Canaltech, Mobile Time, Startups, NeoFeed, Bloomberg Línea, Exame, InfoMoney, Folha, Estadão, g1 e Agência Brasil. Abra a reportagem e confira a data e os números antes de usar. Os buscadores trazem muito material antigo: confira sempre o ano na própria página.
+2. **Atualizar o topo (`META`)** com a data de hoje por extenso, a edição e a faixa `destaques`: de 1 a 3 itens no formato `['Rótulo', 'Texto curto']`, como `['App do dia', '...']` e `['Em alta', '...']`, sempre com fatos de notícias que estão no site.
 3. **Renovar as notícias** de cada editoria:
    - Cada editoria fica com **exatamente 10 notícias**.
    - Tire as mais antigas ou as que perderam a importância, e coloque as novas no lugar.
-   - Mantenha as que continuam relevantes. O segundo turno, por exemplo, segue relevante até 25 de outubro.
+   - Mantenha as que continuam relevantes, como um lançamento que ainda não aconteceu ou uma regra que ainda vai entrar em vigor.
    - Cada editoria tem **2 ou 3 matérias da redação** (`own: true`), com texto mais completo e fontes. As demais são resumos de parceiros (`own: false`), com `src` e `url`.
 4. **Atualizar `FEATURED` e `PICKS`** com as notícias mais importantes do dia. Use ids de matérias da redação.
 5. **Atualizar `PROMPTS-IMAGENS.md`:** acrescente um prompt para cada notícia nova e retire os prompts das notícias que saíram.
@@ -34,7 +44,7 @@ Este é o roteiro da atualização automática que roda todo dia de manhã. Tamb
 ## Formato de uma notícia
 
 ```js
-{ id: 'slug-curto-da-noticia', cat: 'economia', own: true, t: '2026-10-07T08', d: '7 out 2026', img: 'mercado', read: 3,
+{ id: 'slug-curto-da-noticia', cat: 'atualizacoes', own: true, t: '2026-10-07T08', d: '7 out 2026', img: 'celular', read: 3,
   title: 'Título objetivo, com o fato principal',
   sum: 'Linha fina de uma ou duas frases com os números mais importantes.',
   body: [
@@ -46,7 +56,7 @@ Este é o roteiro da atualização automática que roda todo dia de manhã. Tamb
 ```
 
 - **`id`:** letras minúsculas, números e hífens, único. **Uma notícia que continua no site mantém o mesmo id**, porque é por ele que a foto é encontrada.
-- **`cat`:** `nacional`, `internacional`, `esportes`, `cultura`, `economia` ou `tecnologia`.
+- **`cat`:** `lancamentos`, `atualizacoes`, `ia`, `startups`, `ideias` ou `brasil`.
 - **`t`:** data e hora no formato `AAAA-MM-DDTHH`. É o que ordena as "Últimas notícias".
 - **`d`:** a data como aparece para o leitor, por exemplo `7 out 2026`.
 - **`img`:** a ilustração de reserva, usada enquanto não houver foto. As opções são `eleicao`, `congresso`, `mundo`, `protesto`, `esportes`, `pista`, `cultura`, `palco`, `arte`, `mercado`, `plataforma`, `tecnologia`, `ciencia` e `celular`.
@@ -56,12 +66,14 @@ Este é o roteiro da atualização automática que roda todo dia de manhã. Tamb
 
 ## Regras editoriais
 
-- **Só fatos confirmados na fonte.** Números, nomes, datas e placares têm que estar na reportagem citada. Na dúvida, deixe de fora.
+- **Só fatos confirmados na fonte.** Números, nomes, datas, preços e versões de apps têm que estar na reportagem citada. Na dúvida, deixe de fora.
 - **Texto com palavras próprias.** Nunca copie frases das reportagens. Resuma e reescreva.
 - **Toda notícia tem crédito e link** para a fonte original.
-- **Política com equilíbrio:** tom neutro, sem adjetivos de opinião, e espaço proporcional para os dois lados na disputa presidencial.
+- **Disponibilidade no Brasil:** diga se o app ou o recurso já funciona no Brasil só quando a fonte confirmar. Se a fonte não disser, escreva que ainda não há confirmação para o Brasil ou não toque no assunto. Recurso em teste (beta) é sempre apresentado como teste.
+- **Sem publicidade disfarçada:** tom neutro, sem adjetivos de opinião sobre os apps e sem recomendar compra ou assinatura. Preços sempre na moeda da fonte.
+- **Ideias para o Brasil:** os fatos sobre o app de fora seguem a regra da fonte. O trecho sobre o Brasil fica num intertítulo "Por que olhar para o Brasil", começa com "Análise da redação:" e não traz números que não estejam numa fonte.
 - **Linguagem simples e direta**, em português do Brasil, com frases curtas. Sem sensacionalismo.
-- **Imagens:** nunca gere imagens de pessoas reais. Nos prompts, descreva cenas, lugares e objetos, sem escudos, logotipos ou marcas.
+- **Imagens:** nunca gere imagens de pessoas reais. Nos prompts, descreva cenas, lugares, objetos e celulares com telas genéricas, sem logotipos, ícones reais de apps ou marcas.
 
 ## Redes sociais
 
@@ -82,7 +94,7 @@ Todo dia, junto com o site, crie `redes/AAAA-MM-DD.md` seguindo o modelo do arqu
   - **3 ou 4 stories** com o texto da tela e o link do adesivo.
 - **X:** um **fio** de 3 a 5 posts sobre a principal notícia do dia e de 6 a 8 **posts avulsos**, cada um com o fato principal e o link. Cada post tem no máximo **280 caracteres**, contando o link como 23.
 
-**Tom:** informativo, sem caça-clique, sem opinião e sem emojis em excesso. Em política, apresente os números dos dois lados com o mesmo destaque.
+**Tom:** informativo, sem caça-clique, sem opinião e sem emojis em excesso. Não prometa que um app ou recurso chegou ao Brasil se a matéria não confirmar.
 
 ## Relatório do dia
 

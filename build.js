@@ -13,7 +13,7 @@ const path = require('path');
 const vm = require('vm');
 
 const ROOT = __dirname;
-const CATS = ['nacional', 'internacional', 'esportes', 'cultura', 'economia', 'tecnologia'];
+const CATS = ['lancamentos', 'atualizacoes', 'ia', 'startups', 'ideias', 'brasil'];
 const POR_EDITORIA = 10;
 
 const newsSrc = fs.readFileSync(path.join(ROOT, 'news.js'), 'utf8');
@@ -63,7 +63,8 @@ CATS.forEach(c => {
 [FEATURED.lead, ...(FEATURED.side || []), ...(FEATURED.also || []), ...(PICKS || [])].forEach(id => {
   if (!ids.has(id)) avisos.push(`destaque/escolha "${id}" não existe e será substituído automaticamente`);
 });
-['dataExtenso', 'edicao', 'fechamento'].forEach(k => { if (!META[k]) erros.push(`META.${k} vazio`); });
+['dataExtenso', 'edicao'].forEach(k => { if (!META[k]) erros.push(`META.${k} vazio`); });
+if (!Array.isArray(META.destaques) || !META.destaques.length || META.destaques.length > 3 || META.destaques.some(d => !Array.isArray(d) || !d[0] || !d[1])) erros.push('META.destaques precisa ter de 1 a 3 itens no formato [rótulo, texto]');
 if (!/^https:\/\/[^/]+[^/]$/.test(META.siteUrl || '')) erros.push('META.siteUrl deve ser o endereço do site, com https:// e sem barra no final');
 if (/ENDERECO-DO-SITE/.test(META.siteUrl || '')) avisos.push('META.siteUrl ainda não foi configurado: os links das redes sociais não vão funcionar');
 
@@ -93,12 +94,7 @@ assets.forEach(a => {
 });
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-const seta = (sobe) => sobe ? '<span class="up">▲ ' : '<span class="down">▼ ';
-const ticker = [
-  `      <span><b>Ibovespa</b> ${esc(META.ibovespa.valor)} ${seta(META.ibovespa.sobe)}${esc(META.ibovespa.variacao)}</span></span>`,
-  `      <span><b>Dólar</b> ${esc(META.dolar.valor)} ${seta(META.dolar.sobe)}${esc(META.dolar.variacao)}</span></span>`,
-  `      <span>fechamento ${esc(META.fechamento)}</span>`
-].join('\n');
+const ticker = (META.destaques || []).map(d => `      <span><b>${esc(d[0])}</b> ${esc(d[1])}</span>`).join('\n');
 
 let page = tpl
   .replace('<!--DATA_EXTENSO-->', esc(META.dataExtenso))
@@ -110,9 +106,9 @@ let page = tpl
 const fim = page.indexOf('</style>') + '</style>'.length;
 const html = '<!doctype html>\n<html lang="pt-BR">\n<head>\n<meta charset="utf-8">\n' +
   '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n' +
-  '<meta name="description" content="Novera: informação sem fronteiras. Notícias do Brasil e do mundo.">\n' +
+  '<meta name="description" content="Novera: o mundo dos apps. Lançamentos, novidades e ideias de aplicativos do mundo para o Brasil.">\n' +
   `<meta property="og:type" content="website"><meta property="og:site_name" content="Novera">\n` +
-  `<meta property="og:title" content="Novera: informação sem fronteiras"><meta property="og:description" content="Notícias do Brasil e do mundo.">\n` +
+  `<meta property="og:title" content="Novera: o mundo dos apps"><meta property="og:description" content="Lançamentos, novidades e ideias de aplicativos do mundo para o Brasil.">\n` +
   `<meta property="og:url" content="${META.siteUrl}/"><meta property="og:image" content="${META.siteUrl}/og/padrao.jpg">\n` +
   `<meta name="twitter:card" content="summary_large_image">\n` +
   '<style>[hidden]{display:none!important} body{margin:0}</style>\n' +
@@ -174,7 +170,7 @@ fs.readdirSync(nDir).filter(f => f.endsWith('.html')).forEach(f => {
   const id = f.slice(0, -5);
   if (ids.has(id)) return;
   fs.writeFileSync(path.join(nDir, f),
-    pagina('Novera: informação sem fronteiras', 'Notícias do Brasil e do mundo.', `${META.siteUrl}/`, 'og/padrao.jpg', '/#inicio'));
+    pagina('Novera: o mundo dos apps', 'Lançamentos, novidades e ideias de aplicativos do mundo para o Brasil.', `${META.siteUrl}/`, 'og/padrao.jpg', '/#inicio'));
   arquivadas++;
 });
 const comFoto = NEWS.filter(n => n.photo || fs.existsSync(path.join(ROOT, 'fotos', n.id + '.webp'))).length;

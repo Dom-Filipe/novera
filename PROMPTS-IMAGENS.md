@@ -1,6 +1,6 @@
 # Prompts de imagens da Novera
 
-Um prompt para cada notícia que ainda não tem imagem (59 no total).
+Um prompt para cada notícia que ainda não tem imagem (60 no total).
 
 ## Como usar
 
@@ -17,202 +17,205 @@ O site encontra a imagem pelo nome do arquivo e a coloca na notícia sozinho, co
 
 ## Regras para não comprometer a credibilidade
 
-- Não gere rostos de pessoas reais, como políticos, atletas e artistas. Use cenas, lugares e objetos.
-- Não reproduza escudos de times, logotipos de empresas ou marcas de emissoras.
+- Não gere rostos de pessoas reais, como empresários, políticos e artistas. Use cenas, lugares, objetos e celulares com telas genéricas.
+- Não reproduza logotipos, ícones ou telas reais de aplicativos, nem marcas de empresas. As telas devem ser genéricas.
 - Em cenas de guerra ou ataque, mostre o lugar e não vítimas.
 
 ---
 
-## Nacional
+## Lançamentos
 
-**`flavio-intimado-entregar-passaportes.webp`**
-Passaportes genéricos de capa escura sobre balcão de repartição pública, com carimbo e envelope pardo ao lado, luz fria de escritório, sem brasões nem texto legível.
+**`innova-tv-streaming-gratis.webp`**
+Sala de estar à noite com TV mostrando uma grade genérica de canais coloridos, controle remoto no sofá, sem logotipos nem texto legível.
 
-**`tse-nega-expulsao-fiscais-pl-sala-cofre.webp`**
-Corredor de prédio público com porta metálica fechada e leitor de crachá, luz neutra, sem placas legíveis nem brasões.
+**`no-mans-sky-iphone.webp`**
+Celular na horizontal exibindo uma paisagem genérica de planeta alienígena colorido, sobre mesa escura, sem logotipos nem interface legível.
 
-**`sp-80-por-cento-urnas-fechadas-prorrogacao.webp`**
-Seção eleitoral vazia ao entardecer, com cadeiras empilhadas e urna eletrônica genérica guardada em caixa, luz de fim de tarde pela janela, sem texto legível.
+**`claude-duet-anthropic.webp`**
+Notebook e celular sobre mesa de trabalho com listas de tarefas genéricas na tela, luz da manhã, sem logotipos nem texto legível.
 
-**`votacao-lula-maior-da-historia.webp`**
-Pilhas de comprovantes em branco e urna eletrônica genérica sobre mesa, com gráfico de barras impresso desfocado ao fundo, sem texto legível nem brasões.
+**`monster-hunter-outlanders.webp`**
+Celular na horizontal com cena genérica de fantasia com criatura gigante em floresta, mãos segurando o aparelho, sem logotipos nem personagens de marcas.
 
-**`pf-investiga-onibus-dia-eleicao.webp`**
-Ponto de ônibus urbano lotado de pessoas vistas de costas, rua vazia sem ônibus, manhã nublada, sem rostos reconhecíveis nem marcas.
+**`wabi-2-kuyda.webp`**
+Três celulares lado a lado mostrando a mesma conversa em balões coloridos genéricos, fundo claro, sem texto legível nem logotipos.
 
-**`lula-reeleito-51-79-quarto-mandato.webp`**
-Urna eletrônica genérica sobre mesa de seção eleitoral à noite, com cabine de votação vazia ao fundo e luz quente, sem texto legível nem brasões.
+**`macpaw-eney.webp`**
+Computador de mesa com janela de assistente genérica e ondas de áudio na tela, escritório claro, sem logotipos nem marcas.
 
-**`flavio-nao-reconhece-pede-anulacao.webp`**
-Pilha de documentos jurídicos e uma caneta sobre mesa de madeira escura, com luminária acesa e janela noturna de Brasília desfocada ao fundo, sem texto legível.
+**`google-play-apps-privados-ia.webp`**
+Mãos segurando um celular com ícones de aplicativos coloridos e genéricos montados como blocos de construção, fundo neutro, sem marcas.
 
-**`zanin-prorroga-votacao-ate-19h.webp`**
-Relógio de parede marcando cinco horas acima da porta de uma sala de votação de escola, com cabine vazia ao fundo, sem texto legível.
+**`strawberry-navegador-agentes.webp`**
+Tela de computador com várias janelas de navegador genéricas e cursores trabalhando sozinhos, escritório moderno, sem logotipos.
 
-**`tse-balanco-segundo-turno-urnas-processos.webp`**
-Caixas de transporte de urnas eletrônicas empilhadas em um galpão iluminado, sem logotipos, brasões nem texto legível.
+**`one-piece-grand-gourmet.webp`**
+Celular sobre mesa de cozinha mostrando um jogo genérico de restaurante em pixel art, ingredientes ao redor, sem personagens conhecidos nem logotipos.
 
-**`aliados-flavio-avaliam-derrota-campanha.webp`**
-Sala de reunião vazia com cadeiras afastadas da mesa, copos de água e papéis espalhados depois de um encontro, luz noturna, sem texto legível.
-
-
-## Internacional
-
-**`trump-eleicao-brasil-pareceu-fraudada-alckmin.webp`**
-Microfones de imprensa genéricos diante de um púlpito vazio, com bandeiras desfocadas em tons neutros ao fundo, sem brasões nem texto.
-
-**`israel-vota-netanyahu-eisenkot.webp`**
-Cédulas de papel em branco e envelopes azuis sobre mesa de seção eleitoral, com urna de papelão ao fundo, luz natural, sem texto legível.
-
-**`ira-recebe-delegacoes-saudita-paquistao-turquia.webp`**
-Mesa de reunião diplomática vazia com cadeiras, copos de água e pastas fechadas, em salão com cortinas pesadas, sem bandeiras nem brasões.
-
-**`jordania-ataca-siria-apos-ataque-igreja.webp`**
-Igreja de pedra em cidade do Oriente Médio ao entardecer, com velas acesas na porta e rua vazia, sem pessoas nem símbolos legíveis.
-
-**`ataque-russo-kiev-dormitorio-cessar-fogo-oleshky.webp`**
-Prédio residencial de vários andares com janelas quebradas e fachada danificada, vidro no chão da calçada, céu cinzento, sem pessoas.
-
-**`servia-vucic-admite-derrota-lista-estudantes.webp`**
-Praça de cidade europeia à noite com multidão comemorando vista de longe, luzes e bandeiras sem símbolos legíveis, sem rostos reconhecíveis.
-
-**`maria-corina-machado-volta-venezuela.webp`**
-Fachada de uma igreja colonial branca em cidade pequena da América do Sul, com pessoas desfocadas de costas na escadaria, sem rostos reconhecíveis.
-
-**`bulgaria-yotova-gyurov-segundo-turno.webp`**
-Urna de votação transparente com cédulas dobradas sobre mesa de madeira em sala de escola europeia, sem texto legível.
-
-**`le-pen-lanca-campanha-presidencial-orleans.webp`**
-Palco de comício vazio em arena, com púlpito e luzes azuis e brancas, plateia de cadeiras vazias, sem logotipos nem texto legível.
-
-**`franca-protestos-410-mil-mil-detidos.webp`**
-Avenida larga de uma cidade europeia com cartazes em branco erguidos por uma multidão vista de longe e de costas, fumaça leve ao fundo, sem rostos reconhecíveis nem texto legível.
+**`flipcorder-iphone-duo.webp`**
+Celular dobrável genérico aberto filmando uma rua ao entardecer, com moldura de vídeo antigo na tela, sem marcas.
 
 
-## Esportes
+## Atualizações
 
-**`flamengo-vira-atletico-mg-volta-lideranca.webp`**
-Estádio de futebol iluminado à noite visto da arquibancada, gramado verde e marca do pênalti em destaque, torcida desfocada, sem escudos nem marcas.
+**`whatsapp-agendar-mensagens-iphone.webp`**
+Celular sobre mesa com relógio analógico ao lado e balão de mensagem genérico na tela, luz suave, sem logotipos nem texto legível.
 
-**`harry-kane-alexia-putellas-bola-de-ouro.webp`**
-Troféu dourado genérico em forma de bola sobre pedestal, palco de teatro escuro com holofotes, sem logotipos nem texto.
+**`instagram-features-videos-90-minutos.webp`**
+Celular na horizontal num tripé gravando um estúdio de podcast com dois microfones e cadeiras vazias, sem logotipos nem pessoas reconhecíveis.
 
-**`gremio-vence-coritiba-braithwaite.webp`**
-Bola de futebol entrando no canto da rede do gol, vista de dentro do gol, estádio noturno desfocado, sem escudos nem marcas.
+**`spotify-plano-familia-qr-code.webp`**
+Dois celulares próximos, um mostrando um código QR genérico e outro com a câmera apontada para ele, sala de casa, sem logotipos.
 
-**`flavia-saraiva-bronze-trave-mundial.webp`**
-Trave de equilíbrio de ginástica em ginásio iluminado, com magnésio no chão e arquibancada desfocada, sem atletas nem logotipos.
+**`whatsapp-filtro-mencoes-respostas.webp`**
+Celular com lista de conversas genéricas e um símbolo de arroba destacado, fundo verde-claro, sem logotipos nem texto legível.
 
-**`f1-antonelli-vence-austin-titulo-mexico.webp`**
-Carro de corrida genérico de fórmula, sem marcas nem números, cruzando reta de autódromo ao entardecer, com bandeira quadriculada desfocada.
+**`youtube-music-selos-musica-ia.webp`**
+Fones de ouvido sobre teclado musical, com celular mostrando ondas sonoras e um pequeno selo genérico na tela, sem logotipos.
 
-**`internacional-vence-botafogo-3-a-0.webp`**
-Gramado de estádio iluminado à tarde com bola parada na marca do meio-campo, arquibancada vermelha desfocada, sem escudos nem logotipos.
+**`google-maps-gemini-carplay.webp`**
+Painel de carro com tela central mostrando um mapa genérico de navegação, estrada ao entardecer pelo para-brisa, sem logotipos.
 
-**`real-madrid-vence-barcelona-classico.webp`**
-Estádio de futebol lotado à noite visto do alto da arquibancada, gramado iluminado, sem escudos, logotipos nem rostos reconhecíveis.
+**`google-anuncios-gmail-fotos-personal-intelligence.webp`**
+Celular com ícones genéricos de e-mail, fotos e arquivos ligados por linhas a um cadeado, fundo neutro, sem marcas.
 
-**`palmeiras-vence-bragantino-lider-69-pontos.webp`**
-Gramado de estádio iluminado à noite visto da arquibancada, com a bola parada na marca do pênalti, sem escudos nem logotipos.
+**`x-assinatura-unificada-grok-cursor.webp`**
+Cartões de assinatura genéricos de cores diferentes empilhados em degraus sobre mesa, sem logotipos nem texto legível.
 
-**`vasco-vira-corinthians-zona-rebaixamento.webp`**
-Rede de gol balançando com a bola dentro, estádio lotado e desfocado ao fundo à noite, sem escudos nem logotipos.
+**`facebook-your-algorithm.webp`**
+Mão ajustando controles deslizantes genéricos na tela de um celular, com miniaturas de vídeos desfocadas, sem logotipos.
 
-**`atletico-mg-final-sul-americana-boca.webp`**
-Estádio de futebol à noite visto da arquibancada vazia, gramado molhado brilhando sob os refletores, sem escudos nem logotipos.
-
-
-## Cultura
-
-**`bts-tres-shows-morumbis-quarta.webp`**
-Estádio lotado à noite com palco central iluminado e passarelas, luzes coloridas e público visto de longe, sem rostos reconhecíveis nem logotipos.
-
-**`morre-walter-koenig-chekov-star-trek.webp`**
-Cadeira vazia de camarim diante de espelho com lâmpadas, luz suave, objetos de cena genéricos, sem pessoas nem textos.
-
-**`cara-de-barro-lidera-bilheteria-ingresso.webp`**
-Sala de cinema com poltronas vermelhas e tela clara, pipoca em primeiro plano, sem pessoas nem logotipos.
-
-**`iron-maiden-show-sao-paulo-50-mil.webp`**
-Palco de show de rock à noite com luzes vermelhas e fumaça, visto do meio da plateia, braços erguidos desfocados, sem rostos reconhecíveis, logotipos ou texto.
-
-**`publico-cinema-2026-supera-2025.webp`**
-Sala de cinema com poltronas vermelhas cheias vistas de trás, iluminada pela luz da tela, sem imagens de filmes nem texto legível.
-
-**`let-it-be-beatles-1-bilhao-spotify.webp`**
-Toca-discos com um disco de vinil girando ao lado de fones de ouvido e de um celular com a tela apagada, luz quente, sem capas de álbum nem marcas.
-
-**`robert-smith-cure-premio-fas.webp`**
-Troféu de premiação genérico sobre um palco com luzes coloridas desfocadas ao fundo, sem pessoas e sem texto legível.
-
-**`a-margem-do-rio-mostra-festival-do-rio.webp`**
-Mangue ao amanhecer com um pequeno barco de pesca parado na margem e névoa sobre a água, sem pessoas.
-
-**`morre-ryu-murakami-escritor-japones.webp`**
-Escrivaninha de madeira com pilha de livros antigos, máquina de escrever e uma xícara de chá, luz suave de luminária, sem pessoas e sem títulos legíveis.
+**`meta-account-substitui-central-de-contas.webp`**
+Vários ícones genéricos de perfis conectados a um único cartão de conta, em ilustração fotográfica de mesa com celular, sem logotipos.
 
 
-## Economia
+## IA
 
-**`ibovespa-cai-13-88-circuit-breaker-dolar-5-40.webp`**
-Monitores de mesa de operações com gráficos em queda acentuada em vermelho, escritório financeiro desfocado, sem logotipos nem números legíveis.
+**`siri-ai-portugues-ios-27-2.webp`**
+Celular sobre mesa de madeira com onda de voz colorida e genérica na tela, xícara de café ao lado, luz da manhã, sem logotipos nem texto legível.
 
-**`tesouro-direto-juros-recorde-leiloes-cancelados.webp`**
-Gráfico de linha subindo em tela de computador ao lado de calculadora e documentos, escritório, sem logotipos nem texto legível.
+**`meta-muse-10-milhoes.webp`**
+Celular mostrando um carrinho de compras genérico e balões de conversa, sacolas de compras ao fundo, sem logotipos nem marcas.
 
-**`durigan-mudar-lei-centro-meta-fiscal.webp`**
-Fachada de prédio ministerial modernista em Brasília sob céu azul, sem placas legíveis nem brasões.
+**`gpt-61-terra-openai.webp`**
+Tela de computador com cursor se movendo sozinho entre janelas genéricas, teclado em primeiro plano, sem logotipos.
 
-**`focus-ipca-5-19-coletado-antes-eleicao.webp`**
-Planilha impressa com gráficos de linha, caneta e óculos sobre mesa de escritório, sem texto legível.
+**`chatgpt-conversas-bloqueadas.webp`**
+Celular com um cadeado genérico na tela e dedo sobre o leitor de digital, fundo escuro, sem logotipos.
 
-**`lula-quarto-mandato-desafio-fiscal.webp`**
-Calculadora, planilhas impressas e moedas de real empilhadas sobre mesa de escritório, luz natural, sem texto legível.
+**`openai-treino-sem-internet.webp`**
+Sala de servidores com cabo de rede desconectado em primeiro plano, luzes azuis, sem logotipos.
 
-**`agenda-semana-fed-caged-pnad-vale.webp`**
-Agenda de papel aberta com marcações coloridas ao lado de um tablet com gráfico, mesa de escritório, sem texto legível.
+**`apple-proibe-apps-nudify.webp`**
+Lupa sobre uma grade de ícones de aplicativos genéricos, com um ícone marcado em vermelho, fundo claro, sem marcas.
 
-**`azul-financiamento-2-bilhoes-combustivel.webp`**
-Caminhão-tanque abastecendo um avião comercial genérico no pátio de um aeroporto ao amanhecer, sem logotipos nem marcas.
+**`gemini-android-auto.webp`**
+Interior de carro com tela de painel mostrando rota genérica e cartão de embarque desfocado no banco, sem logotipos.
 
-**`usda-safra-soja-184-milhoes.webp`**
-Plantação de soja verde a perder de vista sob céu azul, com uma colheitadeira genérica ao longe, sem marcas.
-
-**`arrecadacao-federal-setembro-recorde-239-bilhoes.webp`**
-Calculadora, recibos e uma pilha de formulários sobre uma mesa de escritório com luz natural, sem texto legível nem brasões.
-
-**`embraer-carteira-recorde-35-7-bilhoes.webp`**
-Jato comercial genérico estacionado em hangar iluminado, com escada e equipamentos de manutenção ao redor, sem pessoas, sem pintura de companhia nem logotipos.
-
-
-## Tecnologia
-
-**`anthropic-pede-ipo-nasdaq-receita-16-bilhoes.webp`**
-Prospecto de papel grosso sobre mesa de reunião, com notebook aberto mostrando gráfico genérico, luz de janela, sem logotipos nem texto legível.
+**`ranking-chatbots-similarweb.webp`**
+Gráfico de barras colorido e genérico numa tela de notebook, com balões de conversa estilizados ao lado, sem logotipos nem nomes.
 
 **`openai-anuncia-tres-descobertas-cientificas.webp`**
 Quadro-negro com fórmulas matemáticas genéricas e diagramas de ondas, sala de aula universitária vazia, luz natural, sem texto legível de marcas.
 
-**`lula-promete-regular-plataformas-digitais.webp`**
-Celular sobre a mesa com tela cheia de ícones genéricos de redes sociais e um martelo de juiz ao lado, sem marcas nem logotipos.
+**`espolio-elvis-processa-anthropic.webp`**
+Disco de vinil antigo ao lado de um microfone vintage e de um martelo de juiz, fundo escuro, sem rótulos legíveis.
 
-**`nintendo-switch-2-desbloqueado-software.webp`**
-Console portátil de videogame genérico sobre uma mesa ao lado de um notebook com linhas de código desfocadas, sem marcas nem logotipos.
 
-**`meta-adia-termos-comerciais-ia.webp`**
-Notebook aberto com a tela mostrando um documento borrado e uma caneta sobre papéis impressos, mesa de escritório, sem marcas nem texto legível.
+## Startups
 
-**`microsoft-ia-diagnostico-medicos-science.webp`**
-Consultório médico com estetoscópio sobre a mesa e tela de computador mostrando gráficos desfocados, sem pessoas, sem logotipos nem texto legível.
+**`anthropic-pede-ipo-nasdaq-receita-16-bilhoes.webp`**
+Prospecto de papel grosso sobre mesa de reunião, com notebook aberto mostrando gráfico genérico, luz de janela, sem logotipos nem texto legível.
 
-**`spacex-torres-celular-operadora-eua.webp`**
-Torre de telefonia celular em campo aberto sob céu estrelado, com o rastro de um satélite cruzando o céu, sem pessoas e sem logotipos.
+**`apple-australia-lojas-alternativas.webp`**
+Celular sobre mesa com várias vitrines de lojas de aplicativos genéricas na tela, martelo de juiz ao lado, sem logotipos.
 
-**`openai-captacao-30-bilhoes-1-25-trilhao.webp`**
-Sala de reuniões vazia em prédio comercial alto, com mesa longa, cadeiras e vista da cidade ao entardecer, sem pessoas e sem logotipos.
+**`spotify-3tri-2026.webp`**
+Fones de ouvido sobre mesa ao lado de gráfico impresso em alta, celular com ondas sonoras genéricas, sem logotipos.
 
-**`meta-gastos-ia-acoes-caem-7.webp`**
-Corredor de um data center com fileiras de servidores e luzes azuis, sem logotipos nem texto legível.
+**`bumble-ithaca-fechamento-capital.webp`**
+Dois celulares com corações genéricos na tela sobre mesa de reunião com contrato, sem logotipos nem texto legível.
 
-**`anthropic-claude-duet-agente.webp`**
-Celular genérico sobre uma mesa de trabalho ao lado de agenda de papel e xícara de café, tela com interface desfocada, luz da manhã, sem marcas.
+**`itau-compra-neospace.webp`**
+Aperto de mãos sobre mesa de escritório com notebook mostrando rede neural genérica, rostos fora de quadro, sem logotipos.
+
+**`salesforce-compra-braze.webp`**
+Celular com notificações genéricas empilhadas, sobre mesa de escritório com pasta de contrato, sem logotipos.
+
+**`otter-ai-320-milhoes.webp`**
+Mesa de reunião com celular gravando e onda de áudio na tela, blocos de anotação ao lado, sem logotipos.
+
+**`openai-rodada-30-bi.webp`**
+Pilhas de moedas e gráfico de linha subindo numa tela ao fundo, mesa de vidro, sem logotipos.
+
+**`google-play-novas-taxas-coreia.webp`**
+Celular com ícones genéricos de loja de aplicativos e calculadora ao lado, cidade asiática desfocada pela janela, sem marcas.
+
+**`mexico-supera-brasil-venture-capital.webp`**
+Mapa da América Latina em mesa de escritório com marcadores coloridos sobre México e Brasil, sem logotipos.
+
+
+## Ideias para o Brasil
+
+**`snabbit-diarista-10-minutos.webp`**
+Balde e produtos de limpeza sem rótulo na porta de um apartamento, com celular mostrando um cronômetro genérico, sem pessoas.
+
+**`abby-care-familiar-cuidador-pago.webp`**
+Mãos de duas gerações sobre uma mesa ao lado de um tablet com agenda de cuidados genérica, sem rostos.
+
+**`india-farmer-id-agristack.webp`**
+Plantação verde ao amanhecer com celular em primeiro plano mostrando um cartão de identidade genérico, sem rostos nem brasões.
+
+**`matiks-jogos-de-matematica.webp`**
+Celular com números e símbolos matemáticos coloridos em estilo de jogo, sobre carteira escolar, sem logotipos.
+
+**`too-good-to-go-alem-da-comida.webp`**
+Sacola de papel com frutas, plantas e produtos de higiene sem rótulo sobre balcão de loja, sem logotipos.
+
+**`zenzap-whatsapp-do-trabalho.webp`**
+Balcão de restaurante com celular mostrando chat de equipe genérico e lista de tarefas, sem logotipos nem pessoas reconhecíveis.
+
+**`ant-aq-saude-ia-china.webp`**
+Prato de comida fotografado por um celular com ícones genéricos de saúde na tela, sem logotipos.
+
+**`sathee-tutor-ia-gratuito-vestibular.webp`**
+Estudante de costas estudando à noite com notebook mostrando exercícios genéricos e lâmpada de mesa, sem rosto visível nem logotipos.
+
+**`tolan-companheiro-ia-rotina.webp`**
+Celular com personagem de desenho genérico e lista de tarefas na tela, sobre agenda de papel, sem marcas.
+
+**`cent-checkup-preventivo-ia.webp`**
+Sala de exames de imagem moderna e vazia, com tela de computador mostrando gráficos genéricos de saúde, sem logotipos.
+
+
+## No Brasil
+
+**`bc-regras-credito-no-pix.webp`**
+Celular mostrando tela genérica de pagamento por QR code, com cartão e moedas ao lado, sem logotipos nem texto legível.
+
+**`ifood-compra-caju.webp`**
+Cartão de benefícios genérico ao lado de marmita e celular sobre mesa de escritório, sem logotipos nem marcas.
+
+**`vivo-satelite-starlink.webp`**
+Celular erguido em estrada de terra no interior ao entardecer, com céu aberto e pequenos pontos de satélite, sem logotipos.
+
+**`bets-devolucao-saldos-caixa.webp`**
+Celular com tela genérica de extrato bancário e notas de real ao lado, mesa clara, sem logotipos nem texto legível.
+
+**`nubank-nu-smart-invest.webp`**
+Celular com gráfico de pizza colorido e genérico de investimentos, sobre mesa com caderno, sem logotipos.
+
+**`99-lanca-99premier.webp`**
+Carro sedã escuro estacionado em rua de cidade litorânea à noite, porta traseira aberta, sem placas nem logotipos.
+
+**`99-unico-biometria.webp`**
+Celular preso no painel de um carro mostrando moldura genérica de reconhecimento facial, sem rosto visível nem logotipos.
+
+**`mp-1396-chamadas-golpes.webp`**
+Celular tocando sobre mesa com tela de chamada desconhecida e ícone genérico de alerta, sem números legíveis nem logotipos.
+
+**`golpe-qr-code-pix-febraban.webp`**
+Adesivo de QR code colado por cima de outro em balcão de feira, celular apontado para ele, sem logotipos.
+
+**`ifood-black-friday-2026.webp`**
+Sacolas de entrega e caixas sobre a mesa com celular mostrando etiqueta de desconto genérica, sem logotipos nem marcas.

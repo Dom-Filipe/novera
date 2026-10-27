@@ -1,6 +1,6 @@
 # Novera
 
-**Informação sem fronteiras.** Portal de notícias do Brasil e do mundo, com seis editorias: Nacional, Internacional, Esportes, Cultura, Economia e Tecnologia.
+**O mundo dos apps.** Jornal digital sobre aplicativos, com seis editorias: Lançamentos, Atualizações, IA, Startups, Ideias para o Brasil e No Brasil.
 
 ## O que tem
 
