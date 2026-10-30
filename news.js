@@ -7,27 +7,64 @@
 const META = {
   /* Endereço público do site, sem barra no final. Usado nos links das redes sociais. */
   siteUrl: 'https://novera-sepia.vercel.app',
-  dataExtenso: 'Quinta-feira, 29 de outubro de 2026',
-  edicao: '29 out 2026',
+  dataExtenso: 'Sexta-feira, 30 de outubro de 2026',
+  edicao: '30 out 2026',
   /* Faixa do topo: 1 a 3 itens [rótulo, texto curto]. Use só fatos que estão em notícias do site. */
   destaques: [
-    ['App do dia', 'Instagram ganha app para a Apple TV, com Reels e lives'],
-    ['Prazo', 'Corretoras de cripto têm até sexta (30) para pedir licença ao BC'],
-    ['Em alta', 'Uber fixa em R$ 4,98 viagens de moto de até 3 km']
+    ['Prazo', 'Termina nesta sexta (30) o prazo para corretoras de cripto pedirem licença ao BC'],
+    ['Em alta', 'DoorDash compra o Instacart por US$ 17 bilhões'],
+    ['App do dia', 'Meta lança o Style Sketch, app de moda com IA, em três países da Ásia']
   ]
 };
 
 /* Home: destaque principal, dois laterais e três da faixa de baixo (IDs de notícias "own: true") */
 const FEATURED = {
-  lead: 'anatel-biometria-facial-linhas',
-  side: ['alphabet-3tri-2026', 'whatsapp-nova-tela-backup'],
-  also: ['uber-moto-preco-fixo-taxi-12-cidades', 'instagram-apple-tv', 'furtilo-delivery-mensalidade']
+  lead: 'cripto-licenca-fim-do-prazo-lista',
+  side: ['doordash-compra-instacart', 'globoplay-novos-planos-sportv'],
+  also: ['meta-style-sketch-moda-ia', 'medikea-teleconsulta-clinicas-proprias', 'anatel-biometria-facial-linhas']
 };
 
 /* Home: "Escolhas da redação" (5 IDs) */
-const PICKS = ['gemini-4-carbon', 'chatgpt-dots-imessage-rcs', 'onto-reembolso-preco-hotel', 'free-fire-india', 'cripto-prazo-licenca-banco-central'];
+const PICKS = ['gemini-4-carbon', 'chatgpt-dots-imessage-rcs', 'alphabet-3tri-2026', 'furtilo-delivery-mensalidade', 'uber-moto-preco-fixo-taxi-12-cidades'];
 
 const U = {
+  /* Atualização de 30 out 2026 */
+  /* Lançamentos */
+  tcStyle: 'https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/',
+  feStyle: 'https://www.fonearena.com/blog/496078/meta-style-sketch-ai-fashion-app.html',
+  mvWolf: 'https://monstervine.com/2026/10/the-wolf-among-us-remastered-launch-choice-carryover/',
+  ftTitanium: 'https://www.fellowtraveller.games/blog/titanium-court-raises-the-curtain-on-console-and-mobile',
+  b2gOnePiece: 'https://www.back2gaming.com/games/one-piece-grand-gourmet-launches-on-nintendo-switch-2-switch-pc-and-mobile/',
+  /* Atualizações */
+  ctGloboplay: 'https://canaltech.com.br/apps/globoplay-lanca-novos-planos-com-sportv-incluso-por-r-1990-veja-o-que-muda/',
+  mmGloboplay: 'https://www.meioemensagem.com.br/midia/globoplay-muda-assinaturas-e-amplia-foco-em-esporte',
+  smtXFotos: 'https://www.socialmediatoday.com/news/x-lets-users-share-credit-on-reposted-images/873100/',
+  ctGFotos: 'https://canaltech.com.br/apps/google-fotos-ganha-visual-redesenhado-e-agora-deixa-usuario-personalizar-aba-albuns/',
+  wbiConfig: 'https://wabetainfo.com/whatsapp-is-testing-a-new-settings-design-on-android/',
+  /* IA */
+  bcProLimites: 'https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/',
+  tcAlexa: 'https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-and-subscriptions-and-update-delivery-instructions/',
+  acXreal: 'https://www.androidcentral.com/gaming/virtual-reality/launch-day-xreal-aura-is-here',
+  /* Startups */
+  tcDoorDash: 'https://techcrunch.com/2026/10/29/doordash-to-acquire-instacart-for-17b/',
+  nfDoorDash: 'https://neofeed.com.br/negocios/a-aposta-de-us-17-bilhoes-da-doordash-para-fazer-o-app-do-jantar-ser-o-app-das-compras-da-semana/',
+  secDoorDash: 'https://www.sec.gov/Archives/edgar/data/0001792789/000179278926000062/proddashex991-pressrelease.htm',
+  bwAmazon: 'https://www.businesswire.com/news/home/20261028373648/en/Amazon.com-Announces-Third-Quarter-Results',
+  secReddit: 'https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000114/earningspressreleaseq326.htm',
+  mrCoreia: 'https://www.macrumors.com/2026/10/28/south-korea-rules-against-apple/',
+  blTractian: 'https://www.bloomberglinea.com.br/startups/rodadas-da-semana-tractian-chega-a-valuation-de-us-14-bilhao-com-nova-captacao/',
+  /* Ideias para o Brasil */
+  tmMedikea: 'https://techmoran.com/2026/10/29/tanzanian-health-startup-medikea-raises-1-2-million-to-own-care-not-just-connect-it',
+  cdMedikea: 'https://thecondia.com/medikea-raises-1-2m-pre-seed-funding/',
+  wmAqar: 'https://www.wamda.com/ar/2026/10/egyptian-proptech-aqar-exit-attracts-investment-2-million-valuation',
+  cxoTravclan: 'https://www.cxodigitalpulse.com/?p=63955',
+  /* No Brasil */
+  bnCripto39: 'https://bitnoticias.com.br/mercado/bradesco-b3-e-foxbit-avancam-na-corrida-pela-licenca-cripto-do-banco-central-lista-chega-a-39-empresas',
+  bnCripto33: 'https://bitnoticias.com.br/noticias/coinbase-nubank-e-braza-bank-banco-central-33-empresas-cripto',
+  abPixMei: 'https://www.dgabc.com.br/Noticia/4365781/governo-alerta-que-cadastramento-para-o-pix-mei-ainda-nao-comecou',
+  sbtMwPay: 'https://sbtnews.sbt.com.br/noticia/economia/banco-central-liquida-mw-pay-por-graves-irregularidades',
+  otNoveNove: 'https://otempo.com.br/minas-sa/2026/10/29/com-1-8-mil-restaurantes-99food-inicia-operacao-em-uberlandia-e-araguari',
+  tiPicpay: 'https://tiinside.com.br/27/10/2026/picpay-lanca-vendedor-virtual-com-ia-no-whatsapp-e-ferramenta-gratuita-para-criar-lojas-online/',
   /* Atualização de 29 out 2026 */
   /* Lançamentos */
   mrIgTv: 'https://www.macrumors.com/2026/10/25/instagram-launches-apple-tv-app/',
@@ -36,7 +73,6 @@ const U = {
   feFfi: 'https://www.fonearena.com/blog/495810/free-fire-india-launch-october-2026.html',
   pqFfi: 'https://www.pcquest.com/gaming/free-fire-india-launches-october-28-2026-with-free-download-links-for-android-and-ios-whats-new-12756712',
   egWaddle: 'https://www.engadget.com/2299227/meta-tamagotchi-like-ai-digital-pet-app-waddle-world/',
-  g9PhoneAuto: 'https://9to5google.com/?p=734730',
   /* Atualizações */
   wbiBackup: 'https://wabetainfo.com/whatsapp-is-rolling-out-a-redesigned-chat-backup-screen/',
   mbBackup: 'https://www.mobilebit.com.br/tecnologia/2026/10/28/whatsapp-nova-tela-backup/',
@@ -56,13 +92,10 @@ const U = {
   crAlphabet: 'https://www.constellationr.com/insights/news/google-cloud-q3-revenue-103-alphabet-results-light',
   stAlphabet: 'https://www.stocktitan.net/articles/alphabet-q3-2026-earnings-google-cloud-doubles-search-slows',
   msResultados: 'https://news.microsoft.com/source/2026/10/28/microsoft-announces-first-quarter-results-2/',
-  upJio: 'https://upstox.com/news/market-news/ipo/jio-platforms-ipo-listing-live-updates-share-price-nse-bse-reliance-industries-subsidiary-october-28-2026/liveblog-202492/',
   stGaio: 'https://startups.com.br/negocios/rodada-de-investimento/g4-lidera-seed-de-r-55m-da-gaio-de-social-selling/',
   /* Ideias para o Brasil */
   stkFurtilo: 'https://startuptalky.com/news/daily-indian-funding-roundup-key-news-21-october-2026/',
   uniFurtilo: 'https://www.uniindia.com/business-wire-india/furtilo-raises-seed-funding-to-deliver-from-local-shops-in-500-small-towns-102251/219631',
-  ascOnto: 'https://ascendants.in/funding-feed/onto-1-million-pre-seed-funding-hotel-price-drop-refund/',
-  openOnto: 'https://openthemagazine.com/business/a-new-kid-on-the-booking-block-can-onto-take-on-makemytrip-bookingcom',
   enAstro: 'https://entrackr.com/fintrackr/astrotalks-profit-jumps-10x-to-rs-222-cr-in-fy26-overseas-biz-grows-26x-12761666',
   enZorit: 'https://entrackr.com/news/bijnis-rebrands-as-zorit-raises-rs-27-cr-led-by-sparrow-capital-12762019',
   /* No Brasil */
@@ -78,75 +111,78 @@ const U = {
   /* Atualização de 28 out 2026 */
   /* Lançamentos */
   odOpera: 'https://olhardigital.com.br/2026/10/27/internet-e-redes-sociais/opera-lanca-recurso-que-roda-inteligencia-artificial-no-seu-pc',
-  bnBleach: 'https://bleach-mh.bn-ent.net/en/news/69866',
-  gsBleach: 'https://geekship.com.br/games/bleach-mirrors-high-lancamento-android-ios',
-  gbBleach: 'https://gameblast.com.br/2026/10/bleach-mirrors-high-sera-lancado-android-ios-28-outubro.html',
-  acBleach: 'https://animecorner.me/bleach-mirrors-high-surpasses-1-million-pre-registrations-worldwide-new-launch-rewards-unlocked/',
-  ctPhantom: 'https://canaltech.com.br/games/que-horas-phantom-blade-zero-sera-lancado-no-brasil/',
-  ghSaints: 'https://gaminghq.eu/2026/10/21/saints-row-the-third-remastered-mobile/',
   /* Atualizações */
   tcDiscord: 'https://techcrunch.com/2026/10/27/discord-is-making-its-public-communities-more-searchable-and-people-have-concerns/',
-  egFbLinks: 'https://www.engadget.com/2295422/meta-is-charging-government-and-nonprofit-pages-to-post-links-on-facebook/',
   wbiOrgs: 'https://wabetainfo.com/whatsapp-is-testing-organizations-to-manage-large-communities/',
   /* IA */
   tcIos272: 'https://techcrunch.com/2026/10/27/apple-rolls-out-ios-27-2-with-new-siri-ai-languages-and-security-fixes/',
   m9Icloud: 'https://9to5mac.com/2026/10/27/icloud-mail-and-calendar-plugins-now-work-with-chatgpt/',
-  apCreator: 'https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/',
   tcGenie: 'https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/',
-  cpYoba: 'https://research.checkpoint.com/2026/tricks-from-the-past-deployed-via-signed-chatgpt-and-claude-binaries/',
   /* Startups */
   tcAntVcs: 'https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/',
-  gnRobinhood: 'https://www.globenewswire.com/news-release/2026/10/27/3389611/0/en/robinhood-reports-third-quarter-2026-results.html',
-  invRobinhood: 'https://uk.investing.com/news/stock-market-news/robinhood-q3-2026-slides-record-revenue-of-14b-stock-drops-7-93CH-4935824',
-  secPaypal: 'https://www.sec.gov/Archives/edgar/data/0001633917/000163391726000086/pypl3q-26earningsrelease.htm',
-  tcGuidewire: 'https://techcrunch.com/2026/10/27/guidewire-buys-hyperexponential-for-1-7b-in-cash/',
   /* Ideias para o Brasil */
-  ysEven: 'https://yourstory.com/2026/10/even-healthcare-raises-50m-in-series-b-round-led-by-khosla-ventures',
   stMaasi: 'https://startuptalky.com/news/maasi-raises-6-cr-pre-seed-nanny-platform/',
   eiMaasi: 'https://india.entrepreneur.com/business-news/maasi-raises-rs-6-crore-in-pre-seed-round-led-by-better-capital-antler-india',
   /* No Brasil */
   ffCripto: 'https://financefeeds.com/binance-files-for-brazil-crypto-authorization-ahead-of-oct-30-deadline/',
   bnCripto26: 'https://bitnoticias.com.br/regulacao/binance-pede-licenca-banco-central-psav-brasil/',
   bnCripto10: 'https://bitnoticias.com.br/noticias/licenca-cripto-do-banco-central-qual-exchange-pediu-quem-vai-pedir-e-quem-esta-saindo-do-brasil',
-  mtKeeta: 'https://www.mobiletime.com.br/noticias/27/10/2026/keeta-10-mi-downloads-br/',
-  abSuperend: 'https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/numero-de-superendividados-no-brasil-cresceu-75-em-cinco-anos-diz-bc',
-  abResidual: 'https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/receita-abre-consulta-lote-residual-do-imposto-de-renda',
   /* Atualização de 27 out 2026: estreia do formato de aplicativos */
   /* Lançamentos */
   ahNms: 'https://antihype.com.br/c/games/no-mans-sky-iphone-ipad-lancamento-preco/',
   jwMh: 'https://www.jwave.com.br/2026/10/monster-hunter-outlanders-chega-aos-celulares-em-29-de-outubro/',
-  /* Atualizações */
-  smtFeatures: 'https://www.socialmediatoday.com/news/instagram-rolls-out-limited-features-test-in-the-us/872825/',
-  tnwFeatures: 'https://thenextweb.com/news/instagram-tests-90-minute-horizontal-videos-called-features',
-  dcGoogleAds: 'https://decrypt.co/381775/google-quietly-updates-privacy-policy-gmail-photos-ads?amp=1',
-  abcMetaAcc: 'https://www.abc.net.au/news/2026-10-27/what-is-meta-account-facebook-instagram-explained/107313814',
   /* IA */
   ctSiri: 'https://canaltech.com.br/apps/atualize-ja-apple-libera-ios-272-com-siri-ai-em-portugues/',
   ihSiri: 'https://ihelpbr.com/ios-27-2-e-lancado-com-siri-ai-em-portugues/',
   bcTerra: 'https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/',
-  egElvis: 'https://www.engadget.com/2296535/elvis-presley-estate-suing-ai-company-for-copyright-infringement/',
   /* Startups */
   imAnt27: 'https://www.infomoney.com.br/mercados/anthropic-alerta-para-riscos-existenciais-em-aguardado-pedido-de-ipo/',
   fortuneAnt27: 'https://fortune.com/2026/10/26/anthropics-s-1/',
-  mrAus: 'https://macrumors.com/2026/10/22/rival-app-stores-in-australia-ordered',
   mtItau: 'https://www.mobiletime.com.br/noticias/26/10/2026/itau-anuncia-acordo-para/',
   /* Ideias para o Brasil */
-  tnmFarmer: 'https://thenewsmill.com/2026/10/india-creates-11-crore-farmer-ids-five-months-ahead-of-deadline/',
   tcMatiks: 'https://techcrunch.com/2026/10/26/matiks-raises-10m-to-expand-its-math-and-puzzle-gaming-platform/',
   elSathee: 'https://digitallearning.eletsonline.com/2026/10/free-ai-tutors-iits-sathee-ndli-fermi-jee-neet-cuet-gate-preparation',
   incCent: 'https://inc42.com/buzz/cent-raises-15-mn-to-scale-ai-led-preventive-healthcare-platform',
   /* No Brasil */
-  abPixCredito: 'https://agenciabrasil.ebc.com.br/economia/noticia/2026-10/bc-reforca-regras-de-protecao-ao-consumidor-nas-ofertas-de-credito',
   ttVivo: 'https://teletime.com.br/26/10/2026/vivo-parceria-starlink-vivo-satelite/'
 };
 
 const NEWS = [
 /* ===================== LANÇAMENTOS ===================== */
-{ id: 'phoneauto-android-auto-celular', cat: 'lancamentos', own: false, t: '2026-10-27T14', d: '27 out 2026', img: 'celular', src: '9to5Google', url: U.g9PhoneAuto,
-  title: 'App PhoneAuto, em teste, leva o Android Auto de volta à tela do celular',
-  sum: 'O Google tirou o modo de celular do Android Auto em 2022. A versão beta do app é instalada por fora da loja e expira em janeiro.',
+{ id: 'meta-style-sketch-moda-ia', cat: 'lancamentos', own: true, t: '2026-10-29T15', d: '29 out 2026', img: 'celular', read: 2,
+  title: 'Meta lança o Style Sketch, app de moda com IA que monta looks com fotos do Instagram, só em três países da Ásia',
+  sum: 'O app para Android e iPhone cria um guarda-roupa virtual, sugere combinações e mostra as roupas num modelo parecido com o usuário. Está só na Indonésia, em Singapura e na Tailândia.',
   body: [
-    'O app usa um recurso de desenvolvedor do Android para rodar o Android Auto no próprio aparelho. A versão para o Google Play está em análise, segundo o 9to5Google. No teste do site, o modo horizontal funcionou bem, e o vertical ficou mais lento.'
+    'A Meta colocou nas lojas de apps o Style Sketch, um aplicativo de moda com inteligência artificial, sem anúncio oficial, segundo o TechCrunch. O app foi notado primeiro pelo consultor de redes sociais Matt Navarra, que publicou a descoberta no X.',
+    '## Como funciona',
+    'O app monta um guarda-roupa virtual a partir das fotos que o usuário publicou no Instagram. Também dá para incluir peças tirando uma foto, gravando um vídeo curto ou enviando imagens do celular. Com isso, ele sugere combinações de roupas de acordo com o estilo da pessoa.',
+    'A prova virtual usa um modelo ajustado ao tipo de corpo e ao tom de pele do usuário, segundo a descrição do app citada pelo TechCrunch. Há ainda uma opção que monta looks em torno de uma peça escolhida e um planejador de viagem, que sugere roupas para cada dia conforme o destino, a duração, as atividades e a previsão do tempo.',
+    '## Onde funciona',
+    'O Style Sketch está disponível para Android e iOS, mas só na Indonésia, em Singapura e na Tailândia. A Meta não respondeu ao TechCrunch, e não se sabe se o app vai chegar a outros países. Não há informação sobre o Brasil.',
+    'O app se junta a outros lançamentos recentes da Meta com IA, como o Waddle World, de bichinho virtual, também testado num só país.'
+  ],
+  box: { type: 'facts', title: 'Style Sketch', rows: [['Empresa', 'Meta'], ['Onde', 'Android e iOS'], ['Países', 'Indonésia, Singapura e Tailândia'], ['Brasil', 'Sem informação']] },
+  sources: [['TechCrunch', U.tcStyle], ['FoneArena', U.feStyle]] },
+
+{ id: 'wolf-among-us-remastered', cat: 'lancamentos', own: false, t: '2026-10-29T12', d: '29 out 2026', img: 'tecnologia', src: 'MonsterVine', url: U.mvWolf,
+  title: 'The Wolf Among Us Remastered, da Telltale, chega ao PC, ao PS5 e ao Xbox por US$ 24,99',
+  sum: 'A versão traz os 5 episódios, cenas que tinham sido cortadas e um modo em preto e branco. A versão para Switch sai depois.',
+  body: [
+    'Há desconto de 20% de lançamento até 12 de novembro, e quem tem o jogo original paga até 50% menos; os descontos não se somam. As escolhas feitas no jogo passam para The Wolf Among Us 2 para quem entrar com uma conta Telltale, segundo o MonsterVine.'
+  ] },
+
+{ id: 'titanium-court-celular-consoles', cat: 'lancamentos', own: false, t: '2026-10-29T10', d: '29 out 2026', img: 'celular', src: 'Fellow Traveller', url: U.ftTitanium,
+  title: 'Titanium Court, jogo independente premiado, chega ao Android, ao iPhone, ao PS5 e ao Switch',
+  sum: 'O jogo mistura quebra-cabeça de combinar peças, história em texto, RPG e defesa de base. Tinha saído no PC em abril.',
+  body: [
+    'O jogo é de AP Thomson e ganhou o principal prêmio do Independent Games Festival (IGF). A editora Fellow Traveller não informou preço nem idiomas nesta divulgação.'
+  ] },
+
+{ id: 'one-piece-grand-gourmet', cat: 'lancamentos', own: false, t: '2026-10-23T12', d: '23 out 2026', img: 'celular', src: 'Back2Gaming', url: U.b2gOnePiece,
+  title: 'One Piece: Grand Gourmet, jogo de administrar restaurante, chega ao celular e ao PC',
+  sum: 'O jogo da Bandai Namco, feito pela Kairosoft, é vendido em compra única. No Steam, custa US$ 19,99.',
+  body: [
+    'O jogador trabalha num restaurante ao lado do cozinheiro Sanji. O jogo saiu para Switch em 22 de outubro e, um dia depois, para PC, Android e iPhone. Segundo o Back2Gaming, não é preciso fazer compras extras dentro do jogo.'
   ] },
 
 { id: 'waddle-world-meta', cat: 'lancamentos', own: false, t: '2026-10-28T12', d: '28 out 2026', img: 'celular', src: 'Engadget', url: U.egWaddle,
@@ -199,42 +235,50 @@ const NEWS = [
     'A prévia está no Opera One, em computadores com Windows de 64 bits e em Macs com chip da Apple. Os navegadores Opera GX e Opera Neon recebem o recurso depois. Como é uma fase de testes, o desempenho depende do computador, segundo o Olhar Digital.'
   ] },
 
-{ id: 'bleach-mirrors-high', cat: 'lancamentos', own: true, t: '2026-10-28T06', d: '28 out 2026', img: 'celular', read: 2,
-  title: 'Bleach Mirrors High, jogo gratuito da Bandai Namco, chega ao Android e ao iPhone',
-  sum: 'O jogo baseado no anime passou de 1 milhão de pré-registros no mundo. É gratuito, com compras dentro do app, inclusive de itens aleatórios.',
-  body: [
-    'O jogo Bleach Mirrors High, da Bandai Namco, chegou ao Android e ao iOS na quarta-feira (28), depois de uma manutenção dos servidores, segundo o site oficial. O download antecipado já está aberto na App Store e no Google Play. A empresa não divulgou o horário de liberação.',
-    '## Como é o jogo',
-    'O jogador cria o próprio Shinigami e escolhe a aparência e a espada Zanpakuto. As batalhas usam equipes de três personagens e cartas de ataque, segundo o Geekship. A história se passa depois do arco da Guerra Sangrenta dos Mil Anos, e o criador da série, Tite Kubo, colaborou com o jogo, segundo o GameBlast.',
-    '## Pré-registro',
-    'Mais de 1 milhão de pessoas se pré-registraram no mundo em menos de dois meses de campanha, segundo o Anime Corner. Por isso, todos os jogadores recebem 9.000 Mirror Gems, a moeda do jogo, e cinco tickets de invocação.',
-    'O jogo é gratuito, com compras dentro do app, entre elas de itens aleatórios. As fontes não informam se há versão em português.'
-  ],
-  box: { type: 'facts', title: 'Bleach Mirrors High', rows: [['Lançamento', '28 de outubro'], ['Onde', 'Android e iOS'], ['Preço', 'Grátis, com compras no app'], ['Pré-registros', 'Mais de 1 milhão no mundo']] },
-  sources: [['Bandai Namco', U.bnBleach], ['Geekship', U.gsBleach], ['GameBlast', U.gbBleach], ['Anime Corner', U.acBleach]] },
-
 { id: 'monster-hunter-outlanders', cat: 'lancamentos', own: false, t: '2026-10-26T10', d: '26 out 2026', img: 'celular', src: 'JWave', url: U.jwMh,
-  title: 'Monster Hunter Outlanders, jogo gratuito para celular, estreia nesta quinta no Android e no iOS',
+  title: 'Monster Hunter Outlanders, jogo gratuito para celular, estreou na quinta (29) no Android e no iOS',
   sum: 'O jogo da franquia da Capcom foi desenvolvido pelo TiMi Studio, da Tencent. No Brasil, é publicado pela Garena, com pré-registro aberto.',
   body: [
-    'O lançamento é em 29 de outubro. O jogo é gratuito, com compras dentro do app. A versão para a China continental fica para 2027 ou depois.'
-  ] },
-
-{ id: 'phantom-blade-zero-pc-ps5', cat: 'lancamentos', own: false, t: '2026-10-27T17', d: '27 out 2026', img: 'tecnologia', src: 'Canaltech', url: U.ctPhantom,
-  title: 'Phantom Blade Zero, do estúdio chinês S-Game, chega ao PC e ao PS5; no Brasil, foi liberado às 23h de quarta',
-  sum: 'É o primeiro jogo de grande orçamento do estúdio. O lançamento mundial é em 29 de outubro, e não há versão para Xbox.',
-  body: [
-    'O jogo de ação sai para PC e PlayStation 5. Por causa do fuso horário, no Brasil ele é desbloqueado às 23h de 28 de outubro, segundo o Canaltech.'
-  ] },
-
-{ id: 'saints-row-the-third-celular', cat: 'lancamentos', own: false, t: '2026-10-21T12', d: '21 out 2026', img: 'celular', src: 'GamingHQ', url: U.ghSaints,
-  title: 'Saints Row: The Third Remastered chega ao iPhone e ao Android nesta quinta, por US$ 19,99',
-  sum: 'A versão para celular, feita pela Feral Interactive, inclui todos os conteúdos extras e tem modo cooperativo online.',
-  body: [
-    'O lançamento é em 29 de outubro. O jogo é baseado na versão remasterizada de 2020 do original de 2011 e inclui expansões como Gangstas in Space.'
+    'O lançamento foi em 29 de outubro. O jogo é gratuito, com compras dentro do app. A versão para a China continental fica para 2027 ou depois.'
   ] },
 
 /* ===================== ATUALIZAÇÕES ===================== */
+{ id: 'globoplay-novos-planos-sportv', cat: 'atualizacoes', own: true, t: '2026-10-27T13', d: '27 out 2026', img: 'plataforma', read: 2,
+  title: 'Globoplay muda os planos: sportv entra no plano mais barato, e o preço sobe',
+  sum: 'O plano com anúncios passa a custar R$ 19,90 por mês na assinatura anual, ou R$ 29,90 no mensal. A mudança vale já para novos assinantes; os atuais migram aos poucos.',
+  body: [
+    'O Globoplay, serviço de streaming da Globo, reformulou os planos de assinatura e passou a incluir o canal sportv no plano de entrada, segundo o Canaltech. A mudança já vale para quem assina agora. Para quem já é assinante, a migração começa aos poucos em outubro.',
+    '## Os novos preços',
+    'O plano com anúncios custa R$ 29,90 por mês, ou R$ 238,80 no plano anual, o equivalente a 12 vezes de R$ 19,90. O Premium, sem anúncios, custa R$ 39,90 por mês, ou R$ 298,80 por ano (12 de R$ 24,90). O Premium + Premiere, que inclui os jogos do Premiere, sai por R$ 78,90 por mês, ou R$ 478,80 por ano (12 de R$ 39,90).',
+    'No plano anual, o de entrada custava antes R$ 16,90 por mês, e o Premium, R$ 22,90, segundo o Meio & Mensagem.',
+    '## O que cada plano tem',
+    'O plano com anúncios tem imagem Full HD, até 2 telas ao mesmo tempo e não permite baixar vídeos. O Premium tem 4K, até 5 telas e até 25 downloads. Segundo o Canaltech, o catálogo é o mesmo nos dois; mudam os anúncios, o número de telas e o sportv em 4K.',
+    'O plano de entrada passa a ter 20 canais por assinatura, entre eles sportv e Combate, segundo o Meio & Mensagem. O serviço também ganhou um novo formato de anúncio, que aparece na página inicial depois do login.'
+  ],
+  box: { type: 'table', title: 'Novos planos do Globoplay', head: ['Plano', 'Mensal', 'Anual'], rows: [['Com anúncios', 'R$ 29,90', 'R$ 238,80'], ['Premium', 'R$ 39,90', 'R$ 298,80'], ['Premium + Premiere', 'R$ 78,90', 'R$ 478,80']], note: 'Fonte: Canaltech.' },
+  sources: [['Canaltech', U.ctGloboplay], ['Meio & Mensagem', U.mmGloboplay]] },
+
+{ id: 'x-repostar-fotos-credito', cat: 'atualizacoes', own: false, t: '2026-10-28T14', d: '28 out 2026', img: 'plataforma', src: 'Social Media Today', url: U.smtXFotos,
+  title: 'X deixa repostar fotos de outros usuários com crédito ao autor e divisão de ganhos',
+  sum: 'Basta tocar e segurar a foto e escolher "Post photo". O novo post leva um selo com link para quem publicou primeiro.',
+  body: [
+    'As visualizações contam para as duas contas, e as duas podem ganhar dinheiro pelo programa de pagamento a criadores do X, que exige assinatura Premium e números mínimos de alcance. Antes, imagens repetidas não contavam para o programa, segundo o Social Media Today. A fonte não fala em países.'
+  ] },
+
+{ id: 'google-fotos-novo-visual-albuns', cat: 'atualizacoes', own: false, t: '2026-10-27T18', d: '27 out 2026', img: 'celular', src: 'Canaltech', url: U.ctGFotos,
+  title: 'Google Fotos ganha novo visual e deixa o usuário organizar a aba Álbuns',
+  sum: 'Dá para esconder, reordenar e mudar a exibição das seções. A mudança chega aos poucos no Android e no iPhone.',
+  body: [
+    'A liberação é feita pelo servidor, então atualizar o app não garante o novo visual. Ele aparece a partir das versões 7.97, no Android, e 7.98, no iOS. No topo da aba ficam Favoritos, Impressões e Lixeira, segundo o Canaltech.'
+  ] },
+
+{ id: 'whatsapp-configuracoes-novo-visual-android', cat: 'atualizacoes', own: false, t: '2026-10-27T10', d: '27 out 2026', img: 'celular', src: 'WABetaInfo', url: U.wbiConfig,
+  title: 'WhatsApp prepara novo visual para a tela de configurações no Android',
+  sum: 'As opções passam a ficar em blocos separados, com cantos arredondados. O recurso foi encontrado na versão beta 2.26.43.3.',
+  body: [
+    'A mudança vale para todas as páginas de configurações, como Conta, Privacidade e Notificações. Ainda está em desenvolvimento e não foi liberada nem para os testadores. Não há data de lançamento, segundo o WABetaInfo.'
+  ] },
+
 { id: 'reddit-feed-para-voce', cat: 'atualizacoes', own: false, t: '2026-10-28T11', d: '28 out 2026', img: 'plataforma', src: 'TechCrunch', url: U.tcReddit,
   title: 'Reddit adota feed "Para você" e separa as recomendações das comunidades seguidas',
   sum: 'A página inicial passa a ter duas abas. Depois de um teste, a mudança chega aos usuários do mundo todo nas próximas semanas.',
@@ -272,19 +316,6 @@ const NEWS = [
   box: { type: 'facts', title: 'Nova tela de backup', rows: [['Onde', 'Android e iOS'], ['Situação', 'Liberação gradual'], ['Novidade no iPhone', 'Desligar o backup no iCloud'], ['Brasil', 'Sem data confirmada']] },
   sources: [['WABetaInfo', U.wbiBackup], ['Mobile Bit', U.mbBackup], ['WABetaInfo (central de mídias)', U.wbiMidia]] },
 
-{ id: 'instagram-features-videos-90-minutos', cat: 'atualizacoes', own: true, t: '2026-10-26T16', d: '26 out 2026', img: 'plataforma', read: 2,
-  title: 'Instagram testa "Features", vídeos horizontais de até 90 minutos, com criadores no Brasil e nos EUA',
-  sum: 'O formato mira podcasts e programas de humor e vai aparecer no feed, no Explorar e no app do Instagram para TV. Por enquanto, não há divisão da receita de anúncios com os criadores.',
-  body: [
-    'O Instagram anunciou em 26 de outubro o teste dos "Features", vídeos na horizontal de até 90 minutos. O teste foi apresentado por Adam Mosseri, chefe do Instagram, e Tessa Lyons, chefe de produto.',
-    '## O Brasil no teste',
-    'Segundo a Social Media Today, os Features foram testados primeiro no Brasil, e a liberação para criadores selecionados dos EUA começou agora. O site TNW descreve um grupo pequeno de criadores nos EUA, com alguns no Brasil.',
-    '## Onde aparecem',
-    'Os vídeos vão aparecer no feed e no Explorar, e o app do Instagram para TV vai dar prioridade ao formato. Um recurso ligado, o "Clips as Reels", permite ligar até 8 Reels a um vídeo longo.',
-    'Por enquanto, o Instagram não vai dividir com os criadores a receita de anúncios desses vídeos.'
-  ],
-  sources: [['Social Media Today', U.smtFeatures], ['TNW', U.tnwFeatures]] },
-
 { id: 'discord-servidores-publicos-buscadores', cat: 'atualizacoes', own: true, t: '2026-10-27T15', d: '27 out 2026', img: 'plataforma', read: 2,
   title: 'Discord vai mostrar conversas de servidores públicos em buscadores; no Brasil, recurso vem desligado',
   sum: 'A partir de 16 de novembro, mais de 63 mil servidores abertos ganham páginas na web. Em meados de dezembro, mensagens escolhidas podem aparecer no Google e em outros buscadores.',
@@ -300,27 +331,6 @@ const NEWS = [
   box: { type: 'facts', title: 'O que muda no Discord', rows: [['Servidores atingidos', 'Mais de 63 mil públicos'], ['Páginas na web', 'A partir de 16/11'], ['Mensagens em buscadores', 'A partir de meados de dezembro'], ['No Brasil', 'Desligado por padrão']] },
   sources: [['TechCrunch', U.tcDiscord]] },
 
-{ id: 'facebook-cobra-links-paginas-meta-one', cat: 'atualizacoes', own: false, t: '2026-10-23T16', d: '23 out 2026', img: 'plataforma', src: 'Engadget', url: U.egFbLinks,
-  title: 'Meta testa cobrar de páginas do Facebook para publicar links, e ONGs e prefeituras dos EUA são atingidas',
-  sum: 'No teste, as páginas têm direito a 2 links por mês antes de receber a oferta da assinatura Meta One, com planos de US$ 14,99 a US$ 499,99 por mês.',
-  body: [
-    'A Meta diz que páginas de ONGs e de governos não deveriam entrar no teste, mas algumas entraram, como a da prefeitura de Greenville, no Texas, segundo o Engadget. Os casos relatados são dos EUA, e a fonte não fala do Brasil.'
-  ] },
-
-{ id: 'google-anuncios-gmail-fotos-personal-intelligence', cat: 'atualizacoes', own: false, t: '2026-10-24T10', d: '24 out 2026', img: 'plataforma', src: 'Decrypt', url: U.dcGoogleAds,
-  title: 'Google muda a política de privacidade: Gmail e Fotos podem influenciar anúncios se ligados ao Gemini',
-  sum: 'Por padrão, o conteúdo continua fora dos anúncios. Isso muda se o usuário conectar Gmail, Drive ou Fotos a recursos de IA como o Gemini.',
-  body: [
-    'A nova política vale desde 16 de outubro. Para desligar, o usuário pode desconectar os apps em "Dados e privacidade" ou desativar os anúncios personalizados.'
-  ] },
-
-{ id: 'meta-account-substitui-central-de-contas', cat: 'atualizacoes', own: false, t: '2026-10-27T06', d: '27 out 2026', img: 'plataforma', src: 'ABC News', url: U.abcMetaAcc,
-  title: 'Meta começa a trocar a Central de Contas pelo "Meta Account", sem opção de recusa',
-  sum: 'A conta reúne Facebook, Messenger, Instagram, Threads e Meta AI. O WhatsApp só entra se o usuário quiser ou se já estava ligado.',
-  body: [
-    'O usuário escolhe quais perfis ficam em cada conta, e as configurações de cada app continuam separadas. Especialistas ouvidos pela emissora australiana apontam riscos de privacidade.'
-  ] },
-
 { id: 'whatsapp-organizacoes-comunidades', cat: 'atualizacoes', own: false, t: '2026-10-26T12', d: '26 out 2026', img: 'celular', src: 'WABetaInfo', url: U.wbiOrgs,
   title: 'WhatsApp desenvolve "Organizações", painel para administrar comunidades grandes',
   sum: 'O recurso foi encontrado na versão beta 2.26.43.1 para Android e mostra aos administradores a lista de membros e os subgrupos de cada um.',
@@ -329,6 +339,27 @@ const NEWS = [
   ] },
 
 /* ===================== IA ===================== */
+{ id: 'chatgpt-pro-limites-dobrados', cat: 'ia', own: false, t: '2026-10-29T20', d: '29 out 2026', img: 'tecnologia', src: 'BleepingComputer', url: U.bcProLimites,
+  title: 'OpenAI desiste de reduzir uso do ChatGPT Pro e dobra os limites depois de reclamações',
+  sum: 'Os limites dobram nos planos Pro de US$ 100, US$ 200 e US$ 500 por mês e no Business Premium. A empresa não divulga os números exatos.',
+  body: [
+    'A OpenAI pretendia reduzir o uso incluído no plano Pro de US$ 200 depois de 29 de outubro. Depois das críticas, voltou atrás. A mudança vale principalmente para o ChatGPT Work e o Codex, que dividem os limites. Os agentes dots continuam com limites próprios, segundo o BleepingComputer.'
+  ] },
+
+{ id: 'alexa-recursos-compras', cat: 'ia', own: false, t: '2026-10-29T10', d: '29 out 2026', img: 'tecnologia', src: 'TechCrunch', url: U.tcAlexa,
+  title: 'Amazon dá à Alexa mais de 100 recursos de compras, como listas, assinaturas e endereço de entrega',
+  sum: 'O usuário pode criar listas, mudar a frequência de uma assinatura e alterar instruções de entrega por voz. A fonte não cita países.',
+  body: [
+    'Segundo a Amazon, o uso dos recursos em que a Alexa age pelo usuário cresceu 8 vezes desde o começo do ano, e mais de 400 milhões de pessoas usaram a assistente para compras nos últimos 12 meses, segundo o TechCrunch.'
+  ] },
+
+{ id: 'xreal-aura-android-xr', cat: 'ia', own: false, t: '2026-10-28T12', d: '28 out 2026', img: 'tecnologia', src: 'Android Central', url: U.acXreal,
+  title: 'Óculos Xreal Aura, com Android XR e Gemini, começam a ser vendidos a partir de US$ 1.099',
+  sum: 'As entregas começam em meados de novembro. A venda é só nos EUA, no Canadá, no Japão e na Coreia do Sul.',
+  body: [
+    'São duas versões, de US$ 1.099 e US$ 1.299, preços válidos até dezembro. Depois, passam a US$ 1.279 e US$ 1.499, segundo o Android Central. Os óculos usam o sistema Android XR, do Google.'
+  ] },
+
 { id: 'google-apps-conectados-gemini-busca', cat: 'ia', own: false, t: '2026-10-28T12', d: '28 out 2026', img: 'tecnologia', src: '9to5Google', url: U.g9Connected,
   title: 'Google abre o Gemini e a Busca a mais apps de outras empresas, em prévia para desenvolvedores',
   sum: 'O app Gemini já tem mais de 50 apps conectados, como Dropbox, OpenTable e Ticketmaster. Eles também vão passar a funcionar na Busca.',
@@ -398,20 +429,6 @@ const NEWS = [
     'Segundo a OpenAI, citada pelo 9to5Mac, o recurso está em todos os planos do ChatGPT. Só funcionam endereços @icloud.com, @me.com e @mac.com, e a fonte não confirma a disponibilidade no Brasil.'
   ] },
 
-{ id: 'espolio-elvis-processa-anthropic', cat: 'ia', own: false, t: '2026-10-26T14', d: '26 out 2026', img: 'arte', src: 'Engadget', url: U.egElvis,
-  title: 'Donos do catálogo de Elvis Presley processam a Anthropic por uso de músicas no treino de IA',
-  sum: 'A ação pede US$ 41 milhões de indenização. A Anthropic diz que discorda das acusações e vai se defender.',
-  body: [
-    'Os autores, entre eles a Authentic Brands Group, acusam a empresa de usar músicas como "Can\'t Help Falling in Love" sem autorização. A Anthropic já defendeu antes que esse tipo de treino é uso justo.'
-  ] },
-
-{ id: 'apple-assistente-ia-pages-keynote-numbers', cat: 'ia', own: false, t: '2026-10-27T12', d: '27 out 2026', img: 'tecnologia', src: 'Apple', url: U.apCreator,
-  title: 'Apple vai colocar assistente de IA, em teste, no Pages, no Keynote e no Numbers',
-  sum: 'O assistente combina modelos da Apple e da OpenAI e chega em novembro, só em inglês dos EUA, para assinantes do Apple Creator Studio.',
-  body: [
-    'O Creator Studio custa US$ 12,99 por mês ou US$ 129 por ano. A atualização exige iOS, iPadOS ou macOS 27 em aparelhos compatíveis com a Apple Intelligence.'
-  ] },
-
 { id: 'google-genie-4', cat: 'ia', own: false, t: '2026-10-27T13', d: '27 out 2026', img: 'tecnologia', src: 'TechCrunch', url: U.tcGenie,
   title: 'Google apresenta o Genie 4, IA que cria mundos interativos com som e mudanças em tempo real',
   sum: 'O usuário pode mudar o clima, a câmera ou objetos da cena por texto, e o cenário se mantém coerente por até 2 minutos, o dobro do Genie 3.',
@@ -419,26 +436,55 @@ const NEWS = [
     'Por enquanto, é uma prévia de pesquisa para testadores escolhidos. Nas próximas semanas, chega aos assinantes do Google AI Ultra pelo Project Genie.'
   ] },
 
-{ id: 'malware-falsos-apps-chatgpt-claude', cat: 'ia', own: false, t: '2026-10-27T10', d: '27 out 2026', img: 'tecnologia', src: 'Check Point Research', url: U.cpYoba,
-  title: 'Falsos programas do ChatGPT e do Claude no GitHub instalam minerador de criptomoedas no Windows',
-  sum: 'Os golpistas usam nomes como "GPT-6 Astra" e "Claude Opus" e aparecem bem posicionados nas buscas. O pacote inclui instaladores legítimos para enganar o sistema.',
+/* ===================== STARTUPS ===================== */
+{ id: 'doordash-compra-instacart', cat: 'startups', own: true, t: '2026-10-29T10', d: '29 out 2026', img: 'mercado', read: 3,
+  title: 'DoorDash compra o Instacart por US$ 17 bilhões e vai juntar entrega de refeições e de supermercado',
+  sum: 'O preço é de US$ 65 por ação, com pelo menos 75% em dinheiro. A marca e o app do Instacart continuam, e a conclusão deve ficar para o fim de 2027 ou 2028.',
   body: [
-    'O programa malicioso instala o minerador XMRig, que usa o computador da vítima para gerar criptomoedas. A Check Point não informou o número de vítimas.'
+    'A DoorDash, maior app de entrega de comida dos EUA, anunciou em 29 de outubro a compra do Instacart, de compras de supermercado, por cerca de US$ 17 bilhões, segundo o TechCrunch. Os acionistas do Instacart vão receber US$ 65 por ação, e pelo menos 75% do pagamento será em dinheiro, segundo o comunicado da DoorDash.',
+    '## O que muda para o usuário',
+    'Por enquanto, nada: as empresas seguem separadas até a conclusão. A DoorDash diz que vai manter a marca e o app do Instacart. Segundo o NeoFeed, o plano é reunir os benefícios das assinaturas DashPass e Instacart+ numa cobrança só, e os supermercados vão poder continuar trabalhando com outras plataformas.',
+    '## Prazo',
+    'Os conselhos das duas empresas aprovaram o negócio. A conclusão está prevista para o fim de 2027 ou o primeiro semestre de 2028 e depende dos órgãos reguladores e dos acionistas do Instacart. Antes, o Instacart chegou a conversar com a Uber, mas desistiu, segundo reportagem da Bloomberg citada pelo TechCrunch.',
+    '## Os números da DoorDash',
+    'No mesmo dia, a DoorDash divulgou o resultado do terceiro trimestre: receita de US$ 4,6 bilhões, alta de 34%, e 993 milhões de pedidos, alta de 28%. O lucro foi de US$ 466 milhões, alta de 91%. Segundo o NeoFeed, a compra mira concorrentes como Amazon e Walmart.'
+  ],
+  box: { type: 'facts', title: 'O negócio', rows: [['Valor', 'Cerca de US$ 17 bilhões'], ['Por ação', 'US$ 65'], ['Pagamento', 'Ao menos 75% em dinheiro'], ['Conclusão prevista', 'Fim de 2027 ou 1º semestre de 2028'], ['App do Instacart', 'Continua']] },
+  sources: [['TechCrunch', U.tcDoorDash], ['NeoFeed', U.nfDoorDash], ['DoorDash (comunicado)', U.secDoorDash]] },
+
+{ id: 'amazon-3tri-2026', cat: 'startups', own: false, t: '2026-10-29T18', d: '29 out 2026', img: 'mercado', src: 'Amazon (comunicado)', url: U.bwAmazon,
+  title: 'Amazon vende US$ 201,9 bilhões no trimestre, e a nuvem AWS cresce 39%',
+  sum: 'As vendas subiram 12%. A AWS faturou US$ 46 bilhões, e a publicidade, US$ 19,6 bilhões.',
+  body: [
+    'O lucro líquido foi de US$ 20,7 bilhões, um pouco abaixo dos US$ 21,2 bilhões de um ano antes, quando a empresa teve ganhos com o investimento na Anthropic. Para o quarto trimestre, a Amazon prevê vendas de US$ 240 bilhões a US$ 247 bilhões, segundo o comunicado.'
   ] },
 
-/* ===================== STARTUPS ===================== */
+{ id: 'reddit-3tri-2026', cat: 'startups', own: false, t: '2026-10-29T17', d: '29 out 2026', img: 'mercado', src: 'Reddit (comunicado)', url: U.secReddit,
+  title: 'Receita do Reddit cresce 53% no trimestre, e usuários de fora dos EUA sobem 24%',
+  sum: 'A empresa faturou US$ 895 milhões e lucrou US$ 283 milhões. Tem 130,3 milhões de usuários por dia, mas o número caiu 2% nos EUA.',
+  body: [
+    'Os usuários diários de fora dos EUA chegaram a 79,6 milhões, e os dos EUA ficaram em 50,7 milhões. Para o quarto trimestre, a empresa prevê receita de US$ 1 bilhão a US$ 1,03 bilhão, segundo o comunicado.'
+  ] },
+
+{ id: 'coreia-do-sul-multa-apple-google', cat: 'startups', own: false, t: '2026-10-28T09', d: '28 out 2026', img: 'plataforma', src: 'MacRumors', url: U.mrCoreia,
+  title: 'Coreia do Sul multa Apple e Google e manda liberar links para pagamento fora das lojas de apps',
+  sum: 'A Apple foi multada em 20,8 bilhões de wons, e o Google, em 42,9 bilhões. A Apple discorda e avalia recorrer.',
+  body: [
+    'O órgão regulador diz que as duas empresas cobravam comissão de 26% em pagamentos alternativos e limitavam recursos, o que fere uma lei de 2021. Elas também terão de melhorar a análise dos apps, segundo o MacRumors. A fonte não informa prazo.'
+  ] },
+
+{ id: 'tractian-serie-d', cat: 'startups', own: false, t: '2026-10-24T10', d: '24 out 2026', img: 'mercado', src: 'Bloomberg Línea', url: U.blTractian,
+  title: 'Brasileira Tractian capta US$ 130 milhões e passa a valer US$ 1,4 bilhão',
+  sum: 'A empresa de sensores e IA para manutenção de máquinas passou de US$ 100 milhões em receita anual. Metade vem de fora do Brasil.',
+  body: [
+    'A rodada série D foi liderada pela Sapphire Ventures. O dinheiro vai para novos sensores, treino de modelos de IA e expansão nos EUA e na Europa, segundo o Bloomberg Línea.'
+  ] },
+
 { id: 'gaio-social-selling-g4', cat: 'startups', own: false, t: '2026-10-27T11', d: '27 out 2026', img: 'mercado', src: 'Startups', url: U.stGaio,
   title: 'Brasileira Gaio, de vendas por mensagem nas redes sociais, capta R$ 5,5 milhões em rodada liderada pelo G4',
   sum: 'A plataforma tem cerca de 5 mil clientes, entre marcas e criadores. O dinheiro vai para uma versão baseada em IA e para uma área de consultoria.',
   body: [
     'O produto tem um ranking dos seguidores mais engajados, uma caixa de entrada com IA e uma ferramenta para automatizar vendas por mensagem. O G4, que liderou a rodada seed, também é cliente: diz que as vendas pelas mensagens diretas do Instagram cresceram 10 vezes e rendem cerca de R$ 4 milhões por mês, segundo o Startups.'
-  ] },
-
-{ id: 'jio-platforms-estreia-bolsa', cat: 'startups', own: false, t: '2026-10-28T08', d: '28 out 2026', img: 'mercado', src: 'Upstox', url: U.upJio,
-  title: 'Jio Platforms, do grupo Reliance, estreia na bolsa da Índia com alta de 21%',
-  sum: 'A oferta levantou ₹30.213 crore e passou a valer cerca de ₹13,05 lakh crore. É a segunda empresa mais valiosa do país.',
-  body: [
-    'As ações foram vendidas a ₹1.119 e abriram a ₹1.358 nas bolsas indianas NSE e BSE. A empresa fica atrás só da própria Reliance em valor de mercado, segundo o Upstox. O resultado do trimestre sai em 30 de outubro.'
   ] },
 
 { id: 'microsoft-resultado-azure-48', cat: 'startups', own: false, t: '2026-10-28T18', d: '28 out 2026', img: 'mercado', src: 'Microsoft', url: U.msResultados,
@@ -482,28 +528,6 @@ const NEWS = [
   box: { type: 'facts', title: 'O prospecto', rows: [['Receita (1º sem. 2026)', 'US$ 16,3 bilhões'], ['Prejuízo líquido', 'US$ 80,7 bilhões'], ['Efeito contábil no prejuízo', 'Cerca de US$ 72,4 bilhões'], ['Bolsa e código', 'Nasdaq, ANT'], ['Funcionários', '5.300 em setembro']] },
   sources: [['InfoMoney (Bloomberg)', U.imAnt27], ['Fortune', U.fortuneAnt27], ['TechCrunch', U.tcAntVcs]] },
 
-{ id: 'apple-australia-lojas-alternativas', cat: 'startups', own: false, t: '2026-10-23T09', d: '23 out 2026', img: 'plataforma', src: 'MacRumors', url: U.mrAus,
-  title: 'Justiça da Austrália manda a Apple liberar lojas de apps rivais e pagamentos alternativos no iPhone',
-  sum: 'A partir de março de 2027, australianos poderão baixar apps de outras lojas e de sites. A Apple vai recorrer. O Fortnite anunciou a volta à App Store do país.',
-  body: [
-    'A decisão do Tribunal Federal da Austrália, de 22 de outubro, vale a partir de 1º de março de 2027, e a Apple pode pedir prorrogação até 3 de maio. Os apps distribuídos por fora da App Store vão passar por uma verificação automática de segurança e privacidade, segundo o MacRumors.'
-  ] },
-
-{ id: 'robinhood-3tri-2026', cat: 'startups', own: true, t: '2026-10-27T20', d: '27 out 2026', img: 'mercado', read: 2,
-  title: 'Robinhood bate recorde de receita, com US$ 1,42 bilhão no trimestre, e mercados de previsão crescem mais de seis vezes',
-  sum: 'O lucro caiu 14%, para US$ 476 milhões, e a receita ficou um pouco abaixo do esperado por analistas. A ação recuou cerca de 7% depois do fechamento.',
-  body: [
-    'A Robinhood, app americano de investimentos, divulgou em 27 de outubro os resultados do terceiro trimestre de 2026. A receita foi de US$ 1,42 bilhão, alta de 12% em um ano e recorde para a empresa, segundo o comunicado oficial. O lucro líquido caiu 14%, para US$ 476 milhões.',
-    '## De onde vem o dinheiro',
-    'A receita com transações subiu 19%, para US$ 867 milhões. Os contratos de eventos, usados nos mercados de previsão, renderam US$ 173 milhões, mais de seis vezes o valor de um ano antes. Opções somaram US$ 399 milhões, e ações, US$ 121 milhões. A receita com criptomoedas caiu 55%, para US$ 120 milhões.',
-    '## Clientes',
-    'O app tem 28,7 milhões de clientes com dinheiro na conta, alta de 7%. Os assinantes do plano Gold chegaram a 5,2 milhões, alta de 34%. Os ativos na plataforma somam US$ 396 bilhões.',
-    '## A reação',
-    'Analistas esperavam receita de US$ 1,43 bilhão, segundo o Investing.com. A ação caiu 7,36% nas negociações depois do fechamento, para US$ 87,60.'
-  ],
-  box: { type: 'facts', title: 'Robinhood no 3º trimestre', rows: [['Receita', 'US$ 1,42 bilhão (+12%)'], ['Lucro líquido', 'US$ 476 milhões (-14%)'], ['Mercados de previsão', 'US$ 173 milhões (mais de 6 vezes)'], ['Criptomoedas', 'US$ 120 milhões (-55%)'], ['Assinantes Gold', '5,2 milhões (+34%)']] },
-  sources: [['Robinhood (comunicado)', U.gnRobinhood], ['Investing.com', U.invRobinhood]] },
-
 { id: 'itau-compra-neospace', cat: 'startups', own: false, t: '2026-10-26T15', d: '26 out 2026', img: 'mercado', src: 'Mobile Time', url: U.mtItau,
   title: 'Itaú compra a startup brasileira de IA NeoSpace por R$ 2,9 bilhões',
   sum: 'A NeoSpace, fundada em 2023, desenvolve modelos de IA para crédito, gestão financeira e detecção de fraudes. O negócio depende do Cade e do Banco Central.',
@@ -511,21 +535,37 @@ const NEWS = [
     'O fundador, Bruno Pierobon, segue como CEO, com gestão autônoma. Ele também fundou a Zup, comprada pelo Itaú em 2019.'
   ] },
 
-{ id: 'paypal-3tri-2026', cat: 'startups', own: false, t: '2026-10-27T13', d: '27 out 2026', img: 'mercado', src: 'PayPal (comunicado à SEC)', url: U.secPaypal,
-  title: 'PayPal eleva a previsão de lucro para 2026 depois de receita de US$ 8,6 bilhões no trimestre',
-  sum: 'O volume de pagamentos cresceu 6%, para US$ 487,1 bilhões. A empresa tem 440 milhões de contas ativas.',
-  body: [
-    'A previsão de lucro ajustado por ação em 2026 passou de cerca de US$ 5,38 para cerca de US$ 5,60. No trimestre, a empresa recomprou US$ 1,5 bilhão em ações.'
-  ] },
-
-{ id: 'guidewire-compra-hyperexponential', cat: 'startups', own: false, t: '2026-10-27T12', d: '27 out 2026', img: 'mercado', src: 'TechCrunch', url: U.tcGuidewire,
-  title: 'Guidewire compra a britânica Hyperexponential, de IA para seguradoras, por US$ 1,7 bilhão',
-  sum: 'O valor pode chegar a cerca de US$ 2 bilhões com pagamentos extras ligados a metas de receita. A conclusão está prevista para 2027.',
-  body: [
-    'Fundada em 2017, a Hyperexponential tem software usado por cerca de 600 seguradoras em 40 países.'
-  ] },
-
 /* ===================== IDEIAS PARA O BRASIL ===================== */
+{ id: 'medikea-teleconsulta-clinicas-proprias', cat: 'ideias', own: true, t: '2026-10-29T08', d: '29 out 2026', img: 'ciencia', read: 3,
+  title: 'Na Tanzânia, a Medikea junta app de teleconsulta com clínicas, laboratórios e farmácias próprios e capta US$ 1,2 milhão',
+  sum: 'Em vez de só ligar pacientes a médicos, a startup é dona dos lugares de atendimento e contrata a equipe. Quer passar de 4 para 10 clínicas até o fim de 2027.',
+  body: [
+    'A Medikea, startup de saúde da Tanzânia, captou US$ 1,2 milhão numa rodada pré-seed liderada por Baobab Network, Catalyst Fund e develoPPP Ventures, segundo o TechMoran. Também entraram Madica, Impacc, Hustle Fund, O\'Shaughnessy Ventures, Madiro e um investidor-anjo. O cofundador e presidente-executivo é o médico Elvis Silayo.',
+    '## Como funciona',
+    'O app oferece consultas virtuais 24 horas por dia. Ao mesmo tempo, a empresa tem clínicas, laboratórios de exames e farmácias próprios, com médicos assalariados, e desenvolve a própria tecnologia. O foco são consultas e tratamentos sem internação: clínica geral, pediatria, saúde da mulher, dermatologia, fertilidade e doenças crônicas. Casos de internação e cirurgia vão para hospitais parceiros.',
+    'A Medikea atende quem paga do próprio bolso e quem tem plano, com convênios como o fundo nacional de seguro-saúde do país (NHIF), e seguradoras privadas. A empresa diz que cobra menos que serviços privados parecidos, mas não divulgou preços.',
+    '## Os planos',
+    'Com as novas unidades em Arusha e Morogoro, a rede chega a 4 clínicas. A meta é ter 10 clínicas na Tanzânia até o fim de 2027 e atender mais de 100 mil pacientes nos próximos 12 meses. Depois, a empresa quer ir para outros países da África.',
+    '## Por que olhar para o Brasil',
+    'Análise da redação: no Brasil, a telemedicina e as clínicas populares costumam ser negócios separados. Juntar o atendimento pelo app com unidades próprias, para quem paga do próprio bolso e para quem tem plano, é um modelo que redes regionais de saúde podem estudar. O desafio é o custo de abrir e manter unidades físicas, que cresce mais devagar que um app.'
+  ],
+  box: { type: 'facts', title: 'Medikea', rows: [['País', 'Tanzânia'], ['Captação', 'US$ 1,2 milhão (pré-seed)'], ['Modelo', 'App + clínicas, laboratórios e farmácias próprios'], ['Clínicas', '4, com meta de 10 até o fim de 2027'], ['Meta de pacientes', 'Mais de 100 mil em 12 meses']] },
+  sources: [['TechMoran', U.tmMedikea], ['The Condia', U.cdMedikea]] },
+
+{ id: 'aqar-exit-repasse-imovel-na-planta', cat: 'ideias', own: false, t: '2026-10-19T12', d: '19 out 2026', img: 'mercado', src: 'Wamda', url: U.wmAqar,
+  title: 'No Egito, a Aqar Exit ajuda quem não consegue pagar o imóvel na planta a repassar o contrato',
+  sum: 'Quem vende recupera o que já pagou, e quem compra fica com o preço original do contrato. A empresa recebeu investimento que a avalia em cerca de US$ 2 milhões.',
+  body: [
+    'A plataforma foi criada em julho de 2026. Um empresário comprou 10% da empresa por 10 milhões de libras egípcias, cerca de US$ 200 mil, depois de uma apresentação no programa Shark Tank Egito. Segundo o Wamda, a empresa diz ter mais de 14,8 mil contratos anunciados por 11,8 mil vendedores.'
+  ] },
+
+{ id: 'travclan-agencias-de-viagem', cat: 'ideias', own: false, t: '2026-10-23T10', d: '23 out 2026', img: 'mundo', src: 'CXO Digital Pulse', url: U.cxoTravclan,
+  title: 'Indiana TravClan dá a pequenas agências de viagem preços negociados de hotéis e passeios e capta US$ 5 milhões',
+  sum: 'A plataforma tem mais de 15 mil agentes na Índia, cerca de 40% em cidades menores, e mais de US$ 100 milhões em vendas por ano.',
+  body: [
+    'A empresa fecha contratos direto com hotéis e fornecedores de passeios e tem equipes locais na Índia, no Sudeste Asiático e no Oriente Médio. A rodada teve Flipkart, August One e Trifecta Capital, segundo o CXO Digital Pulse.'
+  ] },
+
 { id: 'zorit-estoque-para-lojinhas', cat: 'ideias', own: false, t: '2026-10-28T12', d: '28 out 2026', img: 'mercado', src: 'Entrackr', url: U.enZorit,
   title: 'Indiana Zorit entrega estoque a pequenas lojas em até 60 minutos e capta quase ₹27 crore',
   sum: 'A empresa, que se chamava Bijnis, tem 12 armazéns em 12 cidades e vendas anualizadas de ₹120 crore.',
@@ -539,22 +579,6 @@ const NEWS = [
   body: [
     'O app liga usuários a astrólogos em consultas pagas por chat, ligação ou vídeo, que geram cerca de 91% da receita. A empresa também tem uma loja de produtos. A receita de fora da Índia chegou a ₹621 crore, 34% do total, segundo o Entrackr.'
   ] },
-
-{ id: 'onto-reembolso-preco-hotel', cat: 'ideias', own: true, t: '2026-10-21T12', d: '21 out 2026', img: 'mundo', read: 2,
-  title: 'Indiana Onto devolve a diferença se o preço do hotel cair depois da reserva, e capta US$ 1 milhão',
-  sum: 'O app acompanha as tarifas depois da compra e, se o mesmo quarto ficar mais barato, devolve a diferença. Também vale para reservas feitas em outros sites.',
-  body: [
-    'A Onto, startup de viagens de Bengaluru, na Índia, captou US$ 1 milhão numa rodada pré-seed liderada pelo Stargazer Fund, com participação da White Venture Capital, de Singapura, segundo o Ascendants. A empresa foi fundada em junho de 2026 por Jagdeep Singh e Shubham Goyal, que trabalharam no app de investimentos Groww, segundo a Open Magazine.',
-    '## Como funciona',
-    'O primeiro produto se chama Price Drop Refund. Depois da reserva, a Onto continua acompanhando o preço. Se o mesmo quarto, nas mesmas datas, ficar mais barato, a diferença volta para o meio de pagamento original. Segundo a Open Magazine, o sistema confere as tarifas duas ou três vezes por dia e, se achar um preço menor antes do fim do prazo de cancelamento, refaz a reserva sozinho.',
-    'O serviço também vale para reservas feitas em outras plataformas: o viajante envia a confirmação que já tem. Os avisos chegam pelo WhatsApp e pelo app. A Onto ganha comissão dos hotéis.',
-    '## Os limites',
-    'A reserva precisa poder ser cancelada, e tarifas flexíveis podem sair mais caras, lembra a Open Magazine. A empresa não divulgou número de usuários nem de reservas. A ideia não é inédita: o Tingo, lançado em 2012 por uma empresa do grupo TripAdvisor, usava um mecanismo parecido.',
-    '## Por que olhar para o Brasil',
-    'Análise da redação: acompanhar o preço depois da compra e avisar o viajante por mensagem, inclusive em reservas feitas em outros sites, é uma ideia que agências e startups de turismo podem testar. O modelo depende de tarifas canceláveis e de acesso aos preços dos hotéis em tempo real.'
-  ],
-  box: { type: 'facts', title: 'Onto', rows: [['Captação', 'US$ 1 milhão (pré-seed)'], ['Fundação', 'Junho de 2026'], ['Produto', 'Reembolso se o preço cair'], ['Condição', 'Reserva cancelável']] },
-  sources: [['Ascendants', U.ascOnto], ['Open Magazine', U.openOnto]] },
 
 { id: 'furtilo-delivery-mensalidade', cat: 'ideias', own: true, t: '2026-10-21T10', d: '21 out 2026', img: 'mundo', read: 3,
   title: 'Na Índia, o app de entregas Furtilo cobra mensalidade fixa das lojas, em vez de comissão, e mira cidades pequenas',
@@ -570,20 +594,6 @@ const NEWS = [
   ],
   box: { type: 'facts', title: 'Furtilo', rows: [['Sede', 'Bengaluru, Índia'], ['Cobrança', 'A partir de ₹99 por mês, sem comissão'], ['Cidades', 'Mais de 37'], ['Pedidos', 'Mais de 6 mil por mês'], ['Meta', '500 cidades até meados de 2028']] },
   sources: [['StartupTalky', U.stkFurtilo], ['UNI India (comunicado da empresa)', U.uniFurtilo]] },
-
-{ id: 'india-farmer-id-agristack', cat: 'ideias', own: false, t: '2026-10-26T09', d: '26 out 2026', img: 'mundo', src: 'The News Mill', url: U.tnmFarmer,
-  title: 'Índia cria 110 milhões de identidades digitais de agricultores, cinco meses antes do prazo',
-  sum: 'Cada agricultor recebe um número que dá acesso a programas do governo, crédito, seguro rural e auxílio em desastres, sem repetir a checagem de documentos.',
-  body: [
-    'A marca foi atingida até 23 de outubro, e a meta era 31 de março de 2027, segundo o The News Mill. O cadastro faz parte da Missão de Agricultura Digital do governo indiano.'
-  ] },
-
-{ id: 'even-saude-hospital-proprio', cat: 'ideias', own: false, t: '2026-10-19T12', d: '19 out 2026', img: 'mundo', src: 'YourStory', url: U.ysEven,
-  title: 'Na Índia, a Even junta plano de saúde e hospital próprio e capta US$ 50 milhões',
-  sum: 'A startup de Bengaluru tem mais de 250 mil membros em 10 cidades e dois hospitais próprios.',
-  body: [
-    'A rodada foi liderada pela Khosla Ventures, que já era sócia, com participação da Alpha Wave. Com ela, a empresa soma mais de US$ 120 milhões captados, segundo o YourStory.'
-  ] },
 
 { id: 'maasi-baba-por-assinatura', cat: 'ideias', own: true, t: '2026-10-27T10', d: '27 out 2026', img: 'mundo', read: 3,
   title: 'Na Índia, a Maasi treina e verifica babás e oferece o serviço por hora ou por assinatura',
@@ -623,6 +633,50 @@ const NEWS = [
   ] },
 
 /* ===================== NO BRASIL ===================== */
+{ id: 'cripto-licenca-fim-do-prazo-lista', cat: 'brasil', own: true, t: '2026-10-30T07', d: '30 out 2026', img: 'celular', read: 3,
+  title: 'Termina nesta sexta (30) o prazo para corretoras de cripto pedirem licença ao BC; Mercado Bitcoin, Foxbit e Coinbase estão entre as que pediram',
+  sum: 'Um levantamento lista 39 empresas, mas não são todos pedidos confirmados. Pedir não é o mesmo que ter autorização, e o BC já negou um pedido.',
+  body: [
+    'As empresas que já oferecem compra, venda ou guarda de criptomoedas no Brasil têm até esta sexta-feira (30) para pedir autorização ao Banco Central, segundo o BitNotícias. As regras estão nas Resoluções 519, 520 e 521 do BC. Quem não pedir perde o direito de operar.',
+    '## Quem pediu',
+    'O BitNotícias acompanha 39 empresas e instituições, mas avisa que não são 39 pedidos confirmados: a lista mistura pedidos feitos, anúncios e intenções. Ripio e Mercado Bitcoin fizeram o pedido em 27 de outubro. Foxbit e Urban pediram em 28 de outubro, quando a Ripple também confirmou o pedido. A Coinbase confirmou o seu em 29 de outubro. A Binance pediu em 23 de outubro, por meio da empresa local BBrasil.',
+    'Itaú, Banco Inter e Nubank também aparecem na lista. A Nu Pagamentos, que já tem autorização do BC, pode usar um procedimento mais simples, segundo o site. B3 e Bradesco anunciaram a intenção de se regularizar.',
+    '## Pedido negado',
+    'O BC negou o pedido da Higherway Tech, sem motivo divulgado. Para receber a autorização, as empresas precisam mostrar capacidade financeira, controles internos, proteção do dinheiro dos clientes e mecanismos contra lavagem de dinheiro.',
+    '## As próximas datas',
+    'A partir de 6 de novembro, bancos e instituições de pagamento não podem trabalhar com prestadoras sem autorização nem pedido em andamento, segundo a Resolução 589. Algumas empresas preferiram sair: clientes do Méliuz tinham até esta sexta para vender seus bitcoins, e a NovaDAX encerra os saques de criptomoedas na mesma data, segundo o BitNotícias.'
+  ],
+  box: { type: 'table', title: 'Quem pediu e quando', head: ['Data', 'Empresa'], rows: [['23/10', 'Binance (BBrasil)'], ['27/10', 'Ripio e Mercado Bitcoin'], ['28/10', 'Foxbit, Urban e Ripple'], ['29/10', 'Coinbase'], ['30/10', 'Fim do prazo'], ['6/11', 'Bancos não podem atender prestadoras sem pedido']], note: 'Fontes: BitNotícias e FinanceFeeds.' },
+  sources: [['BitNotícias', U.bnCripto39], ['BitNotícias', U.bnCripto33], ['BitNotícias', U.bnCripto26], ['BitNotícias', U.bnCripto10], ['FinanceFeeds', U.ffCripto]] },
+
+{ id: 'pix-mei-golpe-cadastro', cat: 'brasil', own: false, t: '2026-10-29T13', d: '29 out 2026', img: 'celular', src: 'Agência Brasil', url: U.abPixMei,
+  title: 'Governo alerta: cadastro do Pix MEI não começou, e mensagens com link são golpe',
+  sum: 'O programa, de até R$ 5 mil por beneficiário, só começa em 2027. É falsa a informação de parcelas de R$ 400.',
+  body: [
+    'Segundo o ministro do Empreendedorismo, Paulo Pereira, as regras saem até o fim de 2026, e a prioridade será para mulheres empreendedoras e MEIs de menor faturamento. Dados pessoais e bancários só devem ser informados na página oficial do programa Prospera MEI.'
+  ] },
+
+{ id: 'bc-liquida-mw-pay', cat: 'brasil', own: false, t: '2026-10-29T12', d: '29 out 2026', img: 'mercado', src: 'SBT News', url: U.sbtMwPay,
+  title: 'Banco Central liquida a MW Pay, empresa de pagamentos de Joinville que oferecia serviços ligados ao Pix',
+  sum: 'O BC cita "graves violações" às regras do sistema de pagamentos, sem detalhar quais. Os bens dos donos ficaram bloqueados.',
+  body: [
+    'A empresa tinha autorização para emitir moeda eletrônica desde setembro de 2024 e menos de 0,0002% dos ativos do sistema financeiro. A reportagem não informa o efeito sobre os clientes, e a empresa não respondeu ao SBT News.'
+  ] },
+
+{ id: '99food-uberlandia-araguari', cat: 'brasil', own: false, t: '2026-10-29T12', d: '29 out 2026', img: 'celular', src: 'O Tempo', url: U.otNoveNove,
+  title: '99Food começa a funcionar em Uberlândia e Araguari, em Minas, com 1,8 mil restaurantes',
+  sum: 'São cerca de 1,7 mil entregadores parceiros, e o tempo médio de entrega é de 29 minutos em até 5 km.',
+  body: [
+    'Com as duas cidades, o app de entregas da 99 está em cerca de 120 municípios, segundo O Tempo. A reportagem não informa taxas nem promoções.'
+  ] },
+
+{ id: 'picpay-vendedor-ia-whatsapp', cat: 'brasil', own: false, t: '2026-10-27T15', d: '27 out 2026', img: 'celular', src: 'TI Inside', url: U.tiPicpay,
+  title: 'PicPay lança vendedor com IA no WhatsApp e loja online grátis para pequenas empresas',
+  sum: 'As ferramentas são para clientes do PicPay Empresas. O vendedor responde por texto e áudio e leva a conversa até o pagamento.',
+  body: [
+    'A loja online é criada com IA e aceita Pix, cartão e QR Code. O lançamento é gradual. O app tem mais de 70 milhões de usuários, segundo o TI Inside.'
+  ] },
+
 { id: 'black-friday-golpes-serasa', cat: 'brasil', own: false, t: '2026-10-28T11', d: '28 out 2026', img: 'celular', src: 'Mobile Time', url: U.mtSerasa,
   title: 'Na Black Friday de 2025, anúncios falsos cresceram 147% e apps fraudulentos, 62%, diz a Serasa',
   sum: 'Foram 36,2 mil tentativas de fraude e R$ 37,4 milhões em risco. 86% dos consumidores já deixaram de aproveitar uma oferta por medo de golpe.',
@@ -667,53 +721,10 @@ const NEWS = [
   box: { type: 'facts', title: 'Os prazos da biometria', rows: [['Novas linhas pré-pagas', 'Até 30/9/2027'], ['Pós-pago, portabilidade e troca de chip', 'Até 31/12/2027'], ['Clientes atuais', 'Até 31/12/2028'], ['Linhas não validadas', 'Suspensão a partir de janeiro de 2029']] },
   sources: [['Anatel', U.anBio], ['Teletime', U.ttBio], ['Telesíntese', U.tsBio], ['Canaltech', U.ctBio]] },
 
-{ id: 'bc-regras-credito-no-pix', cat: 'brasil', own: false, t: '2026-10-23T18', d: '23 out 2026', img: 'celular', src: 'Agência Brasil', url: U.abPixCredito,
-  title: 'Banco Central cria regras para o crédito oferecido na hora do Pix e para um painel de dívidas nos apps',
-  sum: 'A oferta de crédito durante o Pix vai exigir autorização prévia do cliente e só vale a partir de julho de 2027. Os bancos também terão de deixar o cliente bloquear ofertas de empréstimo.',
-  body: [
-    'Os bancos terão de oferecer um painel com as dívidas do cliente e simulação do custo antes de cada contratação, também a partir de julho de 2027. O bloqueio de ofertas de crédito vale a partir de 31 de março de 2027, segundo a Agência Brasil.'
-  ] },
-
 { id: 'vivo-satelite-starlink', cat: 'brasil', own: false, t: '2026-10-26T14', d: '26 out 2026', img: 'celular', src: 'Teletime', url: U.ttVivo,
   title: 'Vivo lança conexão do celular direto com satélites da Starlink para quem está sem sinal',
   sum: 'O serviço funciona com WhatsApp, SMS e mapas em áreas sem cobertura. Fica de graça por 12 meses no pós-pago e no controle, e chega a cerca de 50 milhões de clientes.',
   body: [
     'O celular se conecta sozinho aos satélites quando fica fora da rede da operadora. Videochamadas e chamadas de emergência não funcionam, e o uso não desconta da franquia de dados, segundo o Teletime.'
   ] },
-
-{ id: 'cripto-prazo-licenca-banco-central', cat: 'brasil', own: true, t: '2026-10-28T07', d: '28 out 2026', img: 'celular', read: 3,
-  title: 'Corretoras de criptomoedas têm até sexta (30) para pedir licença ao Banco Central; Binance limita produtos no Brasil',
-  sum: 'Quem não fizer o pedido perde o direito de operar. Os bancos só ficam proibidos de trabalhar com prestadoras sem pedido em andamento a partir de 6 de novembro.',
-  body: [
-    'As empresas que já oferecem compra e venda de criptomoedas no Brasil precisam entregar até sexta-feira (30) a primeira fase do pedido de autorização ao Banco Central, segundo o FinanceFeeds. As regras estão nas Resoluções 519 e 520 e na Instrução Normativa 704. Quem não fizer o pedido perde o direito de operar e passa a ser tratado como irregular, segundo o BitNotícias.',
-    '## Prazo para os bancos',
-    'A Resolução BCB 589 adiou de 30 de outubro para 6 de novembro a data a partir da qual bancos e instituições de pagamento não podem trabalhar com prestadoras sem autorização nem pedido em andamento. O prazo do pedido continuou em 30 de outubro.',
-    '## Binance',
-    'A Binance fez o pedido em 23 de outubro, por meio da empresa local BBrasil. Pedir não é o mesmo que ter a autorização. Desde 27 de outubro, clientes brasileiros não podem abrir novas posições em oito produtos, entre eles empréstimos, mineração na nuvem e negociação com margem, e 22 tokens saíram da negociação no país, segundo o FinanceFeeds.',
-    '## Quem pediu e quem saiu',
-    'OKX, Bybit, Brasil Bitcoin e Transfero estão entre as empresas que já pediram, segundo o BitNotícias. Revolut, Lemon e Bitso deixaram de oferecer criptomoedas no Brasil neste ano. Clientes do Méliuz precisam vender seus bitcoins até 30 de outubro, e a NovaDAX encerra os saques de criptomoedas na mesma data.'
-  ],
-  box: { type: 'table', title: 'As datas', head: ['Data', 'O que acontece'], rows: [['27/10', 'Binance restringe 8 produtos e retira 22 tokens no Brasil'], ['30/10', 'Prazo para pedir autorização ao BC'], ['30/10', 'Méliuz: prazo para vender bitcoins'], ['6/11', 'Bancos não podem trabalhar com prestadoras sem pedido']], note: 'Fontes: FinanceFeeds e BitNotícias.' },
-  sources: [['FinanceFeeds', U.ffCripto], ['BitNotícias', U.bnCripto26], ['BitNotícias', U.bnCripto10]] },
-
-{ id: 'keeta-um-ano-brasil', cat: 'brasil', own: false, t: '2026-10-27T12', d: '27 out 2026', img: 'celular', src: 'Mobile Time', url: U.mtKeeta,
-  title: 'Keeta completa um ano no Brasil com 10 milhões de downloads e 83 mil restaurantes',
-  sum: 'O app de entregas da chinesa Meituan tem 430 mil entregadores e planeja chegar a mais 21 cidades em 2026. A estreia no Rio foi adiada.',
-  body: [
-    'O tempo médio de entrega é de 28 minutos em até 3 km. Segundo a empresa, o adiamento no Rio se deve a cláusulas de exclusividade de concorrentes.'
-  ] },
-
-{ id: 'superendividados-banco-central', cat: 'brasil', own: false, t: '2026-10-27T12', d: '27 out 2026', img: 'mercado', src: 'Agência Brasil', url: U.abSuperend,
-  title: 'Banco Central diz que 20,3 milhões de brasileiros estão superendividados, alta de 75% em cinco anos',
-  sum: 'O número, de junho de 2026, equivale a 17% de quem tem crédito. Quem ganha até 2 salários mínimos compromete 42% da renda com dívidas.',
-  body: [
-    'O presidente do BC, Gabriel Galípolo, disse que pretende anunciar novas medidas ainda neste ano. As regras para o crédito no Pix e o painel de dívidas nos apps valem a partir de julho de 2027.'
-  ] },
-
-{ id: 'receita-lote-residual-ir', cat: 'brasil', own: false, t: '2026-10-23T12', d: '23 out 2026', img: 'celular', src: 'Agência Brasil', url: U.abResidual,
-  title: 'Receita paga nesta sexta (30) lote residual do Imposto de Renda a 184 mil contribuintes; consulta é pelo app',
-  sum: 'São R$ 531,6 milhões. A consulta pode ser feita no app ou no site da Receita, em "Consultar Minha Restituição".',
-  body: [
-    'Mais da metade do valor, R$ 293,4 milhões, vai para grupos com prioridade, como idosos, pessoas com deficiência ou doença grave e professores.'
-  ] }
 ];
