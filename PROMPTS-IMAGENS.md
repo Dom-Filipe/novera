@@ -25,14 +25,23 @@ O site encontra a imagem pelo nome do arquivo e a coloca na notícia sozinho, co
 
 ## Lançamentos
 
+**`sword-of-the-sea-xbox-switch-2.webp`**
+Console portátil genérico sobre uma mesa clara mostrando dunas de areia que lembram ondas do mar, em tons de azul e dourado, sem personagens reconhecíveis, logotipos nem marcas.
+
+**`queens-domain-ps5.webp`**
+Tela de TV com uma ilha sombria e um castelo em ruínas sob céu nublado, cena genérica de jogo de fantasia, controle de videogame genérico em primeiro plano, sem personagens reconhecíveis, logotipos nem marcas.
+
+**`resonance-of-fate-remaster-ps5-pc.webp`**
+TV numa sala escura mostrando uma cidade genérica de engrenagens e torres metálicas em estilo steampunk, controle de videogame genérico sobre a mesa, sem personagens reconhecíveis, logotipos nem marcas.
+
+**`chromagraph-camera-iphone.webp`**
+Mãos segurando um celular genérico na vertical fotografando uma rua de cidade ao entardecer, com luz quente e leve granulação de filme, tela mostrando um visor de câmera genérico, sem logotipos nem marcas.
+
 **`phantom-blade-zero-ps5-pc.webp`**
 Sala escura iluminada só pela tela de uma TV com cena genérica de luta com espadas em telhados antigos, controle de videogame genérico sobre a mesa, sem personagens reconhecíveis, logotipos nem marcas.
 
 **`saints-row-third-remastered-celular.webp`**
 Celular na horizontal mostrando uma cidade genérica à noite com luzes roxas e carros, mãos segurando o aparelho num sofá, sem personagens, logotipos nem marcas.
-
-**`minecraft-switch-2-versao-nativa.webp`**
-Console portátil genérico sobre mesa de madeira mostrando uma paisagem de blocos coloridos com luz de pôr do sol e sombras, sem personagens, logotipos nem marcas.
 
 **`granola-ditado-por-voz-mac.webp`**
 Notebook aberto numa mesa de escritório com um editor de texto genérico na tela e ondas sonoras ilustradas, microfone pequeno ao lado, luz da manhã, sem logotipos nem texto legível.
@@ -46,16 +55,19 @@ Rua de cidade grande à noite com neblina, poste de luz amarelada e reflexos no 
 **`titanium-court-celular-consoles.webp`**
 Mesa com um celular e um controle de videogame genéricos, tela com peças coloridas de quebra-cabeça em grade, luz suave de fim de tarde, sem logotipos nem marcas.
 
-**`free-fire-india.webp`**
-Mãos de jovem segurando um celular na horizontal com cena genérica de jogo de ação em ilha tropical, luzes de festa ao fundo, sem logotipos nem personagens de marcas.
-
-**`waddle-world-meta.webp`**
-Celular sobre mesa com tela mostrando um bichinho virtual genérico em pixel art ao lado de um caderno de diário aberto, luz suave, sem logotipos.
-
-**`monster-hunter-outlanders.webp`**
-Celular na horizontal com cena genérica de fantasia com criatura gigante em floresta, mãos segurando o aparelho, sem logotipos nem personagens de marcas.
-
 ## Atualizações
+
+**`chrome-localizar-maiusculas-canary.webp`**
+Monitor de computador mostrando uma página de texto genérica com palavras destacadas em amarelo e uma caixa de busca no canto, teclado em primeiro plano, sem logotipos nem texto legível.
+
+**`apple-music-7-android-novo-visual.webp`**
+Celular genérico com fones de ouvido sem marca sobre uma mesa, tela mostrando um tocador de música genérico com barra translúcida e capas de álbum abstratas, sem logotipos nem texto legível.
+
+**`threads-curtida-personalizada-teste-brasil.webp`**
+Close de um dedo tocando a tela de um celular genérico, com pequenos emojis coloridos genéricos subindo da tela, fundo desfocado, sem logotipos nem ícones reais de apps.
+
+**`whatsapp-grupos-quatro-recursos.webp`**
+Celular genérico sobre uma mesa de cozinha mostrando uma conversa em grupo com uma mensagem fixada no topo e balões de texto sem texto legível, luz da manhã, sem logotipos nem ícones reais de apps.
 
 **`reddit-login-para-ler-teste.webp`**
 Celular sobre a mesa mostrando uma tela genérica de login com um cadeado e uma lista de discussões desfocada ao fundo, sem logotipos nem texto legível.
@@ -63,14 +75,8 @@ Celular sobre a mesa mostrando uma tela genérica de login com um cadeado e uma 
 **`whatsapp-central-pagamentos-teste.webp`**
 Celular ao lado de um cartão bancário genérico e uma caixa de encomenda, tela com formulário genérico de endereço, sem logotipos, marcas nem números legíveis.
 
-**`globoplay-novos-planos-sportv.webp`**
-Sala de estar com TV exibindo um campo de futebol genérico visto de cima, controle remoto e conta de assinatura impressa sobre a mesa, sem logotipos nem marcas.
-
 **`x-repostar-fotos-credito.webp`**
 Mãos segurando um celular com tela de rede social genérica mostrando uma foto de paisagem compartilhada com um selo de crédito, fundo desfocado, sem logotipos nem marcas.
-
-**`whatsapp-configuracoes-novo-visual-android.webp`**
-Celular Android genérico com tela de configurações em blocos arredondados, ao lado de uma xícara de café, luz natural, sem logotipos nem ícones reais de aplicativos.
 
 **`whatsapp-nova-tela-backup.webp`**
 Celular sobre mesa de madeira com tela genérica de configurações mostrando um ícone de nuvem e uma barra de progresso, sem logotipos nem interface real.
@@ -78,16 +84,19 @@ Celular sobre mesa de madeira com tela genérica de configurações mostrando um
 **`chrome-preenchimento-gemini-gmail.webp`**
 Notebook com um formulário genérico na tela sendo preenchido sozinho, campos destacados em azul, escritório claro, sem logotipos nem marcas.
 
-**`tiktok-must-eat-restaurantes.webp`**
-Mesa de restaurante com pratos coloridos e um celular mostrando uma lista genérica de restaurantes com mapa e estrelas, sem logotipos.
-
 **`reddit-feed-para-voce.webp`**
 Celular na mão mostrando um feed genérico com duas abas no topo e cartões de texto, fundo desfocado de sala, sem logotipos nem nomes de apps.
 
-**`discord-servidores-publicos-buscadores.webp`**
-Tela de computador com uma página genérica de resultados de busca e balões de conversa estilizados, luz azulada, sem logotipos nem texto legível.
-
 ## IA
+
+**`claude-code-recusa-recriar-jogos.webp`**
+Tela de computador dividida entre código genérico e um esboço de fases de jogo em pixel art abstrata, com um aviso genérico em vermelho, sem personagens reconhecíveis, logotipos nem texto legível.
+
+**`chatgpt-armas-adolescentes-violencia.webp`**
+Adolescente de costas, rosto não visível, usando um notebook genérico numa escrivaninha de quarto, tela com uma janela de conversa genérica e um ícone de escudo abstrato, sem logotipos nem texto legível.
+
+**`claude-planos-max-ultra-limite-5-horas.webp`**
+Notebook aberto numa mesa de trabalho à noite com código genérico colorido na tela e uma ampulheta ao lado, luz de luminária, sem logotipos nem texto legível.
 
 **`gemini-editar-arquivos-no-chat.webp`**
 Notebook com uma janela de conversa genérica ao lado de um documento aberto com trechos destacados em cores, mesa de estudo com cadernos, sem logotipos nem texto legível.
@@ -107,19 +116,22 @@ Cozinha com uma caixa de som inteligente genérica sobre a bancada, ao lado de u
 **`xreal-aura-android-xr.webp`**
 Óculos de realidade aumentada genéricos sobre uma mesa clara, com reflexo de janelas flutuantes nas lentes, sem logotipos nem marcas.
 
-**`gemini-4-carbon.webp`**
-Sala de monitoramento de segurança digital com telas exibindo linhas de código genéricas e gráficos, iluminação azulada, sem pessoas reconhecíveis nem logotipos.
-
-**`chatgpt-dots-imessage-rcs.webp`**
-Celular sobre mesa com tela de conversa genérica em balões de mensagem e um anexo de foto, xícara de café ao lado, sem logotipos nem nomes de apps.
-
 **`google-apps-conectados-gemini-busca.webp`**
 Ilustração realista de vários cubos de vidro coloridos conectados por linhas de luz sobre uma mesa, representando apps conectados, sem logotipos.
 
-**`chatgpt-icloud-mail-calendario.webp`**
-Celular sobre mesa ao lado de um notebook, com telas genéricas de caixa de e-mail e calendário semanal, xícara de café, sem logotipos nem texto legível.
-
 ## Startups
+
+**`ollie-assistente-ia-encerra.webp`**
+Escritório pequeno de startup vazio ao fim do dia, cadeiras empurradas, notebook fechado sobre a mesa e caixas de papelão, luz de pôr do sol pela janela, sem logotipos nem marcas.
+
+**`unico-human-token-corte.webp`**
+Mão segurando um celular genérico na frente do rosto de uma pessoa desfocada, com uma moldura de reconhecimento facial genérica na tela, escritório ao fundo, sem logotipos nem rosto reconhecível.
+
+**`coinbase-3tri-2026.webp`**
+Moedas douradas genéricas com símbolos abstratos ao lado de um celular mostrando um gráfico de linha em alta, mesa escura de escritório, sem logotipos nem marcas.
+
+**`kalshi-serie-g-40-bilhoes.webp`**
+Celular genérico sobre uma mesa mostrando gráficos de porcentagem com barras verdes e vermelhas, ao fundo telas de mercado financeiro desfocadas, sem logotipos nem texto legível.
 
 **`roblox-3tri-2026.webp`**
 Gráfico de barras em queda impresso sobre uma mesa ao lado de um controle de videogame e de um celular com blocos coloridos genéricos, sem logotipos nem marcas.
@@ -136,25 +148,22 @@ Tela de computador num quarto escuro com linhas de código genéricas e um cadea
 **`doordash-compra-instacart.webp`**
 Entregador de bicicleta visto de costas numa rua de bairro ao entardecer, com sacola de supermercado e caixa térmica de comida, sem logotipos nem marcas e sem rosto visível.
 
-**`amazon-3tri-2026.webp`**
-Interior de um grande centro de distribuição com esteiras e caixas de papelão sem marca, ao lado de racks de servidores iluminados, sem logotipos nem pessoas reconhecíveis.
-
 **`reddit-3tri-2026.webp`**
 Gráfico de barras crescente numa tela de computador, com balões de conversa genéricos ao fundo, escritório moderno, sem logotipos nem marcas.
 
-**`coreia-do-sul-multa-apple-google.webp`**
-Martelo de juiz sobre uma mesa ao lado de dois celulares genéricos com telas de loja de aplicativos sem marca, fundo com skyline de Seul desfocado, sem logotipos.
-
-**`alphabet-3tri-2026.webp`**
-Fachada genérica de prédio corporativo de vidro ao entardecer, com reflexo de nuvens, sem placas, logotipos ou nomes de empresas.
-
-**`anthropic-pede-ipo-nasdaq-receita-16-bilhoes.webp`**
-Prospecto de papel grosso sobre mesa de reunião, com notebook aberto mostrando gráfico genérico, luz de janela, sem logotipos nem texto legível.
-
 ## Ideias para o Brasil
 
-**`lagos-life-jogo-patrocinado.webp`**
-Notebook mostrando um jogo genérico de cidade em pixel art com prédios, ônibus amarelos e outdoors coloridos sem texto, sem logotipos nem marcas.
+**`salary-hero-salario-antecipado-malasia.webp`**
+Trabalhador de fábrica, de costas, olhando um celular genérico com um painel financeiro simples na tela, galpão industrial ao fundo, sem logotipos nem texto legível.
+
+**`talent-nation-engenheiros-ia-nigeria.webp`**
+Sala de aula moderna com jovens de costas diante de notebooks com código genérico, quadro branco com diagramas abstratos, luz natural, sem logotipos nem rostos reconhecíveis.
+
+**`zenzap-chat-com-ia-para-equipes.webp`**
+Funcionária de uniforme genérico de lanchonete, de costas, consultando um celular com uma lista de turnos genérica, cozinha comercial ao fundo, sem logotipos nem texto legível.
+
+**`matiks-jogos-de-matematica-india.webp`**
+Dois jovens de costas, rostos não visíveis, jogando no celular num banco de praça, telas com números e símbolos matemáticos genéricos coloridos, sem logotipos nem marcas.
 
 **`rently-aluguel-flexivel-singapura.webp`**
 Molho de chaves sobre um contrato genérico e um celular com calendário de pagamentos na tela, apartamento moderno ao fundo, sem logotipos nem texto legível.
@@ -162,14 +171,8 @@ Molho de chaves sobre um contrato genérico e um celular com calendário de paga
 **`ghanem-imovel-fracionado-arabia.webp`**
 Prédio residencial moderno sob céu claro de deserto, com maquete de imóvel dividida em partes sobre uma mesa em primeiro plano, sem logotipos nem marcas.
 
-**`hunar-ia-contratacao-por-voz.webp`**
-Celular apoiado numa mesa de armazém mostrando ondas de áudio de uma chamada, caixas de entrega ao fundo, sem rostos reconhecíveis, logotipos nem marcas.
-
 **`medikea-teleconsulta-clinicas-proprias.webp`**
 Pequena clínica de bairro na África Oriental, recepção iluminada com balcão e cadeiras, celular sobre o balcão mostrando uma videochamada genérica, sem rostos reconhecíveis nem logotipos.
-
-**`travclan-agencias-de-viagem.webp`**
-Pequena agência de viagens com mapa na parede, folhetos de destinos genéricos e computador com tela de reservas genérica, sem logotipos nem marcas.
 
 **`astrotalk-lucro-consultas.webp`**
 Celular sobre mesa com tela de chat genérica ao lado de um mapa astral impresso e velas, luz quente, sem logotipos nem nomes de apps.
@@ -180,10 +183,16 @@ Pequena loja de bairro com prateleiras cheias e caixas sendo entregues na porta,
 **`cent-checkup-preventivo-ia.webp`**
 Sala de exames de imagem moderna e vazia, com tela de computador mostrando gráficos genéricos de saúde, sem logotipos.
 
-**`maasi-baba-por-assinatura.webp`**
-Sala de casa com brinquedos de madeira no tapete, mamadeira e celular com agenda genérica sobre a mesa, luz da manhã, sem rostos, logotipos nem texto legível.
-
 ## No Brasil
+
+**`justica-meta-apagar-posts-voto.webp`**
+Martelo de juiz sobre uma mesa de madeira ao lado de um celular genérico mostrando um feed de rede social desfocado, sem logotipos, ícones reais de apps nem marcas.
+
+**`golpe-auxilio-reconstrucao-1680.webp`**
+Mão segurando um celular genérico com uma mensagem suspeita e um link destacado em vermelho, sinal de alerta abstrato, fundo de sala desfocado, sem logotipos nem texto legível.
+
+**`uphold-oobit-deixam-brasil-cripto.webp`**
+Celular genérico sobre uma mesa mostrando um aviso genérico de encerramento de conta com um cartão de pagamento sem marca ao lado, luz fria, sem logotipos nem texto legível.
 
 **`cripto-licenca-prazo-encerrado-pedidos.webp`**
 Calendário de mesa com a última data de outubro circulada, celular com gráfico genérico de criptomoeda e uma pasta de documentos, sem logotipos nem marcas.
@@ -205,13 +214,4 @@ Fachada de prédio comercial com porta fechada e lacre de papel, rua tranquila d
 
 **`99food-uberlandia-araguari.webp`**
 Entregador de moto parado em rua arborizada de cidade do interior ao entardecer, com caixa térmica sem marca, sem rosto visível e sem logotipos.
-
-**`picpay-vendedor-ia-whatsapp.webp`**
-Balcão de pequena loja de roupas com celular apoiado mostrando uma conversa genérica de vendas por mensagem, sacolas de papel ao lado, sem logotipos nem marcas.
-
-**`anatel-biometria-facial-linhas.webp`**
-Celular na mão mostrando uma moldura oval genérica de reconhecimento facial na tela, fundo desfocado de loja, sem rosto reconhecível nem logotipos.
-
-**`anpd-guia-eca-digital.webp`**
-Tablet e celular sobre mesa de estudo com telas genéricas de controle de idade e um cadeado, sem logotipos nem rostos de crianças.
 
