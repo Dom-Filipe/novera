@@ -7,38 +7,52 @@
 const META = {
   /* Endereço público do site, sem barra no final. Usado nos links das redes sociais. */
   siteUrl: 'https://novera-sepia.vercel.app',
-  dataExtenso: 'Terça-feira, 3 de novembro de 2026',
-  edicao: '3 nov 2026',
+  dataExtenso: 'Quarta-feira, 4 de novembro de 2026',
+  edicao: '4 nov 2026',
   /* Faixa do topo: 1 a 3 itens [rótulo, texto curto]. Use só fatos que estão em notícias do site. */
   destaques: [
-    ['Em teste', 'OpenAI vai juntar as abas Chat e Work do ChatGPT, primeiro com um grupo de usuários'],
-    ['Domingo (8)', 'Enem: documento digital só vale aberto no app oficial; print e foto não são aceitos'],
-    ['Quarta (4)', 'Apple marca o teste do iOS 27.3 na China; versão final fica para dezembro']
+    ['Em teste', 'Apple libera o iOS 27.3 para desenvolvedores, com novo app Saúde; versão final é esperada para dezembro'],
+    ['App do dia', 'Affinity para iPad é lançado pela Canva, grátis para pessoas físicas'],
+    ['Domingo (8)', 'Enem: documento digital só vale aberto no app oficial; print e foto não são aceitos']
   ]
 };
 
 /* Home: destaque principal, dois laterais e três da faixa de baixo (IDs de notícias "own: true") */
 const FEATURED = {
-  lead: 'chatgpt-junta-abas-chat-work',
-  side: ['enem-2026-documentos-digitais-celular', 'apple-app-store-apps-ia-terceiros'],
-  also: ['match-group-3tri-2026', 'ios-27-3-beta-ios-27-2-1', 'readwise-books-app-leitura-beta']
+  lead: 'ios-27-3-beta-app-saude-apple-watch',
+  side: ['netflix-ai-discover-teste', 'duolingo-3tri-2026'],
+  also: ['chatgpt-junta-abas-chat-work', 'enem-2026-documentos-digitais-celular', 'zelda-ocarina-of-time-switch-2']
 };
 
 /* Home: "Escolhas da redação" (5 IDs) */
-const PICKS = ['google-system-updates-novembro', 'aqar-exit-contratos-imoveis-egito', 'strollme-assinatura-produtos-infantis', 'gta-6-lancamento-19-novembro', 'sac-comeca-a-valer-apps-transporte-senacon'];
+const PICKS = ['google-system-updates-novembro', 'uphold-oobit-deixam-brasil-cripto', 'strollme-assinatura-produtos-infantis', 'gta-6-lancamento-19-novembro', 'sac-comeca-a-valer-apps-transporte-senacon'];
 
 const U = {
+  /* Atualização de 4 nov 2026 */
+  affinityIpad: 'https://9to5mac.com/2026/11/02/affinity-for-ipad-all-in-one-design-app-now-available-free-for-individuals/',
+  chromagraph: 'https://macrumors.com/2026/10/30/rian-johnson-iphone-camera-app/',
+  dispatchMobile: 'https://www.gematsu.com/2026/10/dispatch-coming-to-ios-android-on-december-9-deluxe-edition-commentary-and-storyboard-modes-update-now-available',
+  ios273Tudo: 'https://9to5mac.com/2026/11/03/everything-new-in-ios-27-3-beta-1-so-far/',
+  ios273Saude: 'https://www.macrumors.com/2026/11/03/ios-27-3-health-app/',
+  ios273China: 'https://9to5mac.com/2026/11/03/ios-27-3-brings-apple-intelligence-features-to-china/',
+  gymStrength: 'https://9to5mac.com/2026/11/03/apple-announces-fitness-gym-strength-program-with-personalized-workout-plans/',
+  netflixDiscover: 'https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/',
+  chatgptBuscas: 'https://olhardigital.com.br/2026/11/03/inteligencia-artificial/chatgpt-ja-alcanca-20-do-volume-de-buscas-do-google-diz-openai',
+  audioIntelligence: 'https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/',
+  duolingoTitan: 'https://www.stocktitan.net/articles/duolingo-q3-2026-earnings-daily-users-up-29-percent-max-plan-ends',
+  duolingoSec: 'https://www.sec.gov/Archives/edgar/data/0001562088/000162828026069474/q3fy26duolingo9-30x26xpres.htm',
+  falValuation: 'https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/',
+  hingePlano: 'https://techcrunch.com/2026/11/02/hinge-tests-a-cheaper-plan-as-users-become-more-fed-up-paying-for-dating-apps/',
+  salaryHero: 'https://ffnews.com/news/1982-backed-salary-hero-raises-us-7-6-million-series-a-led-by-cento-ventures-exp-f4584f24',
+  bbInstabilidade: 'https://exame.com/invest/minhas-financas/banco-do-brasil-apresenta-instabilidade-no-aplicativo-nesta-terca-feira/',
+  vivoGoogle: 'https://www.mobiletime.com.br/noticias/03/11/2026/vivo-google-cloud-pre/',
+  keetaUmAno: 'https://www.mobiletime.com.br/noticias/27/10/2026/keeta-10-mi-downloads-br/',
   /* Atualização de 3 nov 2026 */
   readwiseBooks: 'https://techcrunch.com/2026/11/02/readwise-takes-on-amazons-kindle-and-goodreads-with-its-new-app-for-book-lovers/',
   freeFireIndia: 'https://www.esquireindia.co.in/tech-and-auto/gaming/garena-free-fire-india-launch-how-to-download-diwali-campaign-free-fire-india-vs-max-parental-controls',
-  zeroParades: 'https://www.gematsu.com/2026/10/zero-parades-directors-cut-coming-to-xbox-series-on-november-3',
   gravhounds: 'https://news.xbox.com/en-us/2026/08/27/gravhounds-revealed-co-op-chaos-bio-engineered-dogs-in-space/',
-  waddleWorld: 'https://www.androidheadlines.com/?p=1321402',
-  ios273MacRumors: 'https://www.macrumors.com/2026/11/02/ios-27-2-1-and-ios-27-3-beta-coming-soon/',
-  ios2721NineToFive: 'https://9to5mac.com/2026/11/02/ios-27-2-1-could-launch-soon-as-next-iphone-update/',
   googleSystemNov: 'https://9to5google.com/2026/11/02/november-2026-google-system-updates/',
   tvBoxBackdoor: 'https://9to5google.com/2026/11/02/google-android-tv-box-backdoor-shut-down/',
-  googleIcones: 'https://9to5google.com/2026/11/02/google-messages-phone-icon-gradient-redesign/',
   androidAutoOneUi: 'https://9to5google.com/2026/11/02/some-samsung-galaxy-phones-are-having-android-auto-issues-with-one-ui-9',
   iphoneDuoApps: 'https://www.macrumors.com/2026/11/02/zoom-microsoft-apps-iphone-duo-optimized/',
   chatgptAbas: 'https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/',
@@ -48,7 +62,6 @@ const U = {
   anthropicRsi: 'https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/',
   dreambeans: 'https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/',
   matchGdi: 'https://globaldatinginsights.com/featured/match-group-q3-2026-results-hinge-growth-and-new-plans-for-tinder',
-  appleIaTerceiros: 'https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps',
   snapAcordo: 'https://techcrunch.com/2026/11/02/snap-settles-lawsuit-accusing-platform-of-fueling-teen-depression-and-eating-disorders/',
   pinterest: 'https://www.sec.gov/Archives/edgar/data/0001506293/000150629326000151/q3-26xpressrelease.htm',
   trajectory: 'https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/',
@@ -56,13 +69,10 @@ const U = {
   aqarScene: 'https://thestartupscene.me/INVESTMENTS/Ayman-Abbas-Takes-10-Stake-in-Proptech-Aqar-Exit',
   strollme: 'https://www.startbase.de/news/strollme-erhaelt-22-millionen-euro-fuer-den-ausbau-seines-kinderprodukte-abos/',
   turuq: 'https://enterpriseam.com/egypt/2026/10/27/turuq-takes-its-first-outside-investment-from-den-vc/',
-  huppa: 'https://vestbee.com/insights/articles/huppa-lands-1-m',
   enem: 'https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/falta-uma-semana-para-o-enem-2026-veja-horarios-e-o-que-levar',
   itauPay: 'https://www.mobiletime.com.br/noticias/30/10/2026/itau-checkout-eletronico/',
   anatelBiometria: 'https://www.mobiletime.com.br/noticias/29/10/2026/biometria-facial-norma-d/',
   blackFridayFraude: 'https://finsidersbrasil.com.br/noticias-sobre-fintechs/black-friday-obriga-bancos-e-fintechs-a-equilibrar-vendas-e-seguranca-contra-fraudes/',
-  fintechsAcoes: 'https://finsidersbrasil.com.br/noticias-sobre-fintechs/fintechs-brasileiras-passam-a-semana-de-ressaca-eleitoral-picpay-derrete-22/',
-  topAutopass: 'https://www.mobiletime.com.br/noticias/30/10/2026/top-autopass-recarga-sp/',
   /* Atualização de 2 nov 2026 */
   zeldaOcarinaOfTimeSwitch2: 'https://exame.com/pop/de-gta-6-a-jogos-vorazes-os-lancamentos-de-filmes-series-games-e-albuns-de-novembro/',
   zeldaOcarinaOfTimeSwitch21: 'https://english.adnkronos.com/2026/09/09/nintendo-to-release-zelda-game-remake-for-switch-2-nov-5/',
@@ -78,19 +88,15 @@ const U = {
   copilotFimTvsLgSamsung12: 'https://oficinadanet.com.br/samsung/73798-microsoft-confirma-fim-do-copilot-nas-tvs-samsung-e-lg-veja-quando',
   copilotFimTvsLgSamsung13: 'https://windowscentral.com/artificial-intelligence/microsoft-copilot/microsoft-is-killing-copilot-on-all-smart-tvs-after-backlash-and-strategy-shift-lg-confirms-support-will-end-before-2027',
   copilotFimTvsLgSamsung14: 'https://thedesk.net/2026/10/microsoft-copilot-ending-lg-samsung-smart-tvs/',
-  geminiChevroletBrasilPortugues: 'https://canaltech.com.br/carros/carros-da-gm-comecam-a-receber-ia-do-google/',
-  geminiChevroletBrasilPortugues16: 'https://www.dgabc.com.br/Noticia/4365587/chevrolet-comeca-a-liberar-gemini-em-modelos-vendidos-no-brasil',
   dubdubFeedDePerguntasIndia: 'https://startuptalky.com/news/dubdub-raises-1-3m-seed-trivia-app',
   sacComecaAValerAppsTransporteSenacon: 'https://timesbrasil.com.br/brasil/atendimento-humano-no-sac-sera-obrigatorio-a-partir-desta-segunda-2-veja-as-novas-regras/',
   sacComecaAValerAppsTransporteSenacon29: 'https://atarde.com.br/brasil/novas-regras-do-sac-entram-vigor-nesta-segunda-feira-saiba-o-que-muda-1407957',
   sacComecaAValerAppsTransporteSenacon30: 'https://www.letsmoney.com.br/noticias/novo-decreto-sac-bancos-fintechs/',
-  cripto200Empresas50PedidosAbcripto: 'https://www.infomoney.com.br/negocios/regulacao-cripto-banco-central-mercado-nova-fase/',
   bancosCriptoSemAutorizacao6Novembro: 'https://economicnewsbrasil.com.br/2026/10/31/regulacao-de-cripto-no-brasil/',
   /* Atualização de 1 nov 2026 */
   /* Lançamentos */
   /* Atualizações */
   /* IA */
-  gdClaudeJogos: 'https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games',
   /* Startups */
   szUnico: 'https://www.startupz.com.br/artigo/unico-lanca-human-token-com-preco-unico-global-e-corta-25-do-quadro-de-funcionarios',
   tcOllie: 'https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/',
@@ -102,14 +108,11 @@ const U = {
   bnSaidas: 'https://bitnoticias.com.br/noticias/o-prazo-do-banco-central-acabou-e-agora-quem-pediu-licenca-cripto/',
   /* Atualização de 31 out 2026 */
   /* Lançamentos */
-  tcGranola: 'https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr',
   /* Atualizações */
   ctRedditLogin: 'https://canaltech.com.br/apps/fim-do-acesso-livre-reddit-vai-exigir-login-ate-de-quem-so-quer-ler/',
   /* IA */
   m9China: 'https://9to5mac.com/2026/10/30/apple-confirms-ios-27-3-beta-is-coming-next-week-with-apple-intelligence-in-china/',
   /* Startups */
-  gnRoblox: 'https://www.gaming.net/roblox-q3-revenue-rises-16-as-bookings-fall-12-to-1-7-billion/',
-  nfBinance: 'https://neofeed.com.br/negocios/maior-ataque-hacker-da-historia-deixa-rombo-de-us-63-bilhoes-na-binance/',
   /* Ideias para o Brasil */
   bnRently: 'https://www.bernama.com/tv/news.php?id=2626473',
   /* No Brasil */
@@ -117,7 +120,6 @@ const U = {
   /* Lançamentos */
   /* Atualizações */
   /* IA */
-  bcProLimites: 'https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/',
   /* Startups */
   tcDoorDash: 'https://techcrunch.com/2026/10/29/doordash-to-acquire-instacart-for-17b/',
   nfDoorDash: 'https://neofeed.com.br/negocios/a-aposta-de-us-17-bilhoes-da-doordash-para-fazer-o-app-do-jantar-ser-o-app-das-compras-da-semana/',
@@ -137,6 +139,27 @@ const U = {
 
 const NEWS = [
 /* ===================== LANÇAMENTOS ===================== */
+{ id: 'affinity-ipad-gratis', cat: 'lancamentos', own: false, t: '2026-11-02T14', d: '2 nov 2026', img: 'arte', src: '9to5Mac', url: U.affinityIpad,
+  title: 'Canva lança o Affinity para iPad, app gratuito para pessoas físicas que junta foto, vetor, desenho e diagramação',
+  sum: 'O app substitui os antigos Affinity Photo, Designer e Publisher no tablet e é download grátis na App Store.',
+  body: [
+    'O Affinity para iPad tem quatro módulos: Sketch, Vector, Photo e Layout, com edição de arquivos RAW, documentos de várias páginas e suporte aos recursos do Apple Pencil Pro. Há funções de IA, como expandir a imagem e separar uma imagem plana em camadas. Segundo o 9to5Mac, a versão para computador passou de 7 milhões de cadastros em um ano. A reportagem não trata de preços para empresas nem cita o Brasil.'
+  ] },
+
+{ id: 'chromagraph-camera-iphone', cat: 'lancamentos', own: false, t: '2026-10-30T15', d: '30 out 2026', img: 'celular', src: 'MacRumors', url: U.chromagraph,
+  title: 'Diretor de Entre Facas e Segredos lança o Chromagraph Camera, app de fotos para iPhone que custa US$ 12,99',
+  sum: 'O app de Rian Johnson chegou ao primeiro lugar em Foto e Vídeo na App Store dos EUA, em compra única.',
+  body: [
+    'Criado com o diretor de fotografia Steve Yedlin e o programador Eric Cameron, o Chromagraph Camera fotografa em RAW e aplica técnicas de imagem que Yedlin desenvolveu para filmes, com efeitos em cor, contraste e granulação. O arquivo original fica preservado, e o app exige iOS 17 ou mais recente, segundo o MacRumors. A fonte não trata da disponibilidade no Brasil.'
+  ] },
+
+{ id: 'dispatch-celular-9-dezembro', cat: 'lancamentos', own: false, t: '2026-10-22T14', d: '22 out 2026', img: 'celular', src: 'Gematsu', url: U.dispatchMobile,
+  title: 'Dispatch chega ao iPhone e ao Android em 9 de dezembro, com os quatro primeiros episódios grátis',
+  sum: 'O jogo completo do estúdio AdHoc custará US$ 19,99 no celular.',
+  body: [
+    'O jogo do AdHoc Studio será liberado por inteiro por US$ 19,99, segundo o Gematsu. A fonte não informa o preço em reais nem trata do Brasil.'
+  ] },
+
 { id: 'readwise-books-app-leitura-beta', cat: 'lancamentos', own: true, t: '2026-11-02T12', d: '2 nov 2026', img: 'celular', read: 2,
   title: 'Readwise lança em teste o Readwise Books, app grátis que vende e-books e acompanha a leitura',
   sum: 'O app está em beta, por convite, e a loja de e-books funciona inicialmente só nos EUA. Assinantes da empresa não precisam de convite.',
@@ -159,25 +182,11 @@ const NEWS = [
     'O Free Fire original foi banido na Índia em fevereiro de 2022. A nova versão exige consentimento dos pais para menores de 18 anos, e a Garena diz que hospeda os dados no país. Contas de outras regiões são direcionadas às versões já existentes do jogo.'
   ] },
 
-{ id: 'zero-parades-directors-cut-consoles', cat: 'lancamentos', own: false, t: '2026-11-03T06', d: '3 nov 2026', img: 'tecnologia', src: 'Gematsu', url: U.zeroParades,
-  title: 'Zero Parades: Director\'s Cut está marcado para esta terça (3) no PS5, no Xbox Series e no Switch 2',
-  sum: 'A nova edição do jogo da ZA/UM traz cerca de 40 mil palavras a mais e dublagem em inglês revisada.',
-  body: [
-    'No PC, a edição já existe e é gratuita para quem tem o jogo. Entre as novidades estão um novo encontro e o Backstage Mode. O Gematsu não informa o preço nos consoles.'
-  ] },
-
 { id: 'gravhounds-acesso-antecipado-xbox', cat: 'lancamentos', own: false, t: '2026-11-02T10', d: '2 nov 2026', img: 'tecnologia', src: 'Xbox Wire', url: U.gravhounds,
   title: 'Gravhounds, jogo cooperativo de cães no espaço, tem estreia marcada em acesso antecipado no Xbox e no PC',
   sum: 'O anúncio previa 2 de novembro como data, por US$ 19,99 e com Game Pass desde o primeiro dia.',
   body: [
     'É o primeiro jogo da Octopus Panic, estúdio de sete pessoas. De 1 a 4 jogadores controlam cães modificados em planetas alienígenas. O jogo sai como Game Preview, ou seja, ainda em desenvolvimento.'
-  ] },
-
-{ id: 'waddle-world-meta-filipinas', cat: 'lancamentos', own: false, t: '2026-10-28T14', d: '28 out 2026', img: 'celular', src: 'Android Headlines', url: U.waddleWorld,
-  title: 'Meta lança nas Filipinas o Waddle World, app de bichinho virtual com diário por voz',
-  sum: 'O app é gratuito, voltado a adultos e por enquanto limitado às Filipinas.',
-  body: [
-    'O usuário cuida de um bichinho virtual e registra o dia em um diário falado. A fonte não indica quando ou se o app chegará a outros países, e não há confirmação para o Brasil.'
   ] },
 
 { id: 'zelda-ocarina-of-time-switch-2', cat: 'lancamentos', own: true, t: '2026-11-01T09', d: '1 nov 2026', img: 'tecnologia', read: 2,
@@ -220,26 +229,26 @@ const NEWS = [
     'As informações são de um comunicado da TANGLE, empresa de Tóquio dona do app, com lançamento em 1º de novembro. O usuário também pode apontar a câmera para um templo, uma placa ou uma loja e perguntar o que é. O comunicado não informa o preço nem cita outros países além do Japão.'
   ] },
 
-{ id: 'granola-ditado-por-voz-mac', cat: 'lancamentos', own: false, t: '2026-10-29T16', d: '29 out 2026', img: 'tecnologia', src: 'TechCrunch', url: U.tcGranola,
-  title: 'Granola, app de anotações de reuniões, lança ditado por voz grátis e sem limite no Mac',
-  sum: 'O usuário aperta a tecla Fn, fala, e o texto entra já formatado em qualquer app. As versões para iPhone e Windows chegam depois.',
-  body: [
-    'O recurso vale para todos os planos, sem limite de palavras. A Granola é avaliada em US$ 1,5 bilhão e concorre com o Wispr, avaliado em US$ 2 bilhões, segundo o TechCrunch. A reportagem não fala em países.'
-  ] },
-
 /* ===================== ATUALIZAÇÕES ===================== */
-{ id: 'ios-27-3-beta-ios-27-2-1', cat: 'atualizacoes', own: true, t: '2026-11-02T18', d: '2 nov 2026', img: 'celular', read: 2,
-  title: 'Apple marca para esta semana o teste do iOS 27.3, e o iOS 27.2.1 aparece em registros de sites',
-  sum: 'A versão final do iOS 27.3 está prevista para dezembro. Já o iOS 27.2.1 não foi anunciado pela Apple e deve trazer só correções, segundo o MacRumors.',
+{ id: 'ios-27-3-beta-app-saude-apple-watch', cat: 'atualizacoes', own: true, t: '2026-11-03T18', d: '3 nov 2026', img: 'celular', read: 3,
+  title: 'Apple libera o teste do iOS 27.3, com novo app Saúde e recursos de IA no Apple Watch',
+  sum: 'A primeira versão beta é para desenvolvedores. O app Saúde redesenhado volta aos testes, e a Apple indica o lançamento ainda neste ano.',
   body: [
-    'A Apple informou em comunicado para a China que o beta do iOS 27.3 sairia na quarta-feira (4). O MacRumors avalia que, pelo fuso horário, isso significa terça (3) nos EUA. A empresa diz que a versão para o público chega em dezembro, sem dia marcado.',
-    '## O que o iOS 27.3 traz',
-    'A principal novidade conhecida é a chegada de parte da Apple Intelligence à China, em iPhones 15 Pro ou mais novos: Ferramentas de Escrita, Genmoji, Limpeza, resumos de notificações e Tradução ao Vivo com AirPods, entre outros. Siri AI e Image Playground ficam de fora por lá.',
-    '## iOS 27.2.1 ainda é indício',
-    'O iOS 27.2.1 apareceu nos registros de visitantes do MacRumors e do 9to5Mac, sinal de que está em teste interno. A Apple não o anunciou. Os dois sites esperam uma atualização pequena, com correções de bugs ou de segurança, e não há data. As fontes não falam de novidades específicas para o Brasil.'
+    'A Apple liberou nesta terça (3) a primeira versão de teste do iOS 27.3, por enquanto só para desenvolvedores. O 9to5Mac espera uma versão de teste pública em poucos dias. A Apple indica lançar o novo app Saúde ainda neste ano, e o MacRumors aponta dezembro como a data esperada do iOS 27.3.',
+    '## O novo app Saúde',
+    'O app redesenhado já tinha aparecido em testes do iOS 27.2, mas saiu antes do lançamento. Ele exige iPhone compatível com a Apple Intelligence. A aba Insights reúne dados recentes de saúde e dá orientações por IA. A aba Longevity acompanha sete áreas, entre elas coração, sono e nutrição, e calcula uma idade de saúde. O MacRumors lista o português entre os idiomas, mas não diz se o app chega ao Brasil.',
+    '## O que mais há no teste',
+    'A Siri com IA passa a agir em apps como Calendário, Mensagens e Música e ganha novos idiomas. O Safari recebe abas verticais. Na China, quem está no teste passa a ter a Apple Intelligence, sem a Siri com IA. No Apple Watch Series 12 e no Ultra 4, a Audio Intelligence entra em teste, com resumos de conversas.'
   ],
-  box: { type: 'facts', title: 'As duas versões', rows: [['iOS 27.3 beta', '4 de novembro na China, segundo a Apple'], ['iOS 27.3 final', 'Dezembro, segundo a Apple'], ['iOS 27.2.1', 'Não anunciado; sem data']] },
-  sources: [['MacRumors', U.ios273MacRumors], ['9to5Mac', U.ios2721NineToFive]] },
+  box: { type: 'facts', title: 'iOS 27.3', rows: [['Situação', 'Beta para desenvolvedores'], ['Beta público', 'Esperado em poucos dias, segundo o 9to5Mac'], ['Versão final', 'Dezembro é a data esperada, segundo o MacRumors'], ['App Saúde', 'Exige iPhone com Apple Intelligence']] },
+  sources: [['9to5Mac', U.ios273Tudo], ['MacRumors', U.ios273Saude], ['9to5Mac', U.ios273China]] },
+
+{ id: 'fitness-plus-gym-strength-beta', cat: 'atualizacoes', own: false, t: '2026-11-03T17', d: '3 nov 2026', img: 'celular', src: '9to5Mac', url: U.gymStrength,
+  title: 'Apple Fitness+ testa o Gym Strength, com planos de musculação de quatro semanas que se ajustam ao treino',
+  sum: 'O recurso está em beta e exige iOS 27.3 ou iPadOS 27.3. Faz parte da assinatura do Fitness+, sem custo adicional.',
+  body: [
+    'O Gym Strength monta planos conforme objetivo, experiência, agenda e equipamentos, com mais de 350 exercícios, e ajusta cada semana pelas repetições e cargas registradas. O Apple Watch é opcional. Nos EUA, o Fitness+ custa US$ 9,99 por mês ou US$ 79,99 por ano. A reportagem não lista os países nem cita o Brasil.'
+  ] },
 
 { id: 'google-system-updates-novembro', cat: 'atualizacoes', own: true, t: '2026-11-02T16', d: '2 nov 2026', img: 'celular', read: 2,
   title: 'Atualizações de sistema do Google de novembro citam backup de fotos do Android para o Windows e aviso do Play Protect',
@@ -259,13 +268,6 @@ const NEWS = [
   sum: 'Segundo o Google, a ação vai cortar o acesso a pelo menos mais 10 milhões de aparelhos comprometidos.',
   body: [
     'A Videostrong incluiu uma porta dos fundos em boxes certificados, informa o site. O Google rompeu com a empresa e suas subsidiárias, agiu na Justiça contra domínios e servidores e revisa a certificação. Não foi publicada lista de modelos, e a fonte não menciona o Brasil.'
-  ] },
-
-{ id: 'google-icones-gradiente-mensagens-telefone', cat: 'atualizacoes', own: false, t: '2026-11-02T13', d: '2 nov 2026', img: 'celular', src: '9to5Google', url: U.googleIcones,
-  title: 'Google muda ícones de Mensagens, Telefone e Contatos, com novas cores em gradiente',
-  sum: 'O novo visual já está em teste no Google Mensagens e deve chegar à versão estável nas próximas semanas.',
-  body: [
-    'As formas continuam, com curvatura e cores novas. Segundo o Google, nada muda no funcionamento dos apps. A troca vale também para as versões web.'
   ] },
 
 { id: 'android-auto-falhas-one-ui-9', cat: 'atualizacoes', own: false, t: '2026-11-02T11', d: '2 nov 2026', img: 'celular', src: '9to5Google', url: U.androidAutoOneUi,
@@ -320,6 +322,33 @@ const NEWS = [
   ] },
 
 /* ===================== IA ===================== */
+{ id: 'netflix-ai-discover-teste', cat: 'ia', own: true, t: '2026-11-03T16', d: '3 nov 2026', img: 'plataforma', read: 2,
+  title: 'Netflix começa a testar nos EUA a aba AI Discover, que sugere títulos conforme o humor do assinante',
+  sum: 'O recurso aparece em TVs compatíveis, só em inglês por enquanto. A Netflix promete levá-lo a mais usuários nas próximas semanas.',
+  body: [
+    'A Netflix anunciou nesta terça (3) a aba AI Discover, que a empresa trata como um espaço de testes para novas formas de achar o que assistir. O primeiro recurso recomenda títulos a partir de temas escolhidos pelo usuário, com base em humor, preferências, tempo disponível e novidades.',
+    '## Como funciona',
+    'Os temas têm nomes como "algo leve", "me dê um susto" e "sessão de filme em família" e mostram trechos de séries e filmes. Dá para escolher temas mais específicos ou recomeçar. Cada título tem um botão para ajustar as recomendações, salvando a obra ou tirando-a das próximas sugestões.',
+    '## Disponibilidade',
+    'O teste começa nos EUA, em TVs compatíveis e para usuários em inglês. A Netflix diz que os comentários vão definir o que fica, o que melhora e o que vai para o app principal. Não há confirmação para o Brasil.'
+  ],
+  box: { type: 'facts', title: 'AI Discover', rows: [['Situação', 'Em teste'], ['Onde', 'TVs compatíveis, nos EUA'], ['Idioma', 'Inglês'], ['Expansão', 'Mais usuários nas próximas semanas'], ['Brasil', 'Sem confirmação']] },
+  sources: [['TechCrunch', U.netflixDiscover]] },
+
+{ id: 'chatgpt-20-por-cento-buscas-google', cat: 'ia', own: false, t: '2026-11-03T22', d: '3 nov 2026', img: 'tecnologia', src: 'Olhar Digital', url: U.chatgptBuscas,
+  title: 'OpenAI diz que o ChatGPT já tem um volume de buscas igual a 20% do Google, sem revelar a origem do número',
+  sum: 'A conta inclui só as perguntas que acionam uma busca na web. Perguntas simples ficam de fora.',
+  body: [
+    'O número foi apresentado por Adam Fry, chefe do produto do ChatGPT para consumidores, em evento da OpenAI na segunda (2). A empresa não informou de onde veio o dado, segundo o Olhar Digital. Na mesma ocasião, Fry disse que os anúncios no ChatGPT não causaram reação negativa duradoura entre os usuários.'
+  ] },
+
+{ id: 'apple-watch-audio-intelligence-beta', cat: 'ia', own: false, t: '2026-11-03T14', d: '3 nov 2026', img: 'celular', src: 'TechCrunch', url: U.audioIntelligence,
+  title: 'Apple Watch entra em teste com IA que resume conversas e mostra em texto os últimos 15 segundos de fala',
+  sum: 'A Audio Intelligence é opcional e exige Apple Watch Series 12 ou Ultra 4, com iPhone pareado. O teste começa pelos desenvolvedores.',
+  body: [
+    'O conjunto tem reconhecimento de sons, como sirenes e campainhas, reconhecimento de músicas, o Live Rewind, para rever a fala recente em texto, e o Siri Recaps, que resume conversas. Um teste público está previsto antes do lançamento geral, segundo o TechCrunch. A reportagem não lista idiomas nem cita o Brasil.'
+  ] },
+
 { id: 'chatgpt-junta-abas-chat-work', cat: 'ia', own: true, t: '2026-11-02T14', d: '2 nov 2026', img: 'tecnologia', read: 2,
   title: 'OpenAI vai juntar as abas Chat e Work do ChatGPT, primeiro em teste com um grupo de usuários',
   sum: 'Uma só tela dará acesso à conversa e ao agente. ChatGPT e Codex passam a dividir a mesma cota de uso, e o lançamento amplo não tem data.',
@@ -376,27 +405,6 @@ const NEWS = [
   box: { type: 'facts', title: 'Copilot nas TVs', rows: [['Fim do serviço', '1º de dezembro de 2026'], ['Marcas', 'LG e Samsung'], ['Continua em', 'Web, computadores e celulares'], ['Motivo oficial', 'Não informado'], ['Brasil', 'Sem informação específica']] },
   sources: [['Advanced Television', U.copilotFimTvsLgSamsung], ['Oficina da Net', U.copilotFimTvsLgSamsung12], ['Windows Central', U.copilotFimTvsLgSamsung13], ['The Desk', U.copilotFimTvsLgSamsung14]] },
 
-{ id: 'gemini-chevrolet-brasil-portugues', cat: 'ia', own: true, t: '2026-10-30T15', d: '30 out 2026', img: 'tecnologia', read: 2,
-  title: 'Gemini começa a chegar em português a carros da Chevrolet no Brasil',
-  sum: 'A liberação é gradual e vale para Blazer EV, Equinox EV, Equinox Turbo e Silverado fabricados a partir de 2024. Modelos 2026 ou anteriores precisam de plano pago da OnStar.',
-  body: [
-    'A General Motors começou a liberar aos poucos o assistente Gemini, do Google, em português, nos carros Chevrolet vendidos no Brasil com o sistema Google integrado. A atualização chega pela Google Play, segundo o Canaltech. Nos Estados Unidos, o assistente está disponível desde abril.',
-    '## Quais carros recebem',
-    'A lista inclui Blazer EV, Equinox EV, Equinox Turbo e a picape Silverado, em unidades produzidas a partir de 2024. O carro precisa ter Android 11 ou mais recente, conexão de dados ativa e uma conta Google configurada.',
-    '## Quanto custa e o que faz',
-    'Nos modelos 2027 em diante, o recurso vem no pacote OnStar Basics, sem cobrança extra. Nos modelos 2026 e anteriores, é preciso ter um plano pago ativo da OnStar. As reportagens não informam os preços.',
-    'Por voz, o motorista pode buscar restaurantes e músicas, consultar informações do carro e ajustar o ar-condicionado. Nos elétricos, dá também para ver dados da bateria e procurar pontos de recarga, segundo o Diário do Grande ABC. O comando pode ser "Hey Google", o botão no volante ou o ícone na tela central.'
-  ],
-  box: { type: 'facts', title: 'Gemini nos Chevrolet', rows: [['Modelos', 'Blazer EV, Equinox EV, Equinox Turbo e Silverado'], ['Fabricados', 'A partir de 2024'], ['Sistema', 'Android 11 ou mais recente'], ['Modelos 2027 em diante', 'Incluído no OnStar Basics'], ['Modelos 2026 ou anteriores', 'Plano OnStar pago'], ['Liberação', 'Gradual']] },
-  sources: [['Canaltech', U.geminiChevroletBrasilPortugues], ['Diário do Grande ABC', U.geminiChevroletBrasilPortugues16]] },
-
-{ id: 'claude-code-recusa-recriar-jogos', cat: 'ia', own: false, t: '2026-10-30T15', d: '30 out 2026', img: 'tecnologia', src: 'Game Developer', url: U.gdClaudeJogos,
-  title: 'Claude Code passa a recusar a criação de cópias de jogos que já existem',
-  sum: 'A Anthropic confirmou que acrescentou instruções à ferramenta de programação. Jogos originais e de um gênero continuam permitidos.',
-  body: [
-    'A mudança foi notada por usuários, que disseram não haver como desligá-la. Um funcionário da Anthropic afirmou que foram acrescentadas duas frases às instruções do Claude Code, segundo o Game Developer. A reportagem lembra que estúdios independentes adiaram ou cancelaram testes abertos de seus jogos por medo de cópias.'
-  ] },
-
 { id: 'apple-intelligence-china-ios-27-3', cat: 'ia', own: false, t: '2026-10-30T19', d: '30 out 2026', img: 'celular', src: '9to5Mac', url: U.m9China,
   title: 'Apple confirma a Apple Intelligence na China com o modelo Qwen, da Alibaba, no iOS 27.3',
   sum: 'Os testes começam em 4 de novembro, na versão beta para desenvolvedores, e o lançamento para o público está previsto para dezembro. A nova Siri com IA fica de fora no país.',
@@ -404,14 +412,34 @@ const NEWS = [
     'O Qwen vai atender pedidos como as Ferramentas de Escrita e a Inteligência Visual. No começo, o recurso vale só para iPhone, do 15 Pro em diante, com o idioma em inglês ou chinês simplificado, segundo o 9to5Mac, com base num comunicado da Apple.'
   ] },
 
-{ id: 'chatgpt-pro-limites-dobrados', cat: 'ia', own: false, t: '2026-10-29T20', d: '29 out 2026', img: 'tecnologia', src: 'BleepingComputer', url: U.bcProLimites,
-  title: 'OpenAI desiste de reduzir uso do ChatGPT Pro e dobra os limites depois de reclamações',
-  sum: 'Os limites dobram nos planos Pro de US$ 100, US$ 200 e US$ 500 por mês e no Business Premium. A empresa não divulga os números exatos.',
+/* ===================== STARTUPS ===================== */
+{ id: 'duolingo-3tri-2026', cat: 'startups', own: true, t: '2026-11-03T19', d: '3 nov 2026', img: 'mercado', read: 2,
+  title: 'Duolingo chega a 64,9 milhões de usuários diários, alta de 29%, e deixa de vender o plano Max',
+  sum: 'A receita do terceiro trimestre subiu 14%, para US$ 309 milhões. A empresa elevou a previsão de 2026.',
   body: [
-    'A OpenAI pretendia reduzir o uso incluído no plano Pro de US$ 200 depois de 29 de outubro. Depois das críticas, voltou atrás. A mudança vale principalmente para o ChatGPT Work e o Codex, que dividem os limites. Os agentes dots continuam com limites próprios, segundo o BleepingComputer.'
+    'O Duolingo divulgou nesta terça (3) o resultado do terceiro trimestre de 2026. Os usuários ativos diários cresceram 29% em um ano, ritmo maior que os 23% do segundo trimestre, e os assinantes pagantes subiram 14%, para 13,1 milhões. O lucro líquido foi de US$ 27,2 milhões, ante US$ 292,2 milhões um ano antes, quando houve um benefício fiscal único de US$ 222,7 milhões.',
+    '## Fim do Max',
+    'A empresa deixa de vender novas assinaturas do plano Max em novembro. Os assinantes individuais passam para um plano Super familiar, com o mesmo preço e os mesmos recursos. Os planos Max familiares serão tratados em 2027.',
+    '## A previsão',
+    'Para 2026, o Duolingo agora prevê US$ 1,221 bilhão de receita, acima dos US$ 1,207 bilhão de agosto. A ação fechou a US$ 128 e era negociada a US$ 141 depois do fechamento do mercado, cerca de 10% acima.'
+  ],
+  box: { type: 'table', title: 'Terceiro trimestre de 2026', head: ['Item', 'Valor', 'Em um ano'], rows: [['Usuários diários', '64,9 mi', '+29%'], ['Usuários mensais', '153,1 mi', '+13%'], ['Assinantes pagantes', '13,1 mi', '+14%'], ['Receita', 'US$ 309 mi', '+14%']] },
+  sources: [['Stock Titan', U.duolingoTitan], ['Duolingo (documento à SEC)', U.duolingoSec]] },
+
+{ id: 'fal-16-bilhoes', cat: 'startups', own: false, t: '2026-11-03T15', d: '3 nov 2026', img: 'tecnologia', src: 'TechCrunch', url: U.falValuation,
+  title: 'Fal, que roda modelos de IA para vídeo e imagem, capta US$ 1,3 bilhão e dobra de valor, para US$ 16 bilhões',
+  sum: 'A rodada foi liderada pela Bessemer, com participação da Nvidia. Em abril, a empresa valia US$ 8 bilhões, segundo a Bloomberg.',
+  body: [
+    'Fundada em 2021 em San Francisco, a Fal hospeda e executa modelos de IA que geram vídeo, imagem e áudio. A série F foi anunciada junto com a série E, liderada pela Sequoia, e as duas somam US$ 1,65 bilhão, segundo o TechCrunch.'
   ] },
 
-/* ===================== STARTUPS ===================== */
+{ id: 'hinge-plano-mais-barato-teste', cat: 'startups', own: false, t: '2026-11-02T21', d: '2 nov 2026', img: 'celular', src: 'TechCrunch', url: U.hingePlano,
+  title: 'Hinge testa plano de assinatura mais barato, voltado sobretudo a mulheres e a quem é sensível a preço',
+  sum: 'A opção traz mais filtros e limites de localização. O Match Group, dono do app, não informou preço nem onde ocorre o teste.',
+  body: [
+    'O teste foi citado pelo diretor financeiro Steve Bailey na conferência de resultados do grupo. O Hinge tem receita média de cerca de US$ 30 por pagante, quase o dobro da do Tinder, e 2,3 milhões de pagantes, alta de 23%, segundo o TechCrunch.'
+  ] },
+
 { id: 'match-group-3tri-2026', cat: 'startups', own: true, t: '2026-11-03T07', d: '3 nov 2026', img: 'mercado', read: 2,
   title: 'Dona do Tinder fatura US$ 891 milhões no trimestre, com queda de 3% e menos pagantes; Hinge cresce 19%',
   sum: 'O Match Group teve 13,8 milhões de pagantes, 5% a menos em um ano. Os usuários diários do Tinder voltaram a subir em setembro.',
@@ -424,21 +452,6 @@ const NEWS = [
   ],
   box: { type: 'table', title: 'Terceiro trimestre de 2026', head: ['Item', 'Valor', 'Em um ano'], rows: [['Receita total', 'US$ 891 mi', '-3%'], ['Tinder', 'US$ 480 mi', '-2%'], ['Hinge', 'US$ 220,6 mi', '+19%'], ['Pagantes', '13,8 mi', '-5%']] },
   sources: [['Global Dating Insights', U.matchGdi]] },
-
-{ id: 'apple-app-store-apps-ia-terceiros', cat: 'startups', own: true, t: '2026-11-02T22', d: '2 nov 2026', img: 'plataforma', read: 2,
-  title: 'Apple vê "oportunidades" em apps de terceiros com IA, e investidores perguntam se haverá comissão',
-  sum: 'O diretor financeiro não detalhou o que quis dizer. A App Store ficou praticamente estável no trimestre, com pressão nos jogos.',
-  body: [
-    'Ao comentar o balanço, o diretor financeiro da Apple, Kevan Parekh, disse que a IA pode levar clientes a trocar de aparelho e que há oportunidades em apps de terceiros e parcerias. Ele não explicou quais. A Apple não respondeu ao TechCrunch até a publicação.',
-    '## O que é dúvida',
-    'A possibilidade de a Apple cobrar parte da receita de agentes de IA de outras empresas na App Store é uma pergunta de investidores, citada pela Reuters. Não é um plano anunciado.',
-    '## Os números',
-    'A App Store teve desempenho semelhante ao de um ano antes no trimestre de setembro, com recorde de assinaturas pagas e alta de dois dígitos nos apps de terceiros. Parekh reconheceu dificuldades nos jogos para celular. A previsão para serviços é de alta de 8% a 9% no trimestre de dezembro.',
-    '## Brasil no radar',
-    'Estimativas de terceiros de agosto apontam queda de 18% nas comissões da App Store nos EUA, com recuos também no Brasil e no Japão depois de novas regras. A reportagem não detalha os números brasileiros.'
-  ],
-  box: { type: 'facts', title: 'Apple e a App Store', rows: [['App Store no trimestre', 'Semelhante a um ano antes'], ['Serviços em dezembro', 'Alta prevista de 8% a 9%'], ['Comissão sobre agentes de IA', 'Não anunciada']] },
-  sources: [['TechCrunch', U.appleIaTerceiros]] },
 
 { id: 'snap-acordo-adolescentes', cat: 'startups', own: false, t: '2026-11-02T15', d: '2 nov 2026', img: 'plataforma', src: 'TechCrunch', url: U.snapAcordo,
   title: 'Snap faz acordo em processo sobre saúde mental de adolescentes e evita seu primeiro julgamento nessa onda de ações',
@@ -475,20 +488,6 @@ const NEWS = [
     'O presidente-executivo, Bill Lennon, disse que a empresa não conseguiu acompanhar o mercado. Com a chegada de concorrentes, ficou mais difícil se destacar e captar dinheiro, segundo o TechCrunch.'
   ] },
 
-{ id: 'roblox-3tri-2026', cat: 'startups', own: false, t: '2026-10-29T20', d: '29 out 2026', img: 'mercado', src: 'Gaming.net', url: U.gnRoblox,
-  title: 'Roblox perde 9% dos usuários diários em um ano, e a ação cai mais de 17% antes da abertura do mercado',
-  sum: 'A receita do trimestre subiu 16%, para US$ 1,57 bilhão, mas as reservas, que medem o que os jogadores gastaram, caíram 12%. São 138 milhões de usuários por dia.',
-  body: [
-    'O número de pagantes por mês caiu 16%, para 30 milhões, e as horas de uso caíram 15%. O prejuízo foi de US$ 230 milhões. Para o quarto trimestre, a empresa prevê reservas de US$ 1,89 bilhão a US$ 2 bilhões, queda de 10% a 15%, segundo o Gaming.net e o Investing.com.'
-  ] },
-
-{ id: 'binance-ataque-hacker-6-bilhoes', cat: 'startups', own: false, t: '2026-10-30T10', d: '30 out 2026', img: 'mercado', src: 'NeoFeed', url: U.nfBinance,
-  title: 'Binance sofre o maior ataque hacker já registrado no mercado de criptomoedas, com perda estimada em US$ 6,3 bilhões',
-  sum: 'A corretora suspendeu as transações na quinta (29). Diz que vai cobrir todas as perdas e que o dinheiro dos usuários está seguro.',
-  body: [
-    'Cerca de US$ 3 bilhões foram congelados, segundo a revisão da Binance. Empresas de análise atribuem o ataque a um grupo ligado à Coreia do Norte, o que ainda é uma suspeita. O recorde anterior era o da Bybit, com cerca de US$ 1,5 bilhão em 2025, segundo o NeoFeed.'
-  ] },
-
 { id: 'doordash-compra-instacart', cat: 'startups', own: true, t: '2026-10-29T10', d: '29 out 2026', img: 'mercado', read: 3,
   title: 'DoorDash compra o Instacart por US$ 17 bilhões e vai juntar entrega de refeições e de supermercado',
   sum: 'O preço é de US$ 65 por ação, com pelo menos 75% em dinheiro. A marca e o app do Instacart continuam, e a conclusão deve ficar para o fim de 2027 ou 2028.',
@@ -505,6 +504,13 @@ const NEWS = [
   sources: [['TechCrunch', U.tcDoorDash], ['NeoFeed', U.nfDoorDash], ['DoorDash (comunicado)', U.secDoorDash]] },
 
 /* ===================== IDEIAS PARA O BRASIL ===================== */
+{ id: 'salary-hero-salario-antecipado-tailandia', cat: 'ideias', own: false, t: '2026-10-16T09', d: '16 out 2026', img: 'mercado', src: 'FF News', url: U.salaryHero,
+  title: 'Na Tailândia, a Salary Hero deixa o trabalhador sacar o salário já ganho antes do fim do mês e capta US$ 7,6 milhões',
+  sum: 'A plataforma atende mais de 300 mil funcionários em mais de 100 empresas tailandesas e começou a operar na Malásia em 2026.',
+  body: [
+    'A Salary Hero se integra aos sistemas de folha de pagamento dos empregadores e oferece também ferramentas de orçamento e aulas de educação financeira. A rodada foi liderada pela Cento Ventures, e a empresa ampliou uma linha de crédito de US$ 10 milhões. A empresa estima ter evitado US$ 150 milhões em empréstimos informais caros na Tailândia. O dado é dela, e a reportagem não informa quem paga as taxas.'
+  ] },
+
 { id: 'aqar-exit-contratos-imoveis-egito', cat: 'ideias', own: true, t: '2026-10-19T10', d: '19 out 2026', img: 'mercado', read: 3,
   title: 'No Egito, a Aqar Exit ajuda quem não consegue pagar imóvel na planta a repassar o contrato',
   sum: 'A plataforma, criada em julho, recebeu cerca de EGP 10 milhões (cerca de US$ 200 mil) por 10% da empresa e reúne mais de 11 mil vendedores.',
@@ -536,13 +542,6 @@ const NEWS = [
   sum: 'A empresa processa de 50 mil a 100 mil pedidos por mês e já dá lucro, com margem líquida de 10% a 15%.',
   body: [
     'Mais de 300 lojistas já usaram o serviço, e de 90 a 100 estão ativos. O investimento veio da Den VC, em valor não revelado. A Turuq planeja licenciar seu software de armazém na Arábia Saudita.'
-  ] },
-
-{ id: 'huppa-software-academias-holanda', cat: 'ideias', own: false, t: '2026-10-19T12', d: '19 out 2026', img: 'plataforma', src: 'Vestbee', url: U.huppa,
-  title: 'Na Holanda, a Huppa vende sistema para academias e estúdios, cobrado pelo número de alunos ativos, e capta € 1 milhão',
-  sum: 'O software reúne reservas, pagamentos e gestão de alunos, sem módulos pagos à parte.',
-  body: [
-    'A empresa, fundada em 2023, atende academias, boxes de CrossFit e estúdios. A meta é chegar a 150 negócios até o fim de 2027.'
   ] },
 
 { id: 'dubdub-feed-de-perguntas-india', cat: 'ideias', own: false, t: '2026-10-27T09', d: '27 out 2026', img: 'celular', src: 'StartupTalky', url: U.dubdubFeedDePerguntasIndia,
@@ -597,6 +596,27 @@ const NEWS = [
   ] },
 
 /* ===================== NO BRASIL ===================== */
+{ id: 'bb-app-instabilidade-downdetector', cat: 'brasil', own: false, t: '2026-11-03T11', d: '3 nov 2026', img: 'celular', src: 'Exame', url: U.bbInstabilidade,
+  title: 'App do Banco do Brasil fica instável nesta terça, com pico de mais de 6,2 mil relatos de falhas no Downdetector',
+  sum: 'O banco reconheceu intermitência nos canais digitais e disse que as transações com cartão não foram afetadas.',
+  body: [
+    'O pico de relatos foi por volta das 9h34, e 83% das queixas citavam o app para celular, segundo a Exame. Usuários relataram dificuldade para entrar, inclusive com biometria e senha. Até a publicação da reportagem, às 11h31, o banco não havia dado prazo para normalizar o serviço.'
+  ] },
+
+{ id: 'vivo-pre-pago-google-one-lite', cat: 'brasil', own: false, t: '2026-11-03T18', d: '3 nov 2026', img: 'celular', src: 'Mobile Time', url: U.vivoGoogle,
+  title: 'Vivo inclui 30 GB do Google One Lite no pré-pago para quem recarrega a partir de R$ 35 por mês',
+  sum: 'A ativação é pelo app da Vivo. O espaço vale para Fotos, Drive e Gmail, sem os recursos de IA do Google.',
+  body: [
+    'Comprado direto do Google, o plano custa R$ 4,50 por mês ou R$ 45 por ano. Gemini, NotebookLM e Flow ficam de fora da oferta, porque fazem parte dos planos mais caros do Google, segundo o Mobile Time.'
+  ] },
+
+{ id: 'keeta-um-ano-10-milhoes-downloads', cat: 'brasil', own: false, t: '2026-10-27T12', d: '27 out 2026', img: 'celular', src: 'Mobile Time', url: U.keetaUmAno,
+  title: 'Keeta completa um ano no Brasil com 10 milhões de downloads e presença em 32 municípios',
+  sum: 'O app de entregas da chinesa Meituan soma 83 mil restaurantes e 430 mil entregadores cadastrados e planeja chegar a mais 21 cidades neste ano.',
+  body: [
+    'A estreia no Rio de Janeiro, prevista para fevereiro, foi adiada por questões de concorrência e segue sem nova data, segundo o Mobile Time. O Tribunal de Justiça de São Paulo decidiu contra cláusulas que impediam restaurantes de trabalhar com a Keeta.'
+  ] },
+
 { id: 'enem-2026-documentos-digitais-celular', cat: 'brasil', own: true, t: '2026-11-01T10', d: '1 nov 2026', img: 'celular', read: 2,
   title: 'Enem 2026: documento digital só vale aberto no app oficial, e print ou foto não são aceitos',
   sum: 'As provas são nos domingos 8 e 15 de novembro, para mais de 5 milhões de inscritos. Celular fora do envelope elimina o candidato.',
@@ -633,20 +653,6 @@ const NEWS = [
     'A pesquisa aponta que 53% temem ataques digitais. A reportagem também traz um dado da Adyen: 60% desistem da compra sem a forma de pagamento preferida.'
   ] },
 
-{ id: 'fintechs-acoes-semana-eleicao', cat: 'brasil', own: false, t: '2026-10-30T18', d: '30 out 2026', img: 'mercado', src: 'Finsiders', url: U.fintechsAcoes,
-  title: 'Ações de fintechs brasileiras caem depois da eleição, e PicPay perde 22,23% na semana',
-  sum: 'Na semana de 26 a 30 de outubro, o Inter caiu 13,20%, e o Nubank, 0,09%. A Stone subiu 8,85%.',
-  body: [
-    'As cotações são em dólar. Na segunda-feira seguinte à eleição de 25 de outubro, as quedas chegaram a 36,38% no PicPay, 34,91% no Inter e 16,90% no Nubank.'
-  ] },
-
-{ id: 'top-autopass-recarga-sp', cat: 'brasil', own: false, t: '2026-10-30T10', d: '30 out 2026', img: 'celular', src: 'Mobile Time', url: U.topAutopass,
-  title: 'Canais digitais do cartão Top, em São Paulo, têm 140,6 mil usuários em setembro, alta de 42,6%',
-  sum: 'As recargas digitais chegaram a 389 mil, ou 38% do total, segundo a Autopass.',
-  body: [
-    'Os números foram informados pela empresa. O Top cobre ônibus de São Paulo, CPTM e Metrô. No total, houve 1 milhão de recargas e R$ 170 milhões em setembro.'
-  ] },
-
 { id: 'sac-comeca-a-valer-apps-transporte-senacon', cat: 'brasil', own: true, t: '2026-11-02T07', d: '2 nov 2026', img: 'celular', read: 3,
   title: 'Novo SAC entra em vigor: atendente humano das 8h às 20h e espera de até 20 segundos em 80% das ligações',
   sum: 'O Decreto 13.135 vale desde esta segunda (2) para setores regulados pelo governo federal e serviços financeiros digitais. Apps de transporte, entrega e marketplaces têm regras diferentes: precisam informar dados de reclamações à Senacon.',
@@ -662,14 +668,6 @@ const NEWS = [
   ],
   box: { type: 'facts', title: 'Novo SAC', rows: [['Norma', 'Decreto 13.135'], ['Vigência', '2 de novembro'], ['Atendimento humano', '8h às 20h, todos os dias'], ['Espera no telefone', 'Até 20 segundos em 80% das demandas; até 5 minutos nas demais'], ['Menu', 'Até 5 etapas'], ['Apps de transporte e entrega', 'Informam dados de reclamações à Senacon']] },
   sources: [['Times Brasil', U.sacComecaAValerAppsTransporteSenacon], ['A Tarde', U.sacComecaAValerAppsTransporteSenacon29], ['Let\'s Money', U.sacComecaAValerAppsTransporteSenacon30]] },
-
-{ id: 'cripto-200-empresas-50-pedidos-abcripto', cat: 'brasil', own: false, t: '2026-10-31T11', d: '31 out 2026', img: 'mercado', src: 'InfoMoney', url: U.cripto200Empresas50PedidosAbcripto,
-  title: 'ABcripto conta cerca de 200 empresas no setor de cripto, e estimativas do mercado apontam perto de 50 pedidos de licença',
-  sum: 'O número de cerca de 200 empresas é da ABcripto; os cerca de 50 pedidos são estimativa do mercado, não dado oficial do Banco Central. Outros levantamentos contam de 63 a 67 nomes.',
-  body: [
-    'Cerca de 200 empresas atuavam no setor antes das novas regras, segundo Diego Perez, da ABcripto. Estimativas citadas pelo InfoMoney apontam perto de 50 pedidos de autorização. Fontes ouvidas pela reportagem dizem que manter uma empresa dentro das exigências do BC pode custar cerca de R$ 2 milhões por mês.',
-    'Quem fez o pedido no prazo pode continuar funcionando até a decisão do Banco Central. A reportagem não traz data para essas decisões.'
-  ] },
 
 { id: 'bancos-cripto-sem-autorizacao-6-novembro', cat: 'brasil', own: false, t: '2026-10-31T12', d: '31 out 2026', img: 'mercado', src: 'Economic News Brasil', url: U.bancosCriptoSemAutorizacao6Novembro,
   title: 'A partir de 6 de novembro, bancos e instituições de pagamento não podem operar com prestadoras de cripto sem autorização',
