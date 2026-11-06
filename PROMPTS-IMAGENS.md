@@ -28,32 +28,32 @@ O site encontra a imagem pelo nome do arquivo e a coloca na notícia sozinho, co
 **`absolum-celular-ios-android.webp`**
 Celular genérico na horizontal sobre mesa escura, com cena abstrata de luzes coloridas na tela, sem marcas nem personagens reconhecíveis.
 
-**`stellar-blade-switch-2.webp`**
-Console portátil genérico sobre uma mesa à noite, com tela iluminada em tons de azul abstratos, sem marcas nem personagens.
-
 **`zelda-notes-ocarina-of-time.webp`**
 Celular genérico ao lado de uma pequena flauta de cerâmica sobre mesa de madeira, tela com notas musicais abstratas, sem marcas.
-
-**`faraway-consoles-pc.webp`**
-Céu noturno limpo com estrelas ligadas por linhas finas de luz, sobre colinas escuras, sem texto.
 
 **`affinity-ipad-gratis.webp`**
 Tablet genérico sobre mesa de estúdio, com caneta digital e tela de desenho abstrato colorido, sem marcas nem logotipos.
 
-**`chromagraph-camera-iphone.webp`**
-Celular genérico em um pequeno tripé fotografando uma rua ao entardecer, com luz suave e granulação de filme, sem rostos, logotipos nem marcas.
-
 **`dispatch-celular-9-dezembro.webp`**
 Mãos segurando um celular genérico na horizontal, com tela de jogo em cores abstratas, em sala escura, sem personagens, logotipos nem marcas.
-
-**`zelda-ocarina-of-time-switch-2.webp`**
-Console portátil genérico sobre uma mesa de madeira, com a tela mostrando um campo verde e um castelo distante em estilo de fantasia, sem personagens reconhecíveis, logotipos nem marcas.
 
 **`gta-6-lancamento-19-novembro.webp`**
 Controle de videogame genérico sobre uma mesa diante de uma TV desfocada que mostra uma avenida à beira-mar ao pôr do sol, com palmeiras, sem personagens, logotipos nem marcas.
 
 **`football-manager-27-netflix-celular.webp`**
 Celular genérico ao lado de uma prancheta de tática de futebol, com um estádio vazio ao fundo, sem escudos, logotipos nem marcas.
+
+**`edits-instagram-mac.webp`**
+Notebook genérico sobre mesa de estúdio, com tela de edição de vídeo mostrando uma linha do tempo com várias faixas coloridas abstratas, ao lado de um celular apoiado, sem logotipos nem marcas.
+
+**`tiktok-shop-app-separado.webp`**
+Mãos segurando um celular genérico com tela de loja online abstrata, cercado por pequenas caixas de papelão para entrega sobre uma mesa clara, sem logotipos nem marcas.
+
+**`apple-arcade-crossy-road-rush-nba-2k27.webp`**
+Celular genérico na horizontal sobre um sofá, com tela de jogo colorida e abstrata, e uma bola de basquete desfocada ao fundo, sem personagens, logotipos nem marcas.
+
+**`escape-academy-2-void-breaker-xbox.webp`**
+Controle de videogame genérico sobre uma mesa diante de uma TV desfocada que mostra uma sala de enigmas com luzes de néon, sem personagens, logotipos nem marcas.
 
 ## Atualizações
 
@@ -75,17 +75,17 @@ Celular genérico sobre mesa de madeira mostrando gráficos abstratos de batimen
 **`fitness-plus-gym-strength-beta.webp`**
 Halteres e banco em academia vazia com luz natural, com celular genérico apoiado ao lado exibindo uma lista abstrata de exercícios, sem rostos, logotipos nem marcas.
 
-**`google-derruba-backdoor-tv-box.webp`**
-Pequena caixa preta genérica de TV conectada a um televisor apagado, com luz vermelha de alerta na sala escura, sem logotipos nem marcas.
+**`youtube-redesign-sem-aba-inscricoes.webp`**
+Mão segurando um celular genérico com uma tela de vídeos em miniaturas abstratas e uma barra inferior simplificada, em sala com luz suave, sem logotipos nem marcas.
 
-**`android-sms-da-morte-falha.webp`**
-Celular genérico sobre uma mesa escura, com a tela reiniciando em uma luz branca, sem texto legível, logotipos nem marcas.
+**`whatsapp-beta-conversas-meta-ai.webp`**
+Celular genérico sobre mesa de madeira mostrando uma lista de conversas com balões abstratos e um pequeno símbolo genérico de robô, sem logotipos nem texto legível.
 
-**`meta-ai-alerta-pais-adolescentes-brasil.webp`**
-Dois celulares genéricos lado a lado sobre a mesa de uma sala de casa, com telas abstratas iluminadas e luz suave, sem pessoas, logotipos nem marcas.
+**`amazon-prime-uber-eats-eua.webp`**
+Sacola de entrega de comida sem marca sobre o degrau de uma porta de casa, com um celular genérico ao lado mostrando um mapa abstrato, sem logotipos nem pessoas.
 
-**`chrome-extensoes-sequestram-buscas.webp`**
-Notebook genérico aberto com uma barra de busca em branco e setas abstratas desviando para outros caminhos na tela, sem logotipos nem marcas.
+**`apple-music-selfie-sing-beta.webp`**
+Celular genérico apoiado num pequeno tripé sobre uma mesa, com microfone de brinquedo ao lado e luzes coloridas desfocadas ao fundo, sem pessoas, logotipos nem marcas.
 
 ## IA
 
@@ -107,17 +107,17 @@ Celular genérico sobre mesa com uma caixa de busca vazia na tela e notebook des
 **`apple-watch-audio-intelligence-beta.webp`**
 Relógio inteligente genérico no pulso, em close, com linhas de texto abstratas na tela, em café com fundo desfocado, sem rostos, logotipos nem marcas.
 
-**`chatgpt-junta-abas-chat-work.webp`**
-Notebook genérico em uma mesa com uma tela de conversa em branco e cartões de tarefas abstratos, em luz de fim de tarde, sem logotipos nem marcas.
+**`claude-financas-pessoais-beta.webp`**
+Celular genérico sobre mesa com extratos em papel sem texto legível, calculadora e um gráfico de barras abstrato na tela, luz natural, sem logotipos nem marcas.
 
-**`anthropic-balanco-prospecto-ipo.webp`**
-Documento financeiro impresso com gráficos genéricos sobre uma mesa, ao lado de uma calculadora, sem nomes, logotipos nem marcas.
+**`gemini-omni-1-2-flash-videos.webp`**
+Tela de computador genérica mostrando uma sequência de quadros de vídeo abstratos em forma de película de cinema, num escritório escuro, sem logotipos nem marcas.
 
-**`anthropic-alerta-rsi-prospecto.webp`**
-Corredor de um centro de dados com fileiras de servidores e luz azul, sem pessoas, logotipos nem marcas.
+**`perplexity-teammates-agentes.webp`**
+Mesa de escritório com notebook genérico mostrando várias janelas de tarefas abstratas e post-its coloridos ao redor, sem pessoas, logotipos nem texto legível.
 
-**`copilot-fim-tvs-lg-samsung.webp`**
-Sala de estar à noite com uma TV grande genérica na parede, tela escura com um balão de conversa apagado no centro, controle remoto sobre a mesa de centro, sem logotipos nem marcas.
+**`meta-muse-voz-avatares-eua.webp`**
+Celular genérico sobre uma mesa com tela mostrando uma onda sonora abstrata e um rosto de avatar estilizado e não realista, com fones de ouvido ao lado, sem logotipos nem marcas.
 
 ## Startups
 
@@ -136,37 +136,25 @@ Celular genérico na vertical em um suporte, com cena dramática abstrata na tel
 **`canva-reestruturacao-1200-funcionarios.webp`**
 Escritório de design vazio com mesas, cadeiras e monitores desligados, luz de fim de tarde, sem marcas nem pessoas.
 
-**`duolingo-3tri-2026.webp`**
-Mesa de estudo com caderno de idiomas, fones de ouvido e celular genérico com gráfico de crescimento abstrato, sem logotipos nem marcas.
-
 **`fal-16-bilhoes.webp`**
 Corredor de data center com luzes azuis e fileiras de servidores genéricos, sem pessoas, logotipos nem marcas.
 
-**`snap-acordo-adolescentes.webp`**
-Fachada de um tribunal nos EUA em dia nublado, com escadaria vazia, sem pessoas, logotipos nem marcas.
+**`airbnb-3tri-2026.webp`**
+Mala de viagem e chaves sobre a mesa de um apartamento iluminado pela luz da manhã, com um celular genérico de tela abstrata, sem logotipos nem marcas.
 
-**`ollie-assistente-ia-encerra.webp`**
-Escritório pequeno de startup vazio ao fim do dia, cadeiras empurradas, notebook fechado sobre a mesa e caixas de papelão, luz de pôr do sol pela janela, sem logotipos nem marcas.
+**`applovin-3tri-2026.webp`**
+Vários celulares genéricos lado a lado sobre uma mesa escura, com telas de anúncios abstratos e coloridos, sem logotipos nem marcas.
 
-**`doordash-compra-instacart.webp`**
-Entregador de bicicleta visto de costas numa rua de bairro ao entardecer, com sacola de supermercado e caixa térmica de comida, sem logotipos nem marcas e sem rosto visível.
+**`bumble-3tri-2026-venda.webp`**
+Celular genérico sobre uma mesa de café com dois copos, tela mostrando cartões de perfil abstratos sem rostos, luz quente, sem logotipos nem marcas.
+
+**`lyft-3tri-2026.webp`**
+Rua urbana ao anoitecer com um carro genérico sem marcas parado no meio-fio e um celular de tela abstrata em primeiro plano, sem pessoas reconhecíveis.
 
 ## Ideias para o Brasil
 
-**`matiks-jogos-matematica-india.webp`**
-Celular genérico sobre caderno com contas à mão, em mesa de estudante, com tela de números abstratos, sem marcas.
-
-**`ghanem-fracao-imoveis-arabia-saudita.webp`**
-Prédios residenciais claros em cidade do Oriente Médio ao entardecer, sem letreiros nem marcas.
-
 **`viatik-carona-uruguai-argentina.webp`**
 Carro comum em estrada de interior ao amanhecer, com paisagem aberta, sem placas legíveis nem marcas.
-
-**`salary-hero-salario-antecipado-tailandia.webp`**
-Corredor de fábrica no início do turno, com armários e capacetes, e celular genérico sobre uma bancada exibindo um valor abstrato, sem rostos, logotipos nem marcas.
-
-**`aqar-exit-contratos-imoveis-egito.webp`**
-Prédio residencial em construção no Cairo ao entardecer, com guindastes ao fundo e contrato de papel em primeiro plano, sem rostos, logotipos nem marcas.
 
 **`strollme-assinatura-produtos-infantis.webp`**
 Carrinho de bebê e bicicleta infantil genéricos em um depósito claro e organizado, sem pessoas, logotipos nem marcas.
@@ -182,6 +170,18 @@ Sala de aula moderna com jovens de costas diante de notebooks com código genér
 
 **`medikea-teleconsulta-clinicas-proprias.webp`**
 Pequena clínica de bairro na África Oriental, recepção iluminada com balcão e cadeiras, celular sobre o balcão mostrando uma videochamada genérica, sem rostos reconhecíveis nem logotipos.
+
+**`maasi-babas-india.webp`**
+Sala de brinquedos iluminada com blocos de madeira, livros infantis e um celular genérico sobre uma mesa baixa, sem pessoas, logotipos nem marcas.
+
+**`noornation-irrigacao-solar-egito.webp`**
+Painéis solares numa fazenda em região seca, com um canal de irrigação e plantação verde ao fundo, sem pessoas, logotipos nem marcas.
+
+**`curebay-clinicas-rurais-india.webp`**
+Pequena clínica numa vila rural, com cadeira de espera, estetoscópio sobre a mesa e um tablet genérico de tela abstrata, sem pessoas reconhecíveis, logotipos nem marcas.
+
+**`vitara-karite-coletoras-gana.webp`**
+Sacos de nozes de karité empilhados num galpão rural, com uma balança e um celular genérico sobre um banco de madeira, sem pessoas, logotipos nem marcas.
 
 ## No Brasil
 
@@ -200,18 +200,17 @@ Celular genérico sobre mesa, com uma tela abstrata de nuvem e pastas de fotos, 
 **`enem-2026-documentos-digitais-celular.webp`**
 Carteira escolar vazia com lápis de lado, caneta transparente e um envelope lacrado sobre ela, em sala de aula, sem pessoas, logotipos nem marcas.
 
-**`itau-pay-checkout-app.webp`**
-Mãos fora de foco segurando um celular genérico com tela de pagamento abstrata e um cartão sem identificação ao lado, sem rostos, logotipos nem marcas.
-
-**`anatel-biometria-facial-ativar-linha.webp`**
-Celular genérico com uma moldura oval vazia de leitura facial na tela e um chip SIM sobre a mesa, sem rostos, logotipos nem marcas.
-
 **`sac-comeca-a-valer-apps-transporte-senacon.webp`**
 Mão segurando um celular com tela genérica de chamada em espera, sobre uma mesa com bloco de anotações e relógio marcando o início da manhã, sem logotipos nem marcas.
 
 **`bancos-cripto-sem-autorizacao-6-novembro.webp`**
 Balcão de banco visto de perto, com um celular de tela genérica e um calendário de mesa ao fundo, sem pessoas reconhecíveis, logotipos ou marcas.
 
-**`uphold-oobit-deixam-brasil-cripto.webp`**
-Celular genérico sobre uma mesa mostrando um aviso genérico de encerramento de conta com um cartão de pagamento sem marca ao lado, luz fria, sem logotipos nem texto legível.
+**`fgc-acesso-indevido-dados.webp`**
+Celular genérico sobre uma mesa mostrando um cadeado aberto estilizado, ao lado de documentos sem texto legível, luz fria, sem logotipos nem marcas.
 
+**`anatel-roaming-rodovias-pequenas-cidades.webp`**
+Rodovia em região rural no fim da tarde, com uma torre de celular genérica à beira da estrada, sem placas legíveis, logotipos nem marcas.
+
+**`primova-pay-25-milhoes-recargas.webp`**
+Mão segurando um celular genérico diante de uma catraca de ônibus desfocada, com tela de pagamento abstrata, sem logotipos nem marcas.
