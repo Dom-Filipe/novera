@@ -283,10 +283,10 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
 
 <div class="topbar">
   <div class="wrap">
-    <span id="today">Sexta-feira, 6 de novembro de 2026</span>
+    <span id="today">Sábado, 7 de novembro de 2026</span>
     <div class="ticker" aria-label="Destaques do dia">
-      <span><b>Em alta</b> YouTube muda o app no Android e no iOS e tira a aba Inscrições da barra de baixo</span>
-      <span><b>Alerta</b> FGC confirma acesso indevido a dados de clientes e diz que não pede senha, código nem taxa</span>
+      <span><b>Em alta</b> iPhone Duo já tem mais de 100 mil apps adaptados, segundo a Apple</span>
+      <span><b>Alerta</b> Pix fica instável na noite de sexta (6), com cerca de 11 mil relatos de falha</span>
       <span><b>Domingo (8)</b> Enem 2026: documento digital só vale aberto no app oficial; print ou foto não são aceitos</span>
     </div>
   </div>
@@ -298,7 +298,7 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
       <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Abrir menu" aria-controls="drawer" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
       </button>
-      <span class="date-desk">Edição de 6 nov 2026</span>
+      <span class="date-desk">Edição de 7 nov 2026</span>
     </div>
     <a class="logo" href="#inicio" aria-label="Novera, página inicial">
       <span class="logo-name">Novera</span>
@@ -380,27 +380,56 @@ footer.site ul { list-style: none; margin: 0; padding: 0; display: flex; flex-di
 const META = {
   /* Endereço público do site, sem barra no final. Usado nos links das redes sociais. */
   siteUrl: 'https://novera-sepia.vercel.app',
-  dataExtenso: 'Sexta-feira, 6 de novembro de 2026',
-  edicao: '6 nov 2026',
+  dataExtenso: 'Sábado, 7 de novembro de 2026',
+  edicao: '7 nov 2026',
   /* Faixa do topo: 1 a 3 itens [rótulo, texto curto]. Use só fatos que estão em notícias do site. */
   destaques: [
-    ['Em alta', 'YouTube muda o app no Android e no iOS e tira a aba Inscrições da barra de baixo'],
-    ['Alerta', 'FGC confirma acesso indevido a dados de clientes e diz que não pede senha, código nem taxa'],
+    ['Em alta', 'iPhone Duo já tem mais de 100 mil apps adaptados, segundo a Apple'],
+    ['Alerta', 'Pix fica instável na noite de sexta (6), com cerca de 11 mil relatos de falha'],
     ['Domingo (8)', 'Enem 2026: documento digital só vale aberto no app oficial; print ou foto não são aceitos']
   ]
 };
 
 /* Home: destaque principal, dois laterais e três da faixa de baixo (IDs de notícias "own: true") */
 const FEATURED = {
-  lead: 'youtube-redesign-sem-aba-inscricoes',
-  side: ['fgc-acesso-indevido-dados', 'claude-financas-pessoais-beta'],
-  also: ['airbnb-3tri-2026', 'edits-instagram-mac', 'maasi-babas-india']
+  lead: 'icloud-links-publicos-analise-ios-27-3',
+  side: ['iphone-duo-100-mil-apps', 'meta-muse-spaces'],
+  also: ['vereda-agtech-30-milhoes', 'onto-reembolso-queda-preco-hotel-india', 'fgc-acesso-indevido-dados']
 };
 
 /* Home: "Escolhas da redação" (5 IDs) */
-const PICKS = ['anatel-bloqueio-sms-sem-cadastro', 'enem-2026-documentos-digitais-celular', 'gta-6-lancamento-19-novembro', 'netflix-ai-discover-teste', 'medikea-teleconsulta-clinicas-proprias'];
+const PICKS = ['enem-2026-documentos-digitais-celular', 'youtube-redesign-sem-aba-inscricoes', 'claude-financas-pessoais-beta', 'anatel-bloqueio-sms-sem-cadastro', 'airbnb-3tri-2026'];
 
 const U = {
+  /* Atualização de 7 nov 2026 */
+  duoApps: 'https://techcrunch.com/2026/11/06/the-duo-apps-are-coming-says-apple/',
+  wowForever: 'https://mein-mmo.de/en/wow-forever-release-in-the-live-ticker-time-status-queues-and-more,1594825/',
+  paydayVr: 'https://www.roadtovr.com/payday-vr-release-date-quest-steamvr-frame/',
+  pocketGamerSemana: 'https://www.pocketgamer.com/new-weekly-mobile-games/november-5th-2026/',
+  icloudLinks: 'https://www.macrumors.com/2026/11/04/ios-27-3-icloud-link-check/',
+  whatsappPrevia: 'https://wabetainfo.com/whatsapp-is-testing-a-contextual-chat-preview-for-android/',
+  findHubAlerta: 'https://9to5google.com/2026/11/05/google-find-hub-tracker-alerts/',
+  ios272: 'https://9to5mac.com/2026/11/06/ios-27-2-adds-three-new-ways-to-customize-your-iphone/',
+  discordAndroid: 'https://9to5google.com/2026/11/06/discord-is-about-to-get-way-way-faster-on-your-android-phone/',
+  museSpaces: 'https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/',
+  alexaTexto: 'https://techmymoney.com/2026/11/06/text-alexa-shop-amazon/',
+  geminiOffline: 'https://www.androidheadlines.com/2026/11/gemini-live-could-soon-work-offline-but-theres-a-catch.html',
+  antigravity: 'https://9to5google.com/2026/11/06/google-antigravity-remote-agents-voice-mode/',
+  vereda: 'https://startups.com.br/negocios/agtech/vereda-capta-r-30m-para-conectar-industria-de-insumos-direto-ao-produtor/',
+  techloyLatam: 'https://www.techloy.com/week-45-2026-latin-america-startup-funding/',
+  grindr: 'https://www.sec.gov/Archives/edgar/data/0001820144/000182014426000039/exhibit991-q32026pressrele.htm',
+  nextdoor: 'https://about.nextdoor.com/press-releases/nextdoor-reports-third-quarter-2026-results',
+  expedia: 'https://www.sec.gov/Archives/edgar/data/0001324424/000132442426000059/earningsrelease-q32026.htm',
+  onto: 'https://ascendants.in/funding-feed/onto-1-million-pre-seed-funding-hotel-price-drop-refund/',
+  ontoOutlook: 'https://www.outlookbusiness.com/spotlight/pr-wire/former-groww-team-launch-onto-a-customer-first-travel-platform-with-usd-1-million-in-pre-seed-funding',
+  dispatchNetwork: 'https://www.indianweb2.com/2026/11/dispatch-network-raises-5-crore-pre.html',
+  evenHealthcare: 'https://inc42.com/buzz/even-healthcare-raises-50-mn-to-expand-hospital-network-across-bengaluru/',
+  payserve: 'https://disruptafrica.com/2026/11/04/how-kenyas-payserve-is-building-the-operating-layer-for-managed-real-estate/',
+  pixOTempo: 'https://www.otempo.com.br/economia/2026/11/6/pix-fora-do-ar-usuarios-relatam-instabilidade-em-bancos-e-plataformas-de-pagamento',
+  criptoCnn: 'https://www.cnnbrasil.com.br/economia/money/mercado/nubank-e-mercado-pago-suspendem-operacoes-de-criptomoedas-entenda/',
+  govbrEmail: 'https://cryptoid.com.br/governo-digital-government/gov-br-amplia-opcoes-para-recuperar-acesso-a-conta/',
+  blackFridaySerasa: 'https://olhardigital.com.br/2026/11/05/seguranca/black-friday-2025-teve-29-mil-tentativas-de-fraude-em-apenas-quatro-dias',
+  anpdMiola: 'https://www.mobiletime.com.br/noticias/06/11/2026/iage-miola-preside-anpd/',
   /* Atualização de 6 nov 2026 */
   editsMacTc: 'https://techcrunch.com/2026/11/05/instagram-brings-edits-to-desktop-to-take-on-capcut/',
   editsMacRumors: 'https://www.macrumors.com/2026/11/05/instagram-edits-mac/',
@@ -571,6 +600,42 @@ const U = {
 
 const NEWS = [
 /* ===================== LANÇAMENTOS ===================== */
+{ id: 'iphone-duo-100-mil-apps', cat: 'lancamentos', own: true, t: '2026-11-06T15', d: '6 nov 2026', img: 'celular', read: 2,
+  title: 'iPhone Duo, o dobrável da Apple, já tem mais de 100 mil apps adaptados, com Word, Outlook e Zoom entre os novos',
+  sum: 'Segundo a Apple, milhares de apps adaptados entram na App Store por dia. O aparelho custa a partir de US$ 1.999 nos EUA e esgotou em poucas horas.',
+  body: [
+    'A Apple informou que mais de 100 mil apps feitos para o iPhone Duo, seu celular dobrável, já estão na App Store, segundo o TechCrunch. A empresa diz que milhares de novos apps adaptados chegam à loja todos os dias.',
+    '## Quem chegou agora',
+    'Entre os apps que acabam de ganhar versão para a tela dobrável estão Microsoft Word e Outlook, Zoom, os apps da NBA e da NHL, Etsy, LTK, Goodnotes, Extra e Halide Mark III. Netflix, YouTube, Instagram e WhatsApp já estavam adaptados. Spotify, ChatGPT, Grok, Copilot, Excel, PowerPoint, Canva, Tinder, Strava, Google Tradutor e Messenger aparecem numa lista de apps atualizados para o iOS 27 e o Duo.',
+    '## Nem tudo pronto',
+    'No teste do TechCrunch, o Spotify ainda aparecia sem adaptação, com uma faixa preta na lateral, e não havia atualização na loja. Segundo a Apple, mais de 2.000 desenvolvedores participaram de mais de 50 oficinas presenciais em 19 cidades para preparar os apps.',
+    '## Preço e entrega',
+    'O iPhone Duo custa a partir de US$ 1.999, com 256 GB. Ele esgotou em poucas horas, e os prazos de entrega já passam para o ano que vem, segundo o TechCrunch. A reportagem não trata do Brasil.'
+  ],
+  box: { type: 'facts', title: 'Apps no iPhone Duo', rows: [['Apps adaptados', 'Mais de 100 mil, segundo a Apple'], ['Novos', 'Word, Outlook, Zoom, Etsy, Goodnotes e outros'], ['Preço do aparelho', 'A partir de US$ 1.999 (256 GB)'], ['Entrega', 'Prazos já no ano que vem'], ['Brasil', 'Sem confirmação']] },
+  sources: [['TechCrunch', U.duoApps]] },
+
+{ id: 'wow-forever-lancamento', cat: 'lancamentos', own: false, t: '2026-11-05T09', d: '5 nov 2026', img: 'tecnologia', src: 'Mein-MMO', url: U.wowForever,
+  title: 'World of Warcraft: Forever, nova versão permanente do jogo, entra no ar com raça e região inéditas',
+  sum: 'O lançamento global foi na noite de 4 de novembro, no horário do Pacífico. O acesso faz parte da assinatura do jogo.',
+  body: [
+    'A nova versão funciona ao lado do WoW atual e do Classic e recria a Azeroth original, com nível máximo 60, a raça jogável Skyborne e a região inicial Zephras Isle. No dia da estreia, as filas foram de no máximo cerca de 5 minutos, com alguns erros no começo, segundo o Mein-MMO. Há pacotes opcionais vendidos à parte, sem preço nas fontes. A fonte não trata do Brasil.'
+  ] },
+
+{ id: 'payday-aces-high-realidade-virtual', cat: 'lancamentos', own: false, t: '2026-11-05T12', d: '5 nov 2026', img: 'tecnologia', src: 'Road to VR', url: U.paydayVr,
+  title: 'Payday: Aces High, jogo de assalto cooperativo em realidade virtual, tem estreia marcada para quinta (5)',
+  sum: 'O jogo da Fast Travel Games sai para Meta Quest, PC VR e Steam Frame, por US$ 25, para até quatro jogadores.',
+  body: [
+    'Os assaltos incluem um banco, um museu e uma cobertura de luxo, com armas, equipamentos e habilidades que o jogador escolhe. Quem compra na Steam leva as versões para PC VR e para o Steam Frame. O preço está em dólar, e a fonte não trata do Brasil.'
+  ] },
+
+{ id: 'heir-of-the-dog-iphone', cat: 'lancamentos', own: false, t: '2026-11-05T15', d: '5 nov 2026', img: 'celular', src: 'Pocket Gamer', url: U.pocketGamerSemana,
+  title: 'Heir of the Dog, mistério em pixel art na Londres vitoriana, chega ao iPhone por US$ 14,99',
+  sum: 'O jogo de apontar e clicar está entre os lançamentos da semana para celular, ao lado de Mika: Dungeon Backpacker e Copy Cats.',
+  body: [
+    'Heir of the Dog sai só para iOS. Mika: Dungeon Backpacker, jogo de organizar a mochila do herói, e Copy Cats, de quebra-cabeças de plataforma, chegam ao iOS e ao Android, segundo o Pocket Gamer. A fonte não informa preços em reais nem trata do Brasil.'
+  ] },
+
 { id: 'edits-instagram-mac', cat: 'lancamentos', own: true, t: '2026-11-05T13', d: '5 nov 2026', img: 'arte', read: 2,
   title: 'Edits, o editor de vídeo do Instagram, ganha versão para Mac, com exportação em 4K sem marca d\'água',
   sum: 'O app para computador traz timeline com várias faixas, legendas automáticas e publicação direta no Instagram. Mais de 50 milhões de criadores usam o Edits no celular.',
@@ -598,41 +663,6 @@ const NEWS = [
   sum: 'Também entram Kami 2+ e Food Stylist – Design Game+. O serviço custa US$ 6,99 por mês nos EUA, para até seis pessoas da família.',
   body: [
     'O Crossy Road Rush é uma corrida de obstáculos numa ilha, para até quatro jogadores. O NBA 2K27 Arcade Edition tem 15 times e 180 jogadoras da WNBA nos modos Quick Match e Blacktop. Segundo o 9to5Mac, o catálogo passa de 200 jogos. As fontes não tratam do preço no Brasil.'
-  ] },
-
-{ id: 'escape-academy-2-void-breaker-xbox', cat: 'lancamentos', own: false, t: '2026-11-05T10', d: '5 nov 2026', img: 'tecnologia', src: 'Xbox Wire', url: U.xboxSemana,
-  title: 'Escape Academy 2 e VOID/BREAKER chegam ao Xbox e ao PC nesta semana, entre mais de 30 lançamentos',
-  sum: 'VOID/BREAKER saiu na quarta (4), por US$ 29,99, e Escape Academy 2: Back 2 School, na quinta (5), por US$ 19,99.',
-  body: [
-    'Escape Academy 2 é um jogo de salas de fuga, para jogar sozinho ou em dupla. VOID/BREAKER é um jogo de tiro em primeira pessoa em que o jogador tenta escapar de um ciclo criado por uma IA hostil. A semana tem mais de 30 lançamentos no Xbox, segundo o Xbox Wire. Os preços estão em dólar, e a fonte não trata do Brasil.'
-  ] },
-
-{ id: 'absolum-celular-ios-android', cat: 'lancamentos', own: true, t: '2026-11-05T06', d: '5 nov 2026', img: 'celular', read: 2,
-  title: 'Absolum, jogo de pancadaria com fases aleatórias, tem estreia marcada no iPhone e no Android nesta quinta (5)',
-  sum: 'A versão para celular custa US$ 11,99 e traz controle por toque, com suporte a controle físico. As fontes não confirmam o preço em reais.',
-  body: [
-    'O Absolum tem lançamento marcado para esta quinta-feira (5) no iOS e no Android, em todo o mundo, segundo o Gematsu. A publicação é da Playdigious, em cooperação com a Dotemu, e o desenvolvimento é da Guard Crush Games e da Supamonks.',
-    '## O que muda no celular',
-    'A versão móvel tem interface própria e pode ser jogada só com toques na tela ou com controle físico. O progresso fica salvo na nuvem e passa do iOS para o Android. No Android, quem usa a mesma conta do Google Play Games também leva o avanço para o PC. Há conquistas no Game Center e no Google Play Games.',
-    '## Preço',
-    'A central de ajuda da Playdigious informa o preço de US$ 11,99 ou € 11,99, com 30% de desconto nas duas primeiras semanas. As fontes não trazem o valor em reais nem confirmam a disponibilidade no Brasil.'
-  ],
-  box: { type: 'facts', title: 'Absolum no celular', rows: [['Estreia', '5 de novembro'], ['Sistemas', 'iOS e Android'], ['Preço', 'US$ 11,99 ou € 11,99'], ['Controles', 'Toque ou controle físico'], ['Brasil', 'Sem confirmação']] },
-  sources: [['Gematsu', U.absolumGematsu], ['Gematsu (lançamentos da semana)', U.absolumSemana], ['Playdigious (central de ajuda)', U.absolumPreco]] },
-
-{ id: 'zelda-notes-ocarina-of-time', cat: 'lancamentos', own: false, t: '2026-11-04T15', d: '4 nov 2026', img: 'celular', src: 'Game Overdrive', url: U.zeldaNotes,
-  title: 'Zelda Notes ganha ocarina virtual e quiz com mais de 2.000 perguntas para o novo Ocarina of Time',
-  sum: 'Os recursos ficam dentro do Nintendo Switch App e são gratuitos, sem exigir assinatura do Nintendo Switch Online.',
-  body: [
-    'É preciso ter o jogo no Switch 2, na versão 1.1.1 ou mais nova, além de conta Nintendo vinculada, dados salvos e internet. O app funciona em Android 9.0 ou mais novo e em iOS 16.0 ou mais novo.',
-    'Na ocarina, o jogador toca pela tela e pode compartilhar partituras por QR code. O quiz dá uma tentativa grátis por dia, e rúpias do jogo compram outras. A fonte não confirma a disponibilidade do app no Brasil.'
-  ] },
-
-{ id: 'affinity-ipad-gratis', cat: 'lancamentos', own: false, t: '2026-11-02T14', d: '2 nov 2026', img: 'arte', src: '9to5Mac', url: U.affinityIpad,
-  title: 'Canva lança o Affinity para iPad, app gratuito para pessoas físicas que junta foto, vetor, desenho e diagramação',
-  sum: 'O app substitui os antigos Affinity Photo, Designer e Publisher no tablet e é download grátis na App Store.',
-  body: [
-    'O Affinity para iPad tem quatro módulos: Sketch, Vector, Photo e Layout, com edição de arquivos RAW, documentos de várias páginas e suporte aos recursos do Apple Pencil Pro. Há funções de IA, como expandir a imagem e separar uma imagem plana em camadas. Segundo o 9to5Mac, a versão para computador passou de 7 milhões de cadastros em um ano. A reportagem não trata de preços para empresas nem cita o Brasil.'
   ] },
 
 { id: 'dispatch-celular-9-dezembro', cat: 'lancamentos', own: false, t: '2026-10-22T14', d: '22 out 2026', img: 'celular', src: 'Gematsu', url: U.dispatchMobile,
@@ -663,6 +693,51 @@ const NEWS = [
   ] },
 
 /* ===================== ATUALIZAÇÕES ===================== */
+{ id: 'icloud-links-publicos-analise-ios-27-3', cat: 'atualizacoes', own: true, t: '2026-11-04T16', d: '4 nov 2026', img: 'plataforma', read: 3,
+  title: 'Apple vai poder analisar fotos e arquivos do iCloud compartilhados por link aberto a partir do iOS 27.3',
+  sum: 'A regra vale para links do tipo "qualquer pessoa com o link". Esse conteúdo deixa de ter criptografia de ponta a ponta, mesmo com a Proteção Avançada de Dados ligada.',
+  body: [
+    'A partir do iOS 27.3, itens do Fotos do iCloud e do iCloud Drive compartilhados com a opção "qualquer pessoa com o link" ficarão acessíveis para revisão da Apple, segundo o MacRumors. A empresa diz que vai procurar conteúdo nocivo, mas não define o que entra nessa categoria.',
+    '## O que fica de fora',
+    'Links enviados só para pessoas escolhidas e a opção de mandar uma cópia do arquivo não passam pela verificação. A mudança vale também para o iPadOS, o macOS e o visionOS 27.3.',
+    '## Criptografia',
+    'O conteúdo publicado por link aberto deixa de ter criptografia de ponta a ponta, inclusive para quem ativou a Proteção Avançada de Dados.',
+    '## O que pode acontecer',
+    'Se encontrar conteúdo nocivo, a Apple pode remover o material, restringir ou desativar a conta, impedir um novo cadastro com o mesmo e-mail ou telefone e acionar as autoridades. A empresa não disse se links criados antes da versão 27.3 também serão analisados.',
+    '## Quando',
+    'O iOS 27.3 está em teste para desenvolvedores, e a versão final é esperada para dezembro. A fonte não trata do Brasil.'
+  ],
+  box: { type: 'facts', title: 'iCloud no iOS 27.3', rows: [['O que muda', 'Links abertos podem ser analisados pela Apple'], ['Fica de fora', 'Links para pessoas escolhidas e envio de cópia'], ['Criptografia', 'Link aberto sai da ponta a ponta'], ['Situação', 'Em teste; versão final esperada em dezembro'], ['Brasil', 'Sem menção na fonte']] },
+  sources: [['MacRumors', U.icloudLinks]] },
+
+{ id: 'whatsapp-previa-conversas-android', cat: 'atualizacoes', own: false, t: '2026-11-05T18', d: '5 nov 2026', img: 'celular', src: 'WABetaInfo', url: U.whatsappPrevia,
+  title: 'WhatsApp desenvolve no Android uma prévia de conversas que deixa ler mensagens sem marcá-las como lidas',
+  sum: 'Ao tocar e segurar uma conversa na lista, as mensagens recentes aparecem no topo de um novo menu. O recurso ainda não foi liberado nem para quem testa o beta.',
+  body: [
+    'O recurso foi encontrado na versão beta 2.26.44.11 para Android. Diferente da versão do iOS, a prévia no Android pode ser rolada. O menu reúne opções como selecionar, fixar, arquivar, apagar e marcar como lida. Não há data de lançamento, e a fonte não trata do Brasil.'
+  ] },
+
+{ id: 'find-hub-alerta-rastreador-esquecido', cat: 'atualizacoes', own: false, t: '2026-11-05T17', d: '5 nov 2026', img: 'celular', src: '9to5Google', url: U.findHubAlerta,
+  title: 'Find Hub, app do Google para localizar aparelhos, passa a avisar quando um rastreador fica para trás',
+  sum: 'O alerta é ligado rastreador por rastreador e, por enquanto, funciona só com os modelos da Chipolo e com o Moto Tag, para usuários nos EUA e na Europa.',
+  body: [
+    'A opção aparece na versão 3.1.787-06 do app para Android, nas configurações de cada rastreador. O endereço de casa salvo na conta Google fica fora dos avisos por padrão. Segundo o 9to5Google, o Google prepara ainda um novo cadastro de rastreadores, a troca de nomes e a leitura por NFC. O Brasil não está entre as regiões citadas.'
+  ] },
+
+{ id: 'ios-27-2-perfis-apple-tv-iphone', cat: 'atualizacoes', own: false, t: '2026-11-06T12', d: '6 nov 2026', img: 'celular', src: '9to5Mac', url: U.ios272,
+  title: 'iOS 27.2 leva os perfis do app Apple TV ao iPhone e permite tirar apps da Siri e da busca',
+  sum: 'A atualização, já liberada, também traz ações sugeridas no Mensagens, como criar um lembrete a partir de uma conversa.',
+  body: [
+    'Os perfis, que antes só existiam na Apple TV, têm recomendações e lista de "Continuar assistindo" próprias, e os perfis infantis podem ter restrição de conteúdo. Nos ajustes da Siri, uma nova opção impede que apps escolhidos apareçam na Siri, na busca e nas sugestões. Cada tipo de ação sugerida no Mensagens pode ser desligado. A fonte não trata do Brasil.'
+  ] },
+
+{ id: 'discord-android-mais-rapido', cat: 'atualizacoes', own: false, t: '2026-11-06T14', d: '6 nov 2026', img: 'celular', src: '9to5Google', url: U.discordAndroid,
+  title: 'Discord refaz o app para Android e promete abertura em menos de 1 segundo',
+  sum: 'Hoje o app leva cerca de 3 segundos para abrir, segundo a reportagem. Ainda não há data para a nova versão.',
+  body: [
+    'O novo app foi reescrito na linguagem de programação Rust, segundo o 9to5Google. O Discord não divulgou quando a versão chega aos usuários, e a fonte não trata do Brasil.'
+  ] },
+
 { id: 'youtube-redesign-sem-aba-inscricoes', cat: 'atualizacoes', own: true, t: '2026-11-05T16', d: '5 nov 2026', img: 'celular', read: 3,
   title: 'YouTube muda o app no Android e no iOS e tira a aba Inscrições da barra de baixo',
   sum: 'Os canais inscritos passam a ficar dentro de uma nova aba Início. O 9to5Google chama a mudança de a maior do app em cerca de uma década.',
@@ -694,13 +769,6 @@ const NEWS = [
     'O acordo da Amazon com o Grubhub terminou no mesmo dia. O pedido é feito pelo site ou pelo app de compras da Amazon, sem conta separada no Uber Eats. Nos EUA, o Prime custa US$ 14,99 por mês ou US$ 139 por ano, segundo o Kiplinger. A oferta vale só nos EUA.'
   ] },
 
-{ id: 'apple-music-selfie-sing-beta', cat: 'atualizacoes', own: false, t: '2026-11-04T14', d: '4 nov 2026', img: 'celular', src: '9to5Mac', url: U.appleMusicSelfie,
-  title: 'Teste do iOS 27.3 traz ao Apple Music o Selfie Sing, que grava vídeo de karaokê com a câmera frontal',
-  sum: 'O recurso está na versão beta para desenvolvedores. A versão final do iOS 27.3 é esperada para o mês que vem.',
-  body: [
-    'O Selfie Sing amplia o modo karaokê do Apple Music e gera vídeos para compartilhar em outras redes. No modo paisagem, a capa animada da música passa a se estender pela tela da letra. Por ser teste, o recurso pode mudar até o lançamento, e a fonte não trata do Brasil.'
-  ] },
-
 { id: 'app-store-18-anos-namoro-ia', cat: 'atualizacoes', own: true, t: '2026-11-03T16', d: '3 nov 2026', img: 'plataforma', read: 3,
   title: 'App Store passa a exigir classificação 18+ para apps de namoro e companheiros de IA, e o Brasil tem regra própria',
   sum: 'Desenvolvedores precisam declarar esses recursos a partir de 16 de novembro. No Brasil, apps de namoro ficam em A18 e os de localização compartilhada, em A16.',
@@ -718,14 +786,6 @@ const NEWS = [
   box: { type: 'facts', title: 'Novas regras', rows: [['Namoro e companheiros de IA', 'Mínimo de 18 anos'], ['Início', '16 de novembro de 2026'], ['Prazo para todos os apps', '12 de janeiro de 2027'], ['Brasil: namoro', 'A18'], ['Brasil: localização compartilhada', 'A16']] },
   sources: [['Gizmodo', U.apple18Gizmodo], ['Tech Times', U.apple18TechTimes], ['Dexerto', U.apple18Dexerto]] },
 
-{ id: 'whatsapp-sugestoes-midia-recente', cat: 'atualizacoes', own: false, t: '2026-11-03T12', d: '3 nov 2026', img: 'celular', src: 'WABetaInfo', url: U.whatsappSugestoes,
-  title: 'WhatsApp começa a sugerir a foto ou o vídeo mais recente ao abrir uma conversa',
-  sum: 'A liberação é gradual, no Android e no iOS, para alguns usuários. Nada é enviado sozinho: o toque na sugestão abre o editor.',
-  body: [
-    'O recurso pode sugerir qualquer item recente da galeria, inclusive capturas de tela, e vem ativado por padrão. O WhatsApp testa dois formatos: um aviso acima da barra de texto ou uma miniatura no lugar do ícone da câmera.',
-    'Segundo o Canaltech, dá para desligar em Configurações > Conversas > "Sugestões de mídias recentes". Não há confirmação de que o recurso já tenha chegado ao Brasil.'
-  ] },
-
 { id: 'whatsapp-beta-expandir-fotos-ia', cat: 'atualizacoes', own: false, t: '2026-11-05T07', d: '5 nov 2026', img: 'celular', src: 'WABetaInfo', url: U.whatsappFotoIa,
   title: 'WhatsApp testa no Android a expansão de fotos com IA para o formato 9:16',
   sum: 'O teste está no beta 2.26.44.8, para alguns usuários. A Meta AI cria conteúdo novo nas bordas da imagem, em vez de esticá-la.',
@@ -733,34 +793,43 @@ const NEWS = [
     'A opção fica no editor de fotos, e o usuário pode aceitar o resultado ou pedir outra versão. Parte dos testadores só a vê nas conversas, e outra parte, no status. Não há data para a versão estável nem confirmação para o Brasil.'
   ] },
 
-{ id: 'google-maps-chegada-aeroportos-codigo', cat: 'atualizacoes', own: false, t: '2026-11-04T13', d: '4 nov 2026', img: 'celular', src: 'Canaltech', url: U.mapsAeroportos,
-  title: 'Código do Google Maps indica recurso com IA para quem chega a uma cidade nova, ainda sem anúncio do Google',
-  sum: 'O Android Authority achou o recurso no código do app. Ele usaria cercas virtuais em aeroportos e sugeriria perguntas prontas no Ask Maps.',
-  body: [
-    'O recurso não foi lançado, e o Google não deu data; ele pode mudar ou ser cancelado. As sugestões incluiriam como chegar ao centro, onde fazer a primeira refeição e o que há à noite. O código lista mais de 90 aeroportos, nenhum deles brasileiro, segundo o Canaltech.'
-  ] },
-
-{ id: 'ios-27-3-beta-app-saude-apple-watch', cat: 'atualizacoes', own: true, t: '2026-11-03T18', d: '3 nov 2026', img: 'celular', read: 3,
-  title: 'Apple libera o teste do iOS 27.3, com novo app Saúde e recursos de IA no Apple Watch',
-  sum: 'A primeira versão beta é para desenvolvedores. O app Saúde redesenhado volta aos testes, e a Apple indica o lançamento ainda neste ano.',
-  body: [
-    'A Apple liberou nesta terça (3) a primeira versão de teste do iOS 27.3, por enquanto só para desenvolvedores. O 9to5Mac espera uma versão de teste pública em poucos dias. A Apple indica lançar o novo app Saúde ainda neste ano, e o MacRumors aponta dezembro como a data esperada do iOS 27.3.',
-    '## O novo app Saúde',
-    'O app redesenhado já tinha aparecido em testes do iOS 27.2, mas saiu antes do lançamento. Ele exige iPhone compatível com a Apple Intelligence. A aba Insights reúne dados recentes de saúde e dá orientações por IA. A aba Longevity acompanha sete áreas, entre elas coração, sono e nutrição, e calcula uma idade de saúde. O MacRumors lista o português entre os idiomas, mas não diz se o app chega ao Brasil.',
-    '## O que mais há no teste',
-    'A Siri com IA passa a agir em apps como Calendário, Mensagens e Música e ganha novos idiomas. O Safari recebe abas verticais. Na China, quem está no teste passa a ter a Apple Intelligence, sem a Siri com IA. No Apple Watch Series 12 e no Ultra 4, a Audio Intelligence entra em teste, com resumos de conversas.'
-  ],
-  box: { type: 'facts', title: 'iOS 27.3', rows: [['Situação', 'Beta para desenvolvedores'], ['Beta público', 'Esperado em poucos dias, segundo o 9to5Mac'], ['Versão final', 'Dezembro é a data esperada, segundo o MacRumors'], ['App Saúde', 'Exige iPhone com Apple Intelligence']] },
-  sources: [['9to5Mac', U.ios273Tudo], ['MacRumors', U.ios273Saude], ['9to5Mac', U.ios273China]] },
-
-{ id: 'fitness-plus-gym-strength-beta', cat: 'atualizacoes', own: false, t: '2026-11-03T17', d: '3 nov 2026', img: 'celular', src: '9to5Mac', url: U.gymStrength,
-  title: 'Apple Fitness+ testa o Gym Strength, com planos de musculação de quatro semanas que se ajustam ao treino',
-  sum: 'O recurso está em beta e exige iOS 27.3 ou iPadOS 27.3. Faz parte da assinatura do Fitness+, sem custo adicional.',
-  body: [
-    'O Gym Strength monta planos conforme objetivo, experiência, agenda e equipamentos, com mais de 350 exercícios, e ajusta cada semana pelas repetições e cargas registradas. O Apple Watch é opcional. Nos EUA, o Fitness+ custa US$ 9,99 por mês ou US$ 79,99 por ano. A reportagem não lista os países nem cita o Brasil.'
-  ] },
-
 /* ===================== IA ===================== */
+{ id: 'meta-muse-spaces', cat: 'ia', own: true, t: '2026-11-06T16', d: '6 nov 2026', img: 'tecnologia', read: 2,
+  title: 'Meta lança o Spaces, área do agente Muse que cria planejadores e painéis a partir de um pedido',
+  sum: 'O usuário descreve a ideia e o Muse monta um controle, um planejador ou um quadro de projeto, que se atualiza sozinho. A Meta não informou países nem preço.',
+  body: [
+    'A Meta apresentou nesta sexta-feira (6) o Spaces, nova função do Muse, seu agente de inteligência artificial, segundo o TechCrunch. Cada Space é uma conversa sobre um tema, que fica na barra lateral do Muse.',
+    '## Como funciona',
+    'O usuário descreve o que precisa, e o Muse cria uma ferramenta sob medida, como um planejador de viagem, uma lista de receitas para uma festa de família, um controle de presentes ou um organizador de casamento. É possível conectar apps de terceiros, e os Spaces se atualizam em segundo plano com dados como datas de shows, mudanças de preço e o andamento de uma meta de economia.',
+    '## Contexto',
+    'Segundo o TechCrunch, Mark Zuckerberg disse ter criado com a função um jogo de churrasco, um controle de eventos e um painel para comandar a casa. Na divulgação de resultados de outubro, ele afirmou que os agentes do Muse tinham 10 milhões de usuários nos EUA e no Canadá, menos de dois meses após o lançamento.',
+    '## Disponibilidade',
+    'A reportagem não informa preço, países nem se a função está em teste. Não há confirmação para o Brasil.'
+  ],
+  box: { type: 'facts', title: 'Spaces no Muse', rows: [['Anúncio', '6 de novembro'], ['O que faz', 'Cria planejadores, controles e painéis'], ['Atualização', 'Em segundo plano, com apps conectados'], ['Usuários do Muse', '10 milhões nos EUA e no Canadá, segundo a Meta'], ['Brasil', 'Sem confirmação']] },
+  sources: [['TechCrunch', U.museSpaces]] },
+
+{ id: 'alexa-compras-por-mensagem-eua', cat: 'ia', own: false, t: '2026-11-06T13', d: '6 nov 2026', img: 'mercado', src: 'TechMyMoney', url: U.alexaTexto,
+  title: 'Amazon deixa clientes convidados nos EUA fazerem compras com a Alexa por mensagem de texto',
+  sum: 'O contato "Alexa Shopping" busca produtos, acompanha preços e pedidos e pode comprar sozinho quando o preço chega ao valor definido pelo cliente.',
+  body: [
+    'A função começou com um grupo pequeno de clientes convidados nos EUA, e a Amazon promete ampliar para milhões de pessoas nas próximas semanas. Segundo a empresa, mais de 400 milhões de clientes usaram a Alexa para compras nos últimos 12 meses. A fonte diz que o recurso vale só nos EUA.'
+  ] },
+
+{ id: 'gemini-live-modo-offline-codigo', cat: 'ia', own: false, t: '2026-11-06T11', d: '6 nov 2026', img: 'celular', src: 'Android Headlines', url: U.geminiOffline,
+  title: 'Código do app do Google indica modo sem internet para o Gemini Live, ainda sem anúncio',
+  sum: 'Textos achados na versão 17.72.13 do app falam em funcionar offline, com recursos limitados.',
+  body: [
+    'Para ativar o modo, seria preciso estar conectado na primeira vez. Não está claro se o Google vai baixar um novo modelo para rodar no próprio aparelho nem quais celulares seriam compatíveis. O Google não comentou nem deu data, segundo o Android Headlines, que cita reportagem do Android Authority.'
+  ] },
+
+{ id: 'google-antigravity-voz-agentes-remotos', cat: 'ia', own: false, t: '2026-11-06T17', d: '6 nov 2026', img: 'tecnologia', src: '9to5Google', url: U.antigravity,
+  title: 'Antigravity, ferramenta de programação com IA do Google, ganha comando de voz e agentes que trabalham na nuvem',
+  sum: 'Os agentes remotos seguem trabalhando com o notebook fechado e podem ser acompanhados pelo celular. Eles chegam aos assinantes dos planos Google AI Pro e Ultra.',
+  body: [
+    'A versão 2.29, para Mac, Windows e Linux, traz um modo de voz baseado no Gemini Live e um visual novo. Os projetos dos agentes remotos podem partir de um repositório do GitHub ou de uma pasta do Google Drive. A fonte não informa preços nem regiões.'
+  ] },
+
 { id: 'claude-financas-pessoais-beta', cat: 'ia', own: true, t: '2026-11-05T15', d: '5 nov 2026', img: 'mercado', read: 3,
   title: 'Claude ganha em teste nos EUA uma área de finanças pessoais que lê contas bancárias e cartões',
   sum: 'O recurso usa a Plaid para conectar as contas, só com acesso para leitura. Está em beta para os planos Pro, Max e Ultra, apenas nos EUA.',
@@ -818,41 +887,41 @@ const NEWS = [
     'A OpenAI não divulgou quantos tokens cada plano terá nem o efeito nos planos Free e Go.'
   ] },
 
-{ id: 'gemini-limite-diario-criancas-codigo', cat: 'ia', own: false, t: '2026-11-03T13', d: '3 nov 2026', img: 'celular', src: 'Canaltech', url: U.geminiLimite,
-  title: 'Código do Gemini indica limite diário de uso para crianças, ainda sem anúncio do Google',
-  sum: 'Os pais definiriam o tempo em contas supervisionadas. Hoje, segundo a reportagem, o Family Link só permite liberar ou bloquear a IA.',
-  body: [
-    'O recurso está em desenvolvimento e foi achado pelo Android Authority no código do app. Ao atingir o limite, a criança veria um aviso e uma tela de bloqueio com o horário de retorno. O Google não anunciou data e pode mudar ou desistir da ideia. Não há confirmação para o Brasil.'
-  ] },
-
-{ id: 'netflix-ai-discover-teste', cat: 'ia', own: true, t: '2026-11-03T16', d: '3 nov 2026', img: 'plataforma', read: 2,
-  title: 'Netflix começa a testar nos EUA a aba AI Discover, que sugere títulos conforme o humor do assinante',
-  sum: 'O recurso aparece em TVs compatíveis, só em inglês por enquanto. A Netflix promete levá-lo a mais usuários nas próximas semanas.',
-  body: [
-    'A Netflix anunciou nesta terça (3) a aba AI Discover, que a empresa trata como um espaço de testes para novas formas de achar o que assistir. O primeiro recurso recomenda títulos a partir de temas escolhidos pelo usuário, com base em humor, preferências, tempo disponível e novidades.',
-    '## Como funciona',
-    'Os temas têm nomes como "algo leve", "me dê um susto" e "sessão de filme em família" e mostram trechos de séries e filmes. Dá para escolher temas mais específicos ou recomeçar. Cada título tem um botão para ajustar as recomendações, salvando a obra ou tirando-a das próximas sugestões.',
-    '## Disponibilidade',
-    'O teste começa nos EUA, em TVs compatíveis e para usuários em inglês. A Netflix diz que os comentários vão definir o que fica, o que melhora e o que vai para o app principal. Não há confirmação para o Brasil.'
-  ],
-  box: { type: 'facts', title: 'AI Discover', rows: [['Situação', 'Em teste'], ['Onde', 'TVs compatíveis, nos EUA'], ['Idioma', 'Inglês'], ['Expansão', 'Mais usuários nas próximas semanas'], ['Brasil', 'Sem confirmação']] },
-  sources: [['TechCrunch', U.netflixDiscover]] },
-
-{ id: 'chatgpt-20-por-cento-buscas-google', cat: 'ia', own: false, t: '2026-11-03T22', d: '3 nov 2026', img: 'tecnologia', src: 'Olhar Digital', url: U.chatgptBuscas,
-  title: 'OpenAI diz que o ChatGPT já tem um volume de buscas igual a 20% do Google, sem revelar a origem do número',
-  sum: 'A conta inclui só as perguntas que acionam uma busca na web. Perguntas simples ficam de fora.',
-  body: [
-    'O número foi apresentado por Adam Fry, chefe do produto do ChatGPT para consumidores, em evento da OpenAI na segunda (2). A empresa não informou de onde veio o dado, segundo o Olhar Digital. Na mesma ocasião, Fry disse que os anúncios no ChatGPT não causaram reação negativa duradoura entre os usuários.'
-  ] },
-
-{ id: 'apple-watch-audio-intelligence-beta', cat: 'ia', own: false, t: '2026-11-03T14', d: '3 nov 2026', img: 'celular', src: 'TechCrunch', url: U.audioIntelligence,
-  title: 'Apple Watch entra em teste com IA que resume conversas e mostra em texto os últimos 15 segundos de fala',
-  sum: 'A Audio Intelligence é opcional e exige Apple Watch Series 12 ou Ultra 4, com iPhone pareado. O teste começa pelos desenvolvedores.',
-  body: [
-    'O conjunto tem reconhecimento de sons, como sirenes e campainhas, reconhecimento de músicas, o Live Rewind, para rever a fala recente em texto, e o Siri Recaps, que resume conversas. Um teste público está previsto antes do lançamento geral, segundo o TechCrunch. A reportagem não lista idiomas nem cita o Brasil.'
-  ] },
-
 /* ===================== STARTUPS ===================== */
+{ id: 'vereda-agtech-30-milhoes', cat: 'startups', own: true, t: '2026-11-03T16', d: '3 nov 2026', img: 'mercado', read: 2,
+  title: 'Goiana Vereda capta R$ 30 milhões para vender insumos agrícolas pelo WhatsApp com agentes de IA',
+  sum: 'A rodada seed foi liderada pela Canary e pela Valor Capital Group, com participação do fundo Speedrun, da a16z. A startup liga fabricantes direto ao produtor e ganha comissão.',
+  body: [
+    'A Vereda, startup do agronegócio criada em 2025 em Goiás, captou R$ 30 milhões numa rodada seed, segundo o Startups. A rodada foi liderada pela Canary e pela Valor Capital Group, com participação do Speedrun, fundo da a16z.',
+    '## Como funciona',
+    'A plataforma conecta fabricantes de insumos diretamente aos produtores rurais pelo WhatsApp, e agentes de inteligência artificial cuidam da venda. A empresa ganha comissão e não mantém estoque. Segundo a Vereda, o produtor paga mais de 30% menos pelos insumos; o número é da própria empresa.',
+    '## Quem está por trás',
+    'Os fundadores são João Pedro Aguiar de Souza e Pedro Galindo. A empresa não divulgou valor de mercado, número de clientes nem faturamento. O levantamento semanal do Techloy sobre a América Latina calcula a rodada em cerca de US$ 5,5 milhões.'
+  ],
+  box: { type: 'facts', title: 'Vereda', rows: [['Sede', 'Goiás'], ['Rodada', 'R$ 30 milhões (seed)'], ['Líderes', 'Canary e Valor Capital Group'], ['Canal de venda', 'WhatsApp, com agentes de IA'], ['Receita', 'Comissão, sem estoque']] },
+  sources: [['Startups', U.vereda], ['Techloy', U.techloyLatam]] },
+
+{ id: 'grindr-3tri-2026', cat: 'startups', own: false, t: '2026-11-05T21', d: '5 nov 2026', img: 'celular', src: 'Grindr (comunicado, SEC)', url: U.grindr,
+  title: 'Receita do Grindr cresce 22% no trimestre, mas despesa com processos leva a prejuízo de US$ 6,6 milhões',
+  sum: 'A receita foi de US$ 141,4 milhões. A empresa elevou a previsão de receita para 2026, para cerca de US$ 560 milhões.',
+  body: [
+    'O resultado inclui uma despesa de US$ 33 milhões com processos judiciais; um ano antes, o lucro havia sido de US$ 30,8 milhões. O Ebitda ajustado foi de US$ 61,7 milhões, com margem de 43,7%. Para 2027, a primeira projeção da empresa é de ao menos US$ 705 milhões de receita.'
+  ] },
+
+{ id: 'nextdoor-3tri-2026', cat: 'startups', own: false, t: '2026-11-05T22', d: '5 nov 2026', img: 'celular', src: 'Nextdoor (comunicado)', url: U.nextdoor,
+  title: 'Nextdoor chega a 24,5 milhões de usuários semanais e quase zera o prejuízo no trimestre',
+  sum: 'A receita do app de vizinhança subiu 14%, para US$ 78,8 milhões, e o prejuízo caiu de US$ 12,9 milhões para US$ 0,66 milhão.',
+  body: [
+    'Os usuários ativos semanais cresceram 14% sobre um ano antes, no terceiro trimestre seguido de alta. O Ebitda ajustado foi de US$ 10,3 milhões. Para 2026, a empresa prevê receita de US$ 293 milhões a US$ 295 milhões.'
+  ] },
+
+{ id: 'expedia-3tri-2026', cat: 'startups', own: false, t: '2026-11-04T21', d: '4 nov 2026', img: 'mercado', src: 'Expedia (comunicado, SEC)', url: U.expedia,
+  title: 'Expedia fatura US$ 4,94 bilhões no trimestre, alta de 12%, e eleva a previsão para o ano',
+  sum: 'As reservas somaram US$ 34 bilhões, com alta de 19% na área que atende empresas parceiras. O lucro líquido foi de US$ 1,03 bilhão.',
+  body: [
+    'As reservas feitas por consumidores cresceram 7%, para US$ 22,9 bilhões, e as da área de empresas, 19%, para US$ 11,1 bilhões. Foram 115,7 milhões de diárias, alta de 7%. A previsão de receita para 2026 subiu para US$ 16,37 bilhões a US$ 16,43 bilhões.'
+  ] },
+
 { id: 'airbnb-3tri-2026', cat: 'startups', own: true, t: '2026-11-05T19', d: '5 nov 2026', img: 'mercado', read: 3,
   title: 'Airbnb fatura US$ 4,87 bilhões no trimestre, alta de 19%, e cita o Brasil como destaque',
   sum: 'Noites e assentos reservados somaram 155 milhões, alta de 16%. No Brasil, segundo a empresa, as noites reservadas por brasileiros cresceram mais de 30%.',
@@ -889,21 +958,6 @@ const NEWS = [
     'A receita subiu 8%, para US$ 1,82 bilhão. O prejuízo inclui impacto de US$ 117,9 milhões com questões jurídicas, fiscais e regulatórias. A empresa lançou a assinatura Lyft Go e passou a oferecer robotáxis da Waymo no app em Nashville. O comunicado não traz dados do Brasil.'
   ] },
 
-{ id: 'uber-3tri-2026', cat: 'startups', own: true, t: '2026-11-04T09', d: '4 nov 2026', img: 'mercado', read: 3,
-  title: 'Uber tem US$ 59,8 bilhões em reservas no trimestre, alta de 20%, e prevê cerca de 700 carros sem motorista até o fim do ano',
-  sum: 'A receita subiu 10%, para US$ 14,8 bilhões. O lucro líquido caiu 92%, para US$ 512 milhões, porque a base de 2025 incluía ganhos não recorrentes.',
-  body: [
-    'A Uber divulgou nesta quarta-feira (4) o resultado do terceiro trimestre. As reservas brutas somaram US$ 59,8 bilhões, alta de 20%. A receita foi de US$ 14,8 bilhões, alta de 10%; segundo a empresa, mudanças no modelo de negócios tiraram cerca de 8 pontos desse crescimento.',
-    '## Usuários e viagens',
-    'O app teve 215 milhões de consumidores ativos por mês, alta de 14%, e 4,1 bilhões de viagens, alta de 16%. Em mobilidade, as reservas foram de US$ 29,5 bilhões, alta de 18%. Em entregas, de US$ 28,5 bilhões, alta de 22%, segundo o Securities.io.',
-    '## Por que o lucro caiu',
-    'O lucro líquido de US$ 512 milhões compara com US$ 6,6 bilhões um ano antes. A base de 2025 tinha um ganho fiscal de US$ 4,9 bilhões e um ganho de US$ 1,5 bilhão com participações em outras empresas. Em 2026, houve perda de US$ 476 milhões nessa linha. O lucro operacional subiu 30%, para US$ 1,4 bilhão.',
-    '## Próximos passos',
-    'Para o quarto trimestre, a empresa projeta reservas de US$ 63,25 bilhões a US$ 65,25 bilhões. A Uber também prevê cerca de 700 veículos sem motorista até o fim do ano e mais de 2.000 em 2027. O comunicado consultado não traz dados específicos do Brasil.'
-  ],
-  box: { type: 'facts', title: 'Uber no 3º trimestre', rows: [['Reservas brutas', 'US$ 59,8 bilhões (+20%)'], ['Receita', 'US$ 14,8 bilhões (+10%)'], ['Lucro líquido', 'US$ 512 milhões (-92%)'], ['Usuários mensais', '215 milhões (+14%)'], ['Viagens', '4,1 bilhões (+16%)']] },
-  sources: [['Uber (comunicado)', U.uberOficial], ['Securities.io', U.uberSecurities]] },
-
 { id: 'mercado-livre-3tri-2026', cat: 'startups', own: true, t: '2026-11-04T10', d: '4 nov 2026', img: 'mercado', read: 3,
   title: 'Mercado Livre fatura US$ 10,75 bilhões no trimestre, alta de 45%, mas margem cai de 9,8% para 6,3%',
   sum: 'No Brasil, a receita foi de US$ 6 bilhões, alta de 50% em dólar. O lucro subiu 6,4%, para US$ 448 milhões, e as ações caíram cerca de 7% em Nova York.',
@@ -924,28 +978,43 @@ const NEWS = [
     'Os assinantes somam Snapchat+, Memories Storage e Lens+, e eram 25 milhões em fevereiro. O lucro líquido foi de US$ 56,5 milhões, contra prejuízo de US$ 103,5 milhões um ano antes. A receita de anúncios ficou abaixo das estimativas.'
   ] },
 
-{ id: 'eloelo-story-tv-80-milhoes', cat: 'startups', own: false, t: '2026-11-04T08', d: '4 nov 2026', img: 'mercado', src: 'Yahoo Finance (comunicado)', url: U.eloelo,
-  title: 'Indiana EloElo, dona do app de microdramas Story TV, capta US$ 80 milhões com a NBCUniversal entre os líderes',
-  sum: 'A rodada é liderada pela Hornbill Capital e pela NBCUniversal. O dinheiro vai para conteúdo em idiomas locais e para a expansão internacional, incluindo os EUA.',
-  body: [
-    'A empresa, de Bengaluru, diz somar mais de 40 milhões de usuários ativos mensais em seus apps. O Story TV tem mais de 5.000 dramas em seis idiomas. Os números são da própria empresa, e o valor de mercado não foi divulgado.'
-  ] },
-
-{ id: 'canva-reestruturacao-1200-funcionarios', cat: 'startups', own: false, t: '2026-11-04T14', d: '4 nov 2026', img: 'plataforma', src: 'Fast Company', url: U.canvaCortes,
-  title: 'Canva faz reestruturação que atinge cerca de 1.200 pessoas, 22% da equipe',
-  sum: 'A indenização é de seis meses de salário em qualquer país. Parte dos funcionários pode ser realocada.',
-  body: [
-    'A presidente-executiva, Melanie Perkins, chamou o momento de o mais difícil dos 13 anos da empresa. O pacote inclui manutenção do plano de saúde e US$ 10 mil para quem abrir uma empresa ou um projeto. O número não é só de demissões, porque inclui realocações.'
-  ] },
-
-{ id: 'fal-16-bilhoes', cat: 'startups', own: false, t: '2026-11-03T15', d: '3 nov 2026', img: 'tecnologia', src: 'TechCrunch', url: U.falValuation,
-  title: 'Fal, que roda modelos de IA para vídeo e imagem, capta US$ 1,3 bilhão e dobra de valor, para US$ 16 bilhões',
-  sum: 'A rodada foi liderada pela Bessemer, com participação da Nvidia. Em abril, a empresa valia US$ 8 bilhões, segundo a Bloomberg.',
-  body: [
-    'Fundada em 2021 em San Francisco, a Fal hospeda e executa modelos de IA que geram vídeo, imagem e áudio. A série F foi anunciada junto com a série E, liderada pela Sequoia, e as duas somam US$ 1,65 bilhão, segundo o TechCrunch.'
-  ] },
-
 /* ===================== IDEIAS PARA O BRASIL ===================== */
+{ id: 'onto-reembolso-queda-preco-hotel-india', cat: 'ideias', own: true, t: '2026-10-21T10', d: '21 out 2026', img: 'mercado', read: 3,
+  title: 'Na Índia, a Onto devolve a diferença quando o preço do hotel cai depois da reserva e capta US$ 1 milhão',
+  sum: 'O app acompanha o preço do quarto e reembolsa a diferença na forma de pagamento original, para reservas elegíveis. A rodada pré-seed foi liderada pelo Stargazer Fund.',
+  body: [
+    'A Onto, startup de Bengaluru, na Índia, captou US$ 1 milhão numa rodada pré-seed liderada pelo Stargazer Fund, com participação da White Venture Capital, de Singapura, segundo o Ascendants. A empresa foi criada em junho de 2026 por Jagdeep Singh e Shubham Goyal, que trabalharam na Groww, app indiano de investimentos.',
+    '## Como funciona',
+    'O app busca e reserva hotéis no país e no exterior. O primeiro recurso é o reembolso por queda de preço: se o mesmo quarto, nas mesmas datas, ficar mais barato depois da reserva, a Onto devolve a diferença na forma de pagamento usada, desde que a reserva seja elegível. O app também acompanha reservas elegíveis feitas em outras plataformas e manda alertas pelo WhatsApp e por notificações.',
+    '## Os números',
+    'Segundo a empresa, o app teve mais de 2.000 downloads antes do lançamento, e uma em cada duas reservas recebeu reembolso automático. Os números são da própria Onto, que não informou como ganha dinheiro nem se há limite para os reembolsos. Os planos incluem ir além dos hotéis e usar IA nas recomendações.',
+    '## Por que olhar para o Brasil',
+    'Análise da redação: devolver a diferença quando o preço cai ainda é uma oferta pouco comum nas reservas de hotel feitas no Brasil. Um serviço que vigie o preço depois da compra poderia atrair quem planeja viagens com antecedência. O desafio seria fechar acordos com hotéis e agências e definir quem paga o reembolso.'
+  ],
+  box: { type: 'facts', title: 'Onto', rows: [['País', 'Índia'], ['Rodada', 'US$ 1 milhão (pré-seed)'], ['Líder', 'Stargazer Fund'], ['Recurso principal', 'Reembolso quando o preço do hotel cai'], ['Alertas', 'WhatsApp e notificações']] },
+  sources: [['Ascendants', U.onto], ['Outlook Business (comunicado)', U.ontoOutlook]] },
+
+{ id: 'dispatch-network-entregadores-india', cat: 'ideias', own: false, t: '2026-11-02T10', d: '2 nov 2026', img: 'mercado', src: 'IndianWeb2', url: U.dispatchNetwork,
+  title: 'Na Índia, a Dispatch monta uma rede de entregadores que atende vários apps ao mesmo tempo e capta ₹ 5 crore',
+  sum: 'Uma IA decide o próximo pedido de cada entregador entre plataformas como Zomato, Swiggy e Zepto, para reduzir viagens sem carga. A empresa diz fazer cerca de 3.500 entregas por dia.',
+  body: [
+    'A startup de Pune começou a operar em junho de 2026 e diz ter feito 55 mil entregas em outubro. A rodada pré-seed foi liderada pela Antler India. Segundo a empresa, os entregadores ganham cerca de 55% a mais por mês que a média do setor; os números são da própria Dispatch.'
+  ] },
+
+{ id: 'even-healthcare-assinatura-hospitais-india', cat: 'ideias', own: false, t: '2026-10-19T10', d: '19 out 2026', img: 'ciencia', src: 'Inc42', url: U.evenHealthcare,
+  title: 'Na Índia, a Even Healthcare junta assinatura de saúde e hospitais próprios e capta US$ 50 milhões',
+  sum: 'O pacote reúne consultas, telemedicina, exames em casa e internação. Os médicos recebem salário fixo, sem ganho por procedimento.',
+  body: [
+    'A rodada série B foi liderada pela Khosla Ventures, com a Alpha Wave. A empresa diz ter mais de 250 mil membros em 10 cidades e dois hospitais em Bengaluru, com planos de abrir outros. Em agosto, cortou cerca de 350 vagas ao trocar o foco de seguro por hospitais, segundo o Inc42. Os preços não foram divulgados.'
+  ] },
+
+{ id: 'payserve-cobranca-condominios-quenia', cat: 'ideias', own: false, t: '2026-11-04T11', d: '4 nov 2026', img: 'mundo', src: 'Disrupt Africa', url: U.payserve,
+  title: 'No Quênia, a PayServe automatiza a cobrança de aluguel, condomínio, água e luz em conjuntos residenciais',
+  sum: 'A plataforma lê medidores inteligentes e recebe pelo M-Pesa e por cinco bancos. A empresa diz ter mais de 10 mil unidades em mais de 50 imóveis.',
+  body: [
+    'A PayServe cobra uma mensalidade por unidade e vende ou aluga os medidores; há também uma opção sem custo inicial, paga com participação na receita. Segundo a empresa, KES 1 bilhão já passou pela plataforma. Financiada até agora pelos fundadores, ela busca US$ 1 milhão numa rodada série A.'
+  ] },
+
 { id: 'maasi-babas-india', cat: 'ideias', own: true, t: '2026-10-27T10', d: '27 out 2026', img: 'celular', read: 3,
   title: 'Na Índia, a Maasi oferece babás treinadas por hora ou por assinatura e capta ₹ 6 crore',
   sum: 'As famílias reservam pelo app a partir de ₹ 199 por hora ou ₹ 5.999 por mês. A empresa diz ter atendido mais de 1.200 famílias com mais de 500 cuidadoras.',
@@ -966,13 +1035,6 @@ const NEWS = [
   sum: 'O agricultor paga pelo uso, sem comprar os painéis. A empresa soma cerca de 1,71 MWp entregues ou em obras.',
   body: [
     'Fundada em 2021, a NoorNation fechou mais cinco projetos com a Linah Farms, que é cliente e também investidora. A economia de diesel citada pela empresa, de mais de US$ 58 mil nessa fazenda, não foi verificada de forma independente, segundo a reportagem. Receita e número de agricultores não foram divulgados.'
-  ] },
-
-{ id: 'curebay-clinicas-rurais-india', cat: 'ideias', own: false, t: '2026-10-22T10', d: '22 out 2026', img: 'ciencia', src: 'Inc42', url: U.curebay,
-  title: 'Na Índia, a CureBay leva clínicas com triagem por IA e plano de assinatura ao interior e capta ₹ 100 crore',
-  sum: 'A rede quer passar de 250 para 800 clínicas rurais em dois a três anos. A empresa diz ter atendido 1,2 milhão de pacientes.',
-  body: [
-    'As clínicas trabalham com agentes de saúde locais e ligam o paciente a médicos, hospitais, laboratórios e farmácias por uma plataforma digital. A assinatura Kavach cobre consultas e ajuda com remédios, exames e parte das internações, sem preço divulgado. A rodada foi liderada pela IvyCap Ventures e inclui dívida. A empresa ainda dá prejuízo, segundo o Inc42.'
   ] },
 
 { id: 'vitara-karite-coletoras-gana', cat: 'ideias', own: false, t: '2026-11-04T10', d: '4 nov 2026', img: 'mundo', src: 'WeeTracker', url: U.vitara,
@@ -1002,20 +1064,6 @@ const NEWS = [
   box: { type: 'facts', title: 'StrollMe', rows: [['Países', 'Alemanha, Áustria e Países Baixos'], ['Rodada', '€ 22 milhões, entre capital e crédito'], ['Aluguéis', 'Mais de 100 mil desde 2020'], ['Receita em 2025', 'Alta de cerca de 70%, segundo a empresa']] },
   sources: [['Startbase', U.strollme]] },
 
-{ id: 'turuq-logistica-lojistas-egito', cat: 'ideias', own: false, t: '2026-10-27T09', d: '27 out 2026', img: 'mercado', src: 'Enterprise', url: U.turuq,
-  title: 'No Egito, a Turuq cuida de estoque, embalagem e entrega de lojas online e recebe seu primeiro investimento externo',
-  sum: 'A empresa processa de 50 mil a 100 mil pedidos por mês e já dá lucro, com margem líquida de 10% a 15%.',
-  body: [
-    'Mais de 300 lojistas já usaram o serviço, e de 90 a 100 estão ativos. O investimento veio da Den VC, em valor não revelado. A Turuq planeja licenciar seu software de armazém na Arábia Saudita.'
-  ] },
-
-{ id: 'dubdub-feed-de-perguntas-india', cat: 'ideias', own: false, t: '2026-10-27T09', d: '27 out 2026', img: 'celular', src: 'StartupTalky', url: U.dubdubFeedDePerguntasIndia,
-  title: 'Na Índia, o dubdub troca o feed de vídeos por perguntas e minijogos e capta US$ 1,3 milhão',
-  sum: 'Lançado em março, o app tem cerca de 20 mil downloads e mais de 20 categorias, como críquete e Bollywood.',
-  body: [
-    'A cada deslizada, o usuário responde, adivinha ou resolve algo em vez de só assistir. A rodada seed foi liderada por 3one4 Capital, Antler e Stellaris. O app surgiu depois de a Índia proibir jogos online a dinheiro, em outubro de 2025. A empresa não divulgou como ganha dinheiro nem a taxa de retenção, segundo o StartupTalky.'
-  ] },
-
 { id: 'talent-nation-engenheiros-ia-nigeria', cat: 'ideias', own: false, t: '2026-10-30T10', d: '30 out 2026', img: 'mundo', src: 'Disrupt Africa', url: U.daTalent,
   title: 'Na Nigéria, a Talent Nation forma engenheiros de IA sem cobrar do aluno e recebe das empresas que os contratam',
   sum: 'A plataforma recebeu mais de 63 mil candidaturas em 18 meses e aceita menos de 3% delas. O valor da rodada não foi divulgado.',
@@ -1023,23 +1071,42 @@ const NEWS = [
     'As empresas clientes pagam pelos engenheiros, e esse dinheiro financia a formação das novas turmas. São cerca de 1.400 alunos em 9 unidades, em 6 cidades. A rodada pré-seed foi liderada pela Enza Capital e pela LocalGlobe, segundo o Disrupt Africa.'
   ] },
 
-{ id: 'medikea-teleconsulta-clinicas-proprias', cat: 'ideias', own: true, t: '2026-10-29T08', d: '29 out 2026', img: 'ciencia', read: 3,
-  title: 'Na Tanzânia, a Medikea junta app de teleconsulta com clínicas, laboratórios e farmácias próprios e capta US$ 1,2 milhão',
-  sum: 'Em vez de só ligar pacientes a médicos, a startup é dona dos lugares de atendimento e contrata a equipe. Quer passar de 4 para 10 clínicas até o fim de 2027.',
-  body: [
-    'A Medikea, startup de saúde da Tanzânia, captou US$ 1,2 milhão numa rodada pré-seed liderada por Baobab Network, Catalyst Fund e develoPPP Ventures, segundo o TechMoran. Também entraram Madica, Impacc, Hustle Fund, O\'Shaughnessy Ventures, Madiro e um investidor-anjo. O cofundador e presidente-executivo é o médico Elvis Silayo.',
-    '## Como funciona',
-    'O app oferece consultas virtuais 24 horas por dia. Ao mesmo tempo, a empresa tem clínicas, laboratórios de exames e farmácias próprios, com médicos assalariados, e desenvolve a própria tecnologia. O foco são consultas e tratamentos sem internação: clínica geral, pediatria, saúde da mulher, dermatologia, fertilidade e doenças crônicas. Casos de internação e cirurgia vão para hospitais parceiros.',
-    'A Medikea atende quem paga do próprio bolso e quem tem plano, com convênios como o fundo nacional de seguro-saúde do país (NHIF), e seguradoras privadas. A empresa diz que cobra menos que serviços privados parecidos, mas não divulgou preços.',
-    '## Os planos',
-    'Com as novas unidades em Arusha e Morogoro, a rede chega a 4 clínicas. A meta é ter 10 clínicas na Tanzânia até o fim de 2027 e atender mais de 100 mil pacientes nos próximos 12 meses. Depois, a empresa quer ir para outros países da África.',
-    '## Por que olhar para o Brasil',
-    'Análise da redação: no Brasil, a telemedicina e as clínicas populares costumam ser negócios separados. Juntar o atendimento pelo app com unidades próprias, para quem paga do próprio bolso e para quem tem plano, é um modelo que redes regionais de saúde podem estudar. O desafio é o custo de abrir e manter unidades físicas, que cresce mais devagar que um app.'
-  ],
-  box: { type: 'facts', title: 'Medikea', rows: [['País', 'Tanzânia'], ['Captação', 'US$ 1,2 milhão (pré-seed)'], ['Modelo', 'App + clínicas, laboratórios e farmácias próprios'], ['Clínicas', '4, com meta de 10 até o fim de 2027'], ['Meta de pacientes', 'Mais de 100 mil em 12 meses']] },
-  sources: [['TechMoran', U.tmMedikea], ['The Condia', U.cdMedikea]] },
-
 /* ===================== NO BRASIL ===================== */
+{ id: 'pix-instabilidade-sexta-6-novembro', cat: 'brasil', own: false, t: '2026-11-06T20', d: '6 nov 2026', img: 'celular', src: 'O Tempo', url: U.pixOTempo,
+  title: 'Pix fica instável na noite de sexta (6), com cerca de 11 mil relatos de falha no Downdetector',
+  sum: 'Clientes de vários bancos e carteiras digitais relataram erro de rede e transações não concluídas. A causa não havia sido informada até a publicação da reportagem.',
+  body: [
+    'As queixas cresceram a partir das 18h40 e chegaram ao pico por volta das 19h10, segundo O Tempo. Entre as instituições citadas estão Banco do Brasil, Caixa, Bradesco, Itaú, Nubank, Inter e Mercado Pago. Até a publicação, o Banco Central não havia se manifestado, segundo o jornal.'
+  ] },
+
+{ id: 'nubank-mercado-pago-suspendem-cripto', cat: 'brasil', own: false, t: '2026-11-06T14', d: '6 nov 2026', img: 'mercado', src: 'CNN Brasil', url: U.criptoCnn,
+  title: 'Nubank e Mercado Pago suspendem temporariamente depósitos e saques de criptomoedas',
+  sum: 'O Nubank atribuiu a pausa a uma instabilidade num fornecedor externo de dados; o Mercado Pago citou instabilidades no sistema.',
+  body: [
+    'Segundo o Nubank, os ativos dos clientes estão protegidos e os demais produtos de cripto funcionam normalmente; no app, os recursos aparecem como temporariamente indisponíveis. O Mercado Pago disse que os depósitos serão creditados com atraso, segundo a CNN Brasil.'
+  ] },
+
+{ id: 'govbr-email-recuperacao-56-milhoes', cat: 'brasil', own: false, t: '2026-11-06T18', d: '6 nov 2026', img: 'celular', src: 'CryptoID', url: U.govbrEmail,
+  title: 'Gov.br avisa 56 milhões de usuários para cadastrar e-mail de recuperação e não perder o acesso à conta',
+  sum: 'O alerta vai para quem usa verificação em duas etapas sem e-mail de recuperação. As mensagens chegam pela caixa postal do gov.br e pelo WhatsApp.',
+  body: [
+    'Com o e-mail cadastrado, quem perde o celular pode recuperar a conta pelo app, com reconhecimento facial e um código enviado para esse endereço. Outra opção é usar a Carteira de Identidade Nacional, lendo o QR code do documento. O gov.br tem mais de 179 milhões de usuários, segundo a reportagem.'
+  ] },
+
+{ id: 'black-friday-fraudes-serasa', cat: 'brasil', own: false, t: '2026-11-05T13', d: '5 nov 2026', img: 'mercado', src: 'Olhar Digital', url: U.blackFridaySerasa,
+  title: 'Black Friday de 2025 teve 29,7 mil tentativas de fraude em quatro dias, aponta a Serasa Experian',
+  sum: 'O valor em jogo foi de R$ 30,7 milhões. Em pesquisa de setembro, 42% dos consumidores disseram temer golpes com Pix.',
+  body: [
+    'Cada tentativa envolveu em média R$ 1.034,77, cerca de 45% acima de um pedido comum. As tentativas se concentram entre meia-noite e 5h. Na pesquisa, feita com 1.480 pessoas, 53% disseram temer sites falsos, e 86% já desistiram de uma compra por medo de fraude.'
+  ] },
+
+{ id: 'anpd-presidente-interino', cat: 'brasil', own: false, t: '2026-11-06T12', d: '6 nov 2026', img: 'plataforma', src: 'Mobile Time', url: U.anpdMiola,
+  title: 'Iagê Miola assume interinamente a presidência da ANPD, órgão que fiscaliza a proteção de dados',
+  sum: 'O mandato de Waldemar Gonçalves terminou, e Miola, diretor desde janeiro de 2025, fica no cargo até que um novo nome seja aprovado pelo Senado.',
+  body: [
+    'O novo presidente da autoridade é indicado pelo presidente da República e precisa passar pelo Senado. A reportagem do Mobile Time não cita um nome para o cargo.'
+  ] },
+
 { id: 'fgc-acesso-indevido-dados', cat: 'brasil', own: true, t: '2026-11-05T17', d: '5 nov 2026', img: 'celular', read: 2,
   title: 'FGC confirma acesso indevido a dados de clientes e alerta para golpes de quem se passa pelo fundo',
   sum: 'Foram expostos nome, CPF, e-mail e data de nascimento, entre outros dados. O FGC diz não pedir senha, código nem taxa para liberar a garantia.',
@@ -1084,27 +1151,6 @@ const NEWS = [
   box: { type: 'facts', title: 'Prazos da Anatel', rows: [['60 dias', 'Monitoramento e política de segurança'], ['90 dias', 'Diretório público e bloqueio de quem não tem cadastro'], ['90 dias', 'Medidas antifraude nos apps que usam SMS'], ['180 dias', 'Relatório ao Conselho Diretor']] },
   sources: [['Gazeta do Povo', U.anatelSmsGazeta], ['Mobile Time', U.anatelSmsMobile], ['Convergência Digital', U.anatelSmsConvergencia]] },
 
-{ id: 'govbr-certificado-digital-falhas', cat: 'brasil', own: false, t: '2026-11-04T09', d: '4 nov 2026', img: 'celular', src: 'Contábeis', url: U.govbrCertificado,
-  title: 'Login do gov.br com certificado digital falha e afeta e-CAC e FGTS Digital',
-  sum: 'Na terça (3), usuários relataram erro dizendo que o certificado não foi encontrado. Não houve causa oficial até a publicação.',
-  body: [
-    'As falhas atingiram também o Domicílio Eletrônico Trabalhista e a Redesim. O Ministério da Gestão disse que o app gov.br funcionava normalmente e encaminhou as dúvidas ao Serpro, que não respondeu até a publicação. O login com CPF e senha funcionou para alguns usuários.'
-  ] },
-
-{ id: 'bb-app-instabilidade-downdetector', cat: 'brasil', own: false, t: '2026-11-03T11', d: '3 nov 2026', img: 'celular', src: 'Exame', url: U.bbInstabilidade,
-  title: 'App do Banco do Brasil fica instável nesta terça, com pico de mais de 6,2 mil relatos de falhas no Downdetector',
-  sum: 'O banco reconheceu intermitência nos canais digitais e disse que as transações com cartão não foram afetadas.',
-  body: [
-    'O pico de relatos foi por volta das 9h34, e 83% das queixas citavam o app para celular, segundo a Exame. Usuários relataram dificuldade para entrar, inclusive com biometria e senha. Até a publicação da reportagem, às 11h31, o banco não havia dado prazo para normalizar o serviço.'
-  ] },
-
-{ id: 'vivo-pre-pago-google-one-lite', cat: 'brasil', own: false, t: '2026-11-03T18', d: '3 nov 2026', img: 'celular', src: 'Mobile Time', url: U.vivoGoogle,
-  title: 'Vivo inclui 30 GB do Google One Lite no pré-pago para quem recarrega a partir de R$ 35 por mês',
-  sum: 'A ativação é pelo app da Vivo. O espaço vale para Fotos, Drive e Gmail, sem os recursos de IA do Google.',
-  body: [
-    'Comprado direto do Google, o plano custa R$ 4,50 por mês ou R$ 45 por ano. Gemini, NotebookLM e Flow ficam de fora da oferta, porque fazem parte dos planos mais caros do Google, segundo o Mobile Time.'
-  ] },
-
 { id: 'enem-2026-documentos-digitais-celular', cat: 'brasil', own: true, t: '2026-11-01T10', d: '1 nov 2026', img: 'celular', read: 2,
   title: 'Enem 2026: documento digital só vale aberto no app oficial, e print ou foto não são aceitos',
   sum: 'As provas são nos domingos 8 e 15 de novembro, para mais de 5 milhões de inscritos. Celular fora do envelope elimina o candidato.',
@@ -1119,21 +1165,6 @@ const NEWS = [
   ],
   box: { type: 'facts', title: 'Enem 2026', rows: [['Provas', '8 e 15 de novembro'], ['Portões', 'Das 12h às 13h'], ['Início', '13h30'], ['Digitais aceitos', 'e-Título, CNH Digital, RG Digital e CIN'], ['Não vale', 'Print ou foto do documento']] },
   sources: [['Agência Brasil', U.enem]] },
-
-{ id: 'sac-comeca-a-valer-apps-transporte-senacon', cat: 'brasil', own: false, t: '2026-11-02T07', d: '2 nov 2026', img: 'celular', src: 'Times Brasil', url: U.sacComecaAValerAppsTransporteSenacon,
-  title: 'Novo SAC entra em vigor: atendente humano das 8h às 20h e espera de até 20 segundos em 80% das ligações',
-  sum: 'O Decreto 13.135 vale desde esta segunda (2) para setores regulados pelo governo federal e serviços financeiros digitais. Apps de transporte, entrega e marketplaces têm regras diferentes: precisam informar dados de reclamações à Senacon.',
-  body: [
-    'A norma alcança setores regulados pelo governo federal, como bancos, telefonia e planos de saúde, e serviços digitais de pagamento e crédito supervisionados pelo Banco Central. Apps de transporte, de entregas e marketplaces devem informar à Senacon quantas reclamações receberam e quantas resolveram.'
-  ] },
-
-{ id: 'bancos-cripto-sem-autorizacao-6-novembro', cat: 'brasil', own: false, t: '2026-10-31T12', d: '31 out 2026', img: 'mercado', src: 'Economic News Brasil', url: U.bancosCriptoSemAutorizacao6Novembro,
-  title: 'A partir de 6 de novembro, bancos e instituições de pagamento não podem operar com prestadoras de cripto sem autorização',
-  sum: 'A restrição vem da Resolução 589 do Banco Central. Empresas que fizeram o pedido no prazo podem seguir em operação durante a análise, nas condições do BC.',
-  body: [
-    'A regra vale para instituições supervisionadas pelo Banco Central, que precisam checar a situação das empresas com as quais trabalham. Há exceções previstas na norma. Ela não proíbe a negociação de criptomoedas em geral.',
-    'Fazer o pedido não equivale a ter licença: o prazo para pedir terminou em 30 de outubro, e a análise ainda não foi concluída.'
-  ] },
 
 ];
 
